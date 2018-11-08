@@ -1,0 +1,88 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int a[100],d[100];
+int i,j,m,k1,k2,k3,l,n,t,b,c,p;
+main()
+{
+      /*printf("\nEnter the limit : (>1300) :\n");
+      scanf("%d",&n);
+      if(n<=1300)
+      {
+                 printf("\nLimit criteria not satisfied!!!!!!!\n");
+                 main();
+      }
+      for(i=1250;i<=n;i++)
+      {*/printf("\nEnter number for check :\n");
+      scanf("%d",&i);
+                          m=i;
+                          k1=b=0;
+                          while(m>0)
+                          {
+                                    d[b++]=m%10;
+                                    k1=k1+1;
+                                    printf("\nm%10=%d,",m%10);
+                                    m=m/10;
+                          }
+                          if(k1%2==0)
+                          {
+                                    m=k1/2;
+                                    t=0;
+                                    for(j=10;j<i;j++)
+                                    {
+                                                     if(i%j==0)
+                                                     {//printf("%d,\n",j);
+                                                               l=j;
+                                                               k2=0;
+                                                               while(l>0)
+                                                               {
+                                                                         k2=k2+1;
+                                                                         l=l/10;
+                                                               }
+                                                               if(k2==m){
+                                                               a[t++]=j;
+                                                               printf("\nj=%d,",j);}
+                                                     }
+                                    }printf("\n\nt=%d,\n",t);
+                                   /*for(j=0;j<t;j++)
+                                   printf("\n%d,",a[i]);*/
+                                   printf("\n\nb=%d,\n",b);
+                                   for(j=0;j<b;j++)
+                                   printf("\n%d, ",d[i]);  
+                                    k2=0;
+                                    for(j=0;j<t;j++)
+                                    {
+                                                    l=j;
+                                                    while(l>0)
+                                                    {
+                                                              for(c=0;c<b;c++)
+                                                              if(l%10==c)
+                                                              {
+                                                                         k2=k2+1;
+                                                                         break;
+                                                              }
+                                                              l=l/10;
+                                                    }
+                                                    if(k2==m)
+                                                    {
+                                                             l=i/j;
+                                                             p=l;
+                                                             while(p>0)
+                                                             {
+                                                                       for(c=0;c<b;c++)
+                                                                       if(p%10==c)
+                                                                       {
+                                                                                  k3=k3+1;
+                                                                                  break;
+                                                                       }
+                                                                       p=p/10;
+                                                             }
+                                                             if(k3==m)
+                                                             printf("\n\n%d=%d*%d",i,j,l);
+                                                    }
+                                    }
+      
+                       }
+      //}
+      getch();
+}
