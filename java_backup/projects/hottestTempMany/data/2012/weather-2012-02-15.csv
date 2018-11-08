@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,48.9,39.0,69,30.09,10.0,WSW,5.8,-,N/A,,Overcast,240,2012-02-15 05:51:00
+1:51 AM,45.0,37.9,76,30.09,10.0,WSW,3.5,-,N/A,,Partly Cloudy,250,2012-02-15 06:51:00
+2:51 AM,45.0,37.9,76,30.10,10.0,WSW,3.5,-,N/A,,Partly Cloudy,250,2012-02-15 07:51:00
+3:51 AM,42.1,37.9,85,30.12,10.0,West,3.5,-,N/A,,Clear,260,2012-02-15 08:51:00
+4:51 AM,42.1,37.9,85,30.14,10.0,West,3.5,-,N/A,,Clear,270,2012-02-15 09:51:00
+5:51 AM,42.1,37.0,82,30.16,10.0,NW,3.5,-,N/A,,Clear,310,2012-02-15 10:51:00
+6:51 AM,42.1,37.0,82,30.18,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-02-15 11:51:00
+7:51 AM,41.0,37.0,86,30.21,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-02-15 12:51:00
+8:51 AM,46.9,36.0,66,30.24,10.0,North,6.9,-,N/A,,Partly Cloudy,350,2012-02-15 13:51:00
+9:51 AM,52.0,35.1,53,30.25,10.0,North,10.4,-,N/A,,Partly Cloudy,360,2012-02-15 14:51:00
+10:51 AM,55.0,33.1,43,30.27,10.0,North,8.1,-,N/A,,Partly Cloudy,350,2012-02-15 15:51:00
+11:51 AM,57.0,33.1,40,30.26,10.0,Variable,4.6,-,N/A,,Partly Cloudy,0,2012-02-15 16:51:00
+12:51 PM,59.0,30.9,35,30.24,10.0,NE,5.8,-,N/A,,Partly Cloudy,50,2012-02-15 17:51:00
+1:51 PM,62.1,30.0,30,30.22,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2012-02-15 18:51:00
+2:51 PM,63.0,27.0,26,30.23,10.0,ENE,5.8,-,N/A,,Scattered Clouds,60,2012-02-15 19:51:00
+3:51 PM,63.0,27.0,26,30.22,10.0,NE,3.5,-,N/A,,Scattered Clouds,50,2012-02-15 20:51:00
+4:51 PM,63.0,27.0,26,30.22,10.0,North,3.5,-,N/A,,Scattered Clouds,350,2012-02-15 21:51:00
+5:51 PM,55.9,28.9,36,30.23,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-02-15 22:51:00
+6:51 PM,53.1,30.0,41,30.25,10.0,ENE,3.5,-,N/A,,Mostly Cloudy,70,2012-02-15 23:51:00
+7:51 PM,50.0,30.9,48,30.26,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-02-16 00:51:00
+8:51 PM,46.0,30.9,56,30.28,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-02-16 01:51:00
+9:51 PM,46.9,30.0,52,30.28,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-02-16 02:51:00
+10:51 PM,44.1,30.9,60,30.29,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-02-16 03:51:00
+11:51 PM,44.1,32.0,63,30.27,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-02-16 04:51:00

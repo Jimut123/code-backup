@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,55.9,52.0,87,29.91,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 04:51:00
+1:51 AM,55.9,53.1,90,29.91,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 05:51:00
+2:51 AM,55.9,53.1,90,29.91,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 06:51:00
+3:51 AM,55.0,52.0,89,29.90,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 07:51:00
+4:51 AM,54.0,52.0,93,29.90,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 08:51:00
+5:51 AM,53.1,51.1,93,29.92,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 09:51:00
+6:51 AM,54.0,52.0,93,29.94,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 10:51:00
+7:51 AM,60.1,55.0,83,29.95,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-06-03 11:51:00
+8:51 AM,64.4,55.4,73,29.96,10.0,WSW,4.6,-,N/A,,Clear,240,2012-06-03 12:51:00
+9:51 AM,70.0,53.1,55,29.95,10.0,West,5.8,-,N/A,,Clear,260,2012-06-03 13:51:00
+10:51 AM,73.0,51.1,46,29.95,10.0,West,5.8,-,N/A,,Partly Cloudy,270,2012-06-03 14:51:00
+11:51 AM,75.2,51.8,44,29.94,10.0,SW,11.5,-,N/A,,Partly Cloudy,230,2012-06-03 15:51:00
+12:51 PM,77.0,53.1,43,29.92,10.0,WSW,12.7,16.1,N/A,,Scattered Clouds,250,2012-06-03 16:51:00
+1:51 PM,75.9,52.0,43,29.91,10.0,WSW,10.4,18.4,N/A,,Mostly Cloudy,240,2012-06-03 17:51:00
+2:51 PM,78.1,53.1,42,29.88,10.0,West,10.4,19.6,N/A,,Scattered Clouds,270,2012-06-03 18:51:00
+3:51 PM,79.0,55.0,44,29.86,10.0,WSW,12.7,20.7,N/A,,Mostly Cloudy,250,2012-06-03 19:51:00
+4:51 PM,80.1,55.9,43,29.84,10.0,WSW,9.2,-,N/A,,Scattered Clouds,240,2012-06-03 20:51:00
+5:51 PM,79.0,55.0,44,29.82,10.0,WSW,9.2,-,N/A,,Scattered Clouds,250,2012-06-03 21:51:00
+6:51 PM,79.0,55.9,45,29.81,10.0,WSW,8.1,-,N/A,,Partly Cloudy,250,2012-06-03 22:51:00
+7:51 PM,73.9,55.9,53,29.82,10.0,WSW,6.9,-,N/A,,Partly Cloudy,240,2012-06-03 23:51:00
+8:51 PM,71.1,57.0,61,29.82,10.0,WSW,3.5,-,N/A,,Scattered Clouds,240,2012-06-04 00:51:00
+9:51 PM,69.1,57.0,65,29.83,10.0,WSW,8.1,-,N/A,,Scattered Clouds,240,2012-06-04 01:51:00
+10:51 PM,69.1,57.0,65,29.83,10.0,WSW,3.5,-,N/A,,Scattered Clouds,250,2012-06-04 02:51:00
+11:51 PM,66.9,57.9,73,29.82,10.0,SW,4.6,-,N/A,,Mostly Cloudy,230,2012-06-04 03:51:00

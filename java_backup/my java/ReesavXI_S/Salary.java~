@@ -1,0 +1,27 @@
+import java.util.*;
+class Salary
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+double BP,DA,EA,HRA,TA;
+int yr;
+String name;
+Salary_Calc s=new Salary_Calc(); 
+System.out.println("Enter name " );
+name=sc.nextLine();
+System.out.println("enter years ofexperience");
+yr=sc.nextInt();
+System.out.println("Enter basic pay");
+BP=sc.nextDouble();
+salarycal a=new salarycal();
+DA=s.DA(BP);
+double net;
+net =BP+DA;
+System.out.println("name" +name);
+System.out.println("DA      HRA     TA    EA");
+System.out.println(DA);
+System.out.println("Salary = "+ net);
+System.out.println("Years ofexperience" +yr);
+}
+}

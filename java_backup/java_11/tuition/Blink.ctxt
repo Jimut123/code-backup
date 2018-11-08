@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ init()
+comment1.params=
+comment1.target=void\ start()
+comment2.params=
+comment2.target=void\ run()
+comment3.params=g
+comment3.target=void\ paint(java.awt.Graphics)
+comment4.params=
+comment4.target=void\ stop()
+comment5.params=
+comment5.target=java.lang.String\ getAppletInfo()
+comment6.params=
+comment6.target=java.lang.String[][]\ getParameterInfo()
+numComments=7

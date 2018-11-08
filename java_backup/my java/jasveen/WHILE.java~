@@ -1,0 +1,13 @@
+class loop
+{
+    public static void main(int n)
+    {
+        int i;
+        i=5;
+        while(i<=n)
+        {
+            System.out.println((i*10)+5);
+            i++;
+        }
+    }
+}

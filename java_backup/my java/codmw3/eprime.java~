@@ -1,0 +1,79 @@
+import java.util.*;
+public class eprime
+{   
+    String a,ar[];
+    int p[];
+    Scanner sc=new Scanner(System.in);
+    void input()
+    {
+        System.out.println("Enter number");
+        a=sc.nextLine();
+        ar=new String[a.length()];
+        p=new int[a.length()];
+    }
+    void store()
+    {
+        int m;
+        for(m=0;m<a.length();m++)
+        {
+            ar[m]+=a.charAt(m);
+        }
+    }
+    void crt()
+    {
+        int b,c;
+        String d,n;
+        d="";
+        c=0;
+        eprime ob=new eprime();
+        ob.p=new int[this.p.length];
+        for(b=0;b<a.length();b++)
+        {
+            d="";
+            d+=this.a.charAt(b);
+            ob.p[c]=b;
+            ob.a=d;
+            n=get(ob,c);
+            c++;
+            System.out.println(n);
+        }
+    }
+    String get(eprime a1,int c)
+    {
+        int cc,m,n,fl;
+        cc=0;
+        for(m=0;m<a.length();m++)
+        {
+            fl=0;
+            for(n=0;n<=c;n++)
+            {
+                if(a1.p[n]==cc)
+                {
+                    fl=1;
+                    break;
+                }
+            }
+            if(fl==1)
+            {
+                continue;
+            }
+            else
+            {
+                a1.a+=this.a.charAt(m);
+                c++;
+                a1.p[c]=m;
+                cc++;
+                a1.a=get(a1,c+1);
+                System.out.println(a1.a);
+            }
+            
+        }
+        return a1.a;
+    }    
+    void main()
+    {
+        input();
+        store();
+        crt();
+    }
+}

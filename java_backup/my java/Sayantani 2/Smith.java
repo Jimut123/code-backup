@@ -1,0 +1,48 @@
+
+import java.util.*;
+ class Smith
+ {
+      int n,n1,s,j;
+      Scanner sc=new Scanner(System.in);
+      Smith()
+      {
+          System.out.println("Enter Number:");
+          n=sc.nextInt();
+          check(n);
+        }
+        void check(int n)  
+        {
+              s=0;
+              n1=n;
+              while(n>=1)
+              {
+                  for (j=2;j<=n;j++)
+                  {
+                      if (n%j==0)
+                      {
+                          s+= digSum(j);
+                          break;
+                        }
+                    }
+                    n/=j;
+                }
+                if(s==digSum(n1))
+                System.out.println("Smith number" + s);
+                else
+                System.out.println("Not a Smith number" + s);
+            }
+            int digSum (int x)
+            {
+                int s=0;
+                while(x>0)
+                {
+                    s+=x%10;
+                    x=x/10;
+                }
+                return s;
+            }
+            public static void main(String[]args)
+            {
+                Smith s=new Smith();
+            }
+        }

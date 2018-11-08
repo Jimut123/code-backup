@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:34 AM,68.0,62.6,83,30.13,10.0,Calm,Calm,-,N/A,,Overcast,0,2012-08-26 04:34:00
+12:51 AM,68.0,64.0,87,30.12,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-26 04:51:00
+1:51 AM,68.0,64.0,87,30.12,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-26 05:51:00
+2:51 AM,66.2,62.6,88,30.12,10.0,SSW,3.5,-,N/A,,Scattered Clouds,200,2012-08-26 06:51:00
+3:51 AM,66.0,64.0,93,30.12,8.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-26 07:51:00
+4:51 AM,66.9,64.0,90,30.12,10.0,SSE,3.5,-,N/A,,Overcast,160,2012-08-26 08:51:00
+5:51 AM,66.0,63.0,90,30.12,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-08-26 09:51:00
+6:51 AM,64.4,62.6,94,30.15,10.0,South,3.5,-,N/A,,Scattered Clouds,190,2012-08-26 10:51:00
+7:51 AM,66.0,63.0,90,30.16,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-08-26 11:51:00
+8:51 AM,70.0,63.0,78,30.17,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-08-26 12:51:00
+9:26 AM,71.6,62.6,73,30.19,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-26 13:26:00
+9:51 AM,73.0,63.0,71,30.19,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-26 13:51:00
+10:51 AM,75.2,64.4,69,30.21,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2012-08-26 14:51:00
+11:51 AM,78.1,66.0,66,30.19,10.0,SSW,6.9,-,N/A,,Scattered Clouds,200,2012-08-26 15:51:00
+12:51 PM,80.1,66.0,62,30.18,10.0,SSW,4.6,-,N/A,,Scattered Clouds,200,2012-08-26 16:51:00
+1:51 PM,82.0,66.9,60,30.15,10.0,SW,4.6,-,N/A,,Scattered Clouds,220,2012-08-26 17:51:00
+2:51 PM,82.0,66.0,58,30.14,10.0,NE,4.6,-,N/A,,Scattered Clouds,40,2012-08-26 18:51:00
+3:51 PM,82.9,68.0,60,30.12,10.0,NE,8.1,-,N/A,,Mostly Cloudy,40,2012-08-26 19:51:00
+4:51 PM,82.0,68.0,62,30.11,10.0,NE,6.9,-,N/A,,Mostly Cloudy,40,2012-08-26 20:51:00
+5:51 PM,82.9,68.0,60,30.11,10.0,East,5.8,-,N/A,,Scattered Clouds,80,2012-08-26 21:51:00
+6:51 PM,80.6,66.2,61,30.12,10.0,NE,5.8,-,N/A,,Partly Cloudy,50,2012-08-26 22:51:00
+7:51 PM,77.0,66.9,71,30.11,10.0,NNE,3.5,-,N/A,,Partly Cloudy,30,2012-08-26 23:51:00
+8:51 PM,73.9,68.0,82,30.14,10.0,NE,4.6,-,N/A,,Scattered Clouds,50,2012-08-27 00:51:00
+9:51 PM,75.9,68.0,76,30.15,10.0,East,8.1,-,N/A,,Mostly Cloudy,80,2012-08-27 01:51:00
+10:51 PM,73.0,68.0,84,30.13,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-08-27 02:51:00
+11:51 PM,73.4,68.0,83,30.14,10.0,Calm,Calm,-,N/A,,Clear,0,2012-08-27 03:51:00

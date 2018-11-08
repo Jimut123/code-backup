@@ -1,0 +1,26 @@
+package Inheritance;
+import java.util.*;
+import java.io.*;
+class Extra3 extends Student3
+{
+    int EC1;
+    int EC2;
+    int tot;
+    void input()throws IOException
+    {
+        Scanner sc=new Scanner(System.in);
+        super.input();
+        FileWriter fout=new FileWriter("ECtotal.txt");
+        BufferedWriter bout=new BufferedWriter(fout);
+        PrintWriter pout=new PrintWriter(bout);
+        System.out.print("Enter EC1 ");
+        EC1=sc.nextInt();
+        System.out.print("Enter EC2 ");
+        EC2=sc.nextInt();
+        tot=(EC1+EC2);
+        pout.println(tot+" ");
+        pout.close();
+        bout.close();
+        fout.close();
+    }
+}

@@ -1,0 +1,76 @@
+import java.util.*;
+public class bin_add
+{
+    Scanner sc=new Scanner(System.in);
+    String s;
+    bin_add()
+    {
+        s="";
+    }
+    void input()
+    {
+        System.out.println("Enter binary number");
+        s=sc.nextLine();
+    }
+    bin_add add(bin_add k,bin_add l)
+    {
+        int c,m,a1,a2;
+        String str,w;
+        c=0;
+        str="";
+        w="";
+        for(m=k.s.length()-1;m>=0;m--)
+        {
+            if(k.s.charAt(m)=='1')
+            {
+                a1=1;
+            }
+            else 
+            {
+                a1=0;
+            }
+            if(l.s.charAt(m)=='1')
+            {
+                a2=1;
+            }
+            else 
+            {
+                a2=0;
+            }
+            if(a1+a2+c==0)
+            {
+                c=0;
+                w=w+0;
+            }
+            else if(a1+a2+c==1)
+            {
+                c=0;
+                w=w+1;
+            }
+            else if(a1+a2+c==2)
+            {
+                c=1;
+                w=w+0;
+            }
+            else if(a1+a2+c==3)
+            {
+                c=1;
+                w=w+1;
+            }
+        }
+        for(m=w.length()-1;m>=0;m--)
+        {
+            str=str+w.charAt(m);
+        }
+        k.s=str;
+        return k;
+    }
+    void main()
+    {
+        bin_add ob=new bin_add();
+        bin_add ob2=new bin_add();
+        ob.input();
+        ob2.input();
+        ob=ob.add(ob,ob2);
+    }
+}

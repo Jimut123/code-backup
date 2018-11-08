@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=prim_factors()
+comment1.params=nx
+comment1.target=void\ readsize(int)
+comment2.params=
+comment2.target=void\ get_numbers()
+comment3.params=
+comment3.target=void\ show_primeFact()
+numComments=4

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n\ m
+comment0.target=func_rec_power(int,\ int)
+comment1.params=a\ b\ s
+comment1.target=void\ power(int,\ int,\ int)
+numComments=2

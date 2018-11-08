@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=class\ search
+comment1.params=
+comment1.target=void\ get()
+comment10.params=a\ k
+comment10.target=int\ calc2(int[],int)
+comment11.target=br
+comment12.target=t
+comment13.params=a
+comment13.target=void\ calc1(int[])
+comment14.target=s
+comment15.target=class\ BinnarySearch
+comment16.params=args
+comment16.target=void\ main(String[])
+comment2.target=n
+comment3.target=k
+comment4.target=j
+comment5.target=i
+comment6.target=arr
+comment7.target=ret
+comment8.params=a
+comment8.target=void\ show(int[])
+comment9.target=no
+numComments=17

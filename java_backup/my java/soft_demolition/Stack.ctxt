@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StackFunctions()
+comment1.params=capacity
+comment1.target=StackFunctions(int)
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment3.params=n
+comment3.target=void\ push(int)
+comment4.params=
+comment4.target=int\ pop()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

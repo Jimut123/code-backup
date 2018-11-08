@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,57.9,55.9,93,30.19,6.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-09-28 04:51:00
+1:51 AM,57.0,55.0,93,30.19,6.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-09-28 05:51:00
+2:51 AM,57.0,55.0,93,30.19,6.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-09-28 06:51:00
+3:51 AM,55.9,54.0,93,30.18,6.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-09-28 07:51:00
+4:51 AM,55.9,53.1,90,30.19,6.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-09-28 08:51:00
+5:51 AM,55.0,53.1,93,30.19,6.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-09-28 09:51:00
+6:51 AM,55.0,53.1,93,30.20,6.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-09-28 10:51:00
+7:51 AM,57.0,55.9,96,30.20,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-09-28 11:51:00
+8:51 AM,62.1,59.0,90,30.20,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-09-28 12:51:00
+9:51 AM,66.9,59.0,76,30.20,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-09-28 13:51:00
+10:51 AM,71.1,59.0,66,30.20,10.0,Variable,5.8,-,N/A,,Mostly Cloudy,0,2014-09-28 14:51:00
+11:51 AM,73.9,59.0,59,30.18,10.0,NNE,4.6,-,N/A,,Mostly Cloudy,20,2014-09-28 15:51:00
+12:51 PM,75.0,59.0,57,30.17,10.0,ENE,5.8,-,N/A,,Mostly Cloudy,70,2014-09-28 16:51:00
+1:51 PM,75.9,59.0,56,30.14,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-09-28 17:51:00
+2:51 PM,77.0,57.9,52,30.12,10.0,East,4.6,-,N/A,,Mostly Cloudy,90,2014-09-28 18:51:00
+3:51 PM,77.0,59.0,54,30.10,10.0,NNE,4.6,-,N/A,,Mostly Cloudy,30,2014-09-28 19:51:00
+4:51 PM,77.0,60.1,56,30.09,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-09-28 20:51:00
+5:51 PM,73.0,62.1,68,30.09,10.0,NNE,3.5,-,N/A,,Mostly Cloudy,30,2014-09-28 21:51:00
+6:51 PM,69.1,62.1,78,30.09,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-09-28 22:51:00
+7:51 PM,68.0,63.0,84,30.09,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-09-28 23:51:00
+8:51 PM,66.0,62.1,87,30.10,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-09-29 00:51:00
+9:51 PM,66.9,62.1,84,30.09,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-09-29 01:51:00
+10:51 PM,64.9,61.0,87,30.09,8.0,Calm,Calm,-,N/A,,Overcast,0,2014-09-29 02:51:00
+11:51 PM,63.0,61.0,93,30.09,9.0,Calm,Calm,-,N/A,,Overcast,0,2014-09-29 03:51:00

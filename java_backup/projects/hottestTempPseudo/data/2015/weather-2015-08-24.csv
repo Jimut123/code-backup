@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,77.0,66.0,69,29.94,10.0,Calm,Calm,-,N/A,,Overcast,0,2015-08-24 04:51:00
+1:51 AM,73.0,66.0,79,29.94,10.0,Calm,Calm,-,N/A,,Overcast,0,2015-08-24 05:51:00
+2:51 AM,73.9,64.9,73,29.93,10.0,Calm,Calm,-,N/A,,Overcast,0,2015-08-24 06:51:00
+3:51 AM,75.0,64.0,69,29.92,10.0,Calm,Calm,-,N/A,,Overcast,0,2015-08-24 07:51:00
+4:51 AM,73.9,64.0,71,29.92,10.0,Calm,Calm,-,N/A,,Overcast,0,2015-08-24 08:51:00
+5:51 AM,73.0,64.0,73,29.91,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-08-24 09:51:00
+6:51 AM,73.0,64.0,73,29.92,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-08-24 10:51:00
+7:51 AM,75.0,66.0,73,29.92,10.0,South,4.6,-,N/A,,Scattered Clouds,190,2015-08-24 11:51:00
+8:51 AM,79.0,68.0,69,29.93,10.0,SW,4.6,-,N/A,,Scattered Clouds,220,2015-08-24 12:51:00
+9:51 AM,82.0,69.1,65,29.94,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-08-24 13:51:00
+10:51 AM,86.0,70.0,59,29.94,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2015-08-24 14:51:00
+11:51 AM,89.1,71.1,55,29.93,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2015-08-24 15:51:00
+12:51 PM,89.1,69.1,52,29.91,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2015-08-24 16:51:00
+1:48 PM,84.2,69.8,62,29.90,10.0,North,10.4,16.1,N/A,Thunderstorm,Thunderstorm,360,2015-08-24 17:48:00
+1:51 PM,82.0,70.0,67,29.89,10.0,NE,9.2,16.1,N/A,Thunderstorm,Thunderstorm,40,2015-08-24 17:51:00
+2:20 PM,73.4,69.8,88,29.92,1.0,SSW,16.1,28.8,0.17,Rain-Thunderstorm,Heavy Thunderstorms and Rain,200,2015-08-24 18:20:00
+2:51 PM,75.0,70.0,84,29.88,8.0,Calm,Calm,-,0.89,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2015-08-24 18:51:00
+3:51 PM,75.9,72.0,87,29.90,10.0,SSW,10.4,-,0.00,,Mostly Cloudy,210,2015-08-24 19:51:00
+4:51 PM,79.0,72.0,79,29.88,10.0,South,6.9,-,N/A,,Mostly Cloudy,190,2015-08-24 20:51:00
+5:51 PM,82.9,73.9,74,29.86,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2015-08-24 21:51:00
+6:51 PM,82.9,73.9,74,29.85,10.0,SSW,5.8,-,N/A,,Scattered Clouds,210,2015-08-24 22:51:00
+7:51 PM,80.1,73.0,79,29.86,10.0,South,5.8,-,N/A,,Scattered Clouds,170,2015-08-24 23:51:00
+8:51 PM,77.0,73.9,90,29.88,10.0,South,4.6,-,N/A,,Scattered Clouds,180,2015-08-25 00:51:00
+9:51 PM,77.0,73.9,90,29.89,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-08-25 01:51:00
+10:51 PM,75.9,73.0,91,29.89,10.0,ESE,4.6,-,N/A,,Scattered Clouds,120,2015-08-25 02:51:00
+11:51 PM,75.0,73.0,94,29.88,10.0,SSE,6.9,-,N/A,,Partly Cloudy,160,2015-08-25 03:51:00

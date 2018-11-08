@@ -1,0 +1,61 @@
+#include<iostream>
+#define MAX 10
+#define MAXNOF 5
+
+using namespace std;
+
+class lag_int{
+    int n, nof;
+    float x[MAX], y[MAXNOF][MAX], ans [MAXNOF];
+    public:
+    void inp ();
+    void slv (float xi);
+};
+
+void lag_int::inp (){
+    cout<<"How many x given?: ";
+    cin>>n;
+    
+    cout<<"Enter x values: ";
+    for (int i=0; i<n; i++)
+        cin>>x[i];
+    cout<<"How many functions of x?: ";
+    cin>>nof;
+    
+    for(int k=0; k<nof; k++){
+        cout<<"Enter f"<<k+1<<"(x) values: ";
+        for (int i=0; i<n; i++)
+            cin>>y[k][i];
+    }
+}
+
+void lag_int::slv(float xi){
+    float wx = 1;
+    for (int i=0; i<n; i++)
+        wx *= (xi - x[i]);
+        
+    for (int k=0; k<nof; k++)
+        ans[k] = 0;
+    
+    for (int i=0; i<n; i++){
+        float t = wx / (xi - x[i]);
+        for (int j=0; j<n; j++)
+            if (i != j)
+                t /= (x[i] - x[j]);
+        for (int k=0; k<nof; k++)
+            ans[k] += t * y[k][i];
+    }
+    
+    for (int k=0; k<nof; k++)
+        cout<<"f"<<k+1<<"("<<xi<<")= "<<ans[k]<<endl;
+}
+
+int main(){
+    lag_int li;
+    li.inp();
+    float x;
+    cout<<"x= ";
+    cin>>x;
+    li.slv (x);
+    return 0;
+}

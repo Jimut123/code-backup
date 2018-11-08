@@ -1,0 +1,25 @@
+import java.io.*;
+class linears
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int a[]=new int[10];
+int i,f,s;
+for(i=0;i<10;i++)
+a[i]=Integer.parseInt(br.readLine());
+System.out.println("enter searching element");
+s=Integer.parseInt(br.readLine());
+f=0;
+for(i=0;i<10;i++)
+if(a[i]==s)
+{
+f=1;
+break;
+}
+if(f==1)
+System.out.print("element found");
+else
+System.out.print("element not found");
+}
+}

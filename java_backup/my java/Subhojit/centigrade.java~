@@ -1,0 +1,15 @@
+import java. util.*;
+class centigrade
+{
+    public static void main()
+    {
+        int f;
+        int c;
+        Scanner sc=new Scanner(system.in);
+        f=sc.new. int;
+        c=(5*f-160)/9;
+        System.out.println(f);
+    }
+}
+        
+        

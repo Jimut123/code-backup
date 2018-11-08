@@ -1,0 +1,21 @@
+#BlueJ package file
+package.editor.height=400
+package.editor.width=560
+package.editor.x=72
+package.editor.y=39
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=76
+target1.editor.y=56
+target1.height=50
+target1.name=dig_count
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=80
+target1.x=160
+target1.y=10

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=nn
+comment0.target=stackop(int)
+comment1.params=item
+comment1.target=void\ pushdata(int)
+comment2.params=
+comment2.target=void\ popdata()
+comment3.params=
+comment3.target=void\ display()
+numComments=4

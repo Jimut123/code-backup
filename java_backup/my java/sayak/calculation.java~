@@ -1,0 +1,14 @@
+
+public class calculation
+{
+    public static void main(int a,int b,int c)
+    {
+        int aa=(a*b);
+        int pm=2*(a+b);
+        int saa=(c*c);
+        int spm=4*c;
+        System.out.println("
+        System.out.println
+        System.out.println
+        System.out.println
+        

@@ -1,0 +1,76 @@
+// Example program
+#include <iostream>
+#define MAX 6
+
+using namespace std;
+
+class mat_inv {
+    int n;
+    float a[MAX][MAX], inv[MAX][MAX], b[MAX], x[MAX];
+    void invert ();
+    public:
+    void inp ();
+    void slv ();
+    void out ();
+};
+
+void mat_inv::inp (){
+    cout<<"n? ";
+    cin>>n;
+    cout<<"enter a matrix:\n";
+    for(int i=0; i<n; i++)
+        for(int j=0; j<n; j++){
+            cin>>a[i][j];
+            if (i==j)
+                inv[i][j]=1;
+            else
+                inv[i][j]=0;
+        }
+        
+    cout<<"enter b:";
+    for(int i=0; i<n; i++)
+        cin>>b[i];
+}
+
+void mat_inv::invert (){
+    for (int i=0; i<n; i++){
+        float t=a[i][i];
+        for (int j=0; j<n; j++){
+            a[i][j] /= t;
+            inv[i][j] /= t;
+        }
+        
+        for (int k=0; k<n; k++){
+            if (i==k)
+                continue;
+            float m = a[k][i];
+            for(int j=0; j<n; j++){
+                a[k][j] -= m*a[i][j];
+                inv[k][j] -= m*inv[i][j];
+            }
+        }
+    }
+}
+
+void mat_inv::slv (){
+    invert ();
+    for (int i=0; i<n ; i++){
+        x[i]=0;
+        for (int j=0; j<n; j++)
+            x[i] += inv[i][j] * b[j];
+    }
+}
+
+void mat_inv::out (){
+    cout<<"roots are:";
+    for (int i=0; i<n; i++)
+        cout<<"x"<<i+1<<"= "<<x[i]<<endl;
+}
+
+int main(){
+    mat_inv mi;
+    mi.inp ();
+    mi.slv ();
+    mi.out ();
+    return 0;
+}

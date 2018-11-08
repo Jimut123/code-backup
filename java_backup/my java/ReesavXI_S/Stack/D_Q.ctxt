@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=D_Q()
+comment1.params=
+comment1.target=void\ insert_rear()
+comment2.params=
+comment2.target=void\ del_front()
+comment3.params=
+comment3.target=void\ del_rear()
+comment4.params=
+comment4.target=void\ insert_front()
+comment5.params=
+comment5.target=void\ display()
+comment6.params=
+comment6.target=void\ main()
+numComments=7

@@ -1,0 +1,27 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.5.0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.5
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+G:\bishwarup_!\doc
+-classpath
+C:\BlueJ\lib\bluejcore.jar;C:\BlueJ\lib\junit.jar;G:\bishwarup_!
+G:\bishwarup_!\StringConvert.java
+<---- end of javadoc command ---->
+Loading source file G:\bishwarup_!\StringConvert.java...
+G:\bishwarup_!\StringConvert.java:8: '(' expected
+void read string()throws IOException
+          ^
+G:\bishwarup_!\StringConvert.java:13: '}' expected
+void 
+    ^
+2 errors

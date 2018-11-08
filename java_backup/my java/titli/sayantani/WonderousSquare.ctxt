@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=void\ get()
+comment1.target=boolean\ check()
+comment2.target=void\ prime()
+comment3.params=num
+comment3.target=boolean\ isPrime(int)
+numComments=4

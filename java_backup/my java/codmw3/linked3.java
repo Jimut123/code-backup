@@ -1,0 +1,58 @@
+import java.io.*;
+public class linked3
+{
+    int sum1=0,sum2=0;
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    class list
+    {
+        int a=1;
+        void input()throws IOException
+        {
+            System.out.println("Enter data");
+            a=Integer.parseInt(br.readLine());
+            if(a%2==0)
+            {
+                sum1+=a;
+            }
+             else
+            {
+             sum2+=a;
+            }
+        }
+        void display()
+        {
+            System.out.println(+a);
+        }
+        list next;
+    }
+    list ob,ob2;
+        linked3()
+       {
+        ob=new list();
+        ob2=ob;
+       }
+  void check()throws IOException
+  {
+      
+      while(true)
+      {
+          ob2.input();
+          if(ob2.a==0)
+             break;
+          ob2.next=new list();
+          ob2=ob2.next;
+      }
+      ob2=null;
+      ob2=ob;
+  }
+    void print()
+    {
+        System.out.println(+sum1);
+        System.out.println(+sum2);
+        while(ob2.a!=0)
+        {
+            ob2.display();
+            ob2=ob2.next;
+        }
+    }
+}

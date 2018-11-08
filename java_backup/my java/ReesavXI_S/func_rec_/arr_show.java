@@ -1,0 +1,60 @@
+package func_rec_;
+import java.util.*;
+class arr_show
+{
+    int a[];
+    int n;
+    arr_show(int s)
+    {
+        n=s;
+        a=new int[n];
+    }
+    void input()
+    {
+        int x=0;
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<n;i++)
+        {
+            System.out.print("Enter a number ");
+            a[i]=sc.nextInt();
+        }
+        System.out.println("Displaying prime digits ");
+        x=prime_show(0);
+        System.out.println();
+        System.out.println("Displaying odd digits ");
+        x=odd_show(0);
+    }
+    int prime_show(int i)
+    {
+        if(i==n)
+        return 0;
+        if(prime(a[i])==true)
+        {
+            System.out.print(a[i]+" ");
+        }
+        return prime_show(i+1);
+    }
+    int odd_show(int i)
+    {
+        if(i==n)
+        return 0;
+        if(a[i]%2==1)
+        {
+            System.out.print(a[i]+" ");
+        }
+        return odd_show(i+1);
+    }
+    boolean prime(int i)
+    {
+        int cr=0;
+        for(int k=2;k<i;k++)
+        {
+            if(i%k==0)
+            cr++;
+        }
+        if(cr==0)
+        return true;
+        return false;
+    }
+}
+        

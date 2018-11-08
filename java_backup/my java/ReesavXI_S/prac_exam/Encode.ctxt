@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Encode()
+comment1.params=
+comment1.target=void\ accept()
+comment2.params=
+comment2.target=void\ Encode()
+comment3.params=ch
+comment3.target=char\ Check(char)
+comment4.params=
+comment4.target=void\ main()
+numComments=5

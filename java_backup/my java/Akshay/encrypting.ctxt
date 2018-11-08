@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=t\ m1
+comment0.target=void\ Input(java.lang.String,\ java.lang.String)
+comment1.params=x1
+comment1.target=int\ CalcNum(java.lang.String)
+comment2.params=
+comment2.target=void\ Encrypt()
+numComments=3

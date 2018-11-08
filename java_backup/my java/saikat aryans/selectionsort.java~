@@ -1,0 +1,37 @@
+import java.io.*;
+public class selectionsort
+{
+    public static void main(String args[]) throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int i,j,k,POS,n;
+        n=Integer.parseInt(br.readLine());
+        int a[]=new int[n];
+        for(i=0;i<n;i++)
+        {
+        a[i]=Integer.parseInt(br.readLine());
+    }
+    for(i=0;i<n-1;i++)
+    {
+        POS=i;
+        for(j=i+1;j<n;j++)
+        {
+            if(a[j]<a[POS])
+            POS=j;
+            k=a[POS];
+            a[POS]=a[i];
+            a[i]=k;
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        System.out.println(a[i]);
+    }
+}
+}
+
+    
+        
+        
+        
+       

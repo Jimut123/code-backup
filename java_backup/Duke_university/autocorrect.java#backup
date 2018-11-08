@@ -1,0 +1,6 @@
+import java.io.*;
+class autocorrect
+{
+    String a[]=new String[100000];
+   
+}

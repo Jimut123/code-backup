@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=r
+comment0.target=double\ circleArea(double)
+comment1.params=l\ b
+comment1.target=double\ rectangleArea(double,\ double)
+comment2.params=a\ b\ c
+comment2.target=double\ triangleArea(double,\ double,\ double)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

@@ -1,0 +1,38 @@
+import java.io.*;
+class h_c_f
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    int a,b,k;
+    void input()throws IOException
+    {
+        a=Integer.parseInt(br.readLine());
+        b=Integer.parseInt(br.readLine());
+        hcf(a,b);
+       //int k;
+       //k=hcf(b);
+        //System.out.println(k);
+    }
+    void hcf(int a,int b)
+    {
+        int rem=1,c;
+        if(rem==0)
+        {
+          // System.out.println(+b);
+            return;
+        }
+        else
+        {
+            if(rem==0)
+            return;
+        // c=b;
+            rem=a%b;
+           // if(rem==0)
+            //{
+            //return b;
+            System.out.println(+b);
+           //}
+            hcf(b,rem);
+        }
+    }
+}
+            

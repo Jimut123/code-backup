@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+-<FileList Redist="Microsoft-Windows-CLRCoreComp.3.0"><File InGAC="false" ProcessorArchitecture="MSIL"
+ Culture="neutral" PublicKeyToken="b03f5f7f11d50a3a" Version="3.0.0.0" AssemblyName="ComSvcConfig"/><File InGAC="false"
+ ProcessorArchitecture="X86" Culture="neutral" PublicKeyToken="b77a5c561934e089" Version="3.0.0.0" AssemblyName="infocard"
+ /><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" PublicKeyToken="b03f5f7f11d50a3a" Version="3.0.0.0" 
+ AssemblyName="Microsoft.Transactions.Bridge"/><File InGAC="false" ProcessorArchitecture="X86" Culture="neutral" PublicKeyToken="b03f5f7f11d50a3a"
+ Version="3.0.0.0" AssemblyName="Microsoft.Transactions.Bridge.Dtc"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationBuildTasks"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationCFFRasterizer"/><File InGAC="true" ProcessorArchitecture="X86" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationCore"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationFramework"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationFramework.Aero"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationFramework.Classic"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationFramework.Luna"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationFramework.Royale"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="PresentationUI"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="ReachFramework"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b03f5f7f11d50a3a" Version="3.0.0.0" AssemblyName="ServiceModelReg"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b03f5f7f11d50a3a" Version="3.0.0.0" AssemblyName="SMSvcHost"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b77a5c561934e089" Version="3.0.0.0" AssemblyName="System.IdentityModel"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b77a5c561934e089" Version="3.0.0.0" AssemblyName="System.IdentityModel.Selectors"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b03f5f7f11d50a3a" Version="3.0.0.0" AssemblyName="System.IO.Log"/><File InGAC="true" ProcessorArchitecture="X86" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="System.Printing"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b77a5c561934e089" Version="3.0.0.0" AssemblyName="System.Runtime.Serialization"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b77a5c561934e089" Version="3.0.0.0" AssemblyName="System.ServiceModel"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b77a5c561934e089" Version="3.0.0.0" AssemblyName="System.ServiceModel.Install"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="b77a5c561934e089" Version="3.0.0.0" AssemblyName="System.ServiceModel.WasHosting"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="System.Speech"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="System.Workflow.Activities"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="System.Workflow.ComponentModel"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="System.Workflow.Runtime"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="UIAutomationClient"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="UIAutomationClientsideProviders"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="UIAutomationProvider"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="UIAutomationTypes"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35" Version="3.0.0.0" AssemblyName="WindowsBase"/><File InGAC="true" ProcessorArchitecture="MSIL" Culture="neutral"
+ PublicKeyToken="31bf3856ad364e35
+" Version="3.0.0.0" AssemblyName="WindowsFormsIntegration"/><File InGAC="false" ProcessorArchitecture="MSIL" Culture="neutral" 
+
+PublicKeyToken="b03f5f7f11d50a3a" Version="3.0.0.0"
+
+ AssemblyName="WsatConfig"/></FileList>
+
+ 
+ 
+ 
+ 
+ 
+ 

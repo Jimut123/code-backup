@@ -1,0 +1,119 @@
+package iisscc;
+import java.io.*;
+public class file
+{//declaration of class
+    public static int prime(int n)
+    {//checking for prime
+        int flag=0;
+        for(int i=2;i<n;i++)
+        {
+            if(n%i==0)
+            flag++;
+            break;
+        }
+        if(flag==0)
+        return 1;
+        else
+        return 0;
+    }
+    public static int armstrong(int n)
+    {//checking for armstrong
+        int s=0;
+        int d=0;
+        int z=n;
+        while(z>0)
+        {
+            d=z%10;
+            s=s+(d*d*d);
+            z=z/10;
+        }
+        if(s==n)
+        return 1;
+        else
+        return 0;
+    }
+    public static void main(String args[])throws IOException
+    {//defining the main method
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        FileWriter fw=new FileWriter("allnum.txt");
+        BufferedWriter bw=new BufferedWriter(fw);
+        PrintWriter pw=new PrintWriter(bw);
+        FileWriter fw1=new FileWriter("number1.txt");
+        BufferedWriter bw1=new BufferedWriter(fw1);
+        PrintWriter pw1=new PrintWriter(bw1);
+        FileWriter fw2=new FileWriter("number2.txt");
+        BufferedWriter bw2=new BufferedWriter(fw2);
+        PrintWriter pw2=new PrintWriter(bw2);
+        file ob=new file();
+        int n=0,ans=0;
+        do
+        {//do-while loop
+        System.out.println("enter the Number: ");
+       System.out.print("\nEnter a number     :");
+			n=Integer.parseInt(br.readLine());
+			fw.writeInt(n);
+			System.out.print("\nAdd more [Y/N]:");
+			ch=br.readLine().charAt(0);
+			if(ch=='y' || ch=='Y')
+			{
+				c++;
+				continue;
+			}
+			else
+			{
+				break;
+			}
+			
+		}while(true);
+		fw.close();System.out.println("enter the Number: ");
+       System.out.print("\nEnter a number     :");
+			n=Integer.parseInt(br.readLine());
+			fw.writeInt(n);
+			System.out.print("\nAdd more [Y/N]:");
+			ch=br.readLine().charAt(0);
+			if(ch=='y' || ch=='Y')
+			{
+				c++;
+				continue;
+			}
+			else
+			{
+				break;
+			}
+			
+		while(true);
+		fw.close();
+        FileReader fr=new FileReader("allnum.txt");
+        BufferedReader brq=new BufferedReader(fr);
+        int c=0;
+        String z;
+        while((z=br.readLine())!=null)
+        {
+            if(prime(c)==1)
+            {
+            pw1.println(c);
+            }
+            else if(armstrong(c)==1)
+            {
+            pw2.println(c);
+        }
+         pw2.close();
+          pw1.close();  
+        }
+        FileReader fr1=new FileReader("number1.txt");
+        BufferedReader brqa=new BufferedReader(fr1);
+        String s;
+        while((s=br.readLine())!=null)
+        {//displaying the prime file
+            System.out.print("the first prime file");
+            System.out.print(s);
+        }
+        FileReader fr2=new FileReader("number1.txt");
+        BufferedReader brqs=new BufferedReader(fr2);
+        String m;
+        while((m=br.readLine())!=null)
+        {
+            System.out.print("the second arms file");
+            System.out.print(m);
+        }
+    }

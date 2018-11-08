@@ -1,0 +1,30 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,69.1,63.0,81,29.86,10.0,NNE,4.6,-,0.00,Rain,Light Rain,20,2012-05-23 04:51:00
+1:51 AM,68.0,64.0,87,29.84,10.0,Calm,Calm,-,0.00,,Overcast,0,2012-05-23 05:51:00
+2:06 AM,68.0,64.4,88,29.86,10.0,NE,3.5,-,N/A,Thunderstorm,Thunderstorm,50,2012-05-23 06:06:00
+2:51 AM,66.9,64.9,93,29.85,10.0,NNW,4.6,-,0.03,Rain-Thunderstorm,Light Thunderstorms and Rain,340,2012-05-23 06:51:00
+3:51 AM,66.0,64.0,93,29.83,10.0,NNE,3.5,-,0.00,Thunderstorm,Thunderstorm,20,2012-05-23 07:51:00
+4:21 AM,64.4,62.6,94,29.83,10.0,NE,6.9,-,N/A,,Mostly Cloudy,40,2012-05-23 08:21:00
+4:51 AM,64.9,63.0,93,29.82,10.0,NE,4.6,-,N/A,,Mostly Cloudy,50,2012-05-23 08:51:00
+5:51 AM,64.0,62.1,93,29.84,10.0,East,5.8,-,N/A,,Mostly Cloudy,100,2012-05-23 09:51:00
+6:51 AM,64.0,62.1,93,29.87,10.0,South,4.6,-,N/A,,Mostly Cloudy,170,2012-05-23 10:51:00
+7:51 AM,66.9,64.0,90,29.88,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-23 11:51:00
+8:51 AM,70.0,64.0,81,29.89,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-23 12:51:00
+9:31 AM,71.6,64.4,78,29.92,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-23 13:31:00
+9:51 AM,73.9,66.0,76,29.90,10.0,SW,4.6,-,N/A,,Mostly Cloudy,230,2012-05-23 13:51:00
+10:51 AM,73.0,64.0,73,29.91,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-23 14:51:00
+11:51 AM,73.0,64.9,76,29.91,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-23 15:51:00
+12:51 PM,75.0,64.9,71,29.91,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2012-05-23 16:51:00
+1:51 PM,79.0,64.0,60,29.90,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2012-05-23 17:51:00
+2:51 PM,81.0,64.0,56,29.89,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,250,2012-05-23 18:51:00
+3:51 PM,82.9,63.0,51,29.87,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,240,2012-05-23 19:51:00
+4:51 PM,80.1,60.1,50,29.88,10.0,SE,13.8,20.7,N/A,,Mostly Cloudy,140,2012-05-23 20:51:00
+5:06 PM,75.2,55.4,50,29.90,10.0,South,18.4,25.3,N/A,Thunderstorm,Thunderstorm,170,2012-05-23 21:06:00
+5:51 PM,75.0,57.9,55,29.88,10.0,SSE,6.9,-,0.00,Thunderstorm,Thunderstorm,160,2012-05-23 21:51:00
+6:17 PM,73.4,60.8,65,29.91,10.0,SW,11.5,-,N/A,,Mostly Cloudy,230,2012-05-23 22:17:00
+6:51 PM,72.0,60.1,66,29.89,10.0,SW,10.4,-,N/A,,Mostly Cloudy,230,2012-05-23 22:51:00
+7:51 PM,69.1,61.0,75,29.90,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-23 23:51:00
+8:51 PM,66.9,60.1,79,29.91,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-05-24 00:51:00
+9:51 PM,66.0,60.1,81,29.94,10.0,ESE,6.9,-,N/A,,Scattered Clouds,110,2012-05-24 01:51:00
+10:51 PM,66.9,61.0,81,29.96,10.0,East,5.8,-,N/A,,Scattered Clouds,100,2012-05-24 02:51:00
+11:51 PM,66.0,61.0,84,29.96,10.0,ESE,4.6,-,N/A,,Scattered Clouds,120,2012-05-24 03:51:00

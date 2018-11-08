@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StudentN()
+comment1.params=rno\ nm\ avg\ l
+comment1.target=StudentN(int,\ java.lang.String,\ double,\ StudentN)
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment2.params=l
+comment2.target=void\ setLink(StudentN)
+comment3.params=
+comment3.target=StudentN\ getLink()
+comment4.params=
+comment4.target=int\ getRoll()
+comment5.params=r
+comment5.target=void\ setRoll(int)
+comment6.params=
+comment6.target=java.lang.String\ getName()
+comment7.params=nm
+comment7.target=void\ setName(java.lang.String)
+comment8.params=
+comment8.target=double\ getAvg()
+comment9.params=a
+comment9.target=void\ setAvg(double)
+numComments=11

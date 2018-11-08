@@ -1,0 +1,133 @@
+package ISC;
+
+import java.util.*;
+public class codes
+{
+    String s;
+    Scanner sc=new Scanner(System.in);
+    void input()
+    {
+        System.out.println("Enter sentence/code");
+        s=sc.nextLine();
+    }
+    void Encode()
+    {
+        int st1,st2,st3,st4,st5,st6,b,n,c;
+        String w="";
+        st1=(int)'a';
+        st2=(int)'z';
+        st3=(int)'A';
+        st4=(int)'Z';
+        st5=(int)'0';
+        st6=(int)'9';
+        System.out.println("Enter distance of coded letter from original");
+        n=sc.nextInt();
+        for(b=0;b<n;b++)
+        {
+            c=(int)s.charAt(b);
+            if((c>=st1 && c<=st2) || (c<=st4 && c>=st3) || (c>=st5 && c<=st6))
+            {
+              c+=n;
+              if(c>st2)
+              {
+                  c=st1+c-st2;
+              }
+              else if(c<st1)
+              {
+                  c=st2+st1-c;
+              }
+              else if(c>st4)
+              {
+                  c=st3+c-st4;
+              }
+              else if(c<st3)
+              {
+                  c=st4+st3-c;
+              }
+              else if(c>st6)
+              {
+                  c=st5+c-st6;
+              }
+              else if(c<st5)
+              {
+                  c=st6+st5-c;
+              }
+              w=w+(char)c;
+            }
+            else if(s.charAt(b)==' ')
+            {
+                w=w+" ";
+            }
+        }
+        System.out.println(" Code is : "+w); 
+    }
+    void Decode()
+    {
+        int st1,st2,st3,st4,st5,st6,b,n,c;
+        String w="";
+        st1=(int)'a';
+        st2=(int)'z';
+        st3=(int)'A';
+        st4=(int)'Z';
+        st5=(int)'0';
+        st6=(int)'9';
+        System.out.println("Enter distance of orignal letter from coded letter");
+        n=sc.nextInt();
+         for(b=0;b<n;b++)
+        {
+            c=(int)s.charAt(b);
+            if((c>=st1 && c<=st2) || (c<=st4 && c>=st3) || (c>=st5 && c<=st6))
+            {
+              c-=n;
+              if(c>st2)
+              {
+                  c=st1-(c-st2);
+              }
+              else if(c<st1)
+              {
+                  c=st2-(st1-c);
+              }
+              else if(c>st4)
+              {
+                  c=st3-(c-st4);
+              }
+              else if(c<st3)
+              {
+                  c=st4-(st3-c);
+              }
+              else if(c>st6)
+              {
+                  c=st5-(c-st6);
+              }
+              else if(c<st5)
+              {
+                  c=st6-(st5-c);
+              }
+              w=w+(char)c;
+            }
+            else if(s.charAt(b)==' ')
+            {
+                w=w+" ";
+            }
+        }
+        System.out.println(" Sentence is : "+w);
+    }
+    void main()
+    {
+        int ch;
+        System.out.println("Press 1 to encode sentence");
+        System.out.println("Press 2 to decode code");
+        ch=sc.nextInt();
+        switch(ch)
+        {
+            case 1:
+            input();
+            Encode();
+            break;
+            case 2:
+            input();
+            Decode();
+            break;
+        }
+    }
+}        

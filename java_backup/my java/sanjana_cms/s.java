@@ -1,0 +1,10 @@
+import java.io.*;
+class s
+{
+    public static void main () 
+{
+int k,m;
+k=10;
+m=k++ + k - ++k*k;System.out.println(m);
+}
+}

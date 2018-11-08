@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=NodeTree()
+comment1.params=d\ l\ r
+comment1.target=NodeTree(int,\ NodeTree,\ NodeTree)
+comment2.params=
+comment2.target=int\ getData()
+comment3.params=
+comment3.target=NodeTree\ getLeft()
+comment4.params=
+comment4.target=NodeTree\ getRight()
+comment5.params=d
+comment5.target=void\ setData(int)
+comment6.params=l
+comment6.target=void\ setLeft(NodeTree)
+comment7.params=r
+comment7.target=void\ setRight(NodeTree)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

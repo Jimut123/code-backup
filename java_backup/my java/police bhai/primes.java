@@ -1,0 +1,42 @@
+public class primes
+{
+    int arr[][], r, c, q;
+    primes(int a, int b)
+    {
+        r=a;
+        c=b;
+    }
+    int isPrime(int q)
+    {
+        for(int i=2;i<q;i++)
+        {
+            if(q%i==0)
+            
+                return 0;
+            else
+                return 1;
+        }
+    }
+    void fill()
+    {
+        for(int i=0;i<r;i++)
+        {
+            for(int j=0;j<c;j++)
+            {
+                int x=isPrime(q);
+                if(x==1)
+                arr[i][j]=q;
+            }
+        }
+    }
+    void display()
+    {
+        for(int i=0;i<r;i++)
+        {
+            for(int j=0;j<c;j++)
+            {
+                System.out.println(arr[i][j]);
+            }
+        }
+    }
+}

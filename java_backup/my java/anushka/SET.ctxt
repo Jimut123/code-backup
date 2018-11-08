@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=nn
+comment0.target=SET(int)
+comment1.params=
+comment1.target=void\ readelements()
+comment2.params=
+comment2.target=void\ displyelements()
+comment3.params=
+comment3.target=int\ getsize()
+comment4.params=ele
+comment4.target=int\ has(int)
+comment5.params=d
+comment5.target=SET\ intersection(SET)
+comment6.params=d
+comment6.target=SET\ union(SET)
+numComments=7

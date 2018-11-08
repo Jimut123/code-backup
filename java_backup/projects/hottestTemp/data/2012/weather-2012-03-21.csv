@@ -1,0 +1,29 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:04 AM,62.6,60.8,94,30.28,6.0,NE,6.9,-,0.02,Rain-Thunderstorm,Light Thunderstorms and Rain,50,2012-03-21 04:04:00
+12:37 AM,62.6,60.8,94,30.28,9.0,Calm,Calm,-,0.06,Rain,Light Rain,0,2012-03-21 04:37:00
+12:51 AM,62.1,60.1,93,30.26,7.0,West,3.5,-,0.07,Rain,Light Rain,280,2012-03-21 04:51:00
+1:51 AM,62.1,60.1,93,30.21,10.0,SW,6.9,-,0.05,Rain,Light Rain,230,2012-03-21 05:51:00
+2:51 AM,62.1,60.1,93,30.22,10.0,SSE,5.8,-,0.00,,Overcast,150,2012-03-21 06:51:00
+3:51 AM,61.0,59.0,93,30.22,10.0,ENE,3.5,-,N/A,,Mostly Cloudy,70,2012-03-21 07:51:00
+4:51 AM,61.0,59.0,93,30.23,8.0,NE,3.5,-,N/A,,Mostly Cloudy,50,2012-03-21 08:51:00
+5:51 AM,61.0,59.0,93,30.24,8.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 09:51:00
+6:51 AM,61.0,59.0,93,30.26,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 10:51:00
+7:51 AM,60.1,59.0,96,30.27,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-03-21 11:51:00
+8:51 AM,62.6,60.8,94,30.29,7.0,ENE,6.9,-,N/A,,Mostly Cloudy,60,2012-03-21 12:51:00
+9:51 AM,66.0,61.0,84,30.30,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 13:51:00
+10:51 AM,68.0,61.0,78,30.31,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 14:51:00
+11:51 AM,70.0,61.0,73,30.31,10.0,SSE,5.8,-,N/A,,Mostly Cloudy,150,2012-03-21 15:51:00
+12:51 PM,72.0,60.1,66,30.30,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 16:51:00
+1:51 PM,73.0,62.1,68,30.28,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2012-03-21 17:51:00
+2:51 PM,73.0,60.1,64,30.24,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 18:51:00
+3:51 PM,73.9,62.1,66,30.22,10.0,South,5.8,-,N/A,,Overcast,190,2012-03-21 19:51:00
+4:51 PM,73.9,63.0,68,30.20,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 20:51:00
+5:51 PM,73.9,59.0,59,30.19,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-21 21:51:00
+6:51 PM,73.0,60.1,64,30.22,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2012-03-21 22:51:00
+7:40 PM,71.6,60.8,69,30.23,2.0,SE,9.2,-,N/A,,Haze,130,2012-03-21 23:40:00
+7:51 PM,70.0,60.1,71,30.23,2.0,SE,6.9,-,N/A,,Haze,130,2012-03-21 23:51:00
+8:00 PM,69.8,60.8,73,30.23,7.0,SE,8.1,-,N/A,,Scattered Clouds,140,2012-03-22 00:00:00
+8:51 PM,66.9,60.1,79,30.25,10.0,SSE,6.9,-,N/A,,Scattered Clouds,160,2012-03-22 00:51:00
+9:51 PM,66.0,61.0,84,30.27,10.0,South,8.1,-,N/A,,Scattered Clouds,170,2012-03-22 01:51:00
+10:51 PM,64.9,61.0,87,30.27,10.0,South,3.5,-,N/A,,Scattered Clouds,180,2012-03-22 02:51:00
+11:51 PM,64.0,59.0,84,30.27,10.0,South,3.5,-,N/A,,Partly Cloudy,190,2012-03-22 03:51:00

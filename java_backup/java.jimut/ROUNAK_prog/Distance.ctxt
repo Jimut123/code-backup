@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=f\ n1\ ff\ n2
+comment0.target=Distance(int,\ int,\ int,\ int)
+comment1.params=
+comment1.target=void\ showdistance()
+comment2.params=
+comment2.target=void\ sumofdistance()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

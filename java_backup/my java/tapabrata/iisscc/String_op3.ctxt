@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=void\ main1(int)
+comment1.params=s
+comment1.target=int\ check(java.lang.String)
+comment2.params=s
+comment2.target=void\ wordcount(java.lang.String)
+comment3.params=s
+comment3.target=void\ arrange(java.lang.String)
+comment4.params=s
+comment4.target=int\ count(java.lang.String)
+numComments=5

@@ -1,0 +1,20 @@
+class palindromic_range
+{
+public static void main(int n,int n1)
+{
+int rev,k,i,j;
+for(i=n;i<=n1;i++)
+{
+rev=0;
+j=i;
+while(j>0)
+{
+k=j%10;
+rev=(rev*10)+k;
+j=j/10;
+}
+if(rev==i)
+System.out.println("Palindrome"+i);
+}
+}
+}

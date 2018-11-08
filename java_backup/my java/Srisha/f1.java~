@@ -1,0 +1,25 @@
+import java.util.*;
+class f1
+{
+    int abc(int n)
+    {
+        if (n%2==0)
+        return 1;
+        else
+        return 0;
+    }
+    public static void main(String args[])
+    {
+        int a, b;
+        System.out.println("enter the number");
+        a= sc.nextInt();
+        f1 obj= new f1();
+        b=obj.abc(a);
+        if(b==1)
+        System.out.println("even number");
+        else
+        System.out.println("odd number");
+    }
+}
+
+      

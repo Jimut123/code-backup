@@ -1,0 +1,18 @@
+class outp
+{
+    public static void main()
+    {
+        int s,i;
+        s=5;
+        for(i=1;i<=5;i++)
+        {
+            if(i%2==0)
+            s=s+++s;
+            else
+            s=s+s--;
+         System.out.println(s);   
+            
+        }
+        System.out.println("Final:"+s);
+    }
+}

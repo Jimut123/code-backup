@@ -1,0 +1,15 @@
+
+public class numbers
+{
+    public static void main(int a,int b,int c)
+    {
+        int sq=(a*a);
+        double sqrt=Math.sqrt(b);
+        int cb=(c*c*c);
+        int sm=(sq+(int)sqrt+cb);
+        Systerm.out.println("Square="+sq);
+        Systerm.out.println("Square root="+sqrt);
+        Systerm.out.println("Cube="+cb);
+        Systerm.out.println("Sum="+sm);
+    }
+}

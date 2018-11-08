@@ -1,0 +1,33 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,27.0,25.0,92,30.43,4.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 05:51:00
+1:05 AM,26.6,24.8,93,30.42,0.5,Calm,Calm,-,N/A,Fog,Light Freezing Fog,0,2013-01-27 06:05:00
+1:51 AM,25.0,23.0,92,30.44,1.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-27 06:51:00
+2:51 AM,25.0,21.9,88,30.46,4.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-27 07:51:00
+3:51 AM,24.8,19.4,80,30.44,4.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-27 08:51:00
+4:51 AM,23.0,19.9,88,30.48,5.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-27 09:51:00
+5:49 AM,23.0,21.2,93,30.47,1.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-27 10:49:00
+5:51 AM,23.0,21.0,92,30.48,0.2,Calm,Calm,-,N/A,Fog,Light Freezing Fog,0,2013-01-27 10:51:00
+5:55 AM,23.0,21.2,93,30.47,0.2,Calm,Calm,-,N/A,Fog,Light Freezing Fog,0,2013-01-27 10:55:00
+6:51 AM,24.1,21.9,91,30.50,0.2,Calm,Calm,-,N/A,Fog,Light Freezing Fog,0,2013-01-27 11:51:00
+7:51 AM,24.1,21.0,88,30.56,0.2,Calm,Calm,-,N/A,Fog,Light Freezing Fog,0,2013-01-27 12:51:00
+8:00 AM,23.0,21.2,93,30.54,1.5,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-27 13:00:00
+8:26 AM,24.8,21.2,86,30.56,0.2,ENE,4.6,-,N/A,Fog,Light Freezing Fog,60,2013-01-27 13:26:00
+8:51 AM,25.0,24.1,96,30.58,0.5,ENE,4.6,-,N/A,Fog,Light Freezing Fog,70,2013-01-27 13:51:00
+9:04 AM,26.6,24.8,93,30.56,1.5,ENE,3.5,-,N/A,,Mostly Cloudy,60,2013-01-27 14:04:00
+9:24 AM,26.6,24.8,93,30.57,1.5,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 14:24:00
+9:29 AM,26.6,24.8,93,30.58,3.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 14:29:00
+9:51 AM,28.0,25.0,88,30.60,5.0,East,4.6,-,N/A,,Mostly Cloudy,80,2013-01-27 14:51:00
+10:51 AM,30.9,25.0,79,30.61,8.0,ESE,10.4,-,N/A,,Scattered Clouds,110,2013-01-27 15:51:00
+11:51 AM,35.1,23.0,61,30.59,10.0,ESE,6.9,-,N/A,,Mostly Cloudy,110,2013-01-27 16:51:00
+12:51 PM,37.0,24.1,59,30.56,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2013-01-27 17:51:00
+1:51 PM,37.9,24.1,57,30.54,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 18:51:00
+2:51 PM,39.9,25.0,55,30.54,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 19:51:00
+3:51 PM,39.0,23.0,53,30.54,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 20:51:00
+4:51 PM,39.0,24.1,55,30.53,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 21:51:00
+5:51 PM,37.9,25.0,60,30.56,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-27 22:51:00
+6:51 PM,35.1,25.0,67,30.55,9.0,East,3.5,-,N/A,,Mostly Cloudy,100,2013-01-27 23:51:00
+7:51 PM,34.0,25.0,70,30.56,9.0,SSE,4.6,-,N/A,,Mostly Cloudy,150,2013-01-28 00:51:00
+8:51 PM,33.1,26.1,75,30.55,9.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-28 01:51:00
+9:51 PM,30.0,25.0,82,30.54,8.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-28 02:51:00
+10:51 PM,32.0,27.0,82,30.53,8.0,Calm,Calm,-,N/A,,Overcast,0,2013-01-28 03:51:00
+11:51 PM,33.1,26.1,75,30.51,8.0,Calm,Calm,-,N/A,,Overcast,0,2013-01-28 04:51:00

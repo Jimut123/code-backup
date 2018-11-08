@@ -1,0 +1,46 @@
+import java.io.*;
+class Admirable
+{
+    BufferedReader br =new BufferedReader (new InputStreamReader(System.in));
+    int n,p=1,arr[],t,sum=0,i,j=0;
+    public void disp()throws IOException
+    {
+        System.out.println("Enter number");
+        n=Integer.parseInt(br.readLine());
+        int arr[]=new int[100];
+        while(p<=(n/2))
+        {
+            if((n/p)==0)
+            {
+                arr[t]=p;
+            }
+            p++;
+            t++;
+        }
+        while(j<=t)
+        {
+            for(i=0;i<t;i++)
+            {
+                if(i!=j)
+                {
+                    sum=sum+arr[i];
+                }
+            }
+            sum=sum-arr[j];
+            j++;
+            if(sum==n)
+            {
+                System.out.println("It is an admirable number");
+            }
+            sum=0;
+        }
+        if(j>t)
+        {
+            System.out.println("It is not an admirable number");
+        }
+    }
+    public void main()throws IOException
+    {
+        disp();
+    }
+}

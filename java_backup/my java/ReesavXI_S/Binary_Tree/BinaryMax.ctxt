@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BinaryMax()
+comment1.params=x
+comment1.target=void\ insert(int)
+comment2.params=n\ x
+comment2.target=TreeNode\ insert(TreeNode,\ int)
+comment3.params=
+comment3.target=void\ maxR()
+comment4.params=n
+comment4.target=void\ find_maxR(TreeNode)
+comment5.params=
+comment5.target=void\ maxL()
+comment6.params=n
+comment6.target=void\ find_maxL(TreeNode)
+comment7.params=
+comment7.target=void\ print()
+numComments=8

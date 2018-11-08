@@ -1,0 +1,8 @@
+class gift
+    {
+        public static void main(String your_name)
+            {
+                System.out.println("HAPPY TEACHERS' DAY);
+            }
+        }
+        

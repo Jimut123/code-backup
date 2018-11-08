@@ -1,0 +1,31 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,78.1,68.0,71,30.07,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,240,2014-06-19 04:51:00
+1:51 AM,75.0,68.0,79,30.06,10.0,WSW,6.9,-,N/A,,Scattered Clouds,240,2014-06-19 05:51:00
+2:51 AM,75.0,66.9,76,30.06,9.0,SW,3.5,-,N/A,,Scattered Clouds,220,2014-06-19 06:51:00
+3:51 AM,73.9,66.9,79,30.05,8.0,WSW,3.5,-,N/A,,Mostly Cloudy,240,2014-06-19 07:51:00
+4:51 AM,73.0,66.0,79,30.04,10.0,SW,6.9,-,N/A,,Scattered Clouds,230,2014-06-19 08:51:00
+5:51 AM,73.4,64.4,73,30.08,10.0,WSW,8.1,-,N/A,,Scattered Clouds,240,2014-06-19 09:51:00
+6:51 AM,73.9,66.0,76,30.08,10.0,SW,9.2,-,N/A,,Partly Cloudy,230,2014-06-19 10:51:00
+7:51 AM,77.0,66.9,71,30.09,10.0,WSW,8.1,-,N/A,,Partly Cloudy,240,2014-06-19 11:51:00
+8:51 AM,80.1,68.0,67,30.09,10.0,WSW,12.7,-,N/A,,Partly Cloudy,240,2014-06-19 12:51:00
+9:51 AM,84.2,69.8,62,30.10,10.0,WSW,8.1,-,N/A,,Partly Cloudy,240,2014-06-19 13:51:00
+10:51 AM,88.0,70.0,55,30.08,10.0,WSW,9.2,-,N/A,,Scattered Clouds,240,2014-06-19 14:51:00
+11:51 AM,90.0,71.1,54,30.08,10.0,WSW,9.2,-,N/A,,Scattered Clouds,240,2014-06-19 15:51:00
+12:51 PM,91.9,71.1,50,30.06,10.0,WSW,8.1,-,N/A,,Scattered Clouds,240,2014-06-19 16:51:00
+1:51 PM,93.9,68.0,43,30.04,10.0,West,9.2,-,N/A,,Mostly Cloudy,270,2014-06-19 17:51:00
+2:51 PM,96.1,68.0,40,30.02,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2014-06-19 18:51:00
+3:51 PM,96.1,66.9,38,30.00,10.0,SW,6.9,-,N/A,,Scattered Clouds,220,2014-06-19 19:51:00
+4:51 PM,91.9,66.9,44,29.99,10.0,WSW,9.2,-,N/A,,Mostly Cloudy,250,2014-06-19 20:51:00
+5:25 PM,89.6,66.2,46,29.99,10.0,SW,10.4,-,N/A,Thunderstorm,Thunderstorm,230,2014-06-19 21:25:00
+5:51 PM,75.9,66.0,71,30.00,8.0,ENE,11.5,-,0.00,Rain-Thunderstorm,Light Thunderstorms and Rain,70,2014-06-19 21:51:00
+6:30 PM,75.2,69.8,83,30.00,10.0,Calm,Calm,-,0.00,Rain,Light Rain,0,2014-06-19 22:30:00
+6:51 PM,77.0,69.8,78,30.00,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-06-19 22:51:00
+7:51 PM,79.0,66.9,66,30.01,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-06-19 23:51:00
+8:51 PM,77.0,66.9,71,29.99,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-06-20 00:51:00
+9:51 PM,73.9,68.0,82,29.99,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-06-20 01:51:00
+10:51 PM,77.0,68.0,74,30.02,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-06-20 02:51:00
+11:03 PM,77.0,68.0,74,30.02,10.0,West,3.5,-,N/A,Thunderstorm,Thunderstorm,260,2014-06-20 03:03:00
+11:10 PM,75.2,68.0,78,30.03,1.0,West,10.4,16.1,0.00,Rain-Thunderstorm,Heavy Thunderstorms and Rain,270,2014-06-20 03:10:00
+11:21 PM,73.4,62.6,69,30.05,1.0,South,16.1,47.2,0.10,Rain-Thunderstorm,Heavy Thunderstorms and Rain,170,2014-06-20 03:21:00
+11:32 PM,75.2,62.6,65,30.03,9.0,South,5.8,20.7,0.27,Rain-Thunderstorm,Light Thunderstorms and Rain,170,2014-06-20 03:32:00
+11:51 PM,70.0,66.9,90,30.01,10.0,NE,8.1,-,0.27,Thunderstorm,Thunderstorm,50,2014-06-20 03:51:00

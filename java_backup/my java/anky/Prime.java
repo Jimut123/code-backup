@@ -1,0 +1,50 @@
+import java.io.*;
+class Prime
+{
+    public void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String fname=("Prime.txt");
+        FileWriter fw=new FileWriter(fname);
+        BufferedWriter bw=new BufferedWriter(fw);
+        PrintWriter pw=new PrintWriter(bw);
+        int g=0;
+        System.out.println("Enter number");
+        int n=Integer.parseInt(br.readLine());
+        for(n=1;n<=100;n++)
+        {
+            g=0;
+        for(int i=2;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                g=1;
+                break;
+            }
+        }
+        if(g==0)
+        {
+            System.out.println("Number:"+n);
+            pw.println(n);
+            pw.println("");
+        }
+    }
+        fw.close();
+        //pw.close();
+        FileReader f=new FileReader("Prime.txt");
+        BufferedReader b=new BufferedReader(f);
+        int k;
+        String s;
+        
+        while(true)
+        {
+          s=b.readLine();
+          System.out.println("Number:"+s);
+          if(s==null)
+           break;
+            k=Integer.parseInt(s);
+            System.out.println("Prime no is:"+k);
+        }
+        b.close();
+    }
+}

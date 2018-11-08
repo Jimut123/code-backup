@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,71.6,69.8,94,29.81,9.0,South,5.8,-,N/A,Fog,Patches of Fog,170,2014-08-19 04:51:00
+1:51 AM,73.0,69.1,87,29.80,10.0,SW,8.1,-,N/A,,Mostly Cloudy,220,2014-08-19 05:51:00
+2:51 AM,72.0,70.0,93,29.78,10.0,SW,3.5,-,N/A,,Mostly Cloudy,230,2014-08-19 06:51:00
+3:51 AM,71.1,68.0,90,29.78,9.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-08-19 07:51:00
+4:51 AM,70.0,68.0,93,29.78,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-08-19 08:51:00
+5:51 AM,69.1,66.9,93,29.79,4.0,WSW,3.5,-,N/A,Fog,Patches of Fog,250,2014-08-19 09:51:00
+6:29 AM,69.8,68.0,94,29.82,5.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-08-19 10:29:00
+6:51 AM,70.0,68.0,93,29.81,5.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-08-19 10:51:00
+7:24 AM,69.8,68.0,94,29.83,8.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-19 11:24:00
+7:51 AM,72.0,70.0,93,29.83,8.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-19 11:51:00
+8:24 AM,73.4,69.8,88,29.84,8.0,North,4.6,-,N/A,,Mostly Cloudy,360,2014-08-19 12:24:00
+8:51 AM,73.0,70.0,90,29.84,7.0,Variable,3.5,-,N/A,,Overcast,0,2014-08-19 12:51:00
+9:51 AM,75.9,70.0,82,29.85,10.0,NW,3.5,-,N/A,,Mostly Cloudy,310,2014-08-19 13:51:00
+10:51 AM,78.1,71.1,79,29.86,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-08-19 14:51:00
+11:51 AM,80.1,70.0,71,29.86,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-08-19 15:51:00
+1:51 PM,82.9,69.1,63,29.86,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2014-08-19 17:51:00
+2:51 PM,84.9,70.0,61,29.84,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-08-19 18:51:00
+3:51 PM,84.0,69.1,61,29.82,10.0,NE,6.9,-,N/A,,Scattered Clouds,40,2014-08-19 19:51:00
+4:51 PM,86.0,69.8,58,29.84,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2014-08-19 20:51:00
+5:51 PM,86.0,69.1,57,29.82,10.0,NNE,4.6,-,N/A,,Scattered Clouds,20,2014-08-19 21:51:00
+6:51 PM,81.0,71.1,72,29.82,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-19 22:51:00
+7:51 PM,79.0,70.0,74,29.84,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-19 23:51:00
+8:51 PM,77.0,71.1,82,29.86,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-20 00:51:00
+9:51 PM,75.0,71.1,87,29.88,9.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-08-20 01:51:00
+10:51 PM,75.2,71.6,89,29.89,9.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2014-08-20 02:51:00
+11:51 PM,73.4,69.8,88,29.90,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-08-20 03:51:00

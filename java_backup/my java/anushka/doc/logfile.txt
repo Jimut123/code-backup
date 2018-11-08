@@ -1,0 +1,173 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.6.0_23\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;E:\My Documents\my java\anushka
+-d
+E:\My Documents\my java\anushka\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+E:\My Documents\my java\anushka\CIRCULAR.java
+<---- end of javadoc command ---->
+Loading source file E:\My Documents\my java\anushka\CIRCULAR.java...
+E:\My Documents\my java\anushka\CIRCULAR.java:10: illegal start of type
+   for(i=2;i<=n1;i++)
+   ^
+E:\My Documents\my java\anushka\CIRCULAR.java:10: <identifier> expected
+   for(i=2;i<=n1;i++)
+        ^
+E:\My Documents\my java\anushka\CIRCULAR.java:10: ';' expected
+   for(i=2;i<=n1;i++)
+         ^
+E:\My Documents\my java\anushka\CIRCULAR.java:10: <identifier> expected
+   for(i=2;i<=n1;i++)
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:10: <identifier> expected
+   for(i=2;i<=n1;i++)
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:10: <identifier> expected
+   for(i=2;i<=n1;i++)
+                  ^
+E:\My Documents\my java\anushka\CIRCULAR.java:10: illegal start of type
+   for(i=2;i<=n1;i++)
+                    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:10: <identifier> expected
+   for(i=2;i<=n1;i++)
+                     ^
+E:\My Documents\my java\anushka\CIRCULAR.java:11: ';' expected
+   {
+    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:12: illegal start of type
+       if(n1%i==0)
+         ^
+E:\My Documents\my java\anushka\CIRCULAR.java:12: ';' expected
+       if(n1%i==0)
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:12: <identifier> expected
+       if(n1%i==0)
+              ^
+E:\My Documents\my java\anushka\CIRCULAR.java:12: illegal start of type
+       if(n1%i==0)
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:12: <identifier> expected
+       if(n1%i==0)
+                 ^
+E:\My Documents\my java\anushka\CIRCULAR.java:12: ';' expected
+       if(n1%i==0)
+                  ^
+E:\My Documents\my java\anushka\CIRCULAR.java:14: <identifier> expected
+           f=1;
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:15: illegal start of type
+           break;
+           ^
+E:\My Documents\my java\anushka\CIRCULAR.java:17: class, interface, or enum expected
+    }
+    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:20: class, interface, or enum expected
+                n1=n;
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:21: class, interface, or enum expected
+            c=0;
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:22: class, interface, or enum expected
+            while(n1>0)
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:25: class, interface, or enum expected
+                c++;
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:26: class, interface, or enum expected
+                n1=n1/10;
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:27: class, interface, or enum expected
+            }
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:29: class, interface, or enum expected
+            k=0;
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:30: class, interface, or enum expected
+            while(i<=c)
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:33: class, interface, or enum expected
+                i++;
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:34: class, interface, or enum expected
+            }
+            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:38: class, interface, or enum expected
+                n1=n;
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:39: class, interface, or enum expected
+                while(n1>0)
+                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:42: class, interface, or enum expected
+                    f1=1;
+                    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:43: class, interface, or enum expected
+                    for(j=1;j<=k;j++)
+                    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:43: class, interface, or enum expected
+                    for(j=1;j<=k;j++)
+                            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:43: class, interface, or enum expected
+                    for(j=1;j<=k;j++)
+                                 ^
+E:\My Documents\my java\anushka\CIRCULAR.java:46: class, interface, or enum expected
+                        s=s+f1;
+                        ^
+E:\My Documents\my java\anushka\CIRCULAR.java:47: class, interface, or enum expected
+                    }
+                    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:49: class, interface, or enum expected
+                    }
+                    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:51: class, interface, or enum expected
+                for(i=n;i<=k;i++)
+                        ^
+E:\My Documents\my java\anushka\CIRCULAR.java:51: class, interface, or enum expected
+                for(i=n;i<=k;i++)
+                             ^
+E:\My Documents\my java\anushka\CIRCULAR.java:59: class, interface, or enum expected
+                                for(i=2;i<=n;i++)
+                                        ^
+E:\My Documents\my java\anushka\CIRCULAR.java:59: class, interface, or enum expected
+                                for(i=2;i<=n;i++)
+                                             ^
+E:\My Documents\my java\anushka\CIRCULAR.java:63: class, interface, or enum expected
+                                        f=1;break;
+                                            ^
+E:\My Documents\my java\anushka\CIRCULAR.java:64: class, interface, or enum expected
+                                    }
+                                    ^
+E:\My Documents\my java\anushka\CIRCULAR.java:69: class, interface, or enum expected
+                                }
+                                ^
+E:\My Documents\my java\anushka\CIRCULAR.java:78: class, interface, or enum expected
+    public static void main(String args[])throws IOException
+                  ^
+E:\My Documents\my java\anushka\CIRCULAR.java:80: class, interface, or enum expected
+        s=ob.factsum(n);
+        ^
+E:\My Documents\my java\anushka\CIRCULAR.java:81: class, interface, or enum expected
+        n=ob.primecheck(i);
+        ^
+E:\My Documents\my java\anushka\CIRCULAR.java:82: class, interface, or enum expected
+    }
+    ^
+48 errors

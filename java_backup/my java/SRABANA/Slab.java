@@ -1,0 +1,24 @@
+import java.util.*;
+class Slab
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double g,r;
+        System.out.println("Enter gallons of water consumed");
+        g=sc.nextDouble();
+        if (g<=45)
+        r=0;
+        else if((45<g)&&(g<=75))
+        r=g*(475/100);
+        else if((g>75)&&(g<=125))
+        r=g*(750/100)+(475/100);
+        else if((g>125)&&(g<200))
+        r=g*(1225/100)+(750/100)+(475/100);
+        else if((g>200)&&(g<350))
+        r=g*(1650/100)+(1225/100)+(750/100)+(475/100);
+        else
+        r=g*(2000/100)+(1650/100)+(1225/100)+(750/100)+(475/100);
+        System.out.println(r);
+    }
+}

@@ -1,0 +1,21 @@
+#BlueJ package file
+package.editor.height=575
+package.editor.width=906
+package.editor.x=16
+package.editor.y=16
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.editor.height=746
+target1.editor.width=1032
+target1.editor.x=-2
+target1.editor.y=0
+target1.height=50
+target1.name=max_vowel_min_no_vowel
+target1.naviview.expanded=false
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=180
+target1.x=160
+target1.y=20

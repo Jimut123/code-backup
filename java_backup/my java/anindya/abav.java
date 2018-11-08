@@ -1,0 +1,10 @@
+   import java.lang.*;
+  class abav
+  {
+      public static void main(int a,int b,int c,int d)
+      {
+          int e;
+          e = (a+b+c+d)/4;
+          System.out.println(e);
+        }
+    }

@@ -1,0 +1,31 @@
+import java.io.*;
+class unique
+{
+    public static void main(int n)
+    {
+        int r,c=0,dup=n,f=0,i;
+        for(i=0;i<9;i++)
+        {
+            n=dup;c=0;
+            do
+            {
+                r=n%10;
+                if(r==i)
+                {
+                    c++;
+                }
+                n=n/10;
+            }while(n!=0);
+            if(c>1)
+            {
+                f=1;
+                System.out.println("not unique");
+                break;
+            }
+            else
+            continue;
+        }
+        if(f!=1)
+        System.out.println("unique");
+    }
+}

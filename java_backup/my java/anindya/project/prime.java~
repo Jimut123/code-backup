@@ -1,0 +1,25 @@
+package project;
+
+
+\\Print all the prime number upto "N"\\
+
+class prime
+{
+  public static void main(int n)
+  {
+      int i,f;
+      for(i=1;i<=n;i++)
+      {
+      f=0;
+      for(int j=2;j<i;j++)
+      if(i%j==0)
+      {
+          f = 1;
+          break;
+        }
+        if (f == 0)
+        System.out.println(i);
+    }
+}
+}
+      

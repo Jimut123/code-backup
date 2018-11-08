@@ -1,0 +1,35 @@
+5import java.util.*;
+class cr7
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    int a,b,c,f,ch;
+    System.out.println("enter any no.");
+    System.out.println("press 1 for swap of two nos.");
+    System.out.println("press 2 for convert from centigrade to fahrenheit");
+    System.out.println("press 3 for convert from fahrenheit to centigrade");
+    ch=Sc.nextInt();
+    Switch(ch);
+    {
+        a=Sc.nextInt();
+        b=Sc.nextInt();
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println(a+" "+b);
+        break;
+        Case 2:
+        f=Sc.nextInt();
+        c=5*((f-32)/9);
+        System.out.println(c);
+        break;
+        Case 3:
+        c=Sc.nextInt();
+        f=9*((c+160)/5);
+        System.out.println(f);
+        break;
+        default:System.out.println("error");
+    }
+}
+}

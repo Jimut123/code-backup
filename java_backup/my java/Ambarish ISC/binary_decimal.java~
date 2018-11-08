@@ -1,0 +1,48 @@
+import java.io.*;
+class decimal_binary
+{
+public static void main()throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int i,n,d;String s;
+System.out.print("Enter the number");
+n=Integer.parseInt(br.readLine());
+s=br.readLine();
+String w,w1;
+w=w1="";
+for(i=0;i<s.length();i++)
+{
+    if(s.charAt(i)=='')
+    { int p=i;
+        break;
+    }
+    else
+    { w=w+s.charAt(i);
+    }
+    for(i=p+1;i<s.length();i++)
+    w1=w1+s.charAt(i);
+}
+double x,x1;
+c=0;
+for(i=0;i<w.length();i++)
+{ 
+  if(w.charAt(i)=='1')
+  {
+      x=x+1*Math.pow(2,c);
+    }
+    c++;
+}
+c=-1;
+for(i=0;i<w.length();i++)
+{
+    if(w.charAt(i)=='1')
+    {
+        x1=x1+1*Math.pow(2,c);
+    }
+    c=c-1;
+}
+x=x+x1;
+System.out.print(x);
+}
+}
+        

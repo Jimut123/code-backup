@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=length\ breadth
+comment0.target=Perimeter(double,\ double)
+comment1.params=
+comment1.target=double\ calculate()
+comment2.params=
+comment2.target=void\ show()
+numComments=3

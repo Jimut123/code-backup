@@ -1,0 +1,11 @@
+class program12
+{
+    public ststic void main(int v)
+    {
+        int a,m,i
+        a=3.14*^*^;
+        i=2*3.14*^;
+        System.out.println("area="+a);
+        System.out.println("circumference="+i);
+    }
+}

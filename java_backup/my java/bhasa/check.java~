@@ -1,0 +1,49 @@
+
+import near.prime;
+import java.io.*;
+import java.util.*;
+class check extends number
+{
+public static void main()throws IOException
+{
+check c=new check();
+c.input();
+}
+void input()throws IOException
+{
+int n,k;
+Scanner ob=new Scanner (System.in);
+near.prime p=new near.prime ();
+PrintWriter pw=new PrintWriter(new BufferedWriter(new FileWriter("pal.dat")));
+do
+{
+System.out.println("\nenter the number ::: ");
+n=ob.nextInt();
+if(reverse(n)==n)
+pw.println(n);
+else
+{
+System.out.println("\nnearest lower prime number : \n"+p.low(n));
+System.out.println("\nnearest higher prime number : \n"+p.high(n));
+}
+System.out.println("\nwant to enter more ? (yes=1/no=0) : ");
+k=ob.nextInt();
+}while(k==1);
+pw.close();
+String s="";
+System.out.println("\noutput of the file");
+BufferedReader br=new BufferedReader(new FileReader("pal.dat"));
+while((s=br.readLine())!=null)
+System.out.println(s);
+}
+int reverse(int i)
+{
+int t=0;
+while(i>0)
+{
+t=(t*10)+(i%10);
+i=i/10;
+}
+return t;
+}
+}

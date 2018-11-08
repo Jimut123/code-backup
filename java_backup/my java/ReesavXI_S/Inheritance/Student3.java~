@@ -1,0 +1,15 @@
+package Inheritance;
+import java.util.*;
+class Student3
+{
+    String name="";
+    int roll;
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your name ");
+        name=sc.nextLine();
+        System.out.print("Enter your roll ");
+        roll=sc.nextInt();
+    }
+}

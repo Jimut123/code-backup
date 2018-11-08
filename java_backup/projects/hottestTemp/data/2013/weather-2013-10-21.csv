@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,43.0,41.0,93,30.13,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 04:51:00
+1:51 AM,43.0,39.9,89,30.13,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 05:51:00
+2:51 AM,42.1,39.0,89,30.13,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 06:51:00
+3:51 AM,42.1,39.9,92,30.12,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 07:51:00
+4:51 AM,42.1,39.0,89,30.12,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 08:51:00
+5:51 AM,41.0,39.0,93,30.13,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 09:51:00
+6:51 AM,39.0,37.9,96,30.15,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-21 10:51:00
+7:51 AM,39.0,37.9,96,30.17,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-10-21 11:51:00
+8:51 AM,46.0,45.0,96,30.17,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-10-21 12:51:00
+9:51 AM,55.0,48.0,77,30.17,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-21 13:51:00
+10:51 AM,57.9,46.9,67,30.17,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2013-10-21 14:51:00
+11:51 AM,63.0,43.0,48,30.16,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-21 15:51:00
+12:51 PM,63.0,42.1,46,30.15,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-21 16:51:00
+1:51 PM,64.9,42.1,43,30.11,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-21 17:51:00
+2:51 PM,66.0,42.1,42,30.08,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-10-21 18:51:00
+3:51 PM,66.9,42.1,40,30.06,10.0,SE,3.5,-,N/A,,Scattered Clouds,140,2013-10-21 19:51:00
+4:51 PM,66.0,43.0,43,30.05,10.0,West,3.5,-,N/A,,Mostly Cloudy,270,2013-10-21 20:51:00
+5:51 PM,62.1,46.0,56,30.04,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-21 21:51:00
+6:51 PM,59.0,48.0,67,30.06,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-21 22:51:00
+7:51 PM,55.9,48.0,75,30.04,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-10-21 23:51:00
+8:51 PM,55.9,48.0,75,30.04,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-10-22 00:51:00
+9:51 PM,55.9,48.0,75,30.06,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-10-22 01:51:00
+10:51 PM,54.0,48.0,80,30.04,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-10-22 02:51:00
+11:51 PM,53.1,48.0,83,30.02,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-22 03:51:00

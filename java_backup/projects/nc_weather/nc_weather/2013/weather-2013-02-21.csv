@@ -1,0 +1,24 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,36.0,15.1,43,30.13,10.0,NE,4.6,-,N/A,,Mostly Cloudy,40,2013-02-21 05:51:00
+1:51 AM,35.1,15.1,44,30.13,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-02-21 06:51:00
+2:51 AM,30.9,17.1,57,30.15,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-02-21 07:51:00
+3:51 AM,30.0,16.0,56,30.15,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-02-21 08:51:00
+4:51 AM,27.0,17.1,66,30.17,10.0,Calm,Calm,-,N/A,,Clear,0,2013-02-21 09:51:00
+5:51 AM,26.1,17.1,69,30.18,10.0,Calm,Calm,-,N/A,,Clear,0,2013-02-21 10:51:00
+6:51 AM,26.1,17.1,69,30.20,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-02-21 11:51:00
+7:51 AM,28.9,19.9,69,30.22,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-02-21 12:51:00
+8:51 AM,35.1,15.1,44,30.23,10.0,NNE,5.8,-,N/A,,Clear,30,2013-02-21 13:51:00
+9:51 AM,37.9,16.0,41,30.22,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2013-02-21 14:51:00
+10:51 AM,42.1,17.1,37,30.21,10.0,Variable,6.9,-,N/A,,Partly Cloudy,0,2013-02-21 15:51:00
+11:51 AM,46.0,18.0,33,30.20,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-02-21 16:51:00
+12:51 PM,51.1,19.0,28,30.17,10.0,West,8.1,-,N/A,,Partly Cloudy,270,2013-02-21 17:51:00
+1:51 PM,51.8,15.8,24,30.14,10.0,Variable,4.6,-,N/A,,Clear,0,2013-02-21 18:51:00
+2:51 PM,53.1,16.0,23,30.13,10.0,West,9.2,-,N/A,,Partly Cloudy,280,2013-02-21 19:51:00
+3:51 PM,54.0,17.1,23,30.13,10.0,NW,4.6,-,N/A,,Partly Cloudy,320,2013-02-21 20:51:00
+4:51 PM,53.1,16.0,23,30.14,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-02-21 21:51:00
+5:51 PM,48.9,17.1,28,30.18,10.0,NNE,3.5,-,N/A,,Scattered Clouds,30,2013-02-21 22:51:00
+6:51 PM,46.0,19.0,34,30.16,10.0,NE,9.2,-,N/A,,Mostly Cloudy,40,2013-02-21 23:51:00
+7:51 PM,44.1,19.0,37,30.22,10.0,ENE,4.6,-,N/A,,Mostly Cloudy,60,2013-02-22 00:51:00
+8:51 PM,42.1,23.0,47,30.22,10.0,ENE,5.8,-,N/A,,Overcast,70,2013-02-22 01:51:00
+10:51 PM,43.0,19.9,40,30.25,10.0,East,10.4,-,N/A,,Overcast,80,2013-02-22 03:51:00
+11:51 PM,42.1,19.9,41,30.23,10.0,East,13.8,-,N/A,,Overcast,80,2013-02-22 04:51:00

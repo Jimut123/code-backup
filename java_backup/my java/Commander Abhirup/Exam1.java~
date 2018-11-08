@@ -1,0 +1,22 @@
+
+import java.io.*;
+import java.util.*;
+public class Exam1
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int s,i,n;i=0,n=0;
+        s=0;
+        System.out.print("Enter limit");
+        n=sc.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            s=s+(i+(i+1))*(i+2);
+            System.out.println("The sum="+s);
+        }
+    }
+}
+
+            
+        

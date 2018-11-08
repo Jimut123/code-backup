@@ -1,0 +1,26 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,30.0,26.1,85,30.40,10.0,Calm,Calm,-,N/A,,Clear,0,2012-11-29 05:51:00
+1:51 AM,28.4,26.6,93,30.40,10.0,Calm,Calm,-,N/A,,Clear,0,2012-11-29 06:51:00
+2:51 AM,28.4,24.8,86,30.41,10.0,Calm,Calm,-,N/A,,Clear,0,2012-11-29 07:51:00
+3:51 AM,27.0,24.1,89,30.42,8.0,Calm,Calm,-,N/A,,Clear,0,2012-11-29 08:51:00
+4:51 AM,27.0,24.1,89,30.42,8.0,Calm,Calm,-,N/A,,Clear,0,2012-11-29 09:51:00
+5:03 AM,26.6,24.8,93,30.41,8.0,Calm,Calm,-,N/A,Fog,Light Freezing Fog,0,2012-11-29 10:03:00
+5:51 AM,27.0,23.0,85,30.43,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-29 10:51:00
+6:51 AM,27.0,24.1,89,30.46,10.0,Calm,Calm,-,N/A,,Clear,0,2012-11-29 11:51:00
+7:51 AM,28.0,25.0,88,30.47,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-29 12:51:00
+8:51 AM,35.1,28.9,78,30.48,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-29 13:51:00
+9:51 AM,43.0,27.0,53,30.49,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2012-11-29 14:51:00
+10:51 AM,48.0,26.1,42,30.49,10.0,West,4.6,-,N/A,,Partly Cloudy,260,2012-11-29 15:51:00
+11:51 AM,50.0,25.0,38,30.48,10.0,South,3.5,-,N/A,,Partly Cloudy,190,2012-11-29 16:51:00
+12:51 PM,52.0,23.0,32,30.45,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-29 17:51:00
+1:51 PM,53.1,24.1,32,30.42,10.0,SSW,5.8,-,N/A,,Partly Cloudy,210,2012-11-29 18:51:00
+2:51 PM,54.0,27.0,35,30.40,10.0,WSW,8.1,-,N/A,,Partly Cloudy,240,2012-11-29 19:51:00
+3:51 PM,54.0,27.0,35,30.39,10.0,WSW,5.8,-,N/A,,Partly Cloudy,240,2012-11-29 20:51:00
+4:51 PM,48.9,28.0,44,30.38,10.0,SW,3.5,-,N/A,,Partly Cloudy,230,2012-11-29 21:51:00
+5:51 PM,44.6,28.4,53,30.39,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-29 22:51:00
+6:51 PM,43.0,28.9,58,30.40,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-29 23:51:00
+7:51 PM,42.1,28.9,60,30.41,10.0,Calm,Calm,-,N/A,,Clear,0,2012-11-30 00:51:00
+8:51 PM,37.9,28.0,68,30.42,10.0,Calm,Calm,-,N/A,,Clear,0,2012-11-30 01:51:00
+9:51 PM,37.9,28.9,70,30.41,10.0,Calm,Calm,-,N/A,,Clear,0,2012-11-30 02:51:00
+10:51 PM,36.0,28.0,73,30.41,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-30 03:51:00
+11:51 PM,35.1,28.0,76,30.40,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-11-30 04:51:00

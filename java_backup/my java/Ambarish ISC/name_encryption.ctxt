@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=name_encryption(java.lang.String)
+comment1.params=
+comment1.target=void\ clac()
+comment2.params=n1
+comment2.target=int\ add_as(java.lang.String)
+comment3.params=n1
+comment3.target=int\ single_d(int)
+numComments=4

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=class\ sort
+comment1.target=n
+comment10.target=class\ SelectionSort
+comment11.params=args
+comment11.target=void\ main(String[])
+comment2.params=
+comment2.target=void\ get()
+comment3.target=j
+comment4.params=a
+comment4.target=void\ calc(int[])
+comment5.target=i
+comment6.target=arr
+comment7.params=a
+comment7.target=void\ show(int[])
+comment8.target=br
+comment9.target=s
+numComments=12

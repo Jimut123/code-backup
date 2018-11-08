@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ pal()
+comment1.params=num\ base
+comment1.target=int\ check(long,\ int)
+numComments=2

@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=r\ g\ b\ g1
+comment0.target=void\ Color(int,\ int,\ int,\ java.awt.Graphics)
+numComments=1

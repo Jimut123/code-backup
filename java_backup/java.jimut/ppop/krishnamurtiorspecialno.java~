@@ -1,0 +1,36 @@
+import java.io.*;
+class krishnamurtiorspecialno
+{
+public static void main(String[]args)throws IOException
+{
+InputStreamReader ab=new InputStreamReader(System.in);
+BufferedReader cd=new BufferedReader(ab);
+int i,j,m,s=1,n,f=0,k;
+n=Integer.parseInt(cd.readLine());
+k=Integer.parseInt(cd.readLine());
+for(i=1;i<n;i++)
+{
+j=i;
+s=0;
+while(j>0)
+{
+k=j%10;
+f=1;
+for(m=1;m<=k;m++)
+{
+s=s*m;
+s++;
+j=j/10;
+}
+}
+}
+if(s==i)
+{
+System.out.println("Krishnamurti no");
+}
+else
+{
+System.out.println("Not a Krishnamurti no");
+}
+}
+}

@@ -1,0 +1,85 @@
+package Stack;
+import java.io.*;
+class stack_file
+{
+    int a[],top,k,cr=0,dt;
+    FileOutputStream fout=new FileOutputStream("D://data.bin");
+    DataOutputStream dout=new DataOutputStream(fout);
+    stack_file()throws IOException
+    {
+        a=new int[100];
+        top=-1;
+    }
+    void PUSH()throws IOException
+    {
+        DataInputStream in=new DataInputStream(System.in);
+        System.out.print("Enter element ");
+        k=Integer.parseInt(in.readLine());
+        a[++top]=k;
+    }
+    void POP()throws IOException
+    {
+        DataInputStream in=new DataInputStream(System.in);
+        System.out.println("Popped element "+a[top]);
+        dout.writeInt(a[top]);
+        top--;
+        cr++;
+    }
+    void print()throws IOException
+    {
+        for(int i=top;i>=0;i--)
+        {
+            System.out.println(a[i]);
+        }
+    }
+    void print_file()throws IOException
+    {
+        DataInputStream in=new DataInputStream(System.in);
+        FileInputStream fin=new FileInputStream("D://data.bin");
+        DataInputStream din=new DataInputStream(fin);
+        boolean eof=false;
+        while(!eof)
+        {
+            try
+            {
+                for(int i=0;i<=cr;i++)
+                {
+                    dt=din.readInt();
+                    System.out.println(dt+" ");
+                }
+            }
+            catch(EOFException e)
+            {
+                eof=true;
+            }
+        }
+    }
+    void main()throws IOException
+    {
+        DataInputStream in=new DataInputStream(System.in);
+        stack_file stk=new stack_file();
+        int cas=0;
+        do
+        {
+            System.out.print("1 for push 2 for pop 3 for display 4 for read file ");
+            cas=Integer.parseInt(in.readLine());
+            switch(cas)
+            {
+                case 1:
+                stk.PUSH();
+                break;
+                case 2:
+                stk.POP();
+                break;
+                case 3:
+                stk.print();
+                break;
+                case 4:
+                stk.print_file();
+                break;
+                default:
+                System.exit(0);
+            }
+        }while(true);
+    }
+}

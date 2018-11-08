@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,53.1,44.1,71,30.10,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-28 04:51:00
+1:51 AM,51.1,44.1,77,30.11,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-28 05:51:00
+2:51 AM,54.0,45.0,72,30.11,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-28 06:51:00
+3:51 AM,55.9,46.0,69,30.11,10.0,Calm,Calm,-,N/A,,Clear,0,2014-10-28 07:51:00
+4:51 AM,55.0,46.9,74,30.12,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-28 08:51:00
+5:51 AM,51.1,46.9,86,30.13,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-10-28 09:51:00
+6:05 AM,51.8,48.2,88,30.14,9.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-10-28 10:05:00
+6:41 AM,53.6,48.2,82,30.14,9.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-10-28 10:41:00
+6:51 AM,54.0,48.9,83,30.14,9.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-10-28 10:51:00
+7:51 AM,53.1,50.0,89,30.14,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-10-28 11:51:00
+8:51 AM,55.9,53.1,90,30.15,10.0,SW,3.5,-,N/A,,Partly Cloudy,230,2014-10-28 12:51:00
+9:51 AM,63.0,57.9,84,30.16,10.0,SW,5.8,-,N/A,,Partly Cloudy,220,2014-10-28 13:51:00
+10:51 AM,70.0,60.1,71,30.14,10.0,WSW,5.8,-,N/A,,Partly Cloudy,240,2014-10-28 14:51:00
+11:51 AM,75.9,59.0,56,30.12,10.0,SSW,8.1,-,N/A,,Partly Cloudy,210,2014-10-28 15:51:00
+12:51 PM,80.1,59.0,48,30.11,10.0,SW,12.7,-,N/A,,Partly Cloudy,230,2014-10-28 16:51:00
+1:51 PM,82.9,59.0,44,30.08,10.0,WSW,10.4,-,N/A,,Partly Cloudy,240,2014-10-28 17:51:00
+2:51 PM,82.9,59.0,44,30.05,10.0,SSW,10.4,-,N/A,,Partly Cloudy,210,2014-10-28 18:51:00
+3:51 PM,84.0,59.0,43,30.04,10.0,SW,9.2,-,N/A,,Partly Cloudy,230,2014-10-28 19:51:00
+4:51 PM,81.0,57.0,44,30.04,10.0,SW,13.8,-,N/A,,Scattered Clouds,220,2014-10-28 20:51:00
+5:51 PM,78.1,55.9,46,30.04,10.0,SSW,8.1,-,N/A,,Mostly Cloudy,200,2014-10-28 21:51:00
+6:51 PM,73.9,57.0,55,30.04,10.0,South,6.9,-,N/A,,Mostly Cloudy,180,2014-10-28 22:51:00
+7:51 PM,71.1,57.0,61,30.05,10.0,SSW,3.5,-,N/A,,Mostly Cloudy,210,2014-10-28 23:51:00
+8:51 PM,71.1,55.9,59,30.04,10.0,South,6.9,-,N/A,,Mostly Cloudy,190,2014-10-29 00:51:00
+9:51 PM,70.0,55.9,61,30.04,10.0,SSW,6.9,-,N/A,,Mostly Cloudy,210,2014-10-29 01:51:00
+10:51 PM,71.6,55.4,57,30.04,10.0,South,6.9,-,N/A,,Mostly Cloudy,190,2014-10-29 02:51:00
+11:51 PM,70.0,55.9,61,30.03,10.0,SW,10.4,-,N/A,,Mostly Cloudy,220,2014-10-29 03:51:00

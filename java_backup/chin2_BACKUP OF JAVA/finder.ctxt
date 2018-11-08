@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=finder()
+comment1.params=s\ l
+comment1.target=finder(int,\ int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=d
+comment3.target=int\ check_Prime(int)
+comment4.params=
+comment4.target=int\ check_prime()
+comment5.params=
+comment5.target=void\ print_prime()
+numComments=6

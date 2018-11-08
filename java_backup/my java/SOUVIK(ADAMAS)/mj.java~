@@ -1,0 +1,23 @@
+class Souvik
+{
+int r;
+int f;
+int n;
+void input (int a)
+{
+n=a;
+}
+void check()
+{
+f=1;
+for(i=1;i<=n;i++)
+f=f*i;
+System.out.println (f);
+}
+public static void main(striny args[])
+{
+Souvik B =new Souvik();
+B.input (5);
+B.check ();
+}
+}

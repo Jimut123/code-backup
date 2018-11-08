@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,69.1,66.9,93,30.07,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-08-07 04:51:00
+1:51 AM,72.0,66.9,84,30.06,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-08-07 05:51:00
+2:51 AM,71.1,66.9,87,30.06,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-08-07 06:51:00
+3:51 AM,72.0,66.9,84,30.07,10.0,SSE,3.5,-,N/A,,Mostly Cloudy,160,2013-08-07 07:51:00
+4:51 AM,72.0,66.0,81,30.07,10.0,South,3.5,-,N/A,,Mostly Cloudy,180,2013-08-07 08:51:00
+5:51 AM,71.1,66.0,84,30.07,10.0,SSE,3.5,-,N/A,,Mostly Cloudy,160,2013-08-07 09:51:00
+6:51 AM,72.0,66.0,81,30.09,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-08-07 10:51:00
+7:51 AM,72.0,66.9,84,30.09,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-08-07 11:51:00
+8:51 AM,73.9,66.9,79,30.10,10.0,SSE,4.6,-,N/A,,Mostly Cloudy,160,2013-08-07 12:51:00
+9:51 AM,78.1,69.1,74,30.11,10.0,SSW,5.8,-,N/A,,Mostly Cloudy,200,2013-08-07 13:51:00
+10:51 AM,81.0,69.1,67,30.10,10.0,South,9.2,16.1,N/A,,Scattered Clouds,190,2013-08-07 14:51:00
+11:51 AM,82.9,69.1,63,30.10,10.0,South,5.8,-,N/A,,Scattered Clouds,180,2013-08-07 15:51:00
+12:51 PM,84.9,66.0,53,30.10,10.0,SSW,6.9,-,N/A,,Scattered Clouds,200,2013-08-07 16:51:00
+1:51 PM,84.9,66.0,53,30.08,10.0,South,8.1,-,N/A,,Scattered Clouds,190,2013-08-07 17:51:00
+2:51 PM,86.0,66.9,53,30.06,10.0,South,10.4,-,N/A,,Mostly Cloudy,190,2013-08-07 18:51:00
+3:51 PM,86.0,66.0,51,30.05,10.0,SSW,8.1,-,N/A,,Mostly Cloudy,200,2013-08-07 19:51:00
+4:51 PM,84.0,66.0,55,30.04,10.0,South,6.9,-,N/A,,Mostly Cloudy,170,2013-08-07 20:51:00
+5:51 PM,84.0,66.9,56,30.04,10.0,SSE,5.8,-,N/A,,Mostly Cloudy,150,2013-08-07 21:51:00
+6:51 PM,82.9,66.9,58,30.04,10.0,SSE,4.6,-,N/A,,Mostly Cloudy,150,2013-08-07 22:51:00
+7:51 PM,81.0,68.0,65,30.04,10.0,South,4.6,-,N/A,,Mostly Cloudy,170,2013-08-07 23:51:00
+8:51 PM,80.1,66.9,64,30.04,10.0,South,3.5,-,N/A,,Mostly Cloudy,180,2013-08-08 00:51:00
+9:51 PM,78.1,69.1,74,30.05,10.0,SSE,5.8,-,N/A,,Overcast,160,2013-08-08 01:51:00
+10:51 PM,78.1,66.9,68,30.06,10.0,South,8.1,-,N/A,,Mostly Cloudy,170,2013-08-08 02:51:00
+11:51 PM,77.0,66.9,71,30.06,10.0,SSE,6.9,-,N/A,,Mostly Cloudy,160,2013-08-08 03:51:00

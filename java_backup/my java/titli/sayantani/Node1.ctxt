@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=d\ l
+comment0.target=Node1(int,\ Node1)
+comment1.params=d\ l\ r
+comment1.target=Node1(int,\ Node1,\ Node1)
+numComments=2

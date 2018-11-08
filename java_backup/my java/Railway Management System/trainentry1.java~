@@ -1,0 +1,303 @@
+import java.io.*;
+class trainentry1
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    int i,n,p1,n1,n2;
+    double p2,p3;
+    trainentry1()
+    {
+        p2=0;
+        p3=0;
+    }
+    class train
+    {
+    String rc;
+    String tc;
+    String tnm;
+    String rt;
+    String aday;
+    String dday; 
+    String atime;
+    String dtime;
+    int seat;
+    void input()throws IOException
+    {
+     System.out.println("Enter Route-Code:");
+        rc=br.readLine();
+        System.out.println("Enter Train-Code:");
+        tc=br.readLine();
+        System.out.println("Enter Train Name:");
+        tnm=br.readLine();
+        System.out.println("Enter Train Route:");
+        rt=br.readLine();  
+        System.out.println("Enter Arrival-Day:");
+        aday=br.readLine();
+        System.out.println("Enter Departure-Day:");
+        dday=br.readLine();
+        System.out.println("Enter Arrival-Time:");
+        atime=br.readLine();  
+        System.out.println("Enter Departure-Time:");
+        dtime=br.readLine();   
+     System.out.println("Enter no. of seat:");
+     seat=Integer.parseInt(br.readLine());
+    }
+    
+    int display()
+    {
+ System.out.println("Routecode \t\t Traincode \t\t Trainname \t\t TrainRoute \t\t Arrival-Day \t\t Departure-Day \t\t ArrivalTime\t\t DepertureTime\t\t Seat");
+ System.out.println(rc+"\t"+"\t"+tc+"\t"+"\t"+tnm+"\t"+"\t"+rt+"\t"+"\t"+aday+"\t"+"\t"+dday+"\t"+"\t"+atime+"\t"+"\t"+dtime+"\t"+"\t"+seat);
+ return 0;
+}
+}
+class book
+    {
+    String rc;
+    String tc;
+    String tnm;
+    String rt;
+    String cc;
+    String cusname;
+    String age; 
+    String date;
+    String dtime;
+    int seat;
+    int cno;
+    int sno;
+   double price;
+   book()
+   {
+       cno=1;
+       sno=0;
+    }
+    void input()throws IOException
+    {
+     
+        System.out.println("Enter Route-Code:");
+        rc=br.readLine();
+        System.out.println("Enter Train-Code:");
+        tc=br.readLine();
+        System.out.println("Enter Train Name:");
+        tnm=br.readLine();
+        System.out.println("Enter Train Route:");
+        rt=br.readLine(); 
+        System.out.println("Enter Customer Code:");
+        cc=br.readLine();  
+        System.out.println("Enter Name:");
+        cusname=br.readLine();
+        System.out.println("Enter Age:");
+        age=br.readLine();
+        System.out.println("Enter Date of Journey:");
+        date=br.readLine();  
+        System.out.println("Enter Departure-Time:");
+        dtime=br.readLine();   
+     System.out.println("Enter no. of seat:");
+     seat=Integer.parseInt(br.readLine());
+     System.out.println("Enter price:");
+     price=Double.parseDouble(br.readLine());
+     sno++;
+     if(sno>50)
+     cno++;
+     p2=p2+price;
+    }
+    
+    int display()
+    {
+ System.out.println("Routecode \t\t Traincode \t\t Trainname \t\t TrainRoute \t\t Customer Code\t\t cusname \t\t age \t\t Date\t\t DepertureTime\t\t Seat\t\t Coach no\t\t Seat No \t\t Price");
+ System.out.println(rc+"\t"+"\t"+tc+"\t"+"\t"+tnm+"\t"+"\t"+rt+"\t"+"\t"+cc+"\t"+"\t"+cusname+"\t"+"\t"+age+"\t"+"\t"+date+"\t"+"\t"+dtime+"\t"+"\t"+seat+"\t"+"\t"+"C"+cno+"\t"+"\t"+"S"+sno+"\t"+"\t"+price);
+ return 0;
+}
+}
+
+book tt1[];  
+train tt[];
+void insert()throws IOException
+{
+    System.out.println("Enter numbers of Trains to be entered:");
+    n=Integer.parseInt(br.readLine());
+    tt=new train[n];
+    for(i=0;i<n;i++)
+    {
+     tt[i]=new train();
+        tt[i].input();
+    }
+    }
+void show()
+{
+   for(int i=0;i<n;i++)
+   System.out.println(tt[i].display());
+}
+void insert1()throws IOException
+{
+    
+    System.out.println("Enter numbers of Customer to be entered:");
+    n1=Integer.parseInt(br.readLine());
+    tt1=new book[n];
+    for(i=0;i<n1;i++)
+    {
+     tt1[i]=new book();
+        tt1[i].input();
+        p1=i;
+        update(p1);
+    }
+    show();
+    }
+    void update(int p1)
+    {
+        for(int i=0;i<n1;i++)
+     {
+         if(tt[i].rc.equalsIgnoreCase(tt1[p1].rc)==true)
+         {
+           if(tt[i].tc.equalsIgnoreCase(tt1[p1].tc)==true)
+           {
+               tt[i].seat=tt[i].seat-tt1[p1].seat;
+               break;
+            }
+        }
+    }
+}
+void show1()
+{
+   for(int i=0;i<n1;i++)
+   System.out.println(tt1[i].display());
+}
+class cancel
+    {
+    String rc;
+    String tc;
+    String cc;
+    int cno;
+    int sno;
+   double price;
+     int i,p,c;
+     double c1;
+     String ch,s,s1;
+     cancel()
+     {
+         c1=0;
+        }
+    void display()throws IOException
+    {
+
+       System.out.println("Enter Customer Code:");
+        cc=br.readLine();  
+        for(i=0;i<n1;i++)
+        {
+            if(cc.equalsIgnoreCase(tt1[i].cc)==true)
+             {
+               System.out.println("Routecode \t\t Traincode \t\t Trainname \t\t TrainRoute \t\t Customer Code\t\t cusname \t\t age \t\t Date\t\t DepertureTime\t\t Seat\t\t Coach no\t\t Seat No \t\t Price");
+ System.out.println(tt1[i].rc+"\t"+"\t"+tt1[i].tc+"\t"+"\t"+tt1[i].tnm+"\t"+"\t"+tt1[i].rt+"\t"+"\t"+tt1[i].cc+"\t"+"\t"+tt1[i].cusname+"\t"+"\t"+tt1[i].age+"\t"+"\t"+tt1[i].date+"\t"+"\t"+tt1[i].dtime+"\t"+"\t"+tt1[i].seat+"\t"+"\t"+"C"+tt1[i].cno+"\t"+"\t"+"S"+tt1[i].sno+"\t"+"\t"+tt1[i].price);  
+ p=i;
+ s=tt1[i].rc;
+ s1=tt1[i].tc;
+ c=tt1[i].seat;
+ c1=tt1[i].price;
+ break;
+}
+}
+
+ System.out.println("Want to Cancel:");
+        ch=br.readLine(); 
+        if(ch.equalsIgnoreCase("YES")==true || ch.equalsIgnoreCase("Yes")==true || ch.equalsIgnoreCase("yes")==true)
+         {
+             if(n==1)
+             {
+                 n1=n1-1;
+                 update1(s,s1,c);
+                 
+            show();
+            p3=p3+c1;
+                }
+                else
+                {
+             while(p<n1-1)
+             {
+                 tt1[p]=tt1[p+1];
+                 p++;
+                }
+                n1=n1-1;
+            }
+            update1(s,s1,c);
+            show();
+            p3=p3+c1;
+            }
+
+ //return 0;
+ if(n==0)
+ {
+     System.out.println("Nothing in list....");
+    }
+  else
+  {
+ for(i=0;i<n1;i++)
+        {
+ System.out.println("Routecode \t\t Traincode \t\t Trainname \t\t TrainRoute \t\t Customer Code\t\t cusname \t\t age \t\t Date\t\t DepertureTime\t\t Seat\t\t Coach no\t\t Seat No \t\t Price");
+ System.out.println(tt1[i].rc+"\t"+"\t"+tt1[i].tc+"\t"+"\t"+tt1[i].tnm+"\t"+"\t"+tt1[i].rt+"\t"+"\t"+tt1[i].cc+"\t"+"\t"+tt1[i].cusname+"\t"+"\t"+tt1[i].age+"\t"+"\t"+tt1[i].date+"\t"+"\t"+tt1[i].dtime+"\t"+"\t"+tt1[i].seat+"\t"+"\t"+"C"+tt1[i].cno+"\t"+"\t"+"S"+tt1[i].sno+"\t"+"\t"+tt1[i].price);  
+ }
+}
+ 
+}
+void update1(String s,String s1,int c)
+    {
+        for(int i=0;i<n;i++)
+     {
+         if(tt[i].rc.equalsIgnoreCase(s)==true)
+         {
+           if(tt[i].tc.equalsIgnoreCase(s1)==true)
+           {
+               tt[i].seat=tt[i].seat+c;
+               break;
+            }
+        }
+    }
+}
+}
+cancel cc2;
+void show2()throws IOException
+{
+    
+    cc2=new cancel();
+    cc2.display();
+}
+void ticsale()
+{
+  System.out.println("Total Sales of Tickets:"+p2);  
+}
+void ticcancel()
+{
+System.out.println("Total Cancelation Sales of Tickets:"+p3);  
+}
+void disp_r()
+{
+String s;
+String s1[]=new String[100];
+int x,y,y1,f1;
+y1=0;
+for(x=0;x<tt.length;x++)
+{
+    s=tt[x].rc;
+    f1=0;
+    for(int z=0;z<y1;z++)
+    {
+        if(s.equalsIgnoreCase(s1[z])==true)
+        {
+            f1=1;
+            break;
+        }
+    }
+    if(f1==0)
+    {
+        for(y=0;y<tt.length;y++)
+        {
+              if(s.equalsIgnoreCase(tt[y].rc)==true)
+              {
+            System.out.println("Routecode \t\t Traincode \t\t Trainname \t\t TrainRoute \t\t Arrival-Day \t\t Departure-Day \t\t ArrivalTime\t\t DepertureTime\t\t Seat");
+ System.out.println(tt[y].rc+"\t"+"\t"+tt[y].tc+"\t"+"\t"+tt[y].tnm+"\t"+"\t"+tt[y].rt+"\t"+"\t"+tt[y].aday+"\t"+"\t"+tt[y].dday+"\t"+"\t"+tt[y].atime+"\t"+"\t"+tt[y].dtime+"\t"+"\t"+tt[y].seat);
+}
+}
+ s1[y1++]=s;   
+}
+}
+    
+}     
+}
+        

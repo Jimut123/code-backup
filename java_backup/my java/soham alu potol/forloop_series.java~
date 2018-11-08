@@ -1,0 +1,20 @@
+import java.io.*;
+class forloop_series
+{
+public static void main()throws IOException
+{
+int j=2,k=1,s=0,x;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter n:");
+n=Integer.parseInt(br.readLine());
+System.out.println("Enter x:");
+x=Integer.parseInt(br.readLine());
+for(int i=1;i<=n;i++)
+{
+s=s+(x+j)/k;
+j=j+3;
+k=k+2;
+}
+System.out.println(s);
+}
+}

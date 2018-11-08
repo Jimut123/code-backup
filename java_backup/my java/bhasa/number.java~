@@ -1,0 +1,15 @@
+
+import java.util.*;
+class number
+{
+Scanner ob=new Scanner (System.in);
+int n=0;
+void input()
+{
+n=ob.nextInt();
+}
+void disp(int i)
+{
+
+}
+}

@@ -1,0 +1,17 @@
+import java.io.*;
+public class pythagoras
+{
+    public static void main() throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int a,b,c;
+        System.out.println("Enter data:");
+        a=Integer.parseInt(br.readLine());
+        b=Integer.parseInt(br.readLine());
+        c=Integer.parseInt(br.readLine());
+        if ((a*a==(b*b)+(c*c))||((b*b)==(a*a)+(c*c))||((c*c)=(a*a)+(b*b)))
+        System.out.println("It supports pythagorean triplet");
+        else
+        System.out.println("It does not supports pythagorean triplet");
+    }
+}

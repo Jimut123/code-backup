@@ -1,0 +1,132 @@
+NullPointerException*
+Sie haben versucht, auf ein Objekt zuzugreifen
+(entweder auf eine Variable oder auf eine Methode
+eines Objekts). Dies ist fehlgeschlagen, weil
+die Objektreferenz, die Sie für den Zugriff 
+verwendet haben, "null" war. Zum Beispiel:
+Sie haben geschrieben "einObjekt.print()", und 
+"einObjekt" war zu diesem Zeitpunkt "null".
+
+ArithmeticException*
+Eine arithmetische Berechnung ist fehlgeschlagen,
+z.B. wegen Division durch 0 oder Ähnlichem.
+
+StringIndexOutOfBoundsException*
+Sie haben versucht, auf ein Zeichen oder auf einen 
+Teilstring eines Strings zuzugreifen, und zwar an
+einer Stelle, die es in diesem String nicht gibt.
+Sie wollten z.B. auf das fünfte Zeichen in einem
+String zugreifen, der nur drei Zeichen lang ist.
+Bitte beachten Sie, dass der zweite Parameter 
+der Teilstring-Operation die Länge des Teilstrings
+bedeutet, und nicht die Position seines letzten 
+Zeichens.
+
+ClassCastException*
+Sie haben ein Typumwandlung benutzt -- eine Anweisung, 
+einem Objekt einen anderen Typ zuzuweisen, wie in
+diesem Beispiel:
+       (String)einObjekt
+Hier soll "einObjekt" in ein String-Objekt umgewandelt
+werden. Das ist nur dann zulässig, wenn das in 
+"einObjekt" aktuell gespeicherte Objekt tatsächlich 
+den Typ String aufweist.
+Mit anderen Worten: Sie können nur dann in einen Typ T
+umwandeln, wenn das umzuwandelnde Objekt den Typ T oder
+einen von T abgeleiteten Typ aufweist. Im vorliegenden
+Fall traf das nicht zu.
+
+IndexOutOfBoundsException*
+Eine Art von Index (eines Arrays, eines Strings, eines
+Vektors) befindet sich ausserhalb seines zulässigen 
+Bereichs. Das bedeutet, dass es die durch den Index 
+angesprochene Position im Array etc. nicht gibt 
+(z.B. haben Sie versucht, das fünfte Element 
+anzusprechen, aber es gibt nur drei Elemente).
+
+ArrayIndexOutOfBoundsException*
+Ein Arrayindex befindet sich ausserhalb seines 
+zulässigen Bereichs. Das bedeutet, dass es die durch 
+den Index angesprochene Position im Array nicht 
+gibt (z.B. haben Sie versucht, das fünfte Element 
+anzusprechen, aber es gibt nur drei Elemente).
+Der zulässige Indexbereich umfasst 0..Arraylänge-1.
+
+ConcurrentModificationException*
+Sie iterieren über einer Sammlung (collection).
+Während Sie das tun, wurde die Sammlung verändert.
+Das bedeutet ein Problem: während der Iteration
+dürfen Sie die Sammlung nicht verändern. Oder,
+anders herum gesagt: sobald Sie die Sammlung
+verändert haben, dürfen Sie die Iteration nicht
+fortführen. Die einzige Änderung, die während 
+einer Iteration zulässig ist, besteht im Entfernen
+von Elementen mit der "remove"-Methode des Iterators
+(NICHT mit der "remove"-Methode der Sammlung selbst).
+
+ArrayStoreException*
+Leider ist keine Hilfe verfügbar.
+
+CannotRedoException*
+Leider ist keine Hilfe verfügbar.
+
+CannotUndoException*
+Leider ist keine Hilfe verfügbar.
+
+CMMException*
+Leider ist keine Hilfe verfügbar.
+
+EmptyStackException*
+Leider ist keine Hilfe verfügbar.
+
+IllegalArgumentException*
+Leider ist keine Hilfe verfügbar.
+
+IllegalMonitorStateException*
+Leider ist keine Hilfe verfügbar.
+
+IllegalPathStateException*
+Leider ist keine Hilfe verfügbar.
+
+IllegalStateException*
+Leider ist keine Hilfe verfügbar.
+
+ImagingOpException*
+Leider ist keine Hilfe verfügbar.
+
+MissingResourceException*
+Leider ist keine Hilfe verfügbar.
+
+NegativeArraySizeException*
+Leider ist keine Hilfe verfügbar.
+
+NoSuchElementException*
+Leider ist keine Hilfe verfügbar.
+
+ProfileDataException*
+Leider ist keine Hilfe verfügbar.
+
+ProviderException*
+Leider ist keine Hilfe verfügbar.
+
+RasterFormatException*
+Leider ist keine Hilfe verfügbar.
+
+SecurityException*
+Leider ist keine Hilfe verfügbar.
+
+SystemException*
+Leider ist keine Hilfe verfügbar.
+
+UndeclaredThrowableException*
+Leider ist keine Hilfe verfügbar.
+
+UnsupportedOperationException*
+Leider ist keine Hilfe verfügbar.
+
+Exception
+Dies ist eine allgemeine Exception,
+die nur bedeutet, dass irgendetwas fehl-
+geschlagen ist. Ich habe aber keine Ahnung,
+was das ist ...
+

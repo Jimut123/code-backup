@@ -1,0 +1,44 @@
+
+import java.io.*; 
+class KeithNumber
+{
+ int n,r,c=0,arr[];
+ BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+ public void calculate()throws IOException
+ {
+     System.out.println("Enter number");
+     n=Integer.parseInt(br.readLine());
+     arr[30]=Integer.parseInt(br.readLine());
+     int m=n;
+     for(int i=0;i<n;i++)
+     {
+         while(m>0)
+         {
+             c++;
+             r=m%10;
+             arr[i]=r;
+             m=m/10;
+         }
+     }
+        for(int i=c;i>0;i++)
+        {
+            for(int j=i-1;j>=i-c;j--)
+            {
+                arr[i]=arr[i]+arr[j];
+            }
+            if(arr[i]==n)
+            {
+                System.out.println("It is a keith number");
+                break;
+            }
+            if(arr[i]>n)
+            {
+                System.out.println("Not a keith number");
+            }
+        }
+    }
+    public void main()throws IOException
+    {
+        calculate();
+    }
+}

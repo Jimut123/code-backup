@@ -1,0 +1,16 @@
+class series3
+    {
+        public static void main(int n)
+            {
+                int i,k;
+                double s=0;
+                k=1;
+                for(i=1;i<=n;i++)
+                    {
+                  s=s+Math.pow(i,i)*k;
+                  k=k*-1;
+                  
+                }
+                System.out.println(s);
+            }
+        }

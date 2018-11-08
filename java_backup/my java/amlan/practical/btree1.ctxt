@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ calc()
+comment1.params=b\ x
+comment1.target=btree\ create(btree,\ int)
+comment2.params=b1
+comment2.target=void\ preorder(btree)
+comment3.params=b1
+comment3.target=void\ inorder(btree)
+comment4.params=b1
+comment4.target=void\ postorder(btree)
+numComments=5

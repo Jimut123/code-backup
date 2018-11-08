@@ -1,0 +1,192 @@
+import java.io.*;
+import java.lang.*;
+class Crypt
+{
+    int arr[][],n,i,j,temp;
+    Crypt(int a[][],int n1)
+    {
+        n = n1;
+        arr=a;
+    }
+    void leftshift()
+    {
+        // 3 1 2 3 4 5 6 7 8 9
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n-1;j++)
+            {
+                temp=arr[i][j];
+                arr[i][j]=arr[i][j+1];
+                arr[i][j+1]=temp;
+            }
+        }
+    }
+    void rightshift()
+    {   
+        for(i=0;i<n;i++)
+        {
+            for(j=n-1;j>0;j--)
+            {
+                temp=arr[i][j-1];
+                arr[i][j-1]=arr[i][j];
+                arr[i][j]=temp;
+            }
+        }
+
+    }
+    void upshift()
+    {
+        for(i=0;i<n-1;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                 temp = arr[i][j];
+                 arr[i][j] = arr[i+1][j];
+                 arr[i+1][j] = temp;
+            }
+        }
+    }
+    void downshift()
+    {
+        for(i=n-1;i>0;i--)
+        {
+            for(j=0;j<n;j++)
+            {
+                temp=arr[i-1][j];
+                arr[i-1][j] = arr[i][j];
+                arr[i][j]=temp;
+            }
+           
+        }
+    }
+    void diagonalshift()
+    {
+        //left diagonal
+        for(i=0;i<n/2;i++)
+        {
+            temp=arr[i][i];
+            arr[i][i]=arr[n-1-i][n-1-i];
+            arr[n-1-i][n-1-i]=temp;
+        }
+        //right diagonal
+        for(i=0;i<n/2;i++)
+        {
+            temp=arr[i][n-i-1];
+            arr[i][n-i-1] = arr[n-i-1][i];
+            arr[n-i-1][i]=temp;
+        }
+    }
+    void circularshift()
+    {
+        i=0;
+        j=0;
+        int k=0;
+        while(i<n/2+1)
+        {
+            if(i%2==0)
+            {
+                while(j<n-k-1)
+                {
+                    temp = arr[i][j];
+                    arr[i][j]= arr[i][j+1];
+                    arr[i][j+1] = temp;
+                    j++;
+                }
+                while(i<n-k-1)
+                {
+                    temp = arr[i][j];
+                    arr[i][j] = arr[i+1][j];
+                    arr[i+1][j] = temp;
+                    i++;
+                }
+                while(j>k)
+                {
+                    temp = arr[i][j];
+                    arr[i][j] = arr[i][j-1];
+                    arr[i][j-1] = temp;
+                    j--;
+                }
+                while(i>k+1)
+                {
+                    temp = arr[i][j];
+                    arr[i][j] = arr[i-1][j];
+                    arr[i-1][j] = temp;
+                    i--;
+                }
+                System.out.println("i = "+i+" j = "+j+" k = "+k);
+                //i = 1 j = 0 k = 0
+                //i++;
+                j++;
+                k++;
+            }
+            else
+            {
+                //System.out.println("i = "+i+" j = "+j+" k = "+k);
+                //j++;
+                //whie(j<n-k)
+            }
+            //System.out.println("i = "+i+" j = "+j+" k = "+k);
+        }
+
+    }
+    void printarray()
+    {
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                System.out.print(arr[i][j]+"\t");
+            }
+            System.out.println("");
+        }
+        System.out.println("\n");
+    }
+}
+
+class ApplyCrypt extends Crypt
+{
+   ApplyCrypt(int a[][],int n)
+    {
+        super(a,n);
+        System.out.println("Apply Crypt obj is constructed!");
+
+    }
+	public static void main(String args[])throws IOException
+        {
+                InputStreamReader ab = new InputStreamReader(System.in);
+                BufferedReader cd = new BufferedReader(ab);
+                int n,i,j,ch;
+                System.out.println("\nEnter the size of n :");
+                n=Integer.parseInt(cd.readLine());
+                int arr[][] = new int[n][n];
+                System.out.println("\nEnter the array : \n[1] to enter \n [2] to autofill ! ");                
+                ch = Integer.parseInt(cd.readLine());
+				int dum=1;
+                for(i=0;i<n;i++)
+                {
+                    for(j=0;j<n;j++)
+                    {
+						if(ch==1)
+						{
+                        System.out.println("arr["+i+"]["+j+"]:");
+                        arr[i][j]= Integer.parseInt(cd.readLine());
+						}
+						else
+							arr[i][j]=dum++;
+                    }
+                }
+
+                ApplyCrypt ob = new ApplyCrypt(arr, n);
+                ob.printarray();
+                //ob.leftshift();
+                //ob.rightshift();
+                //ob.upshift();
+                //ob.downshift();
+                //ob.diagonalshift();
+                ob.circularshift();
+                ob.printarray();
+
+        }
+}
+
+

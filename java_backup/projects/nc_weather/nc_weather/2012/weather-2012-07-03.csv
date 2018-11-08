@@ -1,0 +1,28 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,82.0,66.0,58,29.99,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 04:51:00
+1:51 AM,80.1,66.9,64,29.98,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 05:51:00
+2:51 AM,78.1,66.9,68,29.97,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 06:51:00
+3:51 AM,75.9,66.9,74,29.96,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 07:51:00
+4:51 AM,73.9,66.9,79,29.95,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 08:51:00
+5:51 AM,73.9,66.9,79,29.97,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 09:51:00
+6:51 AM,73.9,68.0,82,29.98,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 10:51:00
+7:51 AM,79.0,68.0,69,29.98,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-07-03 11:51:00
+8:51 AM,82.9,68.0,60,29.99,10.0,NNE,4.6,-,N/A,,Scattered Clouds,20,2012-07-03 12:51:00
+9:51 AM,87.1,66.9,51,30.01,10.0,Variable,6.9,-,N/A,,Scattered Clouds,0,2012-07-03 13:51:00
+10:51 AM,91.0,68.0,47,30.00,10.0,NE,3.5,-,N/A,,Scattered Clouds,50,2012-07-03 14:51:00
+11:51 AM,93.0,66.0,41,29.98,10.0,SE,3.5,-,N/A,,Scattered Clouds,130,2012-07-03 15:51:00
+12:51 PM,96.1,62.1,32,29.97,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-07-03 16:51:00
+1:51 PM,98.1,62.1,30,29.95,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 17:51:00
+2:51 PM,97.0,61.0,30,29.93,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 18:51:00
+3:51 PM,97.0,61.0,30,29.93,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-07-03 19:51:00
+4:51 PM,99.0,63.0,30,29.91,10.0,SSW,4.6,-,N/A,,Mostly Cloudy,210,2012-07-03 20:51:00
+5:51 PM,96.1,63.0,33,29.90,10.0,East,5.8,-,N/A,,Mostly Cloudy,90,2012-07-03 21:51:00
+6:51 PM,93.0,64.9,39,29.90,10.0,East,3.5,-,N/A,,Mostly Cloudy,80,2012-07-03 22:51:00
+7:34 PM,91.4,66.2,43,29.92,10.0,SE,9.2,-,N/A,Thunderstorm,Thunderstorm,140,2012-07-03 23:34:00
+7:51 PM,90.0,66.9,46,29.93,10.0,South,11.5,19.6,N/A,Thunderstorm,Thunderstorm,190,2012-07-03 23:51:00
+8:51 PM,84.9,64.9,51,29.94,10.0,NE,5.8,-,N/A,,Mostly Cloudy,40,2012-07-04 00:51:00
+8:59 PM,84.2,64.4,51,29.96,10.0,East,6.9,-,N/A,Thunderstorm,Thunderstorm,80,2012-07-04 00:59:00
+9:30 PM,82.4,64.4,54,29.96,10.0,SE,3.5,-,N/A,,Mostly Cloudy,130,2012-07-04 01:30:00
+9:51 PM,82.9,66.0,56,29.96,10.0,South,3.5,-,N/A,,Mostly Cloudy,190,2012-07-04 01:51:00
+10:51 PM,81.0,68.0,65,29.96,10.0,South,5.8,-,N/A,,Mostly Cloudy,180,2012-07-04 02:51:00
+11:51 PM,79.0,68.0,69,29.95,10.0,WSW,4.6,-,N/A,,Mostly Cloudy,240,2012-07-04 03:51:00

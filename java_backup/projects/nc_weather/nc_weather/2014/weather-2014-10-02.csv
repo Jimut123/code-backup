@@ -1,0 +1,26 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,61.0,59.0,93,30.06,6.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-10-02 04:51:00
+1:51 AM,62.1,60.1,93,30.06,6.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-10-02 05:51:00
+2:51 AM,61.0,59.0,93,30.06,6.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-10-02 06:51:00
+3:51 AM,60.1,57.9,93,30.06,5.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-10-02 07:51:00
+4:51 AM,60.1,57.9,93,30.07,4.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-10-02 08:51:00
+5:51 AM,64.9,62.1,90,30.08,5.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-10-02 09:51:00
+6:51 AM,62.1,60.1,93,30.10,4.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2014-10-02 10:51:00
+7:51 AM,59.0,57.0,93,29.98,0.2,NE,3.5,-,N/A,Fog,Patches of Fog,40,2014-10-02 11:51:00
+8:03 AM,60.8,57.2,88,29.99,0.1,NNE,3.5,-,N/A,Fog,Fog,30,2014-10-02 12:03:00
+8:51 AM,66.9,64.0,90,30.12,5.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-02 12:51:00
+9:51 AM,72.0,64.9,78,30.12,8.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-02 13:51:00
+10:51 AM,75.2,64.4,69,30.13,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-10-02 14:51:00
+11:51 AM,77.0,62.6,61,30.11,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-10-02 15:51:00
+12:51 PM,79.0,64.0,60,30.09,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-10-02 16:51:00
+1:51 PM,82.0,64.0,54,30.07,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2014-10-02 17:51:00
+2:51 PM,82.0,63.0,52,30.05,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2014-10-02 18:51:00
+3:51 PM,82.0,62.1,51,30.04,10.0,SSW,5.8,-,N/A,,Mostly Cloudy,200,2014-10-02 19:51:00
+4:51 PM,80.6,62.6,54,30.04,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-10-02 20:51:00
+5:51 PM,79.0,64.0,60,30.04,10.0,East,5.8,-,N/A,,Scattered Clouds,90,2014-10-02 21:51:00
+6:51 PM,75.0,64.9,71,30.04,10.0,ESE,6.9,-,N/A,,Scattered Clouds,110,2014-10-02 22:51:00
+7:51 PM,72.0,64.9,78,30.05,10.0,ESE,5.8,-,N/A,,Scattered Clouds,110,2014-10-02 23:51:00
+8:51 PM,72.0,64.9,78,30.06,10.0,SE,5.8,-,N/A,,Mostly Cloudy,130,2014-10-03 00:51:00
+9:51 PM,71.1,64.9,81,30.07,10.0,ESE,4.6,-,N/A,,Mostly Cloudy,110,2014-10-03 01:51:00
+10:51 PM,70.0,64.0,81,30.07,9.0,ESE,5.8,-,N/A,,Scattered Clouds,110,2014-10-03 02:51:00
+11:51 PM,70.0,64.0,81,30.06,9.0,ESE,8.1,-,N/A,,Partly Cloudy,120,2014-10-03 03:51:00

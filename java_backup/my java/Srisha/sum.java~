@@ -1,0 +1,18 @@
+import java.util.*;
+class sum
+{
+    public static void main(String args[])
+    {
+        int a, b, c;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter a");
+        a=sc.nextInt();
+        System.out.println("enter b");
+        b=sc.nextInt();
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("the value of a is"+b);
+        System.out.println("the value of b is"+a);
+    }
+}

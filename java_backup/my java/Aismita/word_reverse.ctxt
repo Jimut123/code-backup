@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ insert()
+comment1.params=s\ i
+comment1.target=void\ check(java.lang.String,\ int)
+comment2.params=w
+comment2.target=java.lang.String\ rev(java.lang.String)
+comment3.params=
+comment3.target=void\ main()
+numComments=4

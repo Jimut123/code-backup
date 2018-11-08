@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,62.1,61.0,96,29.96,7.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-06-06 04:51:00
+1:51 AM,61.0,59.0,93,29.95,7.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-06-06 05:51:00
+2:51 AM,62.1,60.1,93,29.94,7.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-06-06 06:51:00
+3:51 AM,60.1,59.0,96,29.92,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-06-06 07:51:00
+4:51 AM,60.1,59.0,96,29.92,8.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-06-06 08:51:00
+5:51 AM,61.0,59.0,93,29.93,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-06-06 09:51:00
+6:51 AM,62.1,61.0,96,29.94,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-06-06 10:51:00
+7:51 AM,68.0,64.0,87,29.93,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-06-06 11:51:00
+8:51 AM,72.0,64.9,78,29.92,10.0,West,3.5,-,N/A,,Partly Cloudy,270,2015-06-06 12:51:00
+9:51 AM,78.8,66.2,65,29.94,10.0,NNW,3.5,-,N/A,,Clear,340,2015-06-06 13:51:00
+10:51 AM,81.0,64.9,58,29.92,10.0,North,8.1,-,N/A,,Clear,360,2015-06-06 14:51:00
+11:51 AM,84.0,64.9,53,29.93,10.0,Variable,6.9,-,N/A,,Partly Cloudy,0,2015-06-06 15:51:00
+12:51 PM,84.9,61.0,44,29.92,10.0,NNE,11.5,19.6,N/A,,Partly Cloudy,30,2015-06-06 16:51:00
+1:51 PM,87.1,60.1,40,29.92,10.0,NE,12.7,19.6,N/A,,Partly Cloudy,40,2015-06-06 17:51:00
+2:51 PM,84.9,60.1,43,29.91,10.0,NE,5.8,-,N/A,,Partly Cloudy,40,2015-06-06 18:51:00
+3:51 PM,87.1,60.1,40,29.91,10.0,NE,10.4,-,N/A,,Scattered Clouds,40,2015-06-06 19:51:00
+4:51 PM,87.1,60.1,40,29.90,10.0,NNE,8.1,-,N/A,,Scattered Clouds,30,2015-06-06 20:51:00
+5:51 PM,84.9,62.1,46,29.89,10.0,NE,11.5,-,N/A,,Scattered Clouds,50,2015-06-06 21:51:00
+6:51 PM,84.0,62.1,47,29.91,10.0,NE,11.5,16.1,N/A,,Scattered Clouds,50,2015-06-06 22:51:00
+7:51 PM,80.1,62.1,54,29.94,10.0,NE,13.8,-,N/A,,Scattered Clouds,50,2015-06-06 23:51:00
+8:51 PM,75.0,62.1,64,29.96,10.0,NE,3.5,-,N/A,,Scattered Clouds,40,2015-06-07 00:51:00
+9:51 PM,73.9,62.1,66,29.98,10.0,ENE,3.5,-,N/A,,Scattered Clouds,70,2015-06-07 01:51:00
+10:51 PM,69.1,62.1,78,30.01,10.0,ENE,3.5,-,N/A,,Scattered Clouds,60,2015-06-07 02:51:00
+11:51 PM,70.0,63.0,78,30.03,10.0,ENE,5.8,-,N/A,,Scattered Clouds,70,2015-06-07 03:51:00

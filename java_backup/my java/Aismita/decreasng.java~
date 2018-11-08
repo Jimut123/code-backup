@@ -1,0 +1,19 @@
+class decreasng
+{
+ public static void main()
+ {
+     int i,j=13,k=1;
+     for(i=1;i<=4;i++)
+     {
+         for(int t=k;t<=j;t=t+2)
+         System.out.print(t);
+         k=k+2;
+         j=j-2;
+         System.out.println("");
+         
+         
+
+    }
+}
+     
+}

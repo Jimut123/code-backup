@@ -1,0 +1,24 @@
+package project1_May2016;
+
+//to check whether a number is palindrome or not using strings
+import java.io.*;
+class palindromestring
+{
+    void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int i;
+        String s,v;
+        //input
+        System.out.println("Enter string");
+        s=br.readLine();
+        v="";
+        //checking of the loop
+        for(i=s.length()-1;i>=1;i--)
+        v=v+s.charAt(i);
+        if(s.equalsIgnoreCase(v)==true)
+        System.out.print("palindrome");
+        else
+         System.out.print("non-palindrome");
+        }
+    }

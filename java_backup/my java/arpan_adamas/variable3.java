@@ -1,0 +1,13 @@
+class variable3
+{
+    public static void main()
+    {
+        int a,b,c,d,e;
+        a=9;
+        b=7;
+        c=8;
+        d=6;
+        e=(a+(b+c)+(c+d)+(d+b));
+        System.out.println(e);
+    }
+}

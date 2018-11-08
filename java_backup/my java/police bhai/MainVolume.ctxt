@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=class\ volume
+comment1.params=
+comment1.target=void\ getData()
+comment2.params=s
+comment2.target=void\ calc(int)
+comment3.params=r
+comment3.target=void\ calc(double)
+comment4.params=l\ b\ h
+comment4.target=void\ calc(int,int,int)
+comment5.target=vol
+comment6.target=class\ MainVolume
+comment7.params=args
+comment7.target=void\ main(String[])
+numComments=8

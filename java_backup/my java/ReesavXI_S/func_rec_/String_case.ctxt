@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=ch
+comment1.target=char\ CaseConvert(char)
+comment2.params=l
+comment2.target=void\ RecChange(int)
+comment3.params=
+comment3.target=void\ display()
+numComments=4

@@ -1,0 +1,30 @@
+import java.io.*;
+public class object
+{
+    public int a,b;
+    public int first(int a)
+    {
+        a += 4;
+        return a;
+    }
+    public int last(int b)
+    {
+        b += 6;
+        return b;
+    }
+    public static void main(String args[])
+    {
+        object ob1 = new object();
+        object ob2 = new object();
+        ob1.first(9);
+        ob2.last(9);
+        if(ob1.first(9)>ob2.last(9))
+        {
+            System.out.println(ob1.a);
+        }
+        else
+        {
+            System.out.println(ob2.b);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+import java.util.*;
+class spiralmatrix
+{
+public static void main()throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter the limit");
+int n=Integer.parseInt(br.readLine());
+int r=n*n;
+int t,i,j,k,lm,hm;
+int a[][]=new int [n][n];
+for(i=0;i<0;i++)
+{
+    for(j=0;j<0;j++)
+     {
+       System.out.println("Enter The Element");
+       a[i][j]=Integer.parseInt(br.readLine());
+    }
+}

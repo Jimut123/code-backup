@@ -1,0 +1,34 @@
+import java.io.*;
+class fractionnumberaddition
+{
+int i,n,s,j,d,e;
+InputSreamReader aa=new InputStreamReader(System.in);
+BufferedReader ll=new BufferedReader(aa);
+public void intake()throws IOException
+{
+System.out.print("the limit number=");
+n=Integer.parseInt(ll.readLine());
+s=0;
+d=0;
+}
+public void calculate()
+{
+for(i=1;i<=n;i+2)
+{
+s=s+(i/i);
+{
+for(j=1;j<=n;j+2)
+{
+d=d+(j/j);
+}
+e=(s-j)*n;
+System.out.print("\nthe no is="+e);
+}
+public static void main(String[]args)
+{
+fractionnumberaddition gg=new fractionnumberaddition();
+gg.intake();
+gg.calculate();
+}
+}
+

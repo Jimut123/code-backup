@@ -1,0 +1,102 @@
+class Date
+{
+int a,k1,k2,s1,s2,s3,s4,t,c,b,i;
+int a1[]=new int [100];
+void input(String s)
+{
+int n=Integer.parseInt(s);
+a=k1=0;
+k2=s1=s2=0;
+s3=s4=t=0;c=b=i=0;
+if(s.length()==6)
+System.out.println(n);
+else
+{
+System.out.println("give a six digit number");
+System.exit(0);
+}
+calc(n);
+}
+void calc(int n)
+{
+a=n;
+while(a>0)
+{
+k1=a%10;
+s1=s1*10+k1;
+a=a/10;
+}
+while(s1>0)
+{
+k2=s1%10;
+a1[t]=k2;
+s1=s1/10;
+t++;
+}
+for(i=0;i<2;i++)
+s2=s2*10+a1[i];
+if(s2>=1 && s2<=30)
+if(s2>=10 && s2<=20)
+System.out.print(s2+"th ");
+else
+{
+int k=s2%10;
+if(k==1)
+System.out.print(s2+"st ");
+else
+if(k==2)
+System.out.print(s2+"nd ");
+else
+if(k==3)
+System.out.print(s2+"rd ");
+else
+System.out.print(s2+"th ");
+}
+for(i=2;i<4;i++)
+s3=s3*10+a1[i];
+if(s3==1)
+System.out.print("January ");
+else
+if(s3==2)
+System.out.print("February ");
+else
+if(s3==3)
+System.out.print("March ");
+else
+if(s3==4)
+System.out.print("April ");
+else
+if(s3==5)
+System.out.print("May ");
+else
+if(s3==6)
+System.out.print("June ");
+else
+if(s3==7)
+System.out.print("July ");
+else
+if(s3==8)
+System.out.print("August ");
+else
+if(s3==9)
+System.out.print("September ");
+else
+if(s3==10)
+System.out.print("October ");
+else
+if(s3==11)
+System.out.print("November ");
+else
+if(s3==12)
+System.out.print("December ");
+for(i=4;i<6;i++)
+s4=s4*10+a1[i];
+/*if(s4>=0 && s4<=9)
+System.out.print("200"+s4);
+else
+if(s4>=10 && s4<100)
+System.out.print("20"+s4);
+*/
+System.out.print("'"+s4);
+}
+}

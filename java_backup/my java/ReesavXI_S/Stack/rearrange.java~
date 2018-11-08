@@ -1,0 +1,93 @@
+package Stack;
+import java.util.*;
+class rearrange
+{
+    String s[];
+    int n,top,k;
+    rearrange()
+    {
+        s=new String[100];
+        top=-1;
+    }
+    void PUSH()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter string ");
+        if(top<100)
+         s[++top]=sc.nextLine();
+        else
+        System.out.print("System Overflow ");
+    }
+    void POP()
+    {
+        if(top==-1)
+        System.out.print("System Underflow ");
+        else
+        {
+            System.out.print(s[top]+" ");
+            top--;
+        }
+    }
+    void display()
+    {
+        for(int i=0;i<=top;i++)
+        {
+            System.out.println(s[i]+" ");
+        }
+        System.out.println();
+    }
+    void Rearrange()
+    {
+        String temp="";
+        for(int i=0;i<=top;i++)
+        {
+            for(int j=0;j<top-1-i;j++)
+            {
+                if(vowel_Count(s[j])<vowel_Count(s[j+1]))
+                {
+                    temp=s[j];
+                    s[j]=s[j+1];
+                    s[j+1]=temp;
+                }
+            }
+        }
+    }
+    int vowel_Count(String t)
+    {
+        int count=0;
+        for(int i=0;i<t.length();i++)
+        {
+            if(t.charAt(i)=='A'||t.charAt(i)=='E'||t.charAt(i)=='I'||t.charAt(i)=='O'||t.charAt(i)=='U'||
+            t.charAt(i)=='a'||t.charAt(i)=='e'||t.charAt(i)=='i'||t.charAt(i)=='o'||t.charAt(i)=='u')
+            count ++;
+        }
+        return count;
+    }
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        do
+        {
+            System.out.println("enter 1 push 2 pop 3 display 4 rearrange 5 bye ");
+            k=sc.nextInt();
+            switch(k)
+            {
+                case 1:
+                PUSH();
+                break;
+                case 2:
+                POP();
+                break;
+                case 3:
+                display();
+                break;
+                case 4:
+                Rearrange();
+                break;
+                case 5:
+                System.exit(0);
+            }
+        }while(true);
+    }
+}
+    

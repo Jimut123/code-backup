@@ -1,0 +1,24 @@
+//to input any number and print the square root of the middle digit .
+import java.util.*;
+class square
+{
+    public static void main()
+    {
+        int c,n,k,c1,p,p1,p2;
+        Scanner sc = new Scanner(System.in);
+        n=sc.nextInt();
+         c=0;//digit count
+        while(n>0)
+        {
+            c++;
+            n=n/10;
+        }
+       c1=0;
+        p=c/2;
+        k=(int)Math.pow(10,p);
+        p1=n%k;
+        p2=p%k;
+        c1=(int)Math.sqrt(c1);
+        System.out.println(c1);
+    }
+}

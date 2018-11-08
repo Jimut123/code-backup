@@ -1,0 +1,53 @@
+import java.util.*;
+public class mat2
+{
+    Scanner sc=new Scanner(System.in);
+    int ar[][],a;
+    void input()
+    {
+        System.out.println("Enter the limit");
+        a=sc.nextInt();
+        ar=new int[a][a];
+        int m,n;
+        for(m=0;m<a;m++)
+        {
+            for(n=0;n<a;n++)
+            {
+                System.out.println("Enter data");
+                ar[m][n]=sc.nextInt();
+            }
+        }
+    }
+    void change()
+    {
+        int m,k,c,n;
+        for(m=0;m<a;m++)
+        {
+            k=ar[0][m];
+            ar[0][m]=ar[m][m];
+            ar[m][m]=k;
+        }
+        c=a-1;
+        for(m=0;m<a;m++)
+        {
+            k=ar[a-1][m];
+            ar[a-1][m]=ar[c][m];
+            ar[c][m]=k;
+            c--;
+        }
+        for(m=0;m<a;m++)
+        {
+            k=ar[m][0];
+            ar[m][0]=ar[m][a-1];
+            ar[m][a-1]=k;
+        }
+        for(m=0;m<a;m++)
+        {
+            for(n=0;n<a;n++)
+            {
+                System.out.println(+ar[m][n]+" ");
+            }
+            System.out.println();
+        }
+    }
+}

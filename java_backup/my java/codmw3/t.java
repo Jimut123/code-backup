@@ -1,0 +1,53 @@
+import java.util.*;
+public class t
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,c,d,e,k,i,m,n;
+        System.out.println("Enter limit");
+        a=sc.nextInt();
+        int b[][]=new int[a][a];
+        c=0;
+        d=0;
+        m=0;
+        n=0;
+        for(e=1;e<=Math.pow(a,2);e++)
+        {
+            b[c][d]=e;
+            m=c;
+            n=d;
+            m=m-1;
+            n=n-1;
+            if(n<0)
+            {
+                n=a-1;
+            }
+            if(m<0)
+             {
+                 m=a-1;
+             }
+             if(b[m][n]!=0)
+            {
+                d=d+1;
+                if(d>=a)
+                {
+                    d=0;
+                }
+            }
+           else
+           {
+               c=m;
+               d=n;
+            }
+        }
+        for(k=0;k<a;k++)
+        {
+            for(i=0;i<a;i++)
+            {
+                System.out.print(b[k][i]+" ");
+            }
+            System.out.println();
+        }
+    }
+}

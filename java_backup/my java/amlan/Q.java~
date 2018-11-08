@@ -1,0 +1,101 @@
+import java.io.*;
+public class Q
+{
+    int arr[];
+    int front,rear,size;
+    public Q(int x)
+    {
+        size=x;
+        front=-1;
+        rear=-1;
+        arr=new int[size];
+    }
+    public boolean isEmpty()
+    {
+        if(front>rear)
+            return true;
+        return false;
+    }
+    public boolean isFull()
+    {
+        if(rear>size)
+            return true;
+        return false;
+    }
+    public void enQ(int n)
+    {
+        if(isFull()==false)
+            arr[++rear]=n;
+        else
+            System.out.println("Q is full!");
+    }
+    public int deQ()
+    {
+        int data;
+        if(isEmpty()==false)
+            data=arr[++front];
+        else
+            data=-9999;
+        return data;
+    }
+    public void display()
+    {
+        int i=0;
+        if(isEmpty()==true)
+            System.out.println("Q is empty!");
+        else
+        {
+            for(i=front;i<=rear;i++)
+            {
+                System.out.println(arr[i]+"    ");
+            }
+        }
+    }
+    public void choice()throws IOException
+    {
+        int n=0,x=0,c=0;
+        BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("To input an element press..............1");
+        System.out.println("To delete an element press.............2");
+        System.out.println("To display the Q press.............3");
+        System.out.println("To exit the program press..............4");
+        System.out.println("Enter your choice:");
+        c=Integer.parseInt(in.readLine());
+        switch(c)
+        {
+            case 1:
+                System.out.println("Enter a number:");
+                n=Integer.parseInt(in.readLine());
+                enQ(n);
+                break;
+            case 2:
+                n=deQ();
+                if(n==-9999)
+                    System.out.println("Q is empty");
+                else
+                    System.out.println(n+" is deQd");
+                break;
+            case 3:
+                if(isEmpty()==true)
+                    System.out.println("Q is empty");
+                else
+                    display();
+                break;
+            case 4:
+                x=1;
+                break;
+            default:
+                System.out.println("Sorry,wrong input");
+        }
+        if(x==0)
+            choice();
+    }
+    public void main()throws IOException
+    {
+        BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter length of Q:");
+        int r=Integer.parseInt(in.readLine());
+        Q ob=new Q(r);
+        ob.choice();
+    }
+}

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=tribonacci()
+comment1.params=x
+comment1.target=tribonacci(int)
+comment2.params=n
+comment2.target=void\ series(int)
+comment3.params=
+comment3.target=void\ main()
+numComments=4

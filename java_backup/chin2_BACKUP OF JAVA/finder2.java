@@ -1,0 +1,23 @@
+public class finder2
+{
+    public long summation(int a)
+    {
+        long sum = 0;
+        for(int i = 1; i <= (a+1); i++)
+        {
+            sum = sum + i;
+        }
+        return sum;
+    }
+    public static void main(String arga[])
+    {
+        finder2 abc = new finder2();
+        int n = 9;
+        double S = 1;
+        for(int i = 1 ; i <= n ; i++)
+        {
+            S = S * i * (abc.summation(i));
+        }
+        System.out.println("S = "+S);
+    }
+}

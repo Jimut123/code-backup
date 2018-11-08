@@ -1,0 +1,12 @@
+import java.io.*;
+class replacewords
+{
+public static void main(String[]args)throws IOException
+{
+InputStreamReader ab=new InputStreamReader(System.in);
+BufferedReader cd=new BufferedReader(ab);
+String s="The blue bottle is in the blue bag.";
+String p=s.replace("blue","red");
+System.out.println(p);
+}
+}

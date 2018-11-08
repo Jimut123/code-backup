@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=nn
+comment0.target=burning_tree(int)
+comment1.params=r\ c
+comment1.target=void\ rec(int,\ int)
+comment2.params=
+comment2.target=void\ main()
+numComments=3

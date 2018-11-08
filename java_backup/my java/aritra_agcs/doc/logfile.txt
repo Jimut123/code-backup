@@ -1,0 +1,56 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.6.0_23\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;E:\My Documents\my java\aritra_agcs
+-d
+E:\My Documents\my java\aritra_agcs\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+E:\My Documents\my java\aritra_agcs\swap.java
+<---- end of javadoc command ---->
+Loading source file E:\My Documents\my java\aritra_agcs\swap.java...
+E:\My Documents\my java\aritra_agcs\swap.java:5: <identifier> expected
+    a=10;
+     ^
+E:\My Documents\my java\aritra_agcs\swap.java:6: <identifier> expected
+    b=20;
+     ^
+E:\My Documents\my java\aritra_agcs\swap.java:7: <identifier> expected
+    c=a;
+     ^
+E:\My Documents\my java\aritra_agcs\swap.java:8: <identifier> expected
+    a=b;
+     ^
+E:\My Documents\my java\aritra_agcs\swap.java:9: <identifier> expected
+    b=c;
+     ^
+E:\My Documents\my java\aritra_agcs\swap.java:10: <identifier> expected
+    system.out.println(a,b);
+                      ^
+E:\My Documents\my java\aritra_agcs\swap.java:10: <identifier> expected
+    system.out.println(a,b);
+                        ^
+E:\My Documents\my java\aritra_agcs\swap.java:10: <identifier> expected
+    system.out.println(a,b);
+                          ^
+E:\My Documents\my java\aritra_agcs\swap.java:12: class, interface, or enum expected
+}
+^
+9 errors

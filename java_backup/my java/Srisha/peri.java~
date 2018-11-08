@@ -1,0 +1,14 @@
+import java.util.*;
+class peri
+{
+    public static void main(String s[])
+    {
+        int a, b, c;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the length and breadth of a rectangle");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        c=2*(a+b);
+        System.out.println("perimeter is+"c);
+    }
+}

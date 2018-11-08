@@ -1,0 +1,9 @@
+import java.io.*;
+
+
+public static void main(String args[])throws IOException
+{
+print("/This is the line of ignorance");
+print("/* This line will be ignored too!!");
+This is the body and will not  be ignored!
+}

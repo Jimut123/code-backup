@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=l\ br\ ht
+comment0.target=Area(double,\ double,\ double)
+comment1.params=
+comment1.target=void\ doArea()
+comment2.params=
+comment2.target=void\ show()
+numComments=3

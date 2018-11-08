@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=k\ x\ y\ z
+comment1.target=long\ daycal(int,\ int,\ int,\ int)
+numComments=2

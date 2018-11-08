@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=i\ j
+comment0.target=ssum(int,\ int)
+comment1.params=a\ b
+comment1.target=ssum(double,\ double)
+comment2.params=c\ d
+comment2.target=ssum(char,\ char)
+comment3.params=f\ k
+comment3.target=ssum(java.lang.String,\ java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

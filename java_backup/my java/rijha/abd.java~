@@ -1,0 +1,5 @@
+public interface abd
+{
+    int fact(int n );
+    
+}

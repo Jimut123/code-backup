@@ -1,0 +1,24 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,64.9,52.0,63,30.23,10.0,ESE,6.9,-,N/A,,Partly Cloudy,120,2014-06-01 04:51:00
+1:51 AM,63.0,52.0,67,30.24,10.0,East,4.6,-,N/A,,Partly Cloudy,100,2014-06-01 05:51:00
+2:51 AM,62.1,51.1,67,30.25,10.0,ESE,5.8,-,N/A,,Partly Cloudy,120,2014-06-01 06:51:00
+3:51 AM,57.9,51.1,78,30.27,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-06-01 07:51:00
+4:51 AM,55.0,50.0,83,30.29,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-06-01 08:51:00
+5:51 AM,55.9,48.9,77,30.30,10.0,ENE,3.5,-,N/A,,Partly Cloudy,70,2014-06-01 09:51:00
+6:51 AM,57.0,52.0,83,30.32,10.0,ENE,4.6,-,N/A,,Scattered Clouds,60,2014-06-01 10:51:00
+7:51 AM,62.1,48.9,62,30.33,10.0,East,8.1,-,N/A,,Scattered Clouds,100,2014-06-01 11:51:00
+8:51 AM,66.0,46.0,48,30.34,10.0,East,10.4,-,N/A,,Scattered Clouds,90,2014-06-01 12:51:00
+9:51 AM,68.0,46.0,45,30.34,10.0,East,6.9,-,N/A,,Scattered Clouds,100,2014-06-01 13:51:00
+10:51 AM,71.1,46.9,42,30.34,10.0,ENE,8.1,-,N/A,,Scattered Clouds,70,2014-06-01 14:51:00
+11:51 AM,72.0,46.9,41,30.35,10.0,Variable,5.8,17.3,N/A,,Scattered Clouds,0,2014-06-01 15:51:00
+12:51 PM,73.9,46.9,38,30.34,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2014-06-01 16:51:00
+1:51 PM,75.9,48.0,37,30.32,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2014-06-01 17:51:00
+2:51 PM,75.9,46.9,36,30.30,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2014-06-01 18:51:00
+3:51 PM,77.0,46.9,34,30.29,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2014-06-01 19:51:00
+4:51 PM,77.0,46.0,33,30.27,10.0,East,10.4,-,N/A,,Scattered Clouds,80,2014-06-01 20:51:00
+6:51 PM,75.0,46.9,37,30.25,10.0,East,6.9,-,N/A,,Partly Cloudy,80,2014-06-01 22:51:00
+7:51 PM,73.0,48.0,41,30.24,10.0,East,5.8,-,N/A,,Clear,80,2014-06-01 23:51:00
+8:51 PM,69.1,48.9,49,30.25,10.0,East,3.5,-,N/A,,Clear,90,2014-06-02 00:51:00
+9:51 PM,62.6,51.8,68,30.27,10.0,ENE,4.6,-,N/A,,Clear,70,2014-06-02 01:51:00
+10:51 PM,62.6,48.2,59,30.29,10.0,East,5.8,-,N/A,,Clear,80,2014-06-02 02:51:00
+11:51 PM,63.0,48.9,60,30.29,10.0,ESE,4.6,-,N/A,,Clear,110,2014-06-02 03:51:00

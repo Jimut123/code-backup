@@ -1,0 +1,33 @@
+import java.io.*;
+class tell_call
+{
+    int phno,name,n,amt;
+ telcal(int x,String y,int k)
+ {
+     phno=x;
+     name=y;
+     System.out.println("name");
+     amt=k;
+    }
+ void compute()throws IOException
+ {
+     
+     if(n>=1&&n<=100)
+     k=500;
+     else if(n>=101&&n<=200)
+     k=k+1.00
+     else if(n>=201&&n<=300)
+     k=k+1.20;
+     else if(n>=300)
+     k=k+1.50;
+    }
+ void display()
+ {
+     System.out.println("Phone no."+x);
+     System.out.println("Name"+y);
+     System.out.println("Total calls"+n);
+     System.out.println("Amt"+k);
+    }
+}
+     
+     

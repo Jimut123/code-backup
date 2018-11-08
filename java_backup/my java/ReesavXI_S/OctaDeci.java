@@ -1,0 +1,36 @@
+import java.util.*;
+class OctaDeci
+{
+    int dec;
+    int N;
+    OctaDeci()
+    {
+        dec=0;
+        N=0;
+    }
+    void getOct()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Octal number ");
+        N=sc.nextInt();
+    }
+    void recursiveDec(int n)
+    {
+        int a=0;int cr=0;
+        while(n>0)
+        {
+            a=n%10;
+            dec=dec+a*(int)Math.pow(8,cr);
+            n=n/10;
+            cr++;
+        }
+    }
+    void putData()
+    {
+        getOct();
+        recursiveDec(N);
+        System.out.println("Octal Number "+N);
+        System.out.println("Decinal Equivalent "+dec);
+    }
+}
+        

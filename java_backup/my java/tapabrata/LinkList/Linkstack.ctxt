@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Linkstack()
+comment1.params=item
+comment1.target=void\ push(int)
+comment2.params=
+comment2.target=int\ pop()
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment4.params=
+comment4.target=void\ displaystack()
+numComments=5

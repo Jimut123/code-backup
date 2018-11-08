@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=
+comment1.target=void\ hexadecimal()
+comment2.params=h
+comment2.target=void\ decimal(java.lang.String)
+comment3.params=
+comment3.target=void\ main()
+numComments=4

@@ -1,0 +1,15 @@
+package project;
+class square
+{
+    public static void main()
+    {
+        int i;
+        for(i=1;i<=15;i++)
+        {
+            if(i%2!=0)
+                System.out.println(i*i*i);
+            else
+                System.out.println(i*i);
+        }
+    }
+}

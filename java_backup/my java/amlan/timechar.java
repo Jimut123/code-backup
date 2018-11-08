@@ -1,0 +1,284 @@
+
+import java.io.*;
+class timechar
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int hh,mm,mm1,k,l;
+void input()throws IOException
+{
+System.out.println("Give Hour:");
+hh=Integer.parseInt(br.readLine());
+System.out.println("Give minute:");
+mm=Integer.parseInt(br.readLine());
+if(hh>12)
+{
+System.out.println("Error in time......");
+System.exit(0);
+}
+if(hh>=60)
+{
+System.out.println("Error in time......");
+System.exit(0);
+}
+System.out.println(hh+"::"+mm);
+if(mm==0)
+{
+System.out.print(hh+"O Clock");
+}
+else
+if(mm==15)
+{
+System.out.print("Quarter past"+" ");
+hourcheck(hh);
+}
+else
+if(mm==30)
+{
+System.out.print("Half Past"+" ");
+hourcheck(hh);
+}
+else
+if(mm==45)
+{
+System.out.print("Quarter to"+" ");
+if(hh==12)
+hh=1;
+else
+hh=hh+1;
+hourcheck(hh);
+}
+else
+{
+if(mm<=30)
+{
+ timecheck(mm);
+ System.out.print(" "+"Past"+" ");
+ hourcheck(hh);
+ }
+else
+{
+timecheck(60-mm);
+System.out.print(" "+"To"+" ");
+if(hh==12)
+hh=1;
+else
+hh=hh+1;
+hourcheck(hh);
+}
+}
+}
+void timecheck(int x)
+{
+if(x>=1 && x<=9)
+{
+hourcheck(x);
+}
+ if(x>=10 && x<=19)
+ {
+ if(x%10==0)
+ System.out.print("Ten");
+ else
+ if(x%10==1)
+ System.out.print("Eleven");
+ else
+ if(x%10==2)
+ System.out.print("Twelve");
+ else
+ if(x%10==3)
+ System.out.print("Thirteen");
+ else
+ if(x%10==4)
+ System.out.print("Fourteen");
+ else
+ if(x%10==5)
+ System.out.print("Fifteen");
+ else
+ if(x%10==6)
+ System.out.print("Sizteen");
+ else
+ if(x%10==7)
+ System.out.print("Seventeen");
+ else
+ if(x%10==8)
+ System.out.print("Eighteen");
+ else
+ if(x%10==9)
+ System.out.print("Nineteen");
+ }
+ else
+ if(x>=20 && x<30)
+ {
+ if(x%10==0)
+ System.out.print("Twenty");
+ else
+ if(x%10==1)
+ System.out.print("Twentyone");
+ else
+ if(x%10==2)
+ System.out.print("Twentytwo");
+ else
+ if(x%10==3)
+ System.out.print("Twentythree");
+ else
+ if(x%10==4)
+ System.out.print("Twentyfour");
+ else
+ if(x%10==5)
+ System.out.print("Twentyfive");
+ else
+ if(x%10==6)
+ System.out.print("Twentysix");
+ else
+ if(x%10==7)
+ System.out.print("Twentyseven");
+ else
+ if(x%10==8)
+ System.out.print("Twentyeight");
+ else
+ if(x%10==9)
+ System.out.print("Twentynine");
+ }
+ else
+ if(x>=30 && x<40)
+ {
+ if(x%10==0)
+ System.out.print("Thirty");
+ else
+ if(x%10==1)
+ System.out.print("Thirtyone");
+ else
+ if(x%10==2)
+ System.out.print("Thirtytwo");
+ else
+ if(x%10==3)
+ System.out.print("Thirtythree");
+ else
+ if(x%10==4)
+ System.out.print("Thirtyfour");
+ else
+ if(x%10==5)
+ System.out.print("Thirtyfive");
+ else
+ if(x%10==6)
+ System.out.print("Thirtysix");
+ else
+ if(x%10==7)
+ System.out.print("Thirtyseven");
+ else
+ if(x%10==8)
+ System.out.print("Thirtyeight");
+ else
+ if(x%10==9)
+ System.out.print("Thirtynine");
+ }
+ else
+ if(x>=40 && x<50)
+ {
+ if(x%10==0)
+ System.out.print("Fourty");
+ else
+ if(x%10==1)
+ System.out.print("Fourtyone");
+ else
+ if(x%10==2)
+ System.out.print("Fourtytwo");
+ else
+ if(x%10==3)
+ System.out.print("Fourtythree");
+ else
+ if(x%10==4)
+ System.out.print("Fourtyfour");
+ else
+ if(x%10==5)
+ System.out.print("Fourtyfive");
+ else
+ if(x%10==6)
+ System.out.print("Fourtysix");
+ else
+ if(x%10==7)
+ System.out.print("Fourtyseven");
+ else
+ if(x%10==8)
+ System.out.print("Fourtyeight");
+ else
+ if(x%10==9)
+ System.out.print("Fourtynine");
+ }
+ else
+ if(x>=50 && x<60)
+ {
+ if(x%10==0)
+ System.out.print("Fifty");
+ else
+ if(x%10==1)
+ System.out.print("Fiftyone");
+ else
+ if(x%10==2)
+ System.out.print("Fiftytwo");
+ else
+ if(x%10==3)
+ System.out.print("Fiftythree");
+ else
+ if(x%10==4)
+ System.out.print("Fiftyfour");
+ else
+ if(x%10==5)
+ System.out.print("Fiftyfive");
+ else
+ if(x%10==6)
+ System.out.print("Fiftysix");
+ else
+ if(x%10==7)
+ System.out.print("Fiftyseven");
+ else
+ if(x%10==8)
+ System.out.print("Fiftyeight");
+ else
+ if(x%10==9)
+ System.out.print("Fiftynine");
+ }
+ }
+void hourcheck(int x)
+{
+if(x==0)
+{
+System.out.println("Error...");
+System.exit(0);
+}
+if(x==1)
+System.out.print("One");
+else
+if(x==2)
+System.out.print("Two");
+else
+if(x==3)
+System.out.print("Three");
+else
+if(x==4)
+System.out.print("Four");
+else
+if(x==5)
+System.out.print("Five");
+else
+if(x==6)
+System.out.print("Six");
+else
+if(x==7)
+System.out.print("Seven");
+else
+if(x==8)
+System.out.print("Eight");
+else
+if(x==9)
+System.out.print("Nine");
+else
+if(x==10)
+System.out.print("Ten");
+else
+if(x==11)
+System.out.print("Eleven");
+else
+if(x==12)
+System.out.print("Twelve");
+}
+}

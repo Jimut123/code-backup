@@ -1,0 +1,54 @@
+import java.io.*;
+public class queue
+{
+    int arr[];
+    int front,rear,size;
+    public queue(int x)
+    {
+        size=x;
+        front=-1;
+        rear=-1;
+        arr=new int[size];
+    }
+    public boolean isEmpty()
+    {
+        if(front>rear)
+            return true;
+        return false;
+    }
+    public boolean isFull()
+    {
+        if(rear>size)
+            return true;
+        return false;
+    }
+    public void enQ(int n)
+    {
+        if(isFull()==false)
+            arr[++rear]=n;
+        else
+            System.out.println("Queue is full!");
+    }
+    public int deQ()
+    {
+        int data;
+        if(isEmpty()==false)
+            data=arr[++front];
+        else
+            data=-9999;
+        return data;
+    }
+    public void display()
+    {
+        int i=0;
+        if(isEmpty()==true)
+            System.out.println("Queue is empty!");
+        else
+        {
+            for(i=front;i<=rear;i++)
+            {
+                System.out.println(arr[i]+"    ");
+            }
+        }
+    }
+}

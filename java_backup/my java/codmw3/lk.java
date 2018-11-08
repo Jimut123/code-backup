@@ -1,0 +1,58 @@
+class lk
+{
+    void main()
+    {
+        int c,cr,k;
+        String a="111";
+        String b="101";
+            cr=0;
+            int d[]=new int[4];
+            int e[]=new int [4];
+            for(k=2;k>=0;k=k-1)
+            {
+                if(a.charAt(k)=='1')
+                {
+                    d[k]=1;
+                }
+                else
+                {
+                    d[k]=0;
+                }
+                if(b.charAt(k)=='1')
+                {
+                    e[k]=1;
+                }
+                else
+                {
+                    e[k]=0;
+                }
+            }     
+            for(c=2;c>=0;c=c-1)
+            {
+                if(d[c]+e[c]+cr==0)
+                {
+                    System.out.print("0");
+                    cr=0;
+                }
+                else if(e[c]+d[c]+cr==1)
+                {
+                    cr=0;
+                    System.out.print("1");
+                }
+                else if(d[c]+e[c]+cr==2)
+                
+                {
+                    System.out.print("0");
+                    cr=1;             
+            }  
+            else if(d[c]+e[c]+cr==3)
+            {
+                System.out.print("1");
+                cr=1;
+            }
+        }
+            System.out.print(+cr);
+        
+    }
+}
+                    

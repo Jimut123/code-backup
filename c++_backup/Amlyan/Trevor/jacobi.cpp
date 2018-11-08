@@ -1,0 +1,87 @@
+#include<iostream>
+#include<math.h>
+#define ACC 1e-06
+#define MAX 6
+
+using namespace std;
+
+class gss_sdl{
+    int n;
+    float a[MAX][MAX], b[MAX], x[MAX];
+    public:
+    void inp();
+    void slv();
+    void ans();
+    int diag_det();
+};
+
+void gss_sdl::inp(){
+        cout<<"n?: ";
+        cin>>n;
+        
+        for(int i=0; i<n; i++)
+            x[i] = 0;
+        
+        cout<<"Enter a:\n";
+        for(int i=0; i<n; i++)
+            for(int j=0; j<n; j++)
+                cin>>a[i][j];
+        
+        cout<<"Enter b:\n";
+        for(int i=0; i<n; i++)
+            cin>>b[i];
+}
+
+int gss_sdl::diag_det(){
+    for (int i=0; i<n; i++){
+        float rsum=0;
+        for (int j=0; j<n; j++)
+            rsum += a[i][j];
+        if(rsum - a[i][i] >= a[i][i]){
+            cout<<"Matrix not diagonally determined, no convergence\n";
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void gss_sdl::slv(){
+    if (!diag_det())        
+        return;
+    
+    float prev_x[MAX];
+    int flag = 0, it = 0;
+    do{
+        flag = 0;
+        for (int i=0; i<n; i++)
+            prev_x[i] = x[i];
+            
+        for (int i=0; i<n; i++){
+            x[i] = b[i];
+            for (int j=0; j<n; j++)
+                if (i != j)
+                    x[i] -= a[i][j] * prev_x[j];
+            x[i] /= a[i][i]; 
+        }
+        
+        for (int i=0; i<n; i++)
+            if (fabs(x[i] - prev_x[i]) < ACC)
+                    flag++;
+        it++;
+    } while(flag < n);
+    cout<<"no. of iterations: "<<it<<endl;
+}
+
+void gss_sdl::ans(){
+    for(int i=0; i<n; i++)
+        cout<<"x"<<i+1<<"= "<<x[i]<<endl;
+}
+
+int main(){
+    gss_sdl gs;
+    gs.inp();
+    gs.slv();
+    cout<<"Roots are:\n";
+    gs.ans();
+    return 0;
+}

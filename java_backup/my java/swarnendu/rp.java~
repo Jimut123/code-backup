@@ -1,0 +1,25 @@
+import java.util.*;
+class rp
+{
+public static void maim()
+{
+double totalcost=0,dis=0,amt=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the total cost");
+totalcost=sc.nextDouble();
+if(totalcost<=2000)
+dis=totalcost*0.05;
+else
+if (totalcost>=2001 && totalcost<=5000)
+dis=totalcost*0.1;
+else 
+if (totalcost >=5001 && totalcost <=10000)
+dis=totalcost*0.15;
+else 
+if (totalcost>10000)
+dis=totalcost*0.2;
+amt=totalcost-dis;
+System.out.println("discount=Rs"+dis);
+System.out.println("amount to be paid=Rs"+amt);
+}
+}

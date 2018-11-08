@@ -1,0 +1,36 @@
+import java.io.*;
+class hcff
+{
+    int a,b,c;
+    hcff(int x,int y)
+    {
+    a=x;b=y;
+    c=cal(a,b);
+    System.out.print(c);
+}
+
+int cal(int s,int i)
+{
+    int j;
+    while(s%i!=0)
+    {
+        j=s%i;
+        s=i;
+        i=j;
+    }
+    return i;
+}
+public static void main(String args[])throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int s,s2;
+s=Integer.parseInt(br.readLine());
+s2=Integer.parseInt(br.readLine());
+hcff s1=new hcff(s,s2);
+}
+}
+
+
+
+    
+    

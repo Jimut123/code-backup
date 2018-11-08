@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,55.0,43.0,64,29.92,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2014-10-19 04:51:00
+1:51 AM,55.0,43.0,64,29.95,10.0,NW,3.5,-,N/A,,Mostly Cloudy,310,2014-10-19 05:51:00
+2:51 AM,53.1,43.0,69,29.96,10.0,WNW,4.6,-,N/A,,Mostly Cloudy,300,2014-10-19 06:51:00
+3:51 AM,52.0,43.0,71,29.96,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-10-19 07:51:00
+4:51 AM,51.8,42.8,71,29.98,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2014-10-19 08:51:00
+5:51 AM,50.0,42.1,74,30.00,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-19 09:51:00
+6:51 AM,48.9,42.1,77,30.02,10.0,Calm,Calm,-,N/A,,Clear,0,2014-10-19 10:51:00
+7:51 AM,48.0,42.1,80,30.06,10.0,Calm,Calm,-,N/A,,Clear,0,2014-10-19 11:51:00
+8:51 AM,52.0,41.0,66,30.09,10.0,NW,3.5,-,N/A,,Clear,310,2014-10-19 12:51:00
+9:51 AM,55.0,39.9,57,30.12,10.0,NW,9.2,-,N/A,,Clear,310,2014-10-19 13:51:00
+10:51 AM,59.0,39.2,48,30.13,10.0,Variable,5.8,-,N/A,,Partly Cloudy,0,2014-10-19 14:51:00
+11:51 AM,59.0,37.9,46,30.12,10.0,NW,10.4,-,N/A,,Partly Cloudy,320,2014-10-19 15:51:00
+12:51 PM,61.0,39.9,46,30.11,10.0,WNW,9.2,-,N/A,,Partly Cloudy,300,2014-10-19 16:51:00
+1:51 PM,61.0,39.0,44,30.08,10.0,Variable,4.6,-,N/A,,Clear,0,2014-10-19 17:51:00
+2:51 PM,63.0,39.0,41,30.08,10.0,Variable,4.6,-,N/A,,Partly Cloudy,0,2014-10-19 18:51:00
+3:51 PM,64.9,37.9,37,30.07,10.0,Variable,5.8,-,N/A,,Partly Cloudy,0,2014-10-19 19:51:00
+4:51 PM,64.9,39.0,39,30.07,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2014-10-19 20:51:00
+5:51 PM,63.0,39.9,43,30.07,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-19 21:51:00
+6:51 PM,54.0,46.0,75,30.09,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-19 22:51:00
+7:51 PM,50.0,44.1,80,30.12,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-19 23:51:00
+8:51 PM,51.1,44.1,77,30.12,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-10-20 00:51:00
+9:51 PM,50.0,44.1,80,30.13,10.0,Calm,Calm,-,N/A,,Clear,0,2014-10-20 01:51:00
+10:51 PM,46.9,43.0,86,30.14,10.0,Calm,Calm,-,N/A,,Clear,0,2014-10-20 02:51:00
+11:51 PM,45.0,42.1,90,30.14,10.0,Calm,Calm,-,N/A,,Clear,0,2014-10-20 03:51:00

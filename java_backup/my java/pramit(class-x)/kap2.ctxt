@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x
+comment0.target=kap2(int)
+comment1.params=n
+comment1.target=boolean\ checkKaprekar2(int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

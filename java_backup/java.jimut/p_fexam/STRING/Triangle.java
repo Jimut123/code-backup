@@ -1,0 +1,43 @@
+package STRING;
+
+
+import java.io.*;
+public class Triangle
+{
+int c,n,i,j;
+void display(String[]args)throws IOException
+{
+InputStreamReader ab=new InputStreamReader(System.in);
+BufferedReader cd=new BufferedReader(ab);
+System.out.println("Type 1 for Triangle and Type 2 for Inverted Triangle:");
+c=Integer.parseInt(cd.readLine());
+System.out.println("Enter no. of terms:");
+n=Integer.parseInt(cd.readLine());
+if(c==1)
+{
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=i;j++)
+{
+System.out.print("*");
+}
+System.out.println();
+}
+}
+else if(c==2)
+{
+for(i=65+n-1;i>=65;i--)
+{
+for(j=65;j<=i;j++)
+{
+System.out.print((char)j+"");
+}
+System.out.println();
+}
+}
+else
+{
+System.out.println("Invalid/Wrong Choice");
+}
+}
+}

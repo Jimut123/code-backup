@@ -1,0 +1,20 @@
+import java.util.*;
+class series
+{
+public static void main()
+{
+    Scanner Sc=new Scanner(System.in);
+int i,n,j;
+n=Sc.nextInt();
+for(i=1;i<=n;i++)
+{
+    for(jif(a==b && b==c && a==c)
+System.out.println("Equilataral") ;if(a==b && b==c && a==c)
+System.out.println("Equilataral") ;if(a==b && b==c && a==c)
+System.out.println("Equilataral") ;=1;j<=i;j++)
+System.out.print("*");
+System.out.println("");
+    }
+}
+}
+

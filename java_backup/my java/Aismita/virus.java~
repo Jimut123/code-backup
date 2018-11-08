@@ -1,0 +1,16 @@
+import java.io.*;
+class virus
+{ 
+    public static void main(String ar[])throws Exception
+    {
+        BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+        int a[]={15,69,32,47,8,65,23,96,10};int b[]=a;
+        //b=a;
+        //for(int i=0;i<a.length;i++)
+        //{
+            a[3]=-99; a[5]=-400;
+        //}
+        for(int i=0;i<b.length;i++)
+        System.out.print(b[i]+",");
+    }
+}

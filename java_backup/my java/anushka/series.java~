@@ -1,0 +1,20 @@
+
+import java.io.*;
+public class series
+{public static void main(String args[])throws IOException
+    {BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+        int n,i,a,s,k;s=0;f=1;a=0;int x,j,f;
+        n=Integer.parseInt(br.readLine());
+        for(i=1;i<=n;i++)
+        {f=f*i;
+            for(j=1;j<=n;j++)
+            {a=a+(Math.pow(x,j)/(j*f));
+                k=k*(-1);
+                s=s+(a+k);
+            }
+        }
+        System.out.println(s);
+    }
+}
+               
+

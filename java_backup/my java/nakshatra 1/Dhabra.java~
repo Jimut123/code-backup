@@ -1,0 +1,26 @@
+import java.util.*;
+class Dhabra
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b,c,d,x,y,z;
+        System.out.println("Hello . I'm Dhabra , the latest B.C. software.");
+        System.out.println("Press 1 for addition , 2 for substraction ");
+        a=sc.nextInt();
+        switch(a)
+        {
+            case 1 : System.out.println("enter 2 no.");
+                     b=sc.nextInt();
+                     c=sc.nextInt();
+                     d=b+c;
+                     break;
+            case 2 : System.out.println("enter 2 no.");
+                     x=sc.nextInt();
+                     y=sc.nextInt();
+                     z=x+y;
+                     break;
+                    }
+                }
+            }
+            

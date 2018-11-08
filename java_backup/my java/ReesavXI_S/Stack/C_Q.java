@@ -1,0 +1,69 @@
+package Stack;
+import java.util.*;
+class C_Q
+{
+    int q[],f,r,i,k;
+    C_Q()
+    {
+        q=new int[10];
+        f=r=i=-1;
+    }
+    void insert()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number ");
+        k=sc.nextInt();
+        if((f==0||(f-i)==1)&&(r+1)>=10)
+        {
+            System.out.println("Stack overflow");
+            return;
+        }
+        else if(f<0)
+        {
+            q[++f]=k;
+            r++;
+        } 
+        else if(f==0&&r<10)
+            q[++r]=k;
+        else if(f>0&&r<=9)
+        {
+            q[++i]=k;
+        }
+    }
+    void del()
+    {
+        System.out.println("Popped element "+q[f]);
+        f++;
+    }
+    void display()
+    {
+        for(int j=i;j>=0;j--)
+        System.out.println(q[j]);
+        for(int x=f;x<=r;x++)
+        System.out.println(q[x]);
+        System.out.println("Position of front"+(f+1));
+        System.out.println("Position of rear"+(r+1));
+    }
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1 for inset 2 for del 3 for display");
+        do
+        {
+        switch(sc.nextInt())
+        {
+            case 1:
+            insert();
+            break;
+            case 2:
+            del();
+            break;
+            case 3:
+            display();
+            break;
+            default:
+            System.exit(0);
+        }
+    }while(true);
+}
+   }     

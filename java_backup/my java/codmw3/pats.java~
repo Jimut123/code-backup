@@ -1,0 +1,33 @@
+public class pats 
+{
+    int a;
+    void input(int b)
+    {
+        a=b;
+    }
+    void create()
+    {
+        int m,n,k;
+        for(m=1;m<=a;m++)
+        {
+            System.out.print(+m);
+        }
+        System.out.println();
+        k=a-1;
+        for(m=2;m<=a-2;m++)
+        {
+            System.out.print(+m);
+            for(n=1;n<=a-2;n++)
+            {
+                System.out.print(" ");
+            }
+            System.out.println(+k);
+            k--;
+        }
+        for(m=a;m>=1;m=m-1)
+        {
+            System.out.print(+m);
+        }
+    }
+}
+                

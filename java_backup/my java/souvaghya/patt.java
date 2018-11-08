@@ -1,0 +1,32 @@
+class patt
+{
+    public static void main(String args[])
+    {
+        int i,j,k,y;
+        for(i=1;i<=5;i++)
+        {
+            if(i==1 )
+            for(j=1;j<=5;j++)
+             System.out.print(j);
+           else
+           if(i==5)
+            for(j=5;j>=1;j--)
+             System.out.print(j);
+            else
+             {
+              for(j=1;j<=5;j++)
+              {
+                  if(j==1)
+                   System.out.print(i);
+                  else
+                   if(j==5)
+                    System.out.print((5-i)+1);
+                   else
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+           
+        }
+    }
+}

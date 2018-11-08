@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Point()
+comment1.params=
+comment1.target=void\ getpoint()
+comment2.params=p\ q
+comment2.target=void\ addpoint(Point,\ Point)
+comment3.params=
+comment3.target=void\ display()
+numComments=4

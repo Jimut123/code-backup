@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,57.0,51.1,81,30.26,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-12-04 05:51:00
+1:51 AM,55.0,50.0,83,30.27,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-12-04 06:51:00
+2:51 AM,52.0,48.9,89,30.28,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-12-04 07:51:00
+3:51 AM,52.0,48.9,89,30.27,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-12-04 08:51:00
+4:51 AM,51.1,48.0,89,30.28,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-12-04 09:51:00
+5:51 AM,50.0,48.0,93,30.27,7.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-12-04 10:51:00
+6:51 AM,50.0,46.9,89,30.30,7.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-12-04 11:51:00
+7:51 AM,51.1,48.9,92,30.30,8.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-12-04 12:51:00
+8:51 AM,57.0,53.1,87,30.32,10.0,SW,4.6,-,N/A,,Scattered Clouds,220,2012-12-04 13:51:00
+9:51 AM,62.1,53.1,72,30.33,10.0,SSW,4.6,-,N/A,,Mostly Cloudy,210,2012-12-04 14:51:00
+10:51 AM,64.9,53.1,65,30.31,10.0,SW,5.8,-,N/A,,Mostly Cloudy,220,2012-12-04 15:51:00
+11:51 AM,66.0,53.1,63,30.28,10.0,SW,8.1,-,N/A,,Overcast,220,2012-12-04 16:51:00
+12:51 PM,69.1,54.0,58,30.25,10.0,SW,10.4,-,N/A,,Mostly Cloudy,220,2012-12-04 17:51:00
+1:51 PM,69.1,54.0,58,30.22,10.0,SW,9.2,-,N/A,,Mostly Cloudy,220,2012-12-04 18:51:00
+2:51 PM,71.1,54.0,55,30.21,10.0,SW,13.8,-,N/A,,Mostly Cloudy,230,2012-12-04 19:51:00
+3:51 PM,70.0,53.1,55,30.20,10.0,SSW,10.4,-,N/A,,Mostly Cloudy,210,2012-12-04 20:51:00
+4:51 PM,66.9,52.0,59,30.20,10.0,SSW,9.2,-,N/A,,Mostly Cloudy,200,2012-12-04 21:51:00
+5:51 PM,64.9,51.1,61,30.21,10.0,SSW,8.1,-,N/A,,Mostly Cloudy,210,2012-12-04 22:51:00
+6:51 PM,63.0,52.0,67,30.22,10.0,SSW,4.6,-,N/A,,Mostly Cloudy,210,2012-12-04 23:51:00
+7:51 PM,61.0,52.0,72,30.21,10.0,SSW,5.8,-,N/A,,Mostly Cloudy,210,2012-12-05 00:51:00
+8:51 PM,57.9,52.0,81,30.21,10.0,SW,5.8,-,N/A,,Mostly Cloudy,230,2012-12-05 01:51:00
+9:51 PM,57.9,51.1,78,30.20,10.0,SW,5.8,-,N/A,,Mostly Cloudy,230,2012-12-05 02:51:00
+10:51 PM,57.9,51.1,78,30.19,10.0,WSW,8.1,-,N/A,,Mostly Cloudy,240,2012-12-05 03:51:00
+11:51 PM,57.9,51.1,78,30.18,10.0,SW,8.1,-,N/A,,Mostly Cloudy,230,2012-12-05 04:51:00

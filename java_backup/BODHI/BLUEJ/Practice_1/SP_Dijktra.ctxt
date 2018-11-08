@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=SP_Dijktra
+comment0.text=\r\nObtaining\ the\ shortest\ path\ using\ Dijkstra's\ algorithmn.\r\n
+comment1.params=
+comment1.target=void\ main()
+numComments=2

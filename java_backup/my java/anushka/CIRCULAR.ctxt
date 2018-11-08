@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=n
+comment1.target=int\ fact_sum(int)
+comment2.params=i
+comment2.target=int\ primecheck(int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

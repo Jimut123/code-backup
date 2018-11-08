@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ getElement()
+comment1.params=
+comment1.target=void\ rotate_90_Degrees()
+comment2.params=
+comment2.target=void\ display()
+comment3.params=args
+comment3.target=void\ main([Ljava.lang.String;)
+numComments=4

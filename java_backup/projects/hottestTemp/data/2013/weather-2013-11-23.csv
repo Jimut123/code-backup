@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,61.0,59.0,93,30.08,6.0,SW,8.1,-,0.01,,Overcast,220,2013-11-23 05:51:00
+1:51 AM,61.0,59.0,93,30.08,6.0,SW,5.8,-,0.00,,Overcast,230,2013-11-23 06:51:00
+2:51 AM,60.1,59.0,96,30.08,6.0,WSW,4.6,-,N/A,,Overcast,240,2013-11-23 07:51:00
+3:51 AM,59.0,57.9,96,30.07,5.0,West,3.5,-,N/A,,Overcast,260,2013-11-23 08:51:00
+4:51 AM,59.0,57.9,96,30.07,6.0,Calm,Calm,-,N/A,,Overcast,0,2013-11-23 09:51:00
+5:51 AM,59.0,55.9,90,30.08,8.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-11-23 10:51:00
+6:51 AM,57.0,51.1,81,30.09,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-11-23 11:51:00
+7:51 AM,55.9,48.9,77,30.12,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2013-11-23 12:51:00
+8:51 AM,57.0,45.0,64,30.12,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2013-11-23 13:51:00
+9:51 AM,57.9,43.0,58,30.14,10.0,Variable,5.8,-,N/A,,Mostly Cloudy,0,2013-11-23 14:51:00
+10:51 AM,57.9,41.0,53,30.13,10.0,Variable,6.9,-,N/A,,Overcast,0,2013-11-23 15:51:00
+11:51 AM,57.9,39.9,51,30.11,10.0,North,8.1,-,N/A,,Overcast,360,2013-11-23 16:51:00
+12:51 PM,59.0,39.9,49,30.08,10.0,Variable,4.6,-,N/A,,Overcast,0,2013-11-23 17:51:00
+1:51 PM,57.0,35.1,44,30.06,10.0,NNW,3.5,-,N/A,,Mostly Cloudy,330,2013-11-23 18:51:00
+2:51 PM,57.0,35.1,44,30.05,10.0,NNW,5.8,-,N/A,,Mostly Cloudy,330,2013-11-23 19:51:00
+3:51 PM,57.9,34.0,41,30.05,10.0,Variable,4.6,-,N/A,,Overcast,0,2013-11-23 20:51:00
+4:51 PM,55.9,23.0,28,30.06,10.0,NNE,4.6,-,N/A,,Mostly Cloudy,20,2013-11-23 21:51:00
+5:51 PM,53.1,25.0,34,30.09,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-11-23 22:51:00
+6:51 PM,51.1,26.1,38,30.10,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-11-23 23:51:00
+7:51 PM,50.0,24.1,36,30.11,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-11-24 00:51:00
+8:51 PM,48.0,23.0,37,30.12,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-11-24 01:51:00
+9:51 PM,46.0,18.0,33,30.13,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2013-11-24 02:51:00
+10:51 PM,45.0,17.1,33,30.16,10.0,North,5.8,-,N/A,,Partly Cloudy,350,2013-11-24 03:51:00
+11:51 PM,43.0,19.0,38,30.18,10.0,NW,8.1,-,N/A,,Partly Cloudy,320,2013-11-24 04:51:00

@@ -1,0 +1,42 @@
+import java.util.*;
+class lucky_num
+{
+    int n;
+    int a[];
+    lucky_num(int num)
+    {
+        n=num;
+        a=new int[n];
+    }
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        int i=0;
+        for(i=0;i<n;i++)
+        {
+            System.out.println("enter number");
+            a[i]=sc.nextInt();
+        }
+    }
+    void clac()
+    {
+        int j=0,i=0,k=0,l=0;
+        for(j=0;j<n;j++)
+        {
+            i=j+2;
+            for(k=0;k<n;k=k+i)
+            {
+                if(a[k]!=0)
+                a[k]=0;
+                else
+                i=i-(j+2);
+            }
+        }
+        for(l=0;l<n;l++)
+        {
+            if(a[l]!=0)
+            System.out.print(a[l]+" ");
+        }
+    }
+}
+            

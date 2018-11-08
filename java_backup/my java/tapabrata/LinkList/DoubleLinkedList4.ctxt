@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DoubleLinkedList4()
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment2.params=d1
+comment2.target=void\ Insert1(int)
+comment3.params=d1
+comment3.target=void\ Insert2(int)
+comment4.params=
+comment4.target=void\ display1()
+comment5.params=
+comment5.target=void\ display2()
+numComments=6

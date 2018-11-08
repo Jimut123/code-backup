@@ -1,0 +1,52 @@
+import java.io.*;
+class circulate
+{
+    BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+    String s;int i;int t;
+    
+    void insert(String s)throws IOException
+    {
+        s=in.readLine();
+        int i=1; int t=s.charAt(0);
+        circ(s,i);
+    }
+    void circ(String s,int i)
+    {
+        if(i==s.length()-1)
+        {
+            System.out.print(t);
+            return;
+        }
+        else
+        if(i>s.length()-1)
+        return;
+        else
+        if(i<s.length()-1)
+        {
+            //s.charAt(i)=s.charAt(i-1);
+            System.out.print(s.charAt(i-1));
+            circ(s,i+1);
+        }
+    }
+    public void main()throws IOException
+    {
+        BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter your word");
+        String s=in.readLine();
+        //circulate c1=new circulate();
+        insert(s);
+    }
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,39.9,30.9,70,30.19,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-07 05:51:00
+1:51 AM,37.0,30.0,76,30.20,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 06:51:00
+2:51 AM,35.6,28.4,75,30.21,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 07:51:00
+3:51 AM,32.0,28.9,88,30.23,10.0,Calm,Calm,-,N/A,,Clear,0,2013-01-07 08:51:00
+4:51 AM,30.9,27.0,85,30.25,10.0,Calm,Calm,-,N/A,,Clear,0,2013-01-07 09:51:00
+5:51 AM,33.1,28.0,82,30.27,10.0,Calm,Calm,-,N/A,,Clear,0,2013-01-07 10:51:00
+6:51 AM,33.1,27.0,78,30.32,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 11:51:00
+7:51 AM,30.9,27.0,85,30.36,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 12:51:00
+8:51 AM,39.0,28.9,67,30.39,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 13:51:00
+9:51 AM,42.1,28.9,60,30.41,10.0,NNE,9.2,-,N/A,,Partly Cloudy,30,2013-01-07 14:51:00
+10:51 AM,46.0,30.0,54,30.43,10.0,NE,13.8,19.6,N/A,,Partly Cloudy,50,2013-01-07 15:51:00
+11:51 AM,48.0,30.0,50,30.40,10.0,North,8.1,-,N/A,,Partly Cloudy,10,2013-01-07 16:51:00
+12:51 PM,48.9,28.9,46,30.38,10.0,Variable,4.6,-,N/A,,Partly Cloudy,0,2013-01-07 17:51:00
+1:51 PM,50.0,28.9,44,30.39,10.0,Variable,4.6,-,N/A,,Partly Cloudy,0,2013-01-07 18:51:00
+2:51 PM,51.1,30.0,44,30.39,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 19:51:00
+3:51 PM,51.1,28.9,43,30.40,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 20:51:00
+4:51 PM,48.9,30.9,50,30.41,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 21:51:00
+5:51 PM,43.0,30.9,62,30.42,10.0,East,3.5,-,N/A,,Partly Cloudy,80,2013-01-07 22:51:00
+6:51 PM,39.9,30.9,70,30.43,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-07 23:51:00
+7:51 PM,37.9,30.0,73,30.44,10.0,Calm,Calm,-,N/A,,Clear,0,2013-01-08 00:51:00
+8:51 PM,36.0,30.0,79,30.44,10.0,Calm,Calm,-,N/A,,Clear,0,2013-01-08 01:51:00
+9:51 PM,34.0,28.9,82,30.44,10.0,Calm,Calm,-,N/A,,Clear,0,2013-01-08 02:51:00
+10:51 PM,37.9,28.9,70,30.43,10.0,SE,4.6,-,N/A,,Partly Cloudy,130,2013-01-08 03:51:00
+11:51 PM,37.0,28.9,73,30.42,10.0,SE,5.8,-,N/A,,Scattered Clouds,140,2013-01-08 04:51:00

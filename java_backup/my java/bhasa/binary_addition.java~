@@ -1,0 +1,91 @@
+import java.io.*;
+class binary_addition
+{
+public static void main(String args[])throws IOException
+{
+int i,d,f,t;f=0;
+String w,r;w="";r="";char a,b;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("ENTER 1st NUMBER");
+String s1=br.readLine();
+System.out.println("ENTER 2nd NUMBER");
+String s2=br.readLine();
+if(s1.length()<s2.length())
+{
+d=s2.length()-s1.length();
+for(i=1;i<=d;i++)
+{
+w=w+"0";
+}
+s1=w+s1;t=s1.length();
+}
+else
+{
+d=s1.length()-s2.length();
+for(i=1;i<=d;i++)
+{
+w=w+"0";
+}
+s2=w+s2;t=s2.length();
+}
+if(s2.length()!=s1.length())
+
+System.out.print("NO");
+else
+{
+for(i=t-1;i>=0;i--)
+{
+a=s1.charAt(i);
+b=s2.charAt(i);
+if(f==0)
+{
+if(a=='0' && b=='0')
+{
+r=r+'0';
+}
+else
+if(a=='1' && b=='0' || a=='0' && b=='1')
+{
+r=r+'1';
+}
+else
+if(a=='1' && b=='1')
+{
+r=r+'0';
+f=1;
+}
+else
+{
+if(f==1)
+{
+if(a=='0' && b=='0')
+{
+r=r+'1';
+f=0;
+}
+else
+if(a=='1' && b=='0' || a=='0' && b=='1')
+{
+r=r+'0';
+f=1;
+}
+else
+if(a=='1' && b=='1')
+{
+r=r+'1';
+f=1;
+}
+}
+}
+}
+}
+System.out.println(r.length());
+System.out.println("RESULT");
+System.out.print(f);
+for(i=r.length()-1;i>=0;i--)
+{
+System.out.print(r.charAt(i));
+}
+}
+}
+}

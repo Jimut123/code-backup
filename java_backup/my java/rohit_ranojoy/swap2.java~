@@ -1,0 +1,10 @@
+public class swap2
+{
+    public static void main(int a,int b)
+    {
+        a=b+a;
+        b=a-b;
+        a=a-b;
+        System.out.println(a+','+b);
+    }
+}

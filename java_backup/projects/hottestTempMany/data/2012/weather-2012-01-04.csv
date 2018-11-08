@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,23.0,7.0,50,30.33,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-01-04 05:51:00
+1:51 AM,21.0,8.1,57,30.35,10.0,South,3.5,-,N/A,,Partly Cloudy,180,2012-01-04 06:51:00
+2:51 AM,21.2,8.6,58,30.32,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-01-04 07:51:00
+3:51 AM,21.0,8.1,57,30.34,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-01-04 08:51:00
+4:51 AM,19.9,9.0,62,30.35,10.0,West,3.5,-,N/A,,Clear,260,2012-01-04 09:51:00
+5:51 AM,21.0,9.0,60,30.35,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-01-04 10:51:00
+6:51 AM,21.0,10.0,63,30.36,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-01-04 11:51:00
+7:51 AM,19.4,12.2,74,30.37,10.0,WSW,3.5,-,N/A,,Scattered Clouds,240,2012-01-04 12:51:00
+8:51 AM,25.0,14.0,63,30.40,10.0,SW,3.5,-,N/A,,Scattered Clouds,220,2012-01-04 13:51:00
+9:51 AM,30.2,12.2,47,30.38,10.0,WSW,6.9,-,N/A,,Scattered Clouds,250,2012-01-04 14:51:00
+10:51 AM,34.0,12.0,40,30.37,10.0,SW,10.4,16.1,N/A,,Scattered Clouds,230,2012-01-04 15:51:00
+11:51 AM,37.0,10.0,33,30.31,10.0,SW,9.2,-,N/A,,Scattered Clouds,220,2012-01-04 16:51:00
+12:51 PM,39.9,10.0,29,30.26,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2012-01-04 17:51:00
+1:51 PM,42.1,10.0,27,30.22,10.0,SW,10.4,-,N/A,,Scattered Clouds,220,2012-01-04 18:51:00
+2:51 PM,43.0,9.0,25,30.18,10.0,SW,10.4,-,N/A,,Scattered Clouds,220,2012-01-04 19:51:00
+3:51 PM,43.0,8.1,24,30.15,10.0,SSW,13.8,-,N/A,,Mostly Cloudy,200,2012-01-04 20:51:00
+4:51 PM,39.9,7.0,26,30.14,10.0,SSW,9.2,-,N/A,,Mostly Cloudy,210,2012-01-04 21:51:00
+5:51 PM,39.0,7.0,27,30.16,10.0,SSW,10.4,-,N/A,,Mostly Cloudy,210,2012-01-04 22:51:00
+6:51 PM,37.9,9.0,30,30.15,10.0,SSW,11.5,-,N/A,,Mostly Cloudy,210,2012-01-04 23:51:00
+7:51 PM,34.0,10.9,38,30.15,10.0,SW,6.9,-,N/A,,Mostly Cloudy,230,2012-01-05 00:51:00
+8:51 PM,35.1,10.9,37,30.14,10.0,SW,10.4,-,N/A,,Mostly Cloudy,230,2012-01-05 01:51:00
+9:51 PM,35.1,12.0,39,30.12,10.0,SW,8.1,-,N/A,,Scattered Clouds,220,2012-01-05 02:51:00
+10:51 PM,33.1,12.0,42,30.10,10.0,SW,5.8,-,N/A,,Partly Cloudy,220,2012-01-05 03:51:00
+11:51 PM,32.0,12.0,44,30.08,10.0,SW,4.6,-,N/A,,Partly Cloudy,230,2012-01-05 04:51:00

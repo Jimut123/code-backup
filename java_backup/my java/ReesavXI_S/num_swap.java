@@ -1,0 +1,35 @@
+import java.util.*;
+class num_swap
+{
+    int n;
+    num_swap(int s)
+    {
+        n=s;
+    }
+    void clac()
+    {
+        int r,cr=0;
+        r=n;
+        while(r>0)
+        {
+            r=r/10;
+            cr++;
+        }
+        if(cr%2==0)
+        {
+            int x,y;
+            x=n%(int)(Math.pow(10,(cr/2)));
+            y=n/(int)(Math.pow(10,(cr/2)));
+            x=(x*(int)(Math.pow(10,(cr/2)))+y);
+            System.out.print(x);
+        }
+        else
+        {
+            int x,y;
+            x=n%(int)(Math.pow(10,((cr/2)+1)));
+            y=n/(int)(Math.pow(10,((cr/2)+1)));
+            x=(x*(int)(Math.pow(10,(cr/2)))+y);
+            System.out.print(x);
+        }
+    }
+}

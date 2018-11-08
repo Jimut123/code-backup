@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=IscScore()
+comment1.params=
+comment1.target=void\ InputMarks()
+comment2.params=x
+comment2.target=int\ point(int)
+numComments=3

@@ -1,0 +1,32 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\Java\jdk1.6.0_23\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Users\Jatin\Documents\my java1\jatin 12
+-d
+C:\Users\Jatin\Documents\my java1\jatin 12\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\Jatin\Documents\my java1\jatin 12\date_day.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\Jatin\Documents\my java1\jatin 12\date_day.java...
+C:\Users\Jatin\Documents\my java1\jatin 12\date_day.java:14: invalid method declaration; return type required
+Date1 ()
+^
+1 error

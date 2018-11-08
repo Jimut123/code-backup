@@ -1,0 +1,8 @@
+class hut
+{
+    public static void main(int n)
+    {
+        for(int i=1;i<=n;i++)
+        system.out.println(i*i*i);
+        }
+    }

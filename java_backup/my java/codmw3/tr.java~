@@ -1,0 +1,11 @@
+class tr
+{
+    void main()
+    {
+        String s="abc";
+        int a=23;
+        s+=a;
+        System.out.println(s);
+        System.out.println(+s.length());
+    }
+}

@@ -1,0 +1,31 @@
+import java.io.*;
+public class convert
+{
+    public static void main(String args[]) throws IOException
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("ENTER THE WORD:");
+        String wrd = br.readLine(); 
+        convert abc = new convert(); 
+        String w = abc.compute(wrd);
+        System.out.println("THE NEW WORD IS :");
+        System.out.println(w);
+    }
+    public String compute(String wrd)
+    {
+        String n = "";wrd = wrd.toLowerCase();char x; 
+        for(int i = 0;i<wrd.length();i++)
+        {
+            x = wrd.charAt(i);
+            if(x == 'a'||x == 'e'||x == 'i'||x == 'o'||x == 'u')
+            {
+               n = n + ((char)((int)x+1));
+            }
+            else
+            {
+               n = n + x;
+            }
+        }
+        return n;
+    }
+}

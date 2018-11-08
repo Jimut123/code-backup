@@ -1,0 +1,57 @@
+ 
+
+import java.util.Scanner;
+class num_stack
+{
+Scanner ob=new Scanner(System.in);
+int top,i,k,x;
+int s[]=new int [100];
+num_stack()
+{
+top=-1;
+i=0;
+k=0;
+}
+void push()
+{
+System.out.println("give the element to be pushed :");
+k=ob.nextInt();
+System.out.println("");
+if(top>=100)
+System.out.println("overflow............");
+else
+s[++top]=k;
+}
+void pop()
+{
+System.out.println("popped element = "+s[top]+'\n');
+top--;
+}
+void disp1()
+{
+System.out.println("your stack :");
+for(i=top;i>=0;i--)
+System.out.println(s[i]+", ");
+System.out.println("");
+}
+void start1()
+{
+do
+{
+System.out.println("press 1 for push \npress 2 for pop \npress 3 for display \npress 4 for exit\n");
+x=ob.nextInt();
+System.out.println("");
+switch(x)
+{
+case 1: push();
+        break;
+case 2: pop();        
+        break;
+case 3: disp1();
+        break;
+case 4: System.exit(0);
+default: System.out.println("give input from among the menu integers............\n");
+}
+}while(true);
+}
+}

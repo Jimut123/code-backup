@@ -1,0 +1,13 @@
+class print
+{
+    public static void main()
+    {
+        int a,b,c,d;
+        a=10;
+        b=9;
+        c=8;
+        d=(a+b)/(b+c);
+        System.out.println(d);
+    }
+}
+

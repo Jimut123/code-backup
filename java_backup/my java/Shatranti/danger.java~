@@ -1,0 +1,41 @@
+import java.io.*;
+public class danger
+{
+    int n;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        FileWriter fw;
+        BufferedWriter bw;
+        PrintWriter pw;
+        int i;
+        String roll,name,address,Class,sec;
+    void input()throws IOException
+    {
+        fw=new FileWriter("STUDENT.TXT");
+       bw=new BufferedWriter(fw);
+       pw=new PrintWriter(bw);
+        System.out.println("enter the no. of students");
+        n=Integer.parseInt(br.readLine());
+        i=1;
+            
+        while(i<n)
+        {
+            roll=br.readLine();
+            name=br.readLine();
+            address=br.readLine();
+            Class=br.readLine();
+            sec=br.readLine();
+            pw.println(roll);
+            pw.println(name);
+            pw.println(address);
+            pw.println(Class);
+            pw.println(sec);
+        i++;
+    }
+    pw.close();
+}
+void update()
+{
+}
+}
+       
+        

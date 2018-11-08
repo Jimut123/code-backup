@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=class\ stringop
+comment1.params=
+comment1.target=stringop()
+comment10.params=
+comment10.target=void\ readstring()
+comment11.target=s
+comment2.target=k
+comment3.params=k\ k1
+comment3.target=char\ caseconverter(int,int)
+comment4.target=c1
+comment5.target=i
+comment6.target=k1
+comment7.target=c
+comment8.target=br
+comment9.params=
+comment9.target=void\ circulardecode()
+numComments=12

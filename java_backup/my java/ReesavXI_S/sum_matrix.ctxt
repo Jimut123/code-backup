@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=void\ read_row_column(int,\ int)
+comment1.params=
+comment1.target=void\ read_matrix()
+comment2.params=
+comment2.target=void\ how_matrix()
+comment3.params=
+comment3.target=void\ summatrix()
+numComments=4

@@ -1,0 +1,36 @@
+import java.util.*;
+class angle
+{
+    int m,d;
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Degree");
+        d=sc.nextInt();
+        System.out.print("Enter Minutes");
+        m=sc.nextInt();
+    }
+    void display()
+    {
+        System.out.println("Angle = "+d+":"+m);
+    }
+    angle sum(angle b)
+    {
+        angle sum=new angle();
+        sum.m=(this.m+b.m)%60;
+        sum.d=this.d+b.d+((this.m+b.m)/60);
+        return sum;
+    }
+    public static void main()
+    {
+        angle an=new angle();
+        angle an1 =new angle();
+        an.input();
+        an.display();
+        an1.input();
+        an1.display();
+        angle an2=new angle();
+        an2=an.sum(an1);
+        an2.display();
+    }
+}

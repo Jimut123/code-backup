@@ -1,0 +1,55 @@
+
+import java.io.*;
+import java.util.*;
+class pal_file
+{
+public static void main()throws IOException
+{
+Scanner ob=new Scanner(System.in);
+PrintWriter pw=new PrintWriter(new BufferedWriter(new FileWriter("para.txt")));
+int i,j,k,f=0;
+String s="",w="";
+System.out.println("\nenter the paragraph ::: ");
+s=ob.nextLine();
+s=s+" ";
+pw.println(s);
+pw.close();
+s="";
+System.out.println("\noutput of the original file ::: ");
+pw=new PrintWriter(new BufferedWriter(new FileWriter("pal_wrd.txt")));
+BufferedReader br=new BufferedReader(new FileReader("para.txt"));
+while((s=br.readLine())!=null)
+{
+System.out.println(s);
+for(i=0;i<s.length();i++)
+if(s.charAt(i)==' ' || s.charAt(i)=='.' || s.charAt(i)=='!' || s.charAt(i)=='?')
+{
+if(s.charAt(i-1)=='.' || s.charAt(i-1)=='!' || s.charAt(i-1)=='?')
+w="";
+else
+{
+f=0;
+for(j=0,k=w.length()-1;j<=w.length()/2;j++,k--)
+if(w.charAt(j)!=w.charAt(k))
+{
+f=1;
+break;
+}
+if(f==0)
+pw.println(w);
+w="";
+}
+}
+else
+w=w+s.charAt(i);
+}
+br.close();
+pw.close();
+s="";
+System.out.println("\noutput of the pal word file ::: ");
+br=new BufferedReader(new FileReader("pal_wrd.txt"));
+while((s=br.readLine())!=null)
+System.out.println(s);
+br.close();
+}
+}

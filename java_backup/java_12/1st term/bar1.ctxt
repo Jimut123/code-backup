@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=array\ num\ lim
+comment0.target=void\ bar(int[],\ int,\ int)
+comment0.text=\ Precondition\:\ array\ contains\ only\ positive\ values.\ \r\n\ @param\ num\ a\ positive\ int\r\n
+numComments=1

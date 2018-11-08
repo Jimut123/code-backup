@@ -1,0 +1,13 @@
+class remainder
+{
+    public static void main()
+    {
+        int a,b,c;
+        a=10;
+        b=9;
+        c=a%b;
+        system.out.println(c);
+    }
+}
+        
+        

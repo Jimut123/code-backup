@@ -1,0 +1,14 @@
+    import java.util.*;
+    class caesar
+    {
+        public static void main(String s[])
+        {
+            scanner sc = new scanner(System.in);
+            int a,b,c;
+            System.out.print("enter number");
+            a=sc.nextInt();
+            b=sc.nextInt();
+            c=a+b;
+            System.out.println(c);
+        }
+    }

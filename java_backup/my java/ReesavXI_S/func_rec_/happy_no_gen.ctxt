@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ gen()
+comment1.params=i
+comment1.target=int\ happy(int)
+comment2.params=i
+comment2.target=int\ sum(int)
+numComments=3

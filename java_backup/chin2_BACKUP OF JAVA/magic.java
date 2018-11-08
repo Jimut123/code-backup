@@ -1,0 +1,30 @@
+import java.io.*;
+public class magic
+{
+     public static void main(String args[]) throws IOException
+     {
+         BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
+         System.out.println("ENTER THE NUMBER TO BE CHECKED ::");
+         int a = Integer.parseInt(br.readLine());
+         int b = a;int sum = 0; if(sum == 0)
+         {System.out.println("                                                                              HELLO");}
+         do
+         {
+             while(b != 0)
+             {
+                 sum = sum + (b%10);
+                 b = b/10;
+             }
+             b = sum;
+             sum = 0;
+         }while((b/10) != 0);
+         if(b == 1)
+         {
+             System.out.println("!!  MAGIC  !!");
+         }
+         else
+         {
+             System.out.println("!!  NOT MAGIC  !!");
+         }
+     }
+}

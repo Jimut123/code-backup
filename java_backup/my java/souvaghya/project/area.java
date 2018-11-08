@@ -1,0 +1,58 @@
+package project;
+
+import java.io.*;
+class area
+{
+int a,br,r,g,e,i,j;
+double b,h,s;
+area()
+{
+}
+area(int x,int y)
+{
+a=x;
+br=y;
+g=a*br;
+System.out.println("Area of rectangle"+g);
+}
+area(int z)
+{
+r=z;
+e=22/7*(r*r);
+System.out.println("Area of circle"+e);
+}
+ area(double m,double n)
+{
+b=m;
+h=n;
+s=(b*h)/2;
+System.out.println("Area of triangle"+s);
+}
+ area(double k)
+{
+s=k;
+h=s*s;
+System.out.println("Area of square"+h);
+}
+public  void main()throws IOException
+{
+int a1,br1,r1;
+double b1,h1,s1;
+BufferedReader bfr=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter length and breadth of rectangle");
+a1=Integer.parseInt(bfr.readLine());
+br1=Integer.parseInt(bfr.readLine());
+System.out.println("Enter radius of circle");
+r1=Integer.parseInt(bfr.readLine());
+System.out.println("Enter base and height of triangle");
+b1=Double.parseDouble(bfr.readLine());
+h1=Double.parseDouble(bfr.readLine());
+System.out.println("Enter length of square");
+s1=Double.parseDouble(bfr.readLine());
+area s=new area(b1,h1);
+area s0=new area(r1);
+area s2=new area(s1);
+area s3=new area(a1,br1);
+//s.area(b1,h1);
+}
+}

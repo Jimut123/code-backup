@@ -1,0 +1,21 @@
+
+import java.util.*;
+class prog0
+{
+public static void main(String args[])
+{
+int i,s;
+Scanner ob=new Scanner(System.in);
+linkedlist0 ob1=new linkedlist0();
+do
+{
+System.out.println("\nenter the nuber : ");
+s=ob.nextInt();
+ob1.Insert(s);
+System.out.println("\n1 to continue \n0 to exit \n");
+i=ob.nextInt();
+}while(i==1);
+System.out.println("");
+ob1.display();
+}
+}

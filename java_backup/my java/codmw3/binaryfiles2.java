@@ -1,0 +1,74 @@
+import java.io.*;
+  public class binaryfiles2
+  {
+      boolean EOF=false;
+    binaryfiles2()throws IOException
+       {
+        int a,b;
+        for(a=100;a<=999;a++)
+            {
+                b=check(a);
+                if(b==1)
+                {
+                    enter(a);
+                }
+            }
+        }
+    int check(int c)throws IOException
+        {
+            int b,d,e;
+            b=c;
+            d=0;
+            e=0;
+            while(b>0)
+            {
+                d++;
+                b=b/10;
+            }
+            b=c;
+            while(b>0)
+            {
+                e+=Math.pow(b%10,d);
+                b=b/10;
+            }
+            if(c==e)
+            {
+                //System.out.println(e);
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    void enter(int g)throws IOException
+        {
+            FileOutputStream fin=new FileOutputStream("arm1.dat",true);
+            DataOutputStream dout=new DataOutputStream(fin);
+            dout.writeInt(g);
+            dout.close();
+            fin.close();
+        }
+    void main()throws IOException
+        {
+            try
+            {
+            binaryfiles2 ob=new binaryfiles2();    
+            FileInputStream fn=new FileInputStream("arm1.dat");
+            DataInputStream din=new DataInputStream(fn);
+            while(!EOF)
+            {
+                System.out.println(din.readInt());
+            }
+            din.close();
+            fn.close();
+        }
+         catch(EOFException el)
+        {
+            EOF=true;
+        }
+        catch(IOException e)
+        {
+        }
+        }
+    }

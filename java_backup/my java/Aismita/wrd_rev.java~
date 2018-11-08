@@ -1,0 +1,10 @@
+import java.io.*;
+class wrd_rev
+{
+   BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+   String s; int i=0int p=0;int m=;String w="";
+   String w1="";
+   
+   
+        
+       

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ init()
+comment1.params=
+comment1.target=void\ getSettings()
+comment10.params=
+comment10.target=java.lang.String[][]\ getParameterInfo()
+comment2.params=i
+comment2.target=void\ parseValue(int)
+comment3.params=i
+comment3.target=void\ parseLabel(int)
+comment4.params=i
+comment4.target=void\ parseStyle(int)
+comment5.params=i
+comment5.target=void\ parseColor(int)
+comment6.params=g
+comment6.target=void\ paint(java.awt.Graphics)
+comment7.params=g
+comment7.target=void\ paintHorizontal(java.awt.Graphics)
+comment8.params=g
+comment8.target=void\ paintVertical(java.awt.Graphics)
+comment9.params=
+comment9.target=java.lang.String\ getAppletInfo()
+numComments=11

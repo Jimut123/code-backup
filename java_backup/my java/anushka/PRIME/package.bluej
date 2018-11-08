@@ -1,0 +1,21 @@
+#BlueJ package file
+package.editor.height=565
+package.editor.width=906
+package.editor.x=16
+package.editor.y=16
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.editor.height=736
+target1.editor.width=1032
+target1.editor.x=-4
+target1.editor.y=-4
+target1.height=50
+target1.name=pri1
+target1.naviview.expanded=false
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=80
+target1.x=160
+target1.y=80

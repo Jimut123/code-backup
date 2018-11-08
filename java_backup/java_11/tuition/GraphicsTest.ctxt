@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=listener
+comment0.target=GraphicsPanel(java.util.EventListener)
+comment1.params=
+comment1.target=java.awt.Dimension\ getPreferredSize()
+comment2.params=
+comment2.target=void\ init()
+comment3.params=
+comment3.target=void\ destroy()
+comment4.params=e
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=e
+comment5.target=void\ itemStateChanged(java.awt.event.ItemEvent)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment7.params=
+comment7.target=java.lang.String\ getAppletInfo()
+numComments=8

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=arr_show(int)
+comment1.params=
+comment1.target=void\ input()
+comment2.params=i
+comment2.target=int\ prime_show(int)
+comment3.params=i
+comment3.target=int\ odd_show(int)
+comment4.params=i
+comment4.target=boolean\ prime(int)
+numComments=5

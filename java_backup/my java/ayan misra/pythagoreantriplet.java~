@@ -1,0 +1,23 @@
+public class pythagoreantriplet
+{
+    public static void main(String args[])
+    {
+        int a,b,c,d;
+        d=1;
+        for(a=1;a<=500;a++)
+        {
+            for(b=1;b<=a;b++)
+            {
+                for(c=1;c<=b;c++)
+                {
+                    if((a*a)==((b*b)+(c*c)))
+                    {
+                        System.out.print(d+"):");
+                        System.out.println(a+","+b+","+c+"="+"a*a="+(a*a)+"="+"b*b="+(b*b)+"c*c="+(c*c)+"="+((b*b)+(c*c)));
+                    d++;
+                    }
+                }
+            }
+        }
+    }
+}

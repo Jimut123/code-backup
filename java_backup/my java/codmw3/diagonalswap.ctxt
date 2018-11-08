@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ diagonal()
+comment1.params=
+comment1.target=void\ input()
+comment2.params=a\ i\ n
+comment2.target=void\ swap1(int[][],\ int,\ int)
+comment3.params=
+comment3.target=void\ display()
+numComments=4

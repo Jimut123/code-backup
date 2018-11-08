@@ -1,0 +1,150 @@
+import java.util.*;
+public class vowsort
+{
+    String a[];
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        int c,e,d=0,h,m;
+        String b,g="",str1="",str2="",st1,st2;
+        char vw;
+        System.out.println("Enter the sentence");
+        b=sc.nextLine();
+        m=b.length();
+        a=new String[m];
+        for(c=0;c<b.length();c=c+1)
+        {
+            if(b.charAt(c)==' ')
+            {
+                d=d+1;
+            }
+        }
+        a=new String[d+1]; e=0;
+        for(c=0;c<b.length();c=c+1)
+        {
+            if(b.charAt(c)==' ')
+            {
+                a[e]=g;
+                a[e]=a[e].trim();
+                e++;
+                g="";
+            }
+            else
+            {
+                g=g+b.charAt(c);
+            }
+        }
+        a[e]=g.trim();
+        for(c=0;c<d+1;c=c+1)
+        {
+            for(h=0;h<a[c].length();h=h+1)
+            {
+                vw=a[c].charAt(h);
+                if(vw=='a' || vw=='e' || vw=='i' || vw=='o' || vw=='u' || vw=='A' || vw=='I' ||
+                vw=='O' || vw=='U' || vw=='E' )
+                {
+                    str1=str1+vw;
+                }
+                else
+                {
+                    str2=str2+vw;
+                }
+            }
+            str1=str1.trim();
+            System.out.println(str1);
+            str2=str2.trim();
+            System.out.println(str2);
+            st1=vowelsort(str1.trim());
+            st2=consort(str2.trim());
+            a[c]=(st1+st2).trim();
+            System.out.println("STR:"+a[c]);
+            str1="";
+            str2="";
+        }
+        for(c=0;c<d+1;c=c+1)
+        {
+            System.out.println(a[c]);
+        }
+    }
+    String vowelsort(String b)
+    {
+        int d,e;
+        String k="";
+        b=b.trim();
+        String c[]=new String[b.length()];
+        
+        for(d=0;d<b.length();d=d+1)
+        {
+            c[d]="";
+            //c[d]=c[d].trim();
+        }
+        for(d=0;d<b.length();d=d+1)
+        {
+            c[d]=c[d]+b.charAt(d);
+            //c[d]=c[d].trim();
+        }
+        //System.out.println(c[0]+","+c[1]+","+c[2]);
+        for(d=0;d<b.length();d=d+1)
+        {
+            for(e=0;e<b.length()-1-d;e=e+1)
+            {
+                if(c[e].compareToIgnoreCase(c[e+1])>0)
+                {
+                    k=c[e];
+                    c[e]=c[e+1];
+                    c[e+1]=k;
+                }
+            }
+        }
+        k="";
+        for(d=0;d<b.length();d=d+1)
+        {
+            k=k+c[d];
+        }
+        //k=k.trim();
+        return k;
+    }
+    String consort(String b)
+    {
+         int d,e;
+        String k="";
+        b=b.trim();
+         String c[]=new String[b.length()];
+         for(d=0;d<b.length();d=d+1)
+        {
+            c[d]="";
+            //c[d]=c[d].trim();
+        }
+           for(d=0;d<b.length();d=d+1)
+        {
+            c[d]=c[d]+b.charAt(d);
+            //c[d]=c[d].trim();
+        }
+        for(d=0;d<b.length();d=d+1)
+        {
+           
+            for(e=0;e<b.length()-1-d;e=e+1)
+            {
+                if(c[e].compareToIgnoreCase(c[e+1])>0)
+                {
+                    k=c[e];
+                    c[e]=c[e+1];
+                    c[e+1]=k;
+                }
+            }
+        }
+        k="";
+        for(d=0;d<b.length();d=d+1)
+        {
+            k=k+c[d];
+        }
+        //k=k.trim();
+        return k;
+    }
+}
+
+        
+    
+    
+        
+

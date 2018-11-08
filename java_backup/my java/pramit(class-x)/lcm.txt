@@ -1,0 +1,27 @@
+import java.io.*;
+class lcm
+{
+public void intake()
+{
+int j,n,m;
+InputStreamReader aa=new InputStreamReader(System.in);
+BufferedReader ll=new BufferedReader(aa);
+System.out.print("print 1st number=");
+m=Integer.parseInt(ll.readLine());
+System.out.print("\n print 2nd nimber=");
+n=Integer.parseInt(ll.readLine());
+int i=(i<=100);
+j=0;
+}
+public  void calculate()
+{
+j=(m*n)/i;
+System.out.print("\n the number is="+j);
+}  
+public static void main(String[]args)throws IOException
+{
+lcm dd=new lcm();
+dd.intake();
+dd.calculate();
+}
+}

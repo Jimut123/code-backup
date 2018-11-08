@@ -1,0 +1,42 @@
+
+class perfct extends number
+{
+class fact_sum
+{
+int sum(int i)
+{
+int k=0,j;
+for(j=1;j<i;j++)
+if(i%j==0)
+k=k+j;
+return k;
+}
+}
+fact_sum f=new fact_sum();
+int stk[]=new int[100];
+int t=-1,i,c=0;
+void main()
+{
+do
+{
+System.out.println("\nenter the number ::: ");
+input();
+if(f.sum(n)==n)
+stk[++t]=n;
+else
+System.out.println("\nnot a perfect number !!!!!!! ");
+System.out.println("\nwant to enter more ? (yes=1/no=0) : ");
+c=ob.nextInt();
+}while(c==1);
+if(t>-1)
+System.out.println("\nthe perfect number stack :::: ");
+for(i=t;i>=0;i--)
+disp(stk[i]);
+}
+}
+public static void control()
+{
+perfct p=new perfct();
+p.main();
+}
+}

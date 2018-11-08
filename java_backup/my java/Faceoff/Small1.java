@@ -1,0 +1,26 @@
+import java.io.*;
+class Small1
+{
+    public static void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader (new InputStreamReader(System.in));
+        int s=0;
+        int avg=0;
+        int a[]=new int[10];
+        for(int i=0;i<10;i++)
+        {
+            System.out.println("Enter a value");
+            a[i]=Integer.parseInt(br.readLine());
+        }
+        for(int j=0;j<10;j++)
+        {
+            s=s+a[j];
+            avg=(s/10);
+        }
+        System.out.println("Sum"+s);
+        System.out.println("Average"+avg);
+    }
+}
+
+            
+        

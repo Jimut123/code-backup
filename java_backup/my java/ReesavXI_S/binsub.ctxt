@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=num\ num1
+comment0.target=binsub(int,\ int)
+comment1.params=
+comment1.target=void\ clac()
+comment2.params=c
+comment2.target=int\ bin_conv(int)
+comment3.params=d
+comment3.target=java.lang.String\ dec_conv(int)
+numComments=4

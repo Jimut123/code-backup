@@ -1,0 +1,67 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.5.0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.5
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc
+-classpath
+C:\BlueJ\lib\bluejcore.jar;C:\BlueJ\lib\junit.jar;C:\Documents and Settings\AMLAN\My Documents\my java\romit
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\palindrumcheckBy.java
+<---- end of javadoc command ---->
+Loading source file C:\Documents and Settings\AMLAN\My Documents\my java\romit\palindrumcheckBy.java...
+Constructing Javadoc information...
+Standard Doclet version 1.5.0
+Building tree for all the packages and classes...
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\palindrumcheckBy.html...
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\ov2.java:39: illegal start of expression
+System.out.println("The Length of square"+);
+                                          ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\ov2.java:39: ')' expected
+System.out.println("The Length of square"+);
+                                           ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\ov2.java:40: '}' expected
+^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\factor.java:42: '}' expected
+^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\defaultFunction.java:4: ')' expected
+void power(int m,int n=2);
+                      ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\defaultFunction.java:32: '.class' expected
+s.power(int m);
+            ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\defaultFunction.java:32: ')' expected
+s.power(int m);
+              ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\defaultFunction.java:33: '.class' expected
+s.power(int m,int n);
+            ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\defaultFunction.java:33: ')' expected
+s.power(int m,int n);
+                    ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\defaultFunction.java:5: power(int,int) is already defined in defaultFunction
+void power(int m,int n)
+     ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\defaultFunction.java:14: power(int,int) is already defined in defaultFunction
+void power(int m,int n)
+     ^
+C:\Documents and Settings\AMLAN\My Documents\my java\romit\Deb.java:40: '}' expected
+^
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\package-frame.html...
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\package-summary.html...
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\allclasses-frame.html...
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\allclasses-noframe.html...
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\index.html...
+Generating C:\Documents and Settings\AMLAN\My Documents\my java\romit\doc\stylesheet.css...
+12 errors

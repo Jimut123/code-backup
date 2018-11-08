@@ -1,0 +1,1 @@
+This is a file for test in java. This is a simple program to calculate the bytes present in the files

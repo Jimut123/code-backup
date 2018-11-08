@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=class\ sort
+comment1.params=
+comment1.target=void\ get()
+comment10.target=t
+comment11.target=s
+comment12.target=class\ HalfAscendHalfDescend
+comment13.params=args
+comment13.target=void\ main(String[])
+comment2.target=n
+comment3.params=a
+comment3.target=void\ calc(int[])
+comment4.target=j
+comment5.target=i
+comment6.target=arr
+comment7.target=c
+comment8.params=a
+comment8.target=void\ show(int[])
+comment9.target=br
+numComments=14

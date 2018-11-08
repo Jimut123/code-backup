@@ -1,0 +1,25 @@
+#BlueJ package file
+objectbench.height=76
+objectbench.width=1346
+package.editor.height=572
+package.editor.width=1248
+package.editor.x=-51
+package.editor.y=75
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=52
+target1.editor.y=32
+target1.height=50
+target1.name=TagFinder
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=70
+target1.y=10

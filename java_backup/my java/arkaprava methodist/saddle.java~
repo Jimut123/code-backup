@@ -1,0 +1,39 @@
+import java.io.*;
+class saddle
+{
+    public static void main()throws IOException
+    {
+        int n;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the value for n:");
+        n=Integer.parseInt(br.readLine());
+        int ar[][]=new int[n][n];
+        int r,c;
+        for(r=0;r<n;r++)
+        {
+            for(c=0;c<n;c++)
+            {ar[r][c]=Integer.parseInt(br.readLine());
+            }
+        }
+        for(r=0;r<n;r++)
+        {
+            for(c=0;c<n;c++)
+            {int max=0,min=n-1;
+        if(ar[r][c]>max)
+        {max=ar[r][c];
+        }
+        if(min>ar[c][r])
+        {min=ar[c][r];
+        }
+        if(max==min)
+        {
+            System.out.println("Saddle point");
+        }
+        else
+        {
+            System.out.println("wrong choice");
+        }}
+    }
+    }
+}
+            

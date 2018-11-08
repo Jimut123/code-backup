@@ -1,0 +1,18 @@
+
+class prog
+{
+public static void main()
+{
+int i,t=0;
+int a=0;
+linkedlist ob1=new linkedlist();
+link newlink=new link(0);
+do
+{
+
+System.out.println("");
+System.out.println("List (first-->last)");
+link current=ob1.first;
+ob1.display(current);
+}
+}

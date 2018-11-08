@@ -1,0 +1,22 @@
+public class krishnamurty
+{
+    public static void main(int n)
+    {
+        int i,j,k,f,x;
+        x=n;
+        int s=0;
+        while(x>0)
+        {
+            j=x%10;
+            f=1;
+            for(k=1;k<=j;k++)
+            f=f*k;
+            s=s+f;
+            x=x/10;
+        }
+        if(s==n)
+        System.out.println("Krishnamurthy number="+n);
+        else
+        System.out.println("Non Krishnamurthy number="+n);
+    }
+}

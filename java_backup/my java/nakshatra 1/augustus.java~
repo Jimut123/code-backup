@@ -1,0 +1,15 @@
+import java.util.*;
+class augustus
+{
+    public static void main (String args[])
+    {
+        int a;
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Please enter your age");
+        a=sc.nextInt();
+        if(a<18)
+        System.out.println("you are not an eligible voter");
+        else 
+        System.out.println("You are  an eligible voter . please dont waste your time and mine");
+    }
+}

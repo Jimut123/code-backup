@@ -1,0 +1,51 @@
+package link_list;
+import java.io.*;
+class String
+{
+    String s="";
+    int i;
+    void input_string()
+    {
+        DataInputStream in=new DataInputStream(System.in);
+        System.out.print("Enter a string ");
+        s=in.readLine();
+    }
+    class list
+    {
+        char k;
+        void input()throws IOException
+        {
+            k=(char)s.charAt(i++);
+        }
+        void disp()
+        {
+            System.out.print(k+" ");
+        }
+        list next;
+    }
+    list l;
+    list l1;
+    l=new list();
+    l1=l;
+    int lim;
+    lim=s.length();
+    void insert()
+    {
+        while(i<lim)
+        {
+            l1.input():
+            l1.next=new list;
+            l1=l1.next;
+        }
+        l1.new=NULL;
+    }
+    void display()
+    {
+        l1=l;
+        while(l1)
+        {
+            l1.disp();
+            l1=l1.next;
+        }
+    }
+} 

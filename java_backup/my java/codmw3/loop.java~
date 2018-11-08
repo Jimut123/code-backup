@@ -1,0 +1,24 @@
+
+public class pattern
+ {
+     public static void main(int N)
+        {
+            int k=N;p;
+            for(int i=1;i<=N;i++)
+               {
+                   p=k;
+                   for(intj=1;j<=i;j++)
+                    {
+                        System.out.print(p);
+                        p=p+2;
+                    }
+                   k=k+2;
+                System.out.println();
+                
+               }
+            }
+        }
+        
+                
+
+            

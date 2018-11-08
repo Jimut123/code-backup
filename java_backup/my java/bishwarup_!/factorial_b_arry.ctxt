@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=factorial_b_arry()
+comment0.text=\nConstructor\ for\ objects\ of\ class\ factorial_b_arry\n\n
+comment1.params=y
+comment1.target=int\ sampleMethod(int)
+comment1.text=\nAn\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n@param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n@return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n\n
+numComments=2

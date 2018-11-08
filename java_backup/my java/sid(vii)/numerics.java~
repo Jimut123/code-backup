@@ -1,0 +1,21 @@
+class numerics
+{
+    public static void main ()
+    {
+        int sp=15;
+        for (int i=5;i>=1;i--)
+        {
+            for (int k=1;k<=sp;k++)
+            {
+                System.out.print (" ");
+            }
+            for (int j=i;j>=1;j--)
+            {
+                System.out.print (j);
+            }
+                System.out.println ("");
+                sp=sp+2;
+            
+        }
+    }
+}

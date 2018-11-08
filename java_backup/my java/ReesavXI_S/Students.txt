@@ -1,0 +1,20 @@
+Name Reesav Bhowmick 
+Marks1 78 
+Marks2 77 
+Marks3 76 
+77
+Name Amlan Ghosh 
+Marks1 99 
+Marks2 98 
+Marks3 97 
+98
+Name Marks Long 
+Marks1 66 
+Marks2 77 
+Marks3 66 
+69
+Name Shane Johnson 
+Marks1 98 
+Marks2 99 
+Marks3 100 
+99

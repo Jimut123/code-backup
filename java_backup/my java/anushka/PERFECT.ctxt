@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=PERFECT()
+comment1.params=n1
+comment1.target=PERFECT(int)
+comment2.params=
+comment2.target=void\ perfectsq()
+comment3.params=
+comment3.target=void\ sumof()
+numComments=4

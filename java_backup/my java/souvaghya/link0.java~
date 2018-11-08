@@ -1,0 +1,14 @@
+
+class link0
+{
+public int data;
+public link0 next;
+public link0(int d)
+{
+data=d;
+}
+public void disp()
+{
+System.out.print(data+" -> ");
+}
+}

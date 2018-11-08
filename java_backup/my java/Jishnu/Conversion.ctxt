@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=void\ DecimalToBinary(int)
+comment1.params=n
+comment1.target=void\ DecimalToOctal(int)
+comment2.params=n
+comment2.target=void\ DecimalToHexadecimal(int)
+numComments=3

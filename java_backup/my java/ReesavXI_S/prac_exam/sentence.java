@@ -1,0 +1,66 @@
+package prac_exam;
+import java.util.*;
+class sentence
+{
+    int n;
+    String s[];
+    void accept()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number of sentences ");
+        n=sc.nextInt();
+        s=new String[n];
+        for(int i=0;i<n;i++)
+        {
+            System.out.print("Enter sentence ");
+            s[i]=sc.nextLine();
+            System.out.print("Enter NEXT sentence ");            
+        }
+    }
+    void calc()
+    {
+        int space=0;
+        String z="";
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<s[i].length();j++)
+            {
+                if(s[i].charAt(j)==' ')
+                space ++;
+            }
+        }
+        System.out.print("No of words "+(space+1));
+        String wrds[]=new String[space+1];
+        int k=-1;
+        int cr=0;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<s[i].length();j++)
+            {
+                if(s[i].charAt(j)!=' ')
+                z=z+s[i].charAt(j);
+                else
+                {
+                    wrds[++k]=z;
+                    z="";
+                }
+            }
+        }
+        int freq[]=new int[space+1];
+        k=-1;
+        for(int i=0;i<(space+1);i++)
+        {
+            z=wrds[i];
+            for(int j=i+1;j<(space+1);j++)
+            {
+                if(wrds[j]==z)
+                cr=cr+1;
+            }
+            freq[++k]=cr;
+            cr=0;
+        }
+    }
+}
+            
+            
+                    

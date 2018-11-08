@@ -1,0 +1,72 @@
+import java.io.*;
+class burning_tree
+{
+    int n, a[][];
+burning_tree(int nn)
+{
+        n=nn;
+
+}
+void rec(int r,int c)
+{
+    if(r>=n)
+    {
+        return;
+    }
+    else if(c>=n)
+    {
+    return;
+    }
+    else if(r<0)
+    {return;
+    }
+    else if(c<0)
+    {return;
+    }
+    else
+    {
+        if(a[r][c]==1)
+        {
+            a[r][c]=2;
+            rec(r,c-1);
+            rec(r,c+1);
+            rec(r+1,c);
+            rec(r-1,c);
+            rec(r+1,c-1);
+            rec(r+1,c-1);
+            rec(r-1,c-1);
+            rec(r-1,c+1);
+        }
+    }
+}
+public static void main()throws IOException
+{
+ BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+  System.out.println("Enter the Limit");  
+ int n=Integer.parseInt(br.readLine());
+ System.out.println("Enter the row"); 
+ int r=Integer.parseInt(br.readLine());
+ System.out.println("Enter the column"); 
+ int c=Integer.parseInt(br.readLine());
+ int a[][]=new int[r][c];
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+        {
+            System.out.println("Enter the elements");
+            a[i][j]=Integer.parseInt(br.readLine());
+        }
+}
+for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+        {
+            System.out.println(a[i][j]);
+            
+        }
+        System.out.println("");
+}
+burning_tree ob=new burning_tree(n);
+ob.rec(r,c);
+}
+}

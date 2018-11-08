@@ -1,0 +1,17 @@
+import java.io.*;
+class salary
+{
+    public static void main(string args []) throws IOException
+{
+    double basic ,hra,da,pf,gross;
+    BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Enter basic salary");
+    basic =Integer.parseInt(br.readLine());
+    da =0.12 *basic;
+    hra =0.30*basic;
+    pf =0.18*basic;
+    gross =basic+da+hra-pf;
+    System.out.println ("Gross salary="+gross);
+}
+}
+    

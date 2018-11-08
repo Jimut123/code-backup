@@ -1,0 +1,17 @@
+import java.io.*;
+class Capsmall
+{
+    public static void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String s;int a=0,b-0;
+        System.out.println("Enter a word");
+        s=br.readLine();
+        for(int i=1;i<s.length();i++)
+        {
+            if(((int)s.charAt(i)>=65&&(int)s.charAt(i)<=90)||(int)s.charAt(i)>=97&&(int)s.charAt(i)<=122)
+            {
+                c++;
+            }
+            else if(int)s.charAt(i)>=97&&(int)s.charAt(i)<=122)
+        

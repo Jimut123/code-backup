@@ -1,0 +1,216 @@
+
+class tree
+{
+private node root;
+public tree()
+{
+root=null;
+}
+public node find(int key)
+{
+curren=root;
+while(current.data!=key)
+{
+if(key<current.data)
+current=current.lc;
+else
+current=current.rc;
+if(current==null)
+return null;
+}
+return current;
+}
+public void insert(int id)
+{
+node newnode=new node();
+newnode.data=id;
+if(root==null)
+root=newnode;
+else
+{
+node current=root;
+node parent;
+while(true)
+{
+parent=current;
+if(id<current.data)
+{
+current=current.lc;
+if(current==null)
+parent.lc=newnode;
+return;
+}
+else
+{
+current=current.rc;
+if(current==null)
+{
+parent.rc=newnode;
+return;
+}
+}
+}
+}
+}
+public boolean delete(int key)
+{
+node current=root;
+node parent=root;
+boolean isLchild=true;
+while(current.data!=key)
+{
+parent=current;
+if(key<current.data)
+{
+isLchild=true;
+current=current.lc;
+}
+else
+{
+isLchild=false;
+current=current.rc;
+}
+if(current==null)
+return false;
+}
+if(current.lc==null && current.rc==null)
+{
+if(current==root)
+root=null;
+else
+if(isLchild)
+parent.lc=null;
+else
+parent.rc=null;
+}
+else
+if(current.rc==null)
+if(current==root)
+root=current.lc;
+else
+if(isLchild)
+parent.lc=current.lc;
+else
+parent.rc=current.rc;
+else
+if(current.lc==null)
+if(current==root)
+root=current.rc;
+else
+if(isLchild)
+parent.lc=current.rc;
+else
+parent.rc=current.rc;
+else
+{
+node successor=getSuccessor(current);
+if(current=root)
+root=successor;
+else
+if(isLchild)
+parent.lc=successor;
+else
+parent.rc=successor;
+successor.lc=current.lc;
+}
+return true;
+}
+private node getSuccessor(node delnode)
+{
+node successor_parent=delnode;
+node successor=delnode;
+node current=delnode.rc;
+while(current!=null)
+{
+successor_parent=successor;
+successor=current;
+current=current.lc;
+}
+if(successor!=delnode.rc)
+{
+successor_parent.lc=successor.rc;
+successor.rc=delnode.rc;
+}
+return successor;
+}
+public void traverse(int traversetype)
+{
+switch(traversetype)
+{
+case 1: System.out.println("\nPreOrder ::: ");
+        PreOrder(root);
+        break;
+case 2: System.out.println("\nInOrder ::: ");
+        InOrder(root);
+        break;
+case 2: System.out.println("\nPostOrder ::: ");
+        PostOrder(root);
+        break;
+}
+}
+private void PreOrder(node localroot)
+{
+if(localroot!=null)
+{
+localroot.display();
+PreOrder(lacalroot.lc);
+PreOrder(localroot.rc);
+}
+}
+private void InOrder(node localroot)
+{
+if(localroot!=null)
+{
+InOrder(lacalroot.lc);
+localroot.display();
+InOrder(localroot.rc);
+}
+}
+private void PostOrder(node localroot)
+{
+if(localroot!=null)
+{
+PostOrder(lacalroot.lc);
+PostOrder(localroot.rc);
+localroot.display();
+}
+}
+public void displayTree()
+{
+Stack globalstack=new Stack();
+globalstack.push(root);
+int b=32;
+boolean isRowEmpty=false;
+System.out.println(".......................");
+while(isRowEmpty==false)
+{
+Stack localstack=new Stack();
+isRowEmpty=true;
+for(int j=0;j<b;j++)
+System.out.print(" ");
+while(globalstack.isEmpty==false)
+{
+node temp=(node)globalstack.pop();
+if(temp!=null)
+{
+System.out.print(temp.data);
+localstack.push(temp.lc);
+localstack.push(temp.rc);
+if((temp.lc!=null) || (temp.rc!=null))
+isRowEmpty=false;
+}
+else
+{
+Systyem.out.print(".........................");
+localstack.push(null);
+localstack.push(null);
+}
+for(int j=0;j<b*2-2;j++)
+System.out.print(" ");
+b/=2;
+while(localstack.isEmpty()==false)
+globalstack.push(localstack.pop());
+System.out.println(".........................");
+}
+}
+}}

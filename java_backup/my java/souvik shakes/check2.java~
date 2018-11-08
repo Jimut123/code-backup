@@ -1,0 +1,12 @@
+import java.io.*
+class check2
+{
+    public static void main(String args[])
+                  throws IO exception
+{
+    Input Stream Reader(System.in)
+    Buferred Reader vr = new buferred Reader
+    int a;
+    a = Intege.parszeInt(br.readline())
+    if(a<o)
+    system.out.print

@@ -1,0 +1,57 @@
+
+class distance
+{
+    class dist
+    {
+        String place;
+        int dis;
+    }
+    void show1()
+    {
+        int i;
+        dist d[]=new dist[100];
+        d[0]=new dist();
+        d[0].place="NEW DELHI";
+        d[0].dis=1458;
+        d[1]=new dist();
+        d[1].place="MUMBAI";
+        d[1].dis=1944;
+        d[2]=new dist();
+        d[2].place="CHENNAI";
+        d[2].dis=1659;
+        d[3]=new dist();
+        d[3].place="BANGALORE";
+        d[3].dis=1867;
+        d[4]=new dist();
+        d[4].place="HYDERABAD";
+        d[4].dis=1480;
+        d[5]=new dist();
+        d[5].place="COCHIN";
+        d[5].dis=2296;
+        d[6]=new dist();
+        d[6].place="GUWAHATI";
+        d[6].dis=1012;
+        d[7]=new dist();
+        d[7].place="BHUBANESWAR";
+        d[7].dis=452;
+        d[8]=new dist();
+        d[8].place="BHUBANESWAR";
+        d[8].dis=452;
+        d[8]=new dist();
+        d[8].place="PATNA";
+        d[8].dis=576;
+        d[9]=new dist();
+        d[9].place="CHANDIGARH";
+        d[9].dis=1829;
+        System.out.println("DISTANCE FROM HOWRAH TO OTHER CITIES");
+        for(i=0;i<10;i++)
+        {
+            System.out.println("HOWRAH---------->"+d[i].place+"-------------->"+d[i].dis);
+        }
+    }
+    void main()
+    {
+       distance d=new distance();
+       d.show1();
+    }
+}

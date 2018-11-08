@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,73.0,66.0,79,29.94,8.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-08-07 04:51:00
+1:51 AM,73.4,64.4,73,29.94,8.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-08-07 05:51:00
+2:51 AM,71.1,66.0,84,29.92,7.0,NNE,3.5,-,N/A,,Scattered Clouds,20,2014-08-07 06:51:00
+3:51 AM,70.0,66.0,87,29.92,6.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-08-07 07:51:00
+4:51 AM,71.1,66.0,84,29.93,6.0,North,4.6,-,N/A,,Haze,10,2014-08-07 08:51:00
+5:51 AM,69.1,66.0,90,29.92,5.0,NE,5.8,-,N/A,,Scattered Clouds,40,2014-08-07 09:51:00
+6:51 AM,70.0,66.0,87,29.94,3.0,NNE,4.6,-,N/A,,Mostly Cloudy,30,2014-08-07 10:51:00
+7:51 AM,71.1,66.0,84,29.96,6.0,NNE,3.5,-,N/A,,Haze,20,2014-08-07 11:51:00
+8:51 AM,75.0,66.0,73,29.97,8.0,NNE,6.9,-,N/A,,Mostly Cloudy,30,2014-08-07 12:51:00
+9:51 AM,78.1,64.9,64,29.99,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2014-08-07 13:51:00
+10:51 AM,81.0,64.9,58,29.99,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-08-07 14:51:00
+11:51 AM,82.0,64.9,56,29.99,10.0,ENE,4.6,-,N/A,,Mostly Cloudy,70,2014-08-07 15:51:00
+12:51 PM,84.0,66.0,55,29.98,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-08-07 16:51:00
+1:51 PM,84.2,66.2,55,29.98,10.0,ENE,4.6,-,N/A,,Mostly Cloudy,60,2014-08-07 17:51:00
+2:51 PM,84.9,66.0,53,29.97,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-08-07 18:51:00
+3:51 PM,84.0,66.9,56,29.96,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-08-07 19:51:00
+4:51 PM,84.0,68.0,58,29.97,10.0,NNE,9.2,-,N/A,,Mostly Cloudy,30,2014-08-07 20:51:00
+5:51 PM,84.9,68.0,57,29.97,9.0,NNE,6.9,-,N/A,,Mostly Cloudy,20,2014-08-07 21:51:00
+6:51 PM,82.9,68.0,60,29.96,9.0,NNE,8.1,-,N/A,,Mostly Cloudy,30,2014-08-07 22:51:00
+7:51 PM,78.8,68.0,69,29.98,8.0,ENE,6.9,-,N/A,,Mostly Cloudy,60,2014-08-07 23:51:00
+8:51 PM,75.0,68.0,79,29.99,8.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-08 00:51:00
+9:51 PM,73.9,68.0,82,30.01,7.0,ENE,4.6,-,N/A,,Mostly Cloudy,60,2014-08-08 01:51:00
+10:51 PM,72.0,66.9,84,30.03,7.0,ENE,4.6,-,N/A,,Scattered Clouds,60,2014-08-08 02:51:00
+11:51 PM,73.0,68.0,84,30.02,7.0,East,5.8,-,N/A,,Partly Cloudy,80,2014-08-08 03:51:00

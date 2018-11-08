@@ -1,0 +1,39 @@
+class consec
+{
+     public static void main(int n)
+     {
+         int n1=n; int d=n; int p=0; int c=0,f=0;int m=0;
+         do
+         {
+             p=n%10;
+             c++;
+             if(p>m)
+             m=p;
+             n/=10;
+            }while(n>0);
+            for(int i=m-c+1;i<=m;i++)
+            {
+                while(n>0)
+                {
+                    p=n1%10;
+                    if(p==i)
+                    f++;
+                    n1/=10;
+                }
+                n1=d;
+            }
+            if(f==c)
+            System.out.println("Consecutive");
+            else
+             System.out.println("non Consecutive");
+            }
+        }
+            
+                
+     
+     
+     
+     
+     
+     
+     

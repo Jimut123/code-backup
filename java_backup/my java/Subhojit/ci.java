@@ -1,0 +1,17 @@
+import java.util.*;
+class ci
+{
+public static void main()
+{
+    int p, r,  t,q;
+    Scanner sc=new Scanner(System.in);
+    p=sc.nextInt();
+    r=sc.nextInt();
+    t=sc.nextInt();
+    q=p*(int)Math.pow((1+r/100),t);
+    System.out.println(q);
+}
+}
+
+    
+    

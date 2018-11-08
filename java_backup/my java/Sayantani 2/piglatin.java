@@ -1,0 +1,26 @@
+import java.util.*;
+  class piglatin
+  {
+      public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println ("Enter a String");
+        String s;
+        s=sc.nextLine ();
+        int i,t;
+        t=0;
+        for ( i=0;i<s.length();i++)
+        if(s.charAt(i)=='a' || s.charAt(i)=='e' || s.charAt(i)=='i' || s.charAt(i)=='o' || s.charAt(i)=='u')
+        {
+             t =i;
+          break;
+        }
+           for(i=t;i<s.length();i++)
+           System.out.print(s.charAt(i));
+           for(i=0;i<t;i++)
+           
+           System.out.print(s.charAt(i));
+           System.out.print("ay");
+        }
+    }
+           

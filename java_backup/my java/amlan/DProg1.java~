@@ -1,0 +1,43 @@
+import java.util.*;
+class DProg1
+{
+public static void main()
+{
+int ans=1,m;
+int num=0;
+Scanner ob=new Scanner(System.in);
+DlinkedList1 ob1=new DlinkedList1();
+do
+{
+System.out.println("\npress 1 to insert \npress 2 to display \npress 3 to exit \n");
+m=ob.nextInt();
+switch(m)
+{
+case 1: System.out.println("\nenter the number : ");
+        num=ob.nextInt();
+        System.out.println("\n1 to insert from first \n2 to insert from last \n");
+        ans=ob.nextInt();
+        if(ans==1)
+        ob1.Insert1(num);
+        else
+        if(ans==2)
+        ob1.Insert2(num);
+        else
+        System.out.println("\nstart afresh due to wrong input!!!!!!!!!!!!!!!!");
+        break;
+case 2: System.out.println("\n\n1 to display from first \n2 to display from last \n");
+        ans=ob.nextInt();
+        if(ans==1)
+        ob1.display1();
+        else
+        if(ans==2)
+        ob1.display2();
+        else
+        System.out.println("\nenter options from among the menu!!!!!!!!!!!!!!!!");
+        break;
+case 3: System.exit(0);
+default: System.out.println("\ninput integer from among the menu options!!!!!!!!!!!!!!!!");
+}
+}while(true);
+}
+}

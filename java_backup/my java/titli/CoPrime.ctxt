@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ get()
+comment1.params=
+comment1.target=void\ show()
+comment2.params=
+comment2.target=void\ check()
+comment3.params=n
+comment3.target=boolean\ checkPrime(int)
+comment4.params=num\ r\ c
+comment4.target=void\ checkCoPrime(int,\ int,\ int)
+numComments=5

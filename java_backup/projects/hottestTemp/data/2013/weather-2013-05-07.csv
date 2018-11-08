@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,59.0,55.9,90,29.90,10.0,ESE,3.5,-,N/A,,Partly Cloudy,120,2013-05-07 04:51:00
+1:51 AM,57.0,53.1,87,29.89,10.0,SE,3.5,-,N/A,,Partly Cloudy,130,2013-05-07 05:51:00
+2:51 AM,55.0,53.1,93,29.87,10.0,ESE,3.5,-,N/A,,Scattered Clouds,110,2013-05-07 06:51:00
+3:51 AM,52.0,50.0,93,29.86,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2013-05-07 07:51:00
+4:51 AM,51.1,48.9,92,29.86,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2013-05-07 08:51:00
+5:51 AM,51.1,48.9,92,29.87,5.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2013-05-07 09:51:00
+6:51 AM,52.0,50.0,93,29.87,10.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2013-05-07 10:51:00
+7:51 AM,54.0,53.1,97,29.88,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-05-07 11:51:00
+8:51 AM,57.9,55.0,90,29.90,10.0,SSW,5.8,-,N/A,,Mostly Cloudy,200,2013-05-07 12:51:00
+9:51 AM,57.9,55.0,90,29.91,10.0,WSW,4.6,-,N/A,,Mostly Cloudy,250,2013-05-07 13:51:00
+10:51 AM,60.1,57.0,90,29.93,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,240,2013-05-07 14:51:00
+11:51 AM,64.4,55.4,73,29.92,10.0,WSW,6.9,-,N/A,,Mostly Cloudy,240,2013-05-07 15:51:00
+12:51 PM,64.9,54.0,68,29.91,10.0,WSW,9.2,-,N/A,,Mostly Cloudy,250,2013-05-07 16:51:00
+1:28 PM,66.2,53.6,64,29.90,10.0,West,5.8,-,N/A,Thunderstorm,Thunderstorm,260,2013-05-07 17:28:00
+1:51 PM,66.0,51.1,59,29.90,10.0,South,13.8,18.4,0.00,Thunderstorm,Thunderstorm,190,2013-05-07 17:51:00
+2:18 PM,66.2,51.8,60,29.90,10.0,South,6.9,-,N/A,,Mostly Cloudy,190,2013-05-07 18:18:00
+2:51 PM,66.9,51.1,57,29.88,10.0,West,4.6,-,N/A,,Mostly Cloudy,260,2013-05-07 18:51:00
+3:51 PM,70.0,50.0,49,29.87,10.0,SW,11.5,-,N/A,,Mostly Cloudy,230,2013-05-07 19:51:00
+4:51 PM,69.1,46.9,45,29.87,10.0,SW,11.5,17.3,N/A,,Mostly Cloudy,230,2013-05-07 20:51:00
+5:51 PM,66.9,48.9,52,29.88,10.0,SW,16.1,20.7,N/A,,Mostly Cloudy,230,2013-05-07 21:51:00
+6:51 PM,64.9,50.0,58,29.88,10.0,WSW,12.7,-,N/A,,Mostly Cloudy,240,2013-05-07 22:51:00
+7:51 PM,62.1,48.0,60,29.91,10.0,SSW,6.9,-,N/A,,Mostly Cloudy,210,2013-05-07 23:51:00
+8:51 PM,57.9,48.9,72,29.92,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-05-08 00:51:00
+9:51 PM,55.9,48.9,77,29.94,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-05-08 01:51:00
+10:51 PM,53.1,50.0,89,29.95,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-05-08 02:51:00
+11:51 PM,52.0,48.9,89,29.95,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-05-08 03:51:00

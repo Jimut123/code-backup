@@ -1,0 +1,12 @@
+package project1_May2016;
+
+//to do abbreviation in strings
+import java,io,*;
+class strings
+{
+    void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String s,w;
+        System.out.println("Enter String");
+        s=

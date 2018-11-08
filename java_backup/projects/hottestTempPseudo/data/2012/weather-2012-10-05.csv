@@ -1,0 +1,26 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,64.0,62.1,93,30.17,8.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-05 04:51:00
+1:51 AM,64.9,63.0,93,30.17,8.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-05 05:51:00
+2:51 AM,63.0,61.0,93,30.16,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-05 06:51:00
+3:51 AM,62.1,60.1,93,30.16,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-05 07:51:00
+4:51 AM,60.1,59.0,96,30.16,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-05 08:51:00
+5:03 AM,60.8,57.2,88,30.17,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-05 09:03:00
+5:51 AM,60.1,57.9,93,30.17,9.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-05 09:51:00
+6:51 AM,59.0,57.0,93,30.17,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-10-05 10:51:00
+7:51 AM,57.9,55.9,93,30.17,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-10-05 11:51:00
+8:51 AM,61.0,59.0,93,30.19,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-10-05 12:51:00
+9:51 AM,68.0,57.0,68,30.18,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-10-05 13:51:00
+10:51 AM,73.0,57.9,59,30.17,10.0,NNE,4.6,-,N/A,,Scattered Clouds,20,2012-10-05 14:51:00
+11:51 AM,75.9,55.9,50,30.15,10.0,NNW,4.6,-,N/A,,Scattered Clouds,340,2012-10-05 15:51:00
+12:51 PM,77.0,57.0,50,30.14,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-10-05 16:51:00
+1:51 PM,81.0,57.0,44,30.11,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-10-05 17:51:00
+2:51 PM,80.1,55.9,43,30.08,10.0,SW,5.8,-,N/A,,Scattered Clouds,230,2012-10-05 18:51:00
+3:51 PM,81.0,55.9,42,30.07,10.0,Variable,6.9,-,N/A,,Scattered Clouds,0,2012-10-05 19:51:00
+4:51 PM,80.1,55.0,42,30.04,10.0,South,8.1,-,N/A,,Scattered Clouds,190,2012-10-05 20:51:00
+5:51 PM,78.1,55.9,46,30.04,10.0,WSW,4.6,-,N/A,,Scattered Clouds,250,2012-10-05 21:51:00
+6:51 PM,71.1,57.0,61,30.04,10.0,SSE,3.5,-,N/A,,Scattered Clouds,150,2012-10-05 22:51:00
+7:51 PM,68.0,60.1,76,30.04,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-05 23:51:00
+8:51 PM,66.9,60.1,79,30.04,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-06 00:51:00
+9:51 PM,66.0,59.0,78,30.05,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-06 01:51:00
+10:51 PM,66.0,57.9,75,30.04,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-06 02:51:00
+11:51 PM,64.4,57.2,77,30.03,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-06 03:51:00

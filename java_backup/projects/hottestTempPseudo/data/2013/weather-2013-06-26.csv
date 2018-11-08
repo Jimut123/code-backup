@@ -1,0 +1,32 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,72.0,69.1,91,30.02,10.0,SW,8.1,-,N/A,,Mostly Cloudy,230,2013-06-26 04:51:00
+1:51 AM,73.0,69.1,87,30.01,10.0,SW,8.1,-,N/A,,Scattered Clouds,230,2013-06-26 05:51:00
+2:51 AM,72.0,69.1,91,30.00,10.0,SW,8.1,-,N/A,,Partly Cloudy,220,2013-06-26 06:51:00
+3:51 AM,72.0,68.0,87,29.99,10.0,SW,10.4,-,N/A,,Partly Cloudy,220,2013-06-26 07:51:00
+4:51 AM,71.1,68.0,90,29.99,10.0,SW,8.1,-,N/A,,Partly Cloudy,220,2013-06-26 08:51:00
+5:51 AM,71.1,68.0,90,29.99,10.0,SW,6.9,-,N/A,,Partly Cloudy,230,2013-06-26 09:51:00
+6:51 AM,71.1,68.0,90,30.01,10.0,SW,9.2,-,N/A,,Scattered Clouds,230,2013-06-26 10:51:00
+7:51 AM,73.9,69.1,85,30.02,10.0,WSW,8.1,-,N/A,,Scattered Clouds,240,2013-06-26 11:51:00
+8:51 AM,75.9,70.0,82,30.02,10.0,SW,10.4,-,N/A,,Scattered Clouds,230,2013-06-26 12:51:00
+9:51 AM,80.1,71.1,74,30.00,10.0,WSW,12.7,-,N/A,,Scattered Clouds,250,2013-06-26 13:51:00
+10:51 AM,82.0,72.0,71,29.98,10.0,SW,12.7,-,N/A,,Scattered Clouds,230,2013-06-26 14:51:00
+11:51 AM,84.9,73.0,67,29.98,10.0,SSW,9.2,-,N/A,,Scattered Clouds,210,2013-06-26 15:51:00
+12:51 PM,88.0,72.0,59,29.98,10.0,SW,10.4,16.1,N/A,,Scattered Clouds,230,2013-06-26 16:51:00
+1:51 PM,89.1,72.0,57,29.96,10.0,WSW,8.1,-,N/A,,Scattered Clouds,240,2013-06-26 17:51:00
+2:51 PM,91.0,71.1,52,29.93,10.0,West,9.2,-,N/A,,Scattered Clouds,260,2013-06-26 18:51:00
+3:51 PM,89.1,71.1,55,29.91,10.0,WSW,12.7,-,N/A,,Scattered Clouds,240,2013-06-26 19:51:00
+4:51 PM,88.0,73.0,61,29.90,10.0,SW,16.1,-,N/A,,Scattered Clouds,230,2013-06-26 20:51:00
+5:51 PM,86.0,71.1,61,29.92,10.0,SSW,11.5,-,N/A,,Mostly Cloudy,210,2013-06-26 21:51:00
+6:51 PM,79.0,64.0,60,29.97,10.0,NNW,12.7,31.1,N/A,Thunderstorm,Thunderstorm,330,2013-06-26 22:51:00
+7:06 PM,71.6,64.4,78,30.00,7.0,North,8.1,23.0,0.00,Rain-Thunderstorm,Light Thunderstorms and Rain,350,2013-06-26 23:06:00
+7:15 PM,69.8,66.2,88,30.01,1.0,West,8.1,-,0.21,Rain-Thunderstorm,Heavy Thunderstorms and Rain,280,2013-06-26 23:15:00
+7:27 PM,69.8,66.2,88,30.01,2.0,Variable,4.6,-,0.28,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2013-06-26 23:27:00
+7:39 PM,69.8,66.2,88,29.99,5.0,South,3.5,-,0.28,Rain-Thunderstorm,Light Thunderstorms and Rain,190,2013-06-26 23:39:00
+7:51 PM,70.0,66.9,90,29.98,7.0,Variable,5.8,-,0.28,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2013-06-26 23:51:00
+8:33 PM,69.8,66.2,88,29.96,10.0,SE,3.5,-,0.00,Rain,Light Rain,130,2013-06-27 00:33:00
+8:51 PM,70.0,66.9,90,29.94,10.0,Calm,Calm,-,0.01,Rain,Light Rain,0,2013-06-27 00:51:00
+9:51 PM,69.1,68.0,96,29.97,10.0,SW,10.4,-,0.00,,Mostly Cloudy,220,2013-06-27 01:51:00
+10:33 PM,69.8,66.2,88,29.97,10.0,SSW,8.1,-,N/A,,Overcast,210,2013-06-27 02:33:00
+10:51 PM,70.0,66.9,90,29.95,10.0,SSW,9.2,-,N/A,,Overcast,210,2013-06-27 02:51:00
+11:04 PM,69.8,68.0,94,29.96,10.0,SW,9.2,-,N/A,,Mostly Cloudy,230,2013-06-27 03:04:00
+11:51 PM,69.1,66.9,93,29.93,10.0,SW,4.6,-,N/A,,Mostly Cloudy,230,2013-06-27 03:51:00

@@ -1,0 +1,27 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.5.0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.5
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+E:\My Documents\my java\DEEPAYAN\doc
+-classpath
+C:\BlueJ\lib\bluejcore.jar;C:\BlueJ\lib\junit.jar;E:\My Documents\my java\DEEPAYAN
+E:\My Documents\my java\DEEPAYAN\spiral.java
+<---- end of javadoc command ---->
+Loading source file E:\My Documents\my java\DEEPAYAN\spiral.java...
+E:\My Documents\my java\DEEPAYAN\spiral.java:1: ';' expected
+import java.util*;
+                ^
+E:\My Documents\my java\DEEPAYAN\spiral.java:4: '}' expected
+    
+    ^
+2 errors

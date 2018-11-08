@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,46.0,36.0,68,29.93,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-04-28 04:51:00
+1:51 AM,43.0,36.0,76,29.93,10.0,Calm,Calm,-,N/A,,Clear,0,2015-04-28 05:51:00
+2:51 AM,42.1,36.0,79,29.93,10.0,Calm,Calm,-,N/A,,Clear,0,2015-04-28 06:51:00
+3:51 AM,41.0,35.1,79,29.93,10.0,Calm,Calm,-,N/A,,Clear,0,2015-04-28 07:51:00
+4:51 AM,42.1,35.1,76,29.95,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-04-28 08:51:00
+5:51 AM,42.1,35.1,76,29.96,10.0,NNE,4.6,-,N/A,,Scattered Clouds,30,2015-04-28 09:51:00
+6:51 AM,43.0,35.1,74,29.96,10.0,North,3.5,-,N/A,,Scattered Clouds,360,2015-04-28 10:51:00
+7:51 AM,48.0,36.0,63,29.98,10.0,North,5.8,-,N/A,,Scattered Clouds,10,2015-04-28 11:51:00
+8:51 AM,51.1,37.0,59,29.99,10.0,Variable,5.8,-,N/A,,Partly Cloudy,0,2015-04-28 12:51:00
+9:51 AM,54.0,36.0,51,30.00,10.0,Variable,5.8,-,N/A,,Partly Cloudy,0,2015-04-28 13:51:00
+10:51 AM,57.0,36.0,45,29.99,10.0,NNE,8.1,17.3,N/A,,Partly Cloudy,30,2015-04-28 14:51:00
+11:51 AM,60.1,37.9,44,29.99,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2015-04-28 15:51:00
+12:51 PM,62.1,37.9,41,29.97,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-04-28 16:51:00
+1:51 PM,64.4,37.4,37,29.95,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2015-04-28 17:51:00
+2:51 PM,66.2,39.2,37,29.93,10.0,East,6.9,-,N/A,,Scattered Clouds,80,2015-04-28 18:51:00
+3:51 PM,66.9,43.0,42,29.91,10.0,SW,3.5,-,N/A,,Scattered Clouds,220,2015-04-28 19:51:00
+4:51 PM,68.0,39.9,36,29.88,10.0,East,4.6,-,N/A,,Scattered Clouds,80,2015-04-28 20:51:00
+5:51 PM,66.9,39.0,36,29.88,10.0,North,8.1,-,N/A,,Scattered Clouds,10,2015-04-28 21:51:00
+6:51 PM,66.0,39.9,38,29.89,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-04-28 22:51:00
+7:51 PM,60.1,42.1,51,29.90,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-04-28 23:51:00
+8:51 PM,55.0,45.0,69,29.91,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-04-29 00:51:00
+9:51 PM,53.1,45.0,74,29.91,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-04-29 01:51:00
+10:51 PM,53.1,45.0,74,29.92,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-04-29 02:51:00
+11:51 PM,48.0,43.0,83,29.91,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-04-29 03:51:00

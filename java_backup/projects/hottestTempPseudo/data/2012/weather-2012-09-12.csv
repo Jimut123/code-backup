@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,59.0,55.0,87,30.31,10.0,Calm,Calm,-,N/A,,Clear,0,2012-09-12 04:51:00
+1:51 AM,57.9,54.0,87,30.31,10.0,Calm,Calm,-,N/A,,Clear,0,2012-09-12 05:51:00
+2:51 AM,57.0,54.0,89,30.30,10.0,Calm,Calm,-,N/A,,Clear,0,2012-09-12 06:51:00
+3:51 AM,55.9,53.1,90,30.30,10.0,Calm,Calm,-,N/A,,Clear,0,2012-09-12 07:51:00
+4:51 AM,55.0,53.1,93,30.31,10.0,Calm,Calm,-,N/A,,Clear,0,2012-09-12 08:51:00
+5:51 AM,54.0,52.0,93,30.31,8.0,Calm,Calm,-,N/A,,Clear,0,2012-09-12 09:51:00
+6:51 AM,53.6,51.8,94,30.33,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-09-12 10:51:00
+7:51 AM,55.9,54.0,93,30.35,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-09-12 11:51:00
+8:51 AM,64.0,57.9,80,30.36,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-09-12 12:51:00
+9:51 AM,69.1,54.0,58,30.38,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-09-12 13:51:00
+10:51 AM,71.1,54.0,55,30.38,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-09-12 14:51:00
+11:51 AM,73.9,54.0,50,30.37,10.0,ENE,9.2,-,N/A,,Scattered Clouds,60,2012-09-12 15:51:00
+12:51 PM,75.9,55.0,48,30.35,10.0,ENE,9.2,16.1,N/A,,Scattered Clouds,70,2012-09-12 16:51:00
+1:51 PM,77.0,53.1,43,30.34,10.0,NNE,9.2,-,N/A,,Scattered Clouds,30,2012-09-12 17:51:00
+2:51 PM,78.1,52.0,40,30.31,10.0,East,9.2,-,N/A,,Scattered Clouds,100,2012-09-12 18:51:00
+3:51 PM,78.1,53.1,42,30.29,10.0,Variable,6.9,-,N/A,,Scattered Clouds,0,2012-09-12 19:51:00
+4:51 PM,78.8,51.8,39,30.30,10.0,ENE,6.9,-,N/A,,Scattered Clouds,60,2012-09-12 20:51:00
+5:51 PM,75.2,53.6,47,30.30,10.0,ENE,8.1,-,N/A,,Scattered Clouds,60,2012-09-12 21:51:00
+6:51 PM,73.9,53.1,48,30.30,10.0,ESE,5.8,-,N/A,,Partly Cloudy,110,2012-09-12 22:51:00
+7:51 PM,68.0,53.1,59,30.31,10.0,East,4.6,-,N/A,,Partly Cloudy,100,2012-09-12 23:51:00
+8:51 PM,64.9,55.0,70,30.32,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-09-13 00:51:00
+9:51 PM,62.1,55.0,78,30.33,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-09-13 01:51:00
+10:51 PM,60.1,54.0,80,30.33,10.0,Calm,Calm,-,N/A,,Clear,0,2012-09-13 02:51:00
+11:51 PM,60.1,53.1,78,30.33,10.0,ENE,5.8,-,N/A,,Clear,70,2012-09-13 03:51:00

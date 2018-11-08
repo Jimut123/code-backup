@@ -1,0 +1,49 @@
+import java.util.*;
+public class inherit
+{
+    String a;
+    int b,c;
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter name");
+        a=sc.nextLine();
+        System.out.println("Enter marks");
+        b=sc.nextInt();
+        System.out.println("Enter roll number");
+        c=sc.nextInt();
+    }
+    void display()
+    {
+        System.out.println(a);
+        System.out.println(+b);
+        System.out.println(+c);
+    }
+}
+public class sec extends inherit
+{
+    int m1,m2,m3;
+    void input()
+    {
+        
+        Scanner sc=new Scanner(System.in);
+        super.input();
+        System.ut.println("Enter marks 1");
+        m1=sc.nextInt();
+        System.out.println("Enter marks 2");
+        m2=sc.nextInt();
+        System.ut.println("Enter marks 3");
+        m3=sc.nextInt();
+        super.display();
+        display();
+    }
+    void display()
+    {
+        System.out.println(+m1);
+        System.out.println(+m2);
+        System.ot.println(+m3);
+    }
+}
+    
+        

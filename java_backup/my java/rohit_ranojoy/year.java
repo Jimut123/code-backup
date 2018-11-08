@@ -1,0 +1,16 @@
+public class year
+{
+    public static void main(int a)
+    {
+        if(a%4==0||a%400==0)
+        {
+            System.out.println("a leap year"+a);
+        }
+        else
+        {
+            System.out.println("not a leap year"+a);
+        }
+    }
+}
+
+

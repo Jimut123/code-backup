@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BinarySum()
+comment1.params=x
+comment1.target=void\ insert(int)
+comment2.params=n\ x
+comment2.target=TreeNode\ insert(TreeNode,\ int)
+comment3.params=n
+comment3.target=void\ right_sum(TreeNode)
+comment4.params=n
+comment4.target=void\ left_sum(TreeNode)
+comment5.params=
+comment5.target=void\ sum()
+numComments=6

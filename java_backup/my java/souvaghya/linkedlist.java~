@@ -1,0 +1,37 @@
+
+import java.util.*;
+class linkedlist
+{
+public link first;
+Scanner ob=new Scanner(System.in);
+public linkedlist()
+{
+first=null;
+}
+public boolean isEmpty()
+{
+return (first==null);
+}
+public void Insert(int a)
+{
+System.out.println("\nenter the number : ");
+a=ob.nextInt();
+link newlink=new link(a);
+newlink.next=first;
+first=newlink;
+System.out.println("\n1 to continue \n0 to exit \n");
+i=ob.nextInt();
+if(i==1)
+Insert(a);
+}
+public void display(link current)
+{
+if(current!=null)
+{
+current.disp();
+display(current.next);
+}
+else
+System.out.println("");
+}
+}

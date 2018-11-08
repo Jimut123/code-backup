@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=recur_func(int)
+comment1.params=
+comment1.target=void\ clac()
+comment2.params=s
+comment2.target=int\ pow(int)
+comment3.params=r
+comment3.target=int\ fact(int)
+numComments=4

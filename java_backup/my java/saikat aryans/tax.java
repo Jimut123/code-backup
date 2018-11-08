@@ -1,0 +1,25 @@
+import java.io.*;
+public class tax
+{
+    public static void main() throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int i,t;
+        System.out.println("Enter data:");
+        i=Integer.parseInt(br.readLine());
+        if(i<=100000)
+        t=0;
+        else
+        if(i<=250000)
+       t=((i-100000)*10)/100;
+        else
+        if(i<=500000)
+        t=10000+((i-250000)*15)/100;
+        if(i<=1000000)
+        t=15000+((i-500000)*20)/100;
+        else
+        t=25000+((i-1000000)*25)/100;
+        System.out.println("+i,+t");
+    }
+}
+

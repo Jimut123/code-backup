@@ -1,0 +1,30 @@
+package Inheritance;
+import java.util.*;
+class bank1 implements Cal
+{
+    double P=0;
+    double T=0;
+    int mode;
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Principle ");
+        P=sc.nextInt();
+        System.out.print("Enter Time ");
+        T=sc.nextInt();
+        System.out.print("Enter the mode ");
+        mode=sc.nextInt();
+    }
+    public void calculate()
+    {
+        if(mode==1)
+        {
+            System.out.println("Principle Amount "+P);
+            System.out.println("Total in savings "+(P*T*I1));
+        }
+        if(mode==0)
+        {
+            System.out.println("Principle Amount "+P);
+            System.out.println("Total in savings "+(P*T*I));
+        }
+        

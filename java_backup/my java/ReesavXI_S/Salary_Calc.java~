@@ -1,0 +1,16 @@
+class Salary_Calc
+{
+
+double DA(double a)
+{
+if(a<5000)
+DA=(49.5/100)*a;
+else if(a>=5000&&a<=7000)
+DA=(68.2/100)*a;
+else if(a>7000&&a<=12500)
+DA=(73/100)*a;
+else
+DA=(86.9/100)*a;
+return DA;
+}
+}

@@ -1,0 +1,14 @@
+import java.util.*;
+class I_hate_you
+{
+    public static void main(String args)
+    {
+        int a,j;
+        for(a=1;a<=5;a++)
+        {
+        for(j=1;j<=a;j++)
+        System.out.print("*");
+        System.out.println("");
+    }
+    }
+}

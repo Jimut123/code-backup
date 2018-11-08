@@ -1,0 +1,58 @@
+import java.io.*;
+class pseudoarithmetic
+{
+int n,a[],ans,flag,sum,r;
+public pseudoarithmetic()
+{
+n=ans=flag=sum=r=0;
+}
+void accept(int nn)throws IOException
+{
+int i;
+n=nn;
+a=new int[n];
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+for(i=0;i<n;i++)
+{System.out.println(" Enter elements ");
+a[i]=Integer.parseInt(br.readLine());
+}
+}
+boolean check()
+{
+int i,j;
+r=a[0]+a[n-1];
+if(n%2==0)
+{
+ans=1;
+}
+for(i=0,j=n-1;i<n/2;i++,j--)
+{
+sum=a[i]+a[j];
+if(sum!=r)
+{
+flag=1;
+break;
+}
+}
+if(ans==0)
+{
+sum=2*a[n/2];
+if(sum!=r)
+flag=1;
+}
+if(flag==0)
+return true;
+else
+return false;
+}
+public static void main()throws IOException
+{
+pseudoarithmetic ob=new pseudoarithmetic();
+ob.accept(6);
+boolean x=ob.check();
+if(x==true)
+System.out.println(" Pseudoarithmetic series ");
+else
+System.out.println(" not a pseudoarithmetic series ");
+}
+}

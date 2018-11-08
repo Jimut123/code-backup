@@ -1,0 +1,13 @@
+class rd
+{
+    public static void main(int a)
+    {
+        if(a>0)
+        if(a%2==0)
+        System.out.print("even");
+        else
+        System.out.print("odd");
+        else
+        System.out.print("Negative number");
+    }
+}

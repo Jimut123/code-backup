@@ -1,0 +1,36 @@
+import java.io.*;
+class vowel
+{
+public static void main(   )throws IOException
+{
+String s,w="";
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter a String:");
+s=br.readLine();
+int i,j;
+s=s+" ";
+for(i=0;i<s.length();i++)
+{
+if(s.charAt(i)==' ')
+{
+for(j=0;j<w.length();j++)
+{
+if(w.charAt(j)=='A' || w.charAt(j)=='a' || w.charAt(j)=='E' || w.charAt(j)=='e' || w.charAt(j)=='I' ||
+ w.charAt(j)=='i' || w.charAt(j)=='O' || w.charAt(j)=='o' || w.charAt(j)=='U' || w.charAt(j)=='u')
+System.out.print(w.charAt(j));
+}
+for(j=0;j<w.length();j++)
+{
+if(w.charAt(j)!='A' && w.charAt(j)!='a' && w.charAt(j)!='E' && w.charAt(j)!='e' && w.charAt(j)!='I' &&
+ w.charAt(j)!='i' && w.charAt(j)!='O' && w.charAt(j)!='o' && w.charAt(j)!='U' && w.charAt(j)!='u')
+System.out.print(w.charAt(j));
+}
+System.out.print(" ");
+w="";
+}
+else
+w=w+s.charAt(i);
+}
+
+}
+}

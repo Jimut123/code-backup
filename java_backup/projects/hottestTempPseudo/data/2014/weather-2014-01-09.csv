@@ -1,0 +1,24 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,27.0,10.9,51,30.52,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-01-09 05:51:00
+1:51 AM,26.1,12.9,58,30.52,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-01-09 06:51:00
+2:51 AM,26.1,12.0,55,30.53,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-01-09 07:51:00
+3:51 AM,26.1,15.1,63,30.53,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-01-09 08:51:00
+4:51 AM,26.1,14.0,60,30.53,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-01-09 09:51:00
+5:51 AM,25.0,17.1,72,30.53,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-01-09 10:51:00
+6:51 AM,27.0,15.1,61,30.54,10.0,SSW,3.5,-,N/A,,Mostly Cloudy,200,2014-01-09 11:51:00
+7:51 AM,28.0,15.1,58,30.56,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-01-09 12:51:00
+8:51 AM,33.1,15.1,48,30.58,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-01-09 13:51:00
+9:51 AM,39.0,12.0,33,30.58,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-01-09 14:51:00
+10:51 AM,45.0,10.0,24,30.58,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-01-09 15:51:00
+11:51 AM,48.9,6.1,18,30.55,10.0,ENE,5.8,-,N/A,,Mostly Cloudy,60,2014-01-09 16:51:00
+12:51 PM,51.1,6.1,16,30.52,10.0,East,5.8,-,N/A,,Mostly Cloudy,100,2014-01-09 17:51:00
+1:51 PM,53.1,3.0,13,30.49,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-01-09 18:51:00
+2:51 PM,53.1,14.0,21,30.49,10.0,SE,3.5,-,N/A,,Mostly Cloudy,140,2014-01-09 19:51:00
+3:51 PM,53.1,19.9,27,30.50,10.0,SE,3.5,-,N/A,,Mostly Cloudy,130,2014-01-09 20:51:00
+4:51 PM,51.1,19.0,28,30.51,10.0,SE,3.5,-,N/A,,Scattered Clouds,140,2014-01-09 21:51:00
+6:51 PM,44.1,19.9,38,30.52,10.0,ESE,3.5,-,N/A,,Scattered Clouds,110,2014-01-09 23:51:00
+7:51 PM,42.1,19.0,40,30.53,10.0,ESE,3.5,-,N/A,,Scattered Clouds,110,2014-01-10 00:51:00
+8:51 PM,45.0,21.0,39,30.53,10.0,East,5.8,-,N/A,,Mostly Cloudy,100,2014-01-10 01:51:00
+9:51 PM,43.0,21.9,43,30.52,10.0,ENE,3.5,-,N/A,,Mostly Cloudy,70,2014-01-10 02:51:00
+10:51 PM,44.1,24.1,45,30.50,10.0,ESE,9.2,-,N/A,,Overcast,110,2014-01-10 03:51:00
+11:51 PM,44.1,24.1,45,30.48,10.0,East,4.6,-,N/A,,Mostly Cloudy,80,2014-01-10 04:51:00

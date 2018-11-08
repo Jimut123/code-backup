@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,41.0,28.0,60,30.25,10.0,SW,9.2,-,N/A,,Clear,230,2015-03-08 05:51:00
+1:51 AM,39.9,28.0,63,30.25,10.0,SW,9.2,-,N/A,,Partly Cloudy,230,2015-03-08 06:51:00
+3:51 AM,37.9,27.0,65,30.23,10.0,WSW,5.8,-,N/A,,Partly Cloudy,240,2015-03-08 07:51:00
+4:51 AM,37.0,27.0,67,30.22,10.0,SW,5.8,-,N/A,,Partly Cloudy,230,2015-03-08 08:51:00
+5:51 AM,39.0,27.0,62,30.23,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-03-08 09:51:00
+6:51 AM,39.0,28.0,65,30.24,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-03-08 10:51:00
+7:51 AM,37.9,28.0,68,30.26,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-03-08 11:51:00
+8:51 AM,39.0,30.0,70,30.27,10.0,WSW,5.8,-,N/A,,Partly Cloudy,240,2015-03-08 12:51:00
+9:51 AM,48.0,30.0,50,30.28,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2015-03-08 13:51:00
+10:51 AM,54.0,28.0,37,30.27,10.0,West,6.9,-,N/A,,Mostly Cloudy,270,2015-03-08 14:51:00
+11:51 AM,62.1,28.9,29,30.26,10.0,WSW,5.8,-,N/A,,Scattered Clouds,250,2015-03-08 15:51:00
+12:51 PM,66.0,27.0,23,30.25,10.0,WSW,8.1,17.3,N/A,,Partly Cloudy,250,2015-03-08 16:51:00
+1:51 PM,66.9,25.0,21,30.21,10.0,West,10.4,19.6,N/A,,Partly Cloudy,260,2015-03-08 17:51:00
+2:51 PM,70.0,24.1,18,30.18,10.0,West,11.5,20.7,N/A,,Partly Cloudy,270,2015-03-08 18:51:00
+3:51 PM,71.1,23.0,16,30.15,10.0,West,15.0,20.7,N/A,,Partly Cloudy,260,2015-03-08 19:51:00
+4:51 PM,71.1,23.0,16,30.15,10.0,West,9.2,17.3,N/A,,Scattered Clouds,270,2015-03-08 20:51:00
+5:51 PM,69.1,21.9,17,30.15,10.0,WNW,9.2,-,N/A,,Scattered Clouds,300,2015-03-08 21:51:00
+6:51 PM,66.9,23.0,19,30.17,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-03-08 22:51:00
+7:51 PM,59.0,27.0,29,30.19,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-03-08 23:51:00
+8:51 PM,54.0,27.0,35,30.18,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-03-09 00:51:00
+9:51 PM,52.0,28.0,40,30.19,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-03-09 01:51:00
+10:51 PM,51.1,30.0,44,30.19,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-03-09 02:51:00
+11:51 PM,50.0,28.9,44,30.19,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-03-09 03:51:00
+12:51 AM,48.0,32.0,54,30.18,10.0,Calm,Calm,-,N/A,,Overcast,0,2015-03-09 04:51:00

@@ -1,0 +1,23 @@
+class Souvik
+{
+int a,b,c,f;
+public void find(int x,int y,int z)
+{
+int i,a,b,c,f,d;
+a=x;
+b=y;
+c=z;
+System.out .println(a+","+b+","+c);
+System.out .println("enter term");
+for(i=1;i<=i-3;)
+{
+f=a+b+c;
+System.out.println(f);
+a=b;
+b=c;
+c=d;
+}
+}
+}
+
+

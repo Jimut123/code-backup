@@ -1,0 +1,4 @@
+public abstract class number
+{
+  abstract public void cal();
+}

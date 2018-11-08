@@ -1,0 +1,35 @@
+import java.io.*;
+class Program
+{
+    public static void main(String args[])throws IOException
+    {
+        String s;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a Sentence");
+        s=br.readLine();
+        int v,c,d,k;
+        for(int i=0;i<s.length();i++)
+        {
+            if((int)s.charAt(i)>=65&&(int)s.charAt(i)<=90||(int)s.charAt(i)>=97&&(int)s.charAt(i)<=122)
+            {
+        if(s.charAt(i)=='A'||s.charAt(i)=='a'||s.charAt(i)=='E'||s.charAt(i)=='e'||s.charAt(i)=='I'||s.charAt(i)=='i'||
+        s.charAt(i)=='O'||s.charAt(i)=='o'||s.charAt(i)=='U'||s.charAt(i)=='u')
+        v++;
+        else
+        c++;
+    }
+        else
+        if((int)s.charAt(i)>=48&&(int)s.charAt(i)<=57)
+        d++;
+        else
+        k++;
+    }
+    System.out.println("the number of vowels are="+v);
+    System.out.println("The number of consonants are="+c);
+    System.out.println("The number of digits are="+d);
+    System.out.println("the number of special characters are="+k);
+}
+}
+        
+        
+        

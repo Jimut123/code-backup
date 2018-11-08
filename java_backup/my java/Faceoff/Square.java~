@@ -1,0 +1,7 @@
+class Square
+{
+    publis static void main(double x)
+    {
+        System.out.println(Math.sqrt(x));
+    }
+}

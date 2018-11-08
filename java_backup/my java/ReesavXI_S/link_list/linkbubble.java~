@@ -1,0 +1,61 @@
+package link_list;
+import java.io.*;
+class linkbubble
+{
+    DataInputStream in=new DataInputStream(System.in);
+    list l=new list();
+    list l1=new list();
+    list j=new list();
+    void input()throws IOException
+    {
+        int cr=0;
+        l1=l;
+        while(cr!=1)
+        {
+            l1.insert();
+            System.out.print("Enter 1 to exit ");
+            cr=Integer.parseInt(in.readLine());
+            l1.next=new list();
+            l1=l1.next;
+        }
+        l1.next=null;
+    }
+    void bubble()
+    {
+        int temp;
+        l1=l;
+        while(l1.next!=null)
+        {
+            j=l1.next;
+            while(j.next!=null)
+            {
+                if(j.k<l1.k)
+                {
+                    temp=j.k;
+                    j.k=l1.k;
+                    l1.k=temp;
+                }
+                j=j.next;
+            }
+            l1=l1.next;
+        }
+    }
+    void display()throws IOException
+    {
+        l1=l;
+        while(l1.next!=null)
+        {
+            l1.show();
+            l1=l1.next;
+        }
+    }
+    void main()
+    {
+        input();
+        System.out.println("Before sorting");
+        display();
+        bubble();
+        System.out.println("After sort");
+        display();
+    }
+}            

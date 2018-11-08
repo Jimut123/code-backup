@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=String_long()
+comment1.params=
+comment1.target=void\ input()
+comment2.params=s2\ i
+comment2.target=void\ clac(java.lang.String,\ int)
+comment3.params=s1
+comment3.target=void\ count(java.lang.String)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=
+comment5.target=void\ main()
+numComments=6

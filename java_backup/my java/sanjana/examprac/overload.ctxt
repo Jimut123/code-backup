@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=void\ str(java.lang.String)
+comment1.params=s\ c
+comment1.target=void\ str(java.lang.String,\ char)
+numComments=2

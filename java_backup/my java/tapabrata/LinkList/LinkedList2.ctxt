@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LinkedList2()
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment2.params=d1
+comment2.target=void\ Insert(int)
+comment3.params=
+comment3.target=void\ display()
+comment4.params=
+comment4.target=void\ maximum()
+numComments=5

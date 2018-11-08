@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ sum()
+comment1.params=g
+comment1.target=void\ hundred(int)
+comment2.params=h
+comment2.target=void\ tens(int)
+comment3.params=i\ l
+comment3.target=void\ units(int,\ int)
+numComments=4

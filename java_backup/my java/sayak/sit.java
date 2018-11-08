@@ -1,0 +1,28 @@
+
+
+public class sit
+{
+    public static void main(int n,int x)
+    {
+        int a=0,nv=2,dv=3;double s=0.0;
+        for(int i=1;i<=n;i++)
+        {
+            int fact=1,fact1=1;
+            for(int j=1;j<=i;j++)
+            {
+                fact=fact*j;
+                for(j=1;j<=i;j++)
+                {
+                fact1=fact1*j;
+                s=s+(double)(fact+x)/fact1;
+            }
+        }
+                System.out.println("Sum="+s);
+                
+            }
+        }
+    }
+
+
+    
+    

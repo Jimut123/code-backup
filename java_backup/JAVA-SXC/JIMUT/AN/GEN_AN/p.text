@@ -1,0 +1,28 @@
+import java.io.*;
+import java.lang.*;
+class extract_char
+{
+	public static void main(string args[])throws ioexception
+	{
+		long i,count=0;
+		inputstreamreader ab = new inputstreamreader(system.in);
+        bufferedreader cd = new bufferedreader(ab);
+        randomaccessfile fp1 = new randomaccessfile (args[0],"r");
+        randomaccessfile fp2 = new randomaccessfile (args[1],"rw");
+        char ch;
+        for(i=0;i<fp1.length();i++)
+		{
+			fp1.seek(i);
+			ch = (char)fp1.read();
+			if(ch>=32 && ch <= 122)
+			{
+				count++;
+				fp2.write(ch);
+				if(count%75==0)
+					fp2.write('\n');
+			}
+		}
+		fp1.close();
+		fp2.close();
+    }
+}

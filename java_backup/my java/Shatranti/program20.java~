@@ -1,0 +1,11 @@
+
+/**
+ * Enumeration class program20 - write a description of the enum class here
+ * 
+ * @author (your name here)
+ * @version (version number or date here)
+ */
+public enum program20
+{
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}

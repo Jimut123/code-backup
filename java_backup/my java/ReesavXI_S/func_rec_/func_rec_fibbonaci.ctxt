@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=num
+comment0.target=func_rec_fibbonaci(int)
+comment1.params=i
+comment1.target=void\ fibb(int)
+numComments=2

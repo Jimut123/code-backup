@@ -1,0 +1,72 @@
+import java.util.*;
+public class matrec
+{
+    int a;int b[][];
+    void input()
+    {
+        Scanner Sc=new Scanner(System.in);
+        int m,n,c;
+        System.out.println("Enter limit");
+        a=Sc.nextInt();
+        b=new int[a][a];
+          for(m=0;m<a;m++)
+          {
+              for(n=0;n<a;n++)
+              {
+                  System.out.println("Enter number");
+                  b[m][n]=Sc.nextInt();
+              }
+          }
+            m=0;n=0;c=1;
+            print(m,n,c);
+            m=0;n=0;c=2;
+            print(m,n,c);
+            m=0;n=a-1;c=3;
+            print(m,n,c);
+            m=a-1;n=0;c=4;
+            print(m,n,c);
+        }
+        void print(int m,int n,int c)
+        {
+            if(c==1)
+            {
+                System.out.println(+b[m][n]);
+                m=m+1;
+                if(m==a)
+                {
+                    return;
+                }
+                print(m,n,c);
+            }
+            if(c==2)
+            {
+                System.out.println(+b[m][n]);
+                n++;
+                if(n==a)
+                {
+                    return;
+                }
+                print(m,n,c);
+            }
+            if(c==3)
+            {
+                System.out.println(+b[m][n]);
+                m++;
+                if(m==a)
+                {
+                    return;
+                }
+                print(m,n,c);
+            }
+            if(c==4)
+            {
+                System.out.println(+b[m][n]);
+                n++;
+                if(n==a)
+                {
+                    return;
+                }
+                print(m,n,c);
+            }
+        }
+    }            

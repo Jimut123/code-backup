@@ -1,0 +1,142 @@
+import java.util.*;
+class arr_recur
+{
+    Scanner sc=new Scanner(System.in);
+    int a[][];
+    int n;
+    arr_recur(int size)
+    {
+        n=size;
+        a=new int[n][n];
+    }
+    void input(int i,int j)
+    {
+        if(i==n)
+        return;
+        else
+        if(j==n)
+        {
+            j=0;
+            i++;
+            input(i,j);
+        }
+        else
+        {
+            System.out.print("Enter a number ");
+            a[i][j]=sc.nextInt();
+            input(i,j+1);
+        }
+    }
+    void sum_row(int sum,int i,int j)
+    {
+        if(i==n)
+        return;
+        else
+        if(j==n)
+        {
+            System.out.println("The sum of row "+(i+1)+"= "+sum);
+            i++;
+            j=0;
+            sum=0;
+            sum_row(sum,i,j);
+        }
+        else
+        {
+            sum=sum+a[i][j];
+            sum_row(sum,i,j+1);
+        }
+    }
+    void sum_column(int sum1,int i1,int j1)
+    {
+        if(j1==n)
+        return;
+        else
+        if(i1==n)
+        {
+            System.out.println("The sum of column "+(j1+1)+"= "+sum1);
+            j1++;
+            i1=0;
+            sum1=0;
+            sum_column(sum1,i1,j1);
+        }
+        else
+        {
+            sum1=sum1+a[i1][j1];
+            sum_column(sum1,i1+1,j1);
+        }
+    }
+    void display(int i,int j)
+    {
+        if(i==n)
+        return;
+        else
+        if(j==n)
+        {
+            j=0;
+            i++;
+            System.out.println();
+            display(i,j);
+        }
+        else
+        {
+            System.out.print(a[i][j]+" ");
+            j++;
+            display(i,j);
+        }
+    }
+    void maximum(int max,int i,int j)
+    {
+        if(i==n)
+        {
+            System.out.print("The maximum number is "+max);
+            return;
+        }
+        else
+        if(j==n)
+        {
+            j=0;
+            i=i+1;
+            maximum(max,i,j);
+        }
+        else
+        {
+            if(max<a[i][j])
+            max=a[i][j];
+            maximum(max,i,j+1);
+        }
+    }
+    void minimum(int min,int i,int j)
+    {
+        if(i==n)
+        {
+            System.out.print("The minimum number is "+min);
+            return;
+        }
+        else
+        if(j==n)
+        {
+            j=0;
+            i=i+1;
+            minimum(min,i,j);
+        }
+        else
+        {
+            if(min>a[i][j])
+            min=a[i][j];
+            minimum(min,i,j+1);
+        }
+    }
+    void main()
+    {
+       int z=0;
+       System.out.print("enter size of array ");
+       z=sc.nextInt();
+       arr_recur obj=new arr_recur(z);
+       obj.input(0,0);
+       obj.display(0,0);
+       obj.sum_row(0,0,0);
+       obj.sum_column(0,0,0);
+       obj.maximum(0,0,0);
+       obj.minimum(a[0][0],0,0);
+    }
+}

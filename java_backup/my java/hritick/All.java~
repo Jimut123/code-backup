@@ -1,0 +1,17 @@
+class All
+{
+    public static void main ()
+    {
+        int a,b,c;
+        a=10 ;
+        b=20 ;
+        c= a+b;
+        system.out.println(c);
+        c=a-b;
+        system.out.println(c);
+        c=a*b;
+        system.out.println(c);
+        c=a/b;
+        system.out.println(c);
+    }
+}

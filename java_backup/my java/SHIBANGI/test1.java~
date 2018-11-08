@@ -1,0 +1,10 @@
+class test1
+{
+    public static void main()
+    {
+        int P,R,T,SI;
+ SI=(P*R*T)/100;
+    
+System.out.println(SI);
+}
+}

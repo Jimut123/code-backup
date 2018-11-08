@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=n1
+comment0.target=Binary(int)
+comment1.params=
+comment1.target=void\ original()
+comment2.params=
+comment2.target=void\ arrangement()
+comment3.params=
+comment3.target=void\ sorted()
+comment4.params=
+comment4.target=void\ search()
+numComments=5

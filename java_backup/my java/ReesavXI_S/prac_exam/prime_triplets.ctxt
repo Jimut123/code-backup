@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=prime_triplets()
+comment1.params=
+comment1.target=void\ accept()
+comment2.params=
+comment2.target=void\ calc()
+comment3.params=s
+comment3.target=boolean\ isPrime(int)
+comment4.params=
+comment4.target=void\ main()
+numComments=5

@@ -1,0 +1,40 @@
+import java.io.*;
+class sqre
+{
+    public static void main(String ar[])throws IOException
+    {
+        BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the no.");
+        int n=Integer.parseInt(in.readLine());
+        int a[][]=new int[n][n];
+        int i,j,c,b;
+        i=0;
+        for(j=0;j<n;j++)
+        a[i][j]=j+1;
+        
+        j=0;
+        for(i=0;i<n;i++)
+        a[i][j]=i+1;
+        
+        i=n-1;c=n;
+        for(j=0;j<n;j++)
+        a[i][j]=c--;
+        
+        j=n-1;b=1;
+        for(i=n-1;i>=0;i--)
+        a[i][j]=b++;
+        
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                if(a[i][j]==0)
+                System.out.print(" ");
+                else
+                System.out.print(a[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
+        

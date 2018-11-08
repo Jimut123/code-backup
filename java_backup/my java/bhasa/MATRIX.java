@@ -1,0 +1,75 @@
+import java.io.*;
+class MATRIX
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    int a[][];
+    int n;
+    int i;
+    int j;
+    void input()throws IOException
+    {
+        System.out.println("ENTER DIMENSION FOR N x N MATRIX");
+        n=Integer.parseInt(br.readLine());
+         a=new int[n][n];
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                System.out.println("ENTER ELEMENT FOR POSITION ("+i+","+j+")");
+                a[i][j]=Integer.parseInt(br.readLine());
+            }
+        }
+        disp();
+    }
+    
+    void disp()throws IOException
+    {
+         for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println("");
+        }
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                if(i==j)
+                System.out.print(a[i][j]+" ");
+            }
+        }
+        System.out.println();
+        for(i=n-1;i>=0;i--)
+        {
+            System.out.print(a[n-1][i]+" ");
+        }
+        System.out.println();
+        for(i=n-1;i>=0;i--)
+        {
+            System.out.print(a[i][0]+" ");
+        }
+        System.out.println();
+        for(i=0;i<n;i++)
+        {
+            System.out.print(a[0][i]+" ");
+        }
+        System.out.println();
+        for(i=0;i<n;i++)
+        {
+            System.out.print(a[i][n-1]+" ");
+        }
+        System.out.println();
+        System.out.print("REMOVED ELEMENTS :");
+        for(i=1;i<n-1;i++)
+        {
+            for(j=1;j<n-1;j++)
+            {
+                if(i!=j)
+                System.out.print(a[i][j]+" ");
+            }
+        }
+    }
+}

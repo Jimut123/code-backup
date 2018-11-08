@@ -1,0 +1,18 @@
+import java.io.*;
+class Rectangle
+{
+    public static void main ()throws IOException
+    {
+        int l,b,a,p;
+       InputStreamReader read =new InputStreamReader(System.in);
+       BufferedReader br = new BufferdReader (read);
+       l=Integer.parseInt(br.readLine());
+       b=Integer.parseInt(br.readLine());
+       a=l*b;
+       System.out.println(a);
+       p=2*(l+b);
+       System.out.println(p);
+    }
+}
+
+        

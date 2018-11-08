@@ -1,0 +1,10 @@
+class text
+{
+public void akash(int a,int b)
+{
+if(a>b)
+system.out.println("greater no is..."+a);
+esle
+system.out.println("greater no is..."+b);
+}
+}

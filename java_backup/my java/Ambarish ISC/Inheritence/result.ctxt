@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n\ r\ s\ a\ b\ c\ t\ e1\ e2\ e3
+comment0.target=void\ input(java.lang.String,\ int,\ int,\ int,\ int,\ int,\ int,\ java.lang.String,\ java.lang.String,\ int)
+comment1.params=
+comment1.target=void\ display()
+numComments=2

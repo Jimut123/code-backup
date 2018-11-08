@@ -1,0 +1,19 @@
+
+import java.io.*;
+class palinstring
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+String s,w;
+System.out.println("Enter String:");
+s=br.readLine();
+w="";
+for(int i=s.length()-1;i>=0;i--)
+w=w+s.charAt(i);
+if(s.equalsIgnoreCase(w)==true)
+System.out.println("palindrome string");
+else
+System.out.println("not a palindrome string");
+}
+}

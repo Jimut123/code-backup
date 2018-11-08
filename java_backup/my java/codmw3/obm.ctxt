@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=k
+comment0.target=void\ input(int)
+comment1.params=
+comment1.target=void\ insert()
+comment2.params=
+comment2.target=void\ sort()
+comment3.params=ob1\ ob2
+comment3.target=obm\ merge(obm,\ obm)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=
+comment5.target=void\ main()
+numComments=6

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=s1\ s2
+comment0.target=void\ CompareTo(java.lang.String,\ java.lang.String)
+comment1.params=w
+comment1.target=void\ Trim(java.lang.String)
+comment2.params=s\ pos\ num
+comment2.target=void\ subString(java.lang.String,\ int,\ int)
+numComments=3

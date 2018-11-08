@@ -1,0 +1,26 @@
+ 
+
+import java.util.Scanner;
+class book_menu
+{
+public static void main()throws IOException
+{
+Scanner ob=new Scanner(System.in);
+book_queue n=new book_queue();
+do
+{
+System.out.println("press 1 for stack implementation of books \npress 2 for queue implementation of books \npress 3 for exit\n");
+int x=ob.nextInt();
+System.out.println("");
+switch(x)
+{
+case 1: n.start1();
+        break;
+case 2: n.start2();        
+        break;
+case 3: System.exit(0);
+default: System.out.println("give input from among the menu integers............\n");
+}
+}while(true);
+}
+}

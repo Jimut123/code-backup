@@ -1,0 +1,32 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.6.0_23\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+C:\Documents and Settings\AMLAN\Desktop\BlueJ\lib\bluejcore.jar;C:\Documents and Settings\AMLAN\Desktop\BlueJ\lib\junit-4.8.2.jar;E:\My Documents\my java\Ambarish ISC
+-d
+E:\My Documents\my java\Ambarish ISC\doc
+-encoding
+windows-1252
+-charset
+windows-1252
+-docletpath
+C:\Documents and Settings\AMLAN\Desktop\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+E:\My Documents\my java\Ambarish ISC\spiralmatrix.java
+<---- end of javadoc command ---->
+Loading source file E:\My Documents\my java\Ambarish ISC\spiralmatrix.java...
+E:\My Documents\my java\Ambarish ISC\spiralmatrix.java:10: reached end of file while parsing
+int t,i,j,k,lm,hm;
+                  ^
+1 error

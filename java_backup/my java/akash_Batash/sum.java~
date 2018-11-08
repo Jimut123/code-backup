@@ -1,0 +1,14 @@
+import java.util.*;//import java packages
+class sum
+{
+    public static void main (String args[])
+    {
+    int x,y,z;
+    Scanner sc=new Scanner(System.ln);
+    x=sc.nextint();
+    y=sc.nextint();
+    z=x+y;
+    system.out.println(z);
+}
+}
+    

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=
+comment1.target=void\ gen()
+comment2.params=x
+comment2.target=int\ power(int)
+comment3.params=x
+comment3.target=int\ fact(int)
+numComments=4

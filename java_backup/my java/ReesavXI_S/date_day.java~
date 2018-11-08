@@ -1,0 +1,107 @@
+import java.util.*;
+class date_day
+{
+int n;
+date_day(int num)
+{
+n=num;
+}
+void clac()
+{
+int yyyy=0,mm=0,dd=0,i=0,f=0;
+int j=0;int cr=0;
+yyyy=n%10000;
+n=n/10000;
+mm=n%100;
+n=n/100;
+dd=n%100;
+if(yyyy%4==0||yyyy%400==0)
+f=1;
+for(i=1980;i<yyyy;i++)
+{
+if(i%4==0||i%400==0)
+{
+cr=cr+366;
+}
+else
+cr=cr+365;
+}
+if(mm==1)
+cr=cr+0;
+else if(mm==2)
+cr=cr+31;
+else if(mm==3)
+{
+cr=cr+59;
+if(yyyy%4==0||yyyy%400==0)
+cr=cr+1;
+}
+else if(mm==4)
+{
+cr=cr+90;
+if(f==1)
+cr++;
+}
+else if(mm==5)
+{
+cr=cr+120;
+if(f==1)
+cr++;
+}
+else if(mm==6)
+{
+cr=cr+151;
+if(f==1)
+cr++;
+}
+else if(mm==7)
+{
+cr=cr+181;
+if(f==1)
+cr++;
+}
+else if(mm==8)
+{
+cr=cr+212;
+if(f==1)
+cr++;
+}
+else if(mm==9)
+{
+cr=cr+243;
+if(f==1)
+cr++;
+}
+else if(mm==10)
+{
+cr=cr+273;
+if(f==1)
+cr++;
+}
+else if(mm==11)
+{
+cr=cr+304;
+if(f==1)
+cr++;
+}
+else
+{
+cr=cr+334;
+if(f==1)
+cr++;
+}
+cr=cr+dd;
+if(f==1)
+{
+String a[]={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
+j=cr%7;
+System.out.println(a[j]);
+}
+else if(f==0)
+{
+String a[]={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
+j=cr%7;
+System.out.println(a[j]);
+}
+}
+}

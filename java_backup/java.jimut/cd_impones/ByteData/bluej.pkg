@@ -1,0 +1,20 @@
+#BlueJ package file
+package.editor.height=214
+package.editor.width=339
+package.editor.x=252
+package.editor.y=124
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.editor.height=319
+target1.editor.width=550
+target1.editor.x=291
+target1.editor.y=181
+target1.height=50
+target1.name=ByteData
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=80
+target1.x=60
+target1.y=10

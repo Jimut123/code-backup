@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=bin2_obj(int)
+comment1.params=
+comment1.target=void\ main()
+comment2.params=n\ s
+comment2.target=int\ Max(int,\ int)
+numComments=3

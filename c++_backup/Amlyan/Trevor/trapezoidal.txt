@@ -1,0 +1,46 @@
+#include<iostream>
+typedef float (* fFunction) (float x);
+
+using namespace std;
+
+float f1 (float x){
+    return 4 / (1 + x*x);
+}
+
+class trap{
+    float l, u, h;
+    int n;
+    public:
+    void inp();
+    float slv(fFunction);
+};
+
+void trap::inp(){
+    cout<<"Lower bound: ";
+    cin>>l;
+    cout<<"Upper bound: ";
+    cin>>u;
+    do{
+        cout<<"No. of intervals (multiple of 2): ";
+        cin>>n;
+    } while (n % 2 != 0);
+    h = (u - l) / n;
+}
+
+float trap::slv (fFunction f){
+    float ans = (l + u) / 2;
+    for (int i=1; i<n; i++)
+            ans += f(l + i * h);
+    ans *= h;
+    return ans;
+}
+
+int main(){
+    trap in;
+    in.inp();
+    cout<<"integration= "<<in.slv(f1);
+    return 0;
+}
+
+
+

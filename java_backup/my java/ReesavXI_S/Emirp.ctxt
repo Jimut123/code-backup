@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=nm
+comment0.target=Emirp(int)
+comment1.params=x
+comment1.target=int\ isprime(int)
+comment2.params=
+comment2.target=void\ isEmirp()
+numComments=3

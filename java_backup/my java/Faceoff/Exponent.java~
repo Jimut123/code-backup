@@ -1,0 +1,7 @@
+class Exponent
+{
+    public static void main( int x)
+    {
+        System.out.println(Math.exp(x,x));
+    }
+}

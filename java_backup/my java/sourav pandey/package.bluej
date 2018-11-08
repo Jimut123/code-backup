@@ -1,0 +1,22 @@
+#BlueJ package file
+package.editor.height=569
+package.editor.width=906
+package.editor.x=-168
+package.editor.y=43
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+target1.editor.height=740
+target1.editor.width=1032
+target1.editor.x=-4
+target1.editor.y=-4
+target1.height=50
+target1.name=pattern
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=80
+target1.x=70
+target1.y=10

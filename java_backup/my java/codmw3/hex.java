@@ -1,0 +1,104 @@
+import java.util.*;
+public class hex
+{
+    int a=0;
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number");
+        a=sc.nextInt();
+    }
+    void hexadecimal()
+    {
+        int b,d=1,e;
+        b=a;
+        String c="",g="";
+        while(b>0)
+        {
+            d=b%16;
+            b=b/16;
+            if(d==10)
+            {
+                c=c+'A';
+            }
+            else if(d==11)
+            {
+               c=c+'B';
+            }
+            else if(d==12)
+            {
+                c=c+'C';
+            }
+            else if(d==13)
+            {
+                c=c+'D';
+            }
+            else if(d==14)
+            {
+                c=c+'E';
+            }
+            else if(d==15)
+            {
+                c=c+'F';
+            }
+            else 
+            {
+                c=c+d;
+            }
+        }
+       System.out.println(c);
+    }
+    void decimal(String h)
+    {
+        int j;
+        int i=0;
+        String k=""; 
+        for(j=0;j<h.length();j=j+1)
+        {
+            k="";
+            k=k+h.charAt(j);
+            if(h.charAt(j)=='A')
+            {
+                i=i+((int)Math.pow(16,j)*10);
+            }
+            else if(h.charAt(j)=='B')
+            {
+                i=i+((int)Math.pow(16,j)*11);
+            }
+            else if(h.charAt(j)=='C')
+            {
+                i=i+((int)Math.pow(16,j)*12);
+            }
+            else if(h.charAt(j)=='D')
+            {
+                i=i+((int)Math.pow(16,j)*13);
+            }
+            else if(h.charAt(j)=='E')
+            {
+                i=i+((int)Math.pow(16,j)*14);
+            }
+            else if(h.charAt(j)=='F')
+            {
+                i=i+((int)Math.pow(16,j)*15);
+            }
+            else 
+            {
+                i=i+((int)Math.pow(16,j)*(Integer.parseInt(k)));               
+            }
+        }
+        System.out.println(+i);
+    }
+    void main()
+    {
+        input();
+        hexadecimal();
+}
+}
+
+            
+              
+                
+        
+        
+        
+        

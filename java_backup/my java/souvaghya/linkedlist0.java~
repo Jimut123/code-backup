@@ -1,0 +1,30 @@
+ 
+class linkedlist0
+{
+public link0 first;
+public linkedlist0()
+{
+first=null;
+}
+public boolean isEmpty()
+{
+return (first==null);
+}
+public void Insert(int d1)
+{
+link0 newlink=new link0(d1);
+newlink.next=first;
+first=newlink;
+}
+public void display()
+{
+System.out.println("List (first-->last)");
+link0 current=first;
+while(current!=null)
+{
+current.disp();
+current=current.next;
+}
+System.out.println("");
+}
+}

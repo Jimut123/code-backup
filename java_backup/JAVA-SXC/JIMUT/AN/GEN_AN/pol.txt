@@ -1,0 +1,5 @@
+26 !"#$%&<init>()VCodeLineNumberTablemain([Ljava/lang/String;)VStackMapTabl
+e'Exceptions(SourceFile20_test_smfile.javajava/io/RandomAccessFilerw)*+,-./
+012345small_file_testjava/lang/Object[Ljava/lang/String;java/io/IOException
+'(Ljava/lang/String;Ljava/lang/String;)Vlength()Jseek(J)Vread()Ijava/lang/C
+haractertoLowerCase(C)Cwrite(I)Vclose *QY*2:@B!,!66!!aB2"(07=DKP.

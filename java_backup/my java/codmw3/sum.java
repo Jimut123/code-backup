@@ -1,0 +1,19 @@
+public class sum extends factorial
+{
+    int a;
+    void insert(int n)
+    {
+        a=n;
+        gen(a);
+    }
+    void gen(int b)
+    {
+        int s=0,c;
+        for(c=1;c<=b;c++)
+        {
+            super.insert(c);
+            s+=super.a;
+        }
+        System.out.println(+s);
+    }
+}

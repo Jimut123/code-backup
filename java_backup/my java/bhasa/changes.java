@@ -1,0 +1,130 @@
+import java.io.*;
+class changes
+{
+void input()throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int n,s,f,i,j,n1,k,x;
+s=0;
+f=0;
+System.out.println("ENTER NUMBER");
+n=Integer.parseInt(br.readLine());
+s=0;
+n1=n;
+x=0;
+while(n1>0)
+{
+k=n1%10;
+x=((x*10)+k);
+n1=n1/10;
+}
+n=x;
+//System.out.println(n);
+while(n>0)
+{
+k=n%10;
+if(k%2==0)
+{
+s=((s*10)+even(k));
+}
+else
+{
+f=0;
+for(j=2;j<k;j++)
+{
+if(k%j==0)
+{
+f=1;
+break;
+}
+}
+if(f==0)
+{
+s=(s*10)+prime(k);
+}
+else
+{
+s=(s*10)+odd(k);
+}
+}
+n=n/10;
+}
+System.out.println(s);
+}
+int even(int x)
+{
+int j,t;
+t=0;
+int m=x+1;
+while(true)
+{
+int f=0;
+for(j=2;j<m;j++)
+{
+if(m%j==0)
+{
+f=1;
+break;
+}
+}
+if(f==0)
+{
+
+t=m;
+break;
+}
+m++;
+}
+return t;
+}
+int odd(int x)
+{
+int j,t;
+t=0;
+int m=x+1;
+while(true)
+{
+if(m%2==0)
+{
+if(m>=10)
+t=4;
+else
+t=m;
+break;
+}
+m++;
+}
+return t;
+}
+int prime(int x)
+{
+int j,t;
+t=0;
+int m=x+1;
+while(true)
+{
+
+if(m%2!=0)
+{
+int f=0;
+for(j=2;j<m;j++)
+{
+if(m%j==0)
+{
+f=1;
+break;
+}
+}
+if(f==1)
+{
+t=m;
+break;
+}
+
+}
+m++;
+}
+return t;
+}
+}
+

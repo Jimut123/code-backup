@@ -1,0 +1,14 @@
+class abc
+{
+    public static void main (string args[])
+    {
+        int a,b,c,d;
+        a=20;
+        b=5;
+        c=a-b;
+        system.out.println(c);
+        d=a*b;
+        system.out.println(d);
+    }
+    
+}

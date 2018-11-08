@@ -1,0 +1,170 @@
+import java.util.*;
+public class Rail_res
+{
+ public int mtyp(int m,int y){
+  int h;
+  if (m==4||m==6||m==9||m==11)
+    h=30;
+  else if (m==2) {
+   if (y%4==0)
+    h=29;
+   else
+    h=28;}
+  else
+    h=31;
+  return h;}
+ public int date(int d,int m, int y)
+ {
+  int d0,m0,y0,k,p,cy=0,i,cm0=0,s0=0,cm=0,s=0,days;
+  Calendar now=Calendar.getInstance();
+  d0=now.get(Calendar.DATE);
+  m0=now.get(Calendar.MONTH);
+  y0=now.get(Calendar.YEAR);
+  Rail_res ob=new Rail_res();
+  if (y>=y0 && (m>=1&&m<=12) && (d>=1&&d<=ob.mtyp(m,y))){
+   if (y>y0){
+   k=y-(y0+1);
+   p=k/4;
+   cy=p*366+(k-p)*365;
+   for (i=(m0+1);i<=12;i++){
+    cm0=ob.mtyp(i,y0);
+    s0=s0+cm0;}
+   cm0=ob.mtyp(m0,y0)-d0;
+   for (i=1;i<m;i++){
+    cm=ob.mtyp(i,y);
+    s=s+cm;}
+   cm=d;}
+   else {
+   for (i=m0+1;i<m;i++){
+   cm=ob.mtyp(i,y);
+   s=s+cm;}
+   if (m==m0+1)
+   cm=(ob.mtyp(m0,y0)-d0)+d;
+   else if (m0==m)
+   cm=d-d0;}}
+  else
+   System.out.println("Invalid input,request terminated,Please Retry!");
+  days=cy+s0+cm0+s+cm;
+  return (days);
+ }
+ public static void main (String args[])
+ {
+  Scanner sc=new Scanner (System.in);
+  Rail_res ob=new Rail_res();
+  int ch,tno,tno1,s=0,k,i,c=0,d2,m2,y2,fz,dig;
+  String tname,source="",des="",classtype,pnr;
+  double dist,amt=0,c_charge=0,fare;
+  String pname[]=new String[6];
+  String gen[]=new String[6];
+  int[] age=new int[6];
+  System.out.println("Welcome to Indian Railways");  
+  System.out.println("Please enter your Train name:");
+  tname=sc.nextLine();
+  System.out.println("Please enter your Train number:");
+  tno=sc.nextInt();
+  tno1=tno;
+  while (tno1>0)
+  {
+   s=s+1;
+   tno1=tno1/10;
+  }
+  if (s!=5)
+  {
+   System.out.println("Invalid input,request terminated,Please Retry!");
+   return;
+  }
+  System.out.println("Please enter your source station:");
+  source=sc.nextLine();
+  System.out.println("Please enter your destination station:");
+  des=sc.nextLine();
+  System.out.println("Please enter number of persons (not more than 6 in one ticket)");
+  k=sc.nextInt();           
+  if (k<=6){
+   System.out.println("Please enter name of the passengers");
+   for (i=0;i<k;i++){
+    pname[i]=sc.nextLine();
+    System.out.println("Please enter age");
+    age[i]=sc.nextInt();
+    if (age[i]<12)
+     c=c+1;
+    System.out.println("Please enter gender");
+    gen[i]=sc.nextLine();
+   }
+  }
+  else {
+   System.out.println("Invalid input,request terminated,Please Retry!");
+   return;
+  }
+  System.out.println("Please enter your date of journey (dd mm yyyy)");
+  d2=sc.nextInt();
+  m2=sc.nextInt();
+  y2=sc.nextInt();
+  fz=ob.date(d2,m2,y2);
+  if (fz>60 || fz==0) {
+   System.out.println("Invalid input,request terminated,Please Retry!");
+   return;
+  }
+  System.out.println("Please enter your class: ");
+  classtype=sc.nextLine();
+  System.out.println("Please enter journey distance in Kms: ");
+  dist=sc.nextInt();
+  switch (classtype){
+   case "2S": amt=dist*3.50;
+   c_charge=4/100*amt;
+   break;
+   case "SL": amt=dist*8.50;
+   c_charge=5/100*amt;
+   break;
+   case "3E": amt=dist*14.50;
+   c_charge=7.5/100*amt;
+   break;
+   case "3A": amt=dist*15;
+   c_charge=7.5/100*amt;
+   break;
+   case "2A": amt=dist*21;
+   c_charge=10/100*amt;
+   break;
+   case "1A": amt=dist*30;
+   c_charge=15/100*amt;
+   break;
+   case "CC": amt=dist*14;
+   c_charge=7/100*amt;
+   break;
+   case "FC": amt=dist*22;
+   c_charge=10/100*amt;
+   break;
+   case "H": amt=dist*35;
+   c_charge=25/100*amt;
+   break;
+   default:
+   System.out.println("Invalid input,request terminated,Please Retry!");
+   break;}
+  c_charge=c_charge*k;
+  fare=(3/5*amt*c)+(amt*(k-c));
+  pnr=(tno%100)+""+d2+"-"+m2+""+(y2/100)+""+k+"2";
+  System.out.println("Train details:"+tno+" "+tname);
+  System.out.println("PNR:"+pnr);
+  System.out.println("Date of Journey:"+d2+"/"+m2+"/"+y2);
+  System.out.println("Passenger Details");
+  for (i=0;i<=k;i++)
+   System.out.println(pname[i]+"\t"+age[i]+"\t"+gen[i]);
+  System.out.println("Class:"+classtype);
+  System.out.println("Journey distance:"+dist+"Kms.");
+  System.out.println("Adult:"+(k-c)+"  Child:"+c);
+  System.out.println("Concession: Rs"+((amt*k)-fare));
+  System.out.println("Net Amount: Rs"+(fare*(1+1/20))+"\n Cancellation Charge: Rs"+c_charge);
+  System.out.println("Boarding at:"+source+"\nDetaining at:"+des);
+  System.out.println("Press '1' for Cancellation, '2' for Exit");
+  ch=sc.nextInt();
+  switch (ch){
+   case 1:
+   pnr="";
+   System.out.println("Ticket cancelled; You will be refunded Rs"+(fare-c_charge));
+   break;
+   case 2:
+   default:
+   break;
+  }
+  System.out.println("Thank you for using Indian Rail online services");
+ }
+}

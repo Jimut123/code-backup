@@ -1,0 +1,28 @@
+import java.util.*;
+class Arrayclassic
+{
+    public static void main()
+    {
+        int i,n;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Term:");
+        n=sc.nextInt();
+        int a[]=new int[n];
+        System.out.println("Enter Values into Array:");
+        for(i=0;i<n;i++)
+        a[i]=sc.nextInt();
+        int b[]=new int[n];
+        System.out.println("Enter Values into Array:");
+        for(i=0;i<n;i++)
+        
+        b[i]=sc.nextInt();
+        int c[]=new int[n];
+        for(i=0;i<n;i++)
+        {
+            c[i]=a[i]+b[i];
+        }
+        System.out.println("Output after summation of both Array:");
+        for(i=0;i<n;i++)
+        System.out.println(c[i]);
+    }
+}

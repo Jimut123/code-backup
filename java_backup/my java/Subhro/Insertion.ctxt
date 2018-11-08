@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=class\ Insertion
+comment1.params=args
+comment1.target=void\ main(String[])
+comment10.params=a
+comment10.target=void\ show1(int[])
+comment11.target=arr
+comment12.target=br
+comment13.target=s
+comment2.params=
+comment2.target=void\ get()
+comment3.target=n
+comment4.target=val
+comment5.target=k
+comment6.params=a
+comment6.target=void\ calc(int[])
+comment7.target=j
+comment8.params=a
+comment8.target=void\ show2(int[])
+comment9.target=i
+numComments=14

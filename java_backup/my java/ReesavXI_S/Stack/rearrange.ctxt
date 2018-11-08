@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=rearrange()
+comment1.params=
+comment1.target=void\ PUSH()
+comment2.params=
+comment2.target=void\ POP()
+comment3.params=
+comment3.target=void\ display()
+comment4.params=
+comment4.target=void\ Rearrange()
+comment5.params=t
+comment5.target=int\ vowel_Count(java.lang.String)
+comment6.params=
+comment6.target=void\ main()
+numComments=7

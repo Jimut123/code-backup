@@ -1,0 +1,41 @@
+import java.util.*;
+class Aladeen
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,q;
+        System.out.println("please enter your percentage of marks in class 7 finals");
+        a=sc.nextInt();
+        System.out.println("please enter your percentage of marks in class 8 first term");
+        b=sc.nextInt();
+        System.out.println("please enter your percentage of marks in class 8 finals");
+        c=sc.nextInt();
+        System.out.println("please enter your percentage of marks in class 9 First term");
+        d=sc.nextInt();
+        System.out.println("How much time did you study in average per day in class 7 at home?");
+        e=sc.nextInt();
+        System.out.println("How much time did you study in average per day in class 8 at home?");
+        f=sc.nextInt();
+        System.out.println("How much time did you study in average per day in class 9 at home?");
+        g=sc.nextInt();
+        h=a/e;
+        i=b/f;
+        j=c/f;
+        k=d/g;
+        l=h+i+j+k;
+        m=2*l;
+        n=a+b+c+d;
+        o=n-m;
+        if(o>99 && o<150)
+        {
+            q=o-40;
+        }
+        else if(o<50)
+        {
+            q=o+40;
+        }
+        System.out.println("based on your current stats , you are likely to get" + q + "% in next exam");
+    }
+}
+       

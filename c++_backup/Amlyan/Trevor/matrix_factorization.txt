@@ -1,0 +1,103 @@
+// Example program
+#define MAX 6
+#include <iostream>
+
+using namespace std;
+
+class mtrx_fact {
+    public:
+        int n;
+        float a[MAX][MAX], l[MAX][MAX], u[MAX][MAX], b[MAX], y[MAX], x[MAX];
+    mtrx_fact(int size);
+    void input();
+    void out(float a[][MAX], int n);
+    void factorize();
+    void slv_y();
+    void slv();
+};
+
+mtrx_fact::mtrx_fact(int size){
+    n = size;
+}
+
+void mtrx_fact::input(){
+    int i, j;
+    
+    cout<<"Enter a matrix:\n";    
+    for (i=0; i<n; i++)
+        for(j=0; j<n; j++){
+            cin>>a[i][j];
+            u[i][j] = 0;
+            if(i==j)
+                l[i][j] = 1;
+            else
+                l[i][j] = 0;
+        }
+        
+    cout<<"Enter b:\n";
+    for(i=0; i<n; i++)
+        cin>>b[i];
+}
+
+void mtrx_fact::out(float a[][MAX], int n){
+    int i, j;
+    for(i=0; i<n; i++){
+        for(j=0; j<n; j++)
+            cout<<a[i][j]<<'\t';
+        cout<<endl;
+    }
+}
+
+void mtrx_fact::factorize(){
+    int i, j, k;
+    for (i=0; i<n; i++)
+        for (j=0; j<n; j++){
+            if (i<=j) {
+                u[i][j] = a[i][j];
+                for (k=0; k<=i-1; k++)
+                    u[i][j] -= l[i][k] * u[k][j];
+            }
+            else {
+                l[i][j] = a[i][j];
+                for (k=0; k<=j-1; k++)
+                    l[i][j] -= l[i][k] * u[k][j];
+                l[i][j] /= u[j][j];
+            }
+        }
+}
+
+void mtrx_fact::slv_y(){
+    for (int i=0; i<n; i++){
+        y[i] = b[i];
+        for (int j=0; j<i; j++)
+            y[i] -= l[i][j] * y[j];
+    }
+}
+
+void mtrx_fact::slv(){
+    factorize();
+    slv_y();
+    
+    for (int i=n-1; i>=0; i--){
+        x[i] = y[i];
+        for (int j=i+1; j<n; j++)
+            x[i] -= u[i][j] * x[j];
+        x[i] /= u[i][i];
+    }
+}
+
+int main(){
+    int n;
+    cout<<"n?: ";
+    cin>>n;
+    mtrx_fact mf(n);
+    mf.input();
+    mf.slv();
+    cout<<"The solution is:\n";
+    for(int i=0; i<n;  i++)
+        cout<<"x"<<i+1<<"= "<<mf.x[i]<<endl;
+    return 0;
+}
+
+
+

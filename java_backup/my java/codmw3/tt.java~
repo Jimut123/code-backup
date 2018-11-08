@@ -1,0 +1,8 @@
+public class tt
+{
+    void main()
+    {
+        String a="computer";
+        System.out.print(a.substring(0,a.length()-2));
+    }
+}

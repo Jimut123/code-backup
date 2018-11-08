@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=a\ b
+comment0.target=HCF(int,\ int)
+comment1.params=x\ y
+comment1.target=int\ cal(int,\ int)
+comment2.params=
+comment2.target=void\ print()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

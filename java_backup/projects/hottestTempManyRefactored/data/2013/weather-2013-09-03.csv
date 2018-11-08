@@ -1,0 +1,28 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,75.9,73.0,91,29.83,9.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-09-03 04:51:00
+1:51 AM,75.0,72.0,90,29.83,8.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-09-03 05:51:00
+2:51 AM,73.9,72.0,93,29.81,8.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-09-03 06:51:00
+3:51 AM,73.9,72.0,93,29.81,7.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-09-03 07:51:00
+4:51 AM,73.9,72.0,93,29.81,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-09-03 08:51:00
+5:51 AM,73.0,72.0,96,29.81,5.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-09-03 09:51:00
+6:51 AM,73.9,72.0,93,29.81,5.0,SSW,4.6,-,N/A,,Mostly Cloudy,210,2013-09-03 10:51:00
+7:51 AM,75.0,73.0,94,29.84,6.0,SW,6.9,-,N/A,,Mostly Cloudy,220,2013-09-03 11:51:00
+8:51 AM,75.9,73.9,94,29.88,6.0,SW,8.1,-,N/A,,Mostly Cloudy,230,2013-09-03 12:51:00
+9:51 AM,79.0,73.0,82,29.86,9.0,SSW,9.2,-,N/A,,Mostly Cloudy,210,2013-09-03 13:51:00
+10:51 AM,82.0,73.0,74,29.88,10.0,WSW,8.1,-,N/A,,Mostly Cloudy,240,2013-09-03 14:51:00
+11:23 AM,82.4,73.4,74,29.90,10.0,West,8.1,-,N/A,Thunderstorm,Thunderstorm,280,2013-09-03 15:23:00
+11:51 AM,75.0,63.0,66,29.89,0.5,WNW,9.2,31.1,0.10,Rain-Thunderstorm,Heavy Thunderstorms and Rain,290,2013-09-03 15:51:00
+12:02 PM,71.6,68.0,88,29.90,3.0,Calm,Calm,-,0.20,Rain-Thunderstorm,Thunderstorms and Rain,0,2013-09-03 16:02:00
+12:25 PM,73.4,69.8,88,29.89,10.0,NW,3.5,-,0.20,,Mostly Cloudy,320,2013-09-03 16:25:00
+12:51 PM,81.0,73.9,79,29.86,10.0,NNW,3.5,-,0.20,,Scattered Clouds,330,2013-09-03 16:51:00
+1:51 PM,86.0,73.0,65,29.84,10.0,SW,5.8,-,N/A,,Scattered Clouds,220,2013-09-03 17:51:00
+2:51 PM,86.0,71.1,61,29.83,10.0,WSW,3.5,-,N/A,,Mostly Cloudy,250,2013-09-03 18:51:00
+3:51 PM,86.0,69.1,57,29.81,10.0,WNW,9.2,-,N/A,,Mostly Cloudy,290,2013-09-03 19:51:00
+4:51 PM,89.1,69.1,52,29.82,10.0,NNE,6.9,-,N/A,,Mostly Cloudy,20,2013-09-03 20:51:00
+5:51 PM,86.0,71.1,61,29.83,10.0,North,3.5,-,N/A,,Mostly Cloudy,10,2013-09-03 21:51:00
+6:51 PM,84.9,68.0,57,29.84,10.0,North,3.5,-,N/A,,Mostly Cloudy,350,2013-09-03 22:51:00
+7:51 PM,79.0,71.1,77,29.87,10.0,East,4.6,-,N/A,,Scattered Clouds,90,2013-09-03 23:51:00
+8:51 PM,77.0,72.0,84,29.89,10.0,SSE,3.5,-,N/A,,Scattered Clouds,150,2013-09-04 00:51:00
+9:51 PM,75.9,72.0,87,29.92,10.0,SSE,3.5,-,N/A,,Scattered Clouds,150,2013-09-04 01:51:00
+10:51 PM,75.0,72.0,90,29.93,9.0,ESE,5.8,-,N/A,,Scattered Clouds,110,2013-09-04 02:51:00
+11:51 PM,73.0,71.1,93,29.94,9.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-09-04 03:51:00

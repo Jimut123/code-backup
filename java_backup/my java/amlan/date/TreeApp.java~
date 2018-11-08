@@ -1,0 +1,78 @@
+package date;
+
+import java.util.*;
+class TreeApp
+{
+public static void main(String args[])
+{
+int value;
+tree ob=new tree();
+ob.insert(50);
+ob.insert(25);
+ob.insert(100);
+ob.insert(14);
+while(true)
+{
+puttext("enter first letter of ");
+puttext("show, insert, find, delete, or traverse");
+char ch=getchar();
+switch(ch)
+{
+case 's': ob.display_Tree();
+          break;
+case 'i': puttext("enter value to insert :");
+          value=getInt();
+          ob.insert(value);
+          break;
+case 'f': puttext("enter value to find :");
+          value=getInt();
+          node found=theTree.find(value);
+          if(found!=null)
+          {
+          puttext("found");
+          found.display_node();
+          puttext("\n");
+          }
+          else
+          puttext("couldn't find "+value+"\n");
+          break;
+case 'd': puttext("enter the value to delete :");
+          value=getInt();
+          boolean isdelete=theTree.delete(value);
+          if(isdelete)
+          puttext("deleted "+value+"\n");
+          else
+          puttext("couldn't delete "+value+"\n");
+          break;
+case 't': value=getInt();
+          theTree.traverse(value);
+          break;
+default:  puttext("invalid entry !!!!! ");
+}
+}
+}
+public static void puttext(String s)
+{
+System.out.print(s);
+System.out.flush();
+}
+public static String getString()
+{
+Scanner br=new Scanner(System.in);
+String s=br.nextLine();
+return s;
+}
+public static char getchar()
+{
+String s=getString();
+return s.charAt(0);
+}
+public static int getInt()
+{
+String s=getString();
+return Integer.parseInt(s);
+}
+}
+
+
+}

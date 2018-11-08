@@ -1,0 +1,34 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Matrix3D()
+comment0.text=Create\ a\ new\ unit\ matrix
+comment1.params=f
+comment1.target=void\ scale(float)
+comment1.text=Scale\ by\ f\ in\ all\ dimensions
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=xf\ yf\ zf
+comment2.target=void\ scale(float,\ float,\ float)
+comment2.text=Scale\ along\ each\ axis\ independently
+comment3.params=x\ y\ z
+comment3.target=void\ translate(float,\ float,\ float)
+comment3.text=Translate\ the\ origin
+comment4.params=theta
+comment4.target=void\ yrot(double)
+comment4.text=rotate\ theta\ degrees\ about\ the\ y\ axis
+comment5.params=theta
+comment5.target=void\ xrot(double)
+comment5.text=rotate\ theta\ degrees\ about\ the\ x\ axis
+comment6.params=theta
+comment6.target=void\ zrot(double)
+comment6.text=rotate\ theta\ degrees\ about\ the\ z\ axis
+comment7.params=rhs
+comment7.target=void\ mult(Matrix3D)
+comment7.text=Multiply\ this\ matrix\ by\ a\ second\:\ M\ \=\ M*R
+comment8.params=
+comment8.target=void\ unit()
+comment8.text=Reinitialize\ to\ the\ unit\ matrix
+comment9.params=v\ tv\ nvert
+comment9.target=void\ transform(float[],\ int[],\ int)
+comment9.text=\ Transform\ nvert\ points\ from\ v\ into\ tv.\ \ v\ contains\ the\ input\r\n\ \ \ \ coordinates\ in\ floating\ point.\ \ Three\ successive\ entries\ in\r\n\ \ \ \ the\ array\ constitute\ a\ point.\ \ tv\ ends\ up\ holding\ the\ transformed\r\npoints\ as\ integers;\ three\ successive\ entries\ per\ point
+numComments=11

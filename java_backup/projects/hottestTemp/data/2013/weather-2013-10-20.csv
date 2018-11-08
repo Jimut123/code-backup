@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,57.9,55.9,93,29.92,6.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-10-20 04:51:00
+1:51 AM,57.0,55.9,96,29.93,4.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-20 05:51:00
+2:51 AM,55.0,54.0,96,29.95,4.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-20 06:51:00
+3:51 AM,55.0,52.0,89,29.96,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-20 07:51:00
+4:51 AM,53.1,48.9,86,29.97,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2013-10-20 08:51:00
+5:51 AM,51.1,46.9,86,29.99,10.0,North,3.5,-,N/A,,Partly Cloudy,10,2013-10-20 09:51:00
+6:51 AM,48.9,42.1,77,30.01,10.0,NNE,4.6,-,N/A,,Partly Cloudy,20,2013-10-20 10:51:00
+7:51 AM,48.9,41.0,74,30.04,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2013-10-20 11:51:00
+8:51 AM,50.0,41.0,71,30.07,10.0,NNE,8.1,-,N/A,,Partly Cloudy,30,2013-10-20 12:51:00
+9:51 AM,53.1,39.9,61,30.09,10.0,NE,9.2,-,N/A,,Partly Cloudy,40,2013-10-20 13:51:00
+10:51 AM,55.9,39.0,53,30.10,10.0,NE,9.2,-,N/A,,Partly Cloudy,50,2013-10-20 14:51:00
+11:51 AM,57.9,39.9,51,30.11,10.0,NE,8.1,-,N/A,,Partly Cloudy,50,2013-10-20 15:51:00
+12:51 PM,59.0,39.0,48,30.09,10.0,NE,8.1,-,N/A,,Partly Cloudy,50,2013-10-20 16:51:00
+1:51 PM,62.1,39.9,44,30.08,10.0,NE,4.6,-,N/A,,Partly Cloudy,50,2013-10-20 17:51:00
+2:51 PM,63.0,39.9,43,30.06,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-20 18:51:00
+3:51 PM,64.9,41.0,42,30.05,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-20 19:51:00
+4:51 PM,64.0,41.0,43,30.06,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-20 20:51:00
+5:51 PM,62.1,39.9,44,30.06,10.0,North,3.5,-,N/A,,Partly Cloudy,10,2013-10-20 21:51:00
+6:51 PM,55.0,42.1,62,30.08,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-20 22:51:00
+7:51 PM,53.1,45.0,74,30.09,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-20 23:51:00
+8:51 PM,51.1,45.0,80,30.10,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-21 00:51:00
+9:51 PM,48.0,44.1,86,30.12,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-10-21 01:51:00
+10:51 PM,45.0,43.0,93,30.13,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 02:51:00
+11:51 PM,44.1,42.1,93,30.13,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-21 03:51:00

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=num
+comment0.target=func_rec_prime_check(int)
+comment1.params=
+comment1.target=void\ clac()
+comment2.params=n\ j
+comment2.target=int\ prime_check(int,\ int)
+numComments=3

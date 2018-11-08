@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Smith()
+comment1.params=n
+comment1.target=void\ check(int)
+comment2.params=x
+comment2.target=int\ digSum(int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

@@ -1,0 +1,17 @@
+import java.util.*;
+public class num
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        float a,c;
+        int b;
+        System.out.println("Enter number");
+        a=sc.nextFloat();
+        b=(int)a;
+        c=a-b;
+        System.out.println(+c);
+        System.out.println(+b);
+    }
+}
+        

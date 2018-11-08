@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,28.0,8.1,43,30.31,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-01-31 05:51:00
+1:51 AM,26.1,8.1,47,30.32,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-01-31 06:51:00
+2:51 AM,27.0,8.1,45,30.33,10.0,NW,4.6,-,N/A,,Partly Cloudy,310,2015-01-31 07:51:00
+3:51 AM,27.0,8.1,45,30.33,10.0,Calm,Calm,-,N/A,,Clear,0,2015-01-31 08:51:00
+4:51 AM,26.1,8.1,47,30.33,10.0,Calm,Calm,-,N/A,,Clear,0,2015-01-31 09:51:00
+5:51 AM,23.0,8.1,53,30.34,10.0,Calm,Calm,-,N/A,,Clear,0,2015-01-31 10:51:00
+6:51 AM,25.0,7.0,46,30.36,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-01-31 11:51:00
+7:51 AM,26.1,8.1,47,30.37,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-01-31 12:51:00
+8:51 AM,30.9,9.0,40,30.37,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2015-01-31 13:51:00
+9:51 AM,33.1,6.1,32,30.38,10.0,NNW,6.9,-,N/A,,Mostly Cloudy,330,2015-01-31 14:51:00
+10:51 AM,37.0,5.0,26,30.39,10.0,WNW,10.4,-,N/A,,Mostly Cloudy,290,2015-01-31 15:51:00
+11:51 AM,39.9,3.0,21,30.38,10.0,Variable,6.9,-,N/A,,Mostly Cloudy,0,2015-01-31 16:51:00
+12:51 PM,43.0,1.0,17,30.35,10.0,Variable,5.8,-,N/A,,Partly Cloudy,0,2015-01-31 17:51:00
+1:51 PM,45.0,3.0,18,30.32,10.0,Variable,4.6,-,N/A,,Partly Cloudy,0,2015-01-31 18:51:00
+2:51 PM,46.9,6.1,19,30.31,10.0,WSW,8.1,-,N/A,,Partly Cloudy,240,2015-01-31 19:51:00
+3:51 PM,46.9,6.1,19,30.30,10.0,West,4.6,-,N/A,,Partly Cloudy,280,2015-01-31 20:51:00
+4:51 PM,46.0,7.0,20,30.30,10.0,West,3.5,-,N/A,,Scattered Clouds,260,2015-01-31 21:51:00
+5:51 PM,42.1,9.0,26,30.30,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-01-31 22:51:00
+6:51 PM,37.9,12.9,36,30.31,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-01-31 23:51:00
+7:51 PM,36.0,12.0,37,30.31,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-02-01 00:51:00
+8:51 PM,33.1,12.9,43,30.31,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-02-01 01:51:00
+9:51 PM,34.0,15.1,46,30.30,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-02-01 02:51:00
+10:51 PM,34.0,14.0,44,30.29,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-02-01 03:51:00
+11:51 PM,33.1,17.1,52,30.29,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-02-01 04:51:00

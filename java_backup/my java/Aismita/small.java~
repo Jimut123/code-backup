@@ -1,0 +1,27 @@
+import java.io.*;
+class small
+{
+    public static void main(String s)
+    {
+        String w=" ";
+        String p=" ";
+        s=s+" ";int min=0; 
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)==' ')
+            {
+             if(w.length()<min)
+             {
+                 min=w.length();
+                 p=w;
+                 
+                }
+                w=" ";
+            }
+            else
+            w=w+s.charAt(i);
+        }
+        System.out.print("the smallest word" +p);
+    }
+}
+        

@@ -1,0 +1,8 @@
+public class a
+{
+void b()
+{
+char j;
+System.out.println((int)j);
+}
+}

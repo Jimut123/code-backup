@@ -1,0 +1,33 @@
+class abc
+{
+public static void main (String name,int roll, int m, int c, int co)
+{
+int tot, per;
+tot=m+c+co;
+String g="";
+per=(tot*100)/400;
+if(per<50)
+g="D";
+else
+if(per<=50)
+g="C";
+else
+if(per<=60)
+g="B";
+else
+if(per<=70)
+g="B+";
+else
+if(per<=80)
+g="A";
+if(per>80)
+g="A+";
+
+System.out.println(name);
+System.out.println(roll);
+System.out.println(m);
+System.out.println(c);
+System.out.println(co);
+System.out.println(g);
+}
+}

@@ -1,0 +1,17 @@
+public class series65
+{
+    public static void main(int n)
+    {
+        int ctr=1;int sum=0;
+        int a=5;
+        int x=6;
+        for(int i=1;i<=n;i++)
+        if(i%2==0)
+    sum=sum-(a*(int)Math.pow(x,i));
+       else
+    {
+        sum=sum+(a*(int)Math.pow(x,i));
+    }
+    System.out.println(sum);
+}
+}

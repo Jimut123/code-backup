@@ -1,0 +1,73 @@
+import java.io.*;
+class Add_large
+{
+    String s,s1,s2;
+    int sum,c,k,i;
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    
+    Add_large()throws IOException
+    {
+        System.out.println("Enter 1st number");
+        s=br.readLine();
+        System.out.println("Enter 2nd number");
+        s1=br.readLine();
+        sum=c=0;
+        s2=" ";
+        if(s.length()>s1.length())
+        {
+            while(s1.length()<s.length())
+            s1="0"+s1;
+        }//End of if
+        else
+        if(s1.length()>s.length())
+        {
+            while(s.length()<s1.length())
+            s="0"+s;
+        }//End of if
+    }//End of Add_large()
+    
+    void start()
+    {
+        for(i=s.length()-1;i>=0;i--)
+        {
+            calc(s.charAt(i),s1.charAt(i));
+        }//End of for
+        if(c>0)
+        s2=c+s2;
+    }//End of start()
+    
+    void calc(char c1,char d)
+    {
+        int a,b;
+        if(((int)c1-48>=0&&(int)c1-48<=9)&&((int)d-48>=0&&(int)d-48<=9))
+        {
+            a=(int)c1-48;
+            b=(int)d-48;
+            k=(a+b);
+            
+            if((k+c)>=10)
+            {
+                sum=(k+c)%10;
+                c=(k+c)/10;
+            }//End of of
+            else
+            {
+                sum=(k+c);
+                c=(k+c)/10;
+            }//End of else
+            s2=sum+s2;
+        }//End of if
+    }//End of calc()
+    
+    void show()
+    {
+        System.out.println("Number is:"+s2);
+    }//End of show()
+    
+    public static void main()throws IOException
+    {
+        Add_large ad=new Add_large();
+        ad.start();
+        ad.show();
+    }//End of main()
+}//End of class

@@ -1,0 +1,54 @@
+package sanjana_cms;
+
+class overload3
+{
+String s;
+void string (String a1)
+{
+String a=a1;
+String z;
+S=br.readLine();
+j=S.length()-1;
+for (i=0; i<=a.length()/2; i++) 
+{
+if (a.charAt(i)==a.charAt(j))
+{
+f=1;
+break;
+}
+}
+if(f==0)
+System.out.println ("Palinodrom number:"+S);
+else
+System.outprintln ("Non-palinodrom number:"+S);
+}
+void string1 (String a1, char ch)
+{
+string z; z=a1;
+int i, v;
+v=0;
+for (i=0; i<z.length(); i++)
+{
+if (z.charAt(i)==ch)
+{
+v++;
+}
+}
+System.out.println(v);
+}
+void string1 (String a1, String a2)
+{
+String w="";
+int c=0;
+for (i=0; i<a.length(); i++)
+{
+if(a1.charAt(i)==' ')
+{
+if (a1.equalsIgnoreCase(w)=true)
+c++;
+}
+else
+w=w+s.charAt(i);
+}
+System.out.println(c);
+}}

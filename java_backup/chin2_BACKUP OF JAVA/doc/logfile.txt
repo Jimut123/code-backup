@@ -1,0 +1,63 @@
+Class documentation
+<---- javadoc command: ---->
+D:\JAVA\New folder - Copy\Java\jdk1.7.0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.7
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+D:\BACKUP OF JAVA\doc
+-classpath
+D:\JAVA\BlueJ pack\lib\bluejcore.jar;D:\JAVA\BlueJ pack\lib\junit-4.8.2.jar;D:\BACKUP OF JAVA
+-encoding
+UTF-8
+-charset
+UTF-8
+D:\BACKUP OF JAVA\Producer.java
+<---- end of javadoc command ---->
+Loading source file D:\BACKUP OF JAVA\Producer.java...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0
+Building tree for all the packages and classes...
+Generating D:\BACKUP OF JAVA\doc\Consumer.html...
+Generating D:\BACKUP OF JAVA\doc\Producer.html...
+D:\BACKUP OF JAVA\Tree.java:2: error: ';' expected
+   import java.awt.Graphics.*
+                             ^
+D:\BACKUP OF JAVA\Tree.java:4: error: package awt does not exist
+   import awt.Graphics;
+             ^
+D:\BACKUP OF JAVA\Tree.java:6: error: cannot find symbol
+    public class Tree extends GraphicsProgram {
+                              ^
+  symbol: class GraphicsProgram
+D:\BACKUP OF JAVA\SixFlags.java:31: error: class ImageViewer is public, should be declared in a file named ImageViewer.java
+ public class ImageViewer extends JPanel
+        ^
+D:\BACKUP OF JAVA\pythagorean.java:18: error: ';' expected
+        int s = mi+ in 
+                      ^
+D:\BACKUP OF JAVA\PRINTT.java:13: error: ';' expected
+        jbtOK.setForeground(new Color(0, 0, 9));
+             ^
+D:\BACKUP OF JAVA\factormultiply.java:20: error: not a statement
+            System.out.println
+                      ^
+D:\BACKUP OF JAVA\factormultiply.java:20: error: ';' expected
+            System.out.println
+                              ^
+Generating D:\BACKUP OF JAVA\doc\package-frame.html...
+Generating D:\BACKUP OF JAVA\doc\package-summary.html...
+Generating D:\BACKUP OF JAVA\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating D:\BACKUP OF JAVA\doc\allclasses-frame.html...
+Generating D:\BACKUP OF JAVA\doc\allclasses-noframe.html...
+Generating D:\BACKUP OF JAVA\doc\index.html...
+8 errors

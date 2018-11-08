@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,64.0,54.0,70,30.02,10.0,WSW,8.1,-,N/A,,Partly Cloudy,240,2013-04-25 04:51:00
+1:51 AM,61.0,54.0,78,30.03,10.0,WSW,5.8,-,N/A,,Partly Cloudy,240,2013-04-25 05:51:00
+2:51 AM,61.0,55.0,81,30.03,10.0,SW,6.9,-,N/A,,Mostly Cloudy,230,2013-04-25 06:51:00
+3:51 AM,63.0,51.1,65,30.06,10.0,Variable,6.9,-,N/A,,Mostly Cloudy,0,2013-04-25 07:51:00
+4:51 AM,61.0,46.9,60,30.11,10.0,NNW,4.6,-,N/A,,Mostly Cloudy,340,2013-04-25 08:51:00
+5:51 AM,59.0,45.0,60,30.16,10.0,NNE,11.5,-,N/A,,Mostly Cloudy,30,2013-04-25 09:51:00
+6:51 AM,55.0,39.9,57,30.18,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2013-04-25 10:51:00
+7:51 AM,54.0,39.0,57,30.23,10.0,North,9.2,17.3,N/A,,Mostly Cloudy,360,2013-04-25 11:51:00
+8:51 AM,53.1,37.0,55,30.24,10.0,NNE,8.1,-,N/A,,Mostly Cloudy,20,2013-04-25 12:51:00
+9:51 AM,54.0,37.9,55,30.24,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2013-04-25 13:51:00
+10:51 AM,57.9,39.9,51,30.24,10.0,NE,9.2,-,N/A,,Mostly Cloudy,50,2013-04-25 14:51:00
+11:51 AM,60.1,42.1,51,30.23,10.0,ENE,6.9,-,N/A,,Mostly Cloudy,70,2013-04-25 15:51:00
+12:51 PM,63.0,43.0,48,30.23,10.0,Variable,5.8,-,N/A,,Mostly Cloudy,0,2013-04-25 16:51:00
+1:51 PM,64.9,44.1,47,30.24,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2013-04-25 17:51:00
+2:51 PM,68.0,45.0,43,30.22,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-04-25 18:51:00
+3:51 PM,68.0,42.1,39,30.19,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-04-25 19:51:00
+4:51 PM,69.1,41.0,36,30.19,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-04-25 20:51:00
+5:51 PM,69.1,41.0,36,30.19,10.0,ESE,4.6,-,N/A,,Partly Cloudy,110,2013-04-25 21:51:00
+6:51 PM,68.0,42.1,39,30.19,10.0,NE,3.5,-,N/A,,Partly Cloudy,40,2013-04-25 22:51:00
+7:51 PM,63.0,43.0,48,30.21,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-04-25 23:51:00
+8:51 PM,57.0,45.0,64,30.25,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-04-26 00:51:00
+9:51 PM,55.0,46.0,72,30.28,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-04-26 01:51:00
+10:51 PM,52.0,45.0,77,30.28,10.0,Calm,Calm,-,N/A,,Clear,0,2013-04-26 02:51:00
+11:51 PM,51.1,45.0,80,30.28,10.0,Calm,Calm,-,N/A,,Clear,0,2013-04-26 03:51:00

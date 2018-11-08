@@ -1,0 +1,13 @@
+
+import java.util.*;
+class square root
+{
+    public static void main();
+    {
+        int a
+        ScannerSc=new Scanner.(system.in);
+        a=sc.NextInt();
+        q=math.sqrt(a);
+        System.out println(q);
+    }
+}

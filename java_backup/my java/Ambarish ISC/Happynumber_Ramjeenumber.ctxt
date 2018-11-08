@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Happynumber_Ramjeenumber()
+comment1.params=x\ a
+comment1.target=int\ sum_sq_digits(int,\ int)
+comment2.params=n\ a
+comment2.target=void\ isHappy(int,\ int)
+numComments=3

@@ -1,0 +1,15 @@
+class Circle
+{
+double r,area=0.0;
+public void find (double s)
+{
+r=s;
+area=3.14*r*r;
+System.out.println ("area of a circle is" + area);
+}
+public static void main (String s[])
+{
+Circle obj = new Circle ();
+obj.find (2.5);
+}
+}

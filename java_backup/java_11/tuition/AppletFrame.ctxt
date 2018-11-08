@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=className\ title\ args
+comment0.target=void\ startApplet(java.lang.String,\ java.lang.String,\ java.lang.String[])
+comment1.params=name
+comment1.target=AppletFrame(java.lang.String)
+comment2.params=e
+comment2.target=void\ processEvent(java.awt.AWTEvent)
+numComments=3

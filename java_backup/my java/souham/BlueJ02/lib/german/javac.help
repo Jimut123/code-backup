@@ -1,0 +1,729 @@
+* is abstract; cannot be instantiated
+Die Klasse ist als 'abstract' deklariert. Das
+bedeutet, dass sie Methoden enthält, die sie 
+aber nicht implementiert (abstrakte Methoden).
+Sie können keine Objekte von abstrakten Klassen
+erzeugen. Sie müssen eine von der abstrakten
+Klasse abgeleitete Klasse finden oder schreiben,
+die alle abstrakten Methoden implementiert. Von
+dieser Klasse können Sie dann Objekte erzeugen.
+
+abstract methods cannot have a body
+Sie haben eine Methode als 'abstract' deklariert
+und haben einen Methodenrumpf geschrieben. Das 
+ist ein Widerspruch. Abstrakte Methodendeklarationen
+besitzen nur einen Methodenkopf, gefolgt von einem
+Strichpunkt. Entfernen Sie entweder das Wort 
+"abstract" oder den Methodenrumpf.
+
+* is already defined in *
+In dieser Methode gibt es bereits eine Variable
+(oder vielleich einen Parameter) mit demselben
+Namen. Verwenden Sie einen anderen Namen. (Oder
+haben Sie vielleicht dieselbe Variable gemeint?
+Dann entfernen Sie die Typangabe, sodass es nicht
+wie eine neue Variablendeklaration aussieht.)
+
+anonymous class implements interface; cannot have arguments
+Leider kein Hilfetext verfügbar.
+
+anonymous class implements interface; cannot have qualifier for new
+Leider kein Hilfetext verfügbar.
+
+array required, but *
+Sie verwenden hier eine Syntax, die so aussieht, als 
+wolltebn Sie auf ein Arrayelement zugreifen. Die 
+Variable, die Sie meinen, ist allerdings kein Array.
+
+break outside switch or loop
+Die "break"-Anweisung verlässt einen Block wie etwa
+eine "switch"-Anweisung oder eine Schleife ("for"-,
+"while"- oder "do"-Schleife). Ausserhalb eines solchen
+Blocks kann "break" nicht angewendet werden.
+
+* must be first statement in constructor
+In jeder Klasse, die eine Superklasse (übergeordnete
+Klasse) besitzt, sollten Sie als Allererstes den 
+Konstruktor der Superklasse aufrufen. Dazu fügen Sie
+    super(...);
+als erste ausführbare Zeile Ihres Konstruktors ein
+(und ersetzen die Punkte durch die entsprechenden
+Parameter). Der Versuch, die Variablen der Superklasse
+zu verwenden, bevor deren Konstruktor aufgerufen wurde,
+führt zu Ärger!
+
+cannot access *
+Leider kein Hilfetext verfügbar.
+
+* cannot be applied to *
+Leider kein Hilfetext verfügbar.
+
+cannot assign a value to final variable *
+Die Variable, der Sie hier etwas zuweisen wollen,
+wurde als "final" deklariert. Das bedeutet, dass
+Sie ihren Wert später nicht mehr ändern dürfen.
+Wenn Sie den Wert wirklich ändern müssen, entfernen
+Sie "final" aus der Variablendeklaration.
+
+* cannot be dereferenced
+Sie verwenden die Punktnotation, um eine Variable oder
+eine Methode eines anderen Objekts anzusprechen. Die 
+Variable, die Sie verwenden, ist allerdings nicht vom
+Typ eines Objekts -- sie besitzt keine Variablen oder
+Methoden.
+
+cannot inherit from final *
+Die Superklasse (die Klasse, die nach dem Schlüsselwort
+"extends" aufscheint) ist als "final" deklariert. Das
+bedeutet, dass sie abgeleitete Klassen ausdrücklich
+verhindert. Tut uns Leid -- Sie können nicht ableiten,
+wenn die Superklasse das nicht will ...
+
+* before supertype constructor has been called
+In jeder Klasse, die eine Superklasse (übergeordnete
+Klasse) besitzt, sollten Sie als Allererstes den 
+Konstruktor der Superklasse aufrufen. Dazu fügen Sie
+    super(...);
+als erste ausführbare Zeile Ihres Konstruktors ein
+(und ersetzen die Punkte durch die entsprechenden
+Parameter). Der Versuch, die Variablen der Superklasse
+zu verwenden, bevor deren Konstruktor aufgerufen wurde,
+führt zu Ärger!
+
+cannot return a value from method whose result type is void
+Der Rückgabetyp "void" in einer Methodensignatur bedeutet,
+dass die Methode kein Ergebnis zurückliefert. Der Methoden-
+rumpf sollte keine "return"-Anweisung beinhalten.
+
+cannot select a static class from a parameterized type
+Leider kein Hilfetext verfügbar.
+
+* cannot be inherited with different arguments:*
+Leider kein Hilfetext verfügbar.
+
+'catch' without 'try'
+"catch" ist ein Schlüsselwort, das nur nach einem "try"-Block
+auftreten darf. Die korrekte Anordnung ist:
+   try {
+      Anweisungen;
+   }
+   catch(Exception e) {
+      Anweisungen;
+   }
+
+* clashes with package of same name
+Vergewissern Sie sich, dass die Klasse und das Paket
+unterschiedliche Namen haben. Für gewöhnlich sollten
+Klassennamen mit einem Grossbuchstaben beginnen, während
+Packagenamen mit einem Kleinbuchstaben beginnen.
+
+code too large for try statement
+Innerhalb dieses "try"-Blocks befinden sich zuviele
+Anweisungen. Verschieben Sie den Code in eine getrennte
+Methode und fügen Sie hier einen Methodenaufruf ein.
+
+constant expression required
+Sie haben hier eine Variable oder einen Ausdruck 
+angegeben, aber das ist nicht zulässig. Sie dürfen
+hier nur Konstante verwenden. Konstante sind Zahlen
+(wie etwa 42) oder Symbole, die als "final" deklariert
+sind.
+
+continue outside of loop
+Die "continue"-Anweisung wird benutzt, um sofort den
+nächsten Schleifendurchlauf zu beginnen. Sie hat 
+ausserhalb einer Schleife keine Bedeutung und kann
+nur innerhalb einer "for"-, "while"- oder "do"-Schleife
+verwendet werden.
+
+cyclic inheritance involving *
+Sie versuchen hier, eine Klasse abzuleiten, aber diese
+Klasse ist bereits als von Ihrer Klasse abgeleitet
+deklariert! Nun, das kann nicht funktionieren! Sie
+müssen entscheiden, welche Klasse die Superklasse ist
+und welche die abgeleitete.
+
+* does not exist
+Sie haben hier einen Namen benutzt (möglicherweise, um
+sich auf eine Variable, eine Klasse oder ein Paket 
+zu beziehen), den es nicht gibt. Es gibt weder eine
+Variable, noch eine Klasse noch ein Paket mit diesem
+Namen.
+
+duplicate class:*
+Es scheint bereits eine Klasse mit diesem Namen zu geben.
+
+duplicate case label
+Sie haben innerhalb ein- und derselben "switch"-Anweisung
+denselben Label zweimal vergeben.
+
+duplicate default label
+Sie haben innerhalb ein- und derselben "switch"-Anweisung
+zweimal "default" geschrieben. Das können Sie nicht tun --
+einmal ist genug.
+
+'else' without 'if'
+Das Schlüsselwort "else" kann nur als Teil einer 
+"if"-Anweisung auftauchen, in der Form
+   if (Bedingung)
+     Anweisung;
+   else
+     Anweisung;
+Haben Sie vielleicht bloss die Klammern rund um die 
+Anweisungen vergessen? Wenn Sie nach dem "if" mehr als
+eine Anweisung haben, müssen Sie Klammern verwenden wie 
+hier:
+   if (Bedingung)
+   {
+     Anweisung1;
+     Anweisung2;
+   }
+   else
+   {
+     Anweisung3;
+   }
+
+empty character literal
+Sie haben ein leeres Zeichen geschrieben. Sie können '' 
+nicht schreiben. Eine Zeichenkonstante besteht aus einem
+einzelnen Zeichen, das unter einfachen Anführungszeichen
+steht, z.B. 'a'. Zumeist kann nur ein einziges Zeichen 
+zwischen den Anführungszeichen stehen. Die einzige Ausnahme
+bildet der Backslash (Escape-Zeichen) als erstes Zeichen, 
+der für die Angabe von Sonderzeichen wie '\n' oder '\t' 
+verwendet wird.
+
+* has already been caught
+Diese "catch"-Anweisung ist nutzlos. Sie kann niemals 
+ausgeführt werden, weil alle Exceptions, die sie
+auffangen soll, bereits von einer anderen "catch"-Anweisung
+weiter oben aufgefangen werden.
+
+* is never thrown in body of corresponding try statement
+Sie haben angegeben, hier eine Exception auffangen 
+zu wollen. Aber ich kann Ihnen sagen, dass diese Exception
+hier niemals auftreten wird! Im "try"-Block gibt es keine
+Anweisung, die diese Exception hervorrufen kann.
+
+'finally' without 'try'
+"catch" ist ein Schlüsselwort, das nur nach einem "try"-Block
+auftreten darf. Die korrekte Anordnung ist:
+   try {
+      Anweisungen;
+   }
+   catch(Exception e) {
+      Anweisungen;
+   }
+   finally {
+      Anweisungen;
+   }
+
+floating point number too large
+Das System kann mit Gleitkommazahlen dieser Größe nicht umgehen.
+
+floating point number too small
+Das System kann mit Gleitkommazahlen dieser Kleinheit nicht umgehen.
+
+inner classes cannot have static declarations
+Sie können keine statischen Typen in verschachtelten Klassen 
+deklarieren. Wenn Sie hier einen statischen Typ benötigen, 
+deklariern Sie ihn in der äusseren Klasse.
+
+illegal character:*
+In der Sourcedatei befindet sich hier ein unzulässiges Zeichen,
+das möglicherweise unsichtbar ist. Wenn Sie es nicht finden und
+löschen können, löschen Sie die ganze Zeile und geben Sie sie 
+neu ein.
+
+illegal combination of modifiers: *
+Sie haben versucht, zwei Typ-Modifizierer in nicht zulässiger Weise 
+miteinander zu kombinieren. Wahrscheinlich widersprechen einander
+die Bedeutungen der beiden Modifizierer, beispielsweise wie wenn eine 
+Methode als sowohl als "abstract" als auch als "native", "final",
+"private" oder "synchronized" deklariert würde.
+
+illegal escape character
+Ein Sonderzeichen wird durch einen Backslash und ein zweites
+Zeichen dargestellt, z.B. '\n'. Es gibt nur eine begrenzte 
+Menge von Zeichen, die nach dem Backslash zulässig sind. Es
+sind dies \n, \t, \b, \r, \f, \\, \', \" und Ziffern. Wenn Sie
+den Backslash selbst darstellen wollen, scheiben Sie "\\" --
+dies wird in Ihrem String mit einen einzelnen Backslash 
+ersetzt.
+
+illegal forward reference
+Leider kein Hilfetext verfügbar.
+
+illegal initializer for *
+Leider kein Hilfetext verfügbar.
+
+illegal line end in character literal
+Sie haben einen Zeilenvorschub, wo ein Zeichen angegeben sein sollte.
+Das können Sie nicht tun. Wenn Sie das Zeichen für einen Zeilen-
+vorschub angeben wollen, schreiben Sie es als '\n'.
+
+* is not an inner class
+Leider kein Hilfetext verfügbar.
+
+illegal start of expression
+Leider kein Hilfetext verfügbar.
+
+illegal start of type
+An einer Stelle im Sourcetext, wo der Name eines Typs erwartet wurde,
+wurde etwas Anderes gefunden (höchstwahrscheinlich ein Java-Schlüssel-
+wort). Überprüfen Sie diese Zeile nach fehlerhaften Typdefinitionen.
+
+illegal unicode escape
+Leider kein Hilfetext verfügbar.
+
+improperly formed type, some parameters are missing
+Leider kein Hilfetext verfügbar.
+
+incomparable types: *
+Leider kein Hilfetext verfügbar.
+
+integer number too large: *
+Sie haben eine Zahl angegeben, die für den hier erwarteten Datentyp zu
+gross ist. Sie müssen einen grösseren Datentyp verwenden (z.B. "long"
+anstelle von "int").
+
+internal error; cannot instantiate *
+Leider kein Hilfetext verfügbar.
+
+* but with different return type
+Sie versuchen vielleicht, zwei Methoden zu schreiben, die bis auf
+den Rückgabetyp dieselbe Signatur haben. Das ist nicht zulässig.
+
+interface expected here
+Ein Interface kann nur von einem anderen Interface abgeleitet werden.
+Der Name, den Sie nach "extends" angegeben haben, ist kein Interface.
+
+interface methods cannot have body
+Methoden in Interfaces dürfen nur Deklarationen sein. Das bedeutet, dass
+sie nur einen Methodenkopf enthalten sollten, gefolgt von einen Strichpunkt.
+Es sollte kein Methodenrumpf vorhanden sein.
+
+hexadecimal numbers must contain at least one hexadecimal digit
+Sie haben eine Hexadezimalzahl angegeben. (Das macht man, indem man die
+Zahl mit "0X" beginnt). In Hexadezimalzahlen muss nach dem "X"
+mindestens eine Ziffer folgen.
+
+invalid method declaration; return type required
+Eine Methodendeklaration muss auch einen Rückgabetyp deklarieren.
+Wenn Ihre Methode z.B. einen String zurückgibt, schreiben Sie:
+    public String meineMethode();
+Wenn Sie keinen Rückgabewert von dieser Methode wollen, müssen Sie
+das Schlüsselwort "void" angeben, um anzuzeigen, dass es keinen
+Rückgabetyp gibt. Zum Beispiel:
+    public void meineMethode();
+
+* already in use
+In dieser Methode gibt es bereits eine Variable
+(oder vielleich einen Parameter) mit demselben
+Namen. Verwenden Sie einen anderen Namen. (Oder
+haben Sie vielleicht dieselbe Variable gemeint?
+Dann entfernen Sie die Typangabe, sodass es nicht
+wie eine neue Variablendeklaration aussieht.)
+
+* is accessed from within inner class; needs to be declared final
+Auf lokale Variable kann von inneren Klassen üblicherweise nicht 
+zugegriffen werden. Das ist aber genau das, was Sie hier versuchen. 
+Sie haben zwei Möglichkeiten: Sie können den Zugriff auf die lokale
+Variable unterlassen, oder Sie können die Variable "final" machen --
+dann können Sie auf sie zugreifen.
+
+malformed floating point literal
+Sie haben in einer Gleitkommazahl einen Schreibfehler gemacht.
+(Eine Gleitkommazahl ist eine Zahl, die einen Kommapunkt enthält).
+Beispiele richtig geschriebener Gleitkommazahlen sind:
+18.0      18.     1.8e1     .18E2
+
+missing method body, or declare abstract
+Methoden müssen entweder einen Methodenrumpf besitzen oder abstrakt 
+sein. Ein Methodenrumpf ist der Block in geschwungenen Klammern { }, 
+der dem Methodenkopf folgt und Anweisungen enthält.
+Wenn eine Methode keinen Methodenrumpf besitzt, muss sie das 
+Schlüsselwort "abstract" in ihrem Methodenkopf enthalten, z.B.
+    public abstract int getAntwort();
+
+missing return statement
+Sie haben hier eine Methode, die laut Deklaration einen Rückgabewert
+liefert. Allerdings gibt es im Methodenrumpf keine "return"-Anweisung.
+Das passt nicht zusammen. Sie müssen entweder:
+   - den Rückgabetyp der Methode als "void" deklarieren, wenn sie 
+     keinen Wert zurückliefern soll, oder
+   - an das Ende der Methode eine "return"-Anweisung mit dem richtigen
+     Rückgabetyp schreiben, z.B.
+         return 42;
+Der Typ des Rückgabewerts muss mit dem im Methodenkopf deklarierten Typ
+übereinstimmen.
+
+missing return value
+Sie haben hier eine "return"-Anweisung geschrieben, die keinen Wert
+zurückliefert. Der Methodenkopf allerdings deklariert, dass diese
+Methode einen Rückgabewert besitzt. Sie müssen entweder:
+   - deklarieren, dass diese Methode keinen Rückgabewert liefert
+     (indem Sie "void" als Rückgabetyp im Methodenkopf angeben), oder
+   - Sie müssen einen Wert des richtigen Typs zurückliefern, z.B.
+         return 42;
+     oder
+         return "Martin";
+
+name clash: *
+Leider kein Hilfetext verfügbar.
+
+* is reserved for internal use
+Der angezeigte Ausdruck ist für die interne Verwendung reserviert,
+wenn es der Name einer Variablen oder Klasse ist, müssen Sie ihn
+ändern.
+
+native methods cannot have a body
+Sie haben eine Methode als "native" deklariert, und Sie haben einen
+Methodenrumpf geschrieben. Deklarationen von "native"-Methoden 
+haben nur einen Methodenkopf, gefolgt von einem Strichpunkt.
+Entfernen Sie entweder das Schlüsselwort "native" oder den 
+Methodenrumpf.
+
+no enclosing instance of type {0} is in scope
+Leider kein Hilfetext verfügbar.
+
+no interface expected here
+Sie beziehen sich hier auf ein Interface (möglicherweise im 
+"extends"-Teil einer Klassendeklaration). Eine Klasse kann nur
+von anderen Klassen abgeleitet werden, nicht von Interfaces.
+Wenn Sie dieses Interface implementieren wollen, verwenden Sie
+stattdessen das Schlüsselwort "implements".
+
+* has no match in entry in *
+Leider kein Hilfetext verfügbar.
+
+* is not defined in a public class or interface; cannot be accessed from outside package
+Leider kein Hilfetext verfügbar.
+
+* cannot be accessed from outside package
+Leider kein Hilfetext verfügbar.
+
+not a loop label: *
+Leider kein Hilfetext verfügbar.
+
+not a statement
+Sie haben hier eine Codezeile geschrieben, die keine vollständige
+Anweisung ist. Bitte überprüfen Sie nochmals, was Sie bezwecken und
+wie Sie dies tun sollten.
+
+not an enclosing class:*
+Leider kein Hilfetext verfügbar.
+
+* cannot be applied to *
+Der Operator, den Sie hier einsetzen, kann für den Wertetyp, für
+den Sie ihn einsetzen, nicht benutzt werden. Entweder verwenden
+Sie hier den falschen Typ oder den falschen Operator.
+
+* clashes with class of same name
+Vergewissern Sie sich, dass die Klasse und das Paket
+unterschiedliche Namen haben. Für gewöhnlich sollten
+Klassennamen mit einem Grossbuchstaben beginnen, während
+Packagenamen mit einem Kleinbuchstaben beginnen.
+
+possible fall-through into case
+Leider kein Hilfetext verfügbar.
+
+error reading *
+Leider kein Hilfetext verfügbar.
+
+recursive constructor invocation
+Sie haben Code geschrieben, der seinen Konstruktor sich selbst aufrufen 
+lässt. Das ist nicht zulässig (und würde höchstwahrscheinlich zu einer
+Endlosschleife führen).
+
+* is ambiguous, both *
+Der Name, der in dieser Meldung aufscheint, kann nicht richtig aufgelöst
+werden, weil in den Pakete, die Sie importiert haben, mehr als eine 
+Klasse oder Interface mit diesem Namen definiert sind.
+Sie können entweder hier auf die Klasse mit ihrem vollständigen Namen 
+zugreifen (z.B. java.util.List) oder die Klasse mit ihrem vollständigen
+Namen importieren (z.B. import java.util.List).
+
+repeated interface
+Sie haben dasselbe Interface zweimal in derselben "implements"-Deklaration
+angeführt. Einmal ist genug. Mein Gedächtnis ist nicht so schlecht!
+
+repeated modifier
+In dieser Deklaration haben Sie denselben Modifizierer zweimal angeführt. Ein
+Modifizierer ist ein Schlüsselwort wie etwa "final", "static", "public", 
+"private", "volatile", ...
+
+{0} has {1} access in {2}
+Leider kein Hilfetext verfügbar.
+
+return outside method
+Leider kein Hilfetext verfügbar.
+
+signature does not match *
+Leider kein Hilfetext verfügbar.
+
+* should be declared abstract; it does not define *
+Die gegewärtige Klasse ist von einer abstrakten Klasse oder einem Interface
+abgeleitet. Abstrakte Klassen und Interfaces definieren Methoden, ohne deren
+Implementation anzugeben. Diese Klasse definiert Implementationen nicht für 
+alle Methoden, die noch welche benötigen. Daher ist diese Klasse selbst noch
+abstrakt (was bedeutet, dass sie noch Methoden ohne Implementation enthält).
+Sie müssen diese Klasse entweder als abstrakt deklarieren, indem Sie sie mit
+   public abstract class ...
+anstatt von bloss 
+   public class ...
+beginnen lassen, oder Sie müssen für die in der Fehlermeldung genannte Methode
+eine Implementation zur Verfügung stellen.
+
+error writing source; cannot overwrite input file *
+Leider kein Hilfetext verfügbar.
+
+'try' without 'catch' or 'finally'
+Wenn Sie einen "try"-Block verwenden, muss nach ihm ein "catch"-Block oder 
+ein "finally"-Block oder beide folgen. Die korrekte Anordnung ist:
+   try {
+      Anweisungen;
+   }
+   catch(Exception e) {
+      Anweisungen;
+   }
+   finally {
+      Anweisungen;
+   }
+
+* does not take parameters
+Leider kein Hilfetext verfügbar.
+
+type variables cannot be dereferenced
+Leider kein Hilfetext verfügbar.
+
+type variable {0} occurs more than once in result type of {1}; cannot be left uninstantiated
+Leider kein Hilfetext verfügbar.
+
+type variable {0} occurs more than once in type of {1}; cannot be left uninstantiated
+Leider kein Hilfetext verfügbar.
+
+unclosed character literal
+Sie haben wahrscheinlich eine Zeichenkonstante deklariert, ohne das 
+abschliessende einfache Anführungszeichen anzugeben: '.
+
+unclosed comment
+Sie haben wahrscheinlich einen Kommentar geschrieben, ohne ihn 
+mit */ abzuschliessen.
+
+unclosed string literal
+Sie haben wahrscheinlich eine Stringkonstante deklariert, ohne das 
+abschliessende doppelte Anführungszeichen anzugeben: ".
+
+undefined label: *
+Die Variable, die Sie hier verwenden wollen, kann nicht gefunden 
+werden. Sie wurde entweder nie deklariert, oder sie wurde an einer
+Stelle deklariert, die von hier nicht sichtbar ist.
+Der erste Fall tritt häufig bei Tippfehlern in einer Variablen auf.
+Überprüfen Sie, dass die Variable richtig geschrieben ist, inklusive
+Gross-/Kleinschreibung ("eineZahl" ist nicht dasselbe wie "einezahl"!).
+Der zweite Fall kommt vor, wenn die Variable innerhalb eines Blocks
+deklariert ist. (Ein Block ist ein Paar geschwungener Klammern { }.)
+Wenn Sie eine Variablendeklaration innerhalb einer Schleife haben, 
+dann ist die Variable nur innerhalb dieser Schleife sichtbar. Als
+Daumenregel: eine Variable wird unsichtbar nach der geschwungenen 
+Klammer (}), die den Block abschliesst, in dem die Variable 
+deklariert wurde.
+
+unreachable statement
+Diese Anweisung wird nie ausgeführt werden. Wenn Sie den Code 
+sorgfältig untersuchen, werden Sie feststellen, dass der
+Programmfluss diese Anweisung nie erreichen kann. Wenn Sie 
+wirklich nicht wollen, dass diese Anweisung ausgeführt wird,
+löschen Sie sie, oder berichtigen Sie den Code.
+
+initializer must be able to complete normally
+Sie können in statischen Initialisierungsblöcken keine 
+Exceptions auslösen oder solche Blöche vorzeitig
+beende. Sie müssen die Ausführung solcher Blöcke bis zum Ende
+zulassen.
+
+unreported exception {0}; must be caught or declared to be thrown
+Ihr Code ruft eine Methode auf, die eine Exception auslösen
+kann. Sie haben zwei Möglichkeiten: Sie können entweder diese
+Exception abfangen, oder Sie können deklarieren, dass 
+Ihre Methode diese weitergibt. Wenn Sie die Exception 
+abfangen wollen, müssen sie einen Block der Form
+   try 
+   {
+      ...
+   }
+   catch(...)
+   {
+      ...
+   }
+verwenden.
+Wenn Sie die Exception weitergeben wollen, müssen Sie die
+Deklaration 
+   throws <ExceptionName>
+in die Signatur Ihrer Methode aufnehmen.
+
+'void' type not allowed here
+Der Typ "void" kann in diesem Zusammenhang nicht verwendet werden.
+Er ist ein spezieller Typ, der verwendet wird, um anzuzeigen, dass
+eine Methode keinen Rückgabetyp besitzt. Er kann nicht als Typ 
+einer Variablen verwendet werden.
+
+* not allowed here
+Sie haben einen Zugriffs-Modifizierer verwendet (wie etwa "private", 
+"protected", etc.). Dieser Modifizierer ist an dieser Stelle nicht
+zulässig.
+
+wrong number of type arguments; required *
+Leider kein Hilfetext verfügbar.
+
+* might already have been assigned to
+Einer "final"-Variablen kann nur einmal etwas zugewiesen werden.
+(Ihre hier in Frage stehende Variable ist "final".) In Ihrem 
+Code befinden sich zwei Zuweisungen an diese Variable, und der
+Compiler hält es für möglich, dass beide Zuweisungen ausgeführt
+werden.
+
+* might not have been initialized
+Sie verwenden eine lokale Variable, die nicht mit Sicherheit 
+initialisiert wurde, bevor sie hier angesprochen wird. Im
+Zweifelsfall initialisieren Sie sie bei der Deklaration.
+
+* might be assigned in loop
+Leider kein Hilfetext verfügbar.
+
+error while writing *
+Leider kein Hilfetext verfügbar.
+
+* is public, should be declared in a file named *
+"public"-Klassen müssen sich in einer Datei befinden, die denselben
+Namen hat wie die "public"-Klasse, mit der Erweiterung ".java". Die
+"public"-Klasse Dingsda zum Beispiel muss sich in einer Datei mit
+dem Namen "Dingsda.java" befinden.
+
+cannot read: *
+Leider kein Hilfetext verfügbar.
+
+Fatal Error: Unable to locate package java.lang in classpath or bootclasspath
+Leider kein Hilfetext verfügbar.
+
+Fatal Error: Unable to locate method *
+Leider kein Hilfetext verfügbar.
+
+* uses or overrides a deprecated API.
+Sie verwenden eine Methode, die nicht länger empfohlen wird. Es ist recht 
+wahrscheinlich, dass es eine andere Methode oder Klasse gibt, die diese
+Funktionalität aufweist. Sehen Sie in der API-Dokumentation nach weiteren
+Details.
+
+Some input files use or override a deprecated API.
+Leider kein Hilfetext verfügbar.
+
+Recompile with -deprecation for details.
+Leider kein Hilfetext verfügbar.
+
+* uses unchecked operations.
+Leider kein Hilfetext verfügbar.
+
+Some input files use unchecked operations.
+Leider kein Hilfetext verfügbar.
+
+* has been deprecated
+Sie verwenden eine Methode, die nicht länger empfohlen wird. Es ist recht 
+wahrscheinlich, dass es eine andere Methode oder Klasse gibt, die diese
+Funktionalität aufweist. Sehen Sie in der API-Dokumentation nach weiteren
+Details.
+
+unchecked assignment: *
+Leider kein Hilfetext verfügbar.
+
+unchecked call to {0} as a member of the raw type {1}
+Leider kein Hilfetext verfügbar.
+
+unchecked cast to type *
+Leider kein Hilfetext verfügbar.
+
+unchecked generic array creation
+Leider kein Hilfetext verfügbar.
+
+unchecked method invocation: *
+Leider kein Hilfetext verfügbar.
+
+';' expected
+Am Ende einer Zeile fehlt ein Strichpunkt. Es könnte die im Editor
+markierte Zeile sein, oder die Zeile darüber.
+
+'case', 'default' or '}' expected
+Leider kein Hilfetext verfügbar.
+
+'class' or 'interface' expected
+Ziemlich am Beginn jeder Sourcedatei wird das Wort "class" oder 
+"interface" erwartet. Es fehlt hier, oder es stehen Dinge davor,
+die dort nicht hingehören.
+
+'.class' expected
+Leider kein Hilfetext verfügbar.
+
+'(' or '[' expected
+Es sieht so aus, als wäre eine ungerade Anzahl von Klammern in Ihrem
+Code, die den Compiler verwirrt. Überprüfen Sie den Code sorgfältig 
+auf zusammengehörige öffnende und schliessende Klammern.
+
+* expected
+Das in der Fehlermeldung genannte Symbol wurde an dieser Stelle
+im Code erwartet; stattdessen fand sich ein anderes Symbol. Versuchen
+Sie, darüber nachzudenken, warum dieses Symbol hier erwartet wird.
+
+orphaned *
+Leider kein Hilfetext verfügbar.
+
+cannot access *
+Leider kein Hilfetext verfügbar.
+
+bad class file: *
+Leider kein Hilfetext verfügbar.
+
+type parameter {0} is not within its bound *
+Leider kein Hilfetext verfügbar.
+
+incompatible types*
+Hier ist Ausdruck eines bestimmten Typs erforderlich. Sie schrieben einen
+Ausdruck eines anderen, unvereinbaren Typs (z.B. Sie schrieben einen 
+String, wo ein int erwartet wurde.)
+
+inconvertible types*
+The type you have used here cannot be automatically
+converted to the type required.
+
+possible loss of precision
+Leider kein Hilfetext verfügbar.
+
+unexpected type
+Leider kein Hilfetext verfügbar.
+
+abstract {0} {1} cannot be accessed directly
+Leider kein Hilfetext verfügbar.
+
+*An explicit 'this' qualifier must be used to select the desired instance.
+Leider kein Hilfetext verfügbar.
+
+non-static {0} {1} cannot be referenced from a static context
+Leider kein Hilfetext verfügbar.
+
+cannot resolve symbol*
+Leider kein Hilfetext verfügbar.
+
+{0}; {1} and {2} are static
+Leider kein Hilfetext verfügbar.
+
+{0}; overridden method is {1}
+Leider kein Hilfetext verfügbar.
+
+attempting to assign weaker access privileges; was *
+Leider kein Hilfetext verfügbar.
+
+overridden method does not throw *
+Leider kein Hilfetext verfügbar.
+
+* attempting to use incompatible return type
+Leider kein Hilfetext verfügbar.

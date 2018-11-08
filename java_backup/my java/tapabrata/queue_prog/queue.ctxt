@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=queue()
+comment1.params=
+comment1.target=void\ insert()
+comment2.params=
+comment2.target=void\ del()
+comment3.params=
+comment3.target=void\ disp()
+numComments=4

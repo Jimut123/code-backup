@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=void\ factorial(int)
+comment1.params=x\ a\ size
+comment1.target=int\ multiply(int,\ int[],\ int)
+comment2.params=
+comment2.target=void\ main()
+numComments=3

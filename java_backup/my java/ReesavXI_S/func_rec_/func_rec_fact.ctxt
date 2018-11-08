@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=func_rec_fact(int)
+comment1.params=num
+comment1.target=void\ fact(int)
+numComments=2

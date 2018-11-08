@@ -1,0 +1,12 @@
+
+public class test
+{
+ public static void main(String args[])
+ {
+     int m=3;
+     int p=5;
+     int n=m/2;
+     int q=p/r;
+     System.out.println(q+" "+n);
+    }
+}

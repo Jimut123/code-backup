@@ -1,0 +1,20 @@
+import java.util.*;
+class Array1
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int a[],i,s,v,n;
+        System.out.println("Even term");
+        n=sc.nextInt();
+        a=new int[n];
+        for(i=0;i<n;i++)
+        a[i]=sc.nextInt();
+        s=0;
+        for(i=0;i<n;i++)
+        s=s+a[i];
+        v=s/n;
+        System.out.println(s);
+        System.out.println(v);
+    }
+}

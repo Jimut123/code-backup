@@ -1,0 +1,18 @@
+
+import java.io.*;
+public class READ
+{
+    public static void main(String args[])throws IOException
+    {
+       FileWriter fw= new FileWriter("number.dat");
+       BufferedWriter bw=new BufferedWriter(fw);
+       PrintWriter pw=new PrintWriter(bw);
+       int i;
+       for(i=1;i<=100;i++)
+       {
+           pw.println(i);
+        }
+        pw.close();
+    }
+}
+       

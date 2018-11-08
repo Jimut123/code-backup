@@ -1,0 +1,8 @@
+importjava.io.*;
+public class try21
+{
+   public static void main(String args[])throws IOException
+   {
+       InputStreamReader  read=new  InputStreamReader(System.in);
+       Buffered Reader in=new BufferedReader (read);
+       int a,n,m,s=0

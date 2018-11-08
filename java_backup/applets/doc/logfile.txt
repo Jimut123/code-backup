@@ -1,0 +1,329 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.6.0_45\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+E:\jimutd\BlueJ\lib\bluejcore.jar;E:\jimutd\BlueJ\lib\junit-4.8.2.jar;E:\jimutd\JaVa\applets
+-d
+E:\jimutd\JaVa\applets\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+E:\jimutd\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+E:\jimutd\JaVa\applets\Hangman.java
+<---- end of javadoc command ---->
+Loading source file E:\jimutd\JaVa\applets\Hangman.java...
+E:\jimutd\JaVa\applets\Hangman.java:37: not a statement
+7	      panel.add(new JLabel("Guessed Letters: "));
+^
+E:\jimutd\JaVa\applets\Hangman.java:37: ';' expected
+7	      panel.add(new JLabel("Guessed Letters: "));
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:38: not a statement
+8	      guesslet=new JTextField(5);
+^
+E:\jimutd\JaVa\applets\Hangman.java:38: ';' expected
+8	      guesslet=new JTextField(5);
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:39: not a statement
+9	      guesslet.setEditable(false);
+^
+E:\jimutd\JaVa\applets\Hangman.java:39: ';' expected
+9	      guesslet.setEditable(false);
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:40: not a statement
+4	      guesslet.setText("None");
+^
+E:\jimutd\JaVa\applets\Hangman.java:40: ';' expected
+4	      guesslet.setText("None");
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:41: not a statement
+4	      panel.add(guesslet);
+^
+E:\jimutd\JaVa\applets\Hangman.java:41: ';' expected
+4	      panel.add(guesslet);
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:42: not a statement
+42	       
+^
+E:\jimutd\JaVa\applets\Hangman.java:42: ';' expected
+42	       
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:44: not a statement
+44	      tword = new JRadioButton("Word");
+^
+E:\jimutd\JaVa\applets\Hangman.java:44: ';' expected
+44	      tword = new JRadioButton("Word");
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:45: not a statement
+45	      ButtonGroup gr = new ButtonGroup();
+^
+E:\jimutd\JaVa\applets\Hangman.java:45: ';' expected
+45	      ButtonGroup gr = new ButtonGroup();
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:46: not a statement
+46	      gr.add(tletter);
+^
+E:\jimutd\JaVa\applets\Hangman.java:46: ';' expected
+46	      gr.add(tletter);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:47: not a statement
+47	      gr.add(tword);
+^
+E:\jimutd\JaVa\applets\Hangman.java:47: ';' expected
+47	      gr.add(tword);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:48: not a statement
+48	      panel.add(tletter);
+^
+E:\jimutd\JaVa\applets\Hangman.java:48: ';' expected
+48	      panel.add(tletter);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:49: not a statement
+49	      panel.add(tword);
+^
+E:\jimutd\JaVa\applets\Hangman.java:49: ';' expected
+49	      panel.add(tword);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:50: not a statement
+5	       
+^
+E:\jimutd\JaVa\applets\Hangman.java:50: ';' expected
+5	       
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:52: not a statement
+52	      button.addActionListener(this);
+^
+E:\jimutd\JaVa\applets\Hangman.java:52: ';' expected
+52	      button.addActionListener(this);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:53: not a statement
+5	      panel.add(button);
+^
+E:\jimutd\JaVa\applets\Hangman.java:53: ';' expected
+5	      panel.add(button);
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:54: not a statement
+54	      guessbox=new JTextField(5);
+^
+E:\jimutd\JaVa\applets\Hangman.java:54: ';' expected
+54	      guessbox=new JTextField(5);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:55: not a statement
+55	      panel.add(guessbox);
+^
+E:\jimutd\JaVa\applets\Hangman.java:55: ';' expected
+55	      panel.add(guessbox);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:56: not a statement
+56	       
+^
+E:\jimutd\JaVa\applets\Hangman.java:56: ';' expected
+56	       
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:58: not a statement
+58	      chances=new JTextField(5);
+^
+E:\jimutd\JaVa\applets\Hangman.java:58: ';' expected
+58	      chances=new JTextField(5);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:59: not a statement
+59	      chances.setEditable(false);
+^
+E:\jimutd\JaVa\applets\Hangman.java:59: ';' expected
+59	      chances.setEditable(false);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:60: not a statement
+6	      chances.setText("None");
+^
+E:\jimutd\JaVa\applets\Hangman.java:60: ';' expected
+6	      chances.setText("None");
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:61: not a statement
+6	      panel.add(chances);
+^
+E:\jimutd\JaVa\applets\Hangman.java:61: ';' expected
+6	      panel.add(chances);
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:62: not a statement
+62	       
+^
+E:\jimutd\JaVa\applets\Hangman.java:62: ';' expected
+62	       
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:66: not a statement
+66	      pickpanel.setLayout(new GridLayout(1,1));
+^
+E:\jimutd\JaVa\applets\Hangman.java:66: ';' expected
+66	      pickpanel.setLayout(new GridLayout(1,1));
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:67: not a statement
+67	      pickpanel.setBackground(Color.red);
+^
+E:\jimutd\JaVa\applets\Hangman.java:67: ';' expected
+67	      pickpanel.setBackground(Color.red);
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:68: not a statement
+68	       
+^
+E:\jimutd\JaVa\applets\Hangman.java:68: ';' expected
+68	       
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:70: not a statement
+7	      c.add(panel, BorderLayout.NORTH);
+^
+E:\jimutd\JaVa\applets\Hangman.java:70: ';' expected
+7	      c.add(panel, BorderLayout.NORTH);
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:71: not a statement
+7	      c.add(pickpanel, BorderLayout.CENTER);
+^
+E:\jimutd\JaVa\applets\Hangman.java:71: ';' expected
+7	      c.add(pickpanel, BorderLayout.CENTER);
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:72: not a statement
+72	     setup();
+^
+E:\jimutd\JaVa\applets\Hangman.java:72: ';' expected
+72	     setup();
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:73: not a statement
+7	   }
+^
+E:\jimutd\JaVa\applets\Hangman.java:73: ';' expected
+7	   }
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:74: illegal start of type
+74	      
+^
+E:\jimutd\JaVa\applets\Hangman.java:74: ';' expected
+74	      
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:76: illegal start of type
+76	   public void actionPerformed(ActionEvent e)
+^
+E:\jimutd\JaVa\applets\Hangman.java:76: <identifier> expected
+76	   public void actionPerformed(ActionEvent e)
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:76: ';' expected
+76	   public void actionPerformed(ActionEvent e)
+  	         ^
+E:\jimutd\JaVa\applets\Hangman.java:76: invalid method declaration; return type required
+76	   public void actionPerformed(ActionEvent e)
+  	               ^
+E:\jimutd\JaVa\applets\Hangman.java:76: ';' expected
+76	   public void actionPerformed(ActionEvent e)
+  	                                             ^
+E:\jimutd\JaVa\applets\Hangman.java:78: not a statement
+78	      String t, f ="";
+^
+E:\jimutd\JaVa\applets\Hangman.java:78: ';' expected
+78	      String t, f ="";
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:79: not a statement
+79	      t = guessbox.getText().trim().toLowerCase();
+^
+E:\jimutd\JaVa\applets\Hangman.java:79: ';' expected
+79	      t = guessbox.getText().trim().toLowerCase();
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:80: not a statement
+80	      if (tletter.isSelected())
+^
+E:\jimutd\JaVa\applets\Hangman.java:80: ';' expected
+80	      if (tletter.isSelected())
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:81: not a statement
+8	      {
+^
+E:\jimutd\JaVa\applets\Hangman.java:81: ';' expected
+8	      {
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:82: not a statement
+82	         int i;
+^
+E:\jimutd\JaVa\applets\Hangman.java:82: ';' expected
+82	         int i;
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:83: not a statement
+8	         char letter;
+^
+E:\jimutd\JaVa\applets\Hangman.java:83: ';' expected
+8	         char letter;
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:84: not a statement
+84	         boolean found=false;
+^
+E:\jimutd\JaVa\applets\Hangman.java:84: ';' expected
+84	         boolean found=false;
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:85: not a statement
+85	          
+^
+E:\jimutd\JaVa\applets\Hangman.java:85: ';' expected
+85	          
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:88: not a statement
+88	         for (i=0; i<lengword; i++)
+^
+E:\jimutd\JaVa\applets\Hangman.java:88: ';' expected
+88	         for (i=0; i<lengword; i++)
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:89: not a statement
+89	         {
+^
+E:\jimutd\JaVa\applets\Hangman.java:89: ';' expected
+89	         {
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:90: not a statement
+9	            if (letter == word.charAt(i))
+^
+E:\jimutd\JaVa\applets\Hangman.java:90: ';' expected
+9	            if (letter == word.charAt(i))
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:91: not a statement
+9	            {
+^
+E:\jimutd\JaVa\applets\Hangman.java:91: ';' expected
+9	            {
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:92: not a statement
+92	              stars[i] = letter;
+^
+E:\jimutd\JaVa\applets\Hangman.java:92: ';' expected
+92	              stars[i] = letter;
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:93: not a statement
+9	              found = true;
+^
+E:\jimutd\JaVa\applets\Hangman.java:93: ';' expected
+9	              found = true;
+ ^
+E:\jimutd\JaVa\applets\Hangman.java:94: not a statement
+94	            }
+^
+E:\jimutd\JaVa\applets\Hangman.java:94: ';' expected
+94	            }
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:95: not a statement
+95	            
+^
+E:\jimutd\JaVa\applets\Hangman.java:95: ';' expected
+95	            
+  ^
+E:\jimutd\JaVa\applets\Hangman.java:97: not a statement
+97	               
+^
+100 errors

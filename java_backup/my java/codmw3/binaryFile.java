@@ -1,0 +1,67 @@
+import java.io.*;
+public class binaryFile
+{
+    void main()
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String k,name,str="";
+        int a=0,str2,b,roll,sec,cl,marks;
+        boolean EOF=false;
+        try
+        {
+        System.out.println("Enter the number of students");
+        a=Integer.parseInt(br.readLine());
+        FileOutputStream fout=new FileOutputStream("data.dat");
+        DataOutputStream dout=new DataOutputStream(fout);
+        for(b=1;b<=a;b++)
+        {
+            System.out.println("Enter name");
+            name=br.readLine();
+            dout.writeUTF(name);
+            System.out.println("Enter Roll number");
+            roll=Integer.parseInt(br.readLine());
+            dout.writeInt(roll);
+            System.out.println("Enter class");
+            cl=Integer.parseInt(br.readLine());
+            dout.writeInt(cl);
+            System.out.println("Enter section");
+            sec=Integer.parseInt(br.readLine());
+           dout.writeInt(sec);
+            System.out.println("Enter marks");
+            marks=Integer.parseInt(br.readLine());
+            dout.writeInt(marks);
+            
+        }
+        dout.close();
+        fout.close();
+        FileInputStream fin=new FileInputStream("data.dat");
+        DataInputStream din=new DataInputStream(fin);
+        while(!EOF)
+        {
+            k=din.readUTF();
+            System.out.println(k);
+            str2=din.readInt();
+            System.out.println(+str2);
+            str2=din.readInt();
+            System.out.println(+str2);
+            str2=din.readInt();
+            System.out.println(+str2);
+            str2=din.readInt();
+            System.out.println(+str2);
+        }
+        din.close();
+        fin.close();
+        }
+    
+        catch(EOFException el)
+        {
+            EOF=true;
+        }
+        catch(IOException e)
+        {
+        }
+    }
+}
+        
+        
+        

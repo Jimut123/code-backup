@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ takeNumber()
+comment1.params=x
+comment1.target=java.lang.String\ word1(int)
+comment2.params=x
+comment2.target=java.lang.String\ word2(int)
+comment3.params=x
+comment3.target=java.lang.String\ word3(int)
+comment4.params=args
+comment4.target=void\ main([Ljava.lang.String;)
+numComments=5

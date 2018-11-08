@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,62.1,59.0,90,30.26,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-03-22 04:51:00
+1:51 AM,60.8,59.0,94,30.26,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-03-22 05:51:00
+2:51 AM,61.0,59.0,93,30.25,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-03-22 06:51:00
+3:51 AM,60.1,59.0,96,30.24,7.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-03-22 07:51:00
+4:51 AM,60.1,59.0,96,30.25,7.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-03-22 08:51:00
+5:51 AM,60.1,57.9,93,30.25,7.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-03-22 09:51:00
+6:20 AM,60.8,57.2,88,30.27,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-22 10:20:00
+6:51 AM,60.1,57.9,93,30.26,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-22 10:51:00
+7:51 AM,61.0,60.1,97,30.27,6.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-03-22 11:51:00
+8:51 AM,64.0,61.0,90,30.27,8.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-03-22 12:51:00
+9:51 AM,66.9,63.0,87,30.28,10.0,SW,5.8,-,N/A,,Scattered Clouds,220,2012-03-22 13:51:00
+10:51 AM,72.0,64.0,76,30.27,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2012-03-22 14:51:00
+11:20 AM,73.4,62.6,69,30.28,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2012-03-22 15:20:00
+11:51 AM,72.0,62.1,71,30.26,10.0,WSW,4.6,-,N/A,,Scattered Clouds,240,2012-03-22 15:51:00
+12:51 PM,75.9,63.0,64,30.25,10.0,SW,8.1,-,N/A,,Scattered Clouds,220,2012-03-22 16:51:00
+1:51 PM,78.1,63.0,60,30.22,10.0,SW,10.4,-,N/A,,Mostly Cloudy,230,2012-03-22 17:51:00
+2:51 PM,78.1,61.0,56,30.19,10.0,SE,5.8,-,N/A,,Scattered Clouds,140,2012-03-22 18:51:00
+3:51 PM,78.1,59.0,52,30.16,10.0,WSW,5.8,-,N/A,,Scattered Clouds,240,2012-03-22 19:51:00
+4:51 PM,80.1,61.0,52,30.15,10.0,SW,8.1,-,N/A,,Mostly Cloudy,230,2012-03-22 20:51:00
+5:51 PM,79.0,60.1,52,30.14,10.0,SW,9.2,-,N/A,,Mostly Cloudy,230,2012-03-22 21:51:00
+6:51 PM,75.0,59.0,57,30.14,10.0,WSW,6.9,-,N/A,,Scattered Clouds,240,2012-03-22 22:51:00
+7:51 PM,71.1,59.0,66,30.14,10.0,SW,3.5,-,N/A,,Partly Cloudy,230,2012-03-22 23:51:00
+8:51 PM,71.1,61.0,70,30.15,10.0,South,6.9,-,N/A,,Clear,170,2012-03-23 00:51:00
+9:51 PM,70.0,62.1,76,30.16,10.0,South,8.1,-,N/A,,Clear,190,2012-03-23 01:51:00
+10:51 PM,69.1,62.1,78,30.16,10.0,South,6.9,-,N/A,,Partly Cloudy,190,2012-03-23 02:51:00
+11:51 PM,68.0,62.1,81,30.16,10.0,SSW,6.9,-,N/A,,Partly Cloudy,200,2012-03-23 03:51:00

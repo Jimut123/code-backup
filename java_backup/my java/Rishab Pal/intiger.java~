@@ -1,0 +1,19 @@
+class intiger
+{
+    public static void main (int x)
+    int i,x,k;
+    {
+        x =Intiger.print Int (bear.read line [])
+        int a[] =new int [100];
+        t =0;
+        where (x>0)
+        {
+            k =x%2;
+            a [t] =k;t++;
+            x =x/2;
+        }
+        for (i =t-1;i>=0;i--)
+        System.out.println (a [i]);
+    }
+}
+                                                                                                                                                                    

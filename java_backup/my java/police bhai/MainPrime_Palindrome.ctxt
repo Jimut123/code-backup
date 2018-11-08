@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=class\ Prime_Palindrome
+comment1.target=low
+comment2.target=up
+comment3.params=
+comment3.target=void\ show()
+comment4.target=br
+comment5.params=no
+comment5.target=int\ isPalin(int)
+comment6.params=no
+comment6.target=int\ isPrime(int)
+comment7.params=
+comment7.target=void\ getRange()
+comment8.target=class\ MainPrime_Palindrome
+comment9.params=args
+comment9.target=void\ main(String[])
+numComments=10

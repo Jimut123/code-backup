@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=OctaDeci()
+comment1.params=
+comment1.target=void\ getOct()
+comment2.params=n
+comment2.target=void\ recursiveDec(int)
+comment3.params=
+comment3.target=void\ putData()
+numComments=4

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=armstrong1()
+comment1.params=n
+comment1.target=void\ input(int)
+comment2.params=n1
+comment2.target=void\ check(int)
+comment3.params=n1\ k
+comment3.target=int\ digcount(int,\ int)
+comment4.params=n1\ c\ s
+comment4.target=int\ arm(int,\ int,\ int)
+comment5.params=n1\ c
+comment5.target=int\ power(int,\ int)
+numComments=6

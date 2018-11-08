@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=x\ n
+comment0.target=void\ sum(int,\ int)
+comment1.params=p1\ q
+comment1.target=int\ pow(int,\ int)
+comment2.params=p
+comment2.target=int\ fact(int)
+comment3.params=q
+comment3.target=int\ pcheck(int)
+numComments=4

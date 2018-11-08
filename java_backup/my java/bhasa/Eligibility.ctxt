@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n\ r\ m1\ m2\ m3\ m4\ grde\ reser
+comment0.target=Eligibility(java.lang.String,\ java.lang.String,\ float,\ float,\ float,\ float,\ char,\ boolean)
+comment1.params=
+comment1.target=boolean\ checkEligibility()
+comment2.params=
+comment2.target=void\ show()
+numComments=3

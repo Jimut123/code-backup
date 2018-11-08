@@ -1,0 +1,57 @@
+import java.io.*;
+class arr
+{
+    public static void main(int n)throws IOException
+    {
+     InputStreamReader read=new InputStreamReader(System.in);
+     BufferedReader in=new BufferedReader(read);
+     int a[]=new int[n],i,j,m;
+     for( i=0;i<n;i++)
+     
+         a[i]=Integer.parseInt(in.readLine());
+         for( j=0;j<n;j++)
+         {
+             if(a[j]%2==0)
+             {
+                 for( m=a[j]+1;;m++)
+                 {
+                     int f=0;
+                     for(int k=2;k<m;k++)
+                     {
+                         if(m%k==0)
+                         {
+                             f++;
+                             break;
+                            }
+                        }
+                            if(f==1&&m%2!=0)
+                            {
+                                a[j]=m;
+                                break;
+                            }
+                        }
+                    }
+                
+                    else
+                    {
+                    for(int s=a[j]+1;;s++)
+                    {int f1=0;
+                        for(int p=2;p<s;p++)
+                        if(s%p==0)
+                        {
+                            f1++;
+                            break;
+                        }
+                        if(f1==0)
+                        {
+                            a[j]=s;
+                            break;
+                        }
+                    }
+                }
+            }
+            for( i=0;i<n;i++)
+             System.out.println(a[i]);
+        }
+    }
+

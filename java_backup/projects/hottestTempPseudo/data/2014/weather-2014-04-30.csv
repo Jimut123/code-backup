@@ -1,0 +1,38 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,62.6,60.8,94,30.03,0.5,SSE,4.6,-,N/A,,Mostly Cloudy,160,2014-04-30 04:51:00
+1:18 AM,66.2,64.4,94,30.03,0.5,SSE,4.6,-,N/A,,Overcast,150,2014-04-30 05:18:00
+1:51 AM,66.9,64.9,93,30.00,0.5,SE,5.8,-,N/A,,Mostly Cloudy,140,2014-04-30 05:51:00
+2:51 AM,71.1,68.0,90,30.00,0.5,South,6.9,-,N/A,,Mostly Cloudy,180,2014-04-30 06:51:00
+3:51 AM,72.0,68.0,87,29.99,0.5,South,8.1,-,N/A,,Mostly Cloudy,180,2014-04-30 07:51:00
+4:42 AM,71.6,68.0,88,29.99,0.5,South,9.2,-,N/A,Thunderstorm,Thunderstorm,180,2014-04-30 08:42:00
+4:51 AM,71.6,68.0,88,29.99,0.5,South,9.2,-,N/A,Rain-Thunderstorm,Light Thunderstorms and Rain,180,2014-04-30 08:51:00
+5:51 AM,72.0,68.0,87,29.98,0.5,South,11.5,-,0.02,Thunderstorm,Thunderstorm,180,2014-04-30 09:51:00
+5:53 AM,71.6,68.0,88,29.98,10.0,South,12.7,-,N/A,Thunderstorm,Thunderstorm,180,2014-04-30 09:53:00
+6:21 AM,71.6,68.0,88,29.98,10.0,South,15.0,-,N/A,,Overcast,180,2014-04-30 10:21:00
+6:51 AM,72.0,68.0,87,29.99,10.0,South,11.5,-,N/A,,Overcast,180,2014-04-30 10:51:00
+7:51 AM,72.0,68.0,87,30.00,10.0,South,15.0,23.0,N/A,,Overcast,180,2014-04-30 11:51:00
+8:51 AM,72.0,68.0,87,30.00,7.0,South,11.5,21.9,0.01,Rain,Light Rain,190,2014-04-30 12:51:00
+9:51 AM,73.9,70.0,87,29.99,9.0,South,11.5,19.6,0.00,Rain,Light Rain,180,2014-04-30 13:51:00
+10:51 AM,75.2,69.8,83,29.99,10.0,SSW,13.8,20.7,N/A,,Overcast,200,2014-04-30 14:51:00
+11:48 AM,75.2,68.0,78,29.98,10.0,SSW,15.0,25.3,N/A,Thunderstorm,Thunderstorm,210,2014-04-30 15:48:00
+11:51 AM,75.9,68.0,76,29.96,10.0,South,11.5,23.0,N/A,Thunderstorm,Thunderstorm,180,2014-04-30 15:51:00
+12:04 PM,75.2,69.8,83,29.98,1.0,South,18.4,25.3,0.01,Rain-Thunderstorm,Heavy Thunderstorms and Rain,190,2014-04-30 16:04:00
+12:22 PM,71.6,66.2,83,29.97,1.5,SSW,15.0,24.2,0.21,Rain-Thunderstorm,Light Thunderstorms and Rain,210,2014-04-30 16:22:00
+12:51 PM,71.1,68.0,90,29.97,1.5,SSW,9.2,-,0.40,Rain-Thunderstorm,Heavy Thunderstorms and Rain,200,2014-04-30 16:51:00
+1:51 PM,72.0,68.0,87,29.97,1.5,SSW,12.7,23.0,0.10,Rain-Thunderstorm,Thunderstorms and Rain,210,2014-04-30 17:51:00
+1:59 PM,69.8,66.2,88,29.99,0.8,SSW,13.8,35.7,0.11,Rain-Thunderstorm,Heavy Thunderstorms and Rain,200,2014-04-30 17:59:00
+2:26 PM,71.6,68.0,88,29.95,5.0,South,5.8,-,0.59,Rain-Thunderstorm,Light Thunderstorms and Rain,170,2014-04-30 18:26:00
+2:39 PM,73.4,69.8,88,29.95,10.0,South,12.7,17.3,0.59,,Overcast,180,2014-04-30 18:39:00
+2:51 PM,73.9,68.0,82,29.93,10.0,South,15.0,25.3,0.59,,Overcast,180,2014-04-30 18:51:00
+3:51 PM,73.0,64.9,76,29.90,10.0,South,13.8,21.9,N/A,,Overcast,170,2014-04-30 19:51:00
+4:37 PM,73.4,64.4,73,29.92,10.0,SSW,6.9,-,N/A,,Overcast,200,2014-04-30 20:37:00
+4:51 PM,73.0,64.0,73,29.90,10.0,South,8.1,-,N/A,,Overcast,180,2014-04-30 20:51:00
+5:51 PM,73.0,64.9,76,29.90,10.0,South,12.7,-,N/A,,Overcast,180,2014-04-30 21:51:00
+6:34 PM,73.4,64.4,73,29.90,10.0,South,10.4,23.0,N/A,,Overcast,190,2014-04-30 22:34:00
+6:51 PM,73.4,64.4,73,29.90,10.0,South,11.5,18.4,N/A,,Overcast,190,2014-04-30 22:51:00
+7:03 PM,71.6,64.4,78,29.91,10.0,SSW,12.7,21.9,N/A,,Overcast,200,2014-04-30 23:03:00
+7:51 PM,71.1,64.9,81,29.90,10.0,South,9.2,-,N/A,,Mostly Cloudy,180,2014-04-30 23:51:00
+8:51 PM,70.0,64.9,84,29.92,10.0,South,6.9,-,N/A,,Mostly Cloudy,190,2014-05-01 00:51:00
+9:51 PM,70.0,64.9,84,29.93,10.0,South,9.2,-,N/A,,Mostly Cloudy,190,2014-05-01 01:51:00
+10:51 PM,70.0,64.9,84,29.92,10.0,SSW,10.4,21.9,N/A,,Mostly Cloudy,200,2014-05-01 02:51:00
+11:51 PM,71.1,66.0,84,29.90,10.0,SSW,12.7,20.7,N/A,,Mostly Cloudy,200,2014-05-01 03:51:00

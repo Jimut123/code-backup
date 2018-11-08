@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TestUtils()
+comment0.text=Creates\ a\ new\ instance\ of\ TestUtils
+comment1.params=proxy
+comment1.target=javax.management.ObjectName\ getObjectName(java.lang.Object)
+comment1.text=\r\n\ Returns\ the\ ObjectName\ of\ the\ MBean\ that\ a\ proxy\ object\r\n\ is\ proxying.\r\n
+comment2.params=proxy\ mbeanInterface
+comment2.target=java.lang.Object\ makeNotificationEmitter(java.lang.Object,\ java.lang.Class)
+comment2.text=\r\n\ Transfroms\ a\ proxy\ implementing\ T\ in\ a\ proxy\ implementing\ T\ plus\r\n\ NotificationEmitter\r\n\r\n
+numComments=3

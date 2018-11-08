@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,39.0,28.9,67,29.70,10.0,Variable,5.8,-,0.00,Rain,Light Rain,0,2015-01-27 05:51:00
+1:51 AM,37.9,28.0,68,29.71,10.0,Variable,6.9,-,0.00,Rain-Snow,Light Snow,0,2015-01-27 06:51:00
+2:51 AM,34.0,30.0,85,29.73,5.0,NW,6.9,-,0.01,Snow,Light Snow,320,2015-01-27 07:51:00
+3:51 AM,34.0,28.9,82,29.74,10.0,Variable,3.5,-,0.00,Snow,Light Snow,0,2015-01-27 08:51:00
+4:51 AM,34.0,28.9,82,29.75,10.0,Calm,Calm,-,0.00,Snow,Light Snow,0,2015-01-27 09:51:00
+5:51 AM,34.0,27.0,75,29.76,10.0,Variable,5.8,-,0.00,,Overcast,0,2015-01-27 10:51:00
+6:51 AM,34.0,24.1,67,29.78,10.0,NW,4.6,-,N/A,,Overcast,320,2015-01-27 11:51:00
+7:51 AM,34.0,19.9,56,29.81,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2015-01-27 12:51:00
+8:51 AM,34.0,19.0,54,29.83,10.0,NW,6.9,-,N/A,,Mostly Cloudy,320,2015-01-27 13:51:00
+9:51 AM,34.0,19.0,54,29.84,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2015-01-27 14:51:00
+10:51 AM,34.0,17.1,50,29.85,10.0,Variable,6.9,-,N/A,,Mostly Cloudy,0,2015-01-27 15:51:00
+11:51 AM,36.0,18.0,48,29.84,10.0,Variable,5.8,-,N/A,,Mostly Cloudy,0,2015-01-27 16:51:00
+12:51 PM,37.9,18.0,45,29.82,10.0,WNW,6.9,-,N/A,,Mostly Cloudy,290,2015-01-27 17:51:00
+1:51 PM,41.0,19.0,41,29.81,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2015-01-27 18:51:00
+2:51 PM,44.1,16.0,32,29.81,10.0,NNW,9.2,-,N/A,,Scattered Clouds,330,2015-01-27 19:51:00
+3:51 PM,44.1,12.0,27,29.82,10.0,WNW,6.9,-,N/A,,Partly Cloudy,290,2015-01-27 20:51:00
+4:51 PM,43.0,9.0,25,29.84,10.0,Variable,4.6,-,N/A,,Partly Cloudy,0,2015-01-27 21:51:00
+5:51 PM,39.9,10.0,29,29.86,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-01-27 22:51:00
+6:51 PM,35.1,12.9,40,29.89,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-01-27 23:51:00
+7:51 PM,37.0,10.9,34,29.90,10.0,Variable,4.6,-,N/A,,Partly Cloudy,0,2015-01-28 00:51:00
+8:51 PM,37.0,5.0,26,29.93,10.0,Variable,6.9,-,N/A,,Partly Cloudy,0,2015-01-28 01:51:00
+9:51 PM,35.1,3.9,27,29.96,10.0,Variable,6.9,16.1,N/A,,Partly Cloudy,0,2015-01-28 02:51:00
+10:51 PM,32.0,10.0,40,29.99,10.0,North,6.9,-,N/A,,Partly Cloudy,350,2015-01-28 03:51:00
+11:51 PM,30.9,12.0,46,30.02,10.0,NNW,4.6,16.1,N/A,,Scattered Clouds,330,2015-01-28 04:51:00

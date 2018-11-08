@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=class\ Magic
+comment1.params=n
+comment1.target=void\ check(int)
+comment2.params=
+comment2.target=void\ input()
+comment3.target=br
+comment4.params=args
+comment4.target=void\ main(String[])
+numComments=5

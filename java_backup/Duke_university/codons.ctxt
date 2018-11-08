@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=dna
+comment0.target=java.lang.String\ findProtein(java.lang.String)
+comment1.params=dna
+comment1.target=void\ printAllStarts(java.lang.String)
+comment2.params=dna\ index
+comment2.target=int\ findStopIndex(java.lang.String,\ int)
+comment3.params=
+comment3.target=void\ main()
+numComments=4

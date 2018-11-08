@@ -1,0 +1,11 @@
+class Arithmetic
+{
+  public static void main (int a)
+  {
+      if (a%2 == 0)
+      System.out.println("even" +a);
+      
+      else
+      System.out.println("odd" +a);
+    }
+}

@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=h1\ m1\ s1\ h2\ m2\ s2
+comment0.target=void\ getTime(int,\ int,\ int,\ int,\ int,\ int)
+numComments=1

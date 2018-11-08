@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=e\ d\ g
+comment1.target=void\ pow(int,\ int,\ int)
+numComments=2

@@ -1,0 +1,13 @@
+public class program
+{
+    public static void main()
+    {
+        int a,b;int L.C.M,G.C.D;
+        if(a%b==0&&b%a==0)
+            System.out.println(L.C.M);
+            else
+            System.out.println(G.C.D);
+        }
+    }
+
+            

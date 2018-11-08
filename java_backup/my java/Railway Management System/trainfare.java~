@@ -1,0 +1,126 @@
+import java.io.*;
+class trainfare
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    int i,n;
+    class book
+    {
+    String rc;
+    String tc;
+    String tnm;
+    String rt;
+    String type;
+    int seat;
+    int cno;
+    int sno;
+   double price;
+   //book()
+   //{
+       //cno=1;
+       //sno=0;
+    //}
+}
+trainfare()
+{    
+}
+//book tt[];  
+
+//void insert1()throws IOException
+//{
+    
+   // tt[]={{"HOWCHEN","T0001","KARAMANDAL","HOWRAH TO CHENNAI","A.C-2",160,2,80,1300},{"HOWCHEN","T0002","CHENNAI MAIL","HOWRAH TO CHENNAI","A.C-2",210,2,110,1500},{"HOWBEN","T0001","YASHWANTPUR","HOWRAH TO BENGALURU","A.C-2",100,2,50,980},{"HOWBEN","T0002","BENGALORE MAIL","HOWRAH TO BENGALURU","A.C-2",120,2,60,800}};
+
+//}
+void show1()
+{
+  
+    book tt[]=new book[100];
+    tt[0]=new book();
+     tt[0].rc="HOWDEL";
+     tt[0].tc="T0001";
+     tt[0].tnm= "RAJDHANI";
+     tt[0].rt="HOWRAH TO DELHI VIA PATNA";
+     tt[0].type="A.C-2";
+     tt[0].seat=100;
+     tt[0].cno=2;
+     tt[0].sno=50;
+     tt[0].price=1200;
+      tt[1]=new book();
+     tt[1].rc="HOWDEL";
+     tt[1].tc="T0002";
+     tt[1].tnm= "KALKA";
+     tt[1].rt="HOWRAH TO DELHI";
+     tt[1].type="A.C-2";
+     tt[1].seat=150;
+     tt[1].cno=2;
+     tt[1].sno=75;
+     tt[1].price=1000;
+      tt[2]=new book();
+     tt[2].rc="HOWMUM";
+     tt[2].tc="T0001";
+     tt[2].tnm= "GITANJALI";
+     tt[2].rt="HOWRAH TO MUMBAI VIA NAGPUR";
+     tt[2].type="A.C-2";
+     tt[2].seat=110;
+     tt[2].cno=2;
+     tt[2].sno=55;
+     tt[2].price=1100;
+      tt[3]=new book();
+      tt[3].rc="HOWMUM";
+     tt[3].tc="T0002";
+     tt[3].tnm= "MUMBAI MAIl";
+     tt[3].rt="HOWRAH TO MUMBAI VIA ALLAHABAD";
+     tt[3].type="A.C-2";
+     tt[3].seat=120;
+     tt[3].cno=2;
+     tt[3].sno=60;
+     tt[3].price=1500;
+    String s;
+String s1[]=new String[100];
+int x,y,y1,f1;
+y1=0;
+for(x=0;x<4;x++)
+{
+    //for(y=0;y<4;y++)
+        //{
+             
+            //System.out.println("Routecode \t\t Traincode \t\t Trainname \t\t TrainRoute \t\t Type\t\t Seat \t\t Number of coachs \t\t Number of seat\t\t Price");
+ //System.out.println(tt[y].rc+"\t"+"\t"+tt[y].tc+"\t"+"\t"+tt[y].tnm+"\t"+"\t"+tt[y].rt+"\t"+"\t"+tt[y].type+"\t"+"\t"+tt[y].seat+"\t"+"\t"+tt[y].cno+"\t"+"\t"+tt[y].sno+"\t"+"\t"+tt[y].price);
+
+//}
+    s=tt[x].rc;
+    f1=0;
+    for(int z=0;z<y1;z++)
+    {
+        if(s.equalsIgnoreCase(s1[z])==true)
+        {
+            f1=1;
+            break;
+        }
+    }
+    if(f1==0)
+    {
+        for(y=0;y<4;y++)
+        {
+              if(s.equalsIgnoreCase(tt[y].rc)==true)
+              {
+            System.out.println("Routecode \t\t Traincode \t\t Trainname \t\t TrainRoute \t\t Type\t\t Seat \t\t Number of coachs \t\t Number of seat\t\t Price");
+ System.out.println(tt[y].rc+"\t"+"\t"+tt[y].tc+"\t"+"\t"+tt[y].tnm+"\t"+"\t"+tt[y].rt+"\t"+"\t"+tt[y].type+"\t"+"\t"+tt[y].seat+"\t"+"\t"+tt[y].cno+"\t"+"\t"+tt[y].sno+"\t"+"\t"+tt[y].price);
+}
+}
+ s1[y1++]=s;   
+}
+}
+    
+}     
+
+public  void main()throws IOException
+    {
+      
+trainfare tt3 =new trainfare();
+    tt3.show1();
+        
+      //t.display();
+    }
+    
+}

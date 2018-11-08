@@ -1,0 +1,20 @@
+class seriesnew1
+{
+   public static void main(int n)
+   {
+      int i,j;
+       for(i=1;i<=n;i++)
+      {
+          for(j=1;j<=(n-i);j++)
+           System.out.print("@"+" ");
+          for(j=(n-(n-i));j>=1;j--)
+           {
+               if(j==i)
+                 System.out.print(i+" ");
+               else
+                 System.out.print("*"+" ");
+                }
+           System.out.println("");     
+    }
+}
+}

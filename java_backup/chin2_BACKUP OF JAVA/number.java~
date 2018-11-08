@@ -1,0 +1,16 @@
+import java.io.*;
+public class number
+{
+    public static void main(String args[]) throws IOException
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("ENTER THE NUMBER");
+        double i = Integer.parseInt(br.readLine());
+        double a = Math.sqrt(i);
+        int b = (int)a;
+        if(a>b)
+        System.out.println("IT IS NOT A PERFECT SQUARE");
+        else
+        System.out.println("IT IS A PERFECT SQUARE");
+    }
+}

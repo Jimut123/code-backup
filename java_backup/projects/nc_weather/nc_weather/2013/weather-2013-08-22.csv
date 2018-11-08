@@ -1,0 +1,30 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,70.0,69.1,97,30.14,10.0,West,4.6,-,N/A,,Scattered Clouds,260,2013-08-22 04:51:00
+1:51 AM,70.0,69.1,97,30.13,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-08-22 05:51:00
+2:05 AM,69.8,69.8,100,30.14,1.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-08-22 06:05:00
+2:34 AM,71.6,69.8,94,30.14,0.2,SW,5.8,-,N/A,Fog,Fog,230,2013-08-22 06:34:00
+2:51 AM,71.1,70.0,96,30.13,0.8,WSW,3.5,-,N/A,,Overcast,250,2013-08-22 06:51:00
+3:22 AM,69.8,69.8,100,30.14,1.0,West,4.6,-,N/A,Fog,Patches of Fog,260,2013-08-22 07:22:00
+3:51 AM,71.1,70.0,96,30.12,1.0,SW,5.8,-,N/A,Fog,Patches of Fog,220,2013-08-22 07:51:00
+3:54 AM,71.6,69.8,94,30.14,8.0,SW,6.9,-,N/A,Fog,Patches of Fog,220,2013-08-22 07:54:00
+4:04 AM,71.6,69.8,94,30.13,9.0,WSW,4.6,-,N/A,,Mostly Cloudy,250,2013-08-22 08:04:00
+4:51 AM,71.1,70.0,96,30.12,9.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-08-22 08:51:00
+5:51 AM,71.1,70.0,96,30.11,10.0,WSW,3.5,-,N/A,,Mostly Cloudy,240,2013-08-22 09:51:00
+6:51 AM,70.0,70.0,100,30.12,10.0,West,3.5,-,N/A,,Mostly Cloudy,260,2013-08-22 10:51:00
+7:51 AM,71.1,70.0,96,30.13,10.0,SW,4.6,-,N/A,,Mostly Cloudy,230,2013-08-22 11:51:00
+8:51 AM,73.0,71.1,93,30.14,10.0,West,5.8,-,N/A,,Mostly Cloudy,260,2013-08-22 12:51:00
+9:51 AM,75.9,72.0,87,30.13,10.0,West,6.9,-,N/A,,Mostly Cloudy,280,2013-08-22 13:51:00
+10:51 AM,80.1,72.0,76,30.13,10.0,WNW,6.9,-,N/A,,Scattered Clouds,290,2013-08-22 14:51:00
+11:51 AM,82.9,72.0,69,30.12,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-08-22 15:51:00
+12:51 PM,86.0,70.0,59,30.10,10.0,West,6.9,-,N/A,,Scattered Clouds,260,2013-08-22 16:51:00
+1:51 PM,88.0,68.0,51,30.08,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2013-08-22 17:51:00
+2:51 PM,89.1,66.9,48,30.06,10.0,NNW,4.6,-,N/A,,Scattered Clouds,330,2013-08-22 18:51:00
+3:51 PM,89.1,66.9,48,30.02,10.0,WSW,3.5,-,N/A,,Scattered Clouds,250,2013-08-22 19:51:00
+4:51 PM,88.0,66.0,48,30.01,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2013-08-22 20:51:00
+5:51 PM,88.0,66.9,49,29.99,10.0,WSW,4.6,-,N/A,,Scattered Clouds,240,2013-08-22 21:51:00
+6:51 PM,86.0,68.0,55,30.00,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-08-22 22:51:00
+7:51 PM,79.0,70.0,74,30.01,10.0,West,3.5,-,N/A,,Mostly Cloudy,260,2013-08-22 23:51:00
+8:51 PM,78.1,70.0,76,30.02,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-08-23 00:51:00
+9:51 PM,78.1,70.0,76,30.04,10.0,South,5.8,-,N/A,,Scattered Clouds,190,2013-08-23 01:51:00
+10:51 PM,75.9,71.1,85,30.04,10.0,South,8.1,-,N/A,,Scattered Clouds,190,2013-08-23 02:51:00
+11:51 PM,75.0,71.1,87,30.03,10.0,SSW,6.9,-,N/A,,Scattered Clouds,210,2013-08-23 03:51:00

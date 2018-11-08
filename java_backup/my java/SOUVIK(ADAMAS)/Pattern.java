@@ -1,0 +1,66 @@
+import java.io.*;
+class Pattern
+{
+ BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+ String s;
+ int k=0,p=15,i,j,m,m2;
+ public void display()throws IOException
+ { System.out.println("Enter String");
+     s=br.readLine();
+     for(i=0;i<s.length();i++)
+     {
+         for(m=1;m<=p;m++)
+         {
+             System.out.println(" ");
+         }
+         if(i==0)
+         {
+             System.out.println(s.charAt(i));
+         }
+         else
+         {
+             k=k+2;
+             System.out.println(s.charAt(i));
+             for(j=1;j<=k;j++)
+             {
+                 System.out.println(" ");
+             }
+                 System.out.println(s.charAt(i));
+             }
+             System.out.println(" ");
+             p=p-2;
+         }
+         k=k-2;
+         p=p+2;
+         for(i=s.length()-1;i<20;i--)
+         {
+             for(m=1;m<=p;m++)
+             {
+                 System.out.println(" ");
+             }
+             if(i==0)
+             {
+                 System.out.println(s.charAt(i));
+             }
+             else
+             {
+                 System.out.println(s.charAt(i));
+             }
+             for(j=1;j<=k;j++)
+             {
+                 System.out.println(" ");
+             }
+             System.out.println(s.charAt(i));
+             k=k-2;
+            }
+            System.out.println(" ");
+            p=p+2;
+     }
+     public void main()throws IOException
+     {
+         display();
+     }
+ }
+             
+         
+         

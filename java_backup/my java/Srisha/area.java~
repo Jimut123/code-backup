@@ -1,0 +1,17 @@
+import java.util.*;
+class area
+{
+    public static void main(String args[])
+    {
+        int a, b, c, d;
+        Scanner sc= new Scanner (System.in);
+        System.out.println("enter the length and breadth of a rectangle ");
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        c=a*b;
+        System.out.println("area is"+c);
+    }
+    
+}
+
+        

@@ -1,0 +1,52 @@
+import java.io.*;
+public class factormultiply
+{
+    public static void main(String args[]) throws IOException
+    {
+        BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+        factormultiply abc = new factormultiply();
+        System.out.println("ENTER THE NUMBER ::");
+        double input = Double.parseDouble(br.readLine());
+        int least = abc.leastfactor(input);
+        boolean condition = abc.check(least , input);
+        if(condition == true)
+        {
+            System.out.println("YES IT IS A POWER NUMBER");
+            
+        }
+        else
+        {
+            System.out.println("NO IT IS NOT A POWER NUMBER");
+            System.out.println
+        }
+    }
+    public int leastfactor(double input1)
+    {
+        int least1 = 0;
+        for(int i = 2 ; i <= input1 ; i++)
+        {
+            if(input1%i == 0)
+            {
+                least1 = i;
+                break;
+            }
+        }
+        return least1;
+    }
+    public boolean check(int least2 , double input2)
+    {
+        double mx = 1;
+        for(int i = 1 ; mx < input2 ; i++)
+        {
+            mx = Math.pow(least2 , i);
+        }
+        if(mx == input2)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}

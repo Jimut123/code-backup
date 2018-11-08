@@ -1,0 +1,85 @@
+
+import java.io.*;
+class book_queue extends book_stack
+{
+int front,rear,i,x;
+String k;
+String a[]=new String [100];
+book_queue()
+{
+front=rear=-1;
+k="";
+}
+void insert()throws IOException
+{
+System.out.println("give the book id and price separated by a comma(,) ::: ");
+k=br.readLine();
+System.out.println("");
+if(rear>=100)
+System.out.println("overflow.................");
+else
+if(front<0)
+{
+a[++front]=k;
+rear++;
+}
+else
+a[++rear]=k;
+}
+void del()
+{
+if(front==-1)
+System.out.println("underflow................");
+else
+if(front>rear)
+{
+System.out.println("empty................");
+front=rear=-1;
+}
+else
+{
+System.out.println("\ndeleted book id and price separated by a comma(,) ::: \n"+a[front]+'\n');
+front++;
+}
+}
+void disp2()
+{
+if(front==-1)
+System.out.println("underflow................");
+else
+if(front>rear)
+{
+System.out.println("empty................");
+front=rear=-1;
+}
+else
+{
+System.out.println("your book queue : ");
+for(i=front;i<=rear;i++)
+System.out.print(a[i]+", ");
+System.out.println("");
+}
+}
+void start2()throws IOException
+{
+int f=0;
+do
+{
+System.out.println("press 1 for insert book price \npress 2 for delete book price \npress 3 for display \npress 4 for exit\n");
+x=Integer.parseInt(br.readLine());
+System.out.println("");
+switch(x)
+{
+case 1: insert();
+        break;
+case 2: del();        
+        break;
+case 3: disp2();
+        break;
+case 4: f=1;
+        break;
+default: System.out.println("give input from among the menu integers............\n");
+}
+}while(f==0);
+}
+}

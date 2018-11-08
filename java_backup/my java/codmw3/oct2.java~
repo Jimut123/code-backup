@@ -1,0 +1,6 @@
+interface oct2
+{
+     cal2(int a);
+}
+            
+            

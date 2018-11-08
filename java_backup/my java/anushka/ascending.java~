@@ -1,0 +1,77 @@
+
+import java.io.*;
+public class ascending
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    int a[];int n,i;
+    ascending(int n1)
+    {
+        n=n1;
+        a=new int[n];
+        
+    }
+    void displayList()throws IOException
+    {
+       for(i=0;i<n;i++)
+        {
+            a[i]=Integer.parseInt(br.readLine());
+        }
+        for(i=0;i<n;i++)
+        {
+            System.out.println(a[i]);
+        }
+    }
+    ascending merge(ascending a1)throws IOException
+    {
+        ascending a2=new ascending(n);
+        int i,j,k;
+        i=j=k=0;
+        while(i<this.a.length&&j<a1.a.length)
+        {
+            if(this.a[i]>a1.a[j])
+            {
+                a2.a[k]=a1.a[j];
+                j++;
+                k++;
+            }
+            else
+            if(this.a[i]<a1.a[i])
+            {
+                a2.a[k]=this.a[i];
+                i++;
+                k++;
+            }
+            else
+            {
+                a2.a[k]=this.a[i];
+                i++;
+                j++;
+                k++;
+            }
+        }
+        if(i<this.a.length)
+        {
+            while(i<this.a.length)
+            {
+                a2.a[k]=this.a[i];
+                i++;
+                k++;
+            }
+        }
+        else
+        if(j<a1.a.length)
+        {
+            while(j<a1.a.length)
+            {
+                a1.a[k]=a1.a[j];
+                j++;
+                k++;
+            }
+        }
+        for(i=0;i<k;i++)
+        {
+            System.out.println(a2.a[i]);
+        }
+        return a2;
+    }
+}

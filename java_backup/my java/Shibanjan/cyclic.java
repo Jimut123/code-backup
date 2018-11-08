@@ -1,0 +1,33 @@
+import java.io.*;
+class cyclic
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    String s,s1="";
+    int i=1,l;
+    void input()throws IOException
+    {
+        System.out.println("Enter the string");
+        s=br.readLine();
+        l=s.length();
+        
+    }
+    void change(int i,String s)throws IOException
+    {
+        if(i>l-1)
+        {
+            s1=s1+s.charAt(0);
+             System.out.println(s1);
+            return;
+        }
+        s1=s1+s.charAt(i);
+        change(i+1,s);
+    }
+    public void main(String arg[])throws IOException
+    {
+        cyclic c=new cyclic();
+        c.input();
+        int i=1;String s=br.readLine();
+        c.change(i,s);
+    }
+   
+}

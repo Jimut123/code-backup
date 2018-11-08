@@ -1,0 +1,30 @@
+README - <bluej-home>/lib/<language>/templates/newclass/README
+--------------------------------------------------------------
+
+这个目录包含了BlueJ的模板文件。
+
+这些类模板在BlueJ环境中"新建类"对话框中出现。
+
+改变模板
+------------------
+模板可以很方便的被改变，通过编辑这些文件。
+
+添加新的模板
+--------------------
+要添加一个新的模板，在这个目录中创建一个新的文件，以".tmpl"作为扩展名
+（比如"mainclass.tmpl"）
+
+为applets，interfaces或者abstract classes取名时，应该分别以"applet", 
+"interface"或者"abstract"打头。任何其它的文件都会被认为是标准类。
+
+默认的，这个模板会列在新建类对话框选项列表的底部，并以它的文件名命名
+（"mainclass"）。
+
+在对话框中出现的名字可以通过在labels（labels文件在<bluej-home>/lib/<language>/labels）
+定义一个属性"pkgmgr.newClass.<template-name>"来定义。比如，定义
+   pkgmgr.newClass.mainclass=Class with Main
+会导致在对话框中出现一个新的选项"Class with Main"
+
+在列表中的位置可以通过在BlueJ定义文件（<bluej-home>/lib/bluej.defs）中的
+"bluej.classTemplates"属性中添加这个模板来定义。所有在这里列出的模板，会
+以定义的顺序出现，这个目录中其它的模板会以随机的顺序被添加到列表的末尾。

@@ -1,0 +1,36 @@
+import java.util.*;
+public class happy 
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int a;
+        System.out.println("Enter number");
+        a=sc.nextInt();
+        
+        while(a>=10)
+        {
+            a=sumpow(a);
+            if(a==1)
+            {
+                System.out.print("Enter happy number");
+                break;
+            }
+            else if(a<=10 && a!=1)
+            {
+                System.out.println("unhappy number");
+                break;
+            }
+        }
+    }
+        int sumpow(int m)
+        {
+            int sum=0;
+            while(m>0)
+            {
+                sum=sum+(int)Math.pow(m%10,2);
+                m=m/10;
+            }
+            return sum;
+        }
+    }

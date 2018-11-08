@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=a\ b
+comment0.target=void\ compare(int,\ int)
+comment1.params=ch\ ch1
+comment1.target=void\ compare(char,\ char)
+comment2.params=n\ p
+comment2.target=void\ compare(java.lang.String,\ java.lang.String)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

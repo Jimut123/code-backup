@@ -1,0 +1,12 @@
+public class loop
+{
+    public static void main(String args[])
+    {
+        int b = 10000;
+        while(b!=0)
+        {
+            System.out.println(b);
+            b/=2;
+        }
+    }
+}

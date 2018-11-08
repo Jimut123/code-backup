@@ -1,0 +1,26 @@
+import java.io.*;
+class Income
+{
+    public static void main(String args[])throws IOException
+    {
+        InputStreamReader isr=new InputStreamReader(System.in);
+        BufferedReader br=new BufferedReader(isr);
+        int o,w,a;
+        o=Integer.parseInt(br.readLine());
+        w=Integer.parseInt(br.readLine());
+        if(a<=100000)
+         w=(a==0);
+        else
+        if(a<=250000)
+        w=(a*10)/100;
+        else
+        if(a<=500000)
+        w=(a*15)/100;
+        else
+        if(a<=1000000)
+        w=(a*20)/100;
+        else
+        if(a>1000000)
+        w=(a*25)/100;
+    }
+}

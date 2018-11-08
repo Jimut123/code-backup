@@ -1,0 +1,58 @@
+import java.util.*;
+class sum_matrix
+{
+    int a[][];
+    int m;int n;
+    void read_row_column(int x,int y)
+    {
+        m=x;
+        n=y;
+        a=new int[m][n];
+    }
+    void read_matrix()
+    {
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                System.out.print("Enter a number ");
+                a[i][j]=sc.nextInt();
+            }
+        }
+    }
+    void how_matrix()
+    {
+        for(int i=0;i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+    void summatrix()
+    {
+        int sum_row=0;int sum_column=0;
+        for(int i=0;i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                System.out.print(a[i][j]+" ");
+                sum_row+=a[i][j];
+            }
+            System.out.print(sum_row+" ");
+            System.out.println();
+        }
+        for(int j=0;j<n;j++)
+        {
+            for(int i=0;i<m;i++)
+            {
+                sum_column+=a[i][j];
+            }
+            System.out.print(sum_column+" ");
+        }
+    }
+}
+        

@@ -1,0 +1,14 @@
+public class mersenneno
+{
+    public static void main(int N)
+    {
+        int j;int i;
+        for(i=1;i>=N;i++)
+        j=(int)Math.pow(2,N);
+        j=i-1;
+        System.out.println(j);
+        {
+            System.out.println("the no which is exceed="+N);
+        }
+    }
+}

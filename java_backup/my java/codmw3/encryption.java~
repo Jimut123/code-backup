@@ -1,0 +1,65 @@
+import java.util.*;
+public class encryption
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in); 
+        int b,c=0,e;
+        String a,g="",h;
+        
+        System.out.println("Enter the sentence");
+        a=sc.nextLine();
+        for(b=0;b<a.length();b=b+1)
+        {
+            if(a.charAt(b)==' ')
+            {
+                c=c+1;
+            }
+        }
+        String d[]=new String[c+1];
+         e=0;
+        for(b=0;b<a.length();b=b+1)
+        {
+            if(a.charAt(b)==' ')
+            {
+                d[e]=g;
+                d[e]=d[e].trim();
+                g="";
+                e++;
+            }
+            else
+            {
+                g=g+a.charAt(b);
+            }
+        }
+        d[c]=g;
+        for(b=0;b<c+1;b=b+1)
+        {
+            h=change(d[b]);
+            h=h.trim();
+            System.out.println(h);
+        }
+    }
+    String change(String i)
+    {
+       int m;
+       String k=" ",l=" ",j=" ";
+       char n;
+        for(m=0;m<i.length();m=m+1)
+        {
+            n=i.charAt(m);
+            if(n=='a' || n=='e' || n=='i' || n=='o'|| n=='u' ||
+            n=='A' || n=='E' || n=='I' || n=='O'|| n=='U')
+            {
+                j=j+n;
+            }
+            else
+            {
+                k=k+n;
+            }
+        }
+        l=l+j+k;
+        return l;
+    }
+}
+                

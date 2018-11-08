@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=class\ commission
+comment1.params=
+comment1.target=void\ getData()
+comment2.params=
+comment2.target=void\ show()
+comment3.params=
+comment3.target=void\ calc()
+comment4.target=commission
+comment5.target=travelAllowance
+comment6.target=sales
+comment7.target=netSalary
+comment8.target=class\ MainSalary
+comment9.params=args
+comment9.target=void\ main(String[])
+numComments=10

@@ -1,0 +1,26 @@
+import java.io.*;
+class addition
+{
+public void intake()throws IOException
+{
+int i,x,n;
+InputStreamReader aa=new InputStreamReader(System.in);
+BufferedReader ll=new Bufferedreader(aa);
+System.out.print("print any number=");
+x=Integer.parseInt(ll.readLine());
+System.out.print("\n print the limit=");
+n=Integer.parseInt(ll.readLine());
+}
+public void calculate()
+{
+for(i=1;i<=n;i++)
+x=x*n;
+Sytem.out.print("\n the number is="+x);
+}
+public static void main(String[]args)
+{
+addition gg=new addition();
+gg.intake();
+gg.calculate();
+}
+}

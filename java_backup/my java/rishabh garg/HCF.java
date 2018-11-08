@@ -1,0 +1,41 @@
+import java.io.*;
+class HCF
+{
+   int c=0;
+    HCF(int a, int b)
+    {
+        int x=a;
+        int y=b;
+        int z=cal(x,y);
+        
+    }
+    
+    int cal(int x, int y)
+    {
+        
+        while (x%y!=0)
+        {
+            c=x%y;
+            x=y;
+            y=c;
+        }
+        return c;
+    }
+    
+    void print()
+    {
+        System.out.println("HCF of the two nos is "+ c);
+    }
+    
+    public static void main (String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader (new InputStreamReader (System.in));
+        System.out.println ("Enter the two nos");
+        int a=Integer.parseInt (br.readLine());
+        int b=Integer.parseInt (br.readLine());
+        HCF obj=new HCF(a,b);
+        obj.print();
+    }
+}
+        
+        

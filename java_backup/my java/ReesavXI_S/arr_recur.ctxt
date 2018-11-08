@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=size
+comment0.target=arr_recur(int)
+comment1.params=i\ j
+comment1.target=void\ input(int,\ int)
+comment2.params=sum\ i\ j
+comment2.target=void\ sum_row(int,\ int,\ int)
+comment3.params=sum1\ i1\ j1
+comment3.target=void\ sum_column(int,\ int,\ int)
+comment4.params=i\ j
+comment4.target=void\ display(int,\ int)
+comment5.params=max\ i\ j
+comment5.target=void\ maximum(int,\ int,\ int)
+comment6.params=min\ i\ j
+comment6.target=void\ minimum(int,\ int,\ int)
+comment7.params=
+comment7.target=void\ main()
+numComments=8

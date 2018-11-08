@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=void\ zeroTo19(int)
+comment1.params=n
+comment1.target=void\ divisibleBy10(int)
+comment2.params=n
+comment2.target=void\ zeroTo100(int)
+comment3.params=n
+comment3.target=void\ zeroTo1000(int)
+comment4.params=args
+comment4.target=void\ main([Ljava.lang.String;)
+numComments=5

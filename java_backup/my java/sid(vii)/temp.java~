@@ -1,0 +1,8 @@
+public class temp
+{
+    public static void main (int c)
+    {
+        int f=9/5*C+32;
+        System.out.println (f);
+    }
+}

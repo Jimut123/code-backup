@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ check()
+comment1.params=n
+comment1.target=boolean\ unique(int)
+numComments=2

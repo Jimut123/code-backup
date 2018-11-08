@@ -1,0 +1,30 @@
+class Temperature
+{
+    public static void main (int c, int l, int x, int a)
+    {
+        int f;
+        System.out.println("press 1 for leap year");
+        System.out.println("press 2 for conversion from degree celsius to farenheit");
+        System.out.println("press 3 for finding a five digit number");
+        
+        switch (x)
+        {
+            case 1:if(a%4==0 && a&400==0)
+                   System.out.println("leap year");
+                   else
+                   System.out.println("not a leap year");
+                   break;
+            
+            case 2:f=((9*c+160)/5);
+                   System.out.println("farenheit" +f);
+                   break;
+             
+            case 3:if(l<=10000 && l>=99999)
+                   System.out.println("five digit number");
+                   else
+                   System.out.println("not a five digit number");
+                   
+            default:System.out.println("not valid");
+        }
+    }
+}

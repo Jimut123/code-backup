@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=pseudoarithmetic()
+comment1.params=nn
+comment1.target=void\ accept(int)
+comment2.params=
+comment2.target=boolean\ check()
+comment3.params=
+comment3.target=void\ main()
+numComments=4

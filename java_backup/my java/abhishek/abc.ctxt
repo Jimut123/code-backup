@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=
+comment1.target=void\ disp()
+comment2.params=a1
+comment2.target=void\ comp(abc)
+comment3.params=a1
+comment3.target=void\ add(abc)
+numComments=4

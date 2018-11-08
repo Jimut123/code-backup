@@ -1,0 +1,110 @@
+#
+# Moe user function help texts.
+#
+# Part of the BlueJ program development environment.
+#
+
+## edit functions
+
+delete-previous=\n Zeichen vor dem Cursor löschen.
+delete-next=\n Zeichen nach dem Cursor löschen.
+copy-to-clipboard=\n Ausgewählten Text in die Zwischenablage kopieren. Von dort kann er\n woanders eingefügt werden (vgl. paste-from-clipboard).
+cut-to-clipboard=\n Ausgewählten Text in die Zwischenablage ausschneiden. Von dort kann\n er woanders eingefügt werden (vgl. paste-from-clipboard).
+copy-line=\n Aktuelle Zeile in die Zwischenablage kopieren.\n Danach Kopiertes wird an die Zwischenablage angefügt.
+cut-line=\n Aktuelle Zeile in die Zwischenablage ausschneiden.\n Danach Kopiertes wird an die Zwischenablage angefügt.
+cut-end-of-line=\n Bis zum Ende der aktuellen Zeile in die Zwischenablage ausschneiden.\n Danach Kopiertes wird an die Zwischenablage angefügt.
+cut-word=\n Aktuelles Wort in die Zwischenablage ausschneiden.\n Danach Kopiertes wird an die Zwischenablage angefügt.
+cut-end-of-word=\n Bis zum Ende des aktuellen Wortes in die Zwischenablage ausschneiden.\n Danach Kopiertes wird an die Zwischenablage angefügt.
+paste-from-clipboard=\n Text aus der Zwischenablage an die Cursorposition kopieren.
+indent=\n Wenn "Einrücken" eingeschaltet ist, so wie die darüberliegende\n Zeile einrücken. Andernfalls ein Soft-TAB (Leerzeichen) einfügen. 
+insert-tab=\n TAB-Zeichen einfügen.
+new-line=\n Zeilenwechsel einfügen. Wenn "Einrücken" eingeschaltet ist,\n so wie die darüberliegende Zeile einrücken.
+insert-break=\n Zeilenwechsel einfügen ohne jegliche Einrückung.
+insert-method=\n Skelett einer Java-Methode einfügen.
+comment-block=\n Ausgewählte Zeilen auskommentieren. Die Kommentierung\n kann später einfach entfernt werden (vgl. uncomment-block).
+uncomment-block=\n Kommentarzeichen vom Anfang der ausgewählten Zeilen\n entfernen (vgl. comment-block).
+indent-block=\n Alle ausgewählten Zeilen (bzw. die aktuelle Zeile, wenn\n es keine Auswahl gibt) mehr einrücken.
+deindent-block=\n Alle ausgewählten Zeilen (bzw. die aktuelle Zeile, wenn\n es keine Auswahl gibt) weniger einrücken.
+
+select-word=\n Aktuelles Wort auswählen (auch dem\n Doppelklick links zugeordnet).
+select-line=\n Aktuelle Zeile auswählen (auch dem\n Dreifachklick links zugeordnet).
+select-paragraph=\n Aktuellen Absatz auswählen.
+select-all=\n Gesamten Text auswählen.
+selection-backward=\n Ende der Auswahl um ein Zeichen zurück verschieben.
+selection-forward=\n Ende der Auswahl um ein Zeichen vorwärts verschieben.
+selection-up=\n Ende der Auswahl um eine Zeile hinauf verschieben.
+selection-down=\n Ende der Auswahl um eine Zeile hinunter verschieben.
+selection-begin-word=\n Ende der Auswahl an den Anfang des aktuellen\n Wortes verschieben.
+selection-end-word=\n Ende der Auswahl an das Ende des aktuellen\n Wortes verschieben.
+selection-previous-word=\n Ende der Auswahl an den Anfang des vorigen\n Wortes verschieben.
+selection-next-word=\n Ende der Auswahl an den Anfang des nächsten\n Wortes verschieben.
+selection-begin-line=\n Ende der Auswahl an den Anfang der aktuellen\n Zeile verschieben.
+selection-end-line=\n Ende der Auswahl an das Ende der aktuellen\n Zeile verschieben.
+selection-begin-paragraph=\n Ende der Auswahl an den Anfang des aktuellen\n Absatzes verschieben.
+selection-end-paragraph=\n Ende der Auswahl an das Ende des aktuellen\n Absatzes verschieben.
+selection-page-up=\n Ende der Auswahl um eine Seite hinauf verschieben.
+selection-page-down=\n Ende der Auswahl um eine Seite hinunter verschieben.
+selection-begin=\n Ende der Auswahl an den Textanfang verschieben.
+selection-end=\n Ende der Auswahl an das Textende verschieben.
+unselect=\n Auswahl entfernen (nicht den ausgewählten Text!).
+
+## move and scroll functions
+
+caret-backward=\n Cursor um ein Zeichen zurück.
+caret-forward=\n Cursor um ein Zeichen vorwärts.
+caret-up=\n Cursor um eine Zeile hinauf.
+caret-down=\n Cursor um eine Zeile hinunter.
+caret-begin-word=\n Cursor an den Anfang des aktuellen Wortes.
+caret-end-word=\n Cursor an das Ende des aktuellen Wortes.
+caret-previous-word=\n Cursor an den Anfang des vorigen Wortes.
+caret-next-word=\n Cursor an den Anfang des nächsten Wortes.
+caret-begin-line=\n Cursor an den Anfang der aktuellen Zeile.
+caret-end-line=\n Cursor an das Ende der aktuellen Zeile.
+caret-begin-paragraph=\n Cursor an den Anfang des aktuellen Absatzes.
+caret-end-paragraph=\n Cursor an das Ende des aktuellen Absatzes.
+page-up=\n Cursor um eine Seite hinauf.
+page-down=\n Cursor um eine Seite hinunter.
+caret-begin=\n Cursor an den Textanfang.
+caret-end=\n Cursor an das Textende.
+
+## class functions
+
+save=\n Klasse speichern. Wird selten benötigt, weil die Klasse beim\n Schliessen automatisch gespeichert wird.
+reload=\n Klasse von ihrer Sourcedatei neu laden. Dies verwirft alle\n Änderungen, die seit dem letzten Speichern vorgenommen wurden.
+close=\n Klasse schliessen. Der Sourcetext wird automatisch\n gespeichert.
+print=\n Einen Druckdialog öffnen, um einen Druckvorgang\n zu starten.
+page-setup=\n Dialog zur Seiteneinrichtung öffnen, um das\n Seitenlayout festzulegen.
+
+
+## customisation functions
+
+key-bindings=\n Tastenzuordnungen für die Benutzerfunktionen\n von Moe ansehen und ändern.
+preferences=\n Einstellungen für den Editor festlegen.
+
+
+## help functions
+
+describe-key=\n Nach dem Aufruf dieses Befehls eine Taste drücken.\n Der Name der zugeordneten Tastenfunktion wird angezeigt.
+help-mouse=\n Befehlszuordnungen der Maustasten anzeigen.
+show-manual=\n Einen Web-Browser öffnen, der das Moe-Benutzerhandbuch anzeigt.
+about-editor=\n Programminformationen zu Moe anzeigen.
+
+
+## misc functions
+
+undo=\n Letzte Änderung rückgängig machen.\n (Kann dann mit redo wiederhergestellt werden).
+redo=\n Letzte rückgängig gemachte Änderung wiederherstellen.
+
+find=\n Dialog öffnen zum Suchen eines Strings im Text.\n Der Dialog erlaubt Vorwärts- und Rückwärtssuche.
+find-next=\n Sucht nach dem nächsten Auftreten des ausgewählten Textes,\n oder nach dem vorigen Suchargument, wenn es keine Auswahl gibt.
+find-next-backward=\n Wie find-next, sucht aber rückwärts statt vorwärts.
+replace=\n Einen Textstring durch einen anderen ersetzen.
+
+compile=\n Aktuelle Klasse übersetzen. Die Klasse wird vor\n dem Übersetzen automatisch gespeichert.
+toggle-interface-view=\n Zwischen Interface- und Sourcetext-Darstellung umschalten. Die\n Interface-Darstellung zeigt das Klasseninterface im Javadoc-Format.
+toggle-breakpoint=\n Haltepunkt in der aktuellen Zeile\n setzen oder löschen.
+
+## help texts for adding key bindings
+
+press-key=\n  Drücken Sie die Taste, die Sie zuordnen wollen...
+cannot-redefine=\n  Druckbare Zeichen können nicht zugeordnet werden.

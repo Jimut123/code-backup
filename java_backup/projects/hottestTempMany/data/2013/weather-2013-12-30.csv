@@ -1,0 +1,29 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,42.1,41.0,96,29.94,0.5,Calm,Calm,-,N/A,Fog,Fog,0,2013-12-30 05:51:00
+1:17 AM,41.0,39.2,93,29.94,1.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-12-30 06:17:00
+1:51 AM,39.9,39.0,97,29.95,1.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-12-30 06:51:00
+2:03 AM,39.2,39.2,100,29.94,0.5,Calm,Calm,-,N/A,Fog,Fog,0,2013-12-30 07:03:00
+2:20 AM,37.4,35.6,93,29.95,2.5,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-12-30 07:20:00
+2:34 AM,39.2,37.4,93,29.95,4.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-12-30 07:34:00
+2:51 AM,39.0,37.9,96,29.96,3.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-12-30 07:51:00
+3:51 AM,39.9,37.9,93,29.98,10.0,WSW,3.5,-,N/A,,Scattered Clouds,240,2013-12-30 08:51:00
+4:51 AM,39.0,37.9,96,29.97,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-12-30 09:51:00
+5:51 AM,37.9,37.0,97,29.98,10.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2013-12-30 10:51:00
+6:51 AM,36.0,34.0,93,30.01,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-12-30 11:51:00
+7:51 AM,37.0,35.1,93,30.03,10.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2013-12-30 12:51:00
+8:51 AM,39.9,37.9,93,30.06,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-12-30 13:51:00
+9:51 AM,46.0,42.1,86,30.08,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-12-30 14:51:00
+10:51 AM,50.0,39.9,68,30.09,10.0,WNW,3.5,-,N/A,,Mostly Cloudy,290,2013-12-30 15:51:00
+11:51 AM,52.0,37.9,59,30.06,10.0,NW,4.6,-,N/A,,Mostly Cloudy,310,2013-12-30 16:51:00
+12:51 PM,53.1,39.0,59,30.06,10.0,West,3.5,-,N/A,,Mostly Cloudy,280,2013-12-30 17:51:00
+1:51 PM,53.1,37.0,55,30.06,10.0,NNW,5.8,-,N/A,,Overcast,330,2013-12-30 18:51:00
+2:51 PM,52.0,37.0,57,30.08,10.0,NW,6.9,-,N/A,,Overcast,310,2013-12-30 19:51:00
+3:51 PM,51.1,39.0,63,30.08,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-12-30 20:51:00
+4:51 PM,50.0,39.0,66,30.08,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-12-30 21:51:00
+5:51 PM,48.0,39.9,74,30.10,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-12-30 22:51:00
+6:51 PM,46.9,39.0,74,30.09,10.0,NNE,3.5,-,N/A,,Overcast,30,2013-12-30 23:51:00
+7:51 PM,46.0,35.1,66,30.12,10.0,North,3.5,-,N/A,,Overcast,10,2013-12-31 00:51:00
+8:51 PM,46.0,35.1,66,30.15,10.0,NNE,3.5,-,N/A,,Overcast,20,2013-12-31 01:51:00
+9:51 PM,45.0,34.0,65,30.14,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-12-31 02:51:00
+10:51 PM,44.1,33.1,65,30.14,10.0,NE,3.5,-,N/A,,Overcast,40,2013-12-31 03:51:00
+11:51 PM,44.1,33.1,65,30.14,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-12-31 04:51:00

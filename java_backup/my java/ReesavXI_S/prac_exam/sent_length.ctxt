@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ accpet()
+comment1.params=
+comment1.target=void\ calc()
+comment2.params=s
+comment2.target=int\ words_count(java.lang.String)
+numComments=3

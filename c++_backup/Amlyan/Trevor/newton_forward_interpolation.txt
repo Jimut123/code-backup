@@ -1,0 +1,55 @@
+#include<iostream>
+#define MAX 10
+
+using namespace std;
+
+class nfi {
+    float h, x[MAX], y[MAX][MAX];
+    int n;
+    public:
+    void inp ();
+    void diff_tab ();
+    float slv (float x);
+};
+
+void nfi::inp (){
+    cout<<"How many values of x given?: ";
+    cin>>n;
+    cout<<"x\tf(x)\n";
+    for (int i=0; i < n; i++)
+        cin>>x[i]>>y[0][i];
+    h = x[1] - x[0];
+}
+
+void nfi::diff_tab (){
+    for (int i = 1; i < n; i++)
+        for (int j = 0; j < n - i; j++)
+            y[i][j] = y[i-1][j+1] - y[i-1][j];
+}
+
+float nfi::slv (float xi){
+    float ans = 0.0, u = (xi - x[0]) / h;
+    for(int i=0; i<n; i++){
+        float t = y[i][0];
+        for(int j=0; j<i; j++)
+            t *= (u - j) / (j + 1);
+        ans += t;
+    }
+    return ans;
+}
+
+int main(){
+    nfi nf;
+    nf.inp();
+    nf.diff_tab();
+    float x = 0.0;
+    char ch;
+    do{
+        cout<<"Interpolate for x= ";
+        cin>>x;
+        cout<<"f("<<x<<")= "<<nf.slv(x);
+        cout<<"\nAgain? (y/n)\n";
+        cin>>ch;
+    } while (ch=='y' || ch=='Y');
+    return 0;
+}

@@ -1,0 +1,16 @@
+package sum_of_digits;
+public class dig_sum
+{
+    public int count(int n)
+    {
+        int k,s=0;
+        while(n>0)
+        {
+            k=n%10;
+            s=s+k;
+            n=n/10;
+        }
+        return s;
+    }
+}
+        

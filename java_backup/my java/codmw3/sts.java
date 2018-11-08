@@ -1,0 +1,79 @@
+import java.util.*;
+public class sts
+{
+    Scanner sc=new Scanner(System.in);
+    String s,st[];
+    int ar[];
+    void input()
+    {
+        int c,a,b,cc;
+        String w="";
+        char p;
+        System.out.println("Enter sentence");
+        s=sc.nextLine();
+        c=0;
+        for(a=0;a<s.length();a++)
+        {
+            if(s.charAt(a)==' ')
+            {
+                c++;
+            }
+        }
+        st=new String[c+1];
+        ar=new int[c+1];
+        c=0;
+        for(a=0;a<s.length();a++)
+        {
+            if(s.charAt(a)==' ')
+            {
+                st[c]=w;
+                w="";
+                c++;
+            }
+            w=w+s.charAt(a);
+        }
+        st[c]=w;
+        for(a=0;a<=c;a++)
+        {
+            cc=0;
+            for(b=0;b<st[a].length();b++)
+            {
+                p=st[a].charAt(b);
+                if(p=='a' || p=='e' || p=='i' || p=='o' ||
+                p=='u')
+                {
+                    cc++;
+                }
+            }
+            ar[a]=cc;
+        }
+    }
+    void str()
+    {
+        int m,n,j;
+        String k;
+        for(m=0;m<ar.length;m++)
+        {
+            for(n=0;n<ar.length-1;n++)
+            {
+                if(ar[n]>ar[n+1])
+                {
+                    k=st[n];
+                    st[n]=st[n+1];
+                    st[n+1]=k;
+                    j=ar[n];
+                    ar[n]=ar[n+1];
+                    ar[n+1]=j;
+                }
+            }
+        }
+        for(m=0;m<ar.length;m++)
+        {
+            System.out.println(st[m]+" "+ar[m]);
+        }
+    }
+}
+    
+    
+                
+            

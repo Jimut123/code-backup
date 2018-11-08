@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=s1
+comment0.target=bin_addmany(int)
+comment1.params=
+comment1.target=void\ input()
+comment2.params=
+comment2.target=void\ sum()
+comment3.params=q\ s1
+comment3.target=java.lang.String\ sum(java.lang.String,\ java.lang.String)
+numComments=4

@@ -1,0 +1,30 @@
+import java.util.*;
+class name_consecutive
+{
+    String n=" ";
+    name_consecutive(String s)
+    {
+        n=s;
+    }
+    void clac()
+    {
+        int i=0;
+        char ch=' ';
+        char ch1=' ';
+        for(i=0;i<n.length();i=i+2)
+        {
+            if(i==n.length()-1)
+            break;
+            else
+            {
+            ch=n.charAt(i);
+            ch1=n.charAt(i+1);
+            if((int)ch1-(int)ch==1||(int)ch-(int)ch1==1)
+            {
+                System.out.print(ch+" "+ch1);
+                System.out.println();
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,26 @@
+public class prime
+{
+public boolean isprime(int n)
+{
+int x=0;int count;
+count=0;
+for(x=2;x<n;x++)
+if(n%x==0)
+count++;
+if(count ==0)
+return true;
+else
+return false;
+}
+public void twin prime
+{
+int p=0;
+int i=0;
+for(1=2;i<z-2;i++)
+{
+num=1+2;
+if(isprime(i)&&isprime(num))
+System.out.println(i+""+num+"are twin nos");
+}
+}
+}

@@ -1,0 +1,10 @@
+class test
+{
+ public.static.main(string{})
+ {
+     int i
+     for (i=4;i<=100;i=i+4,i++);
+     system.out.println(i)
+    }
+}
+ 

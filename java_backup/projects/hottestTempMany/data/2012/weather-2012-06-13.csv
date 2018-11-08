@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:27 AM,73.4,68.0,83,29.93,10.0,NE,18.4,24.2,N/A,Thunderstorm,Thunderstorm,40,2012-06-13 04:27:00
+12:51 AM,69.1,66.9,93,29.95,4.0,NNW,5.8,23.0,0.07,Rain-Thunderstorm,Heavy Thunderstorms and Rain,330,2012-06-13 04:51:00
+1:42 AM,69.8,68.0,94,29.89,9.0,East,8.1,-,0.63,Rain,Light Rain,100,2012-06-13 05:42:00
+1:51 AM,70.0,66.9,90,29.87,9.0,Variable,3.5,-,0.64,Rain,Light Rain,0,2012-06-13 05:51:00
+2:51 AM,69.1,66.9,93,29.89,10.0,NW,4.6,-,0.00,,Mostly Cloudy,310,2012-06-13 06:51:00
+3:51 AM,68.0,66.0,93,29.87,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-06-13 07:51:00
+4:51 AM,68.0,66.0,93,29.87,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-06-13 08:51:00
+5:51 AM,68.0,66.0,93,29.88,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-06-13 09:51:00
+6:51 AM,68.0,66.9,96,29.89,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-06-13 10:51:00
+7:51 AM,71.1,66.9,87,29.90,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-06-13 11:51:00
+8:51 AM,73.0,68.0,84,29.91,10.0,North,6.9,-,N/A,,Mostly Cloudy,10,2012-06-13 12:51:00
+9:51 AM,75.9,70.0,82,29.92,10.0,NE,11.5,-,N/A,,Mostly Cloudy,50,2012-06-13 13:51:00
+10:51 AM,78.1,66.0,66,29.94,10.0,NE,15.0,24.2,N/A,,Mostly Cloudy,50,2012-06-13 14:51:00
+11:51 AM,80.1,64.9,60,29.94,10.0,NNE,9.2,18.4,N/A,,Mostly Cloudy,30,2012-06-13 15:51:00
+12:51 PM,82.0,66.9,60,29.94,10.0,NE,8.1,16.1,N/A,,Mostly Cloudy,40,2012-06-13 16:51:00
+1:51 PM,82.0,64.0,54,29.95,10.0,NNE,8.1,16.1,N/A,,Mostly Cloudy,30,2012-06-13 17:51:00
+2:51 PM,82.0,62.1,51,29.95,10.0,NNE,9.2,-,N/A,,Mostly Cloudy,20,2012-06-13 18:51:00
+3:51 PM,82.0,64.0,54,29.94,10.0,NNE,10.4,-,N/A,,Mostly Cloudy,30,2012-06-13 19:51:00
+4:51 PM,82.9,64.0,53,29.93,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2012-06-13 20:51:00
+5:51 PM,82.0,64.9,56,29.93,10.0,NE,8.1,-,N/A,,Mostly Cloudy,40,2012-06-13 21:51:00
+6:51 PM,81.0,63.0,54,29.93,10.0,NNE,8.1,-,N/A,,Mostly Cloudy,30,2012-06-13 22:51:00
+7:51 PM,78.1,61.0,56,29.95,10.0,NE,8.1,-,N/A,,Mostly Cloudy,40,2012-06-13 23:51:00
+8:51 PM,75.0,59.0,57,29.97,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-06-14 00:51:00
+9:51 PM,71.1,55.0,57,29.99,10.0,NE,5.8,-,N/A,,Mostly Cloudy,40,2012-06-14 01:51:00
+10:51 PM,68.0,46.9,47,30.00,10.0,NE,9.2,-,N/A,,Scattered Clouds,50,2012-06-14 02:51:00
+11:51 PM,66.0,48.0,52,30.02,10.0,NE,6.9,-,N/A,,Scattered Clouds,50,2012-06-14 03:51:00

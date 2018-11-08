@@ -1,0 +1,63 @@
+//displaying lucky numbers upto a given integer
+import java.util.*;
+class Lucky
+{
+    private int n;
+    private int arr[];
+
+    public void get()
+    {
+        int i,cnt=1;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the range: ");
+        n=sc.nextInt()/2;
+        arr=new int[n];        
+        for(i=0; i<n; i++)
+            arr[i]=((i+1) * 2) - 1;
+        create();
+    }
+
+    public void create()
+    {        
+        int i=1, shift=0;               
+        while(shift<=n)
+        {
+            shift=arr[i];
+            int j=shift-1;
+            while(j<n)
+            {
+                arr[j]=0;
+                j=j+shift;
+            }
+
+            for(int k=0;k<n;k++)
+            {
+                if(arr[k]==0)
+                {
+                    for(int l=k;l<n-1;l++)
+                        arr[l]=arr[l+1];
+                    n--;
+                }
+            }            
+            i++;
+        }
+        System.out.println("\nThe Lucky Numbers are:");
+        show();        
+    }
+
+    public void show()
+    {
+        System.out.print("| ");
+        for(int i=0;i<n;i++)
+            System.out.print(arr[i]+" | ");
+    }
+}
+
+public class LuckyNumbers
+{
+    public static void main(String args[])
+    {
+        Lucky obj=new Lucky();
+        obj.get();
+    }
+}

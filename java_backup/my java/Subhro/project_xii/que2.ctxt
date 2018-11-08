@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=que2()
+comment1.params=
+comment1.target=void\ input()
+comment2.params=
+comment2.target=void\ insert_front()
+comment3.params=
+comment3.target=void\ insert_rear()
+comment4.params=
+comment4.target=void\ delete_front()
+comment5.params=
+comment5.target=void\ delete_rear()
+comment6.params=
+comment6.target=void\ disp()
+comment7.params=
+comment7.target=void\ implement()
+numComments=8

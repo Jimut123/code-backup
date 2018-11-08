@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x
+comment0.target=int\ sum(int)
+comment1.params=x
+comment1.target=int\ prime(int)
+comment2.params=n
+comment2.target=int\ check(int)
+numComments=3

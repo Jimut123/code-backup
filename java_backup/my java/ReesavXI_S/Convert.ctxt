@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=n
+comment1.target=void\ ext_digit(int)
+comment2.params=s
+comment2.target=void\ num_to_words(int)
+comment3.params=n
+comment3.target=int\ rev(int)
+numComments=4

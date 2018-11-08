@@ -1,0 +1,28 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.5.0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.5
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+E:\My Documents\my java\kausumi\doc
+-classpath
+C:\BlueJ\lib\bluejcore.jar;C:\BlueJ\lib\junit.jar;E:\My Documents\my java\kausumi
+E:\My Documents\my java\kausumi\STAR5.java
+<---- end of javadoc command ---->
+Loading source file E:\My Documents\my java\kausumi\STAR5.java...
+E:\My Documents\my java\kausumi\STAR5.java:11: ';' expected
+^
+E:\My Documents\my java\kausumi\STAR5.java:12: illegal start of expression
+    }
+    ^
+E:\My Documents\my java\kausumi\STAR5.java:14: '}' expected
+^
+3 errors

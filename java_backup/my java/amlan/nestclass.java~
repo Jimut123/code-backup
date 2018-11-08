@@ -1,0 +1,42 @@
+import java.io.*;
+class nestclass
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in)); 
+class nestclass1
+{   
+int k,l;
+void input1()throws IOException
+    {
+        k=Integer.parseInt(br.readLine());
+        l=Integer.parseInt(br.readLine());
+    }
+    void disp1()
+    {
+        System.out.println(k);
+         System.out.println(l);
+        }
+    }
+int x;
+    double y;
+   nestclass1 n1=new nestclass1(); 
+    void input()throws IOException
+    {
+        n1.input1();
+        
+        x=Integer.parseInt(br.readLine());
+        y=Integer.parseInt(br.readLine());
+    }
+    void disp()
+    {
+        n1.disp1();
+        System.out.println(x);
+         System.out.println(y);
+        }
+        
+        public static void main(String args[])throws IOException
+        {
+            nestclass nn=new nestclass();
+            nn.input();
+            nn.disp();
+        }
+}

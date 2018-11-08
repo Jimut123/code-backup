@@ -1,0 +1,35 @@
+import java.io.*;
+class Replace
+{
+    public static void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a String");
+        String s=br.readLine();
+        s=s+' ';
+        System.out.println("Enter the searching word");
+        String w=br.readLine();
+        System.out.println("Enter the replacing word");
+        String w1=br.readLine();
+        String w2="";
+        String w3="";
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)==' ')
+            {
+                if(w2.equalsIgnoreCase(w)==true)
+                {
+                    w3=w3+w1;
+                }
+                else
+                w3=w3+w2;
+            w2="";    
+            }
+            else
+            w2=w2+s.charAt(i);
+        }
+        System.out.println("The Resultant String is"+w3);
+    }
+}
+
+        

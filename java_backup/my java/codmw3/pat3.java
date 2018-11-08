@@ -1,0 +1,55 @@
+import java.util.*;
+public class pat3
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b,c,d,e;
+        
+        System.out.println("Enter number");
+        a=sc.nextInt();
+        d=a*2;
+        e=0;
+        for(b=1;b<=(a/2)+1;b++)
+        {
+            for(c=1;c<=d;c++)
+            {
+                System.out.print("*");
+            }
+            for(c=1;c<=e;c++)
+            {
+                System.out.print(" ");
+            }
+            e+=8;
+           for(c=1;c<=d;c++)
+            {
+                System.out.print("*");
+            }
+            d-=4;
+            System.out.println();
+        }
+        d=4;
+        e-=16;
+        for(b=1;b<=(a/2);b++)
+        {
+            for(c=d;c>0;c--)
+            {
+                System.out.print("*");
+            }
+            for(c=1;c<=e;c++)
+            {
+                System.out.print(" ");
+            }
+            e-=8;
+           for(c=d;c>0;c--)
+            {
+                System.out.print("*");
+            }
+            d+=4;
+            System.out.println();
+        }
+        
+        
+        
+    }
+}

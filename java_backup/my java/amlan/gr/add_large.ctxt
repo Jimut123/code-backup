@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=add_large()
+comment1.params=
+comment1.target=void\ start()
+comment2.params=c1\ d
+comment2.target=void\ calc(char,\ char)
+comment3.params=
+comment3.target=void\ show()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

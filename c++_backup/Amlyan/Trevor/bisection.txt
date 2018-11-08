@@ -1,0 +1,67 @@
+#include<iostream>
+#include<math.h>
+#define MAX 6
+#define ACC 1000000
+typedef float (* fFunction) (float x);
+
+using namespace std;
+
+float f1 (float x){
+    return pow (x,2) -3;
+}
+
+float f2 (float x){
+    return pow (x,3) - 6 * pow (x,2) + 11 * x - 6;
+}
+
+
+class BISEC{
+    fFunction f;
+    float root(float a, float b);
+    public:
+    void allroot(fFunction);
+};
+
+float BISEC::root(float a, float b){
+    int mode;
+    float x;
+    if ( f(a) < f(b) )
+        mode = 1;
+    else
+        mode = 0;
+    do{
+        x = (a + b) / 2;
+        if( f(x) < 0 ){
+            if ( mode == 1 )
+                a = x;
+            else
+                b = x;
+        }
+        else if ( f(x) > 0 ){
+            if ( mode == 0 )
+                b = x;
+            else
+                a = x;
+        }
+    } while ( fabs (f(x)) >= ACC );
+    return x;
+}
+
+void BISEC::allroot(fFunction f){
+        BISEC::f = f;
+        int n = 1;
+        for(float a=-50, b; a<50; a+=0.1){
+                b = a + 0.1;
+                if( f(a) * f(b) < 0 )
+                    cout<<"Root"<<n++<<"= "<<root(a,b)<<endl;
+        }
+}
+
+int main(){
+    BISEC bs;
+    cout<<"roots of 1st eqn: \n";
+    bs.allroot(f1);
+    cout<<"roots of 2st eqn: \n";
+    bs.allroot(f2);
+    return 0;
+}

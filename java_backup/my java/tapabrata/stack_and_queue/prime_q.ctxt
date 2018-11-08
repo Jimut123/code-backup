@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ no()
+comment1.params=
+comment1.target=prime_q()
+comment2.params=p
+comment2.target=int\ prime(int)
+comment3.params=x
+comment3.target=void\ push(int)
+comment4.params=
+comment4.target=void\ pop()
+comment5.params=
+comment5.target=void\ disp()
+comment6.params=k
+comment6.target=void\ insert(int)
+comment7.params=
+comment7.target=void\ del()
+comment8.params=
+comment8.target=void\ display()
+comment9.params=
+comment9.target=void\ start()
+numComments=10

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ init()
+comment1.params=e
+comment1.target=void\ mousePressed(java.awt.event.MouseEvent)
+comment10.params=
+comment10.target=java.lang.String\ getAppletInfo()
+comment2.params=e
+comment2.target=void\ mouseEntered(java.awt.event.MouseEvent)
+comment3.params=e
+comment3.target=void\ mouseExited(java.awt.event.MouseEvent)
+comment4.params=e
+comment4.target=void\ mouseMoved(java.awt.event.MouseEvent)
+comment5.params=e
+comment5.target=void\ componentResized(java.awt.event.ComponentEvent)
+comment6.params=e
+comment6.target=void\ componentShown(java.awt.event.ComponentEvent)
+comment7.params=x\ y
+comment7.target=void\ mousePressed(int,\ int)
+comment8.params=g
+comment8.target=void\ update(java.awt.Graphics)
+comment9.params=g
+comment9.target=void\ paint(java.awt.Graphics)
+numComments=11

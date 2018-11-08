@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=gogol()
+comment1.params=
+comment1.target=void\ input()
+comment2.params=a\ n\ i
+comment2.target=void\ cal(int[][],\ int,\ int)
+numComments=3

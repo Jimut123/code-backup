@@ -1,0 +1,36 @@
+import java.util.*;
+class ss
+{
+    public static void main(String args[])
+    {
+        Scanner ob=new Scanner(System.in);
+        char  a[]=new char[20];
+        int t=0;char w;
+        System.out.println("enter the string ");
+        String s=ob.nextLine();s=s+' ';int pas;
+        int p=s.length();
+        for (int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)==' ')
+            {
+                a[t++]=s.charAt(i);
+                for(int k=0;k<t-1;k++)
+                 
+                {pas =k;
+                for(int k1=k+1;k1<t;k1++)
+                {
+                    if(a[k1]<a[pas])
+                    {
+                        w=a[k];
+                        a[k]=a[k1];
+                        a[k1]=w;
+                    }
+                    for(k=1;k<t;k++)
+                    System.out.println(w[k]);
+                    w="";
+                }
+                elsew=w+s.charAt(i);
+            }
+        }}
+    }
+}

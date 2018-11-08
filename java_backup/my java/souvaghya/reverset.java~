@@ -1,0 +1,15 @@
+import java.util.*;
+class reverset
+{
+void main(int n)
+{
+Scanner sc=new Scanner(System.in);
+int a[]=new int[n];
+int i;
+System.out.print("Enter element of array");
+for(i=0;i<n;i++)
+a[i]=sc.nextInt();
+for(i=n-1;i>=o;i--)
+System.out.print(a[i]);
+}
+}

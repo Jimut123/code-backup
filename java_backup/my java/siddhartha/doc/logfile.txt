@@ -1,0 +1,27 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.5.0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.5
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+C:\Documents and Settings\AMLAN\My Documents\my java\siddhartha\doc
+-classpath
+C:\BlueJ\lib\bluejcore.jar;C:\BlueJ\lib\junit.jar;C:\Documents and Settings\AMLAN\My Documents\my java\siddhartha
+C:\Documents and Settings\AMLAN\My Documents\my java\siddhartha\sum.java
+<---- end of javadoc command ---->
+Loading source file C:\Documents and Settings\AMLAN\My Documents\my java\siddhartha\sum.java...
+C:\Documents and Settings\AMLAN\My Documents\my java\siddhartha\sum.java:26: 'class' or 'interface' expected
+}
+^
+C:\Documents and Settings\AMLAN\My Documents\my java\siddhartha\sum.java:26: 'class' or 'interface' expected
+}
+ ^
+2 errors

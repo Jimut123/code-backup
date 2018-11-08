@@ -1,0 +1,17 @@
+
+
+ class dcs
+{
+    void main ()
+   { 
+    int a,b,c,s,avg;
+    a=10;
+    b=7;
+    c=9;
+    s=a+b+c;
+    avg=s/3;
+system.out.print(s+","+avg);
+}
+    
+}
+

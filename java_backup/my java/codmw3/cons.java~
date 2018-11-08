@@ -1,0 +1,64 @@
+import java.util.*;
+public class cons
+{
+    void main()
+    {
+       Scanner sc=new Scanner(System.in);
+       int a,b,c,d,cc,k,fl=0,g=0,m=0;
+       System.out.println("ENTER NUMBER");
+       a=sc.nextInt();
+       b=a;
+       c=a;
+       while(b>0)
+       {
+         m=m+1;
+         b=b/10;
+        }
+       b=a;
+       while(b>0)
+       {
+           d=b%10;
+           c=a;
+           b=b/10;
+           cc=m;
+           fl=0;
+           
+           while(c>0)
+           {
+               k=Math.abs(d-(c%10));
+               if(k==1)
+               {
+                   fl=1;
+                   cc=cc-1;
+                }
+                else if(k==0 && cc==m)
+                {
+                    continue;
+                    
+                }
+                else if(k==0 && cc!=m)
+                {
+                    fl=0;
+                    break;
+                }
+                m=m-1;
+                c=c/10;
+            }
+            if(fl!=1)
+            {
+                System.out.println("digits are not consecutive");
+            break;
+            }
+            
+        }
+        if(fl==1)
+        {
+            System.out.println("Digits are consecutive");
+        }
+    }
+}
+                   
+          
+       
+       
+    

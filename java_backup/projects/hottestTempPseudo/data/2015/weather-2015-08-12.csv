@@ -1,0 +1,26 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,69.1,66.9,93,29.90,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-08-12 04:51:00
+1:26 AM,69.8,66.2,88,29.92,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-08-12 05:26:00
+1:51 AM,68.0,66.0,93,29.91,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-08-12 05:51:00
+2:51 AM,68.0,66.9,96,29.90,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-08-12 06:51:00
+3:51 AM,68.0,66.9,96,29.90,9.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-08-12 07:51:00
+4:51 AM,68.0,66.0,93,29.90,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2015-08-12 08:51:00
+5:51 AM,69.1,66.0,90,29.90,10.0,NNE,3.5,-,N/A,,Partly Cloudy,20,2015-08-12 09:51:00
+6:51 AM,69.1,66.0,90,29.92,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-08-12 10:51:00
+7:51 AM,71.1,66.0,84,29.94,10.0,NNE,3.5,-,N/A,,Partly Cloudy,20,2015-08-12 11:51:00
+8:51 AM,73.9,66.0,76,29.96,10.0,North,4.6,-,N/A,,Partly Cloudy,10,2015-08-12 12:51:00
+9:51 AM,77.0,66.9,71,29.97,10.0,Variable,4.6,-,N/A,,Clear,0,2015-08-12 13:51:00
+10:51 AM,80.1,64.9,60,29.99,10.0,Variable,6.9,-,N/A,,Scattered Clouds,0,2015-08-12 14:51:00
+11:51 AM,82.0,60.1,47,29.99,10.0,North,8.1,-,N/A,,Scattered Clouds,350,2015-08-12 15:51:00
+12:51 PM,84.0,61.0,46,29.98,10.0,NNE,6.9,-,N/A,,Scattered Clouds,20,2015-08-12 16:51:00
+1:51 PM,84.9,59.0,41,29.97,10.0,NE,9.2,-,N/A,,Scattered Clouds,50,2015-08-12 17:51:00
+2:51 PM,86.0,59.0,40,29.96,10.0,NNE,6.9,-,N/A,,Scattered Clouds,30,2015-08-12 18:51:00
+3:51 PM,86.0,55.9,36,29.95,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2015-08-12 19:51:00
+4:51 PM,86.0,59.0,40,29.95,10.0,NNW,4.6,-,N/A,,Scattered Clouds,330,2015-08-12 20:51:00
+5:51 PM,86.0,59.0,40,29.95,10.0,North,4.6,-,N/A,,Scattered Clouds,10,2015-08-12 21:51:00
+6:51 PM,84.0,61.0,46,29.96,10.0,NNE,4.6,-,N/A,,Partly Cloudy,30,2015-08-12 22:51:00
+7:51 PM,79.0,62.1,56,29.97,10.0,NE,3.5,-,N/A,,Partly Cloudy,40,2015-08-12 23:51:00
+8:51 PM,73.0,63.0,71,29.98,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-08-13 00:51:00
+9:51 PM,71.1,63.0,75,30.00,10.0,Calm,Calm,-,N/A,,Clear,0,2015-08-13 01:51:00
+10:51 PM,68.0,63.0,84,30.01,10.0,Calm,Calm,-,N/A,,Clear,0,2015-08-13 02:51:00
+11:51 PM,68.0,64.0,87,30.01,10.0,Calm,Calm,-,N/A,,Clear,0,2015-08-13 03:51:00

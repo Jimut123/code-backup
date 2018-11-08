@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=k\ l
+comment0.target=java.lang.String\ add(java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=void\ main()
+comment2.params=a
+comment2.target=java.lang.String\ spaces(int)
+numComments=3

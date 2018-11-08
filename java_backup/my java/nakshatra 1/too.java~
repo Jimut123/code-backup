@@ -1,0 +1,9 @@
+class too
+{
+    public static void main(int p,int r,int t)
+    {
+        int S_I;
+        S_I=(p*r*t)/100;
+        System.out.print(S_I);
+    }
+}

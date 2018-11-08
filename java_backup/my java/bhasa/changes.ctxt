@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=x
+comment1.target=int\ even(int)
+comment2.params=x
+comment2.target=int\ odd(int)
+comment3.params=x
+comment3.target=int\ prime(int)
+numComments=4

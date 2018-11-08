@@ -1,0 +1,17 @@
+import java.io.*;
+class swap
+{
+    public static void main()throws IOException
+    {
+        int a,b,c;
+        InputStreamReader read = new InputStreamReader (System.in);
+        BufferedReader br = new BufferedReader (read);
+        a=Integer.parseInt(br.readLine());
+        b=Integer.parseInt(br.readLine());
+        c=a;
+        a=b;
+        b=c;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}

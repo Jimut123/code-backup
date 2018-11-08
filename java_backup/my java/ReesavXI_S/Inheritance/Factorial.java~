@@ -1,0 +1,14 @@
+package Inheritance;
+import java.util.*;
+class Factorial
+{
+    int cal()
+    {
+        int f=1;
+        while(n>0)
+        {
+            f=f*(n--);
+        }
+        return f;
+    }
+}

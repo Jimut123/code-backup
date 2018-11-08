@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,46.0,34.0,63,30.19,10.0,Calm,Calm,-,N/A,,Overcast,0,2013-10-25 04:51:00
+1:51 AM,46.0,33.1,61,30.20,10.0,NNE,3.5,-,N/A,,Overcast,20,2013-10-25 05:51:00
+2:51 AM,45.0,33.1,63,30.21,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-25 06:51:00
+3:51 AM,45.0,33.1,63,30.23,10.0,North,4.6,-,N/A,,Mostly Cloudy,10,2013-10-25 07:51:00
+4:51 AM,44.1,30.9,60,30.24,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-25 08:51:00
+5:51 AM,43.0,30.9,62,30.25,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-10-25 09:51:00
+6:51 AM,41.0,30.9,67,30.27,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-10-25 10:51:00
+7:51 AM,39.0,30.9,73,30.30,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-10-25 11:51:00
+8:51 AM,42.1,32.0,67,30.31,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2013-10-25 12:51:00
+9:51 AM,46.9,30.0,52,30.33,10.0,Variable,6.9,-,N/A,,Partly Cloudy,0,2013-10-25 13:51:00
+10:51 AM,48.9,27.0,43,30.32,10.0,North,9.2,-,N/A,,Partly Cloudy,360,2013-10-25 14:51:00
+11:51 AM,51.1,28.0,41,30.32,10.0,NNW,8.1,-,N/A,,Partly Cloudy,340,2013-10-25 15:51:00
+12:51 PM,53.1,28.0,38,30.32,10.0,WNW,9.2,-,N/A,,Partly Cloudy,300,2013-10-25 16:51:00
+1:51 PM,53.1,27.0,37,30.30,10.0,NNW,9.2,16.1,N/A,,Scattered Clouds,330,2013-10-25 17:51:00
+2:51 PM,53.1,26.1,35,30.30,10.0,WNW,9.2,-,N/A,,Scattered Clouds,290,2013-10-25 18:51:00
+3:51 PM,55.0,25.0,31,30.29,10.0,Variable,5.8,-,N/A,,Scattered Clouds,0,2013-10-25 19:51:00
+4:51 PM,54.0,25.0,33,30.30,10.0,North,6.9,-,N/A,,Partly Cloudy,350,2013-10-25 20:51:00
+5:51 PM,52.0,24.1,34,30.31,10.0,NNW,5.8,-,N/A,,Partly Cloudy,330,2013-10-25 21:51:00
+6:51 PM,48.9,26.1,41,30.32,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-25 22:51:00
+7:51 PM,43.0,30.9,62,30.33,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-25 23:51:00
+8:51 PM,39.9,30.9,70,30.34,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-26 00:51:00
+9:51 PM,39.0,32.0,76,30.35,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-26 01:51:00
+10:51 PM,37.0,30.9,79,30.37,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-26 02:51:00
+11:51 PM,35.1,28.9,78,30.38,10.0,Calm,Calm,-,N/A,,Clear,0,2013-10-26 03:51:00

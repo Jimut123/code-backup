@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=object_bin_add()
+comment1.params=
+comment1.target=void\ accept()
+comment2.params=a1\ b1
+comment2.target=object_bin_add\ addition(object_bin_add,\ object_bin_add)
+comment3.params=
+comment3.target=void\ disp()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

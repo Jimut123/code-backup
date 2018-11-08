@@ -1,0 +1,25 @@
+import java.util.*;
+class buzz
+{
+    public static void main(String rgs[])
+    {
+        Scanner Sc=new Scanner(System.in);
+        int n,k;
+        System.out.println("Enter any no.");
+        n=Sc.nextInt();
+        while(n>0)
+        {
+            k=n%10;
+            n=n/10;
+        }
+            if(n%7==0||n/0==7)
+            {
+                System.out.println(n+"Buzz no.");
+            }
+            else if(n%7==1||n%0==1)
+            {
+                System.out.println(n+"not a buzz no.");
+        }
+    }
+}
+

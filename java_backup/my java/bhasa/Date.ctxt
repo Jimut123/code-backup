@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=d\ y
+comment1.target=void\ output(int,\ int)
+comment2.params=d\ m\ y
+comment2.target=void\ write(int,\ int,\ int)
+comment3.params=y
+comment3.target=int\ leap(int)
+comment4.params=m
+comment4.target=java.lang.String\ month(int)
+numComments=5

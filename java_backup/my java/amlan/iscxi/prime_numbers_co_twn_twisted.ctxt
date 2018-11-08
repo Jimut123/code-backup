@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=n
+comment1.target=int\ isprime(int)
+comment2.params=n
+comment2.target=int\ reverse(int)
+numComments=3

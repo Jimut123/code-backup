@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=day
+comment1.target=void\ daycheck(long)
+comment2.params=month
+comment2.target=void\ monthcheck(long)
+comment3.params=year
+comment3.target=void\ yearcheck(long)
+numComments=4

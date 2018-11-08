@@ -1,0 +1,56 @@
+#include<iostream>
+#include<math.h>
+#define MAX 6
+#define ACC 1000000
+typedef float (* fFunction) (float x);
+
+using namespace std;
+
+float f1 (float x){
+    return pow (x,2) -3;
+}
+
+float fd1 (float x){
+    return 2*x;
+}
+
+float f2 (float x){
+    return pow (x,3) - 6 * pow (x,2) + 11 * x - 6;
+}
+
+float fd2 (float x){
+    return 3 * pow(x,2) - 12 * x + 11;
+}
+
+class NWTN_RAP{
+    fFunction f, fd;
+    float root(float x);
+    public:
+    void allroot(fFunction, fFunction);
+};
+
+float NWTN_RAP::root(float x){
+    while (int(f(x) * ACC))
+        x -= f(x)/fd(x);
+    return x;
+}
+
+void NWTN_RAP::allroot(fFunction f, fFunction fd){
+        NWTN_RAP::f = f;
+        NWTN_RAP::fd = fd;
+        int n = 1;
+        for(float a=-50, b; a<50; a+=0.1){
+                b = a + 0.1;
+                if( f(a) * f(b) < 0 )
+                    cout<<"Root"<<n++<<"= "<<root((a+b)/2)<<endl;
+        }
+}
+
+int main(){
+    NWTN_RAP nr;
+    cout<<"roots of 1st eqn: \n";
+    nr.allroot(f1,fd1);
+    cout<<"roots of 2st eqn: \n";
+    nr.allroot(f2,fd2);
+    return 0;
+}

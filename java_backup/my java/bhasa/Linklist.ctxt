@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Linklist()
+comment1.params=d
+comment1.target=void\ addAtBeg(int)
+comment2.params=d
+comment2.target=void\ addAtEnd(int)
+comment3.params=
+comment3.target=void\ display()
+comment4.params=
+comment4.target=int\ countNode()
+comment5.params=d\ nodeNo
+comment5.target=void\ addAtMid(int,\ int)
+comment6.params=no
+comment6.target=void\ search(int)
+comment7.params=no
+comment7.target=void\ deleNode(int)
+numComments=8

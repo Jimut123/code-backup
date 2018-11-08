@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=stk_q_fle()
+comment1.params=
+comment1.target=void\ push()
+comment2.params=
+comment2.target=void\ pop()
+comment3.params=
+comment3.target=void\ disp()
+comment4.params=
+comment4.target=void\ insert()
+comment5.params=
+comment5.target=void\ del()
+comment6.params=
+comment6.target=void\ display()
+comment7.params=
+comment7.target=void\ check()
+comment8.params=
+comment8.target=void\ fle_disp()
+numComments=9

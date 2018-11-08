@@ -1,0 +1,47 @@
+import java.io.*;
+class saddle
+{
+   public static void main(String arg[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int r,c,i,j;
+        System.out.println("Enter the number of rows and columns");
+        r=Integer.parseInt(br.readLine());
+        c=Integer.parseInt(br.readLine());
+        int a[][]=new int[r][c];
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+                a[i][j]=Integer.parseInt(br.readLine());
+            }
+            System.out.println();
+        }
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+                System.out.print(a[i][j]);
+            }
+            System.out.println();
+        }
+        int max=1,min=100;
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+                if(a[j][i]>max)
+                max=a[j][i];
+                if(a[r-1][j]<min)
+                min=a[r-1][j];
+            }
+            if(max==min)
+            {
+            System.out.println("Saddle point is in the point"+i+" ");
+            System.out.println();
+            }
+            max=1;
+            min=100;
+        }
+    }
+}

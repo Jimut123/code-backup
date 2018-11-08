@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=j
+comment1.target=int\ check(int)
+comment2.params=i
+comment2.target=int\ primecheck(int)
+numComments=3

@@ -1,0 +1,40 @@
+import java.io.*;
+class check extends number
+{int x;
+    int m,i,s=0;int s1;int f1=0;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    void Input1()throws IOException
+    {super.Input();
+        x=super.n;
+      super.Input();
+        m=super.n; 
+        Integercheckno();
+    }
+    void Integercheckno()
+    {
+        
+        for(i=1;i<x;i++)
+        {if(x%i==0)
+            {s=s+i;
+                ;
+            }
+        }
+        for(i=1;i<m;i++)
+        {
+            if(m%i==0)
+            {f1=f1+i;
+            }
+        }
+    }
+    void display1()
+    {//
+       
+        
+//super.display();
+                if(s==m&&f1==x)
+        {
+            System.out.println("AMICABLE NO");
+           
+        }
+    }
+}

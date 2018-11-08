@@ -1,0 +1,57 @@
+ import java.io.*;
+class c
+{     
+public static void main()throws IOException    
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter the no.of rows and columns");
+int m=Integer.parseInt(br.readLine());
+int n=Integer.parseInt(br.readLine());
+int ar[][]=new int[m][n];
+int i,j,k,temp;
+//creation of the first matrix
+for(i=0;i<m;i++)
+{
+for(j=0;j<n;j++)
+{
+    System.out.println("Enter the elements for the matrix");
+    ar[i][j]=Integer.parseInt(br.readLine());
+}
+}
+System.out.println(" The Original matrix");
+System.out.println();
+System.out.println();
+for(i=0;i<m;i++)
+{
+for(j=0;j<n;j++)
+{
+    System.out.print(ar[i][j]);
+}
+System.out.println();
+}
+//to create the mirror image of the matix
+int mid=n/2;
+for(i=0;i<m;i++)
+{
+    k=n-1;
+    for(j=0;j<mid;j++)
+    {
+        temp=ar[i][j];
+        ar[i][j]=ar[i][k];
+        ar[i][k]=temp;
+        k=k-1;
+    }
+}
+System.out.println();
+System.out.println();
+System.out.println("The mirror matrix is");
+for(i=0;i<m;i++)
+{
+for(j=0;j<n;j++)
+{
+    System.out.print(ar[i][j]+"\t");
+}
+System.out.println();
+}
+}
+}

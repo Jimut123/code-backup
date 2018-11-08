@@ -1,0 +1,24 @@
+
+abstract class Reverse extends Number
+{
+    int n;int s;int n1;
+    void Input()
+    {
+        n=0;
+    }
+    void cal()
+    {
+        int a;
+        while(n>0)
+        {
+            a=n%10;
+            s=(s*10)+a;
+            n=n/10;
+        }
+        n1=n;
+    }
+    void display()
+    {
+        System.out.println("REVERSE NO."+n1);
+    }
+}

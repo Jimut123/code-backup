@@ -1,0 +1,37 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,75.0,71.1,87,30.06,10.0,South,5.8,-,N/A,,Mostly Cloudy,180,2015-06-18 04:51:00
+1:51 AM,75.0,72.0,90,30.06,10.0,South,4.6,-,N/A,,Mostly Cloudy,180,2015-06-18 05:51:00
+2:34 AM,75.2,73.4,94,30.09,10.0,NE,4.6,-,N/A,,Mostly Cloudy,40,2015-06-18 06:34:00
+2:51 AM,75.0,73.0,94,30.07,10.0,NE,6.9,-,N/A,,Mostly Cloudy,50,2015-06-18 06:51:00
+3:51 AM,73.0,70.0,90,30.08,10.0,ENE,6.9,-,N/A,,Mostly Cloudy,70,2015-06-18 07:51:00
+4:30 AM,73.4,69.8,88,30.09,10.0,Calm,Calm,-,N/A,Thunderstorm,Thunderstorm,0,2015-06-18 08:30:00
+4:51 AM,73.9,70.0,87,30.08,10.0,Calm,Calm,-,N/A,Thunderstorm,Thunderstorm,0,2015-06-18 08:51:00
+5:06 AM,73.4,69.8,88,30.12,10.0,Variable,6.9,24.2,0.00,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2015-06-18 09:06:00
+5:09 AM,73.4,69.8,88,30.09,1.0,East,8.1,24.2,0.01,Rain-Thunderstorm,Heavy Thunderstorms and Rain,100,2015-06-18 09:09:00
+5:19 AM,73.4,69.8,88,30.08,8.0,Variable,3.5,-,0.18,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2015-06-18 09:19:00
+5:51 AM,72.0,70.0,93,30.06,10.0,Calm,Calm,-,0.18,,Mostly Cloudy,0,2015-06-18 09:51:00
+6:51 AM,73.0,71.1,93,30.06,10.0,SSW,3.5,-,N/A,,Mostly Cloudy,200,2015-06-18 10:51:00
+7:51 AM,75.0,72.0,90,30.07,10.0,SW,3.5,-,N/A,,Mostly Cloudy,220,2015-06-18 11:51:00
+8:51 AM,78.1,73.0,84,30.07,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-06-18 12:51:00
+9:51 AM,82.9,73.0,72,30.07,10.0,SSW,4.6,-,N/A,,Mostly Cloudy,200,2015-06-18 13:51:00
+10:51 AM,87.1,73.9,65,30.07,10.0,WSW,9.2,-,N/A,,Mostly Cloudy,240,2015-06-18 14:51:00
+11:51 AM,90.0,73.9,59,30.06,10.0,WSW,3.5,-,N/A,,Scattered Clouds,240,2015-06-18 15:51:00
+12:51 PM,91.0,73.0,55,30.05,10.0,SSW,4.6,-,N/A,,Scattered Clouds,200,2015-06-18 16:51:00
+1:51 PM,93.9,71.1,47,30.04,10.0,WNW,8.1,-,N/A,,Scattered Clouds,290,2015-06-18 17:51:00
+2:51 PM,96.1,71.1,44,30.01,10.0,NNE,4.6,-,N/A,,Scattered Clouds,20,2015-06-18 18:51:00
+3:51 PM,97.0,69.1,40,29.98,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2015-06-18 19:51:00
+4:51 PM,96.8,68.0,39,29.97,10.0,West,4.6,-,N/A,,Mostly Cloudy,280,2015-06-18 20:51:00
+5:51 PM,93.0,71.1,49,29.94,10.0,SSE,6.9,-,N/A,,Mostly Cloudy,150,2015-06-18 21:51:00
+6:51 PM,91.9,72.0,52,29.95,10.0,SSE,3.5,-,N/A,,Mostly Cloudy,160,2015-06-18 22:51:00
+7:42 PM,91.4,73.4,55,29.98,10.0,SSW,9.2,-,N/A,Thunderstorm,Thunderstorm,200,2015-06-18 23:42:00
+7:51 PM,91.0,72.0,53,29.96,10.0,South,10.4,-,N/A,Thunderstorm,Thunderstorm,190,2015-06-18 23:51:00
+8:51 PM,79.0,71.1,77,29.98,10.0,East,16.1,25.3,0.00,Thunderstorm,Thunderstorm,90,2015-06-19 00:51:00
+9:13 PM,75.2,71.6,89,30.05,1.0,North,9.2,-,0.00,Rain-Thunderstorm,Heavy Thunderstorms and Rain,10,2015-06-19 01:13:00
+9:24 PM,71.6,69.8,94,30.07,1.0,NNE,10.4,24.2,0.83,Rain-Thunderstorm,Heavy Thunderstorms and Rain,30,2015-06-19 01:24:00
+9:51 PM,73.9,72.0,93,30.10,1.0,South,5.8,-,1.56,Rain-Thunderstorm,Thunderstorms and Rain,180,2015-06-19 01:51:00
+10:00 PM,73.4,71.6,94,30.12,3.0,SSW,4.6,-,0.01,Rain-Thunderstorm,Thunderstorms and Rain,210,2015-06-19 02:00:00
+10:25 PM,73.4,71.6,94,30.12,1.0,SSW,4.6,-,0.18,Rain-Thunderstorm,Heavy Thunderstorms and Rain,210,2015-06-19 02:25:00
+10:51 PM,73.0,71.1,93,30.09,2.0,East,9.2,-,0.30,Rain-Thunderstorm,Thunderstorms and Rain,80,2015-06-19 02:51:00
+11:01 PM,73.4,71.6,94,30.10,2.0,East,6.9,-,0.02,Rain-Thunderstorm,Light Thunderstorms and Rain,80,2015-06-19 03:01:00
+11:05 PM,73.4,71.6,94,30.10,9.0,East,9.2,-,0.02,Rain-Thunderstorm,Light Thunderstorms and Rain,80,2015-06-19 03:05:00
+11:51 PM,73.9,71.1,91,30.08,10.0,ESE,6.9,-,0.02,,Overcast,120,2015-06-19 03:51:00

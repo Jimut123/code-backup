@@ -1,0 +1,36 @@
+import java.io.*;
+class ssum
+{
+    int m;double s;int p;String w;
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    ssum(int i,int j)
+    {
+        m=i+j;
+        System.out.print(m);
+    }
+    ssum(double a,double b)
+    {
+        s=a+b;
+        System.out.print(s);
+    }
+    ssum(char c,char d)
+    {
+        p=c+d;
+        System.out.print(p);
+    }
+    ssum(String f,String k)
+    {
+        w=f+k;
+        System.out.print(w);
+    }
+    public static void main(String args[])throws IOException
+    {
+        int m,n;double p,q;char d,k;String b,c;
+        ssum a=new ssum(m,n);
+        ssum a1=new ssum(p,q);
+        ssum a2=new ssum(d,k);
+        ssum a3=new ssum(b,c);
+        
+    }
+}
+        

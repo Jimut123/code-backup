@@ -1,0 +1,115 @@
+import java.io.*;
+public class stack extends queue
+{
+    String arr[];
+    int top,size;
+    public stack(int x)
+    {
+        size=x;
+        top=-1;
+        arr=new int[size];
+    }
+    public boolean isEmpty()
+    {
+        if(top==-1)
+            return true;
+        return false;
+    }
+    public boolean isFull()
+    {
+        if(top>=size)
+            return true;
+        return false;
+    }
+    public void push(int n)
+    {
+        if(isFull()==false)
+            arr[++top]=n;
+        else
+            System.out.println("Stack is full!");
+    }
+    public String pop()
+    {
+        String data;
+        if(isEmpty()==false)
+            data=arr[top--];
+        else
+            data="////";
+        return data;
+    }
+    public void display()
+    {
+        int i=0;
+        if(isEmpty()==true)
+            System.out.println("Stack is empty!");
+        else
+        {
+            for(i=0;i<=top;i++)
+            {
+                System.out.println(arr[i]+"    ");
+            }
+        }
+    }
+    public void main()throws IOException
+    {
+        queue ob=new queue(size);
+        String n,m;
+        BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("To input a book in stack press................1");
+        System.out.println("To delete a book from stack press.............2");
+        System.out.println("To display the stack press....................3");
+        System.out.println("To input a book in queue press................4");
+        System.out.println("To delete a book from queue press.............5");
+        System.out.println("To display the queue press....................6");
+        System.out.println("To exit the program press.....................7");
+        System.out.println("Enter your choice:");
+        c=Integer.parseInt(in.readLine());
+        while(x!=1)
+        {
+            switch(c)
+            {
+                case 1:
+                    System.out.println("Enter a number:");
+                    n=in.readLine();
+                    push(n);
+                    break;
+                case 2:
+                    n=pop();
+                    if(n.equals("////"))
+                        System.out.println("Stack is empty");
+                    else
+                        System.out.println(n+" is popped");
+                    break;
+                case 3:
+                    if(isEmpty()==true)
+                        System.out.println("Stack is empty");
+                    else
+                        display();
+                    break;
+                case 4:
+                    System.out.println("Enter a number:");
+                    m=in.readLine();
+                    ob.enQ(n);
+                    break;
+                case 5:
+                    n=ob.deQ();
+                    if(m.compareTo("////"))
+                        System.out.println("Queue is empty");
+                    else
+                        System.out.println(n+" is dequeued");
+                    break;
+                case 6:
+                    if(isEmpty()==true)
+                        System.out.println("Queue is empty");
+                    else
+                        ob.display();
+                    break;
+                case 7:
+                    x=1;
+                    break;
+                default:
+                    System.out.println("Sorry,wrong input");
+                }
+            }
+    }
+}

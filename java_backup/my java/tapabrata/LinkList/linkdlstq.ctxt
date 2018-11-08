@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=linkdlstq()
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment2.params=d1
+comment2.target=void\ Insert(int)
+comment3.params=
+comment3.target=linkq\ delete()
+comment4.params=
+comment4.target=void\ display()
+numComments=5

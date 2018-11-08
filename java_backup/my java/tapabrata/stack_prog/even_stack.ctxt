@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=even_stack()
+comment1.params=e
+comment1.target=int\ even(int)
+comment2.params=
+comment2.target=void\ push()
+comment3.params=
+comment3.target=void\ pop()
+comment4.params=
+comment4.target=void\ disp()
+comment5.params=
+comment5.target=void\ menu()
+numComments=6

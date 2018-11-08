@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=m\ n
+comment0.target=product_rec(int,\ int)
+comment1.params=
+comment1.target=void\ calc()
+comment2.params=d\ e
+comment2.target=int\ prod(int,\ int)
+numComments=3

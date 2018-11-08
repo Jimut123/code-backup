@@ -1,0 +1,39 @@
+
+import java.io.*;
+class patern
+{
+    public static void main(String arg[])throws IOException
+    {
+         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+         System.out.println("Enter the size");
+         int n=Integer.parseInt(br.readLine());
+         int i,c=0,j,k;
+         for(i=1;i<=n;i++)
+         {
+             c++;
+             if(c==1||c==n)
+             {
+                 if(c==1)
+                 for(j=1;j<=n;j++)
+                 {
+                     System.out.print(j+" ");
+                 }
+                 if(c==n)
+                 {
+                      for(j=n;j>=1;j--)
+                 {
+                     System.out.print(j+" ");
+                 }
+                }
+             }
+             else
+             {
+                 System.out.print(i);
+                 for(k=2;k<=n;k++)
+                 System.out.print("   ");
+                 System.out.print(n-i+1);
+             }
+             System.out.println();
+            }
+        }
+    }

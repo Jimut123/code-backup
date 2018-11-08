@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=qu2()
+comment1.params=s
+comment1.target=qu2.que\ insert(qu2.que)
+comment2.params=s\ r
+comment2.target=qu2.que\ del(qu2.que,\ qu2.que)
+comment3.params=s\ r
+comment3.target=void\ display(qu2.que,\ qu2.que)
+comment4.params=
+comment4.target=void\ impl()
+numComments=5

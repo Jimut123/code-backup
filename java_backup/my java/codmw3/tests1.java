@@ -1,0 +1,74 @@
+import java.util.*;
+public class tests1
+{
+    Scanner sc=new Scanner(System.in);
+    class example
+    {
+        int a=0;
+        void input()
+        {
+            System.out.println("Enter number");
+            a=sc.nextInt();
+        }
+        void display()
+        {
+            System.out.println(+a);
+        }
+        example str;
+        example next;
+    }
+    example ob=new example();
+    example ob2=ob;
+    example mn;
+    void start()
+    {
+        String s="";
+        int ch,fl=0,c=0;
+        System.out.println("Enter 1 to enter element");
+        System.out.println("Enter 2 to delete element");
+        System.out.println("Enter 3 to stop");
+        mn=ob;
+        while(true)
+        {
+            System.out.println("Enter choice");
+            ch=sc.nextInt();
+            fl=0;
+            switch(ch)
+            {
+                case 1:
+                        ob2.input();
+                        mn=ob2;
+                        c++;
+                        break;
+                case 2:
+                        ob2=ob2.str;
+                        mn=ob2.str;
+                        break;
+                case 3: fl=1;
+                break;
+            }
+            if(fl==1)
+            {
+                break;
+            }
+           if(s.equals("N"))
+           {
+                break;
+           }
+                ob2.next=new example();
+                ob2=ob2.next;
+                ob2.str=mn;
+                System.out.println(+ob2.str.a);
+                mn=mn.next;
+    }
+    }
+    void display()
+    {
+        ob2=ob;
+        while(ob2.a!=0)
+        {
+            ob2.display();
+            ob2=ob2.next;
+        }
+    }
+}

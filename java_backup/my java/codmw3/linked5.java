@@ -1,0 +1,72 @@
+import java.util.*;
+public class linked5
+{
+    Scanner sc=new Scanner(System.in);
+    int c=0;
+    class str
+    {
+        String s;
+        void input()
+        {
+            System.out.println("Enter word");
+            s=sc.nextLine();
+        }
+        str nx;
+    }
+    str ob=new str();
+    str ob2=ob;
+    void start()
+    {
+        String ch=" ";
+        System.out.println("To stop press N");
+        while(ch.charAt(0)!='N')
+        {
+            ob2.input();
+            c++;
+            ob2.nx=new str();
+            ob2=ob2.nx;
+            System.out.println("Do you want to continue?");
+            ch=sc.nextLine();
+            if(ch.charAt(0)=='N')
+            {
+                ob2=null;
+            }
+        }
+        ob2=ob;
+    }
+    void sort()
+    {
+        int m=0,a;
+        String k;
+        for(a=1;a<=c;a++)
+        {
+            ob2=ob;
+            while(m!=c-1)
+            {
+                if(ob2.s.compareTo(ob2.nx.s)>0)
+                {
+                    k=ob2.s;
+                    ob2.s=k;
+                    ob2.nx.s=k;
+                }
+                m++;
+                ob2=ob2.nx;
+            }
+        }
+    }
+    void display()
+    {
+        ob2=ob;
+        while(ob2!=null)
+        {
+            System.out.println(ob2.s);
+            ob2=ob2.nx;
+        }
+
+    }
+}
+    
+                
+        
+    
+           

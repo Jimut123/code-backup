@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=l\ b
+comment0.target=void\ main(int,\ int)
+comment1.params=a\ arr
+comment1.target=void\ leftdiagonal(int,\ int[][])
+numComments=2

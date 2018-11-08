@@ -1,0 +1,37 @@
+import java.util.*;
+class permutation
+{
+    String s="";
+    permutation(String n)
+    {
+        s=n;
+    }
+    void input()
+    {
+        int i=0,k=0,j=0;
+        char ch=' ';
+        String z="";
+        
+        for(i=0;i<s.length();i++)
+        {
+            z=z+s.charAt(i);
+            while(z.length()<s.length())
+            {
+                for(j=(i+1);j<s.length();j++)
+                {
+                    for(k=0;k<z.length();k++)
+                    {
+                        if(s.charAt(j)!=z.charAt(k))
+                        {
+                            z=z+s.charAt(j);
+                            break;
+                        }
+                    }
+                }
+            }
+            System.out.print(z);
+            z="";
+            System.out.println();
+        }
+    }
+}

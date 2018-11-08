@@ -1,0 +1,23 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,46.4,42.8,87,30.16,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-22 04:51:00
+1:51 AM,45.0,42.1,90,30.16,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-22 05:51:00
+2:51 AM,42.8,41.0,93,30.16,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-22 06:51:00
+3:51 AM,44.1,41.0,89,30.16,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-22 07:51:00
+4:51 AM,43.0,41.0,93,30.17,7.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-22 08:51:00
+5:51 AM,44.1,41.0,89,30.19,10.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-22 09:51:00
+7:51 AM,44.1,42.1,93,30.22,10.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-10-22 11:51:00
+9:51 AM,55.9,46.9,72,30.25,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 13:51:00
+10:51 AM,60.8,46.4,59,30.24,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 14:51:00
+11:51 AM,66.0,45.0,47,30.23,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 15:51:00
+12:51 PM,70.0,43.0,38,30.21,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2012-10-22 16:51:00
+1:51 PM,72.0,45.0,38,30.19,10.0,Variable,5.8,-,N/A,,Partly Cloudy,0,2012-10-22 17:51:00
+2:51 PM,73.0,45.0,37,30.17,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 18:51:00
+3:51 PM,73.9,45.0,35,30.15,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 19:51:00
+4:51 PM,73.0,45.0,37,30.15,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 20:51:00
+5:51 PM,69.8,48.2,46,30.15,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 21:51:00
+6:51 PM,62.1,51.1,67,30.16,10.0,ESE,3.5,-,N/A,,Partly Cloudy,110,2012-10-22 22:51:00
+7:51 PM,59.0,50.0,72,30.17,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-10-22 23:51:00
+8:51 PM,57.0,50.0,77,30.17,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-23 00:51:00
+9:51 PM,54.0,48.9,83,30.18,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-23 01:51:00
+10:51 PM,53.6,48.2,82,30.19,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-23 02:51:00
+11:51 PM,51.8,48.2,88,30.18,10.0,Calm,Calm,-,N/A,,Clear,0,2012-10-23 03:51:00

@@ -1,0 +1,45 @@
+String firstnameField;
+String lastnameField;
+String nameField;
+
+public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
+{
+    // First, get a row from the default input hop
+    //
+    Object[] r = getRow();
+
+    // If the row object is null, we are done processing.
+    //
+    if (r == null) {
+      setOutputDone();
+      return false;
+    }
+
+    // Let's look up parameters only once for performance reason.
+    //
+    if (first) {
+      firstnameField = getParameter("FIRSTNAME_FIELD");
+      lastnameField = getParameter("LASTNAME_FIELD");
+      nameField = getParameter("NAME_FIELD");
+      first=false;
+    }
+
+    // It is always safest to call createOutputRow() to ensure that your output row's Object[] is large
+    // enough to handle any new fields you are creating in this step.
+    //
+    Object[] outputRow = createOutputRow(r, data.outputRowMeta.size());
+
+    String firstname = get(Fields.In, firstnameField).getString(r);
+    String lastname = get(Fields.In, lastnameField).getString(r);
+
+    // Set the value in the output field
+    //
+    String name = firstname+" "+lastname;
+    get(Fields.Out, nameField).setValue(outputRow, name);
+
+    // putRow will send the row on to the default output hop.
+    //
+    putRow(data.outputRowMeta, outputRow);
+
+    return true;
+}

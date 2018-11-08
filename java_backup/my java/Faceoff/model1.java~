@@ -1,0 +1,21 @@
+import java.io.*;
+class model1
+{
+    public static void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int i,j;
+        int n=Integer.parseInt(br.readLine());
+        for(i=1;i<n;i++)
+        {
+            for(j=1;j<i;j++)
+            {
+                if(i>=1&&j%2==0)
+                System.out.print("#");
+                else
+                System.out.print("*");
+            }//End of j
+            System.out.println(" ");
+        }//End of i
+    }//End of main()
+}//End of class

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=num_new(int)
+comment1.params=
+comment1.target=void\ clac()
+comment2.params=i
+comment2.target=boolean\ prime(int)
+numComments=3

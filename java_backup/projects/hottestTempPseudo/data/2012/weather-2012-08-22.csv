@@ -1,0 +1,32 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,71.1,66.9,87,30.07,9.0,East,4.6,-,N/A,,Mostly Cloudy,100,2012-08-22 04:51:00
+1:51 AM,71.1,66.9,87,30.06,8.0,ESE,5.8,-,N/A,,Mostly Cloudy,120,2012-08-22 05:51:00
+2:51 AM,69.1,66.9,93,30.06,5.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-22 06:51:00
+3:51 AM,69.1,66.9,93,30.05,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-22 07:51:00
+4:51 AM,69.1,66.9,93,30.06,7.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-22 08:51:00
+5:51 AM,69.1,66.9,93,30.05,6.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-22 09:51:00
+6:43 AM,69.8,68.0,94,30.08,2.0,NE,5.8,-,N/A,,Mostly Cloudy,50,2012-08-22 10:43:00
+6:48 AM,69.8,68.0,94,30.09,1.5,NE,4.6,-,N/A,,Mostly Cloudy,50,2012-08-22 10:48:00
+6:51 AM,69.1,68.0,96,30.07,1.5,NE,4.6,-,N/A,,Mostly Cloudy,50,2012-08-22 10:51:00
+7:51 AM,71.1,69.1,93,30.09,1.5,NE,4.6,-,N/A,,Overcast,50,2012-08-22 11:51:00
+8:44 AM,73.4,69.8,88,30.12,2.5,Calm,Calm,-,N/A,,Overcast,0,2012-08-22 12:44:00
+8:51 AM,73.0,69.1,87,30.11,2.5,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-22 12:51:00
+9:40 AM,73.4,69.8,88,30.12,8.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-22 13:40:00
+9:51 AM,73.4,69.8,88,30.13,8.0,NE,4.6,-,N/A,,Mostly Cloudy,50,2012-08-22 13:51:00
+10:22 AM,75.2,71.6,89,30.14,10.0,North,3.5,-,N/A,,Mostly Cloudy,10,2012-08-22 14:22:00
+10:51 AM,75.9,69.1,79,30.12,10.0,NE,6.9,-,N/A,,Mostly Cloudy,50,2012-08-22 14:51:00
+11:51 AM,77.0,69.1,76,30.12,10.0,NNE,8.1,-,N/A,,Mostly Cloudy,30,2012-08-22 15:51:00
+12:51 PM,79.0,69.1,72,30.11,10.0,NE,10.4,-,N/A,,Mostly Cloudy,40,2012-08-22 16:51:00
+1:51 PM,79.0,69.1,72,30.10,10.0,NNE,6.9,-,N/A,,Mostly Cloudy,20,2012-08-22 17:51:00
+2:35 PM,75.2,68.0,78,30.12,10.0,NNE,3.5,-,0.00,Rain-Thunderstorm,Light Thunderstorms and Rain,20,2012-08-22 18:35:00
+2:51 PM,75.0,70.0,84,30.11,10.0,Calm,Calm,-,0.02,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2012-08-22 18:51:00
+3:07 PM,73.4,71.6,94,30.11,6.0,Calm,Calm,-,0.02,Rain,Light Rain,0,2012-08-22 19:07:00
+3:51 PM,75.0,71.1,87,30.09,6.0,NE,3.5,-,0.11,Rain,Light Rain,50,2012-08-22 19:51:00
+4:51 PM,77.0,70.0,79,30.07,10.0,ENE,3.5,-,0.00,,Overcast,70,2012-08-22 20:51:00
+5:51 PM,75.2,71.6,89,30.08,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-22 21:51:00
+6:51 PM,75.2,69.8,83,30.08,10.0,NNE,3.5,-,N/A,,Mostly Cloudy,30,2012-08-22 22:51:00
+7:51 PM,73.9,70.0,87,30.08,10.0,NE,3.5,-,N/A,,Mostly Cloudy,40,2012-08-22 23:51:00
+8:51 PM,73.0,70.0,90,30.10,10.0,NE,3.5,-,N/A,,Mostly Cloudy,40,2012-08-23 00:51:00
+9:51 PM,72.0,69.1,91,30.10,6.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-08-23 01:51:00
+10:51 PM,73.4,68.0,83,30.12,10.0,ESE,6.9,-,N/A,,Mostly Cloudy,110,2012-08-23 02:51:00
+11:51 PM,71.6,68.0,88,30.13,10.0,ESE,3.5,-,N/A,,Mostly Cloudy,120,2012-08-23 03:51:00

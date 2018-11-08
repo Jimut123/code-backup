@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=armstrong_fle()
+comment1.params=
+comment1.target=void\ push()
+comment2.params=
+comment2.target=void\ pop()
+comment3.params=
+comment3.target=void\ disp()
+comment4.params=
+comment4.target=void\ check()
+comment5.params=
+comment5.target=void\ fle_disp()
+numComments=6

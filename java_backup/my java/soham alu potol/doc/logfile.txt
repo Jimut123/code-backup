@@ -1,0 +1,192 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.5.0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.5
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+C:\Documents and Settings\admin\Desktop\soham alu potol\doc
+-classpath
+F:\BlueJJJJJJJJJJ\lib\bluejcore.jar;F:\BlueJJJJJJJJJJ\lib\junit.jar;C:\Documents and Settings\admin\Desktop\soham alu potol
+C:\Documents and Settings\admin\Desktop\soham alu potol\program2.java
+<---- end of javadoc command ---->
+Loading source file C:\Documents and Settings\admin\Desktop\soham alu potol\program2.java...
+Constructing Javadoc information...
+Standard Doclet version 1.5.0
+Building tree for all the packages and classes...
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\program2.html...
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+ ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+  ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+   ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+    ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+       ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+        ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+         ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+          ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:1: illegal character: \35
+#####**#####
+           ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+ ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+  ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+   ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+        ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+         ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+          ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:2: illegal character: \35
+####****####
+           ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:3: illegal character: \35
+###******###
+^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:3: illegal character: \35
+###******###
+ ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:3: illegal character: \35
+###******###
+  ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:3: illegal character: \35
+###******###
+         ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:3: illegal character: \35
+###******###
+          ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:3: illegal character: \35
+###******###
+           ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:4: illegal character: \35
+##********##
+^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:4: illegal character: \35
+##********##
+ ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:4: illegal character: \35
+##********##
+          ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:4: illegal character: \35
+##********##
+           ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:5: illegal character: \35
+###******###
+^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:5: illegal character: \35
+###******###
+ ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:5: illegal character: \35
+###******###
+  ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:5: illegal character: \35
+###******###
+         ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:5: illegal character: \35
+###******###
+          ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:5: illegal character: \35
+###******###
+           ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+ ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+  ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+   ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+        ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+         ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+          ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:6: illegal character: \35
+####****####
+           ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+ ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+  ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+   ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+    ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+       ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+        ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+         ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+          ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:7: illegal character: \35
+#####**#####
+           ^
+C:\Documents and Settings\admin\Desktop\soham alu potol\sd.java:8: 'class' or 'interface' expected
+^
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\package-frame.html...
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\package-summary.html...
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\allclasses-frame.html...
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\allclasses-noframe.html...
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\index.html...
+Generating C:\Documents and Settings\admin\Desktop\soham alu potol\doc\stylesheet.css...
+53 errors

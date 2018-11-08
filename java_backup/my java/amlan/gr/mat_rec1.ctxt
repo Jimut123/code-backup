@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=mat_rec1()
+comment1.params=a\ i\ m
+comment1.target=void\ entry(int[][],\ int,\ int)
+comment2.params=a\ i\ j\ n
+comment2.target=void\ entry1(int[][],\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ disp()
+comment4.params=a\ i\ j\ s\ n
+comment4.target=void\ col_sum(int[][],\ int,\ int,\ int,\ int)
+comment5.params=a\ i\ j\ s1\ n
+comment5.target=void\ row_sum(int[][],\ int,\ int,\ int,\ int)
+numComments=6

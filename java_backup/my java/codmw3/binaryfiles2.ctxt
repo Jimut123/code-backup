@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=binaryfiles2()
+comment1.params=c
+comment1.target=int\ check(int)
+comment2.params=g
+comment2.target=void\ enter(int)
+comment3.params=
+comment3.target=void\ main()
+numComments=4

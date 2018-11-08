@@ -1,0 +1,6 @@
+package Inheritance;
+import java.util.*;
+interface Extra
+{
+    public void insert();
+}

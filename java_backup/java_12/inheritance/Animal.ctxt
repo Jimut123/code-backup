@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n\ s
+comment0.target=void\ init(java.lang.String,\ java.lang.String)
+comment1.params=fooditem
+comment1.target=void\ eat(java.lang.String)
+comment2.params=
+comment2.target=void\ sound()
+numComments=3

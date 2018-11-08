@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n\ d
+comment0.target=Fraction(int,\ int)
+comment1.params=b
+comment1.target=Fraction\ add(Fraction)
+comment2.params=
+comment2.target=java.lang.String\ display()
+numComments=3

@@ -1,0 +1,59 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.6.0_23\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;E:\My Documents\my java\anudhyan
+-d
+E:\My Documents\my java\anudhyan\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+E:\My Documents\my java\anudhyan\hcf.java
+<---- end of javadoc command ---->
+Loading source file E:\My Documents\my java\anudhyan\hcf.java...
+E:\My Documents\my java\anudhyan\hcf.java:11: illegal start of expression
+            void calc(int a,int b)
+            ^
+E:\My Documents\my java\anudhyan\hcf.java:11: ';' expected
+            void calc(int a,int b)
+                     ^
+E:\My Documents\my java\anudhyan\hcf.java:11: <identifier> expected
+            void calc(int a,int b)
+                            ^
+E:\My Documents\my java\anudhyan\hcf.java:11: not a statement
+            void calc(int a,int b)
+                                ^
+E:\My Documents\my java\anudhyan\hcf.java:11: ';' expected
+            void calc(int a,int b)
+                                 ^
+E:\My Documents\my java\anudhyan\hcf.java:20: illegal start of expression
+                void main(int x,int y)
+                ^
+E:\My Documents\my java\anudhyan\hcf.java:20: ';' expected
+                void main(int x,int y)
+                         ^
+E:\My Documents\my java\anudhyan\hcf.java:20: <identifier> expected
+                void main(int x,int y)
+                                ^
+E:\My Documents\my java\anudhyan\hcf.java:20: not a statement
+                void main(int x,int y)
+                                    ^
+E:\My Documents\my java\anudhyan\hcf.java:20: ';' expected
+                void main(int x,int y)
+                                     ^
+10 errors

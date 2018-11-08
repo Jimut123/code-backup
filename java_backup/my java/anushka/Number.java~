@@ -1,0 +1,4 @@
+abstract class Number
+{
+     abstract void cal();
+}

@@ -1,0 +1,11 @@
+import java.util.*;
+public class vow
+{
+public void a()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("input a sentence");
+String w=sc.nextLine();
+System.out.println("great");
+}
+}

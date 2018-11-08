@@ -1,0 +1,32 @@
+import java.io.*;
+class happy
+{
+    void gen()
+    {
+        int x=0;
+        for(int i=0;i<1000;i++)
+        {
+            x=happy(i);
+            if(x==1)
+            System.out.println("Happy number "+i);
+        }
+    }
+    int happy(int i)
+    {
+        if(i/10==0)
+        return i;
+        else
+        {
+            int sum=0;
+            int a=0;
+            while(i>0)
+            {
+                a=i%10;
+                sum=sum+(a*a);
+                i=i/10;
+            }
+            i=sum;
+            return happy(i);
+        }
+    }
+}

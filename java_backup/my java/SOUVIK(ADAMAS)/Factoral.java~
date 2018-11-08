@@ -1,0 +1,21 @@
+class Factoral
+{
+int r;
+int f;
+int n;
+int i;
+void input (int a)
+{
+n=a;
+f=1;
+for(i=1;i<=n;i++)
+f=f*i;
+System.out.println (f);
+}
+public static void main (String args [])
+{
+Factoral K=new Factoral();
+K.input (5);
+K.check();
+}
+}

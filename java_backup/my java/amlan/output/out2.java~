@@ -1,0 +1,16 @@
+package output;
+
+class out2
+{
+   public static void main(String agrs[])
+   {
+       int k=5;
+       int s;
+       s=++k%--k/++k;
+       System.out.println(s);
+       s=++k%--k;
+       System.out.println(s+","+k);
+       s=--k%++k;
+       System.out.println(s+","+k);
+    }
+}

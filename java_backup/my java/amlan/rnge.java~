@@ -1,0 +1,10 @@
+class rnge
+{
+public static void main(int n)
+{
+int i;
+keith k=new keith();
+for(i=100;i<=n;i++)
+k.calc(i);
+}
+}

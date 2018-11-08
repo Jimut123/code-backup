@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=void\ get()
+comment1.target=void\ calc()
+comment2.params=year
+comment2.target=boolean\ leap(int)
+numComments=3

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=number
+comment0.target=void\ convert(int)
+comment1.params=ch
+comment1.target=java.lang.String\ word(int)
+numComments=2

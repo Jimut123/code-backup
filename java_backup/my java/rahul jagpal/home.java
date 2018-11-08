@@ -1,0 +1,23 @@
+class home
+{
+    public static void main(int sales)
+    {
+        int com;
+        com=0;
+        if(sales<=100000)
+        com=(sales*10)/100;
+        else
+        if(sales<=250000)
+        com=(sales*15)/100;
+        if(sales<=500000)
+        com=(sales*20)/100;
+        else
+        if(sales<=1000000)
+        com=(sales*25000)/100+35000;
+        else
+        if(sales>=1000000)
+        com=(sales*30)/100+45000+25000;
+        System.out.print(com);
+    }
+}
+        

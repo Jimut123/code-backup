@@ -1,0 +1,79 @@
+import java.io.*;
+public class print
+{
+    public static void main(String args[]) throws IOException
+    {
+         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+         print abc = new print();
+         for(int i = 20;i>=1;i--)
+         {
+             System.out.println(i+" SECONDS REMAINING");
+             for(long i1 = 1;i1<=2000000000;i1++)
+             {}
+             for(long i1 = 1;i1<=2000000000;i1++)
+             {}
+             System.out.print("\f");
+         }
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println("                                               **       **    ********   **         ******     *****     ***    ***   *******                     **********     ******   ");
+         System.out.println("                                               **       **    **         **        ***        **   **    ** *  * **   **                              **        **    **   ");
+         System.out.println("                                               **   *   **    ******     **        **        **     **   **  **  **   ******                          **       **      **");
+         System.out.println("                                               ** ** ** **    **         **        ***        **   **    **      **   **                              **        **    **");
+         System.out.println("                                                **     **     ********   ********   ******     *****     **      **   *******                         **         ******");
+         abc.delay();
+         abc.delay();
+         abc.delay();
+         System.out.print("\f");
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println();
+         System.out.println("                                                                                      ***    *****            ********               *******     ");
+         System.out.println("                                                                                      ***   ***               ***   ****          ***            ");
+         System.out.println("                                                                                      ***  **                 ***   ****          ***            ");
+         System.out.println("                                                                                      ******                  *******             ***            ");
+         System.out.println("                                                                                      ***  **                 ***   ****          ***            ");
+         System.out.println("                                                                                      ***   ***        ***    ***   ****    ***    ***           ");
+         System.out.println("                                                                                      ***    *****     ***    ********      ***      *******     ");
+         abc.delay();
+         abc.delay();
+         abc.delay();
+         System.out.print("\f");
+    }   
+    public void delay()
+    {
+         for(long i1 = 1;i1<=2000000000;i1++)
+         {}
+    }
+}     

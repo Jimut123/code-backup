@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ input()
+comment2.params=m
+comment2.target=void\ generate(int)
+comment3.params=k
+comment3.target=int\ digcount(int)
+comment4.params=k
+comment4.target=int\ rev(int)
+comment5.params=k
+comment5.target=void\ prn(int)
+numComments=6

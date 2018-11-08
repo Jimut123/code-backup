@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=x
+comment1.target=void\ timecheck(int)
+comment2.params=x
+comment2.target=void\ hourcheck(int)
+numComments=3

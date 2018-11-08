@@ -1,0 +1,57 @@
+import java.io.*;
+class Date_diff2
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    int mm,dd,yyyy;
+    void input()throws IOException
+    {
+        System.out.println("Enter the month");
+        mm=Integer.parseInt(br.readLine());
+        System.out.println("Enter the date");
+        dd=Integer.parseInt(br.readLine());
+        System.out.println("Enter the year");
+        yyyy=Integer.parseInt(br.readLine());
+    }
+    void diff(Date_diff2 a,Date_diff2 b)
+    {
+        Date_diff2 c=new Date_diff2();
+        //System.out.println("a"+a.yyyy);
+        //System.out.println("b"+b.yyyy);
+        c.yyyy=b.yyyy-a.yyyy;
+        //System.out.println("c"+c.yyyy);
+        if(b.mm<a.mm)
+        {
+           b.mm=b.mm+12;
+           c.mm=b.mm-a.mm;
+           c.yyyy=c.yyyy-1;
+        }
+        else
+        {
+            c.mm=b.mm-a.mm;
+        }
+         if(b.dd<a.dd)
+        {
+           b.dd=b.dd+30;
+           c.dd=b.dd-a.dd;
+           c.mm=c.mm-1;
+        }
+        else
+        {
+            c.dd=b.dd-a.dd;
+        }
+        System.out.print(c.dd+"/"+c.mm+"/"+c.yyyy);
+        System.out.println("Year diff"+c.yyyy);
+        System.out.println("Month diff"+c.mm);
+        System.out.println("Day diff"+c.dd);
+    }
+    public static void main()throws IOException
+    {
+     BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+     Date_diff2 ob=new Date_diff2();
+     ob.input();
+     Date_diff2 ob1=new Date_diff2();
+     ob1.input();
+     //Date_diff ob2=new Date_diff();
+     ob.diff(ob,ob1);
+    }
+}

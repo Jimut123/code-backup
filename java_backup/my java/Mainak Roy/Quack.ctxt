@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=k
+comment0.target=void\ push(int)
+comment1.params=
+comment1.target=void\ insert()
+comment2.params=k
+comment2.target=void\ insert2(int)
+comment3.params=
+comment3.target=void\ del()
+comment4.params=
+comment4.target=void\ restore()
+comment5.params=
+comment5.target=void\ display()
+comment6.params=
+comment6.target=void\ impl()
+numComments=7

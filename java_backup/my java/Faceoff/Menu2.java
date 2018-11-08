@@ -1,0 +1,37 @@
+import java.io.*;
+class Menu2
+{
+    public static void main()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int n=Integer.parseInt(br.readLine());
+        System.out.println("1 For factors");
+        System.out.println("2 For factorial");
+        System.out.println("Enter choice");
+        int ch=Integer.parseInt(br.readLine());
+        
+        switch(ch)
+        {
+            case 1:for(int i=1;i<n;i++)
+                   {
+                       if(n%i==0)
+                       System.out.println(i+",");
+                   }
+                   break;
+                   
+            case 2:int fact=1;
+                   for(int j=1;j<=n;j++)
+                   {
+                       fact=(fact*j);
+                       System.out.println(fact);
+                   }//End of for
+                   break;
+                   
+            default:System.out.println("Wrong Choice");
+                    break;
+        }//End of switch()
+    }//End of main()
+}//End of class
+ 
+                       
+            

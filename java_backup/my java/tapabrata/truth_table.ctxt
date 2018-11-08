@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=truth_table()
+comment1.params=n
+comment1.target=void\ decToBin(int)
+comment2.params=a\ b
+comment2.target=int\ AND(int,\ int)
+comment3.params=a\ b
+comment3.target=int\ OR(int,\ int)
+comment4.params=args
+comment4.target=void\ main([Ljava.lang.String;)
+numComments=5

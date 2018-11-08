@@ -1,0 +1,14 @@
+class cat
+{
+    public static void main(int n)
+    {
+        int i;
+        i=5;
+        while(i<=n)
+        {
+            System.out.println(i);
+            i=(i*10)+5;
+            i++;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+import java.io.*;
+public class file_2
+{
+    int ar[],lt=0;
+    void input()throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int a,d,ch;
+        System.out.println("Enter limit");
+        a=Integer.parseInt(br.readLine());
+        System.out.println("TO stop press N");
+        System.out.println("To enter element press 1");
+        System.out.println("to delete element press 2");
+        String k="Y";
+        while(k!="N")
+        {
+            System.out.println("Do you want to enter element");
+            k=(br.readLine());
+            if(k=="N")
+            {
+                break;
+            }
+            System.out.println("Enter choice");
+            ch=Integer.parseInt(br.readLine());
+            switch(ch)
+            {
+                case 1:
+                System.out.println("Enter data");
+                d=Integer.parseInt(br.readLine());
+                push(d);
+                break;
+                case 2: pop();
+                break;
+                default:
+            }
+        }
+    }
+    void push(int m)throws IOException
+    {
+      ar[lt]=m;
+      lt++;
+    }
+    void pop()throws IOException
+    {
+        FileOutputStream fout=new FileOutputStream("store.txt",true);
+        DataOutputStream dout=new DataOutputStream(fout);
+        dout.write(ar[lt]);
+        lt--;
+        dout.close();
+        fout.close();
+    }
+    void prime()throws IOException
+    {
+        FileOutputStream fout=new FileOutputStream("prime.txt",true);
+        DataOutputStream dout=new DataOutputStream(fout);
+        FileInputStream fin=new FileInputStream("store.txt");
+        DataInputStream din=new DataInputStream(fin);
+        int fl,m,k;
+        boolean eof=false;
+        while(!eof)
+        {
+            fl=0;
+            
+            try
+            {
+            k=Integer.parseInt(din.readLine());
+            for(m=2;m<k/2;m++)
+            {
+                if(k%m==0)
+                 {
+                     fl=1;
+                     break;
+                 }
+            }
+            if(fl!=0)
+            {
+                dout.write(k);
+            }
+        }catch(EOFException e)
+        {
+            eof=true;
+        }
+      }
+     din.close();
+     fin.close();
+     dout.close();
+     fout.close();
+     FileInputStream lm=new FileInputStream("prime.txt");
+     DataInputStream ln=new DataInputStream(fin);
+    
+     eof=false;
+        while(!eof)
+     { 
+         try
+        {
+        k=(int)(ln.read());
+        System.out.println(+k);
+      }catch(EOFException e){ eof=true;}
+     }
+        ln.close();
+        lm.close();
+    }
+    void main()throws IOException
+    {
+        input();
+        prime();
+    }
+}

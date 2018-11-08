@@ -1,0 +1,85 @@
+import java.io.*;
+public class carlot
+{
+    int a[],b;
+    void input()throws IOException
+    {
+        BufferedReader sc=new BufferedReader(new InputStreamReader(System.in));
+        int c=0;String ch="";
+        System.out.println("Enter the limit");
+        b=Integer.parseInt(sc.readLine());
+        a=new int[b];
+        while(ch!="N")
+        {
+           // System.out.println("Do you want to enter data");
+            //ch=sc.readLine(); 
+            if(/*ch=="N" ||*/ c==b)
+            {
+                break;
+            }
+            System.out.println("Enter Data");
+            a[c]=Integer.parseInt(sc.readLine());
+            c++;
+            if(ch=="N" || c==b)
+            {
+                break;
+            }
+        }
+        cal();
+    }
+    void cal()throws IOException
+    {
+        BufferedReader sc=new BufferedReader(new InputStreamReader(System.in));
+        int c,m,n,num,fl=0;
+        System.out.println("Enter number");
+        num=Integer.parseInt(sc.readLine());
+        int st[]=new int[b];
+        m=b-1;
+        int l=0;
+        while(a[m]!=num)
+        {
+            
+           m--;
+           if(m==0 && a[m]==num)
+        {
+            fl=1;
+            break;
+        }
+        }
+        if(fl==1)
+        {
+            System.out.println("car is not present");
+        }
+        else
+        {
+            System.out.println("Car is present");
+        }
+        n=0;
+        c=0;
+        while(n!=b)
+        {
+            if(a[n]==num)
+            {
+                n++;
+                continue;
+            }
+            st[c]=a[n];
+            c++;
+            n++;
+        }
+        System.out.println("The list of cars :");
+        for(c=0;c<b;c++)
+        {
+            System.out.println(+a[c]);
+        }
+    }
+}
+        
+        
+        
+    
+        
+        
+        
+        
+        

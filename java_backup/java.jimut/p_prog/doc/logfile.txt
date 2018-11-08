@@ -1,0 +1,48 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.6.0_23\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.6
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\doc
+-classpath
+E:\BlueJ\lib\bluejcore.jar;E:\BlueJ\lib\junit.jar;C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java...
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:6: ';' expected
+Input Stream Reader d=new d InputStreamReader(System.in)
+            ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:6: '(' or '[' expected
+Input Stream Reader d=new d InputStreamReader(System.in)
+                            ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:7: '.class' expected
+int a=3,b=4,c=5;
+    ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:6: not a statement
+Input Stream Reader d=new d InputStreamReader(System.in)
+                                             ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:7: illegal start of expression
+int a=3,b=4,c=5;
+     ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:7: ';' expected
+int a=3,b=4,c=5;
+      ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:7: illegal start of expression
+int a=3,b=4,c=5;
+       ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:8: not a statement
+System.out,print("Enter a side:");
+      ^
+C:\Users\Prantik\Documents\PRACTICAL EXAM PRACTICE\threesidesoftriangleareaschool.java:8: ';' expected
+System.out,print("Enter a side:");
+          ^
+9 errors

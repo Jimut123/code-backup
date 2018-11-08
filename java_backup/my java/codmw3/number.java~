@@ -1,0 +1,37 @@
+import java.util.*;
+public class number
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b,c,d,h,e;
+        String g="";
+        
+        System.out.println("Enter number");
+        a=sc.nextInt();
+        b=a;
+        c=0;
+        while(b>0)
+        {
+            b=b/10;
+            c++;
+        }
+        if(c%2==0)
+        {
+            d= (int)(a/Math.pow(10,c/2));
+            e=(int)(a%Math.pow(10,c/2));
+            g=g+e+d;
+        }
+        else 
+        {
+            d=(int)(a/Math.pow(10,c/2));
+            e=(int)(a%Math.pow(10,c/2));
+            h=d%10;
+            d=d/10;
+            g=e+h+d;
+        }
+        System.out.println("The answer is "+g);
+    }
+}
+       
+        

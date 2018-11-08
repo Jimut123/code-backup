@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=class\ FindRoots
+comment1.params=
+comment1.target=void\ getData()
+comment2.params=
+comment2.target=void\ show()
+comment3.params=a\ b\ c\ s
+comment3.target=void\ findRoots(int,int,int,double)
+comment4.params=a\ b\ c
+comment4.target=void\ showNature(int,int,int)
+comment5.target=x2
+comment6.target=x1
+comment7.target=class\ MainFindRoots
+comment8.params=args
+comment8.target=void\ main(String[])
+numComments=9

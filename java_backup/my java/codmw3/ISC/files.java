@@ -1,0 +1,142 @@
+package ISC;
+
+import java.io.*;
+public class files
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    void input()throws IOException
+    {
+        
+        try
+        {
+           FileWriter fr=new FileWriter("phone.txt",true);
+        BufferedWriter bw=new BufferedWriter(fr);
+        PrintWriter pr=new PrintWriter(bw);
+        boolean te=true;
+        String ch,ch1;
+            while(te)
+            {
+                System.out.println("Do you want to continue?Y/N?");
+                ch=br.readLine();
+                if(ch.equals("N"))
+                {
+                    break;
+                }
+                System.out.println("Enter Data");
+                ch1=br.readLine();
+                pr.println(ch1);
+            }
+            te=false;
+            pr.close();
+            bw.close();
+            fr.close();
+        }
+        catch(EOFException e)
+        {
+            
+        }
+       
+    }
+    void read()throws IOException
+    {
+        
+        
+        try
+        {
+            FileReader fd=new FileReader("phone.txt");
+        BufferedReader bd=new BufferedReader(fd);
+        String s;
+            while((s=bd.readLine())!=null)
+            {
+                System.out.println(s);
+            }
+            bd.close();
+        fd.close();
+        }
+        catch(EOFException e)
+        {
+            
+        }
+        
+    }
+     void search()throws IOException
+     {
+       String na,w="",s; 
+       int a,n;
+        System.out.println("Enter name: ");
+        na=br.readLine();
+        FileReader fd=new FileReader("phone.txt");
+        BufferedReader bd=new BufferedReader(fd);
+        
+        try
+        {
+            
+        while((s=bd.readLine())!=null)
+        {
+            
+            for(a=0;a<s.length();a++)
+            {
+                if(s.charAt(a)==' ')
+                {
+                    break;
+                }
+                w=w+s.charAt(a);
+            }
+            if(w.equals(na))
+            {
+                w="";
+                for(n=a+1;n<s.length();n++)
+                {
+                    w=w+s.charAt(n);
+                }
+                System.out.println(" "+w);
+                
+            }
+        }
+      }
+      catch(EOFException e)
+      {
+        
+      }
+    }
+    void main()throws IOException
+    {
+        int fl,ch;
+        System.out.println("Press 1 to enter data");
+        System.out.println("Press 2 to display list");
+        System.out.println("Press 3 to search for number");
+        System.out.println("Press 4 to exit");
+        try
+        {
+        while(true)
+        {
+            fl=0;
+            System.out.println("Enter choice");
+            ch=Integer.parseInt(br.readLine());
+            switch(ch)
+            {
+                case 1:
+                input();
+                break;
+                case 2:
+                read();
+                break;
+                case 3:
+                search();
+                break;
+                case 4:
+                fl=1;
+                break;
+            }
+            if(fl==1)
+            {
+                break;
+            }
+        }
+      }
+      catch(IOException e)
+      {}
+   }
+}
+
+

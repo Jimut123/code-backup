@@ -1,0 +1,29 @@
+import java.io.*;
+class Screwyouarray {
+    public static void main(int n){
+        int a[]=new int[n];
+        int t=0,c=1,k=(n-1)/2;
+        for (int i=0;i<a.length-1;i++)
+        {
+           for (int j=1;j<a.length;j++)
+           {   if (a[i]>a[j]){
+               t=a[i];
+               a[i]=a[j];
+               a[j]=t;
+            }
+        }
+    }
+    int j=0,i=0;
+    for(i=0,j=0;i<a.length;i++)
+    {  j=j*(-1);
+        k=k+j;
+        j=j*2;
+        a[k]=a[i];
+        c++;
+        if (c%2==0)
+        j++; 
+    }
+}
+}
+
+   

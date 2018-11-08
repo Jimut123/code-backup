@@ -1,0 +1,82 @@
+import java.io.*;
+import java.util.StringTokenizer;
+class wordFrequency
+{
+ public static void main(String args[]) throws IOException
+ {
+     BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+     int n=0;
+       int freq[]=new int[100];
+     String str,sent,temp="";
+     char ch;int y=0;int h=0;
+     String w[]=new String[100];
+     System.out.println("Enter The Number Of Sentences");
+     int N=Integer.parseInt(br.readLine());
+     if(N<1 || N>=4)
+     {
+         System.out.println("Invalid Entry");
+     }
+     else
+     {
+         System.out.println("Enter The  Sentences");
+         sent=br.readLine();
+         str=sent.toUpperCase();
+         StringTokenizer na=new StringTokenizer(str,".?");
+         int c=na.countTokens();
+         int Freq[]=new int[c];
+         String wrd[]=new String[c];
+         for(int i=1;i<=c;i++)
+         {
+             w[y]=na.nextToken();
+             y++;
+         }
+         for(int i=0;i<y;i++)
+         {
+             h=0;int d=0;
+             for(int x=0;x<i;x++)
+             {
+                 if(w[i].compareTo(w[x])==0)
+                 h=1;
+             }
+             if(h==0)
+             {
+                 for(int j=i;j<y;j++)
+                 {
+                     if(w[i].compareTo(w[j])==0)
+                     {
+                         d++;
+                     }
+                 }
+                 wrd[n]=w[i];
+                 freq[n]=d;
+                 n++;
+             }
+         }
+         for(int i=0;i<n-1;i++)
+         {
+             for(int j=i+1;j<n;j++)
+             {
+                 if(freq[i]>freq[j])
+                 {
+                     int u=freq[i];
+                     freq[i]=freq[j];
+                     freq[j]=u;
+                     String k=wrd[i];
+                     wrd[i]=wrd[j];
+                     wrd[j]=k;
+                 }
+             }
+         }
+         System.out.println("OUTPUT :\t Total Number Of Words:"+c);
+         System.out.println("Word"+'\t'+'\t'+"Frequency");
+         for(int i=0;i<n;i++)
+         {
+             System.out.println(wrd[i]+'\t'+'\t'+freq[i]);
+         }
+     }
+ }
+}
+             
+     
+     
+     

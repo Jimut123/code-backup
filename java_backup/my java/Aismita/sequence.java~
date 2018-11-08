@@ -1,0 +1,24 @@
+import java.io.*;
+class sequence
+{
+    public static void main(String s1)
+    {
+        String s=s1.toUpperCase()+" ";
+        int c=0; 
+        String w="";
+        for(int i=0;i<s.length();i++)
+        {  
+            //c=0;
+            if(s.charAt(i)==' ')
+            {
+                for(int k=0;k<w.length();k++)
+                if(w.charAt(k)==w.charAt(k+1))
+                c++;
+                w="";
+            }
+            else
+            w=w+s.charAt(i);
+        }
+        System.out.println(c);
+    }
+}

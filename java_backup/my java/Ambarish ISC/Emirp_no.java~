@@ -1,0 +1,50 @@
+import java.io.*;
+class Emirp_no
+{
+int n,r,f;
+BufferdReader br=new BufferedReader(new InputStreamReader(System.in));
+Emirp_no(int nn)
+{
+    n=nn;
+    rev=0;
+    f=2;
+}
+int isprime(int k)
+{
+   if(f<=k)
+   {
+       if(k%f!=0)
+       {
+           f++;
+           isprime(x);
+        }
+    }
+    if(f==k)
+    return 1;
+    else
+    return 0;
+}
+void isEmirp()
+{
+    int copy=n,d;
+    while(copy>0)
+    {
+        d=copy%10;
+        r=r*10+d;
+        copy=copy/10;
+    }
+    if(isPrime(n)==1&&isPrime(r)==1)
+    {
+        System.out.println(n+"Emirp No.");
+        else
+        System.out.println(n+"Not an Emirp No.");
+    }
+}
+public static void main()throws IOException
+{
+    System.out.print("Enter any number");
+    int n=Integer.parseInt(br.readLine());
+    Emirp ob=new Emirp(n);
+    ob.isEmirp();
+}
+}

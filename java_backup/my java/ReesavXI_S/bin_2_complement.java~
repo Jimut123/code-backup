@@ -1,0 +1,38 @@
+import java.util.*;
+class bin_2_complement
+{
+    int num;
+    bin_2_complement(int n)
+    {
+        num=n;
+    }
+    void cal()
+    {
+    double r2;
+    double a;
+    double m;
+    double s;
+    double b;
+    s=0;
+    r2=num;
+    int cr=0,i=0;
+    while(r2>0)
+{
+r2=r2/10;
+cr++;
+}
+for(i=0;i<=cr;i++)
+{
+a=num%10;
+m=a*(Math.pow(2,i));
+s=s+m;
+num=num/10;
+}
+s=s+1;
+while(s>0)
+{
+    b=s%2;
+    System.out.print(b);
+}
+}
+}

@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,42.1,37.0,82,30.39,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-09 05:51:00
+1:51 AM,39.9,36.0,86,30.37,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-09 06:51:00
+2:51 AM,37.9,36.0,93,30.40,8.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-09 07:51:00
+3:51 AM,37.9,36.0,93,30.40,8.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-09 08:51:00
+4:51 AM,37.9,35.1,89,30.39,9.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-09 09:51:00
+5:51 AM,37.0,35.1,93,30.40,8.0,Calm,Calm,-,N/A,,Clear,0,2013-01-09 10:51:00
+6:51 AM,36.0,34.0,93,30.41,8.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2013-01-09 11:51:00
+7:51 AM,36.0,34.0,93,30.43,9.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-09 12:51:00
+8:51 AM,42.1,37.9,85,30.44,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-09 13:51:00
+9:51 AM,52.0,41.0,66,30.44,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-09 14:51:00
+10:51 AM,57.0,43.0,59,30.45,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-09 15:51:00
+11:51 AM,60.1,45.0,57,30.43,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,250,2013-01-09 16:51:00
+12:51 PM,64.4,46.4,52,30.39,10.0,SW,6.9,-,N/A,,Scattered Clouds,230,2013-01-09 17:51:00
+1:51 PM,64.9,46.9,52,30.37,10.0,SW,9.2,-,N/A,,Mostly Cloudy,230,2013-01-09 18:51:00
+2:51 PM,66.2,46.4,49,30.36,10.0,WSW,10.4,-,N/A,,Mostly Cloudy,240,2013-01-09 19:51:00
+3:51 PM,64.0,46.9,54,30.38,10.0,SW,5.8,-,N/A,,Mostly Cloudy,230,2013-01-09 20:51:00
+4:51 PM,62.1,46.0,56,30.37,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-09 21:51:00
+5:51 PM,60.1,46.9,62,30.38,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-09 22:51:00
+6:51 PM,57.9,46.9,67,30.37,10.0,South,6.9,-,N/A,,Mostly Cloudy,190,2013-01-09 23:51:00
+7:51 PM,57.0,46.9,69,30.39,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-10 00:51:00
+8:51 PM,53.1,46.0,77,30.39,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-10 01:51:00
+9:51 PM,51.1,46.0,83,30.41,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2013-01-10 02:51:00
+10:51 PM,48.9,45.0,86,30.41,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-10 03:51:00
+11:51 PM,50.0,46.0,86,30.42,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2013-01-10 04:51:00

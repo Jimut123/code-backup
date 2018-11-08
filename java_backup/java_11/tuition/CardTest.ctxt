@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=layout
+comment0.target=java.awt.Panel\ create(java.awt.LayoutManager)
+comment1.params=actionListener
+comment1.target=CardPanel(java.awt.event.ActionListener)
+comment2.params=
+comment2.target=java.awt.Dimension\ getPreferredSize()
+comment3.params=
+comment3.target=CardTest()
+comment4.params=e
+comment4.target=void\ itemStateChanged(java.awt.event.ItemEvent)
+comment5.params=e
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment7.params=
+comment7.target=java.lang.String\ getAppletInfo()
+numComments=8

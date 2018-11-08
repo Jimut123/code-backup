@@ -1,0 +1,103 @@
+package link_list;
+import java.io.*;
+class linkdivide
+{
+    DataInputStream in=new DataInputStream(System.in);
+    list l1=new list();
+    list l2=new list();
+    list l=new list();
+    list l3=new list();
+    list l4=new list();
+    list l5=new list();
+    void input()throws IOException
+    {
+        int cr=0;
+        l1=l;
+        while(cr!=1)
+        {
+            l1.insert();
+            System.out.print("Enter 1 to exit ");
+            cr=Integer.parseInt(in.readLine());
+            l1.next=new list();
+            l1=l1.next;
+        }
+        l1.next=null;
+    }
+    void display()throws IOException
+    {
+        l1=l;
+        while(l1!=null)
+        {
+            l1.show();
+            l1=l1.next;
+        }
+    }
+    void divide()throws IOException
+    {
+        l1=l;
+        l2=l4;
+        l3=l5;
+        while(l1!=null)
+        {
+            if(prime(l1.k)==true)
+            {
+                l2.k=l1.k;
+                l2.next=new list();
+                l2=l2.next;
+                l1=l1.next;
+            }
+            else
+            {
+                l3.k=l1.k;
+                l3.next=new list();
+                l3=l3.next;
+                l1=l1.next;
+            }
+        }
+        l2.next=null;
+        l3.next=null;
+    }
+    void display2()throws IOException
+    {
+        l2=l4;
+        while(l2!=null)
+        {
+            l2.show();
+            l2=l2.next;
+        }
+    }
+    void display3()throws IOException
+    {
+        l3=l5;
+        while(l3!=null)
+        {
+            l3.show();
+            l3=l3.next;
+        }
+    }
+    boolean prime(int n)
+    {
+        int k=2;
+        while(n>k)
+        {
+            if(n%k==0)
+            return false;
+            k++;
+        }
+        return true;
+    }
+    void main()throws IOException
+    {
+        input();
+        System.out.println("Displaying whole list ");
+        display();
+        System.out.println();
+        divide();
+        System.out.println("Displaying prime list ");
+        display2();
+        System.out.println():
+        System.out.println("Displaying non-prime list ");
+        display3();
+    }
+}
+        

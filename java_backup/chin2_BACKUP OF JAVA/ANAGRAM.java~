@@ -1,0 +1,8 @@
+import java.io.*;
+public class ANAGRAM
+{
+    public static void main(String args[]) throws IOException
+    {
+        
+    }
+}

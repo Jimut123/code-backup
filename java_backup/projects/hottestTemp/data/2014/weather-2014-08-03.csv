@@ -1,0 +1,28 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,69.1,66.0,90,30.10,5.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 04:51:00
+2:51 AM,69.8,66.2,88,30.09,8.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 06:51:00
+3:51 AM,69.8,66.2,88,30.09,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 07:51:00
+4:51 AM,69.1,66.0,90,30.07,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 08:51:00
+5:51 AM,66.9,64.9,93,30.07,8.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-03 09:51:00
+6:10 AM,68.0,64.4,88,30.08,1.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-03 10:10:00
+6:21 AM,66.2,64.4,94,30.09,1.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 10:21:00
+6:36 AM,68.0,64.4,88,30.09,7.0,Variable,3.5,-,N/A,,Overcast,0,2014-08-03 10:36:00
+6:51 AM,68.0,64.9,90,30.08,8.0,NNW,3.5,-,N/A,,Mostly Cloudy,340,2014-08-03 10:51:00
+7:51 AM,68.0,64.9,90,30.10,8.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 11:51:00
+8:51 AM,68.0,64.9,90,30.12,8.0,North,3.5,-,N/A,,Overcast,360,2014-08-03 12:51:00
+8:57 AM,68.0,64.4,88,30.13,2.0,NNE,3.5,-,N/A,,Overcast,20,2014-08-03 12:57:00
+9:51 AM,68.0,64.0,87,30.13,2.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 13:51:00
+10:13 AM,68.0,64.4,88,30.14,8.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 14:13:00
+10:51 AM,69.8,64.4,83,30.15,8.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 14:51:00
+11:51 AM,70.0,66.0,87,30.14,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 15:51:00
+12:51 PM,72.0,66.0,81,30.11,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 16:51:00
+1:51 PM,73.0,66.0,79,30.10,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 17:51:00
+2:51 PM,75.0,66.0,73,30.07,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 18:51:00
+3:34 PM,77.0,66.2,69,30.07,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 19:34:00
+3:51 PM,78.8,66.2,65,30.06,10.0,North,3.5,-,N/A,,Overcast,360,2014-08-03 19:51:00
+4:51 PM,78.1,66.0,66,30.05,10.0,Calm,Calm,-,N/A,,Overcast,0,2014-08-03 20:51:00
+6:51 PM,75.9,68.0,76,30.07,10.0,SSE,8.1,-,N/A,,Mostly Cloudy,160,2014-08-03 22:51:00
+7:51 PM,75.0,68.0,79,30.06,10.0,SSE,5.8,-,N/A,,Mostly Cloudy,160,2014-08-03 23:51:00
+8:51 PM,73.0,68.0,84,30.08,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-04 00:51:00
+9:51 PM,70.0,66.9,90,30.09,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-08-04 01:51:00
+10:51 PM,69.8,66.2,88,30.09,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-08-04 02:51:00

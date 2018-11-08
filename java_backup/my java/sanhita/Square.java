@@ -1,0 +1,17 @@
+import java.util.*;
+class Square
+{
+    public static void main(String args[])
+    {
+        double a,s,sr;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        a=sc.nextDouble();
+        s=a*a;
+        System.out.println("square="+s);
+        sr=(int)Math.sqrt(a);
+        System.out.println("Square root="+sr);
+    }
+}
+
+            

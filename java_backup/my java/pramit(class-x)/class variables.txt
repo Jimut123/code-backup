@@ -1,0 +1,18 @@
+import java.io.*;
+class variables
+{
+public void identifier(int n){
+l=n;
+int i,x,s;
+x=1;
+}
+public void calculate(){
+for(i=1;i<=n;i++)
+c=c+(x*n);
+system.out.print(c);
+}
+public static void main(String args[]);
+variables jj=new variables();
+jj.identifier();
+jj.calculate();
+}

@@ -1,0 +1,23 @@
+import java.io.*;
+class discount
+{
+    public static void main () throws IOException
+    {
+        int purchase,discount;
+        BufferedReader br=new BufferedReader (new InputStreamReader (System.in));
+        System.out.println("Enter a number");
+        purchase=Integer.parseInt(br.readLine());
+        discount=0;
+        if (purchase<=10000)
+        discount=(10/100)*10000;
+        if (purchase<=15000)
+        discount=(15/100)*15000;
+        if (purchase<=25000)
+        discount=(10/100)*25000;
+        if (purchase>2500)
+        discount=(25/100)*2500;
+        System.out.println(discount);
+    }
+}
+
+        

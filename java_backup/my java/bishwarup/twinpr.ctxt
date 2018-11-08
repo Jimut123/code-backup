@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=void\ input()
+comment1.target=void\ twin_pr()
+comment2.params=v1
+comment2.target=int\ prime_check(int)
+numComments=3

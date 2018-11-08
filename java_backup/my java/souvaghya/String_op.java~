@@ -1,0 +1,131 @@
+ 
+
+import java.util.*;
+class String_op   
+{
+public static void main(int n)
+{
+Scanner ob=new Scanner (System.in);
+String s[]=new String [3];
+String os="",wd="",ns="";
+int i=0,j,k,w=0,f=0,mxf=0,m=0;
+if(n<0 || n>=4)
+{
+System.out.println("\nenter limit >=1 and <4 ....");
+System.exit(0);
+}
+System.out.println("\nenter the paragraph ::: ");
+os=ob.nextLine();
+for(j=0;j<os.length();j++)
+if(Character.isLowerCase(os.charAt(j))==true)
+if(os.charAt(j)!='.' || os.charAt(j)!='?' || os.charAt(j)!=' ')
+{
+System.out.println("\nenter the paragraph in  UPPER CASE !!!!!!!!!!!!!!! ");
+System.exit(0);
+}
+for(i=0;i<os.length();i++)
+if(os.charAt(i)=='.'||os.charAt(i)=='?')
+f++;
+if(f!=n)
+{
+System.out.println("\nenter "+n+" sentence(s) .....");
+System.exit(0);
+}
+for(i=0;i<n;i++)
+s[i]="";
+j=0;
+for(i=0;i<os.length();i++)
+{
+s[j]=s[j]+os.charAt(i);
+if(os.charAt(i)=='.' || os.charAt(i)=='?')
+{
+if(i<os.length()-1)
+if(os.charAt(i+1)==' ')
+continue;
+j++;
+}
+}
+System.out.println("\noriginal paragraph ::: ");
+for(i=0;i<j;i++)
+System.out.println(s[i]);
+for(i=0;i<j;i++)
+for(k=0;k<s[i].length();k++)
+if(s[i].charAt(k)==' ' || s[i].charAt(k)=='.' || s[i].charAt(k)=='?')
+{
+if(s[i].charAt(k-1)=='.' || s[i].charAt(k-1)=='?')
+wd="";
+else
+{
+w++;
+wd="";
+}
+}
+else
+wd+=s[i].charAt(k);
+System.out.println("\ntotal number of word(s) : "+w);
+for(i=0;i<j;i++)
+for(k=0;k<s[i].length();k++)
+if(s[i].charAt(k)==' ' || s[i].charAt(k)=='.' || s[i].charAt(k)=='?')
+{
+if(s[i].charAt(k-1)!='.' || s[i].charAt(k-1)!='?')
+{
+f=0;
+for(int p=0;p<j;p++)
+for(int q=0;q<s[p].length();q++)
+if(s[p].charAt(q)==' ' || s[p].charAt(q)=='.' || s[p].charAt(q)=='?')
+{
+if(s[p].charAt(q-1)=='.' || s[p].charAt(q-1)=='?')
+os="";
+else
+{
+if(wd.equalsIgnoreCase(os))         
+f++;
+os="";
+}
+}
+else
+os+=s[p].charAt(q);
+if(f>mxf)
+mxf=f;
+wd="";
+}
+else
+wd="";
+}
+else
+wd+=s[i].charAt(k);
+for(k=1;k<=mxf;k++)
+for(i=0;i<j;i++)
+for(m=0;m<s[i].length();m++)
+if(s[i].charAt(m)==' ' || s[i].charAt(m)=='.' || s[i].charAt(m)=='?')
+{
+if(s[i].charAt(m-1)!='.' || s[i].charAt(m-1)!='?')
+{
+f=0;
+for(int p=0;p<j;p++)
+for(int q=0;q<s[p].length();q++)
+if(s[p].charAt(q)==' ' || s[p].charAt(q)=='.' || s[p].charAt(q)=='?')
+{
+if(s[p].charAt(q-1)=='.' || s[p].charAt(q-1)=='?')
+os="";
+else
+{
+if(wd.equalsIgnoreCase(os))         
+f++;
+os="";
+}
+}
+else
+os+=s[p].charAt(q);
+if(f==k)
+ns=ns+wd+" ";
+wd="";
+}
+else
+wd="";
+}
+else
+wd+=s[i].charAt(m);
+System.out.println("\nparagraph with word(s) arranged in ascending order of its frequency ::: \n"+ns);
+}
+}

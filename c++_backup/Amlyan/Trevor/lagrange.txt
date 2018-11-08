@@ -1,0 +1,53 @@
+#include<iostream>
+#define MAX 10
+
+using namespace std;
+
+class lag_int{
+    int n;
+    float x[MAX], y[MAX];
+    public:
+    void inp ();
+    double slv (float xi);
+};
+
+void lag_int::inp(){
+    cout<<"How many x?: ";
+    cin>>n;
+    cout<<"x: ";
+    for (int i=0; i<n; i++)
+        cin>>x[i];
+    cout<<"f(x): ";
+    for (int i=0; i<n; i++)
+        cin>>y[i];
+}
+
+double lag_int::slv(float xi){
+    float wx = 1;
+    double ans = 0.0;
+    for (int i=0; i<n; i++)
+        wx *= (xi - x[i]);
+    for (int i=0; i<n; i++){
+        double t = wx * y[i] / (xi - x[i]);
+        for (int j=0; j<n; j++)
+            if (i != j)
+                t /= (x[i] - x[j]);
+        ans += t;
+    }
+    return ans;    
+}
+
+int main(){
+    lag_int li;
+    li.inp();
+    char ch;
+    float x;
+    do{
+        cout<<"x= ";
+        cin>>x;
+        cout<<"f("<<x<<")= "<<li.slv(x)<<endl;
+        cout<<"Again? (y/n)";
+        cin>>ch;
+    } while (ch == 'y' || ch == 'Y');
+    return 0;
+}

@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,57.9,55.9,93,29.72,10.0,West,3.5,-,N/A,,Partly Cloudy,260,2012-05-10 04:51:00
+1:51 AM,57.0,54.0,89,29.72,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-05-10 05:51:00
+2:51 AM,57.0,52.0,83,29.71,10.0,Calm,Calm,-,N/A,,Clear,0,2012-05-10 06:51:00
+3:51 AM,55.9,51.1,84,29.71,10.0,Calm,Calm,-,N/A,,Clear,0,2012-05-10 07:51:00
+4:51 AM,53.6,50.0,88,29.73,10.0,Calm,Calm,-,N/A,,Clear,0,2012-05-10 08:51:00
+5:51 AM,53.1,48.9,86,29.74,10.0,Calm,Calm,-,N/A,,Clear,0,2012-05-10 09:51:00
+6:51 AM,52.0,48.9,89,29.76,10.0,Calm,Calm,-,N/A,,Clear,0,2012-05-10 10:51:00
+7:51 AM,55.4,51.8,88,29.80,10.0,West,4.6,-,N/A,,Partly Cloudy,260,2012-05-10 11:51:00
+8:51 AM,61.0,51.1,70,29.81,10.0,WNW,6.9,-,N/A,,Partly Cloudy,290,2012-05-10 12:51:00
+9:51 AM,64.0,48.9,58,29.81,10.0,NW,9.2,17.3,N/A,,Partly Cloudy,310,2012-05-10 13:51:00
+10:51 AM,66.0,46.0,48,29.83,10.0,NNW,10.4,20.7,N/A,,Scattered Clouds,330,2012-05-10 14:51:00
+11:51 AM,68.0,45.0,43,29.83,10.0,North,9.2,17.3,N/A,,Scattered Clouds,350,2012-05-10 15:51:00
+12:51 PM,68.0,46.0,45,29.84,10.0,Variable,6.9,16.1,N/A,,Scattered Clouds,0,2012-05-10 16:51:00
+1:51 PM,69.1,46.9,45,29.84,10.0,WNW,9.2,-,N/A,,Scattered Clouds,300,2012-05-10 17:51:00
+2:51 PM,69.1,45.0,42,29.83,10.0,WNW,10.4,18.4,N/A,,Mostly Cloudy,290,2012-05-10 18:51:00
+3:51 PM,68.0,46.0,45,29.83,10.0,West,8.1,-,N/A,,Mostly Cloudy,280,2012-05-10 19:51:00
+4:51 PM,71.1,44.1,38,29.84,10.0,WNW,9.2,20.7,N/A,,Mostly Cloudy,290,2012-05-10 20:51:00
+5:51 PM,71.1,43.0,36,29.85,10.0,Variable,6.9,-,N/A,,Mostly Cloudy,0,2012-05-10 21:51:00
+6:51 PM,69.1,44.1,40,29.86,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-10 22:51:00
+7:51 PM,66.0,46.0,48,29.89,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-10 23:51:00
+8:51 PM,59.0,50.0,72,29.91,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-05-11 00:51:00
+9:51 PM,57.9,50.0,75,29.94,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-05-11 01:51:00
+10:51 PM,55.0,48.9,80,29.95,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-05-11 02:51:00
+11:51 PM,54.0,50.0,86,29.97,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2012-05-11 03:51:00

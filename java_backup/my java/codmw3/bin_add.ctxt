@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=bin_add()
+comment1.params=
+comment1.target=void\ input()
+comment2.params=k\ l
+comment2.target=bin_add\ add(bin_add,\ bin_add)
+comment3.params=
+comment3.target=void\ main()
+numComments=4

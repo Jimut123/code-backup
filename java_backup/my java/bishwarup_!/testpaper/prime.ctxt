@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=boolean\ isprime(int)
+comment1.params=n
+comment1.target=void\ twin_prime(int)
+numComments=2

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ Demo()
+comment0.text=\r\n\ Method\ Demo\r\n
+comment1.params=a\ b
+comment1.target=void\ SwapCallbyValue(int,\ int)
+comment1.text=\r\n\ Method\ SwapCallbyValue\r\n
+comment2.params=obj
+comment2.target=void\ SwapCallbyReference(Function)
+comment2.text=\r\n\ Method\ SwapCallbyReference\r\n
+numComments=3

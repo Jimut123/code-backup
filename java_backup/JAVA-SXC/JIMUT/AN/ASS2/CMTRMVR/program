@@ -1,0 +1,12 @@
+import java.io.*;
+// This is the program to be tested
+/*written by Jimut Bahan Pal */
+
+public static void main(String args[])throws IOException
+{
+print("/This is the line of ignorance");
+print("/* This line will be ignored too!!");
+This is the body and will not  be ignored!
+/***********
+More coments *****************/
+}

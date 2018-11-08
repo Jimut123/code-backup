@@ -1,0 +1,27 @@
+import java.io.*;
+class series11
+{
+    public static void main(String args[])throws IOException
+    {
+        InputStreamReader isr=new InputStreamReader(System.in);
+        BufferedReader br=new BufferedReader(isr);
+        int n,i,f,j,s,k,k1;
+        n=Integer.parseInt(br.readLine());
+        s=0;
+        j=1;
+        k1=1;
+        for(i=1;i<=n;i++);
+        {
+            f=1;
+            for(k=1;k<=j;k++);
+            {
+                f=f*k;
+            }
+            
+                s=s+((int)Math.pow(j,j)/f)*k1;
+                j=j+2;
+                k1=k1*-1;
+            }
+            System.out.println(s);
+        }
+    }

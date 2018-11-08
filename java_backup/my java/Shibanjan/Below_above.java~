@@ -1,0 +1,65 @@
+import java.util.*;
+class Below_above
+{ int n,a[][];
+  Scanner sc=new Scanner(System.in);
+  Below_above()
+  { n=0;
+  }
+  void input()
+  { 
+    System.out.println("\nEnter array size:");
+    n=sc.nextInt();
+    a=new int[n][n];
+    for(int i=0;i<n;i++)
+    { for(int j=0;j<n;j++)
+      { System.out.println("\nEnter array element:");
+        a[i][j]=sc.nextInt();
+      }
+    }    
+  }
+  void below(int x,int y)
+  { if(y==x)
+      return;
+    else
+      { System.out.print(a[x][y]+" ");
+        System.out.println("");
+        below(x,y+1);
+      }
+  }
+  void target1(int k,int p)
+  { if(k==p)
+      return;
+    else
+      { below(k,0);
+        target1(k+1,p);
+      }
+  }
+  void above(int x1,int y1,int l)
+  { if(y1==l)
+      return;
+    else
+      { System.out.print(a[x1][y1]+" ");
+        System.out.println("");
+        above(x1,y1+1,l);
+      }
+  }
+  void target2(int k1,int p1)
+  { if(k1==p1)
+      return;
+    else
+      { above(k1,k1+1,p1);
+        target2(k1+1,p1);
+      }
+  }
+  void disp()
+  { System.out.println("\nBelow left diagonal:");
+    target1(0,n);
+    System.out.println("\nAbove left diagonal:");
+    target2(0,n);
+  }
+  public static void main(String[]args)
+  { Below_above q=new Below_above();
+    q.input();
+    q.disp();
+  }
+}

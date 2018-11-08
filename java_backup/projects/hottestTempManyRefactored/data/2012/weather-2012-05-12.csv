@@ -1,0 +1,25 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,51.1,45.0,80,30.24,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-05-12 04:51:00
+1:51 AM,52.0,45.0,77,30.24,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 05:51:00
+2:51 AM,50.0,45.0,83,30.24,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 06:51:00
+3:51 AM,50.0,44.1,80,30.25,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 07:51:00
+4:51 AM,48.0,44.1,86,30.28,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 08:51:00
+5:51 AM,48.2,44.6,87,30.30,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 09:51:00
+6:51 AM,50.0,46.0,86,30.31,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 10:51:00
+7:51 AM,53.1,48.0,83,30.33,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 11:51:00
+8:51 AM,63.0,50.0,63,30.35,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-12 12:51:00
+9:51 AM,66.9,51.1,57,30.35,10.0,SW,4.6,-,N/A,,Mostly Cloudy,230,2012-05-12 13:51:00
+10:51 AM,72.0,51.1,48,30.35,10.0,SSW,6.9,-,N/A,,Mostly Cloudy,210,2012-05-12 14:51:00
+11:51 AM,73.9,48.0,40,30.36,10.0,SW,6.9,-,N/A,,Mostly Cloudy,230,2012-05-12 15:51:00
+12:51 PM,73.4,44.6,36,30.34,10.0,SSW,9.2,-,N/A,,Mostly Cloudy,200,2012-05-12 16:51:00
+1:51 PM,75.0,46.9,37,30.32,10.0,South,8.1,-,N/A,,Mostly Cloudy,190,2012-05-12 17:51:00
+2:51 PM,75.9,46.9,36,30.31,10.0,SSW,5.8,-,N/A,,Mostly Cloudy,200,2012-05-12 18:51:00
+3:51 PM,73.9,46.9,38,30.29,10.0,Variable,4.6,-,N/A,,Overcast,0,2012-05-12 19:51:00
+4:51 PM,75.0,48.9,40,30.27,10.0,SSE,6.9,-,N/A,,Overcast,150,2012-05-12 20:51:00
+5:51 PM,73.9,48.9,41,30.27,10.0,SSE,4.6,-,N/A,,Mostly Cloudy,150,2012-05-12 21:51:00
+6:51 PM,72.0,52.0,49,30.25,10.0,SE,6.9,-,N/A,,Mostly Cloudy,140,2012-05-12 22:51:00
+7:51 PM,70.0,52.0,53,30.25,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2012-05-12 23:51:00
+8:51 PM,68.0,51.1,55,30.26,10.0,SE,3.5,-,N/A,,Mostly Cloudy,140,2012-05-13 00:51:00
+9:51 PM,64.9,52.0,63,30.27,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-13 01:51:00
+10:51 PM,66.9,48.9,52,30.27,10.0,SE,5.8,-,N/A,,Mostly Cloudy,140,2012-05-13 02:51:00
+11:51 PM,66.0,48.9,54,30.26,10.0,SSE,5.8,-,N/A,,Mostly Cloudy,150,2012-05-13 03:51:00

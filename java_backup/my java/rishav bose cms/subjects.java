@@ -1,0 +1,20 @@
+import java.io.*;
+public class subjects
+{
+public static void main(String args[])throws IOException
+     {
+      int a,b,c,T,Av,P;
+      InputStreamReader read = new InputStreamReader(System.in);
+      BufferedReader in = new BufferedReader(read);
+      System.out.println("Enter the marks");
+      a=Integer.parseInt(in.readLine());
+      b=Integer.parseInt(in.readLine());
+      c=Integer.parseInt(in.readLine());
+      T=a+b+c;
+      Av=a+b+c/3;
+      P=((a+b+c)*100)/300;
+      System.out.println("Total marks="+T);
+      System.out.println("Average="+Av);
+      System.out.println("Percentage="+P);
+     }
+}     

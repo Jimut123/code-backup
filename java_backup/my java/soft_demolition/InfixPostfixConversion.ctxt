@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=size
+comment0.target=Stack(int)
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment2.params=ch
+comment2.target=void\ push(char)
+comment3.params=
+comment3.target=char\ pop()
+comment4.params=ch
+comment4.target=int\ find(char)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

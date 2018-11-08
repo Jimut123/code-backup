@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=r
+comment0.target=void\ area(double)
+comment1.params=l
+comment1.target=void\ area1(double)
+comment2.params=a\ b
+comment2.target=void\ area2(double,\ double)
+comment3.params=choice
+comment3.target=void\ user_choice(int)
+numComments=4

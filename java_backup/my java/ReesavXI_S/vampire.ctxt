@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ gen()
+comment1.params=n
+comment1.target=void\ vamp(int)
+comment2.params=n
+comment2.target=int\ digs_fact(int)
+comment3.params=a
+comment3.target=int\ fact(int)
+comment4.params=n
+comment4.target=int\ count_digs(int)
+numComments=5

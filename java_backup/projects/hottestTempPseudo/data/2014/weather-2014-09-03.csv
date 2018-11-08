@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,75.0,69.1,82,30.00,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,240,2014-09-03 04:51:00
+1:51 AM,75.9,69.1,79,30.01,10.0,WSW,9.2,-,N/A,,Mostly Cloudy,240,2014-09-03 05:51:00
+2:51 AM,73.9,69.1,85,30.00,10.0,SW,9.2,-,0.00,,Mostly Cloudy,230,2014-09-03 06:51:00
+3:51 AM,73.9,69.1,85,29.98,10.0,SW,9.2,-,N/A,,Mostly Cloudy,230,2014-09-03 07:51:00
+4:51 AM,73.9,69.1,85,29.97,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-09-03 08:51:00
+5:51 AM,72.0,68.0,87,29.99,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,240,2014-09-03 09:51:00
+6:51 AM,72.0,68.0,87,30.01,8.0,SW,6.9,-,N/A,,Mostly Cloudy,230,2014-09-03 10:51:00
+7:51 AM,73.0,69.1,87,30.03,10.0,WSW,5.8,-,N/A,,Scattered Clouds,240,2014-09-03 11:51:00
+8:51 AM,75.9,70.0,82,30.04,10.0,WSW,3.5,-,N/A,,Scattered Clouds,240,2014-09-03 12:51:00
+9:51 AM,80.1,70.0,71,30.05,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-09-03 13:51:00
+10:51 AM,84.0,68.0,58,30.06,10.0,NE,3.5,-,N/A,,Mostly Cloudy,50,2014-09-03 14:51:00
+11:51 AM,87.8,66.2,49,30.07,10.0,NE,4.6,-,N/A,,Mostly Cloudy,50,2014-09-03 15:51:00
+12:51 PM,88.0,66.9,49,30.04,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-09-03 16:51:00
+1:51 PM,90.0,68.0,48,30.04,10.0,NE,4.6,-,N/A,,Scattered Clouds,40,2014-09-03 17:51:00
+2:51 PM,91.0,68.0,47,30.03,10.0,NE,8.1,-,N/A,,Scattered Clouds,50,2014-09-03 18:51:00
+3:51 PM,91.9,66.9,44,30.02,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2014-09-03 19:51:00
+4:51 PM,91.0,66.9,45,30.00,10.0,ENE,5.8,-,N/A,,Scattered Clouds,60,2014-09-03 20:51:00
+5:51 PM,90.0,66.9,46,30.00,10.0,Variable,4.6,-,N/A,,Scattered Clouds,0,2014-09-03 21:51:00
+6:51 PM,88.0,69.1,53,30.03,10.0,East,5.8,-,N/A,,Mostly Cloudy,90,2014-09-03 22:51:00
+7:26 PM,82.4,68.0,62,30.05,10.0,North,-9999.0,-,N/A,Thunderstorm,Thunderstorm,0,2014-09-03 23:26:00
+7:51 PM,81.0,66.9,62,30.06,10.0,ENE,3.5,-,N/A,Thunderstorm,Thunderstorm,70,2014-09-03 23:51:00
+8:51 PM,77.0,66.9,71,30.08,10.0,East,3.5,-,N/A,Thunderstorm,Thunderstorm,90,2014-09-04 00:51:00
+9:10 PM,78.8,66.2,65,30.11,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-09-04 01:10:00
+9:51 PM,75.9,68.0,76,30.10,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-09-04 01:51:00
+10:51 PM,75.9,69.1,79,30.10,10.0,Variable,4.6,-,N/A,,Mostly Cloudy,0,2014-09-04 02:51:00
+11:51 PM,75.2,66.2,73,30.14,10.0,South,5.8,-,N/A,,Mostly Cloudy,180,2014-09-04 03:51:00

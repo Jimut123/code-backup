@@ -1,0 +1,6 @@
+package Inheritance;
+import java.util.*;
+interface Cal implements Interest1
+{
+    void calculate();
+}

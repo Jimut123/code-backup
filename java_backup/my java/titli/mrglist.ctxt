@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=mrglist()
+comment1.params=obj1
+comment1.target=void\ input(Link)
+comment2.params=obj1
+comment2.target=void\ disp(Link)
+comment3.params=obj1
+comment3.target=void\ sort(Link)
+comment4.params=obj1\ obj3\ obj
+comment4.target=void\ mergesort(Link,\ Link,\ Link)
+numComments=5

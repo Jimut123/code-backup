@@ -1,0 +1,13 @@
+import java.io.*;
+class Temperture
+{
+    public static void main ()throws IOException
+    {
+        int c,f;
+       InputStreamReader read = new InputStreamReader(System.in);
+       BufferdReader br = new BufferedReader(read);
+       f=Integer.parseInt(br.readLine());
+       c=5*f-160/9;
+       System.out.print(c);
+    }
+}

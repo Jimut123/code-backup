@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=sorter()
+comment1.params=
+comment1.target=void\ readlist()
+comment2.params=
+comment2.target=void\ displaylist()
+comment3.params=startindex
+comment3.target=int\ indexofmin(int)
+comment4.params=
+comment4.target=void\ main()
+numComments=5

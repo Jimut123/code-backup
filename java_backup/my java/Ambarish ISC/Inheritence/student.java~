@@ -1,0 +1,19 @@
+package Inheritence;
+
+
+class student
+{
+    String name;int roll;int sec;
+    void input(String n,int r,int s)
+    {
+        name=n;
+        roll=r;
+        sec=s;
+    }
+    void display()
+    {
+        System.out.println("NAME"+name+"  "+"SECTION"+sec+"  "+"ROLL"+roll+"");
+    }
+}
+
+

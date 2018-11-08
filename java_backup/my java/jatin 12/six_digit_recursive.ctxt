@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=k\ n
+comment1.target=void\ rec(int,\ int)
+comment2.params=k\ m\ s
+comment2.target=int\ countfreq(int,\ int,\ int)
+comment3.params=n\ s\ s1\ f
+comment3.target=void\ sum(int,\ int,\ int,\ int)
+numComments=4

@@ -1,0 +1,56 @@
+*
+ * Write a description of class number here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class number
+{
+    // instance variables - replace the example below with your own
+    private int x;
+
+    /**
+     * Constructor for objects of class number
+     */
+    public number()
+    {
+        // initialise instance variables
+        x = 0;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
+    }
+}
+import java.io.*;
+import java.lang.String;
+public class bufferreader1
+{
+    public static void main(String args[])throws IOException
+    {
+      BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+      int distance;int fare;
+      System.out.println("ENTER DATA");
+       distance=Integer.parseInt(br.readLine());
+       fare=0;
+       if(distance<=10)
+        fare=5;
+       if(distance<=30)
+        fare=10*5+(distance-10)*(int)1.50;
+       if(distance<=70)
+        fare=10*5+20*(int)1.50+(distance-30)*(int)2.50;
+       if(distance<=85)
+        fare=10*5+20*(int)1.50+40*(int)2.50+(distance-70)*(int)3.50;
+       if(distance>85)
+        fare=10*5+20*(int)1.50+40*(int)2.50+15*(int)3.50+(distance-85)*(int)4.00;
+        System.out.println(fare);
+    }
+}

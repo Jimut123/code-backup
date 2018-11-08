@@ -1,0 +1,11 @@
+class alpha
+{ 
+ public static void main(int n)
+ {
+     int f=0,f1=1,k=65,j=1;
+     for(int i=1;i<=n;i++)
+     {
+         for(int m=1;m<=i;m++)
+         {
+             if(f==0
+ 

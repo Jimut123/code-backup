@@ -1,0 +1,27 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,73.9,66.0,76,29.94,10.0,SSE,4.6,-,N/A,,Partly Cloudy,160,2015-06-30 04:51:00
+1:51 AM,73.0,64.9,76,29.93,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-06-30 05:51:00
+2:51 AM,71.1,63.0,75,29.92,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-06-30 06:51:00
+3:51 AM,70.0,61.0,73,29.91,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-06-30 07:51:00
+4:51 AM,70.0,61.0,73,29.92,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2015-06-30 08:51:00
+5:51 AM,69.1,62.1,78,29.92,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2015-06-30 09:51:00
+6:51 AM,69.1,62.1,78,29.93,10.0,SW,4.6,-,N/A,,Partly Cloudy,230,2015-06-30 10:51:00
+7:51 AM,73.9,63.0,68,29.96,10.0,SSW,4.6,-,N/A,,Partly Cloudy,200,2015-06-30 11:51:00
+8:51 AM,78.1,64.0,62,29.96,10.0,SSW,6.9,-,N/A,,Partly Cloudy,200,2015-06-30 12:51:00
+9:51 AM,81.0,64.9,58,29.96,10.0,SW,9.2,-,N/A,,Partly Cloudy,230,2015-06-30 13:51:00
+10:51 AM,84.0,66.9,56,29.95,10.0,SW,8.1,-,N/A,,Scattered Clouds,230,2015-06-30 14:51:00
+11:51 AM,86.0,66.9,53,29.94,10.0,SSW,9.2,-,N/A,,Scattered Clouds,210,2015-06-30 15:51:00
+12:51 PM,89.1,69.1,52,29.93,10.0,SW,9.2,-,N/A,,Scattered Clouds,220,2015-06-30 16:51:00
+1:51 PM,89.1,66.9,48,29.91,10.0,Variable,3.5,-,N/A,,Scattered Clouds,0,2015-06-30 17:51:00
+2:51 PM,88.0,66.9,49,29.89,10.0,SW,15.0,18.4,N/A,,Scattered Clouds,220,2015-06-30 18:51:00
+3:51 PM,91.0,66.9,45,29.85,10.0,WSW,8.1,-,N/A,,Scattered Clouds,250,2015-06-30 19:51:00
+4:51 PM,91.0,68.0,47,29.84,10.0,WSW,8.1,-,N/A,,Scattered Clouds,250,2015-06-30 20:51:00
+5:51 PM,89.1,68.0,50,29.84,10.0,SSW,10.4,-,0.00,,Mostly Cloudy,200,2015-06-30 21:51:00
+6:51 PM,86.0,66.9,53,29.83,10.0,South,12.7,18.4,N/A,,Overcast,190,2015-06-30 22:51:00
+7:08 PM,86.0,66.2,51,29.83,10.0,South,12.7,20.7,N/A,Thunderstorm,Thunderstorm,170,2015-06-30 23:08:00
+7:51 PM,79.0,70.0,74,29.88,5.0,WSW,18.4,27.6,0.00,Rain-Thunderstorm,Light Thunderstorms and Rain,250,2015-06-30 23:51:00
+8:03 PM,75.2,69.8,83,29.91,7.0,WSW,9.2,26.5,0.02,Rain,Light Rain,250,2015-07-01 00:03:00
+8:51 PM,73.9,71.1,91,29.88,10.0,Calm,Calm,-,0.02,,Mostly Cloudy,0,2015-07-01 00:51:00
+9:51 PM,73.0,68.0,84,29.91,10.0,South,8.1,-,0.00,,Mostly Cloudy,190,2015-07-01 01:51:00
+10:51 PM,72.0,66.0,81,29.91,10.0,SW,10.4,23.0,N/A,,Mostly Cloudy,220,2015-07-01 02:51:00
+11:51 PM,70.0,66.0,87,29.93,10.0,SW,9.2,-,N/A,,Mostly Cloudy,230,2015-07-01 03:51:00

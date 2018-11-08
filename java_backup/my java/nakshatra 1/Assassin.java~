@@ -1,0 +1,27 @@
+//to input a number and check Krishnamurti number or not.
+import java.util.*;
+class Assassin
+{
+    public static void main()
+    {
+        int f,n,n1,s,k,i;
+        Scanner sc = new Scanner(System.in);
+        n=sc.nextInt();
+         n1=n;
+         s=0;
+        while(n1>0)
+        {
+            k=n1%10;
+        f=1;
+        for(i=1;i<=k;i++)
+        f=f*i;
+        s=s+f;
+        n=n1/10;
+    }
+        if(s==n1)
+        System.out.println("Is a Krisnnamurti number");
+        else
+        System.out.println("Not a Krisnnamurti number");
+    }
+}
+           

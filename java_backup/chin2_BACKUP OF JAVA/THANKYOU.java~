@@ -1,0 +1,30 @@
+public class THANKYOU extends welcome
+{
+    public static void thankyou()
+    {
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println("                                                                        ********  ***  ***      ***      ***    **   **  ***  **      **     ****     **    **");
+        System.out.println("                                                                           **     **    **     ** **     ** *   **   ** **     **    **    **    **   **    **");
+        System.out.println("                                                                           **     ********    *******    **  *  **   ****        *  *      **    **   **    **");
+        System.out.println("                                                                           **     **    **   **     **   **   * **   ** **        **       **    **   **    **");
+        System.out.println("                                                                           **     ***  ***  **       **  **    ***   **  ***      **         ****      ******");
+        welcome1();
+    }
+}

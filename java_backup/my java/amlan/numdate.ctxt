@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=n1
+comment1.target=void\ check366(long)
+comment2.params=n1
+comment2.target=void\ check365(long)
+comment3.params=n1
+comment3.target=void\ check1(long)
+comment4.params=n1
+comment4.target=void\ check2(long)
+comment5.params=k
+comment5.target=void\ datecheck(long)
+numComments=6

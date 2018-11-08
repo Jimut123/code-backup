@@ -1,0 +1,37 @@
+import java.util.*;
+public class pattern
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        String a;
+        int b,c,d,e,g;
+        
+        System.out.println("Enter name");
+        a=sc.nextLine();
+        
+        b=a.length();
+        e=b;
+        g=0;
+        for(c=0;c<b;c=c+1)
+        {
+            for(d=0;d<e;e=e+1)
+            {
+                System.out.print(" ");
+            }
+            System.out.print(a.charAt(c));
+            for(d=0;d<g;d=d+1)
+            {
+                System.out.print(" ");
+            }
+            System.out.println(a.charAt(c));
+            g=g+2;
+            e=e-1;
+        }
+    }
+}
+                
+        
+        
+        
+        

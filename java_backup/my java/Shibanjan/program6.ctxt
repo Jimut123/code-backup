@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=g\ s
+comment1.target=void\ gcd(int,\ int)
+comment2.params=s1\ s2\ g\ s
+comment2.target=void\ sum_of_numbers(int,\ int,\ int,\ int)
+comment3.params=arg
+comment3.target=void\ main(java.lang.String[])
+numComments=4

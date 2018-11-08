@@ -1,0 +1,13 @@
+
+class sumandaverageof5numbers
+{
+    public static void main ( int a , int b , int c ,int d , int e )
+    {
+        int s ;
+        int av ; 
+        s = a + b + c + d + e ;
+        av = s / 5 ;
+        System.out.println ( s ) ;
+        System.out.println ( av ) ;
+    }
+}

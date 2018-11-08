@@ -1,0 +1,32 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,73.9,71.1,91,29.98,10.0,WSW,3.5,-,N/A,,Scattered Clouds,250,2015-07-19 04:51:00
+1:51 AM,73.9,72.0,93,29.97,10.0,SW,3.5,-,N/A,,Mostly Cloudy,230,2015-07-19 05:51:00
+2:51 AM,73.9,71.1,91,29.94,10.0,SSW,5.8,-,N/A,,Mostly Cloudy,200,2015-07-19 06:51:00
+3:51 AM,73.0,70.0,90,29.93,10.0,WSW,4.6,-,N/A,,Mostly Cloudy,240,2015-07-19 07:51:00
+4:51 AM,72.0,70.0,93,29.92,10.0,SW,4.6,-,N/A,,Mostly Cloudy,230,2015-07-19 08:51:00
+5:51 AM,73.0,70.0,90,29.93,10.0,SW,6.9,-,N/A,,Mostly Cloudy,230,2015-07-19 09:51:00
+6:51 AM,73.0,71.1,93,29.94,10.0,SSW,6.9,-,N/A,,Mostly Cloudy,210,2015-07-19 10:51:00
+7:51 AM,75.0,71.1,87,29.94,10.0,SSW,5.8,-,N/A,,Mostly Cloudy,210,2015-07-19 11:51:00
+8:51 AM,77.0,72.0,84,29.95,10.0,SW,6.9,-,N/A,,Mostly Cloudy,230,2015-07-19 12:51:00
+9:51 AM,82.0,73.9,76,29.95,10.0,SSW,4.6,-,N/A,,Scattered Clouds,210,2015-07-19 13:51:00
+10:51 AM,87.1,75.0,67,29.95,10.0,SSW,4.6,-,N/A,,Partly Cloudy,200,2015-07-19 14:51:00
+11:51 AM,90.0,75.9,63,29.94,10.0,SSW,5.8,-,N/A,,Scattered Clouds,210,2015-07-19 15:51:00
+12:51 PM,93.0,77.0,59,29.93,10.0,WSW,3.5,-,N/A,,Scattered Clouds,250,2015-07-19 16:51:00
+1:51 PM,84.9,73.0,67,29.91,10.0,East,12.7,21.9,N/A,,Scattered Clouds,90,2015-07-19 17:51:00
+2:24 PM,86.0,73.4,66,29.92,10.0,ENE,10.4,-,N/A,Thunderstorm,Thunderstorm,70,2015-07-19 18:24:00
+2:51 PM,81.0,73.0,77,29.91,10.0,ENE,9.2,-,N/A,Thunderstorm,Thunderstorm,70,2015-07-19 18:51:00
+3:09 PM,78.8,71.6,78,29.91,10.0,NE,17.3,-,0.07,Rain-Thunderstorm,Light Thunderstorms and Rain,50,2015-07-19 19:09:00
+3:29 PM,77.0,73.4,89,29.94,2.0,NNE,18.4,35.7,0.35,Rain-Thunderstorm,Heavy Thunderstorms and Rain,30,2015-07-19 19:29:00
+3:39 PM,73.4,69.8,88,29.94,2.0,NNE,6.9,32.2,0.91,Rain-Thunderstorm,Heavy Thunderstorms and Rain,20,2015-07-19 19:39:00
+3:51 PM,73.0,70.0,90,29.93,2.0,NNW,6.9,-,1.16,Rain-Thunderstorm,Heavy Thunderstorms and Rain,340,2015-07-19 19:51:00
+4:12 PM,73.4,71.6,94,29.94,2.0,Calm,Calm,-,0.11,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2015-07-19 20:12:00
+4:16 PM,73.4,71.6,94,29.95,5.0,Calm,Calm,-,0.11,Rain-Thunderstorm,Light Thunderstorms and Rain,0,2015-07-19 20:16:00
+4:51 PM,73.9,72.0,93,29.90,6.0,WSW,5.8,-,0.41,Rain-Thunderstorm,Light Thunderstorms and Rain,250,2015-07-19 20:51:00
+5:01 PM,75.2,73.4,94,29.90,8.0,Calm,Calm,-,0.00,Rain,Light Rain,0,2015-07-19 21:01:00
+5:51 PM,81.0,75.9,85,29.88,10.0,Calm,Calm,-,0.00,,Mostly Cloudy,0,2015-07-19 21:51:00
+6:51 PM,81.0,77.0,88,29.88,10.0,West,3.5,-,N/A,,Mostly Cloudy,260,2015-07-19 22:51:00
+7:51 PM,79.0,77.0,94,29.88,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-07-19 23:51:00
+8:51 PM,80.1,75.0,85,29.87,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2015-07-20 00:51:00
+9:51 PM,75.9,73.0,91,29.89,10.0,WSW,5.8,-,N/A,,Mostly Cloudy,240,2015-07-20 01:51:00
+10:51 PM,75.9,72.0,87,29.91,9.0,SSW,8.1,-,N/A,,Scattered Clouds,210,2015-07-20 02:51:00
+11:51 PM,75.0,72.0,90,29.89,10.0,South,3.5,-,N/A,,Scattered Clouds,170,2015-07-20 03:51:00

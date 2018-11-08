@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=class\ b
+comment1.params=x\ z1
+comment1.target=b(int,int)
+comment10.params=x\ y\ z
+comment10.target=c(int,int,int)
+comment2.target=z
+comment3.params=
+comment3.target=void\ disp1()
+comment4.target=x
+comment5.params=z
+comment5.target=a(int)
+comment6.params=
+comment6.target=void\ disp()
+comment7.params=args
+comment7.target=void\ main(String[])
+comment8.target=p
+comment9.params=
+comment9.target=void\ disp2()
+numComments=11

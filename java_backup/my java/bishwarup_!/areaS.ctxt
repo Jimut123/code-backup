@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=void\ area(double,\ double)
+comment1.params=m
+comment1.target=void\ area(int)
+comment2.params=i\ j
+comment2.target=void\ area(float,\ float)
+comment3.target=void\ area()
+numComments=4

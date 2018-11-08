@@ -1,0 +1,34 @@
+import java.util.*;
+public class diff
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b,y1,m1,d1,diff=0,y2,m2,d2;
+        System.out.println("Enter date1");
+        a=sc.nextInt();
+        System.out.println("Emter  date2");
+        b=sc.nextInt();
+        
+        y1=a%10000; a=a/10000;
+        m1=a%100; a=a/100;
+        d1=a;
+        y2=b%10000; b=b/10000;
+        m2=b%100;  b=b/100;
+        d2=b;
+        diff=diff+((y2-y1)*365);
+        diff=diff+d2-d1;
+        diff=diff+calc(m2-1)-calc(m1-1);
+        System.out.println("The difference is"+diff);
+    }
+    int calc(int a)
+    {
+        int b,st=0;
+        int mn[]={31,28,31,30,31,30,31,31,30,31,30,31};
+        for(b=0;b<a;b++)
+        {
+            st=st+mn[b];
+        }
+        return st;
+    }
+}

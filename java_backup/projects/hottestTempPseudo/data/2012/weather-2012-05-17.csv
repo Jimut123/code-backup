@@ -1,0 +1,30 @@
+TimeEDT,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,69.1,64.0,84,29.94,10.0,SSE,4.6,-,N/A,,Mostly Cloudy,150,2012-05-17 04:51:00
+1:51 AM,68.0,64.0,87,29.93,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-17 05:51:00
+2:51 AM,66.0,64.0,93,29.92,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-17 06:51:00
+3:51 AM,64.4,62.6,94,29.92,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2012-05-17 07:51:00
+4:51 AM,63.0,61.0,93,29.92,8.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-05-17 08:51:00
+5:51 AM,63.0,61.0,93,29.93,8.0,Calm,Calm,-,N/A,Fog,Patches of Fog,0,2012-05-17 09:51:00
+6:51 AM,63.0,61.0,93,29.95,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-17 10:51:00
+7:51 AM,66.9,64.9,93,29.96,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2012-05-17 11:51:00
+8:51 AM,70.0,64.0,81,29.97,10.0,North,3.5,-,N/A,,Mostly Cloudy,10,2012-05-17 12:51:00
+9:51 AM,73.0,64.9,76,29.98,10.0,NE,10.4,-,N/A,,Mostly Cloudy,40,2012-05-17 13:51:00
+10:51 AM,75.0,66.0,73,29.99,10.0,NE,10.4,-,N/A,,Mostly Cloudy,40,2012-05-17 14:51:00
+11:51 AM,79.0,66.0,64,29.99,10.0,ENE,9.2,19.6,N/A,,Mostly Cloudy,60,2012-05-17 15:51:00
+12:51 PM,80.1,63.0,56,29.98,10.0,East,10.4,18.4,N/A,,Mostly Cloudy,80,2012-05-17 16:51:00
+1:51 PM,79.0,64.0,60,29.96,10.0,NE,15.0,20.7,N/A,,Mostly Cloudy,40,2012-05-17 17:51:00
+2:26 PM,78.8,62.6,57,29.97,10.0,ENE,12.7,-,N/A,Thunderstorm,Thunderstorm,60,2012-05-17 18:26:00
+2:51 PM,78.1,62.1,58,29.95,10.0,ENE,9.2,-,N/A,Thunderstorm,Thunderstorm,60,2012-05-17 18:51:00
+3:08 PM,78.8,62.6,57,29.95,10.0,NE,8.1,-,N/A,,Mostly Cloudy,40,2012-05-17 19:08:00
+3:51 PM,77.0,63.0,62,29.94,10.0,NE,10.4,-,N/A,,Mostly Cloudy,40,2012-05-17 19:51:00
+4:29 PM,77.0,62.6,61,29.98,10.0,ENE,12.7,19.6,N/A,Thunderstorm,Thunderstorm,70,2012-05-17 20:29:00
+4:51 PM,73.9,59.0,59,29.98,10.0,East,11.5,20.7,N/A,Thunderstorm,Thunderstorm,90,2012-05-17 20:51:00
+5:19 PM,73.4,60.8,65,29.98,10.0,ENE,5.8,-,N/A,Thunderstorm,Thunderstorm,70,2012-05-17 21:19:00
+5:25 PM,71.6,60.8,69,29.97,10.0,ENE,5.8,-,N/A,,Mostly Cloudy,60,2012-05-17 21:25:00
+5:51 PM,72.0,61.0,68,29.97,10.0,ENE,5.8,-,N/A,,Mostly Cloudy,70,2012-05-17 21:51:00
+6:51 PM,70.0,64.0,81,29.99,7.0,ENE,9.2,17.3,0.00,,Mostly Cloudy,70,2012-05-17 22:51:00
+7:51 PM,70.0,63.0,78,29.99,7.0,ENE,8.1,-,N/A,,Overcast,70,2012-05-17 23:51:00
+8:51 PM,69.1,62.1,78,30.02,8.0,ENE,11.5,17.3,N/A,,Overcast,70,2012-05-18 00:51:00
+9:51 PM,68.0,61.0,78,30.04,8.0,East,8.1,-,N/A,,Overcast,80,2012-05-18 01:51:00
+10:51 PM,66.0,61.0,84,30.04,10.0,ENE,8.1,-,N/A,,Mostly Cloudy,60,2012-05-18 02:51:00
+11:51 PM,64.9,61.0,87,30.05,10.0,ENE,4.6,-,N/A,,Mostly Cloudy,60,2012-05-18 03:51:00

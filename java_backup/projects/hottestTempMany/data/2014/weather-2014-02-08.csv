@@ -1,0 +1,25 @@
+TimeEST,TemperatureF,Dew PointF,Humidity,Sea Level PressureIn,VisibilityMPH,Wind Direction,Wind SpeedMPH,Gust SpeedMPH,PrecipitationIn,Events,Conditions,WindDirDegrees,DateUTC
+12:51 AM,37.9,26.1,62,30.28,10.0,East,4.6,-,N/A,,Mostly Cloudy,80,2014-02-08 05:51:00
+1:51 AM,39.0,25.0,57,30.26,10.0,East,3.5,-,N/A,,Mostly Cloudy,100,2014-02-08 06:51:00
+2:51 AM,37.0,26.1,65,30.26,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-02-08 07:51:00
+3:51 AM,36.0,27.0,70,30.26,10.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-02-08 08:51:00
+4:51 AM,35.1,28.0,76,30.26,9.0,Calm,Calm,-,N/A,,Overcast,0,2014-02-08 09:51:00
+5:51 AM,35.1,28.0,76,30.25,9.0,Calm,Calm,-,N/A,,Overcast,0,2014-02-08 10:51:00
+6:51 AM,35.1,28.9,78,30.26,9.0,Calm,Calm,-,N/A,,Overcast,0,2014-02-08 11:51:00
+7:51 AM,36.0,28.9,76,30.26,9.0,NE,3.5,-,N/A,,Overcast,40,2014-02-08 12:51:00
+8:51 AM,39.0,27.0,62,30.22,10.0,ENE,6.9,-,N/A,,Overcast,70,2014-02-08 13:51:00
+9:51 AM,39.9,26.1,58,30.26,10.0,East,5.8,-,N/A,,Overcast,80,2014-02-08 14:51:00
+10:51 AM,41.0,25.0,53,30.28,10.0,NE,4.6,-,N/A,,Overcast,50,2014-02-08 15:51:00
+11:51 AM,42.1,25.0,51,30.24,10.0,Variable,3.5,-,N/A,,Overcast,0,2014-02-08 16:51:00
+12:51 PM,44.1,24.1,45,30.23,10.0,Variable,3.5,-,N/A,,Mostly Cloudy,0,2014-02-08 17:51:00
+1:51 PM,46.0,26.1,46,30.17,10.0,Variable,3.5,-,N/A,,Partly Cloudy,0,2014-02-08 18:51:00
+2:51 PM,48.9,26.1,41,30.14,10.0,NW,4.6,-,N/A,,Partly Cloudy,320,2014-02-08 19:51:00
+3:51 PM,48.9,27.0,43,30.14,10.0,NE,4.6,-,N/A,,Partly Cloudy,40,2014-02-08 20:51:00
+4:51 PM,48.0,27.0,44,30.16,10.0,North,5.8,-,N/A,,Partly Cloudy,350,2014-02-08 21:51:00
+5:51 PM,44.1,27.0,51,30.15,10.0,Calm,Calm,-,N/A,,Scattered Clouds,0,2014-02-08 22:51:00
+6:51 PM,41.0,28.0,60,30.15,10.0,NE,3.5,-,N/A,,Scattered Clouds,50,2014-02-08 23:51:00
+7:51 PM,37.0,28.0,70,30.16,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-02-09 00:51:00
+8:51 PM,37.0,28.0,70,30.18,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-02-09 01:51:00
+9:51 PM,35.1,28.0,76,30.19,10.0,Calm,Calm,-,N/A,,Partly Cloudy,0,2014-02-09 02:51:00
+10:51 PM,35.1,28.0,76,30.18,10.0,NE,3.5,-,N/A,,Partly Cloudy,50,2014-02-09 03:51:00
+11:51 PM,34.0,28.0,79,30.18,9.0,Calm,Calm,-,N/A,,Mostly Cloudy,0,2014-02-09 04:51:00

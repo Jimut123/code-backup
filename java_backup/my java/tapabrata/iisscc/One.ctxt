@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=lim
+comment0.target=One(int)
+comment1.params=d
+comment1.target=void\ insert(int)
+comment2.params=
+comment2.target=void\ delete()
+comment3.params=n
+comment3.target=void\ display(int)
+comment4.params=n
+comment4.target=void\ main(int)
+comment5.params=ar
+comment5.target=void\ main([Ljava.lang.String;)
+numComments=6

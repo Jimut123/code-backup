@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ input()
+comment1.params=t1\ t2
+comment1.target=time_addition\ calc(time_addition,\ time_addition)
+comment2.params=
+comment2.target=void\ disp()
+comment3.params=
+comment3.target=void\ impl()
+numComments=4

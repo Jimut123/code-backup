@@ -1,0 +1,31 @@
+import java.util.*;
+public class permutation
+{
+    void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int c,d;
+        String pm,a;
+        System.out.println("Enter the number");
+        a=sc.nextLine();
+        char b[]=new char[a.length()];
+        for(c=0;c<a.length();c=c+1)
+        {
+            b[c]=a.charAt(c);
+        }
+        pm="";
+        for(c=0;c<a.length();c=c+1)
+        {
+            pm="";
+            pm=pm+b[c];
+            for(d=0;d<a.length();d=d+1)
+            {
+            if(d!=c)
+            {
+                pm=pm+b[d];
+            }
+        }
+        System.out.println(pm);
+        }
+    }
+}

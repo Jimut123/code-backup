@@ -1,0 +1,23 @@
+class income
+{
+    public static void main(int i)
+    {
+        double tax;
+        tax=0.0;
+        if(i<=100000)
+         tax=0;
+        else
+        if(i<=250000)
+        tax=((i-100000)*10)/100;
+        else
+        if(i<=500000)
+        tax=(10000+(i-250000)*15/100);
+        else
+        if(i<=1000000)
+        tax=15000+(i-500000)*20/100;
+        else
+        if(i>1000000)
+        tax=(25000+(i-1000000)*25/100);
+        System.out.println(tax);
+    }
+}

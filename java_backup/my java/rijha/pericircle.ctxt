@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=pericircle()
+comment1.params=x
+comment1.target=pericircle(double)
+comment2.params=
+comment2.target=double\ calperi()
+comment3.params=
+comment3.target=void\ main()
+numComments=4

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=trainentry1()
+comment1.params=
+comment1.target=void\ insert()
+comment2.params=
+comment2.target=void\ show()
+comment3.params=
+comment3.target=void\ insert1()
+comment4.params=p1
+comment4.target=void\ update(int)
+comment5.params=
+comment5.target=void\ show1()
+comment6.params=
+comment6.target=void\ show2()
+comment7.params=
+comment7.target=void\ ticsale()
+comment8.params=
+comment8.target=void\ ticcancel()
+comment9.params=
+comment9.target=void\ disp_r()
+numComments=10

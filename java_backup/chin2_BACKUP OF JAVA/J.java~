@@ -1,0 +1,9 @@
+public class J
+{
+    public static void main(String args[]) 
+    {
+        String n = "Computer Knowledge";
+        String m = "Computer Applications";
+        System.out.println(n.substring(0,9).concat(m.substring(9)));
+    }
+}

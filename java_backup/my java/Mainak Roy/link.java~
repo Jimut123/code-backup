@@ -1,0 +1,66 @@
+import java.util.*;
+import java.io.*;
+public class link
+{
+    Scanner sc=new Scanner(System.in);
+    DataInputStream in=new DataInputStream(System.in);
+    class list
+    {
+        int n;
+        void input()
+        {
+                n=sc.nextInt();
+        }
+        void display()
+        {
+                System.out.println(n);
+        }
+        list next;
+    }
+    String y="yes";
+    list l,l1;
+    link()
+    {
+       l=new list();
+       l1=l;
+    }
+    void insert()
+    {
+        while(y.equalsIgnoreCase("yes")==true)
+        {
+            System.out.println("Enter data:");
+        l1.input();
+        System.out.println("yes or no");
+        y=in.readLine();
+        if(y.equalsIgnoreCase("yes")==true)
+        
+        {
+         l1.next=new list();
+         l1=l1.next;
+        }
+        l1.next=null;
+       }
+    }
+    
+    void display()
+    {
+        l1=l;
+        System.out.println("odd");
+        while(l1!=null)
+        {
+            if((l1.n)%2!=0)
+            System.out.println(l1.n);
+            l1=l1.next;
+        }
+        
+        l1=l;
+        System.out.println("even");
+        while(l1!=null)
+        {
+            if((l1.n)%2==0)
+            System.out.println(l1.n);
+            l1=l1.next;
+        }
+    }
+}
+            

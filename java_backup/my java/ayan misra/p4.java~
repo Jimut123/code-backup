@@ -1,0 +1,19 @@
+public class p4
+{
+public static void main(Strng args[])
+{
+int i,j,k,l,sp,p;k=1;p=7;sp=10;
+for(i=1;i<=4;i++)
+{
+for(l=1;l<=sp;l++)
+System.out.print(" ");
+for(j=k;j<=p;j++)
+System.out.print(j+" ");
+sp=sp+2;
+k++;
+p--;
+sp=sp+2;
+System.out.println(" ");
+}
+}
+}

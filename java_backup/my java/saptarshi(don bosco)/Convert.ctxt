@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Convert()
+comment1.params=
+comment1.target=void\ inpnum()
+comment2.params=n
+comment2.target=void\ extdigit(int)
+comment3.params=x
+comment3.target=void\ num_to_words(int)
+comment4.params=
+comment4.target=void\ main()
+numComments=5

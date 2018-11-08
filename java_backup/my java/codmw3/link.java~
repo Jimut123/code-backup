@@ -1,0 +1,46 @@
+import java.util.*;
+public class link
+{
+    Scanner sc=new Scanner(System.in);
+    class l1
+    {
+        int a;
+        l1 ob1;
+    }
+    class l2
+    {
+        int a;
+        l2 ob2;
+    }
+    l1 a1=new l1();
+    l1 a2=a1;
+    l2 b1=new l2();
+    l2 b2=b1;
+    void input()
+    {
+        int k,c;
+        System.out.println("Enter number");
+        k=sc.nextInt();
+        c=0;
+        while(k>0)
+        {
+            c++;
+            if(c%2==0)
+            {
+                a2.a=k%10;
+                k/=10;
+                a2.ob1=new l1();
+                a2=a2.ob1;
+            }
+            else
+            {
+                b2.a=k%10;
+                k/=10;
+                b2.ob2=new l2();
+                b2=b2.ob2;
+            }
+        }
+    }
+}
+                
+    

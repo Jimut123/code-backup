@@ -1,0 +1,13 @@
+import java.io.*;
+class n
+{
+    public static void main(int n)
+    {
+        int i,j;
+        for(i=1;i<=10;i++)
+        {
+            j=(i*j)i+2;
+        }
+        System.out.print(j);
+    }
+}

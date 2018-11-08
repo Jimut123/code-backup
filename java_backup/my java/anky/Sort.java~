@@ -1,0 +1,31 @@
+import java.io.*;
+class Sort
+{
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    String s;
+    int n,i=0,j=0,l;
+    void disp()throws IOException
+    {
+        s=s.trim();
+        l=s.length();
+        for(i=0;i<l;i++)
+        {
+            while(j<l)
+            {
+            j=i+1;
+            if(s.charAt(i)!=s.charAt(j))
+            {
+                System.out.print(s.charAt(i));
+            }
+        }
+        else
+        {
+            System.out.print(s.charAt(j));
+        }
+    }
+}
+    public void main()throws IOException
+    {
+        disp();
+    }
+}

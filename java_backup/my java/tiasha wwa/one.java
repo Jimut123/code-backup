@@ -1,0 +1,25 @@
+class one
+{
+public static void main (int n)
+{
+ int m,k,s,i;   
+        m=0;
+        k=0;
+        s=1;
+for(i=1;i<=n;i++)
+ {           
+     while(k<=(n-2))
+     {
+                k=m+s;
+                m=k+s;
+                s=k+m;
+            if(i!=k&&i!=m&&i!=s)
+            System.out.print(i);
+        }
+    }
+}
+}
+
+
+            
+            

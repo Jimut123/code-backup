@@ -1,0 +1,29 @@
+
+class star4
+{
+  public static void main(int n)
+  {
+      int i,b,r;
+      for(i=1;i<=n;i++)
+      {
+          for(b=1;b<=i;b++)
+          {
+          if(i/2==0)
+          {
+          System.out.print("*");
+          System.out.println("");
+        }
+   
+    
+        
+            else
+            {
+                System.out.print("#");
+                System.out.println("");
+            }
+        }
+    }
+            
+          
+    }
+}

@@ -1,0 +1,61 @@
+import java.io.*;
+class program6
+{
+  BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+  int a,b,g,s,rem,g1,s1=0,s2=0,s3=0,sm,mod1,mod2;
+  void input()throws IOException
+  {
+      System.out.println("Enter the first number");
+      a=Integer.parseInt(br.readLine());
+      System.out.println("Enter the second number");
+      b=Integer.parseInt(br.readLine());
+      if(a>b)
+      {
+          g=a;
+          s=b;
+      }
+      else if(b>a)
+      {
+          g=b;
+          s=a;
+      }
+      g1=g;sm=s;
+      gcd(g,s);
+      sum_of_numbers(s1,s2,g,s);
+  }
+  void gcd(int g,int s)
+  {
+      if(g==s)
+      {
+          System.out.println("The GCD is="+1);
+          return;
+      }
+      if(s==0)
+      {
+         System.out.println("The GCD is="+g); 
+         return;
+      }
+      rem=g%s;
+      gcd(s,rem);
+  }
+  void sum_of_numbers(int s1,int s2,int g,int s)
+  {
+      if(g==0&&s==0)
+      {
+          System.out.println("Sum of digits of"+g1+"is"+s1);
+          System.out.println("Sum of digits of"+sm+"is"+s2);
+          int m=s1+s2;
+          System.out.println("total sum"+m);
+           return;
+      }
+      mod1=g%10;
+      mod2=s%10;
+      sum_of_numbers(s1+mod1,s2+mod2,g/10,s/10);
+}
+public void main(String arg[])throws IOException
+{
+program6 p=new program6();
+p.input();
+
+}
+}

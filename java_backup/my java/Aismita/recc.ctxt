@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ insert()
+comment1.params=s\ i
+comment1.target=void\ check(java.lang.String,\ int)
+numComments=2

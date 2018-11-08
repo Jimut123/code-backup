@@ -1,0 +1,9 @@
+public class Celsius
+{
+    public static void main(int C)
+    {
+        int F;
+        F=(9*C+160)/5;
+        System.out.println(F);
+    }
+}

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Below_above()
+comment1.params=
+comment1.target=void\ input()
+comment2.params=x\ y
+comment2.target=void\ below(int,\ int)
+comment3.params=k\ p
+comment3.target=void\ target1(int,\ int)
+comment4.params=x1\ y1\ l
+comment4.target=void\ above(int,\ int,\ int)
+comment5.params=k1\ p1
+comment5.target=void\ target2(int,\ int)
+comment6.params=
+comment6.target=void\ disp()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=class\ MainDiscount
+comment1.params=args
+comment1.target=void\ main(String[])
+comment2.params=
+comment2.target=void\ show()
+comment3.target=ticketCharges
+comment4.params=
+comment4.target=void\ get()
+comment5.target=name
+comment6.params=
+comment6.target=void\ calculate()
+comment7.target=netAmount
+comment8.target=discount
+numComments=9

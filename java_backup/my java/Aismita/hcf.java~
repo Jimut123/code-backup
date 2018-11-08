@@ -1,0 +1,31 @@
+import java.io.*;
+class hcf
+{
+    public static void main(String ar[])throws IOException
+    {
+        BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter your number");
+        int n=Intger.parseInt(in.readLine());
+        
+        while(n!=0)
+        {
+            int p=n%10;
+            c++;
+            n/=10;
+        }
+        int i=0;
+        while(d!=0)
+        {
+            int pd%10;
+            a[i]=p;
+            i++;
+            d/=10;
+        }
+        int m=0;
+        for(i=0;i<c;i++)
+        {
+            if(a[i]>m)
+            m=a[i];
+        }
+        
+        
