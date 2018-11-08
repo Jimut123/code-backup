@@ -1,0 +1,13 @@
+var image = new SimpleImage("Untitled.png");
+w = image.getWidth();
+h = image.getHeight();
+for (var pixel of image.values()) {
+     x = pixel.getX();
+     y = pixel.getY();
+     if (x > w/3 && ( y < 2*h/3 || y > h/3 )) {
+          pixel.setGreen(255);
+          pixel.setRed(0);
+          pixel.setBlue(0);
+     }
+}
+print(image);

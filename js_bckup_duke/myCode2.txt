@@ -1,0 +1,6 @@
+var image = new SimpleImage("Untitled.png");
+for (var px of image.values()) {
+     px.setGreen(230);
+}
+
+print(image);

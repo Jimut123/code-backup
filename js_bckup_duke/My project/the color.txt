@@ -1,0 +1,19 @@
+function dist(pixel,x,y )
+{
+    var dx=pixel.getX()-x;
+    var dy=pixel.getY()-y;
+    return Math.sqrt(dx*dx+dy*dy);
+}
+
+var output = new SimpleImage(320,320);
+for(var pixel of output.values())
+{
+ if(Math.random()>0.1){
+    pixel.setRed(255);
+    pixel.setBlue(255);
+}
+pixel.setBlue(Math.max(2.5*pixel.getY()-pixel.getX(),pixel.getX()-2.5*pixel.getY()));
+pixel.setRed(Math.max(1.5*pixel.getY()-pixel.getX(),pixel.getX()-1.5*pixel.getY()));
+pixel.setGreen(Math.max(.5*pixel.getY()-pixel.getX(),pixel.getX()-.5*pixel.getY()));
+}
+print(output);

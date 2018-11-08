@@ -1,0 +1,11 @@
+var image = new SimpleImage("Untitled.png");
+w = image.getWidth();
+h = image.getHeight();
+for (var pixel of image.values()) {
+     x = pixel.getX();
+     y = pixel.getY();
+     if (x > w/2 && y > h/2) {
+          pixel.setBlue(255);
+     }
+}
+print(image);

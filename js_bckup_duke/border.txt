@@ -1,0 +1,17 @@
+function setBlack(pixel)
+{
+    pixel.setRed(0);
+    pixel.setGreen(0);
+    pixel.setBlue(0);
+    return pixel;
+}
+var image = new SimpleImage("smalllion.jpg");
+for(var pixel of image.values())
+{
+    var x= pixel.getX();
+    var y= pixel.getY();
+
+if(x<10||y<10||x>=image.getWidth()-10||y>=image.getHeight()-10)
+pixel=setBlack(pixel);
+}
+print(image);

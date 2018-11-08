@@ -1,0 +1,7 @@
+var image = new SimpleImage("Untitled2.png");
+var xvalue = 5;
+var yvalue = 3*image.getHeight()/4;
+px = image.getPixel(xvalue,yvalue);
+print(px.getRed());
+print(px.getGreen());
+print(px.getBlue());

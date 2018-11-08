@@ -1,0 +1,10 @@
+var image = new SimpleImage("Untitled34.png");
+w = image.getWidth();
+for (var pixel of image.values()) {
+     x = pixel.getX();
+     y = pixel.getY();
+     if (x + y < w) {
+          pixel.setRed(255);
+     }
+}
+print(image);
