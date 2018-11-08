@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void draw_canvas();
+void draw_board1(int,int,int);
+void main()
+{
+	draw_canvas();
+	draw_board1(40,90,0);  draw_board1(90,140,1); draw_board1(140,190,0); draw_board1(190,240,1); 
+	draw_board1(240,290,0); draw_board1(290,340,1); draw_board1(340,390,0); draw_board1(390,440,1);
+	setcolor(1); outtextxy(220,445,"CHESS BOARD DESIGNED BY JIMUT"); getch();
+}
+void draw_canvas()
+{   int i,j;
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"c:\\TurboC3\\BGI");
+	setbkcolor(15);
+	for(i=40;i<=440;i++) { putpixel(520,i,8); putpixel(120,i,8); }
+	for(i=120;i<=520;i++){putpixel(i,40,8);putpixel(i,440,8);}
+}
+void draw_board1(int k,int m,int l)
+{	int i,j,p=170,q=120;
+	if(l==0)
+	{if(p<=520) p+=50;
+	for(i=k;i<=m;i++)
+	{
+		for(j=p;j<=p+50;j++) putpixel(j,i,8);} }
+	else
+	for(i=k;i<=m;i++)
+	{if(q<=470) p+=50;
+	for(j=q;j<=q+50;j++) putpixel(j,i,8);}
+}

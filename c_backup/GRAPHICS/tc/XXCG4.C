@@ -1,0 +1,222 @@
+	/*Problem-4: xxcg4.c : Write a program to draw a rectangle
+
+	*/
+	#include<stdio.h>
+	#include<graphics.h>
+	#include<conio.h>
+	int c_bgcolor,c_line;
+	void draw_xy();
+	int round1(float x);
+	void line_draw(int x1,int y1,int x2,int y2,int c);
+void rectangle_draw(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,int c);
+	int dda(int x1,int y1,int x2,int y2,int x[],int y[]);
+	int main()
+	{
+	int x1,y1,x2,y2,x3,y3,x4,y4;
+	clrscr();
+	printf("\nEnter x-cordinate of 1st point(x1)=");
+	scanf("%d",&x1);
+	printf("Enter y-cordinate of 1st point(y1)=");
+	scanf("%d",&y1);
+	printf("Enter x-cordinate of 2nd point(x2)=");
+	scanf("%d",&x2);
+	printf("Enter y-cordinate of 2nd point(y2)=");
+	scanf("%d",&y2);
+	printf("Enter x-cordinate of 3rd point(x3)=");
+	scanf("%d",&x3);
+	printf("Enter y-cordinate of 3rd point(y3)=");
+	scanf("%d",&y3);
+        printf("Enter x-coordinate of 4-th point(x4)=");
+	scanf("%d",&x4);
+	printf("Enter y-coordinate of 4-th point(y4)=");
+	scanf("%d",&y4);
+	printf("Enter Back ground color(2-14)=");
+	scanf("%d",&c_bgcolor);
+	printf("Enter Line color(1 or 15)=");
+	scanf("%d",&c_line);
+	draw_xy();
+	rectangle_draw(x1,y1,x2,y2,x3,y3,x4,y4,c_line);
+	getch();
+	return 0;
+	}
+
+	/* Function to darw x and y axes on screen */
+	void draw_xy()
+	{
+	int i;
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"c://tc//bgi");
+	setbkcolor(c_bgcolor);
+	/* To draw x-axis and y-axis */
+		for(i=0;i<640;i++)
+		{
+		putpixel(i,240,c_line);
+		delay(5000);
+		}
+		for(i=0;i<480;i++)
+		{
+		putpixel(320,i,c_line);
+		delay(5000);
+		}
+	/* To display -X, +X, +Y, -Y, O(0,0) */
+	outtextxy(10,245,"-X");
+	outtextxy(620,245,"+X");
+	outtextxy(325,10,"+Y");
+	outtextxy(325,470,"-Y");
+	outtextxy(325,245,"O(0,0)");
+	}
+
+	/* Function to draw a line using DDA algorithm */
+	void line_draw(int x1,int y1,int x2,int y2,int c)
+	{
+	int x[700],y[700],i,n;
+	n=dda(x1,y1,x2,y2,x,y); /* Calling dda function to generate
+			  'n'  pixel co-ordinates */
+	/* To plot all points */
+		for(i=0;i<n;i++)
+		{
+		putpixel(320+x[i],240-y[i],c);
+		delay(5000);
+		}
+	}
+
+	/* Function to draw a rectangle */
+	void rectangle_draw(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,int c)
+	{
+	int x[700],y[700],i,n;
+	char a[80];
+	n=dda(x1,y1,x2,y2,x,y); /* To generate points of line AB */
+	/* To plot Line AB */
+		for(i=0;i<n;i++)
+		{
+		putpixel((320+x[i]),(240-y[i]),c);
+		delay(5000);
+		}
+	sprintf(a,"A(%d,%d)",x1,y1);
+	outtextxy((320+x[0]),(240-y[0]),a);
+	sprintf(a,"B(%d,%d)",x2,y2);
+	outtextxy((320+x[n-1]),(240-y[n-1]),a);
+	n=dda(x2,y2,x3,y3,x,y); /* To generate points of line BC */
+	/* To plot Line BC */
+		for(i=0;i<n;i++)
+		{
+		putpixel((320+x[i]),(240-y[i]),c);
+		delay(5000);
+		}
+	sprintf(a,"C(%d,%d)",x3,y3);
+	outtextxy((320+x[n-1]),(240-y[n-1]),a);
+	n=dda(x3,y3,x4,y4,x,y); /* To generate points of line CD */
+	/* To plot Line CD */
+		for(i=0;i<n;i++)
+		{
+		putpixel((320+x[i]),(240-y[i]),c);
+		delay(5000);
+		}
+	sprintf(a,"D(%d,%d)",x4,y4);
+	outtextxy(320+x4,240-y4,a);
+       n=dda(x4,y4,x1,y1,x,y);
+	/* To plot Line DA */
+		for(i=0;i<n;i++)
+		{
+		putpixel((320+x[i]),(240-y[i]),c);
+		delay(5000);
+		}
+
+	   }
+	/* Function to generate pixel co-ordinates using DDA
+	algorithm */
+	int dda(int x1,int y1,int x2,int y2,int x[],int y[])
+	{
+	int dx,dy,dx1,dy1,length,i;
+	float delx,dely;
+	float xx,yy;
+	dx=x2-x1;
+	dy=y2-y1;
+		if(dx<0)
+		dx1=-dx;
+		else
+		dx1=dx;
+		if(dy<0)
+		dy1=-dy;
+		else
+		dy1=dy;
+		if(dx1>dy1)
+		length=dx1;
+		else
+		length=dy1;
+	delx=(float)dx/length;
+	dely=(float)dy/length;
+	xx=x1;
+	yy=y1;
+		for(i=0;i<length;i++)
+		{
+		x[i]=round1(xx);
+		y[i]=round1(yy);
+		xx=xx+delx;
+		yy=yy+dely;
+		}
+	return length;
+	}
+
+	/* Function to get rounded value of a number */
+	int round1(float x)
+	{
+	int ix;
+	float x1,x2;
+	int s1;
+	ix=(int)x; /* To get whole number part from x */
+		if(x<0)
+		s1=-1;
+		else
+		s1=1;
+	x1=x-(float)ix; /* To get fractional part of x */
+		if(x1<0)
+		x2=-x1;
+		else
+		x2=x1;
+		if(x2>=.5)
+		{
+			if(s1==1)
+			ix=ix+1;
+			else
+			ix=ix-1;
+		}
+	return ix;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

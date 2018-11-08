@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+float x,y;
+float add,sub,mul,div;
+clrscr();
+printf("Please enter two integers");
+scanf("%f%f",&x,&y);
+scanf("Entered integers are%f\t%f",x,y);
+add=x+y;
+sub=x-y;
+mul=x*y;
+div=x/y;
+printf("Sum=%f\n",add);
+printf("Difference=%f\n",sub);
+printf("multiplication=%f\n",mul);
+printf("Division=%f\n",div);
+getch();
+}

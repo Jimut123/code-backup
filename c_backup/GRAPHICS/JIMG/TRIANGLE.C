@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<graphics.h>
+#include<C:\TURBOC3\BIN\PROJECT\C_Backup\GRAPHICS\JIMG\LINE_DDA.H>
+int main()
+{
+	int x1,x2,y1,y2,x3,y3,line_c;
+	clrscr();
+	xyaxis();
+
+	printf("Enter x1 : ");
+	scanf("%d",&x1);
+	printf("Enter y1 : ");
+	scanf("%d",&y1);
+	printf("Enter x2 : ");
+	scanf("%d",&x2);
+	printf("Enter y2 : ");
+	scanf("%d",&y2);
+	printf("Enter x3 : ");
+	scanf("%d",&x3);
+	printf("Enter y3 : ");
+	scanf("%d",&y3);
+	printf("Enter the line colour : ");
+	scanf("%d",&line_c);
+	draw_line(x1,y1,x2,y2,line_c);
+	draw_line(x1,y1,x3,y3,line_c);
+	draw_line(x2,y2,x3,y3,line_c);
+	getch();
+	return 0;
+}

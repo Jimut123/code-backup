@@ -1,0 +1,8 @@
+DOSBox version 0.74
+Copyright 2002-2010 DOSBox Team, published under GNU GPL.
+---
+CONFIG:Loading primary settings from config file C:\TC\BIN\dbconf.ak
+MIDI:Opened device:win32
+MAPPER: Loading mapper settings from C:\TC\BIN\dbmapper.ak
+SHELL:Redirect output to nul
+DOSBox switched to max cycles, because of the setting: cycles=auto. If the game runs too fast try a fixed cycles amount in DOSBox's options.

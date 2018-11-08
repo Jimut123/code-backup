@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct list
+{
+int x;
+struct list * next;
+};
+typedef struct list node;
+node * create(node *);
+void show(node *);
+void revshow(node *);
+int main()
+{
+node * head;
+clrscr();
+head=(node *)malloc(sizeof(node));
+head=create(head);
+show(head);
+revshow(head);
+getch();
+return 0;
+}
+node * create(node *head)
+{
+node * head1;
+char ch;
+head1=(node *)malloc(sizeof(node));
+head1=head;
+ch='y';
+while(ch=='y'||ch=='Y')
+{
+printf("Enter the node ::");
+scanf("%d",&head1->x);
+fflush(stdin);
+printf("\n Enter a node:(y/n) : ");
+scanf("%c",&ch);
+if(ch=='Y'||ch=='y')
+{
+head1->next=(node *)malloc(sizeof(node));
+head1=head1->next;
+}
+}
+head1->next=NULL;
+return head;
+}
+void show(node *head)
+{
+node *head1;
+head1=head;
+while(head1!=NULL)
+{
+printf("\n%d",head1->x);
+head1=head1->next;
+}
+}
+void revshow(node *head)
+{
+node *head1;
+head1=head;
+while(head1->next)
+{
+head1=head1->next;
+}
+while(head1->prev)
+{
+printf("%d\t",head1->x);
+head1=head1->prev;
+}
+}
+

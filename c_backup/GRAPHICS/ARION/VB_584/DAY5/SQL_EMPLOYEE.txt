@@ -1,0 +1,13 @@
+create table Employee1
+(
+E_id varchar2(5) primary key,
+E_name varchar2(20),
+E_salary number(10),
+Mgr_id varchar2(5)
+);
+ insert into Employee1 values('E001','Amit',50000,'E003');
+ insert into Employee1 values('E002','Sumit',150000,'E003');
+ insert into Employee1 values('E003','Ramesh',4000,NULL);
+ insert into Employee1 values('E004','Suresh',80000,'E001');
+ insert into Employee1 values('E005','Ram',5000,'E002');
+ insert into Employee1 values('E006','Shyam',12000,NULL);

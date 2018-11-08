@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<conoi.h>
+
+int points[1000][2];
+count=0;
+int main()
+{
+
+	getch();
+	return 0;
+}
+void seed_fill(int x, int y)
+{
+	points[count][0]=x;
+	points[count][1]=y;
+
+}

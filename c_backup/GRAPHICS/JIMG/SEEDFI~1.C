@@ -1,0 +1,163 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+
+int c_bgcolor,c_line;
+int fill_c = 4;
+void draw_xy();
+int round1(float x);
+void line_draw(int x1,int y1, int x2, int y2, int c);
+int dda(int x1, int y1, int x2, int y2, int x[], int y[]);
+
+void fill_me(int x1, int y1);
+
+int main()
+{
+	int x1,x2,y1,y2,x3,y3,x4,y4,x_f,y_f;
+	clrscr();
+	/*
+	printf("\nEnter x coordinate of 1st point (x1)");
+	scanf("%d",&x1);
+	printf("\nEnter y coordinate of 1st point (y1)");
+	scanf("%d",&y1);
+	printf("\nEnter x coordinate of 2nd point (x2)");
+	scanf("%d",&x2);
+	printf("\nEnter y coordinate of 2nd point (y2)");
+	scanf("%d",&y2);
+	printf("\nEnter x coordinate of 3rd point (x3)");
+	scanf("%d",&x3);
+	printf("\nEnter y coordinate of 3rd point (y3)");
+	scanf("%d",&y3);
+	printf("\nEnter x coordinate of 4rth point (x4)");
+	scanf("%d",&x4);
+	printf("\nEnter y coordinate of 4rth point (y4)");
+	scanf("%d",&y4);
+	*/
+	x1 = 0;
+	y1 = 0;
+	x2 = 30;
+	y2 = 0;
+	x3 = 30;
+	y3 = 30;
+	x4 = 0;
+	y4 = 30;
+	x_f = 10;
+	y_f = 10;
+	/*
+	printf("\nEnter background color(2-14)");
+	scanf("%d",&c_bgcolor);
+	printf("\nEnter line color(1 or 15)");
+	scanf("%d",&c_line);
+	printf("\nEnter x coordinate of fill me point (x_f)");
+	scanf("%d",&x_f);
+	printf("\nEnter y coordinate of fill me point (y_f)");
+	scanf("%d",&y_f);
+	*/
+	c_bgcolor = 3;
+	c_line = 5;
+	draw_xy();
+	//fill_me(x_f,y_f);
+	line_draw(x1,y1,x2,y2,c_line);
+	line_draw(x2,y2,x3,y3,c_line);
+	line_draw(x3,y3,x4,y4,c_line);
+	line_draw(x4,y4,x1,y1,c_line);
+	fill_me(320+x_f,240-y_f);
+	outtextxy(320+x_f,240-y_f,"o");
+	getch();
+	return 0;
+}
+
+void fill_me(int x1, int y1)
+{
+
+	if(x1>=320&&x1<=(320+30)&&y1>=(240-30)&&y1<=240)
+	{
+	//printf("%d %d",x1,y1);
+	putpixel(x1,y1,9);
+	fill_me(x1+1,y1+1);
+	putpixel(x1,y1,9);
+	fill_me(x1-1,y1-1);
+	putpixel(x1,y1,9);
+	fill_me(x1+1,y1-1);
+	putpixel(x1,y1,9);
+	fill_me(x1+1,y1);
+	putpixel(x1,y1,9);
+	delay(8);
+	//printf("%d %d",x1,y1 );
+
+	}
+}
+
+
+//to draw x and y axes
+void draw_xy()
+{
+	int i;
+	int gd=DETECT, gm;
+	initgraph(&gd,&gm,"c://turboc3//bgi");
+	setbkcolor(c_bgcolor);
+}
+
+//dda algorithm
+int dda(int x1, int y1, int x2, int y2, int x[], int y[])
+{
+	int dx,dy,dx1,i,dy1,n,length;
+	float delx,dely;
+	float xx,yy;
+	dx=x2-x1;
+	dy=y2-y1;
+		if(dx<0)
+		dx1=-dx;
+		else
+		dx1=dx;
+		if(dy<0)
+		dy1=-dy;
+		else
+		dy1=dy;
+		if(dx1>dy1)
+		length=dx1;
+		else
+		length=dy1;
+	delx=(float)dx/length;
+	dely=(float)dy/length;
+	xx=x1;
+	yy=y1;
+		for(i=0;i<length;i++)
+		{
+			x[i]=round1(xx);
+			y[i]=round1(yy);
+			xx+=delx;
+			yy+=dely;
+		}
+	return length;
+}
+int round1(float x)
+{
+	int x1,flag=0;
+	float ix;
+	if(x<0)
+	{
+		flag=1;
+		x*=-1;
+	}
+	x1=(int)x;//to get whole value
+	ix=x-x1;
+	if(ix>.5)
+	x1++;
+	if(flag==1)
+	return -x1;
+	else
+	return x1;
+}
+//draw line
+void line_draw(int  x1, int y1, int  x2, int  y2, int c)
+{
+	int x[700], y[700], i,n;
+	n=dda(x1,y1,x2,y2,x,y);//to generate n pixel coordinates
+	//to plot all points
+		for(i=0;i<n;i++)
+		{
+			putpixel(320+x[i],240-y[i],c);
+			delay(10);
+		}
+}

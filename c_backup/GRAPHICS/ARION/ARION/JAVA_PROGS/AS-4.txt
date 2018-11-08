@@ -1,0 +1,10 @@
+strcopy
+strrev
+strconcat
+caps to small and vice versa
+eliminiate extra spaces from left rt all
+count vowel consonaunt alphabets digits
+stringcompare
+length of greatest common substring between 2 strings
+extract all words
+sort a list of pwersons and address and telephone num acc to alphabetical order of person

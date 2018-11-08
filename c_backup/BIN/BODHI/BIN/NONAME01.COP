@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main(void)
+{
+clrscr();
+int num1,num2,res;
+char opr;
+printf("Enter two integers\n");
+scanf("%d%d",& num1,& num2);
+fflush(stdin);
+printf("Which operation you want to perform?");
+scanf("%c",&opr);
+if (opr=='+')
+{
+res=num1+num2;
+printf("The addition=%d",res);
+printf("\n");
+}
+else if(opr=='-')
+{
+res=num1-num2;
+printf("Subtraction=%d ",res);
+printf("\n");
+}
+else if(opr=='*')
+{
+res=num1*num2;
+printf("Multiplication=%d",res);
+printf("\n");
+}
+else if(opr=='/')
+{
+res=num1/num2;
+printf("division=%d",res);
+printf("\n");
+}
+getch();
+}
