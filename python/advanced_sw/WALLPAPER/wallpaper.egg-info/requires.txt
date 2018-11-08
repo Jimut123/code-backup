@@ -1,0 +1,4 @@
+beautifulsoup4
+urllib3
+pip
+wget

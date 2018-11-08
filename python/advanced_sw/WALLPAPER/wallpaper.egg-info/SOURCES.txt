@@ -1,0 +1,8 @@
+setup.py
+wallpaper.py
+wallpaper.egg-info/PKG-INFO
+wallpaper.egg-info/SOURCES.txt
+wallpaper.egg-info/dependency_links.txt
+wallpaper.egg-info/entry_points.txt
+wallpaper.egg-info/requires.txt
+wallpaper.egg-info/top_level.txt

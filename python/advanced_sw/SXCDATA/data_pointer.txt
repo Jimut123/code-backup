@@ -1,0 +1,32 @@
+Select Session :- 810 Y:  317 RGB: (255, 255, 255)
+
+Select Stream :
+	BA = 818 Y:  394 RGB: (218, 218, 218)
+	BSC = 834 Y:  393 RGB: (222, 222, 222)
+	BAM = 802 Y:  447 RGB: ( 62,  61,  57)
+
+Select Sem :-
+	Sem 2 : 1249 Y:  324 RGB: (255, 255, 255)
+	Sem 4 : 1214 Y:  342 RGB: (247, 247, 246)
+	Sem 6 : 1221 Y:  375 RGB: (255, 255, 255)
+BSC :
+	Chem Hons : 		300 to 375
+	Comp Sci Hons :		500 to 599
+	Eco Hons :		200 to 291
+	Maths Hons : 		0002 to  2707 (dafuq?)
+	Mass Com Hons :		800 to 899
+	Micro Bio Hons : 	600 to 699
+	Physics Hons : 		100 to 192
+	Stats Hons : 		400 to 499
+	BSC Gen :		700 to 799
+	
+BA :
+	Eng Hons :		0 to 100
+	Pol Sci. Hons :		100 to 166
+	Socio Hons :		200 to 281
+	BA Gen :		300 to 385
+	Beng Hons :		500 to 548
+BAM :
+	Multimedia :		100 to 200
+	
+

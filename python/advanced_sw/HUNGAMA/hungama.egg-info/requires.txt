@@ -1,0 +1,5 @@
+beautifulsoup4
+urllib3
+datetime
+pip
+wget

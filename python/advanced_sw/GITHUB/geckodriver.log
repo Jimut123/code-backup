@@ -1,0 +1,5 @@
+1530425178538	geckodriver	INFO	geckodriver 0.21.0
+1530425178542	geckodriver	INFO	Listening on 127.0.0.1:39085
+1530425179603	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Jn2exNfSatFd"
+1530425187655	Marionette	INFO	Listening on port 45487
+1530425187822	Marionette	WARN	TLS certificate errors will be ignored for this session
