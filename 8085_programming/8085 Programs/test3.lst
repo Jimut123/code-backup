@@ -1,0 +1,5 @@
+0001   0000              .ORG 0000H
+0002   0000 3E FF        MVI A,00FFH
+0003   0002 32 00 90     STA 9000H
+0004   0005 76           HLT
+Number of errors = 0

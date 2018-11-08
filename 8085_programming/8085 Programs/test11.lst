@@ -1,0 +1,9 @@
+0001   0000              .ORG 0000H
+0002   0000 31 20 00     LXI SP,0020H
+0003   0003 3E 05        MVI A,05H
+0004   0005 D6 02        SUI 02H
+0005   0007 F5           PUSH PSW
+0006   0008 D1           POP D
+0007   0009 32 00 20     STA 2000H
+0008   000C 76           HLT
+Number of errors = 0

@@ -1,0 +1,12 @@
+;LDA 0000H
+;MOV B,A
+
+MVI B, 00H
+MVI C, 00H
+
+LDAX B	; as a reg pair
+
+MOV E, A
+PUSH B
+;POP E
+HLT

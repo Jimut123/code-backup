@@ -1,0 +1,4 @@
+LXI H, 2060H
+MOV A, M
+RAL 
+HLT

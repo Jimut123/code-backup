@@ -1,0 +1,10 @@
+Metadata-Version: 1.4.5
+Name: Combinatorics
+Version: 1.4.5
+Summary: This set of basic combinatorics functions supplements Python's itertools module.
+Home-page: http://pypi.python.org/pypi/Combinatorics
+Author: Phillip M. Feldman
+Author-email: Phillip.M.Feldman@gmail.com
+License: MIT License
+Description: This module was created to supplement Python's itertools module, filling in gaps in the following areas of basic combinatorics: (A) ordered and unordered m-way combinations, (B) generalizations of the four basic occupancy problems ('balls in boxes'), and (C) constrained permutations, otherwise known as the 'off-by-m' problem.
+Platform: UNKNOWN

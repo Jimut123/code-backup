@@ -1,0 +1,19 @@
+	MVI	C, 0AH
+	LXI	H, 2060H
+	MVI	B, 00H
+L2:	MOV 	A,M
+	RAL
+	JC	L1
+	RAR
+	ADD 	B
+	MOV 	B, A
+	JNC 	L1
+	LXI 	H, 2070H
+	MVI	M, 0FFH
+L1:	INX	H
+	DCR 	C
+	JNZ 	L2
+	LXI 	H, 2070H
+	MOV 	M, B
+	HLT
+		
