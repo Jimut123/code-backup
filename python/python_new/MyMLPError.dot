@@ -1,0 +1,17 @@
+digraph G {
+labelloc="t";
+label="MyMLPError";
+node [shape = oval]; 
+n1[label="Node1\nreverseMap = {}\lmodule = nn.Linear(10 -> 1)\lgradOutput = {Tensor[1]}\linput = {}" tooltip="[stdin]:1_"];
+n2[label="Node2\nreverseMap = {}\lgradOutput = {Tensor[1]}\linput = {}" tooltip="[[C]]:-1_"];
+n3[label="Node3\nreverseMap = {}\lmodule = nn.Tanh\lgradOutput = {Tensor[10]}\linput = {}" tooltip="[stdin]:1_"];
+n4[label="Node4\nreverseMap = {}\lmodule = nn.Linear(20 -> 10)\lgradOutput = {Tensor[10]}\linput = {Tensor[15]}" tooltip="[stdin]:1_"];
+n5[label="Node5\nreverseMap = {}\lmodule = nn.Identity\lgradOutput = {Tensor[20]}\linput = {Tensor[15]}" tooltip="[stdin]:1_"];
+n6[label="Node6\nreverseMap = {}\lgradOutput = {Tensor[20]}\linput = {Tensor[15]}" tooltip="[[C]]:-1_"];
+n1 -> n2;
+n3 -> n1;
+n4 -> n3;
+n5 -> n4;
+n6 -> n5;
+n4[style=filled, fillcolor=red];
+}
