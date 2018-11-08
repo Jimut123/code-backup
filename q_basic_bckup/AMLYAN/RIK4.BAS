@@ -1,0 +1,18 @@
+REM
+CLS : A = 0
+INPUT "ENTER A STRING="; S$
+N = LEN(S$)
+A = 0
+FOR I = 1 TO N STEP 1
+C$ = MID$(S$, I, 1)
+A = A + 1
+IF C$ = " " THEN
+PRINT "LENGTH OF WORD="; A - 1
+A = 0
+END IF
+NEXT I
+PRINT "LENGTH OF WORD="; A
+END
+
+
+

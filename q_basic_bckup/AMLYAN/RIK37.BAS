@@ -1,0 +1,16 @@
+REM
+CLS : P = 5: N = 5: K = 5
+FOR I = 1 TO N
+WHILE (P > K)
+PRINT P;
+P = P - 1
+WEND
+FOR J = 1 TO K
+PRINT K;
+NEXT J
+P = N
+K = K - 1
+PRINT
+NEXT I
+END
+

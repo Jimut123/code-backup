@@ -1,0 +1,6 @@
+REM
+CLS
+FOR I = 1 TO 6 STEP 1
+READ A
+IF A MOD 2 = 0 THEN
+

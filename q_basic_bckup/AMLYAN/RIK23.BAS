@@ -1,0 +1,19 @@
+REM
+CLS : C = 1
+FOR I = 1 TO 10 STEP 1
+READ B
+S = S + B
+C = C + 1
+IF C = 4 THEN
+RESTORE
+C = 1
+END IF
+NEXT I
+PRINT S
+DATA 2,3,4
+END
+
+
+
+
+

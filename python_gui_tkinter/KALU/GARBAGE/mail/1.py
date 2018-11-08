@@ -1,7 +1,7 @@
 import smtplib
 import string
-username = "jimutbahanpal@gmail.com"     #"jimutbahanpal@yahoo.com"
-password = "jimut1234S#"
+username = ""     #"jimutbahanpal@yahoo.com"
+password = ""
 #server.login(username, password)
 HOST = "mySMTP.server.com"
 SUBJECT = "Test email from Python"

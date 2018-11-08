@@ -1,0 +1,14 @@
+REM
+CLS
+J = 97
+INPUT "ENTER EXTENT="; N
+FOR I = 1 TO N
+FOR K = 1 TO I
+PRINT CHR$(J); " ";
+NEXT K
+J = J + 1
+PRINT
+NEXT I
+END
+
+

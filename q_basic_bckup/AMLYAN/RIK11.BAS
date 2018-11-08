@@ -1,0 +1,20 @@
+REM
+CLS
+INPUT "ENTER TWO NUMBERS="; A, B
+IF A > B THEN
+C = A
+D = B
+ELSE
+C = B
+D = A
+END IF
+K = 1
+WHILE ((D * K) MOD C <> 0)
+K = K + 1
+WEND
+F = D * K
+PRINT "L.C.M IS"; F
+END
+
+
+

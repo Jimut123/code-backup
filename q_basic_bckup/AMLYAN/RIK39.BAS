@@ -1,0 +1,18 @@
+REM
+CLS
+INPUT "ENTER EXTENT:-"; L
+T = L
+K = L
+FOR I = 1 TO L
+FOR M = 1 TO T
+PRINT " ";
+NEXT M
+FOR J = 1 TO I
+PRINT K;
+NEXT J
+K = K - 1
+T = T - 1
+PRINT
+NEXT I
+END
+

@@ -1,0 +1,11 @@
+REM
+CLS
+INPUT "ENTER A STRING"; S$
+N = LEN(S$)
+FOR I = N TO 1 STEP -1
+X$ = RIGHT$(S$, I)
+PRINT X$
+NEXT I
+END
+
+

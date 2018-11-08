@@ -1,0 +1,22 @@
+REM
+CLS : C = 0: E = 0
+INPUT "ENTER STRING="; S$
+N = LEN(S$)
+FOR I = 1 TO N STEP 1
+t$ = MID$(S$, I, 1)
+r = ASC(t$)
+IF r >= 65 AND r <= 90 THEN
+C = C + 1
+END IF
+IF r >= 97 AND r <= 122 THEN
+E = E + 1
+END IF
+NEXT I
+PRINT "NO. OF UPPER-CASE LETTERS ="; C
+PRINT "NO. OF LOWER-CASE LETTERS="; E
+END
+
+
+
+
+

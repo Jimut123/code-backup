@@ -1,0 +1,18 @@
+REM
+CLS : C = 1: L = 0: S = 0: G = 0: V = 0
+INPUT "ENTER DESIRED NUMBER"; X
+INPUT "ENTER EXTENT"; N
+WHILE (C <= N)
+FOR I = 1 TO C
+L = L + I
+NEXT I
+G = X + L
+V = 1 / G
+S = S + V
+C = C + 1
+WEND
+PRINT "SUM="; S
+END
+
+
+

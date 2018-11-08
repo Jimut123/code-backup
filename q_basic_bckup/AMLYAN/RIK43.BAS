@@ -1,0 +1,13 @@
+REM
+CLS : C = 1
+INPUT "ENTER EXTENT="; N
+FOR I = 1 TO N
+FOR J = 1 TO I
+PRINT C;
+C = C + 1
+NEXT J
+PRINT
+NEXT I
+END
+
+

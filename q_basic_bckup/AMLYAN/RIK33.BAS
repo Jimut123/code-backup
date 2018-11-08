@@ -1,0 +1,50 @@
+REM                           
+CLS : K = 1: P = 1
+INPUT "ENTER ARRAY SIZE-"; S
+L = S * S
+DIM A(S, S), B(L), C(L)
+FOR I = 1 TO S
+FOR J = 1 TO S
+INPUT "ENTER 2D ARRAY ELEMENT"; A(I, J)
+NEXT J
+NEXT I
+FOR I = 1 TO S
+FOR J = 1 TO S
+IF A(I, J) MOD 2 = 0 THEN
+B(K) = A(I, J)
+K = K + 1
+ELSE
+FOR C = 2 TO A(I, J) - 1
+IF A(I, J) MOD C = 0 THEN
+F = 1
+END IF
+NEXT C
+IF F = 0 THEN
+C(P) = A(I, J)
+P = P + 1
+END IF
+END IF
+NEXT J
+NEXT I
+PRINT "EVEN ELEMENTS"
+FOR I = 1 TO K - 1
+PRINT B(I); " ";
+NEXT I
+PRINT
+PRINT "PRIME ELEMENTS"
+FOR I = 1 TO P - 1
+PRINT C(I); " ";
+NEXT I
+PRINT
+PRINT "ORIGINAL MATRIX:-"
+FOR I = 1 TO S
+FOR J = 1 TO S
+PRINT A(I, J); " ";
+NEXT J
+PRINT
+NEXT I
+END
+
+
+
+

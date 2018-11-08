@@ -1,0 +1,14 @@
+REM
+CLS : C = 65
+INPUT "ENTER NO.OF LINES"; L
+FOR I = 1 TO L
+FOR J = 1 TO I
+PRINT CHR$(C); " "; " ";
+C = C + 1
+NEXT J
+PRINT
+NEXT I
+END
+
+
+

@@ -9,7 +9,7 @@ from email.message import EmailMessage
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("jimutbahanpal@gmail.com", "jimut1234S#")
+server.login("", "")
 # Create the container email message.
 msg = EmailMessage()
 msg['Subject'] = 'Test Python png\'s'

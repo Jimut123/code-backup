@@ -1,0 +1,17 @@
+DECLARE SUB s4 ()
+PRINT "Addition"
+s4
+END
+
+SUB s3
+INPUT a
+INPUT b
+PRINT a + b
+END SUB
+
+SUB s4
+INPUT a
+INPUT b
+PRINT a + b
+END SUB
+

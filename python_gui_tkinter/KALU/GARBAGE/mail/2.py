@@ -7,8 +7,8 @@ from email.utils import make_msgid
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 
-username = "jimutbahanpal@gmail.com"
-password = "jimut1234S#"
+username = ""
+password = ""
 server.login(username, password)
 
 FROM = "jimutbahanpal@gmail.com" #<from-address>

@@ -1,0 +1,21 @@
+REM
+CLS : C = 65: D = 69: K = 0
+FOR I = 1 TO 5
+FOR J = C TO D
+PRINT CHR$(J);
+NEXT J
+PRINT " ";
+IF I = 1 THEN
+T = 2
+ELSE
+T = 1
+END IF
+FOR N = J - T TO 65 STEP -1
+PRINT CHR$(N);
+NEXT N
+D = D - 1
+K = K + 1
+PRINT
+NEXT I
+END
+
