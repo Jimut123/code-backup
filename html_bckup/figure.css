@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>HTML Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/semantic.css" media="screen" />
+</head>
+<body>    
+<header>News Website</header>
+<nav>Nav</nav>
+<section>
+    <article>Article 1</article>
+    <article>Article 2</article>
+</section>
+<aside>Aside</aside>
+<footer>Footer</footer>
+</body>
+</html>

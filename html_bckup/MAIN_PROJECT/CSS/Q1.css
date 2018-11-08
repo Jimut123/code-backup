@@ -1,0 +1,34 @@
+body{
+	background-color: #e5f5ff;
+	font-family: bree-serif;
+	font-family: sans-serif;
+}
+.h4_back_ground{
+	color: black;
+	background-color: #d6fcf1;
+	text-align: center;
+}
+.list_how_to_use{
+	font-size: 14px;
+	margin: 30px;
+	padding: 5px;
+	border: thin,lightgray;
+
+}
+.how_to_use{
+	text-align: left;
+}
+
+.list_how_to_use
+{
+	text-align: justify;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}

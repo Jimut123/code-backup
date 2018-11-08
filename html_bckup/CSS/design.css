@@ -1,0 +1,21 @@
+body{
+	background-color: #fbf8e5;
+	color: #6e7d9e;
+	padding: 5px 10px;;
+	font-family: 'Segoe UI',Tahoma,Geneva,Verdana,Sans-serif;
+}
+header{
+	background-color: #080607;
+	color: #A5B7C5;
+	padding: 10px 20px;
+}
+header > h1{
+	letter-spacing: 5px;
+}
+article > h2{
+	font-weight: bolder;
+}
+footer{
+	background-color: #A5B7C5;
+	padding: 5px 10px;
+}
