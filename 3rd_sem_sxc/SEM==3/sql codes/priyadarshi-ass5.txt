@@ -1,0 +1,105 @@
+CREATE TABLE engineer(	
+	eng_id NUMBER(5),
+	eng_name VARCHAR2(10),
+	doj DATE,
+	city VARCHAR2(10),
+	CONSTRAINTS eng_pk PRIMARY KEY(eng_id)
+	);
+	
+CREATE TABLE project(
+	proj_name VARCHAR2(20),
+	initiation_date DATE,
+	client_id NUMBER(10),
+	manager_id NUMBER(10),
+	CONSTRAINTS proj_pk PRIMARY KEY(proj_name),
+	CONSTRAINTS proj_fk1 FOREIGN KEY(client_id) REFERENCES client,
+	CONSTRAINTS proj_fk2 FOREIGN KEY(manager_id) REFERENCES engineer
+	);
+	
+CREATE TABLE client(
+	client_id NUMBER(10),
+	client_name VARCHAR2(20),
+	country VARCHAR2(20),
+	CONSTRAINTS client_pk PRIMARY KEY(client_id)
+	);
+	
+CREATE TABLE assigned(
+	proj_name VARCHAR2(20),
+	eng_id NUMBER(5),
+	CONSTRAINTS assign_pk PRIMARY KEY(proj_name,eng_id)
+	);
+	
+	
+	
+	
+INSERT INTO engineer VALUES (1,'SAWON','22-MAY-2013','KOLKATA');
+INSERT INTO engineer VALUES (2,'SOURISH','22-APR-2011','SHILLONG');
+INSERT INTO engineer VALUES (3,'SOUMYAJIT','22-MAY-2013','HOWRAH');
+INSERT INTO engineer VALUES (4,'SUMEDHA','01-JAN-2011','KOLKATA');
+INSERT INTO engineer VALUES (5,'ANUBHAV','02-DEC-2017','PUNE');
+INSERT INTO engineer VALUES (6,'SHILPO','22-MAR-2013','SHILLONG');
+INSERT INTO engineer VALUES (7,'ARJYA','17-APR-2017','HOWRAH');
+INSERT INTO engineer VALUES (8,'ARTHITA','22-MAY-2017','KOLKATA');
+INSERT INTO engineer VALUES (9,'SOUPTIK','12-JUN-2014','TATA');
+INSERT INTO engineer VALUES (10,'RAJA','01-MAY-1999','TATA');
+
+	
+INSERT INTO project VALUES ('CEREAL','22-MAY-2017',2134,3);
+INSERT INTO project VALUES ('TEA','12-APR-2013',6754,5);
+INSERT INTO project VALUES ('ARCHAEOLOGY','19-MAY-1999',5632,7);
+INSERT INTO project VALUES ('COLLEGE_ADMIN','10-OCT-2013',0392,9);
+INSERT INTO project VALUES ('FARMING','11-NOV-2004',7645,10);
+
+
+INSERT INTO client VALUES (2134,'RANI','AUSTRALIA');
+INSERT INTO client VALUES (6754,'TANI','NEW YORK');
+INSERT INTO client VALUES (5632,'SHUTU','DELHI');
+INSERT INTO client VALUES (0392,'LAXMI','SWEDEN');
+INSERT INTO client VALUES (7645,'TANYA','AUSTRALIA');
+
+
+INSERT INTO assigned VALUES ('CEREAL',1);
+INSERT INTO assigned VALUES ('CEREAL',2);
+INSERT INTO assigned VALUES ('TEA',3);
+INSERT INTO assigned VALUES ('FARMING',4);
+INSERT INTO assigned VALUES ('COLLEGE_ADMIN',5);
+INSERT INTO assigned VALUES ('TEA',6);
+INSERT INTO assigned VALUES ('CEREAL',7);
+INSERT INTO assigned VALUES ('COLLEGE_ADMIN',8);
+INSERT INTO assigned VALUES ('ARCHAEOLOGY',9);
+INSERT INTO assigned VALUES ('ARCHAEOLOGY',10);
+
+
+
+QUERIES:
+
+1. 	SELECT DISTINCT p.* FROM project p JOIN assigned a
+	ON a.proj_name=p.proj_name 
+	WHERE p.proj_name IN	
+	(SELECT a.proj_name FROM assigned a
+	GROUP BY a.proj_name
+	HAVING COUNT(*)= (SELECT MAX(COUNT(*)) FROM assigned a GROUP BY a.proj_name));
+	
+	
+2. 	SELECT DISTINCT eng_name FROM 
+	engineer e JOIN project p ON e.eng_id=p.manager_id
+	JOIN client c ON p.client_id=c.client_id
+	WHERE e.eng_id IN 
+	(SELECT manager_id FROM project p WHERE p.client_id IN 
+	(SELECT c.client_id FROM client c WHERE c.country='AUSTRALIA'));
+	
+3.	SELECT e.* FROM engineer e JOIN project p
+	ON e.eng_id=p.manager_id
+	WHERE TO_CHAR(initiation_date,'YYYY')='2017';
+	
+4.	SELECT e.eng_name,ROUND(MONTHS_BETWEEN(SYSDATE,doj)/12) "YEARS"
+	FROM engineer e JOIN project p
+	ON e.eng_id=p.manager_id
+	WHERE e.eng_id=p.manager_id;
+	
+5. 	SELECT e.* FROM engineer e JOIN project p
+	ON e.eng_id=p.manager_id
+	WHERE e.eng_id IN
+	(	SELECT e.eng_id FROM engineer e JOIN project p
+		ON e.eng_id=p.manager_id
+		WHERE initiation_date<doj);

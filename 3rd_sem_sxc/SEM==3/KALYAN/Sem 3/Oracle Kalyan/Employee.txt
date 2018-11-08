@@ -1,0 +1,111 @@
+create table employee_rec (emp_id char(6),
+emp_nm varchar(15),
+dept_nm  varchar(11) default 'Sales',
+salary number(6),
+doJ date,
+city varchar2(8),
+constraint emp_pk primary key(emp_id),
+constraint emp_ck1 check(emp_id like 'EMP%'),
+constraint emp_ck2 check(city in ('Kolkata', 'Jaipur', 'Srinagar', 'Kochi')),
+constraint emp_ck3 check(dept_nm in ('Sales', 'Marketing', 'Accounts', 'Research', 'Programming')),
+constraint emp_ck4 check(salary >= 30000));
+
+
+insert into emp_rec values('EMP001', 'Emp-Nm-1', 'Sales', 35000, '29-JUL-2016', 'Kolkata');
+insert into emp_rec values('EMP002', 'Emp-Nm-2', 'Marketing', 190000, '12-JAN-2013', 'Jaipur');
+insert into emp_rec values('EMP003', 'Emp-Nm-3', 'Accounts', 75000, '05-MAR-2011', 'Kolkata');
+insert into emp_rec values('EMP004', 'Emp-Nm-4', 'Accounts', 65000, '16-MAR-2015', 'Srinagar');
+insert into emp_rec values('EMP005', 'Emp-Nm-5', 'Research', 200000, '23-DEC-2012', 'Kochi');
+insert into emp_rec values('EMP006', 'Emp-Nm-6', 'Programming', 210000, '13-JUL-1996', 'Kolkata');
+insert into emp_rec values('EMP007', 'Emp-Nm-7', 'Research', 94000, '05-SEP-2001', 'Srinagar');
+insert into emp_rec values('EMP008', 'Emp-Nm-8', 'Marketing', 81000, '16-AUG-2009', 'Jaipur');
+insert into emp_rec values('EMP009', 'Emp-Nm-9', 'Sales', 45000, '20-NOV-2007', 'Kochi');
+insert into emp_rec values('EMP010', 'Emp-Nm-10', 'Programming', 205000, '12-SEP-1997', 'Kolkata');
+
+
+
+Queries
+
+select * from emp_rec where dept_nm in('Marketing', 'Programming');
+select * from emp_rec where emp_nm like 'S%' or emp_nm like 'N%';
+select * from emp_rec where doJ < '01-JAN-2016';
+select emp_id,city from emp_rec where doJ < '01-JAN-2016';
+select emp_id,salary from emp_rec where city in ('Jaipur', 'Srinagar');
+
+
+
+Output --------------------------------------------------------------------------->>>>>>
+
+
+SQL> select * from emp_rec;
+
+EMP_ID EMP_NM          DEPT_NM         SALARY DOJ       CITY
+------ --------------- ----------- ---------- --------- --------
+EMP001 Emp-Nm-1        Sales            35000 29-JUL-16 Kolkata
+EMP002 Emp-Nm-2        Marketing       190000 12-JAN-13 Jaipur
+EMP003 Emp-Nm-3        Accounts         75000 05-MAR-11 Kolkata
+EMP004 Emp-Nm-4        Accounts         65000 16-MAR-15 Srinagar
+EMP005 Emp-Nm-5        Research        200000 23-DEC-12 Kochi
+EMP006 Emp-Nm-6        Programming     210000 13-JUL-96 Kolkata
+EMP007 Emp-Nm-7        Research         94000 05-SEP-01 Srinagar
+EMP008 Emp-Nm-8        Marketing        81000 16-AUG-09 Jaipur
+EMP009 Emp-Nm-9        Sales            45000 20-NOV-07 Kochi
+EMP010 Emp-Nm-10       Programming     205000 12-SEP-97 Kolkata
+
+10 rows selected.
+
+SQL> select * from emp_rec where dept_nm in('Marketing', 'Programming');
+
+EMP_ID EMP_NM          DEPT_NM         SALARY DOJ       CITY
+------ --------------- ----------- ---------- --------- --------
+EMP002 Emp-Nm-2        Marketing       190000 12-JAN-13 Jaipur
+EMP006 Emp-Nm-6        Programming     210000 13-JUL-96 Kolkata
+EMP008 Emp-Nm-8        Marketing        81000 16-AUG-09 Jaipur
+EMP010 Emp-Nm-10       Programming     205000 12-SEP-97 Kolkata
+
+SQL> select * from emp_rec where emp_nm like 'S%' or emp_nm like 'N%';
+
+no rows selected
+
+SQL> select * from emp_rec where doJ < '01-JAN-2016';
+
+EMP_ID EMP_NM          DEPT_NM         SALARY DOJ       CITY
+------ --------------- ----------- ---------- --------- --------
+EMP002 Emp-Nm-2        Marketing       190000 12-JAN-13 Jaipur
+EMP003 Emp-Nm-3        Accounts         75000 05-MAR-11 Kolkata
+EMP004 Emp-Nm-4        Accounts         65000 16-MAR-15 Srinagar
+EMP005 Emp-Nm-5        Research        200000 23-DEC-12 Kochi
+EMP006 Emp-Nm-6        Programming     210000 13-JUL-96 Kolkata
+EMP007 Emp-Nm-7        Research         94000 05-SEP-01 Srinagar
+EMP008 Emp-Nm-8        Marketing        81000 16-AUG-09 Jaipur
+EMP009 Emp-Nm-9        Sales            45000 20-NOV-07 Kochi
+EMP010 Emp-Nm-10       Programming     205000 12-SEP-97 Kolkata
+
+9 rows selected.
+
+SQL> select emp_id,city from emp_rec where doJ < '01-JAN-2016';
+
+EMP_ID CITY
+------ --------
+EMP002 Jaipur
+EMP003 Kolkata
+EMP004 Srinagar
+EMP005 Kochi
+EMP006 Kolkata
+EMP007 Srinagar
+EMP008 Jaipur
+EMP009 Kochi
+EMP010 Kolkata
+
+9 rows selected.
+
+SQL> select emp_id,salary from emp_rec where city in ('Jaipur', 'Srinagar');
+
+EMP_ID     SALARY
+------ ----------
+EMP002     190000
+EMP004      65000
+EMP007      94000
+EMP008      81000
+
+SQL>

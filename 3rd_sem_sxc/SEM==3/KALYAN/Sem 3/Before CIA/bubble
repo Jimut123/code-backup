@@ -1,0 +1,47 @@
+clear
+echo -n "Enter size of array (1-20) ="
+read n
+echo "Enter number one by one"
+i=1
+while [ $i -le $n ]
+do
+echo -n "a[$i]="
+eval read a$i
+i=`expr $i + 1`
+done
+
+i=1
+while [ $i -le $n ]
+do
+j=1
+while [ $j -le `expr $n - 1` ]
+do
+	eval aj=\$a$j
+	j1=`expr $j + 1`
+	eval aj1=\$a$j1
+		if [ $aj -ge $aj1 ]
+		then
+		eval a$j=$aj1
+	 	eval a$j1=$aj
+		fi
+	j=`expr $j + 1`
+done
+k=1
+echo "pass=$i"
+while [ $k -le $n ]
+do
+eval ak=\$a$k
+echo " $ak "
+k=`expr $k + 1`
+done
+i=`expr $i + 1`
+done
+
+
+i=1
+while [ $i -le $n ]
+do
+eval ai=\$a$i
+echo " $ai "
+i=`expr $i + 1`
+done

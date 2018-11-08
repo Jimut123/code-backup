@@ -1,0 +1,16 @@
+clear
+echo -n "Enter a="
+read a
+echo -n "Enter b="
+read b
+s=`expr $a + $b`
+d=`expr $a - $b`
+p=`expr $a \* $b`
+di=`expr $a / $b`
+m=`expr $a % $b`
+echo "$a + $b =$s"
+echo "$a - $b =$d"
+echo "$a * $b =$p"
+echo "$a / $b =$di"
+echo "$a % $b =$m"
+

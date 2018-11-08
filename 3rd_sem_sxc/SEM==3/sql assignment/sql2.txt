@@ -1,0 +1,24 @@
+create table customer(
+	cust_id varchar(20),
+	cust_name varchar(25),
+	cust_city varchar(25),
+	number_units_purchased number(5),
+	constraint customer_ck primary key(cust_id),
+	constraint customer_id check(cust_id like 'CUST%'),
+	constraint customer_city check(cust_city in('Kolkata','Asansol','Siliguri','Howrah')),
+	constraint customer_no check(number_units_purchased >= 5)
+);
+
+//insertions:
+insert into customer values ('CUST001','Deep Ganguly','Kolkata',20);
+insert into customer values ('CUST201','Anubhav Roy','Howrah',20);
+insert into customer values ('CUST561','Angsul Sadhukhan','Kolkata',40);
+insert into customer values ('CUST651','Sandeep Chatterjee','Asansol',35);
+insert into customer values ('CUST756','Sourav Hazra','Siliguri',98);
+
+
+//queries
+select sum(number_units_purchased) from customer;
+select * from customer where cust_city='Kolkata' and number_units_purchased>=10;
+select cust_name,cust_city from customer where cust_id in('CUST001','CUST007','CUST025','CUST019');
+select count(*) from customer where cust_city='Asansol';

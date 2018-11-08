@@ -1,0 +1,90 @@
+#!/bin/sh
+clear
+echo
+echo -n "Enter a number n (1-20) : "
+
+#1st part of the program
+
+#to calculate s1 = 1+2+3+....+n
+read n
+sum=0
+c=1
+while [ $c -le $n ]
+do
+	echo -n "$c+"
+	sum=` expr $sum + $c `
+	c=` expr $c + 1 `	
+	done
+echo
+echo "sum = $sum"
+echo
+
+#2nd part of the program
+
+#to calculate s2=1^2+2^2+....+n^2
+
+sum1=0
+c=1
+exp=1
+while [ $c -le $n ]
+do
+	echo -n "$c ^ 2 +"
+	exp=` expr $c \* $c `                 # this needs to be given \*
+	sum1=` expr $sum1 + $exp `     #there must be a space between the characters
+	c=` expr $c + 1`
+	done
+echo
+echo "sum=$sum1"
+
+
+#3rd part of the program
+#this part is not done correctly
+#to calculate s3 = 1 - 2 + 3 - 4 +......n
+
+sum2=0
+c=1
+
+while [ $c -le $n ]
+do
+	if [ \( $c % 2 \) == 0 ]
+	then
+		sum2=` expr $sum2 - $c `
+		echo "1st"
+	else
+		sum2=` expr $sum2 + $c `
+		echo "2nd"
+	fi
+	c=` expr $c + 1 `
+	done
+
+
+echo
+echo " 1+2-3+4-.....n"
+echo -n "sum2=$sum2"
+
+#4 rth part of the program
+
+#s4 = (1)+(1+2)+(1+2+3)+....+(1+2+3.....n)
+
+sum4=0
+c=1
+
+while [ $c -le $n ]
+do
+	d=1
+	sum=0
+	sum4=` expr $sum4 + $sum `
+
+	while [ $d -lt $c ]
+	do
+		sum=` expr $c + 0 `
+	done
+	c=` expr $c + 1 `
+done
+
+
+
+
+
+
+#end of the program

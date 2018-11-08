@@ -1,0 +1,68 @@
+#!/bin/sh
+#arrays 
+
+clear
+echo
+echo -n "Enter the size of your list : "
+read n
+echo -n "Enter $n elements one by one ----->"
+i=1
+while [ $i -le $n ]
+do
+	echo -n "a[$i]="
+	eval read a$i
+	eval id$i=$i
+	i=` expr $i + 1 ` 
+done
+
+echo "Number index "
+i=1
+while [ $i -le $n ]
+do
+	eval echo -n "\$a$i"
+	echo -n " "
+	eval echo "\$id$i"
+	i=` expr $i + 1 `
+done
+
+ch=1
+while [ $ch -eq 1 ]
+do
+	echo -n "Enter number to be searched : "
+	read num
+	count=0
+done
+
+i=1
+while [ $i -le $n ]
+do
+	eval ai=\$a$i
+	if [ $num -eq $ai ]
+	then
+	eval echo "$num found at position = \$id$i"
+	count=` expr $count + 1 `
+	fi
+	i=` expr $i + 1 `
+done
+
+if [ $count -ne 0 ]
+then
+	echo "Number of times $num found = $count"
+else
+	echo "$num not found . Please try different number"
+fi
+
+
+echo -n "Enter 'i' to search another number "
+read ch
+done
+#end of linear search program
+
+
+
+
+
+
+
+
+

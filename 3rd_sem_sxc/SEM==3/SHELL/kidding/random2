@@ -1,0 +1,16 @@
+#!/bin/sh
+#Random using shuff
+#
+c=1
+while [ $c -le 10 ]
+do
+	#a = shuf -i 0-1000
+	a=$RANDOM
+
+	echo $a
+	c=` expr $c + 1 `
+done
+#shuf -i 0-1000 -n 10
+#done
+#End of the program
+

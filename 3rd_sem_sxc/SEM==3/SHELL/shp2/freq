@@ -1,0 +1,101 @@
+#!/bin/sh
+# A program to find the frequency of each number in the array
+# input array : 1,2,3,4,5,6,3,4,5,6,4,3,2,23,4,4,5,2
+# find the max and min from the array 
+# run a loop from min to max and then count all the number within the while loop to make the algo
+
+
+# entering the number
+
+echo -n "Enter the size of the array"
+read n
+
+
+i=1
+while [ $i -le $n ]
+do
+	#codes
+	echo "Enter the a[$i] value : "
+	eval read a$i
+	i=` expr $i + 1 `
+done
+
+#Finding the max and minimum values
+i=1
+eval max=\$a$i
+eval min=\$a$i
+d=1
+while [ $i -le $n ]
+do
+	#codes
+	eval d=\$a$i
+	echo $d
+	if [ $d -gt $max ]
+	then
+		#statements
+		max=$d
+	fi
+	if [ $d -lt $min ]
+	then
+		#statements
+		min=$d
+	fi
+	i=` expr $i + 1 `
+done
+
+echo "Max : "$max
+echo "Min : "$min
+c=$min
+while [ $c -le $max ]
+do
+	i=1 #array counter
+	#echo "I'm in"
+	count=0 #counts the number of elements
+	while [ $i -le $n ]
+	do
+		eval k=\$a$i
+		#echo "k="$k
+		#echo "i="$i
+		if [ $k -eq $c ]
+		then
+			count=` expr $count + 1 `
+		fi
+
+		i=` expr $i + 1 `
+	done
+	if [ $count -gt 0 ]
+	then 
+		echo  "$c occured for "$count
+	fi
+	c=` expr $c + 1 `
+done
+
+#printing the array
+
+#i=1
+#while [ $i -le $n ]
+#do
+	#codes
+	#echo "Enter the a[$i] value : "
+#	eval echo "\$a$i"
+#	i=` expr $i + 1 `
+#done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

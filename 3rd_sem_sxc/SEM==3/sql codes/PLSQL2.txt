@@ -1,0 +1,33 @@
+create table todd(
+a number(2)
+);
+create table teven(
+a number(2)
+);
+#plsql code to input even and odd values respectively in both tables from 1 to 10---->
+declare
+r1 todd%rowtype;
+r2 teven%rowtype;
+begin
+for i in 1..20
+loop
+if i mod 2 = 0 then
+insert into teven values(i);
+else
+insert into todd values(i);
+end if;
+end loop;
+commit;
+dbms_output.put_line('THE ODD TABLE');
+for r1 in (select * from todd)
+loop
+dbms_output.put_line(r1.a);
+end loop;
+dbms_output.put_line('THE EVEN TABLE');
+for r2 in (select * from teven)
+loop
+dbms_output.put_line(r2.a);
+end loop;
+commit;
+end;
+/

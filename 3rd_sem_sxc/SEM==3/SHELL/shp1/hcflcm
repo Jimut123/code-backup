@@ -1,0 +1,41 @@
+#!/bin/sh
+#Program by Jimut Bahan Pal 06:52 2nd September 2017
+#To find the HCF and LCM of two Numbers
+echo
+echo -n "Enter two numbers "
+read a
+read b
+v=0
+a1=$a
+a2=$b
+
+if [ $b -gt $a ]
+then
+	t=$a
+	a=$b
+	b=$t
+fi
+while [ $v -eq 0 ]
+do
+	rem=` expr $a % $b `
+	if [ $rem -eq 0 ]
+	then
+		hcf=$b
+		v=1
+	else
+		#b=` expr $a % $b `
+		#b=$a
+		rem=` expr $a % $b `
+		a=$b
+		b=$rem
+	fi
+done
+echo "HCF : "$hcf
+
+lcm=` expr  $a1 \* $a2 `
+lcm=` expr $lcm / $hcf `
+echo "LCM : "$lcm
+
+#end of the program
+
+

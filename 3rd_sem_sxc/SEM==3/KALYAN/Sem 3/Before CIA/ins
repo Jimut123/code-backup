@@ -1,0 +1,111 @@
+	#q82as2 : Write shell script to implement 
+	#insertion sort algorithm
+	clear
+	echo
+	echo -n "Enter size of your list(1-20) :"
+	read n
+	echo "Enter $n elements one by one --->"
+	i=1
+		while [ $i -le $n ]
+		do
+		echo -n "a[$i]="
+		eval read a$i
+		eval id$i=$i
+		i=`expr $i + 1`
+		done
+	clear
+	echo "Unsorted List"
+	echo "Number Index"
+	i=1
+		while [ $i -le $n ]
+		do
+		eval echo -n \$a$i
+		echo -n "      "
+		eval echo \$id$i
+		i=`expr $i + 1`
+		done
+	#Insertion sort method starts
+	pass=0
+	i=2
+		while [ $i -le $n ]
+		do
+		pass=`expr $pass + 1`
+		eval t1=\$a$i
+		eval t2=\$id$i
+		j=`expr $i - 1`
+			while [ $j -ge 1 ]
+			do
+			eval aj=\$a$j
+			eval idj=\$id$j
+				if [ $t1 -lt $aj ]
+				then
+				j1=`expr $j + 1`
+				eval a$j1=$aj
+				eval id$j1=$idj
+
+				echo -n "Press enter key --->"
+				read ans
+				clear
+				echo "pass=$pass"
+				echo "Number Index"
+				k=1
+					while [ $k -le $n ]
+					do
+					eval echo -n \$a$k
+					echo -n "      "
+					eval echo \$id$k
+					k=`expr $k + 1`
+					done
+		                j=`expr $j - 1`	
+				else
+				break
+				fi
+			done
+		j=`expr $j + 1`
+		eval a$j=$t1
+		eval id$j=$t2
+		
+		echo -n "Press enter key --->"
+			read ans
+			clear
+			echo "pass=$pass"
+			echo "Number Index"
+			k=1
+				while [ $k -le $n ]
+				do
+				eval echo -n \$a$k
+				echo -n "      "
+				eval echo \$id$k
+				k=`expr $k + 1`
+				done
+		i=`expr $i + 1`
+		done
+	
+   	echo -n "Press enter key to display sorted list --->"
+			read ans
+			clear
+			echo "pass=$pass"
+	 echo "Sorted List using Insertion sort method"
+		        echo "Number Index"
+			k=1
+				while [ $k -le $n ]
+				do
+				eval echo -n \$a$k
+				echo -n "      "
+				eval echo \$id$k
+				k=`expr $k + 1`
+				done
+	#End of Insertion sort program		
+
+
+
+
+
+
+
+
+
+		
+
+
+	

@@ -1,0 +1,22 @@
+#!/bin/sh
+#To accept array elements in an array
+
+
+echo 
+echo -n "Enter the no. of elements to be entered into the array :"
+read a
+
+i=0
+while [ $i -le $a ]
+do
+	echo "array[$i] = "
+	eval read array$i
+	i=` expr $i + 1 `
+done
+
+i=0
+while [ $i -le $a ]
+do 
+	echo ${array[$i]} 
+	i=` expr $i + 1 `
+done

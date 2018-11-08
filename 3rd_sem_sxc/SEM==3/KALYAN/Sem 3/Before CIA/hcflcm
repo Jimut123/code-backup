@@ -1,0 +1,31 @@
+	#xxshell2 : Write a program to input two(2) +ve integers(2-2000).
+	# calcuulate and print (i) hcf of 2 numbers, (ii) lcm of 2 numbers
+	clear
+	tput cup 13 5
+	echo -n "Enter 1st number(2-2000)="
+	read a
+	tput cup 13 40
+	echo -n "Enter 2nd number(2-2000)="
+	read b
+	x=$a
+	y=$b
+	# To calculate HCF of two numbers
+	r=`expr $x % $y`
+		while [ $r -ne 0 ]
+		do
+		x=$y
+		y=$r
+		r=`expr $x % $y`
+		done
+	h=$y
+	lc=`expr $a \* $b`
+	lc=`expr $lc / $h`
+	tput cup 15 5 
+	echo "a=$a  b=$b  HCF of $a, $b=$h LCM of $a, $b=$lc"
+	#End of program
+
+
+
+
+
+

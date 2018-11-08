@@ -1,0 +1,46 @@
+clear
+echo -n "Eneter your roll="
+read r
+echo -n "Enter your name="
+read n
+echo -n "Enter marks paper1="
+read p1
+echo -n "Enter marks paper2="
+read p2
+echo -n "Enter marks paper3="
+read p3
+small=$p1
+if [ $small -ge $p2 ]
+then
+small=$p2
+fi
+if [ $small -ge $p3 ]
+then
+small=$p3
+fi
+total=`expr $p1 + $p2 + $p3`
+bst2=`expr $total - $small`
+avg=`expr $bst2 / 2`
+grade=A
+        if [ $avg -ge 60 -a $avg -lt 70 ]
+        then
+        grade=B
+        fi
+        if [ $avg -ge 50 -a $avg -lt 60 ]
+        then
+        grade=C
+        fi
+        if [ $avg -ge 40 -a $avg -lt 50 ]
+        then
+        grade=D
+        fi
+        if [ $avg -lt 40 ]
+        then
+        grade=F
+        fi
+echo -n " your Roll = $r , name = $n , paper1= $p1 , paper2= $p2 , paper3= $p3 , total= $bst2 , average = $avg , grade = $grade"
+#end
+
+
+
+

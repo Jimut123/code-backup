@@ -1,0 +1,94 @@
+create table engineer 
+(engid varchar(10) primary key,
+ engname varchar(20) ,
+ doj date , city varchar(10)
+);
+
+create table client
+(clientid number primary key,
+ clientname varchar(15),
+ country varchar(10)
+);
+
+
+create table project
+(projectname varchar(10) primary key,
+ inidate date,clientid number,
+ managerid varchar(10),
+ constraint pro_fk foreign key(clientid)
+  references client,
+ constraint pro1_fk foreign key(managerid)
+  references engineer);
+
+
+
+create table assignd
+(projectname varchar(10),
+engid varchar(10),
+constraint ass_pk primary key(projectname,engid),
+constraint ass_fk foreign key(projectname) references project,
+constraint ass_fk1 foreign key(engid) references engineer);
+  
+insert into engineer values('ENG01','SOUMILI DEY','22-JUL-2015','KOLKATA');
+insert into engineer values('ENG02','DEYASHINI','21-AUG-2016','PUNE');
+insert into engineer values('ENG03','SUCHANDRA','02-SEP-2017','BANGALORE');
+insert into engineer values('ENG04','RIYA','19-MAR-2012','DELHI');
+insert into engineer values('ENG05','PRIYA','20-JUL-2013','CHENNAI');
+insert into engineer values('ENG06','ANIKA','03-JAN-2015','KOLKATA');
+insert into engineer values('ENG07','ANGANA','28-FEB-2017','MUMBAI');
+insert into engineer values('ENG08','ANJALI','13-MAY-2014','HYDERBAD');
+insert into engineer values('ENG09','SHIVANGI','19-JUL-2016','DURGAPUR');
+
+insert into client values(1,'AMAN','INDIA');
+insert into client values(2,'DAVID','AUSTRALIA');
+insert into client values(3,'HAYES','USA');
+insert into client values(4,'EUGLAVE','FRANCE');
+
+
+insert into project values('A','15-SEP-2016',1,'ENG01');
+insert into project values('B','01-AUG-2012',2,'ENG02');
+insert into project values('C','23-JAN-2014',3,'ENG03');
+insert into project values('D','19-MAR-2005',4,'ENG04');
+insert into project values('E','17-MAY-2016',2,'ENG04');
+insert into project values('F','01-MAR-2017',1,'ENG02');
+
+
+insert into assignd values('A','ENG01');
+insert into assignd values('A','ENG09');
+insert into assignd values('A','ENG05');
+insert into assignd values('B','ENG02');
+insert into assignd values('B','ENG03');
+insert into assignd values('C','ENG04');
+insert into assignd values('D','ENG06');
+insert into assignd values('E','ENG07');
+insert into assignd values('F','ENG08');
+
+
+
+
+
+SELECT * FROM PROJECT WHERE PROJECTNAME IN(SELECT PROJECTNAME FROM ASSIGND GROUP BY PROJECTNAME HAVING COUNT(ENGID)=
+(SELECT MAX(COUNT(ENGID)) FROM ASSIGND GROUP BY PROJECTNAME));
+
+
+SELECT ENGNAME FROM ENGINEER WHERE ENGID IN(SELECT MANAGERID FROM PROJECT WHERE CLIENTID IN
+(SELECT CLIENTID FROM CLIENT WHERE COUNTRY='AUSTRALIA'));
+
+SELECT * FROM ENGINEER WHERE ENGID IN(
+SELECT ENGID FROM ASSIGND WHERE PROJECTNAME IN
+(SELECT PROJECTNAME FROM PROJECT WHERE TO_CHAR(INIDATE,'YYYY')=2017));
+
+
+SELECT DISTINCT MANAGERID,ENGNAME ,ROUND((MONTHS_BETWEEN(SYSDATE,INIDATE)/12),0) EXPERIENCE
+FROM PROJECT P,ENGINEER E WHERE P.MANAGERID=E.ENGID;
+
+SELECT E.* FROM ENGINEER E, PROJECT P,ASSIGND A WHERE 
+E.ENGID=A.ENGID AND P.PROJECTNAME=A.PROJECTNAME AND INIDATE>DOJ;
+
+
+
+
+
+
+
+

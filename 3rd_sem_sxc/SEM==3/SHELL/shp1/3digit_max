@@ -1,0 +1,60 @@
+#!/bin/sh
+#Program to find the max of three nos.
+#Program by -- Jimut Bahan Pal Sat -- 04:59 2nd Sept 2017
+#---------------------------------------------------------------
+# for calculating the largest number
+
+
+big()
+{
+	echo 
+	echo -n "Enter 3 nos. "
+	echo	
+	read a 
+	read b 
+	read c
+	if [ $a -gt $c ]
+	then
+		m1=$a
+	else
+		m1=$c
+	fi
+
+	if [ $b -gt $c ]
+	then
+		m2=$b
+	else
+		m2=$c
+	fi
+
+	if [ $m1 -gt $m2 ]
+	then 
+		big=$m1
+	else
+		big=$m2
+	fi
+
+	echo "The largest number = "$big
+}
+
+
+
+#The main script starts here
+
+#c=0
+echo
+echo "No. of time you want to check the condition :"
+
+read c
+d=1
+echo " The value you entered " $c
+while [ $d -lt $c ]
+do
+	big
+	d=` expr $d + 1 `
+	echo "value of counter" $d
+done
+
+
+#----------------------------------------------------------------
+#End of the program

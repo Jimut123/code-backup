@@ -1,0 +1,32 @@
+#!/bin/sh
+#program by Jimut bahan pal 09:18 2nd spetember 2017
+#program to find the prime range in a simple way -- not modular
+
+
+echo "Enter the lower and upper bound "
+read a
+read b
+c=$a
+while [ $c -lt $b ]
+do
+	
+	p=2
+	dummy=1
+	while [ $p -le `expr $c / 2` ]
+	do
+		if [ ` expr $c % $p ` -eq 0 ]
+		then
+			#codes
+			dummy=0
+		fi
+		p=` expr $p + 1 `
+	done  
+	if [ $dummy -eq 1 ]
+	then
+		echo -n $c "\t"
+	fi
+	c=` expr $c + 1 `
+done
+
+#end of the program
+

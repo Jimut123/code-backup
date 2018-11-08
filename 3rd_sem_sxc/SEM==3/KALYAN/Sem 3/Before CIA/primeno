@@ -1,0 +1,39 @@
+	#xxshell3 : Write a program to input any positive integer(2-55).
+	#calculate and print all prime numbers <=n
+	clear
+	echo
+	echo -n "Enter n(2-500)="
+	read n
+	count=0
+	i=2
+	echo "prime numbers <=$n --->"
+		while [ $i -le $n ]
+		do
+		n1=`expr $i / 2`
+		flag=1 # if i is prime then flag will remain as 1
+		j=2	
+			while [ $j -le $n1 ]
+			do
+			r=`expr $i % $j`
+				if [ $r -eq 0 ]
+				then
+				flag=0
+				break
+				fi
+			j=`expr $j + 1`
+			done
+			if [ $flag -eq 1 ]
+			then
+			count=`expr $count + 1`
+			echo -n "$i  "
+			fi
+		i=`expr $i + 1`
+		done
+	echo
+	echo "Total prime numbers <= $n : $count"
+	#End of program
+
+			
+
+
+

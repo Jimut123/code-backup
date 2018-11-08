@@ -1,0 +1,67 @@
+.Owl
+{
+  font-family:Ribeye;
+}
+.AD
+{
+  font-family: 'Rye', cursive;
+}
+.JBP{
+  font-family: 'Pacifico', cursive;
+
+}
+.quotes{
+  font-size:20px;
+  font-family: 'Reenie Beanie', cursive;
+}
+.body1{
+    border-style:solid;
+  border-width:2px;
+  border-color:gray;
+  outline-style:double;
+  outline-radius:20px;
+  outline-color:#8c8c8c;
+    border-radius:20px;
+    padding:10px;
+  margin:10px;
+  }
+.Main_Body{
+  font-family: 'Playfair Display', serif;
+}
+  .upperbody{
+    
+  }
+
+h1,h3,footer,.quotes{
+  text-align: center;
+}
+h3{
+  text-decoration:underline;
+  text-decoration-color:#e6e6e6;
+}
+h1 {
+    text-shadow: 2px 2px #595959;
+}
+/* unvisited link */
+.JBP:link {
+    color: #0000ff;
+  text-decoration: none;
+}
+
+/* visited link */
+.JBP:visited {
+    color:#4dff4d;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.JBP:hover {
+    color:  #ff0000;
+    text-decoration: none;
+}
+
+/* selected link */
+.JBP:active {
+    color: #ffff00;
+  text-decoration: none;
+}

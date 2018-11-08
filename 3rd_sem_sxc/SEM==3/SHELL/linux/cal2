@@ -1,0 +1,30 @@
+#!/bin/sh
+clear
+echo -n "enter a="
+read a
+echo -n "enter b="
+read b
+echo -n "enter c="
+read c
+big=$a
+	if [ $b -gt $big ]
+	then
+	big=$b
+	fi
+	if [ $c -gt $big ]
+	then
+	big=$c
+	fi
+	
+small=$a
+	if [ $b -lt $small ]
+	then
+	small=$b
+	fi
+	if [ $c -lt $small ]
+	then
+	small=$c
+	fi
+	echo " largest number is=$big "
+	echo " smallest number =$small "
+

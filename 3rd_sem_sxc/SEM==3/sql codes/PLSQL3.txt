@@ -1,0 +1,18 @@
+declare
+a varchar(20);
+a1 varchar(20);
+l number(2);
+begin
+a:=&a;
+l:=length(a);
+for i in reverse 1..l
+loop
+a1:=a1||substr(a,i,1);
+end loop;
+if a1 = a then
+dbms_output.put_line('PALINDROME');
+else
+dbms_output.put_line('NOT PALINDROME');
+end if;
+end;
+/

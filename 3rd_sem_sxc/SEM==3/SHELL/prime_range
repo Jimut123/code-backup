@@ -1,0 +1,26 @@
+#!/bin/sh
+#program to find the prime number in the range
+clear
+echo -n "Enter the upper limit of the range :"
+read n
+c=2
+while [ $c -le $n ]
+do
+	v=0
+	i=2
+	while [ $i -lt $c ]
+	do
+		if [ $c % $i -eq= 0 ]
+		then
+			v=1
+			break
+		fi
+		i=` expr $i + 1 `
+	done
+	if [ $v -eq= 0 ]
+	then
+		echo -n "$c "
+	fi
+	c=` expr $c + 1 `
+
+done	

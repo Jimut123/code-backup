@@ -1,0 +1,79 @@
+	#q6as2 : Write a progra
+
+m to implement linear search algorithm
+	clear
+	echo
+	echo -n "Enter size of your list(1-20)="
+	read n
+	echo "Enter $n elements one by one"
+	i=1
+		while [ $i -le $n ]
+		do
+		echo -n "a[$i]="
+		eval read a$i
+		eval id$i=$i
+		i=`expr $i + 1`
+		done
+	clear
+	echo "Number  Index"
+	i=1
+		while [ $i -le $n ]
+		do
+		eval echo -n \$a$i
+		echo -n "       "
+		eval echo \$id$i
+		i=`expr $i + 1`
+		done
+	# Linear search method starts
+	c=1
+		while [ $c -eq 1 ]
+		do
+		echo -n "Enter number to be searched=" 
+		read num
+		count=0
+		i=1
+			while [ $i -le $n ]
+			do
+			eval ai=\$a$i
+			eval idi=\$id$i
+				if [ $num -eq $ai ]
+				then
+				echo "$num found at position=$idi"
+				count=`expr $count + 1`
+				fi
+			i=`expr $i + 1`
+			done
+			if [ $count -eq 0 ]
+			then
+			echo "$num not found"
+			else
+			echo "Number of times $num found=$count"
+			fi
+		echo -n "Type '1' to search a new number--->"
+		read c
+		done
+	#End of Linear search program
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+	
+
+
+
+
+
+
+

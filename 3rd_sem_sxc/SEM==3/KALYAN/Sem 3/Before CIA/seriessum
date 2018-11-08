@@ -1,0 +1,87 @@
+	#xxshell1 : Write a program to input 'n' where
+	#n>=2 and n<=20. Calculate and print
+	# (i) s1=1+2+3+....+n
+	# (ii) s2=n+(n-2)+....+2 or 1
+	# (iii) s3=1*1+2*2+3*3+....+n*n
+	# (iv) s4=1-2+3-4+5+.....n
+	# (v) s5=(1)+(1+2)+(1+2+3)+.....+(1+2+3+4+....+n)
+	clear
+	echo -n " Enter value of n(1-20)="
+	read n
+	# (i) To calculate s1=1+2+3+....+n
+	s1=0
+	c=1
+		while [ $c -le $n ]
+		do
+		s1=`expr $s1 + $c`
+		c=`expr $c + 1`
+		done
+	echo "1+2+3+....+n=$s1"
+	#(ii) To calculate s2=n+(n-2)+(n-4)+...2 or 1
+	s2=0
+	c=$n
+		while [ $c -ge 1 ]
+		do
+		s2=`expr $s2 + $c`
+		c=`expr $c - 2`
+		done
+	echo "n+(n-2)+(n-4)+... 2 or 1=$s2"
+	
+	#(iii) To calculate s3=1*1+2*2+3*3+.....+n*n
+
+	s3=0
+	c=1
+		while [ $c -le $n ]
+		do
+		s3=`expr $s3 + $c \* $c`
+		c=`expr $c + 1`
+		done
+	echo "1*1+2*2+3*3+....+n*n=$s3"
+
+	#(iv) To calculate s4=1-2+3-4+....n
+	
+	s4=0
+	c=1
+	sf=1
+		while [ $c -le $n ]
+		do
+		s4=`expr $s4 + $sf \* $c`
+		c=`expr $c + 1`
+		sf=`expr $sf \* -1`
+		done
+	echo "1-2+3-4+...n=$s4"
+
+	#(v) To calculate s5=(1)+(1+2)+(1+2+3)+....+(1+2+3+4+....+n)
+
+	s5=0
+	st=0
+	c=1
+		while [ $c -le $n ]
+		do
+		st=`expr $st + $c`
+		s5=`expr $s5 + $st`
+		c=`expr $c + 1`
+		done
+	echo "(1)+(1+2)+(1+2+3)+....+(1+2+3+4+....+n)=$s5"
+	#End of program
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

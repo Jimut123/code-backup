@@ -1,0 +1,98 @@
+create table customer(
+cust_id varchar(5),
+cust_name char(30),
+cust_city char(30),
+constraint customer_pk primary key(cust_id)
+);
+create table item(
+item_id varchar(5),
+item_name char(30),
+unit_price number(10),
+constraint item_pk primary key(item_id)
+); 
+create table purchase(
+order_no varchar(5),
+date_of_purchase date,
+cust_id varchar(5),
+item_id varchar(5),
+constraint table_pk primary key(order_no),
+constraint table_fk foreign key(cust_id)
+references customer,
+constraint table_f foreign key(item_id)
+references item
+); 
+
+drop table customer;
+
+insert into item values('IT001','TOY 1','5000');
+insert into item values('IT002','TOY 2','10000');
+insert into item values('IT003','TOY 3','15000');
+insert into item values('IT004','TOY 4','20000');
+insert into item values('IT005','TOY 5','50000');
+
+insert into customer values('CM001','BIKASH PANDEY','KOLKATA');
+
+insert into customer values('CM002','JIMUT BAHAN','DURGAPUR');
+
+insert into customer values('CM003','ANUBHAB DEY','ASANSOL');
+
+insert into customer values('CM004','INDRANIL LAHH','SINGUR');
+
+insert into customer values('CM005','RAM SHARMAH','DURGAPUR');
+
+insert into customer values('CM006','SHYAM SHARMAH','ASANSOL');
+
+insert into customer
+values('CM007','OJINI CHIZOBA','KOLKATA');
+
+insert into customer
+values('CM009','GHANSHYAM SHARMA','KOLKATA');
+{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{
+insert into employee
+values('CM008','ABC DEF','KOLKATA');
+
+insert into employee
+values('CM010','HONULULU','KOLKATA');
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+insert into purchase values('OD001','19-AUG-1998','CM001','IT005');
+
+insert into purchase values('OD002','24-SEP-2000','CM002','IT003');
+
+insert into purchase values('OD003','24-SEP-2015','CM003','IT003');
+
+insert into purchase values('OD004','24-SEP-2016','CM004','IT003');
+
+insert into purchase values('OD005','6-NOV-2013','CM005','IT001');
+
+insert into purchase values('OD006','6-NOV-2013','CM006','IT001');
+
+queries--->
+
+describe customer;////To show the schema
+alter table customer drop column no_units_purchase;
+
+1.(a) select c.cust_id,c.cust_name,c.cust_city from customer c,item,purchase p where c.cust_id=p.cust_id and p.item_id=(select i.item_id from item i where i.unit_price=(select max(unit_price) from item));
+
+1.(b) select * from customer c,purchase p where c.cust_id=p.cust_id and p.item_id=(select item_id from item i where i.unit_price=(select max(unit_price) from item));
+
+2.  select * from customer c,purchase p where c.cust_id=p.cust_id and to_char(date_of_purchase,'yyyy') in ('2015','2016');
+
+3.  select c.cust_name,i.item_name from customer c,item i where i.item_id=(select item_id from purchase p where p.cust_id=c.cust_id and p.cust_id in(select cust_id from customer where cust_city='DURGAPUR'));
+
+4.  select count(*) no_of_customer,cust_city  from customer group by cust_city;
+
+5.  
+SELECT * FROM ITEM WHERE ITEM_ID=(
+SELECT ITEM_ID FROM
+(
+  SELECT ITEM_ID, COUNT(*) "COUNT OF ITEMS PURCHASED"
+    FROM purchase
+GROUP BY ITEM_ID
+ORDER BY COUNT(*) DESC
+) A
+WHERE rownum = 1
+);
+
+6. 
+SELECT * FROM ITEM WHERE ITEM_ID IN(SELECT ITEM_ID FROM CUSTOMER c,PURCHASE p WHERE c.cust_id=p.cust_id and p.cust_id NOT IN (SELECT CUST_ID FROM CUSTOMER WHERE CUST_NAME='S%'));

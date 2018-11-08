@@ -1,0 +1,60 @@
+#!/bin/sh
+
+#Program to input an array and to find the sum, avg and largest among all the elements
+
+echo
+echo -n "Enter the size of the array :"
+read n
+
+i=1
+
+while [ $i -le $n ]
+do
+	#codes
+	echo -n "enter the a[$i] element in the array : "
+	eval read a$i
+	i=` expr $i + 1 `
+	
+done
+ku=1
+large=1
+#eval large = \$a$ku
+#echo $large
+i=1
+sum=0
+while [ $i -le $n ]
+do
+	#codes
+	eval ai=\$a$i
+	if [ $ai -gt $large ]
+	then
+		large=$ai
+	fi
+	sum=` expr $sum + $ai `
+	i=` expr $i + 1 `
+	
+done
+
+echo "Sum = "$sum
+avg=` expr $sum / $n `
+float=` expr $sum % $n `
+float=` expr $float \* 10 `
+float=` expr $float / $n `
+echo "Average = "$avg'.'$float
+
+echo "Largest = "$large
+#echo "Average = " $avg
+
+
+
+
+
+
+
+
+
+
+
+
+
+

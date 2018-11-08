@@ -1,0 +1,31 @@
+clear
+echo
+echo -n "Enter n (2-500)"
+read n
+a=1
+b=1
+c=`expr $a + $b`
+while [ $c -le $n ]
+do
+n1=`expr $c / 2`
+flag=1
+i=2
+while [ $i -le $n1 ]
+do
+r=`expr $c % $i`
+if [ $r -eq 0 ]
+then 
+flag=0
+break
+fi
+i=`expr $i + 1`
+done
+if [ $flag -eq 1 ]
+then 
+echo -n " $c ,"
+fi
+a=$b
+b=$c
+c=`expr $a + $b`
+done
+

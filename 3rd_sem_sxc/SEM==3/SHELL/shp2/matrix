@@ -1,0 +1,93 @@
+#!/bin/sh
+echo
+echo -n "Enter the total number of rows in the first matrix : "
+read n
+
+i=1
+while [ $i -le $n ]
+do
+	j=1
+	while [ $j -le $n ]
+	do
+		echo "Enter the a[$i] a[$j] element : "
+		eval read a$i$j
+		j=` expr $j + 1 `
+	done
+	i=` expr $i + 1 `
+done
+
+echo 
+
+echo -n "Enter the total number of rows in the second matrix : "
+read n
+
+i=1
+while [ $i -le $n ]
+do
+	j=1
+	while [ $j -le $n ]
+	do
+		echo "Enter the b[$i] a[$j] element : "
+		eval read b$i$j
+		j=` expr $j + 1 `
+	done
+	i=` expr $i + 1 `
+done
+
+#for multiplying the matrix
+
+#1332 algo
+i=1
+while [ $i -le $n ]
+do
+	#codes
+	
+	
+	j=1
+	while [ $j -le $n ]
+	do
+		#codes
+		sum=0
+		k=1
+		while [ $k -le $n ]
+		do
+			#codes
+			eval k1=\$a$i$k
+			eval echo "k1 = "$k1
+			eval k2=\$b$k$j
+			eval echo "k2 = "$k2
+			mul=` expr $k1 \* $k2 `
+			sum=` expr $sum + $mul `
+			k=` expr $k + 1 `
+		done
+		echo "sum = $sum"
+		eval c$i$j=$sum
+		j=` expr $j + 1 `
+	done
+	i=` expr $i + 1 `
+done 
+
+
+#Displaying the martrix 
+
+i=1
+while [ $i -le $n ]
+do
+	j=1
+	while [ $j -le $n ]
+	do
+		#echo "Enter the a[$i] a[$j] element : "
+		eval echo -n "\$c$i$j"
+		j=` expr $j + 1 `
+	done
+	echo
+	i=` expr $i + 1 `
+done 
+
+
+
+
+
+
+
+

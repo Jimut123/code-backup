@@ -1,0 +1,21 @@
+#!/bin/sh
+#Program by Jimut Bahan Pal to check the utility of a function
+#created on 09:08 am 2nd September 2017
+fun1()
+{
+	echo "The third no. = "$c
+	return 12
+}
+fun()
+{
+	echo "The first no. = "$a
+	echo "The second no. = "$b
+	c=33
+	k=$(fun1 $c)
+	
+	echo "The returned value = "$?
+}
+a=2
+b=6
+fun $a $b
+#end

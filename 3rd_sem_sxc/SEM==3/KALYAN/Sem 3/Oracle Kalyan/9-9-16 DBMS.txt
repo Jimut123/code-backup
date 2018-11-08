@@ -1,0 +1,339 @@
+Create the following tables :
+Engineer (*engg_id*, engg_name, salary, date_of_joining, city)
+Project (*proj_name*, initiation_date, client_id, manager_id)
+Client (*client_id*, client_name, country)
+Assigned (*proj_name*, *engg_id*)
+
+manager_id in the Project relation is a foreign key refering to the Engineer relation.
+Each project name should start with 'PR'. Each engg_id should have length of 5 characters and each id should start with 'EN'.
+The Engineers are from one of the following cities : Hyderabad, Kolkata, Pune, Gurgaon
+The Clients should be from one of the following countries : India, Hungary, Poland, Australia and Denmark
+The minimum salary of an Engineer should be Rs. 25000/-
+
+Execute the following queries :
+1. Find the details of the projects involving the maximum number of engineers.
+2. Find the details of the project managers who are handling projects from Australia and Poland.
+3. Find the details of the engineers who are in the projects that have started in the current year.
+4. Find the experiences of all the project managers.
+5. Find the country from which the majority of the projects are coming.
+6. Give an increment of 20% to the salaries of the engineers who are into more than one project.
+7. Find the salaries of all the project mannagers.
+8. Find the details of the engineers who are associated with the project which has been initiated before their joining.
+9. Delete the projects which have been initiated 5 years back and are from Denmark.
+
+
+
+CREATE TABLES ::::::::::::::
+
+create table Engineer (engg_id char(5),
+engg_name varchar2(15),
+salary number(6),
+doj date,
+city varchar(9),
+constraint engg_pk primary key(engg_id),
+constraint engg_ck1 check(engg_id like 'EN%'),
+constraint engg_ck2 check(city in ('Hyderabad', 'Kolkata', 'Pune', 'Gurgaon')),
+constraint engg_ck3 check(salary >= 25000));
+
+create table Project (proj_name varchar2(10),
+init_date date,
+client_id char(5),
+manager_id char(5),
+constraint proj_pk primary key(proj_name),
+constraint proj_ck1 check(proj_name like 'PR%'),
+constraint proj_fk1 foreign key(client_id) references Client,
+constraint proj_fk2 foreign key(manager_id) references Engineer);
+
+create table Client (client_id char(5),
+client_name varchar2(10),
+country varchar2(9),
+constraint cl_pk primary key(client_id),
+constraint cl_ck1 check(country in ('India', 'Hungary', 'Poland', 'Australia', 'Denmark')));
+
+create table Assigned (proj_name varchar2(10),
+engg_id char(5),
+constraint asgn_pk primary key(proj_name, engg_id),
+constraint asgn_fk1 foreign key(proj_name) references Project,
+constraint asgn_fk2 foreign key(engg_id) references Engineer);
+
+
+OUTPUT :::::::::::::::
+SQL> create table Engineer (engg_id char(5),
+  2  engg_name varchar2(15),
+  3  salary number(6),
+  4  doj date,
+  5  city varchar(9),
+  6  constraint engg_pk primary key(engg_id),
+  7  constraint engg_ck1 check(engg_id like 'EN%'),
+  8  constraint engg_ck2 check(city in ('Hyderabad', 'Kolkata', 'Pune', 'Gurgaon')),
+  9  constraint engg_ck3 check(salary >= 25000));
+
+Table created.
+
+SQL> create table Client (client_id char(5),
+  2  client_name varchar2(10),
+  3  country varchar2(9),
+  4  constraint cl_pk primary key(client_id),
+  5  constraint cl_ck1 check(country in ('India', 'Hungary', 'Poland', 'Australia', 'Denmark')));
+
+Table created.
+
+SQL> create table Project (proj_name varchar2(10),
+  2  init_date date,
+  3  client_id char(5),
+  4  manager_id char(5),
+  5  constraint proj_pk primary key(proj_name),
+  6  constraint proj_ck1 check(proj_name like 'PR%'),
+  7  constraint proj_fk1 foreign key(client_id) references Client,
+  8  constraint proj_fk2 foreign key(manager_id) references Engineer);
+
+Table created.
+
+SQL> create table Assigned (proj_name varchar2(10),
+  2  engg_id char(5),
+  3  constraint asgn_pk primary key(proj_name, engg_id),
+  4  constraint asgn_fk1 foreign key(proj_name) references Project,
+  5  constraint asgn_fk2 foreign key(engg_id) references Engineer);
+
+Table created.
+
+
+
+
+INSERT RECORDS :::::::::::::::::::::::
+
+insert into Engineer values('EN001', 'EN-Nm-01', 50000, '01-JAN-2016', 'Hyderabad');
+insert into Engineer values('EN002', 'EN-Nm-02', 150000, '11-FEB-2011', 'Kolkata');
+insert into Engineer values('EN003', 'EN-Nm-03', 100000, '15-FEB-2016', 'Pune');
+insert into Engineer values('EN004', 'EN-Nm-04', 75000, '13-JUL-2012', 'Gurgaon');
+insert into Engineer values('EN005', 'EN-Nm-05', 80000, '08-MAY-2013', 'Pune');
+insert into Engineer values('EN006', 'EN-Nm-06', 200000, '08-JUN-2015', 'Kolkata');
+insert into Engineer values('EN007', 'EN-Nm-07', 355000, '09-SEP-2014', 'Hyderabad');
+insert into Engineer values('EN008', 'EN-Nm-08', 40000, '12-SEP-2013', 'Kolkata');
+insert into Engineer values('EN009', 'EN-Nm-09', 80000, '09-DEC-2010', 'Pune');
+insert into Engineer values('EN010', 'EN-Nm-10', 90000, '30-MAR-2016', 'Gurgaon');
+
+SQL> select * from engineer;
+
+ENGG_ ENGG_NAME           SALARY DOJ       CITY
+----- --------------- ---------- --------- ---------
+EN001 EN-Nm-01             50000 01-JAN-16 Hyderabad
+EN002 EN-Nm-02            150000 11-FEB-11 Kolkata
+EN003 EN-Nm-03            100000 15-FEB-16 Pune
+EN004 EN-Nm-04             75000 13-JUL-12 Gurgaon
+EN005 EN-Nm-05             80000 08-MAY-13 Pune
+EN006 EN-Nm-06            200000 08-JUN-15 Kolkata
+EN007 EN-Nm-07            355000 09-SEP-14 Hyderabad
+EN008 EN-Nm-08             40000 12-SEP-13 Kolkata
+EN009 EN-Nm-09             80000 09-DEC-10 Pune
+EN010 EN-Nm-10             90000 30-MAR-16 Gurgaon
+
+10 rows selected.
+
+insert into client values('CL001', 'CL-Nm-01', 'India');
+insert into client values('CL002', 'CL-Nm-02', 'Hungary');
+insert into client values('CL003', 'CL-Nm-03', 'Poland');
+insert into client values('CL004', 'CL-Nm-04', 'Australia');
+insert into client values('CL005', 'CL-Nm-05', 'Denmark');
+
+SQL> select * from client;
+
+CLIEN CLIENT_NAM COUNTRY
+----- ---------- ---------
+CL001 CL-Nm-01   India
+CL002 CL-Nm-02   Hungary
+CL003 CL-Nm-03   Poland
+CL004 CL-Nm-04   Australia
+CL005 CL-Nm-05   Denmark
+
+insert into Project values('PR001','24-OCT-2015','CL001','EN004');
+insert into Project values('PR002','22-OCT-2011','CL005','EN002');
+insert into Project values('PR003','13-JAN-2016','CL003','EN010');
+insert into Project values('PR004','24-JUL-2016','CL001','EN008');
+insert into Project values('PR005','12-SEP-2015','CL001','EN006');
+
+SQL> select * from project;
+
+PROJ_NAME  INIT_DATE CLIEN MANAG
+---------- --------- ----- -----
+PR001      24-OCT-15 CL001 EN004
+PR002      22-OCT-11 CL005 EN002
+PR003      13-JAN-16 CL003 EN010
+PR004      24-JUL-16 CL001 EN008
+PR005      12-SEP-15 CL001 EN006
+
+insert into assigned values('PR001','EN001');
+insert into assigned values('PR001','EN006');
+insert into assigned values('PR001','EN002');
+insert into assigned values('PR002','EN007');
+insert into assigned values('PR002','EN005');
+insert into assigned values('PR003','EN001');
+insert into assigned values('PR003','EN009');
+insert into assigned values('PR004','EN010');
+insert into assigned values('PR004','EN008');
+insert into assigned values('PR005','EN006');
+insert into assigned values('PR005','EN002');
+insert into assigned values('PR004','EN007');
+insert into assigned values('PR003','EN004');
+insert into assigned values('PR002','EN003');
+insert into assigned values('PR004','EN005');
+
+SQL> select * from assigned;
+
+PROJ_NAME  ENGG_
+---------- -----
+PR001      EN001
+PR001      EN002
+PR001      EN006
+PR002      EN003
+PR002      EN005
+PR002      EN007
+PR003      EN001
+PR003      EN004
+PR003      EN009
+PR004      EN005
+PR004      EN007
+PR004      EN008
+PR004      EN010
+PR005      EN002
+PR005      EN006
+
+15 rows selected.
+
+
+QUERIES ::::::::::::::::::::
+
+1. select * from assigned where proj_name in (select proj_name from assigned having count(*) = (select max(count(*)) from assigned group by proj_name) group by proj_name);
+
+2. select * from engineer where engg_id in (select manager_id from project where client_id in (select client_id from Client where country in ('Australia', 'Poland')));
+
+3. select * from engineer where engg_id in (select engg_id from assigned where assigned.proj_name in (select proj_name from project where to_char(init_date, 'yyyy')=to_char(sysdate, 'yyyy')));
+
+4. select engg_id, to_char(sysdate, 'yyyy')-to_char(doj, 'yyyy') as "Experience" from engineer where engg_id in (select manager_id from project);
+
+5. select country from client where client_id in (select client_id from project having count(*) = (select max(count(*)) from project group by client_id) group by client_id);
+
+6. update engineer set salary=(1.2*salary) where engg_id in (select engg_id from assigned having count(*)>1 group by engg_id);
+
+7. select engg_id, salary from engineer where engg_id in (select manager_id from project);
+
+8. select * from engineer where engg_id in (select engg_id from assigned where proj_name in (select proj_name from Project where doj < init_date));
+
+9. select * from project where to_char(sysdate, 'yyyy')-to_char(init_date, 'yyyy')>=5 and client_id in (select client_id from client where country like 'Denmark');
+select * from assigned where proj_name in (select proj_name from project where to_char(sysdate, 'yyyy')-to_char(init_date, 'yyyy')>=5 and client_id in (select client_id from client where country like 'Denmark'));
+
+
+
+
+OUTPUT :::::::::::::::::::::
+
+1. SQL> select * from assigned where proj_name in (select proj_name from assigned h
+aving count(*) = (select max(count(*)) from assigned group by proj_name) group b
+y proj_name);
+
+PROJ_NAME  ENGG_
+---------- -----
+PR004      EN005
+PR004      EN007
+PR004      EN008
+PR004      EN010
+
+
+2. SQL> select * from engineer where engg_id in (select manager_id from project whe
+re client_id in (select client_id from Client where country in ('Australia', 'Po
+land')));
+
+ENGG_ ENGG_NAME           SALARY DOJ       CITY
+----- --------------- ---------- --------- ---------
+EN010 EN-Nm-10             90000 30-MAR-16 Gurgaon
+
+
+
+3. SQL> select * from engineer where engg_id in (select engg_id from assigned where
+ assigned.proj_name in (select proj_name from project where to_char(init_date, '
+yyyy')='2016'));
+
+ENGG_ ENGG_NAME           SALARY DOJ       CITY
+----- --------------- ---------- --------- ---------
+EN010 EN-Nm-10             90000 30-MAR-16 Gurgaon
+EN009 EN-Nm-09             80000 09-DEC-10 Pune
+EN005 EN-Nm-05             80000 08-MAY-13 Pune
+EN004 EN-Nm-04             75000 13-JUL-12 Gurgaon
+EN001 EN-Nm-01             50000 01-JAN-16 Hyderabad
+EN007 EN-Nm-07            355000 09-SEP-14 Hyderabad
+EN008 EN-Nm-08             40000 12-SEP-13 Kolkata
+
+7 rows selected.
+
+4. SQL> select engg_id, to_char(sysdate, 'yyyy')-to_char(doj, 'yyyy') as "Experienc
+e" from engineer where engg_id in (select manager_id from project);
+
+ENGG_ Experience
+----- ----------
+EN002          5
+EN004          4
+EN006          1
+EN008          3
+EN010          0
+
+
+5. SQL> select country from client where client_id in (select client_id from projec
+t having count(*) = (select max(count(*)) from project group by client_id
+) group by client_id);
+
+COUNTRY
+---------
+India
+
+
+6. SQL> update engineer set salary=(1.2*salary) where engg_id in (select engg_id fr
+om assigned having count(*)>1 group by engg_id);
+
+5 rows updated.
+
+SQL> select * from engineer;
+
+ENGG_ ENGG_NAME           SALARY DOJ       CITY
+----- --------------- ---------- --------- ---------
+EN001 EN-Nm-01             60000 01-JAN-16 Hyderabad
+EN002 EN-Nm-02            180000 11-FEB-11 Kolkata
+EN003 EN-Nm-03            100000 15-FEB-16 Pune
+EN004 EN-Nm-04             75000 13-JUL-12 Gurgaon
+EN005 EN-Nm-05             96000 08-MAY-13 Pune
+EN006 EN-Nm-06            240000 08-JUN-15 Kolkata
+EN007 EN-Nm-07            426000 09-SEP-14 Hyderabad
+EN008 EN-Nm-08             40000 12-SEP-13 Kolkata
+EN009 EN-Nm-09             80000 09-DEC-10 Pune
+EN010 EN-Nm-10             90000 30-MAR-16 Gurgaon
+
+10 rows selected.
+
+
+7. SQL> select engg_id, salary from engineer where engg_id in (select manager_id fr
+om project);
+
+ENGG_     SALARY
+----- ----------
+EN002     180000
+EN004      75000
+EN006     240000
+EN008      40000
+EN010      90000
+
+
+8. SQL> select * from engineer where engg_id in (select engg_id from assigned where
+ proj_name in (select proj_name from Project where doj < init_date));
+
+ENGG_ ENGG_NAME           SALARY DOJ       CITY
+----- --------------- ---------- --------- ---------
+EN001 EN-Nm-01             60000 01-JAN-16 Hyderabad
+EN002 EN-Nm-02            180000 11-FEB-11 Kolkata
+EN004 EN-Nm-04             75000 13-JUL-12 Gurgaon
+EN005 EN-Nm-05             96000 08-MAY-13 Pune
+EN006 EN-Nm-06            240000 08-JUN-15 Kolkata
+EN007 EN-Nm-07            426000 09-SEP-14 Hyderabad
+EN008 EN-Nm-08             40000 12-SEP-13 Kolkata
+EN009 EN-Nm-09             80000 09-DEC-10 Pune
+EN010 EN-Nm-10             90000 30-MAR-16 Gurgaon
+
+9 rows selected.

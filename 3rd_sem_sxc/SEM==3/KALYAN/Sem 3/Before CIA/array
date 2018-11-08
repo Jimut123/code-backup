@@ -1,0 +1,102 @@
+#q10as2: Write a program to Calculate (i) Sum, (ii) difference, (iii) Product of 2 2-dimensional arrays
+
+clear
+echo
+echo -n "Enter Size of your square matrix(1-20): "
+read n
+echo "Enter elements of array a[][] --->"
+i=1
+	while [ $i -le $n ]
+	do
+	j=1
+		while [ $j -le $n ]
+		do
+		echo -n "a[$i][$j] = "
+		eval read a$i$j
+		j=`expr $j + 1`
+		done
+	i=`expr $i + 1`
+	done
+echo "Enter elements of array b[][] --->"
+i=1
+	while [ $i -le $n ]
+	do
+	j=1
+		while [ $j -le $n ]
+		do
+		echo -n "b[$i][$j] = "
+		eval read b$i$j
+		j=`expr $j + 1`
+		done
+	i=`expr $i + 1`
+	done
+#To Calculate Product of 2 matrices
+i=1
+	while [ $i -le $n ]
+	do
+	j=1
+		while [ $j -le $n ]
+		do
+		s=0
+		k=1
+			while [ $k -le $n ]
+			do			
+			eval aik=\$a$i$k
+			eval bkj=\$b$k$j
+			s=`expr $s + $aik \* $bkj`
+			k=`expr $k + 1`
+			done
+		eval p$i$j=$s
+		j=`expr $j + 1`
+		done
+	i=`expr $i + 1`
+	done
+clear
+echo "Element in array a[][] --->"
+i=1
+	while [ $i -le $n ]
+	do
+	j=1
+		while [ $j -le $n ]
+		do
+		eval echo -n \$a$i$j
+		echo -n " "
+		j=`expr $j + 1`
+		done
+	echo
+	i=`expr $i + 1`
+	done
+
+
+echo "Element in array p[][] --->"
+i=1
+	while [ $i -le $n ]
+	do
+	j=1
+		while [ $j -le $n ]
+		do
+		eval echo -n \$p$i$j
+		echo -n " "
+		j=`expr $j + 1`
+		done
+	echo
+	i=`expr $i + 1`
+	done
+
+
+echo "Element in array a[][] --->"
+i=1
+	while [ $i -le $n ]
+	do
+	j=1
+		while [ $j -le $n ]
+		do
+		eval echo -n \$a$i$j
+		echo -n " "
+		j=`expr $j + 1`
+		done
+	echo
+	i=`expr $i + 1`
+	done
+
+

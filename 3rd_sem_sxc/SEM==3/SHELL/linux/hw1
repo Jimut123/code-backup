@@ -1,0 +1,55 @@
+clear
+echo -n "Enter lim="
+read n
+c=2
+d=2
+cnt=0
+	while [ $c -le $n ]
+	do
+	while [ $d -le $((c / 2)) ]
+	do
+	if [ $((c % d)) -eq 0 ]
+	then
+	cnt=`expr $cnt + 1`
+	fi
+	d=`expr $d + 1`
+	done
+	if [ $cnt -eq 0 ]
+	then
+	echo "$c ,"
+	fi
+	c=`expr $c + 1`
+	cnt=0
+	d=2
+	done
+#fibonacci
+echo -n "Enter any number="
+read n2
+d=2
+	a=1
+	b=2
+	c=2
+	while [ $c -le $n2 ]
+        do
+        while [ $d -le $((c / 2)) ]
+        do
+        if [ $((c % d)) -eq 0 ]
+        then
+        cnt=`expr $cnt + 1`
+        fi
+        d=`expr $d + 1`
+        done 
+        if [ $cnt -eq 0 ]
+        then
+        echo "$c ," 
+        fi
+        c=`expr $a + $b`
+	a=$b
+	b=$c
+        cnt=0 
+        d=2
+	done
+
+
+	
+

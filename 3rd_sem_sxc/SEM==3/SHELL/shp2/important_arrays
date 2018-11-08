@@ -1,0 +1,26 @@
+#!/bin/sh
+#Suppose you want to store something in the array
+
+#To take input from the user
+echo
+i=0
+echo -n "Enter a number to be stored into the array "
+eval read a$i
+#Here a is the array and i is the counter variable
+#you have to initialize the i variable for doing this operation
+
+#To output the array that is stored
+
+eval echo "\$a$i"
+
+#to store the array variable in some other variable
+eval d=\$a$i
+echo "The stored variable : d :"$d
+
+#to store some variable in an array
+
+
+eval a$i=$d
+
+eval echo "\$a$i"
+

@@ -1,0 +1,253 @@
+create table Customer (cid char(4),
+cnm varchar2(10),
+adr varchar2(30),
+constraint customer_pk primary key(cid),
+constraint customer_ck1 check(cid like 'C%'));
+
+
+create table Product (pid char(4),
+pnm varchar2(10),
+uprice number(3),
+constraint product_pk primary key(pid),
+constraint product_chk1 check(pid like 'P%'),
+constraint product_chk2 check(uprice >= 0));
+
+create table Purchase (cid char(4),
+pid char(4),
+dop date,
+constraint purchase_fk1 foreign key(cid) references Customer,
+constraint purchase_fk2 foreign key(pid) references Product);
+
+
+
+DATA ::::::::::::::::::::::::::::
+
+insert into Customer values ('C001', 'C-Nm-01', '01,St-01,Kolkata-700001');
+insert into Customer values ('C002', 'C-Nm-02', '02,St-02,Kolkata-700002');
+insert into Customer values ('C003', 'C-Nm-03', '03,St-03,Kolkata-700003');
+insert into Customer values ('C004', 'C-Nm-04', '04,St-04,Howrah-710004');
+insert into Customer values ('C005', 'C-Nm-05', '05,St-05,Howrah-710005');
+insert into Customer values ('C006', 'C-Nm-06', '06,St-06,Kolkata-700006');
+insert into Customer values ('C007', 'C-Nm-07', '07,St-07,Hoogly-720007');
+insert into Customer values ('C008', 'C-Nm-08', '08,St-08,Kolkata-700008');
+insert into Customer values ('C009', 'C-Nm-09', '09,St-09,Kolkata-700009');
+insert into Customer values ('C010', 'C-Nm-10', '10,St-10,Kolkata-700010');
+insert into Customer values ('C011', 'C-Nm-11', '11,St-11,Kolkata-700011');
+insert into Customer values ('C012', 'C-Nm-12', '12,St-12,Hoogly-720012');
+insert into Customer values ('C013', 'C-Nm-13', '13,St-13,Kolkata-700013');
+insert into Customer values ('C014', 'C-Nm-14', '14,St-14,Kolkata-700014');
+insert into Customer values ('C015', 'C-Nm-15', '15,St-15,Kolkata-700015');
+
+
+insert into Product values ('P001', 'P-Nm-01', 20);
+insert into Product values ('P002', 'P-Nm-02', 35);
+insert into Product values ('P003', 'P-Nm-03', 60);
+insert into Product values ('P004', 'P-Nm-04', 70);
+insert into Product values ('P005', 'P-Nm-05', 115);
+insert into Product values ('P006', 'P-Nm-06', 550);
+insert into Product values ('P007', 'P-Nm-07', 760);
+insert into Product values ('P008', 'P-Nm-08', 999);
+insert into Product values ('P009', 'P-Nm-09', 200);
+insert into Product values ('P010', 'P-Nm-10', 15);
+insert into Product values ('P011', 'P-Nm-11', 65);
+insert into Product values ('P012', 'P-Nm-12', 105);
+insert into Product values ('P013', 'P-Nm-13', 459);
+insert into Product values ('P014', 'P-Nm-14', 670);
+insert into Product values ('P015', 'P-Nm-15', 25);
+
+
+
+
+insert into Purchase values ('C001', 'P002', '15-JAN-2014');
+insert into Purchase values ('C003', 'P008', '13-JUL-2014');
+insert into Purchase values ('C004', 'P004', '05-NOV-2015');
+insert into Purchase values ('C009', 'P009', '08-JUN-2014');
+insert into Purchase values ('C014', 'P007', '08-MAY-2014');
+insert into Purchase values ('C005', 'P001', '12-SEP-2016');
+insert into Purchase values ('C008', 'P003', '22-JUL-2014');
+insert into Purchase values ('C010', 'P010', '22-OCT-2015');
+insert into Purchase values ('C015', 'P013', '16-DEC-2015');
+insert into Purchase values ('C013', 'P005', '07-FEB-2016');
+insert into Purchase values ('C013', 'P003', '07-FEB-2016');
+insert into Purchase values ('C013', 'P001', '07-FEB-2016');
+
+
+
+QUERIES :::::::::::::::::::::
+
+select customer.* from customer, purchase where customer.cid=purchase.cid and purchase.pid in ('P004', 'P008', 'P009', 'P014');
+
+select customer.* from customer, purchase, product where customer.cid=purchase.cid and product.pid=purchase.pid and product.uprice=(select max(uprice) from product);
+
+select product.*, dop from product, purchase where purchase.cid='C014' and product.pid=purchase.pid;
+
+select product.* from customer, purchase, product where customer.cid=purchase.cid and (customer.adr like '%Kolkata%' or customer.adr like '%Howrah%') and product.pid=purchase.pid;
+
+select count(*) from purchase where to_char(dop, 'yyyy')='2014';
+
+delete from customer where not cid in (select cid from purchase);
+
+
+
+
+OUTPUT :::::::::::::::::::::::::::
+
+SQL> select * from customer;
+
+CID  CNM        ADR
+---- ---------- ------------------------------
+C001 C-Nm-01    01,St-01,Kolkata-700001
+C002 C-Nm-02    02,St-02,Kolkata-700002
+C003 C-Nm-03    03,St-03,Kolkata-700003
+C004 C-Nm-04    04,St-04,Howrah-710004
+C005 C-Nm-05    05,St-05,Howrah-710005
+C006 C-Nm-06    06,St-06,Kolkata-700006
+C007 C-Nm-07    07,St-07,Hoogly-720007
+C008 C-Nm-08    08,St-08,Kolkata-700008
+C009 C-Nm-09    09,St-09,Kolkata-700009
+C010 C-Nm-10    10,St-10,Kolkata-700010
+C011 C-Nm-11    11,St-11,Kolkata-700011
+C012 C-Nm-12    12,St-12,Hoogly-720012
+C013 C-Nm-13    13,St-13,Kolkata-700013
+C014 C-Nm-14    14,St-14,Kolkata-700014
+C015 C-Nm-15    15,St-15,Kolkata-700015
+
+15 rows selected.
+
+
+
+
+SQL> select * from product;
+
+PID  PNM            UPRICE
+---- ---------- ----------
+P001 P-Nm-01            20
+P002 P-Nm-02            35
+P003 P-Nm-03            60
+P004 P-Nm-04            70
+P005 P-Nm-05           115
+P006 P-Nm-06           550
+P007 P-Nm-07           760
+P008 P-Nm-08           999
+P009 P-Nm-09           200
+P010 P-Nm-10            15
+P011 P-Nm-11            65
+P012 P-Nm-12           105
+P013 P-Nm-13           459
+P014 P-Nm-14           670
+P015 P-Nm-15            25
+
+15 rows selected.
+
+
+
+
+
+SQL> select * from Purchase;
+
+CID  PID  DOP
+---- ---- ---------
+C001 P002 15-JAN-14
+C003 P008 13-JUL-14
+C004 P004 05-NOV-15
+C009 P009 08-JUN-14
+C014 P007 08-MAY-14
+C005 P001 12-SEP-16
+C008 P003 22-JUL-14
+C010 P010 22-OCT-15
+C015 P013 16-DEC-15
+C013 P005 07-FEB-16
+
+10 rows selected.
+
+
+
+
+
+
+
+
+SQL> select * from customer, purchase where customer.cid=purchase.cid;
+
+CID  CNM        ADR                            CID  PID  DOP
+---- ---------- ------------------------------ ---- ---- ---------
+C001 C-Nm-01    01,St-01,Kolkata-700001        C001 P002 15-JAN-14
+C003 C-Nm-03    03,St-03,Kolkata-700003        C003 P008 13-JUL-14
+C004 C-Nm-04    04,St-04,Howrah-710004         C004 P004 05-NOV-15
+C005 C-Nm-05    05,St-05,Howrah-710005         C005 P001 12-SEP-16
+C008 C-Nm-08    08,St-08,Kolkata-700008        C008 P003 22-JUL-14
+C009 C-Nm-09    09,St-09,Kolkata-700009        C009 P009 08-JUN-14
+C010 C-Nm-10    10,St-10,Kolkata-700010        C010 P010 22-OCT-15
+C013 C-Nm-13    13,St-13,Kolkata-700013        C013 P005 07-FEB-16
+C014 C-Nm-14    14,St-14,Kolkata-700014        C014 P007 08-MAY-14
+C015 C-Nm-15    15,St-15,Kolkata-700015        C015 P013 16-DEC-15
+
+10 rows selected.
+
+
+
+
+SQL> select * from customer, purchase where customer.cid=purchase.cid and purchase.pid in ('P004', 'P008', 'P009', 'P014');
+
+CID  CNM        ADR                            
+---- ---------- ------------------------------
+C003 C-Nm-03    03,St-03,Kolkata-700003       
+C004 C-Nm-04    04,St-04,Howrah-710004        
+C009 C-Nm-09    09,St-09,Kolkata-700009       
+
+
+SQL> select customer.* from customer, purchase, product where customer.cid=purch
+ase.cid and product.pid=purchase.pid and product.uprice=(select max(product.upri
+ce) from product);
+
+CID  CNM        ADR
+---- ---------- ------------------------------
+C003 C-Nm-03    03,St-03,Kolkata-700003
+
+SQL> select product.*, dop from product, purchase where purchase.cid='C014' and
+product.pid=purchase.pid;
+
+PID  PNM            UPRICE DOP
+---- ---------- ---------- ---------
+P007 P-Nm-07           760 08-MAY-14
+
+
+
+SQL> select product.* from customer, purchase, product where customer.cid=purcha
+se.cid and (customer.adr like '%Kolkata%' or customer.adr like '%Howrah%') and p
+roduct.pid=purchase.pid;
+
+PID  PNM            UPRICE
+---- ---------- ----------
+P001 P-Nm-01            20
+P002 P-Nm-02            35
+P003 P-Nm-03            60
+P004 P-Nm-04            70
+P005 P-Nm-05           115
+P007 P-Nm-07           760
+P008 P-Nm-08           999
+P009 P-Nm-09           200
+P010 P-Nm-10            15
+P013 P-Nm-13           459
+
+10 rows selected.
+
+SQL> select count(*) from purchase where to_char(dop, 'yyyy')='2014';
+
+  COUNT(*)
+----------
+         5
+
+SQL> select * from customer where not cid in (select cid from purchase);
+
+CID  CNM        ADR
+---- ---------- ------------------------------
+C006 C-Nm-06    06,St-06,Kolkata-700006
+C007 C-Nm-07    07,St-07,Hoogly-720007
+C002 C-Nm-02    02,St-02,Kolkata-700002
+C011 C-Nm-11    11,St-11,Kolkata-700011
+C012 C-Nm-12    12,St-12,Hoogly-720012
+
+SQL> delete from customer where not cid in (select cid from purchase);
+
+5 rows deleted.

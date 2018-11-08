@@ -1,0 +1,16 @@
+#calculate the sum of a digit.
+clear
+echo
+echo -n "enter any positive number:"
+read n
+m=$n
+s=0
+#calculation of sum of digit
+while [ $n -ne 0 ]
+do
+	r=`expr $n % 10`
+	s=`expr $s + $r`
+	n=`expr $n / 10`
+done
+echo -n " the sum of the number $m is : $s"
+#end of program

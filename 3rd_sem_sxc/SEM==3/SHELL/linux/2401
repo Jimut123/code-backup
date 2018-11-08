@@ -1,0 +1,15 @@
+#!/bin/sh
+clear
+echo -n "ENter any number"
+read n
+s2=0
+c=$n
+	while [ $c -ge 1 ]
+	do
+	s2=`expr $s2 + $c`
+	c=`expr $c - 2`
+	done
+echo -n "The sum of $n numbers is $s2"
+
+#end of program
+

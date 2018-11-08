@@ -1,0 +1,48 @@
+create table employee(
+empno varchar(5),
+empname char(30),
+doj date,
+salary number(10),
+deptname char(15),
+constraint employee_pk primary key(empno),
+constraint employee_ck check(empno like 'EM%'),
+constraint employee_sk check(deptname in ('Marketing','Sales','Accounts','Development','Research'))
+);
+insert into employee
+values('EM001','BIKASH PANDEY','04-AUG-1998','50001','Marketing');
+
+insert into employee
+values('EM002','JIMUT BAHAN','15-SEP-2000','49999','Sales');
+
+insert into employee
+values('EM003','ANUBHAB DEY','18-JUN-1999','80000','Accounts');
+
+insert into employee
+values('EM004','INDRANIL LAHH','01-JAN-2012','70000','Development');
+
+insert into employee
+values('EM005','RAM SHARMAH','09-DEC-2014','30000','Research');
+
+insert into employee
+values('EM006','SHYAM SHARMAH','09-DEC-2011','40000','Development');
+
+insert into employee
+values('EM007','SOJINI CHIZOBA','09-DEC-2016','35000','Research');
+
+insert into employee
+values('EM008','ABC DEF','09-JUL-2013','7','60000','Research');
+
+insert into employee
+values('EM009','GHANSHYAM SHARMA','09-MAR-2011','45000','Development');
+
+#Queries----------------------------------------------------------------------------------------------------->
+
+select * from employee where doj like '%11';
+select * from employee where deptname in ('Sales','Marketing','Accounts') and salary > 50000;
+
+select empno,deptname from employee where empname like 'S%';
+select to_char(sysdate,'YYYY')-to_char(doj,'YYYY') "experience" from employee;
+select round((sysdate-doj)/365) "experience" from employee;
+select count(*) "NO. OF EMP" from employee where deptname='Development';
+update employee set salary=(0.2*salary)+salary where deptname='Research';
+delete from employee where empname='%H';

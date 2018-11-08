@@ -1,0 +1,6 @@
+
+BEGIN{
+ 	print "Enter the number of elements"
+	
+	
+}

@@ -1,0 +1,54 @@
+#!/bin/sh
+
+clear
+
+#take input
+
+echo -n "Enter number of employees : "
+read n
+i=1
+while [ $i -le $n ]
+do
+echo -n "Input employee code : "
+eval read ec$i
+echo -n "Input salary : "
+eval read sal$i
+i=`expr $i + 1`
+done
+
+#bubble sort
+
+i=1
+while [ $i -le $n ]
+do 
+j=$i
+while [ $j -le $n ]
+do
+eval ai=\$sal$i
+eval aj=\$sal$j
+eval eci=\$ec$i
+eval ecj=\$ec$j
+if [ $ai -gt $aj ]
+then
+eval sal$i=$aj
+eval sal$j=$ai
+eval ec$i=$ecj
+eval ec$j=$eci
+fi
+j=`expr $j + 1`
+done
+i=`expr $i + 1`
+done
+
+#output
+
+echo "In ascending order :- "
+i=1
+while [ $i -le $n ]
+do
+eval echo -n "\$ec$i"
+echo -n "        "
+eval echo "\$sal$i"
+i=`expr $i + 1`
+done
+

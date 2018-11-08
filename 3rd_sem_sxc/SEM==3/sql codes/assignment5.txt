@@ -1,0 +1,165 @@
+create table engineer(
+eng_id varchar(6),
+eng_name char(15),
+doj date,
+city char(15),
+constraint engineer_pk primary key(eng_id)
+);
+create table project(
+project_name varchar(20),
+initiation_date date,
+client_id varchar(6),
+manager_id varchar(6),
+constraint project_pk primary key(project_name),
+constraint project_fk foreign key(client_id)
+references client,
+constraint project_fo foreign key(manager_id)
+references engineer
+);
+create table client(
+client_id varchar(6),
+client_name char(15),
+country char(15),
+constraint client_pk primary key(client_id)
+);
+create table assigned(
+project_name varchar(20),
+eng_id varchar(6),
+constraint assigned_pk primary key(project_name,eng_id),
+CONSTRAINT ASSIGNES_FK FOREIGN KEY(PROJECT_NAME)
+REFERENCES PROJECT,
+CONSTRAINT ASSIGNS_F FOREIGN KEY(ENG_ID)
+REFERENCES ENGINEER
+);
+
+#insertion------>
+
+insert into client values('CLT001','COMPANY 1','AMERICA');
+
+insert into client values('CLT002','COMPANY 2','AUSTRALIA');
+
+insert into client values('CLT003','COMPANY 3','SAUDI ARABIA');
+
+insert into client values('CLT004','ISIS','IRAQ');
+
+insert into client values('CLT005','COMPANY 4','AUSTRALIA');
+
+
+insert into project values('PROJECT 1','20-AUG-1990','CLT001','ENG001');
+
+insert into project values('PROJECT 2','15-SEP-1992','CLT002','ENG003');
+
+insert into project values('PROJECT 3','20-AUG-1990','CLT003','ENG006');
+
+insert into project values('PROJECT 4','20-AUG-2017','CLT004','ENG008');
+
+
+
+insert into engineer values('ENG001','BIKASH','19-SEP-1998','BURDAWAN');
+
+insert into engineer values('ENG002','KINGSHUK','14-NOV-2000','KOLKATA');
+
+insert into engineer values('ENG003','RAHUL','9-JUL-2001','SINGUR');
+
+insert into engineer values('ENG004','SOUVIK','1-JAN-2010','ASANSOL');
+
+insert into engineer values('ENG005','INDRANIL','10-DEC-2000','SILIGURI');
+
+insert into engineer values('ENG006','JIMUT','15-SEP-1999','MARABHUMI');
+
+insert into engineer values('ENG007','ANUBHAV','17-NOV-2003','MUMBAI');
+
+insert into engineer values('ENG008','OJINI','10-DEC-2000','SILIGURI');
+
+insert into engineer values('ENG009','RAM','10-DEC-2000','SILIGURI');
+
+insert into engineer values('ENG010','SHYAM','10-DEC-2000','SILIGURI');
+
+insert into assigned values('PROJECT 1','ENG001');
+insert into assigned values('PROJECT 2','ENG003');
+insert into assigned values('PROJECT 3','ENG006');
+insert into assigned values('PROJECT 3','ENG002');
+insert into assigned values('PROJECT 3','ENG004');
+insert into assigned values('PROJECT 1','ENG005');
+insert into assigned values('PROJECT 2','ENG007');
+insert into assigned values('PROJECT 4','ENG008');
+insert into assigned values('PROJECT 4','ENG009');
+insert into assigned values('PROJECT 4','ENG010');
+
+#queries-------->
+
+
+
+1. 
+#Two ways to do run this queery---->
+
+
+
+#Type 1------>
+
+ SELECT * FROM PROJECT WHERE PROJECT_NAME=(
+ SELECT PROJECT_NAME FROM
+ (
+   SELECT PROJECT_NAME, COUNT(*)
+     FROM ASSIGNED
+ GROUP BY PROJECT_NAME
+ ORDER BY COUNT(*) DESC
+ )
+ WHERE rownum = 1
+ );
+
+#Type 2------>
+
+select * from project where project_name=(
+select max(project_name) from (
+SELECT PROJECT_NAME, COUNT(*)
+     FROM ASSIGNED
+ GROUP BY PROJECT_NAME
+ ORDER BY COUNT(*) DESC
+ ) 
+ );
+
+2.
+
+
+SELECT * FROM ENGINEER WHERE ENG_ID=
+( 
+SELECT MANAGER_ID FROM PROJECT P,CLIENT C
+WHERE C.CLIENT_ID=P.CLIENT_ID AND P.CLIENT_ID=
+(
+SELECT CLIENT_ID FROM CLIENT
+WHERE COUNTRY='AUSTRALIA'
+)
+);
+3.
+
+
+SELECT * from engineer where eng_id in(
+SELECT eng_id from assigned where project_name=(
+SELECT PROJECT_NAME FROM PROJECT WHERE TO_CHAR(initiation_date,'YYYY')=TO_CHAR(SYSDATE,'YYYY')
+)
+);
+
+# No need to use join operation here but still if needed--->
+
+SELECT * from engineer e, assigned a where e.eng_id=a.eng_id AND e.eng_id in(
+SELECT eng_id from assigned where project_name=(
+SELECT PROJECT_NAME FROM PROJECT WHERE TO_CHAR(initiation_date,'YYYY')=TO_CHAR(SYSDATE,'YYYY')
+)
+);
+
+4.
+select e.eng_id,e.eng_name, to_char(sysdate,'YYYY')-to_char(doj,'YYYY') "EXPERIENCE in years" from engineer e, project p where e.eng_id=p.manager_id and e.eng_id in(
+select manager_id from project
+);
+5
+select e.* from engineer e join assigned a on e.eng_id=a.eng_id join project p on p.project_name=a.project_name where p.initiation_date<e.doj; 
+6
+select * from engineer where eng_id not in (select eng_id from assigned);
+7.
+select p.* from project p join assigned a on p.project_name=a.project_name where a.eng_id=(
+select eng_id from engineer where round(sysdate-doj)=(
+select max(round((sysdate-doj))) from engineer));
+8.
+select country,count(*) from client where count(*)=(
+select max(count(*)) from client group by country);

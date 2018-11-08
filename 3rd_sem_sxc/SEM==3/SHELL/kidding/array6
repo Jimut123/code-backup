@@ -1,0 +1,24 @@
+#!/bin/sh
+clear
+echo -n "Enter size of your list="
+read n
+echo "Enter $n elements one by one --->"
+i=0
+	while [ $i -le $n ]
+	do
+	echo -n "a[$i]="
+	eval read a$i
+	#eval id$i=$i
+	i=`expr $i + 1`
+	done
+#clear
+echo "Number "
+#Index
+i=0
+	while [ $i -le $n ]
+	do
+	eval echo  " \$a$i "
+	#echo -n "         "
+	#eval echo  " \$id$i "
+	i=`expr $i + 1`
+	done

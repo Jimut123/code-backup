@@ -1,0 +1,32 @@
+#!/bin/sh
+clear
+echo -n "Enter number of students="
+read num
+c=1
+while [ $c -le $num ]
+do
+echo -n "Enter Roll="
+read roll
+echo -n "Enter total="
+read total
+grade=A
+	if [ $total -ge 60 -a $total -lt 70 ]
+	then
+	grade=B
+	fi
+	if [ $total -ge 50 -a $total -lt 60 ]
+        then
+        grade=C
+        fi
+	if [ $total -ge 40 -a $total -lt 50 ]
+        then
+        grade=D
+        fi
+	if [ $total -lt 40 ]
+        then
+	grade=F
+	fi
+c=`expr $c + 1`
+echo "Roll no is $roll , total is $total and grade is $grade"
+done
+    	    	

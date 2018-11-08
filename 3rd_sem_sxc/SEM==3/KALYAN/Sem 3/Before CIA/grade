@@ -1,0 +1,71 @@
+	#q5as2 : Write a program to input roll,name,p1,p2,p3.
+	# calculate (i) tot, (ii) avg, (iii) grade. Print
+	# roll,name,p1,p2,p3,tot,avg,grade
+	clear
+	echo -n "Enter number of students(1-5) :"
+	read n
+	c=1
+		while [ $c -le $n ]
+		do
+		echo -n "Enter Roll(1-100)="
+		read r
+		echo -n "Enter Name="
+		read name1
+		echo -n "Enter p1(0-100)="
+		read p1
+		echo -n "Enter p2(0-100)="
+		read p2
+		echo -n "Enter p3(0-100)="
+		read p3
+		# To get sum of best 2 papers
+		small=$p1
+			if [ $p2 -lt $small ]
+			then
+			small=$p2
+			fi
+			if [ $p3 -lt $small ]
+			then
+			small=$p3
+			fi
+		tot=`expr $p1 + $p2 + $p3 - $small`
+		avg=`expr $tot / 2`
+		# To calculate grade
+			if [ $avg -ge 70 ]
+			then
+			g="A"	
+			elif [ $avg -ge 60 ]
+			then
+			g="B"
+			elif [ $avg -ge 50 ]
+			then
+			g="C"
+			elif [ $avg -ge 40 ]
+			then
+			g="D"
+			else
+			g="F"
+			fi
+	echo "Roll=$r Name=$name1 p1=$p1 p2=$p2 p3=$p3 tot=$tot avg=$avg Grade=$g"
+		c=`expr $c + 1`
+		done
+	#End of program
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

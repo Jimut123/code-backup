@@ -1,0 +1,98 @@
+1.
+#Exception not handled------->
+
+declare
+emp_sal number(10);
+emp_no varchar(5);
+begin
+emp_no:=&emp_no;
+update employee set salary=salary+(salary*0.1) where empno=emp_no;
+commit;
+end;
+/
+1.
+#Exception handled---->
+
+declare
+emp_sal number(10);
+emp_no varchar(5);
+begin
+emp_no:=&emp_no;
+select salary into emp_sal from employee where empno=emp_no;
+if emp_sal <> null then
+update employee set salary=salary+(salary*0.1) where empno=emp_no;
+end if;
+commit;
+end;
+/
+
+2.
+declare
+emp_sal number(10);
+emp_no varchar(5);
+begin
+emp_no:=&emp_no;
+select salary into emp_sal from employee where empno=emp_no;
+if emp_sal < 1000 then
+update employee set salary=salary+(salary*0.1) where empno=emp_no;
+elsif emp_sal between 1000 and 2000 then
+update employee set salary=salary+(salary*0.07) where empno=emp_no;
+else
+update employee set salary=salary+(salary*0.05) where empno=emp_no;
+end if;
+commit;
+end;
+
+
+Q1--->
+input an empno and update his salary by 10%. if empno is not present in the table then handle the exception accordingly...
+Q2--->
+update the salary of employees who get salary more than 1000 by 10%
+between 1000 and 2000 by 7% and others by 5%
+
+
+solutions ---->
+1.
+user defined---->
+
+declare
+emp_sal number(10);
+emp_no varchar(5);
+sal_missing exception;
+begin
+emp_no:=&emp_no;
+select salary into emp_sal from employee where empno=emp_no;
+if emp_sal is null then
+raise sal_missing;
+else
+update employee set salary=salary+(salary*0.1) where empno=emp_no;
+end if;
+commit;
+exception 
+when sal_missing then
+dbms_output.put_line('does not exist');
+commit;
+end;
+/
+ 
+pre defined---->
+
+declare
+emp_sal number(10);
+emp_no varchar(5);
+begin
+emp_no:=&emp_no;
+select salary into emp_sal from employee where empno=emp_no;
+if emp_sal <> null then
+update employee set salary=salary+(salary*0.1) where empno=emp_no;
+end if;
+commit;
+exception
+when no_data_found then
+dbms_output.put_line('does not exist');
+commit;
+end;
+/
+
+insert into employee values('EM019','DADI',null,null,null,null);
+

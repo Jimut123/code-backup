@@ -1,0 +1,74 @@
+dependent table --->
+
+create table employee(
+empno varchar(5),
+empname char(30),
+doj date,
+salary number(10),
+manager varchar(5),
+deptno number(1),
+constraint employee_fk foreign key(deptno)
+references depart,
+constraint employee_ck check(empno like 'EM%'),
+constraint employee_d check(deptno in (1,2,3,4)),
+constraint employee_mk check(manager like 'EM%')
+);
+
+independent table--->
+
+create table depart(
+deptno number(1),
+deptname char(15),
+location char(20),
+constraint depart_pk primary key(deptno),
+constraint depart_d check(deptno in (1,2,3,4)),
+constraint depart_sk check(deptname in ('Marketing','Sales','Accounts','Research')),
+constraint depart_lc check(location in ('Kolkata','Bangalore','Pune'))
+);
+
+insert into depart values('1','Marketing','Pune');
+insert into depart values('2','Sales','Bangalore');
+insert into depart values('3','Accounts','Kolkata');
+insert into depart values('4','Research','Kolkata');
+
+insert into employee
+values('EM001','BIKASH PANDEY','04-AUG-1998','50001',null,'1');
+
+insert into employee
+values('EM002','JIMUT BAHAN','15-SEP-2000','49999','EM001','2');
+
+insert into employee
+values('EM003','ANUBHAB DEY','18-JUN-1999','80000','EM001','3');
+
+insert into employee
+values('EM004','INDRANIL LAHH','01-JAN-2012','70000','EM006','4');
+
+insert into employee
+values('EM005','RAM SHARMAH','09-DEC-2014','30000','EM006','4');
+
+insert into employee
+values('EM006','SHYAM SHARMAH','09-DEC-2011','40000',null,'2');
+
+insert into employee
+values('EM007','SOJINI CHIZOBA','09-DEC-2016','35000','EM009','4');
+
+insert into employee
+values('EM008','ABC DEF','09-JUL-2013','60000','EM009','1');
+
+insert into employee
+values('EM009','GHANSHYAM SHARMA','09-MAR-2011','45000',null,'3');
+
+insert into employee
+values('EM010','HONULULU','07-AUG-2017','60000','EM009','1');
+
+Queries ---->
+select * from employee ,depart where employee.deptno=depart.deptno and location='Kolkata';
+
+select count(*) from employee,depart where employee.deptno=depart.deptno and location='Pune';
+
+select e.empname "employee",m.empname "manager" from employee e,employee m where e.manager=m.empno;
+
+
+select empno from employee where salary=(select max(salary) from employee);
+
+select * from employee e,depart d where to_char(e.doj,'dy')='monday';

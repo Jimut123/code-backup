@@ -1,0 +1,50 @@
+clear
+echo -n "Enter size of your list="
+read n
+echo "Enter $n elements one by one --->"
+i=1
+	while [ $i -le $n ]
+	do
+	echo -n "a[$i]="
+	eval read a$i
+	eval id$i=$i
+	i=`expr $i + 1`
+	done
+clear
+echo "Number Index"
+i=1
+	while [ $i -le $n ]
+	do
+	eval echo -n " \$a$i "
+	echo -n "         "
+	eval echo  " \$id$i "
+	i=`expr $i + 1`
+	done
+ch=1
+	while [ $ch -eq 1 ]
+	do
+	echo -n "Enter number to be searched="
+	read num
+	count=0 # count=number of times 'num' found in the list
+	i=1
+		while [ $i -le $n ]
+		do
+		eval ai=\$a$i
+			if [ $num -eq $ai ]
+			then
+			eval echo "$num found at postion=\$id$i"
+			count=`expr $count + 1`
+			fi
+		i=`expr $i + 1`
+		done
+		if [ $count -ne 0 ]
+		then
+		echo -n "Number found $count times in list"
+		else
+		echo "$num not found . pls try with different number"
+		fi
+	echo -n "enter '1' to search another number"
+	read ch
+	done
+#end
+

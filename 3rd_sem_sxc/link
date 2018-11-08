@@ -1,0 +1,6 @@
+https://github.com/Jimut123/SXC
+
+
+rlwrap sqlplus --- to initiate SQL plus server
+
+du -hs filename  --- to find the size of a file or a directory

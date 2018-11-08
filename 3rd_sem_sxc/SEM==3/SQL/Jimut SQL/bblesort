@@ -1,0 +1,73 @@
+clear
+echo -n "Enter number of elements"
+read n
+echo -n "  "
+i=1
+while [ $i -le  $n ]
+do
+echo -n " Enter  element "
+eval read a$i
+eval id$i=$i
+i=`expr $i + 1`
+done
+clear
+i=1
+echo -n "Unsorted array : "
+while [ $i -le $n ]
+do
+eval echo -n "  \$a$i  "
+i=`expr $i + 1`
+done
+#Bubble Sort :
+m=$n
+pass=0
+flag=0
+while [ $flag -eq 0 ]
+do
+flag=1
+pass=`expr $pass + 1`
+m=`expr $m - 1`
+i=1
+	while [ $i -le $m ]
+	do
+	eval ai=\$a$i
+	eval j=`expr $i + 1`
+	eval aj=\$a$j
+	eval idi=\$id$i
+	eval idj=\$id$j
+	if [ $ai -gt $aj ]
+	then
+	eval a$i=$aj
+        eval a$j=$ai
+        eval id$i=$idj
+        eval id$j=$idi
+	flag=0
+	fi
+	echo -n " Pass = $pass , step = $i"
+	k=1
+	while [ $k -le $n ]
+	do
+	eval echo -n "\$a$k"
+	echo -n "       "
+	echo -n "\$id$k"
+	k=`expr $k + 1`
+	done
+	echo -n " press enter "
+	read ch
+	clear 
+	i=`expr $i + 1`
+	done
+	done
+echo -n "Sorted array : "
+k=1
+ while [ $k -le $n ]
+        do
+        eval echo -n "\$a$k"
+        echo -n "       "
+        k=`expr $k + 1`
+ done
+#end
+  
+
+
+

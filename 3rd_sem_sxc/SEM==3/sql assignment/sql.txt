@@ -1,0 +1,14 @@
+select next_day(sysdate,'MONDAY') from dual;
+create table product(
+	prodid number(15),
+	prodname varchar(5),
+	unit_price number(5),
+	constraint product_pk primary key(prodid)
+);
+insert into product values(252345,'Deter',50);
+insert into product values(3423,'Toothpaste',45);
+insert into product values(25234,'Meat',500);
+insert into product values(123,'Noodles',30);
+insert into product values(54554,'Spices',100);
+alter table product add quantity number(5);
+alter table product modify unit_price number(10);

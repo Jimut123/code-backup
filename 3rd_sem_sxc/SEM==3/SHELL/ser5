@@ -1,0 +1,75 @@
+clear
+echo
+echo -n "Enter n(1-20)="
+read n
+#to cal s1
+c=1
+s1=0
+	while [ $c -le $n ]
+	do
+	s1=`expr $s1 + $c`
+	c=`expr $c + 1`
+	done
+c=1
+s2=0
+        while [ $c -le $n ]
+        do
+        s2=`expr $s2 + $c \* $c`
+        c=`expr $c + 1`
+        done
+c=1
+s3=0
+        while [ $c -le $n ]
+        do
+	if [ $c % 2 -eq 1 ]
+	then
+        s3=`expr $s3 + $c`
+	elif
+	s3=`expr $s3 - $c`
+	fi
+        c=`expr $c + 1`
+        done
+c2=1
+c3=1
+s4=1
+	while [ $c3 -le $n ]
+	do
+        while [ $c2 -le $c3 ]
+        do
+        s4=`expr $s4 + $c`
+        c=`expr $c2 + 1`
+        done
+	c3=`expr $c3 +1`
+	done
+echo "s1=$s1"
+echo "s2=$s2"
+echo "s3=$s3"
+echo "s4=$s4"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

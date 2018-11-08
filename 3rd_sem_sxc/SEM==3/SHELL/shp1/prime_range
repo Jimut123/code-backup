@@ -1,0 +1,51 @@
+#!/bin/sh
+#program by Jimut Bahan Pal 08:57 2nd Spetember 
+prime_no()
+{
+	p=2
+	dummy=1
+	while [ $p -lt $c ]
+	do
+		dum2=` expr $c % $p `
+		echo -n $dum2 " \t"
+		if [ $dum2 -eq 0 ]
+		then
+			dummy=0
+		fi
+		p=` expr $p + 1 `
+	done 
+	#if prime then return 1 else return 0
+	if [ $dummy -eq 1 ]
+	then
+		return 1
+	else
+		return 0
+	fi	
+}
+prime_range()
+{
+	c=$a
+	while [ $c -lt $b ]
+	do
+		#start
+		k= $(prime_no $c)
+		echo $? " The value of K \n"
+		if [ $? -eq 1 ]
+		then
+			echo $c " = c \n  "
+		fi
+		c=` expr $c + 1 `
+	done
+}
+
+#------------------ The start of the program --------------------- #
+
+echo 
+echo -n "Enter the lower and upper bound "
+read a
+read b
+
+prime_range $a $b
+
+
+#end

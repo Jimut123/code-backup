@@ -1,0 +1,17 @@
+	#q4as2 : Write shell script to calculate sum of digits
+	# in any positive integer say 'n' where n>=1 and n<=999999999
+	clear
+	echo
+	echo -n "Enter any +ve integer(1-999999999) :"
+	read n
+	m=$n
+	s=0
+		while [ $m -ne 0 ]
+		do
+		d=`expr $m % 10`
+		s=`expr $s + $d`
+		m=`expr $m / 10`
+		done
+	echo "Sum of digits in $n = $s"
+	#End of program
+

@@ -1,0 +1,18 @@
+#!/bin/sh
+# Program by Jimut Bahan Pal  06:50 am 2nd September 2017
+#sum=n+(n-2)+(n-4)+....+2 or 1
+
+clear
+echo
+echo -n "Enter a number "
+read n
+s=$n
+sum=0
+while [ $s -ge 1 ]
+do
+	sum=` expr $sum + $s ` 
+	s=` expr $s - 2 `
+done 
+
+echo "Sum = "$sum
+#end of the program

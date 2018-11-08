@@ -1,0 +1,100 @@
+n=219
+i=0
+while [ $n -le 329 ]
+do
+	n1=$n
+	n2=` expr $n \* 2`
+	n3=` expr $n \* 3`
+	m1=$n1
+ 	m2=$n2
+	m3=$n3
+	flag=1
+	while [ $m1 -ne 0 ]
+	do
+		d=` expr $m1 % 10`
+		eval a$i=$d
+		i=` expr $i + 1`
+		if [ $d -eq 0 ]
+		then 
+			flag=0
+		fi
+		m1=` expr $m1 / 10`
+	done
+	
+	if [ $flag -ne 0 ]
+	then
+	while [ $m2 -ne 0 ]
+        do
+                d=` expr $m2 % 10`
+                eval a$i=$d
+                i=` expr $i + 1`
+                if [ $d -eq 0 ]
+                then
+                        flag=0
+                fi
+                m2=` expr $m2 / 10`
+        done    
+	fi
+
+	if [ $flag -ne 0 ]
+        then
+        while [ $m3 -ne 0 ]
+        do
+                d=` expr $m3 % 10`
+                eval a$i=$d
+                i=` expr $i + 1`
+                if [ $d -eq 0 ]
+                then
+                        flag=0
+                fi
+                m3=` expr $m3 / 10`
+        done
+        fi
+	
+	if [ $flag -ne 0 ]
+	then
+		for((j=1;j<=i;j++))
+		do
+			temp=${a[$j]}
+			k=$j-1
+			while((k>=0 && temp<a[k]))
+			do
+				a[$k+1]=${a[k]}
+				k=$k-1
+			done
+			a[k+1]=$temp
+		done
+		u=0
+		while [ $u -le $i ]
+		do
+			c=` expr $c + 1`
+			v=` expr $u + 1`
+			eval au=\$a$u
+			while [ $v -le $i ]
+			do
+				eval av=\$a$v
+				if [[ $au -eq $av ]]
+				then
+					c=` expr $c + 1`
+				fi
+				v=` expr $v + 1`
+			done
+			if [ $c -gt 1 ]
+			then
+ 				flag=0
+			fi
+			c=0
+			if [ $flag -eq 0 ]
+			then 
+				break
+			fi
+			u=` expr $u + 1`
+		done
+	fi
+	if [ $flag -eq 1 ]
+	then
+		echo "Traid numbers:-$n1,$n2,$n3"
+	fi
+	n=` expr $n + 1`
+done
+

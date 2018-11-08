@@ -1,0 +1,20 @@
+clear
+echo -n "Enter a ="
+read a
+echo -n "Enter b ="
+read b
+x=$a
+y=$b
+r=`expr $x % $y`
+while [ $r -ne 0 ]
+do
+x=$y
+y=$r
+r=`expr $x % $y`
+done
+h=$y
+#to calculate lcm of two numbers
+lc=`expr $a \* $b`
+lc=`expr $lc / $h`
+echo "a=$a b=$b hcf=$h lcm=$lc"
+#end  

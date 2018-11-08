@@ -1,0 +1,64 @@
+#!/bin/sh
+echo "Enter the number of elements in the array"
+read n
+i=1
+while [ $i -le $n ]
+do
+	#statements
+	eval read a$i
+	i=` expr $i + 1 `
+done
+i=1
+eval max=\$a$i
+eval min=\$a$i
+i=1
+while [ $i -le $n ]
+do
+	eval d=\$a$i
+	#echo $d
+	if [ $max -gt $d ]
+	then
+		max=$d
+	fi
+	if [ $min -lt $d ]
+	then 
+		min=$d
+	fi
+	i=` expr $i + 1 `
+done
+i=$min
+while [ $i -le $max ]
+do
+	j=0
+	k=1
+	while [ $k -le $n ]
+	do
+		eval f=\$a$k
+		if [ $i -eq $f ]
+			then 
+			j=` expr $j + 1 `
+		fi
+		k=` expr $k + 1 `
+
+	done
+	#if [ $j -gt 0 ]
+	#then 
+		echo " freq of $i = $j "
+	#fi
+	i=` expr $i + 1 `
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

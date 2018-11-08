@@ -1,0 +1,432 @@
+------ORACLE------
+Changing date format ::::::::::::
+
+SQL> select sysdate from dual;
+
+SYSDATE
+---------
+05-AUG-16
+
+SQL> select 5+6 from dual
+  2  ;
+
+       5+6
+----------
+        11
+
+SQL> select last_day(sysdate) from dual;
+
+LAST_DAY(
+---------
+31-AUG-16
+
+SQL> select next_day (sysdate, 'tuesday') from dual;
+
+NEXT_DAY(
+---------
+09-AUG-16
+
+SQL> select add_months (sysdate, 4) from dual;
+
+ADD_MONTH
+---------
+05-DEC-16
+
+SQL> select months_between (sysdate, '12-SEP-2016') from dual;
+
+MONTHS_BETWEEN(SYSDATE,'12-SEP-2016')
+-------------------------------------
+                           -1.2073122
+
+SQL> select months_between (sysdate, '12-NOV-2016') from dual;
+
+MONTHS_BETWEEN(SYSDATE,'12-NOV-2016')
+-------------------------------------
+                           -3.2072943
+
+SQL> select months_between (sysdate, '12-SEP-2014') from dual;
+
+MONTHS_BETWEEN(SYSDATE,'12-SEP-2014')
+-------------------------------------
+                           22.7927188
+
+SQL> select to_char (sysdate, 'dd/mm/yy') from dual;
+
+TO_CHAR(
+--------
+05/08/16
+
+SQL> select to_char (sysdate, 'dy/mm/yy') from dual;
+
+TO_CHAR(SYSDATE,'D
+------------------
+fri/08/16
+
+SQL> select to_char (sysdate, 'Dy/mm/yy') from dual;
+
+TO_CHAR(SYSDATE,'D
+------------------
+Fri/08/16
+
+SQL> select to_char (sysdate, 'Day/mm/yy') from dual;
+
+TO_CHAR(SYSDATE,'DAY/MM/YY')
+------------------------------------------
+Friday   /08/16
+
+SQL> select to_char (sysdate, 'day/mm/yy') from dual;
+
+TO_CHAR(SYSDATE,'DAY/MM/YY')
+------------------------------------------
+friday   /08/16
+
+SQL> select to_char (sysdate, 'mon') from dual;
+
+TO_CHAR(SYSD
+------------
+aug
+
+SQL> select to_char (sysdate, 'month') from dual;
+
+TO_CHAR(SYSDATE,'MONTH')
+------------------------------------
+august
+
+SQL> select to_char (sysdate, 'rm') from dual;
+
+TO_C
+----
+viii
+
+SQL> select to_char (sysdate, 'ddth month, yyyy') from dual;
+
+TO_CHAR(SYSDATE,'DDTHMONTH,YYYY')
+-----------------------------------------------
+05th august   , 2016
+
+SQL> select to_char (sysdate, 'ddspth month, yyyy') from dual;
+
+TO_CHAR(SYSDATE,'DDSPTHMONTH,YYYY')
+---------------------------------------------------------
+fifth august   , 2016
+
+SQL> select sysdate as "Today" from dual;
+
+Today
+---------
+05-AUG-16
+
+SQL> select sysdate "Today" from dual;
+
+Today
+---------
+05-AUG-16
+
+SQL> select sysdate Today from dual;
+
+TODAY
+---------
+05-AUG-16
+
+SQL> select 'Today is '||sysdate from dual;
+
+'TODAYIS'||SYSDATE
+---------------------------
+Today is 05-AUG-16
+
+SQL> select current_date from dual;
+
+CURRENT_D
+---------
+05-AUG-16
+
+SQL> select * from emp_rec;
+
+EMP_ID EMP_NM          DEPT_NM         SALARY DOJ       CITY
+------ --------------- ----------- ---------- --------- --------
+EMP001 Emp-Nm-1        Sales            35000 29-JUL-16 Kolkata
+EMP002 Emp-Nm-2        Marketing       190000 12-JAN-13 Jaipur
+EMP003 Emp-Nm-3        Accounts         75000 05-MAR-11 Kolkata
+EMP004 Emp-Nm-4        Accounts         65000 16-MAR-15 Srinagar
+EMP005 Emp-Nm-5        Research        200000 23-DEC-12 Kochi
+EMP006 Emp-Nm-6        Programming     210000 13-JUL-96 Kolkata
+EMP007 Emp-Nm-7        Research         94000 05-SEP-01 Srinagar
+EMP008 Emp-Nm-8        Marketing        81000 16-AUG-09 Jaipur
+EMP009 Emp-Nm-9        Sales            45000 20-NOV-07 Kochi
+EMP010 Emp-Nm-10       Programming     205000 12-SEP-97 Kolkata
+
+10 rows selected.
+
+
+ASSIGNMENT :::::::::::::::::
+
+SQL> update emp_rec set salary=salary*1.2 where dept_nm='Programming';
+
+2 rows updated.
+
+SQL> select * from emp_rec;
+
+EMP_ID EMP_NM          DEPT_NM         SALARY DOJ       CITY
+------ --------------- ----------- ---------- --------- --------
+EMP001 Emp-Nm-1        Sales            35000 29-JUL-16 Kolkata
+EMP002 Emp-Nm-2        Marketing       190000 12-JAN-13 Jaipur
+EMP003 Emp-Nm-3        Accounts         75000 05-MAR-11 Kolkata
+EMP004 Emp-Nm-4        Accounts         65000 16-MAR-15 Srinagar
+EMP005 Emp-Nm-5        Research        200000 23-DEC-12 Kochi
+EMP006 Emp-Nm-6        Programming     252000 13-JUL-96 Kolkata
+EMP007 Emp-Nm-7        Research         94000 05-SEP-01 Srinagar
+EMP008 Emp-Nm-8        Marketing        81000 16-AUG-09 Jaipur
+EMP009 Emp-Nm-9        Sales            45000 20-NOV-07 Kochi
+EMP010 Emp-Nm-10       Programming     246000 12-SEP-97 Kolkata
+
+10 rows selected.
+
+SQL> select * from emp_rec where to_char(doj, 'day')='monday';
+
+no rows selected
+
+SQL> select * from emp_rec where to_char(doj, 'day')='tuesday';
+
+no rows selected
+
+SQL> select * from emp_rec where to_char(doj, 'day')='wednesday';
+
+EMP_ID EMP_NM          DEPT_NM         SALARY DOJ       CITY
+------ --------------- ----------- ---------- --------- --------
+EMP007 Emp-Nm-7        Research         94000 05-SEP-01 Srinagar
+
+SQL> delete from emp_rec where city='Srinagar' and to_char(doj, 'yyyy')<2013;
+
+1 row deleted.
+
+SQL> select * from emp_rec;
+
+EMP_ID EMP_NM          DEPT_NM         SALARY DOJ       CITY
+------ --------------- ----------- ---------- --------- --------
+EMP001 Emp-Nm-1        Sales            35000 29-JUL-16 Kolkata
+EMP002 Emp-Nm-2        Marketing       190000 12-JAN-13 Jaipur
+EMP003 Emp-Nm-3        Accounts         75000 05-MAR-11 Kolkata
+EMP004 Emp-Nm-4        Accounts         65000 16-MAR-15 Srinagar
+EMP005 Emp-Nm-5        Research        200000 23-DEC-12 Kochi
+EMP006 Emp-Nm-6        Programming     252000 13-JUL-96 Kolkata
+EMP008 Emp-Nm-8        Marketing        81000 16-AUG-09 Jaipur
+EMP009 Emp-Nm-9        Sales            45000 20-NOV-07 Kochi
+EMP010 Emp-Nm-10       Programming     246000 12-SEP-97 Kolkata
+
+9 rows selected.
+
+SQL> select emp_nm, ' has joined in '||doj from emp_rec;
+
+EMP_NM          'HASJOINEDIN'||DOJ
+--------------- ---------------------------------
+Emp-Nm-1         has joined in 29-JUL-16
+Emp-Nm-2         has joined in 12-JAN-13
+Emp-Nm-3         has joined in 05-MAR-11
+Emp-Nm-4         has joined in 16-MAR-15
+Emp-Nm-5         has joined in 23-DEC-12
+Emp-Nm-6         has joined in 13-JUL-96
+Emp-Nm-8         has joined in 16-AUG-09
+Emp-Nm-9         has joined in 20-NOV-07
+Emp-Nm-10        has joined in 12-SEP-97
+
+9 rows selected.
+
+SQL> select emp_nm, ' has joined in '||to_char(doj, 'yyyy') from emp_rec;
+
+EMP_NM          'HASJOINEDIN'||TO_C
+--------------- -------------------
+Emp-Nm-1         has joined in 2016
+Emp-Nm-2         has joined in 2013
+Emp-Nm-3         has joined in 2011
+Emp-Nm-4         has joined in 2015
+Emp-Nm-5         has joined in 2012
+Emp-Nm-6         has joined in 1996
+Emp-Nm-8         has joined in 2009
+Emp-Nm-9         has joined in 2007
+Emp-Nm-10        has joined in 1997
+
+9 rows selected.
+
+
+
+
+
+
+
+
+
+SQL> select to_char(sysdate, 'hh:mm:ss') from dual;
+
+TO_CHAR(
+--------
+02:08:16
+
+SQL> select to_char(sysdate, 'hh:mm:ss') from dual;
+
+TO_CHAR(
+--------
+02:08:30
+
+SQL> select to_char(sysdate, 'hh24:mm:ss') from dual;
+
+TO_CHAR(
+--------
+14:08:07
+
+SQL> select to_char(sysdate, 'hh:mm:ss pm') from dual;
+
+TO_CHAR(SYS
+-----------
+02:08:25 pm
+
+SQL> select to_char(sysdate, 'hh:mm:ss am') from dual;
+
+TO_CHAR(SYS
+-----------
+02:08:30 pm
+
+
+
+MATH FUNCTIONS :::::::::::::::::::::::::::
+
+SQL> select power(3,4) from dual;
+
+POWER(3,4)
+----------
+        81
+
+SQL> select mod(3,4) from dual;
+
+  MOD(3,4)
+----------
+         3
+
+SQL> select mod(90,8) from dual;
+
+ MOD(90,8)
+----------
+         2
+
+SQL> select round(23.29816,2) from dual;
+
+ROUND(23.29816,2)
+-----------------
+             23.3
+
+SQL> select round(23.24816,2) from dual;
+
+ROUND(23.24816,2)
+-----------------
+            23.25
+
+SQL> select trunc(29.6987,1) from dual;
+
+TRUNC(29.6987,1)
+----------------
+            29.6
+
+SQL> select abs(-3.2) from dual;
+
+ ABS(-3.2)
+----------
+       3.2
+
+
+
+CHARACTER MANIPULATION FUNCTIONS :::::::::::::::::::::::::::
+
+
+SQL> select initcap('test val') from dual;
+
+INITCAP(
+--------
+Test Val
+
+SQL> select lower('TEst val') from dual;
+
+LOWER('T
+--------
+test val
+
+SQL> select upper('TEst val') from dual;
+
+UPPER('T
+--------
+TEST VAL
+
+SQL> select substr('system call', 4) from dual;
+
+SUBSTR('
+--------
+tem call
+
+SQL> select substr('system call', 4, 4) from dual;
+
+SUBS
+----
+tem
+
+SQL> select substr('system call', -4, 4) from dual;
+
+SUBS
+----
+call
+
+SQL> select substr('system call', -4, 2) from dual;
+
+SU
+--
+ca
+
+
+
+
+
+
+SQL> select dept_nm from emp_rec;
+
+DEPT_NM
+-----------
+Sales
+Marketing
+Accounts
+Accounts
+Research
+Programming
+Marketing
+Sales
+Programming
+
+9 rows selected.
+
+SQL> select distinct dept_nm from emp_rec;
+
+DEPT_NM
+-----------
+Accounts
+Research
+Sales
+Marketing
+Programming
+
+SQL> select unique dept_nm from emp_rec;
+
+DEPT_NM
+-----------
+Accounts
+Research
+Sales
+Marketing
+Programming
+
+SQL> select count(dept_nm) from emp_rec;
+
+COUNT(DEPT_NM)
+--------------
+             9
+
+SQL> select count(distinct dept_nm) from emp_rec;
+
+COUNT(DISTINCTDEPT_NM)
+----------------------
+                     5

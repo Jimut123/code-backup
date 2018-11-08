@@ -1,0 +1,34 @@
+create table employee(
+	emp_no varchar(10),
+	emp_name varchar(25),
+	doj date,
+	salary number(7),
+	dept_name varchar(15),
+	constraint emp_ek primary key(emp_no),
+	constraint emp_id check(emp_no like 'EM%'),
+	constraint emp_dept check(dept_name in('Marketing','Sales','Research','Development','Accounts'))
+);
+
+//insertions
+
+insert into employee values ('EM001','Deep Ganguly','12-JAN-1998',69000,'Research');
+insert into employee values ('EM509','Angsul Sadhukhan','31-JUL-1987',70000,'Development');
+insert into employee values ('EM541','Manash Maity','03-DEC-1950',5000,'Sales');
+insert into employee values ('EM231','Sandeep Chatterjee','16-AUG-1990',51000,'Accounts');
+insert into employee values ('EM706','Sourav Hazra','11-SEP-1979',49000,'Marketing');
+insert into employee values ('EM445','John Petrucci','13-JUL-1967',25000,'Sales');
+insert into employee values ('EM079','Jordan Rudess','04-NOV-1956',30000,'Accounts');
+insert into employee values ('EM012','Joseph Satriani','15-JUL-1956',55000,'Accounts');
+insert into employee values ('EM308','Steven Siro Vai','06-JUN-1960',45000,'Marketing');
+insert into employee values ('EM666','Steven Wilson','15-MAR-2011',100000,'Development');
+insert into employee values ('EM000','Korth','02-AUG-2017',5,'Sales');
+
+//queries
+
+select * from employee where to_char(doj,'yyyy')=2011;
+select * from employee where dept_name in('Sales','Marketing','Accounts') and salary>=50000;
+select dept_name, emp_no from employee where emp_name like('S%');
+select round(months_between(sysdate,doj)/12) "Experience in years" from employee; 
+select count(*) from employee where dept_name='Development';
+update employee set salary=salary * 1.20 where dept_name='Research';
+delete from employee where emp_name like('%h');

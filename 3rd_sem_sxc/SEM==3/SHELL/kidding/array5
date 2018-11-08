@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+area[11]=23
+area[13]=37
+area[51]=UFOs
+
+#  Array members need not be consecutive or contiguous.
+
+#  Some members of the array can be left uninitialized.
+#  Gaps in the array are okay.
+#  In fact, arrays with sparse data ("sparse arrays")
+#+ are useful in spreadsheet-processing software.
+
+
+echo -n "area[11] = "
+echo ${area[11]}    #  {curly brackets} needed.
+

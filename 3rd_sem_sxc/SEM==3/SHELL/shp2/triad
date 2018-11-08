@@ -1,0 +1,97 @@
+#!/bin/sh
+#triads = 192 , 384 , 576
+# *2, *3 each digits is unique
+
+echo -n "Enter a number : "
+read t1
+t2=` expr $t1 \* 2 `
+t3=` expr $t1 \* 3 `
+i=1
+echo $t1
+echo $t2
+echo $t3
+
+
+#Extracting the digits in the array
+while [ $t1 -ne 0 ]
+do
+	#codes
+	d=` expr $t1 % 10 `
+	eval a$i=$d
+	#echo $d
+	t1=` expr $t1 / 10 `
+	i=` expr $i + 1 `
+done
+
+while [ $t2 -ne 0 ]
+do
+	#codes
+	d=` expr $t2 % 10 `
+	eval a$i=$d
+	#echo $d
+	t2=` expr $t2 / 10 `
+	i=` expr $i + 1 `
+done
+
+while [ $t3 -ne 0 ]
+do
+	#codes
+	d=` expr $t3 % 10 `
+	eval a$i=$d
+	#echo $d
+	t3=` expr $t3 / 10 `
+	i=` expr $i + 1 `
+done
+
+
+
+
+c=1
+while [ $c -le $i ]
+do
+	#codes
+	eval echo "\$a$c"	
+	c=` expr $c + 1 `	
+done 
+
+
+#Algorithm to do this thing in short way ... index from 1 to 9
+#then check that the occurence doesn't occur more than once
+i=1
+while [ $i -le 9 ]
+do
+	#codes
+	c=$i
+	k=1
+	#dummy=0
+	while [ $k -le 9 ]
+	do
+		eval num=\$a$i
+		#echo -n $num
+		if [ $c -ne $num ]
+		then
+			#codes
+			#dummy=1
+			#break
+		fi
+		k=` expr $k + 1 `
+	done
+	i=` expr $i + 1 `
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

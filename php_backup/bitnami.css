@@ -1,0 +1,46 @@
+html , body{ height:100.1%;text-align:center }
+
+* {margin:0px; padding:0px}
+
+img {border:0px}
+
+a:link {color:#0f30ac !important;text-decoration: underline;}
+a:hover {color:#006cff !important;text-decoration: underline;}
+a:visited {color:#858585 !important;text-decoration: underline;}
+a:active {color:#ff3232 !important;text-decoration: underline;}
+
+h3 {font-size: 18px;margin-bottom:16px;color: #122355 !important;}
+
+h4 {margin-bottom:20px;font-family: 'Lucida Grande', Tahoma, Arial, Helvetica, sans-serif;font-size: 16px;}
+
+#header { height:96px;width:100%;/* background-image: url(img/header_bg.png);background-repeat: repeat-x; */ text-align:left }
+
+#bitnami { padding-left:15px;padding-top:15px;width:281px;height:90px;z-index:2; }
+
+#menu_launch_page {background-image: url(img/tabs_bg.png);background-repeat: repeat-x;width:100%;height:48px}
+#menu_launch_page table {margin: 0 auto;}
+
+#lowerContainer { position:relative;width:100%; /* background-image: url(img/sub_header_bg.png);background-repeat: repeat-x; */ padding-top:27px; }
+
+#content {min-width:800px !important;padding-left:0px;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;line-height:1.3em;text-align:center}
+
+.module_table {margin-bottom:15px}
+.module_content {text-align:left;width:509px;_width:507px;border-left:1px solid #d4d4d9;border-right:1px solid #d4d4d9;padding:0;margin:0;}
+.module_content_right {width:100%}
+.module_content table img {padding-left:22px}
+.module_content table {width:100%}
+.module_content h2 {font-size:18px;padding-bottom:16px;text-align:left;padding-left:14px;float:left;}
+.module_folder {padding-left:12px;max-width:280px;float:right;display:block;padding-right:16px;font-size:10px;padding-bottom:4px;text-align:right;margin-right:0;clear:right}
+.module_content p {clear:left;padding-left:14px;padding-right:18px;}
+.module_access {clear:right;font-size:14px;margin-right:0px;padding-right:16px;padding-top:12px;margin-bottom:6px}
+.module_access a {text-decoration: underline !important;}
+.tableParagraph {width:700px; margin-left:auto; margin-right:auto;text-align:left}
+.tableParagraph img {margin-right:12px;margin-bottom:12px}
+
+
+
+
+
+
+
+

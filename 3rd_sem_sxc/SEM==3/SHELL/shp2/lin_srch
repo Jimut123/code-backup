@@ -1,0 +1,71 @@
+#!/bin/sh
+#Linear search problem
+#Program by Jimut Bahan Pal 17:57 2nd September 2017
+#To enter elements into the array
+
+
+echo -n "Enter the number of elements you want to enter into the array :"
+read n
+i=1
+while [ $i -le $n ]
+do
+	echo -n " Enter the ""a[$i] value : "
+	eval read a$i
+	i=` expr $i + 1 `
+done
+i=1
+echo "The numbers entered are :"
+while [ $i -le $n ]
+do
+	eval echo "\$a$i"
+	echo
+	i=` expr $i + 1 ` 
+done
+
+#Using the linear search technique
+i=1
+dummy=0
+while [ $dummy -eq 0 ]
+do
+	dummy2=0
+	echo "Enter a number "
+	read num
+	i=1
+	counter=0
+	while [ $i -le $n ]
+	do
+		#codes 
+		eval ar=\$a$i
+		if [ $ar -eq $num ]
+		then
+			dummy2=1
+			counter=` expr $counter + 1 `
+		fi
+		i=` expr $i + 1 `
+		
+	done
+	if [ $dummy2 -eq 1 ]
+	then
+		echo "##########################################################"
+		echo "Number Found !!!!"
+		echo "Number Found :: "$counter" times"
+	
+	else
+		echo "###########################################################"
+		echo "Sorry that number was not present !! try a different number "
+	fi
+	echo "press 0 to search again :"
+	read dummy
+done
+
+
+
+
+
+
+
+
+
+
+
+

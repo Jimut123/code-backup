@@ -1,0 +1,92 @@
+create table Employee (empid char(6),
+empnm varchar2(15),
+salary number(6),
+doj date,
+deptno char(7),
+constraint employee_pk primary key(empid),
+constraint employee_fk foreign key(deptno) references Department);
+
+
+create table Department (deptno char(7),
+deptnm varchar2(15),
+location varchar2(10),
+constraint Dept_pk primary key(deptno));
+
+DATA :::::::::::::::::::::
+
+insert into department values ('DEPT001', 'Programming', 'Kolkata');
+insert into department values ('DEPT002', 'Accounts', 'Jaipur');
+insert into department values ('DEPT003', 'HR', 'New Delhi');
+insert into department values ('DEPT004', 'Sales', 'Bhopal');
+insert into department values ('DEPT005', 'Marketing', 'Pune');
+
+insert into employee values ('EMP001', 'Emp-Nm-1', 100000, '01-JAN-2015', 'DEPT001');
+insert into employee values ('EMP002', 'Emp-Nm-2', 90000, '16-MAR-2016', 'DEPT002');
+insert into employee values ('EMP003', 'Emp-Nm-3', 120000, '13-JUL-2011', 'DEPT003');
+insert into employee values ('EMP004', 'Emp-Nm-4', 78000, '08-JUN-2010', 'DEPT004');
+insert into employee values ('EMP005', 'Emp-Nm-5', 240000, '12-SEP-2015', 'DEPT005');
+insert into employee values ('EMP006', 'Emp-Nm-6', 250000, '08-MAY-2015', 'DEPT005');
+
+
+
+
+
+
+QUERIES :::::::::::::::::::::::::
+
+select * from department where deptno in (select deptno from employee where empnm='Emp-Nm-1');
+
+select location from department where deptno in (select deptno from employee where to_char(doj, 'yyyy')='2015');
+
+select empnm from employee where deptno in (select deptno from department where deptnm in ('HR', 'Sales'));
+
+select empnm from employee where salary = (select max(salary) from employee);
+
+select empnm from employee minus (select e1.empnm from employee e1, employee e2 where e1.salary<e2.salary);
+
+
+
+
+
+
+
+
+
+OUTPUT :::::::::::::::::::::::::::::::::
+
+SQL> select * from department where deptno in (select deptno from employee where
+ empnm='Emp-Nm-1');
+
+DEPTNO  DEPTNM          LOCATION
+------- --------------- ----------
+DEPT001 Programming     Kolkata
+
+SQL> select location from department where deptno in (select deptno from employe
+e where to_char(doj, 'yyyy')=2015);
+
+LOCATION
+----------
+Kolkata
+Pune
+
+SQL> select empnm from employee where deptno in (select deptno from department w
+here deptnm in ('HR', 'Sales'));
+
+EMPNM
+---------------
+Emp-Nm-3
+Emp-Nm-4
+
+SQL> select empnm from employee where salary = (select max(salary) from employee
+);
+
+EMPNM
+---------------
+Emp-Nm-5
+
+SQL> select empnm from employee minus (select e1.empnm from employee e1, employe
+e e2 where e1.salary<e2.salary);
+
+EMPNM
+---------------
+Emp-Nm-5

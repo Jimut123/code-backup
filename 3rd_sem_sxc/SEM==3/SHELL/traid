@@ -1,0 +1,84 @@
+#!/bin/sh
+#Problem by AN and Souptik
+clear
+li=123
+while [ $li -le 329 ]
+do
+if [ $li == 192 ]
+then
+	echo 
+	clear
+fi
+echo "$li ==============        li"
+n1=$li
+n2=`expr $n1 \* 2`
+n3=`expr $n1 \* 3`
+i=1
+while [ $n1 -ne 0 ]
+do
+d=`expr $n1 % 10`
+eval a$i=$d
+n1=`expr $n1 / 10`
+i=`expr $i + 1`
+done
+while [ $n2 -ne 0 ]
+do
+d=`expr $n2 % 10`
+eval a$i=$d
+n2=`expr $n2 / 10`
+i=`expr $i + 1`
+done
+while [ $n3 -ne 0 ]
+do
+d=`expr $n3 % 10`
+eval a$i=$d
+n3=`expr $n3 / 10`
+i=`expr $i + 1`
+done
+flag=1 # TRIAD FOUND
+
+i=1
+	while [ $i -le 9 ]
+	do
+	eval ai=\$a$i
+	echo -n " a[$i] a[i] = "$ai
+	if [ $ai -eq 0 ]
+	then
+	flag=0
+	break
+	fi
+	j=1
+		while [ $j -le 9 ]
+		do
+		eval aj=\$a$j
+		echo -n " a[$j] a[j] = "$aj
+		if [ $j -ne $i ]
+		then
+		echo -n " j = $j i = $i "
+		if [ $ai -eq $aj ]
+		then
+		echo -n " a[$i] == a[$j] means $ai -eq $aj "
+		flag=0
+		break
+		fi
+		fi
+		j=`expr $j + 1`
+		done
+	if [ $flag -eq 0 ]
+	then
+	break
+	fi
+	i=`expr $i + 1`
+	done
+if [ $flag -eq 1 ]
+then
+n1=$li
+n2=`expr $n1 \* 2`
+n3=`expr $n1 \* 3`
+echo -n "Triad is ($n1,$n2,$n3)"
+fi
+li=`expr $li + 1`
+done
+#end
+
+ 

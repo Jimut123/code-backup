@@ -1,0 +1,5 @@
+#echo -n "Enter c="
+read c
+f=`expr 9 \ * $c /5 +32`
+echo "c= $c f=$f"
+#end of program

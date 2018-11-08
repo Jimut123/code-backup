@@ -1,0 +1,19 @@
+#!/bin/sh
+#a program to find the sum of the digits
+clear
+echo -n "Enter a number : "
+read n
+n1=$n
+s=0
+echo $n
+while [ $n -gt 0 ]
+do
+	d=` expr $n % 10 `
+	s=` expr $s + $d `
+	n=` expr $n / 10 `
+done
+
+echo
+echo "Sum of $n1 is : $s"
+
+

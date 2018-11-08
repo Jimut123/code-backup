@@ -1,0 +1,129 @@
+EMPLOYEE
+1. Find out the names of the departments where maximum number of Employees are working.
+2. Find out the maximum salary and minimum salary for each dept.
+
+CUSTOMER
+1. Find out the details of the customers who have purchased more than two products.
+2. Find out the most demanding product.
+
+STUDENT
+Student(*RollNO*, Name)
+Dance_Team(*RollNO*, Name)
+Instrument_Team(*RollNO*, Name)
+1. Find out Students who has participated in any extracurricular activity.
+2. Find out Students who has Not participated in any extracurricular activity.
+3. Find out Students who has participated only in Instrumental.
+
+
+QUERIES ::::::::::::::::::::::::
+EMPLOYEE
+1. select deptnm from department where deptno in (select deptno from employee having count(*) = (select max(count(*)) from employee group by deptno) group by deptno);
+
+2. select deptno, max(salary), min(salary) from employee group by deptno;
+
+
+CUSTOMER
+1. select * from customer where cid in (select cid from purchase group by cid having count(*) > 2);
+
+2. select * from product where pid in (select pid from purchase having count(*) = (select max(count(*)) from purchase group by pid) group by pid);
+
+STUDENT
+Create Table Student (rollno number(2),
+name varchar2(10));
+Create Table Dance_Team (rollno number(2),
+name varchar2(10));
+Create Table Instrument_Team (rollno number(2),
+name varchar2(10));
+
+insert into student values(1, 'S1');
+insert into student values(2, 'S2');
+insert into student values(3, 'S3');
+insert into student values(4, 'S4');
+insert into student values(5, 'S5');
+
+insert into dance_team values(1, 'S1');
+insert into dance_team values(2, 'S2');
+
+insert into instrument_team values(1, 'S1');
+insert into instrument_team values(3, 'S3');
+insert into instrument_team values(5, 'S5');
+
+
+1. select * from student where rollno in (select rollno from dance_team union select rollno from instrument_team);
+
+2. select * from student where rollno not in (select rollno from dance_team union select rollno from instrument_team);
+
+3. select * from student where rollno in (select rollno from instrument_team minus select rollno from dance_team);
+
+
+
+OUTPUT :::::::::::::::::::::::::
+
+
+SQL> select deptnm from department where deptno = (select deptno from employee h
+aving count(*) = (select max(count(*)) from employee group by deptno) group by d
+eptno);
+
+DEPTNM
+---------------
+Marketing
+
+
+
+SQL> select deptno, max(salary), min(salary) from employee group by deptno;
+
+DEPTNO  MAX(SALARY) MIN(SALARY)
+------- ----------- -----------
+DEPT001      100000      100000
+DEPT004       78000       78000
+DEPT002       90000       90000
+DEPT003      120000      120000
+DEPT005      250000      240000
+
+
+
+
+SQL> select * from customer where cid in (select cid from purchase having count(*) > 2 group by cid);
+
+CID  CNM        ADR
+---- ---------- ------------------------------
+C013 C-Nm-13    13,St-13,Kolkata-700013
+
+
+
+
+SQL> select * from student where rollno in (select rollno from dance_team union
+select rollno from instrument_team);
+
+    ROLLNO NAME
+---------- ----------
+         1 S1
+         2 S2
+         3 S3
+         5 S5
+
+
+
+
+
+SQL> select * from student where rollno not in (select rollno from dance_team un
+ion select rollno from instrument_team);
+
+    ROLLNO NAME
+---------- ----------
+         4 S4
+
+
+
+
+
+
+
+
+SQL> select * from student where rollno in (select rollno from instrument_team m
+inus select rollno from dance_team);
+
+    ROLLNO NAME
+---------- ----------
+         3 S3
+         5 S5
