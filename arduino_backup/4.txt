@@ -1,0 +1,55 @@
+create table employees(emp_id  varchar(8),emp_name varchar(25),
+doj date,salary number(7),dept_no number(2),
+mgr_id  varchar(8),
+constraint em_pk primary key(emp_id),
+constraint em_id check(emp_id like 'EM%'),
+constraint em_d check(dept_no between 1 and 4),
+constraint employee_fk foreign key(dept_no) references department );
+
+
+create table department(dept_no  number(2),dept_name varchar(25),
+location varchar(10),
+constraint department_fk primary key(dept_no),
+constraint dept_no check(dept_no between 1 and 4),
+constraint e_d check(dept_no between 1 and 4),
+constraint dn_c check(dept_name in('Marketing','Sales','Accounts','Research')),
+constraint lc check(location in('Kolkata','Pune','Bangalore')));
+
+
+insert into department values(1,'Marketing','Pune');
+insert into department values(2,'Sales','Pune');
+insert into department values(3,'Research','Bangalore');
+insert into department values(4,'Accounts','Kolkata');
+
+
+insert into employees values('EM_001','John Mayer','31-JUL-17',70000,1,NULL);
+insert into employees values('EM_002','Harsh Kush','23-OCT-08',70000,2,NULL);
+insert into employees values('EM_003','Henry Don','17-DEC-12',70000,3,NULL);
+insert into employees values('EM_004','Sean King','05-AUG-11',65000,4,NULL);
+insert into employees values('EM_005','Roger Waters','27-FEB-15',50000,2,'EM_002');
+insert into employees values('EM_006','Justin Denver','13-SEP-09',20000,4,'EM_004');
+insert into employees values('EM_007','Scooter Braun','13-MAR-12',30000,1,'EM_001');
+insert into employees values('EM_008','Selena Swift','13-NOV-09',40000,3,'EM_003');
+insert into employees values('EM_009','Austin Chase','13-JUN-11',45000,2,'EM_002');
+insert into employees values('EM_010','Daimien Ironov','13-MAY-08',50000,1,'EM_001');
+insert into employees values('EM_012','Clayton Mayer','31-JUL-17',55000,2,'EM_002');
+
+
+
+select * from department;
+select * from employees;
+
+
+
+select * from employees e,department d where e.dept_no=d.dept_no and d.location='Kolkata';
+
+select count(*) from employees e,department d where e.dept_no=d.dept_no and d.location='Pune';
+
+select count(*) from employees where salary=(SELECT max(salary) from employees);
+
+select e.emp_name Employee, m.emp_name Manager  from employees e,employees m where e.mgr_id=m.emp_id;
+
+select * from employees e,department d where e.dept_no=d.dept_no and d.dept_name='Sales' and to_char(e.doj,'dy')='mon';
+
+
+

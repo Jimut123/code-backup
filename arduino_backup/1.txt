@@ -1,0 +1,23 @@
+create table product(
+	id number(4),name varchar(10),price number(5),constraint product_pk primary key(id) );
+
+insert into product values(101,'mobile',750);
+insert into product values(121,'modem',500);
+insert into product values(122,'camera box',500);
+insert into product values(154,'television',6700,4);
+
+select * from product;
+
+select id from product where price in (500,350);
+
+select unique price from product;
+
+alter table product add rating number(2);
+
+insert into product values(134,'ipod',670,6);
+
+alter table product drop column rating;
+
+select months_between('24-jul-1997','24-jul-1998') from dual;
+
+drop table product;

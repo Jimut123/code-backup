@@ -1,0 +1,32 @@
+create table employees(emp_id  varchar(8),emp_name varchar(25),doj date,salary number(7),dept varchar(18),constraint e_pk primary key(emp_id),constraint e_id check(emp_id like 'EM%'),constraint e_d check(dept in('Marketing','Sales','Accounts','Development','Research')));
+
+insert into employees values('EM_001','John Mayer','31-DEC-10',60000,'Marketing');
+insert into employees values('EM_021','Harsh Kush','23-OCT-08',10000,'Sales');
+insert into employees values('EM_107','Henry Don','17-DEC-12',70000,'Research');
+insert into employees values('EM_089','Sean King','05-AUG-11',65000,'Marketing');
+insert into employees values('EM_053','Roger Waters','27-FEB-15',50000,'Accounts');
+insert into employees values('EM_061','Shane Kim','13-MAR-09',40000,'Development');
+insert into employees values('EM_066','Tyler Smith','28-JAN-09',30000,'Sales');
+
+insert into employees values('EM_121','Jack Sprrow','19-AUG-11',60000,'Hr');
+
+select * from employees;
+
+
+select * from employees where to_char(doj,'yy')='11';
+
+select * from employees where dept in ('Marketing','Sales','Accounts') and salary >=50000;
+
+select dept,emp_id from employees where emp_name like 'S%';
+
+select count(*) "Development Dept" from employees where dept = 'Development';
+
+select round(months_between(sysdate,doj)/12) from employees;
+
+update employees set salary=salary*1.20 where dept='Research';
+
+delete  from employees where emp_name like '%h';
+
+
+select * from employees;
+

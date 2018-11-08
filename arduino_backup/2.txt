@@ -1,0 +1,18 @@
+create table customer(cust_id  varchar(12),cust_name varchar(20),cust_city varchar(10),no_units_purchased number(3), constraint c_pk primary key(cust_id), constraint c_id check(cust_id like 'CUST%'),constraint c_city check(cust_city in('Kolkata','Siliguri','Assansol','Howrah')),constraint c_unit check(no_units_purchased >=5));
+
+insert into customer values('CUST_001','John Mayer','Kolkata',6);
+insert into customer values('CUST_011','James Henry','Siliguri',4);
+insert into customer values('CUST_072','Taylor Mason','Howrah',11);
+insert into customer values('CUST_009','Eric Clapton','Kolkata',19);
+insert into customer values('CUST_017','Clayton Marks','Assansol',20);
+
+
+select count(*) from customer where cust_city like 'Assansol';
+
+select sum(no_units_purchased) from customer; 
+
+select * from customer where cust_city like 'Kolkata' and no_units_purchased >=10;
+
+select * from customer where cust_city like 'Kolkata' and no_units_purchased >=10;
+
+select cust_name,cust_city from customer where cust_id in('CUST_001','CUST_007','CUST_019','CUST_025');

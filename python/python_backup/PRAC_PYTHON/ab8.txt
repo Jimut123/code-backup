@@ -1,0 +1,15 @@
+n=input("Give number:");
+n=input("Give number:");
+if(n>m):
+   c=n;
+   d=m;
+else
+   c=m;
+    d=n;
+while(n%m!=0):
+     k=n%m
+     n=m
+     m=k
+print"HCF:",m
+     
+
