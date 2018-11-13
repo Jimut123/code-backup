@@ -1,0 +1,12 @@
+
+
+	   LXI H,2050H	
+	   MVI C,05H
+	   MVI A,00H
+
+L1:	   MOV D,M
+	   ADD D
+	   DCR C
+	   JNZ L1
+	   OUT 20H
+	   HLT
