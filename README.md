@@ -4,6 +4,12 @@ All program (backups) done by me till date. There are many other contributors to
 
 Contains all the program done in Java by ISC board and St. Xavier's College, Kolkata. Contains programs of every semester!
 
+## Note : 
+* :beginner: -> beginner
+* :green_book: -> moderate/average
+* :orange_book: -> challenging
+
+
 ---
 1. This repository contains the following programs :  :clipboard:
 
@@ -26,10 +32,12 @@ Contains all the program done in Java by ISC board and St. Xavier's College, Kol
  
 ****
 
-Maintainer : 
-[Jimut Bahan Pal]()
+2 Maintainer : 
+---
+[Jimut Bahan Pal](https://www.linkedin.com/in/jimut-bahan-pal-156862123/)
 
-Additional contributors :
+3 Additional contributors :
+---
 * [Kalyan Majumder](https://github.com/jaymazkm96)
 * [Bikash Pandey](https://github.com/BikashPandey17)
 * [Arion Mitra](https://github.com/arionmitra)
