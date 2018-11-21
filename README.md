@@ -34,7 +34,6 @@ Contains programs of every semester!
     * [Q-Basic (Amlyan's Backup)](https://github.com/Jimut123/prog_backups/tree/master/q_basic_bckup/AMLYAN) :beginner:
     * [Visual Basic (Nightmares)](https://github.com/Jimut123/prog_backups/tree/master/visual_basic/JIM%20VB) :orange_book:
  
-****
 
 2 Maintainer : 
 ---
