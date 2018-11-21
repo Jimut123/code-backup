@@ -2,7 +2,9 @@
 
 All program (backups) done by me till date. There are many other contributors too. 
 
-Contains all the program done in Java by ISC board and St. Xavier's College, Kolkata. Contains programs of every semester!
+Contains all the program done in Java by ISC board and [St. Xavier's College, Kolkata](sxccal.edu).
+
+Contains programs of every semester!
 
 ## Note : 
 * :beginner: -> beginner
@@ -11,13 +13,15 @@ Contains all the program done in Java by ISC board and St. Xavier's College, Kol
 
 
 ---
+
 1. This repository contains the following programs :  :clipboard:
+---
 
     * [SHELL](https://github.com/Jimut123/prog_backups/tree/master/3rd_sem_sxc/SEM%3D%3D3)  :beginner:
     * [PERL](https://github.com/Jimut123/prog_backups/tree/master/3rd_sem_sxc/SEM%3D%3D3)   :beginner:
     * [AWK](https://github.com/Jimut123/prog_backups/tree/master/3rd_sem_sxc/SEM%3D%3D3)    :beginner:
     * [8085](https://github.com/Jimut123/prog_backups/tree/master/8085_programming)  :green_book:
-    * [C++ 3D](https://github.com/Jimut123/prog_backups/tree/master/C%2B%2B_3D)
+    * [C++ 3D](https://github.com/Jimut123/prog_backups/tree/master/C%2B%2B_3D)  :green_book:
     * [Audrino](https://github.com/Jimut123/prog_backups/tree/master/arduino_backup) :beginner:
     * [C++ Advanced](https://github.com/Jimut123/prog_backups/tree/master/c%2B%2B_backup) :orange_book:
     * [C coding & Graphics(including nightmares of Turbo C)](https://github.com/Jimut123/prog_backups/tree/master/c_backup) :orange_book:
