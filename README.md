@@ -2,7 +2,7 @@
 
 All program (backups) done by me till date. There are many other contributors too. 
 
-Contains all the program done in Java by ISC board and [St. Xavier's College, Kolkata](http://sxccal.edu).
+Contains all the program done in Java in ISC board and [St. Xavier's College, Kolkata](http://sxccal.edu).
 
 Contains programs of every semester!
 
