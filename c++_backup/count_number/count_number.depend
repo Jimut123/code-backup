@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1543075970 source:/home/jimutbp/Desktop/GIT/prog_backups/c++_backup/count_number/main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

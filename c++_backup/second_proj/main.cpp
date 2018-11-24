@@ -1,6 +1,8 @@
 #include <iostream>
 #include <bits/stdc++.h>
-
+/*
+This is a simple project using STL's some of the fundamental properties!
+*/
 using namespace std;
 
 int main()
