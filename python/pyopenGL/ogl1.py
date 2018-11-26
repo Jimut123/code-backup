@@ -4,12 +4,12 @@ from OpenGL.GLUT import *
 import sys
 
 def draw():
-    #glutWireTeapot(0.5)
-    #glutWireSphere(0.50,50,10)
-    #glutWireCylinder(20,30,40,30)
-    #glutSolidTeapot(0.5)
-    #glutWireTetrahedron(4,3,3)
-    glutWireCube(1.0)
+    glutWireTeapot(0.5)
+    # glutWireSphere(0.50,50,10)
+    # glutWireCylinder(20,30,40,30)
+    # glutSolidTeapot(0.5)
+    # glutWireTetrahedron(4,3,3)
+    # glutWireCube(1.0)
     glFlush()
 
 
