@@ -16,23 +16,14 @@ def plotfunc():
     glClear(GL_COLOR_BUFFER_BIT)
     glColor3f(0.0,0.0,0.0)          # color
     glPointSize(1.0)
-    a = 1.5 
-    b = .5
-    for t in np.arange(0.0,6.28,0.01):
-        x = a*math.cos(t)
-        y = b*math.sin(t)
+    a = 1.0
+    #b = 5.0
+    for t in np.arange(0,8.0,0.001):
+        x = a*(2.0*math.cos(t)-math.cos(2.0*t))
+        y = a*(2.0*math.sin(t)-math.sin(2.0*t))
         glBegin(GL_POINTS)
         glVertex2f(x,y)
         glEnd()
-    # adding coordinates
-    glBegin(GL_LINES)
-    glVertex2f(-5.0,0.0)
-    glVertex2f(5.0,0.0)
-    glVertex2f(0.0,5.0)
-    glVertex2f(0.0,-5.0)
-    #glVertex2f(-5.0,-5.0)
-    #glVertex2f(3.0,5.0)
-    glEnd()
     glFlush()
 
 def main():
