@@ -1,0 +1,23 @@
+1542224289397	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.t6GC3cuDpZeX"
+
+(firefox:13330): GLib-GIO-WARNING **: 01:08:11.398: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1542224293522	Marionette	INFO	Listening on port 43041
+1542224293744	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 13330, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 13330, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 729
+1542224310710	Marionette	INFO	Stopped listening on port 43041
+1542224350771	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.x02xUgiSBGh8"
+
+(firefox:13767): GLib-GIO-WARNING **: 01:09:11.358: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1542224352903	Marionette	INFO	Listening on port 44109
+1542224352984	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542224365809	Marionette	INFO	Stopped listening on port 44109
+JavaScript error: resource://gre/modules/WebProgressChild.jsm, line 58: TypeError: this.mm.content is null
+[Child 13881, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 729
+1542224402421	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gFWgadeUjVEv"
+
+(firefox:14140): GLib-GIO-WARNING **: 01:10:02.979: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1542224404488	Marionette	INFO	Listening on port 33139
+1542224404546	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542224407377	Marionette	INFO	Stopped listening on port 33139
+[Parent 14140, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 729

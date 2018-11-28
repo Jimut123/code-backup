@@ -16,11 +16,11 @@ def plotfunc():
     glClear(GL_COLOR_BUFFER_BIT)
     glColor3f(0.0,0.0,0.0)          # color
     glPointSize(1.0)
-    a = 1.0
-    #b = 5.0
-    for t in np.arange(0,8.0,0.001):
-        x = a*(2.0*math.cos(t)-math.cos(2.0*t))
-        y = a*(2.0*math.sin(t)-math.sin(2.0*t))
+    a = 2.0
+    b = 1.25
+    for t in np.arange(-12.56,12.56,0.001):
+        x = (a+b)*math.cos(t) -  b*math.cos((a/b+1.0)*t)
+        y = (a+b)*math.sin(t) -  b*math.sin((a/b+1.0)*t)
         glBegin(GL_POINTS)
         glVertex2f(x,y)
         glEnd()
