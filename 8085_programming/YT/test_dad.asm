@@ -1,0 +1,13 @@
+	   LHLD 2050
+	   XCHG
+	   LHLD 2052
+	   DAD D
+	   SHLD 2060
+	   JC L1
+	   HLT
+
+L1:	   MVI A,01
+	   STA 2061
+	   HLT
+# ORG 2050H
+# DB FFH, FFH, FFH, FFH
