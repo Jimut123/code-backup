@@ -1,0 +1,13 @@
+	   LXI H,2060
+	   LXI D,2070
+	   MVI C,0A
+
+L1:	   MOV A,M
+	   STAX D
+	   INX D
+	   INX H
+	   DCR C
+	   JNZ L1
+	   HLT
+# ORG 2060H
+# DB 05H,02H,78H,45H,74H,92H,45H,45H,23H,45H
