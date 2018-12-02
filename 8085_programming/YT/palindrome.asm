@@ -1,0 +1,38 @@
+	   LXI H,2060
+	   MVI B,00
+	   MOV A,M
+	   ANI 0F
+	   MOV C,A
+	   MOV A,M
+	   ANI F0
+	   MVI D,04
+
+L1:	   STC
+	   CMC
+	   RAL
+	   MOV E,A
+	   MOV A,B
+	   RAR
+	   MOV B,A
+	   MOV A,E
+	   DCR D
+	   JNZ L1
+// NOW B HAVE HIGHER AND C HAVE LOWER BIT
+	   MOV A,B
+	   RAR
+	   RAR
+	   RAR
+	   RAR
+	   SUB C
+	   JZ L2
+	   MVI A,02	// PALINDROME IS NOT FOUND
+	   STA 2070
+	   HLT
+
+L2:	   MVI A,01	// THE PALINDROME IS FOUND
+	   STA 2070
+	   HLT
+// DB DB //1101 1011 IS PALINDROME
+// DB 00H // 0000 0000 IS PALINDROME
+# ORG 2060H
+# DB 11H
