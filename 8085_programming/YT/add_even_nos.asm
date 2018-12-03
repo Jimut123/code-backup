@@ -9,7 +9,7 @@ L1:	   SUI 02
 	   STC
 	   CPI 02
 	   JNC L1
-	   SUI 01
+	   CPI 00
 	   JZ L2
 
 L3:	   DCR C
@@ -23,4 +23,4 @@ L2:	   MOV A,D
 	   MOV D,A
 	   JMP L3
 # ORG 2060H
-# DB 3, 2 , 1 , 4
+# DB 6, 1 , 4 , 3, 1, 2,4
