@@ -21,4 +21,4 @@ L3:	   DCR E
 L2:	   INR B
 	   JMP L3
 # ORG 2060H
-# DB 02
+# DB 44
