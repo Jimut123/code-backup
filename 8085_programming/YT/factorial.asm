@@ -29,4 +29,4 @@ L4:	   MVI A,02
 	   STA 2070
 	   HLT
 # ORG 2060H
-# DB 05
+# DB 01
