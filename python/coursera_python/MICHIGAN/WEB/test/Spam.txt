@@ -1,0 +1,9 @@
+X-DSPAM-Confidence: 0.8475
+X-DSPAM-Confidence: 0.4534
+X-DS6PAM-Confidence: 0.8475
+X-4DSPAM-Confidence: 0.8475
+X-D5SPAM-Confidence: 0.8475
+X-DSPAM-Confidence: SS0
+JUNK JUNL JUnL
+JUNl OIp efeip ipi3270 23 fio 
+X-RSPAM-DD : 0.0949
