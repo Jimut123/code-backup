@@ -1,0 +1,9 @@
+README.md
+Scrawll.py
+setup.py
+Scrawll.egg-info/PKG-INFO
+Scrawll.egg-info/SOURCES.txt
+Scrawll.egg-info/dependency_links.txt
+Scrawll.egg-info/entry_points.txt
+Scrawll.egg-info/requires.txt
+Scrawll.egg-info/top_level.txt

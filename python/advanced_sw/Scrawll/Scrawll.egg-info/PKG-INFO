@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: Scrawll
+Version: 0.1
+Summary: A Python based wallpaper collecting tool
+Home-page: UNKNOWN
+Author: Jimut Bahan Pal
+Author-email: paljimutbahan@gmail.com
+Maintainer: Jimut Bahan Pal
+Maintainer-email: paljimutbahan@gmail.com
+License: GPLv2+
+Description: UNKNOWN
+Keywords: Wallpaper collector,bypassing the robots.txt
+Platform: Linux
+Classifier: Development Status :: 4 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: Ubuntu
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
