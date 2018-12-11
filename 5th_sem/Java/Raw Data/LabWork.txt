@@ -1,0 +1,705 @@
+Assignment Sheet 1 :
+4) Define 1-dimensional array a[20]. Store maximum 'n' (1-20) distinct numbers in a[]. Calculate and print the following :
+i) Sum of 'n' number(s)
+ii) Average of 'n' numbers(avg)
+iii) Maximum number(max)
+iv) Standard deviation (sd).
+Use constructor and inheritance
+
+
+import java.io.*;
+class Sum
+{
+   int a[]=new int[20];
+   int n;
+   Sum(int x[],int m)
+   {
+        int i;
+        n=m;
+        for(i=0;i<n;i++)
+             a[i]=x[i];
+    }
+    int sum()
+    {
+       int s,i;
+       s=0;
+       for(i=0;i<n;i++)
+            s=s+a[i];
+        return s;
+    }
+    int large()
+    {
+        int big,i;
+        big=a[0];
+        for(i=1;i<n;i++)
+            if(a[i]>big)
+               big=a[i];
+        return big;
+    }
+}
+class Average extends Sum
+{
+    Average(int x[],int m)
+    {
+       super(x,m);
+     }
+ float average()
+    {
+        float avg;
+        avg=sum(a,n)/(float)n;
+        return avg;
+     }
+}
+class S_Dev extends Average
+{
+    S_Dev(int x[],int m)
+    {
+        super(x,m);
+    }
+    float s_dev()
+    {
+        float avg,sd;
+        int i;
+        avg=average(a,n);
+        sd=0;
+        for(i=0;i<n;i++)
+            sd=sd+(avg-a[i])*(avg-a[i]);
+        sd=(float)Math.sqrt((double)(sd/n));
+        return sd;
+     }
+}
+class q4as1
+{
+    public static void main(String args[])throws IOException
+    {
+         int a[]=new int[20];
+         int i,n;
+         int s,big;
+         float avg,sd;
+         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+         System.out.print("\nEnter size of your list(1-20)=");
+         n=Integer.parseInt(br.readLine());
+         System.out.println("\nEnter "+n+" elements one by one-->");
+         for(i=0;i<n;i++)
+         {
+              System.out.print("a["+(i+1)+"]=");
+               a[i]=Integer.parseInt(br.readLine());
+         }
+         S_Dev C=new S_Dev(a,n);
+         s=C.sum();
+         avg=C.average();
+         big=C.large();
+         sd=C.s_dev();
+         System.out.println("Sum = "+s+" Average = "+avg+" Largest value = "+big+" S_Dev = "+sd);
+   }
+}
+-----------------------------------------------------------------------------
+Assignment Sheet 1 :
+6) Write a program to sort numbers using Bubble Sort Method
+
+
+import java.io.*;
+class Bubble
+{
+    int a[]=new int[20];
+    int id[]=new int[20];
+    int n;
+    Bubble(int x[],int ix[],int m)
+    {
+        int i;
+        n=m;
+        for(i=0;i<n;i++)
+        {
+             a[i]=x[i];
+             id[i]=ix[i];
+        }
+    }
+    void bubble()
+    {
+         try
+          {
+               int flag,pass,i,m,t;
+               int choice;
+               flag=0;
+               pass=0;
+               m=n;
+               BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+               while(flag==0)
+               {
+                    flag=1;
+                    pass=pass+1;
+                    m=m-1;
+                    for(i=0;i<m;i++)
+                    {
+                           if(a[i]>a[i+1])
+                           {
+                                t=a[i];
+                                a[i]=a[i+1];
+                                 a[i+1]=t;
+                                t=id[i];
+                                id[i]=id[i+1];
+                                id[i+1]=t;
+                                flag=0;
+                            }
+                           System.out.println("Pass = "+pass+" Step no = "+(i+1));
+                            display();
+                           System.out.println("Type any number and then press enter-->");
+                           choice=Integer.parseInt(br.readLine());
+                     }
+                 }
+         }
+         catch(Exception e)
+         {}
+     }
+     void display()
+      {
+           int i;
+           System.out.println("S.No\tNumber\tIndex");
+            for(i=0;i<n;i++)
+                 System.out.println((i+1)+"\t"+a[i]+"\t"+id[i]);
+       }
+}
+class q6as1
+{
+      public static void main(String args[])throws IOException
+      {
+           int a[]=new int[20];
+           int id[]=new int[20];
+           int i,n;
+           BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+           System.out.print("\nEnter size of your list(1-20)=");
+           n=Integer.parseInt(br.readLine());
+           System.out.println("\nEnter "+n+" elements one by one--->");
+           for(i=0;i<n;i++)
+           {
+               System.out.print("a["+i+"]=");
+               a[i]=Integer.parseInt(br.readLine());
+               id[i]=i+1;
+            }
+           Bubble B=new Bubble(a,id,n);
+           System.out.println("\nUnsorted List");
+            B.display();
+            B.bubble();
+            System.out.println("\nSorted List");
+            B.display();
+        }
+}
+----------------------------------------------------------------------
+Assignment Sheet 1 :
+10) Implement Towers of Hanoi problem to transfer 'n' disks from Peg-1 to Peg-2 using Peg-3
+
+
+import java.io.*;
+class Hanoi
+{
+    int n;
+    Hanoi(int m)
+    {
+        n=m;
+     }
+     void hanoi(int p1,int p2,int p3,int nd)
+      {
+          if(nd==1)
+          {
+               n=n+1;
+               System.out.println("Step-"+n+" :"+" Move Disk-"+nd+" From Peg-"+p1+" to Peg-"+p2);
+               return;
+        }
+       hanoi(p1,p3,p2,nd-1);
+       n=n+1;
+       System.out.println("Step-"+n+" :"+" Move Disk-"+nd+" From Peg-"+p1+" to Peg-"+p2);
+       hanoi(p3,p2,p1,nd-1);
+      }
+}
+class q10as1
+{
+      public static void main(String args[])throws IOException
+      {
+          int p1=1,p2=2,p3=3,nd,n;
+           BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+          System.out.print("\nEnter Number of Disks(1-5)=");
+          nd=Integer.parseInt(br.readLine());
+          n=0;
+          Hanoi H=new Hanoi(n);
+           H.hanoi(p1,p2,p3,nd);
+          System.out.println("Total number of iterations : "+ H.n);
+      }
+}
+-----------------------------------------------------------------------
+Write a program to copy content of one file to another file.
+
+import java.io.*;
+class file1
+{
+    public static void main(String args[])throws IOException
+    {
+         String file1,file2;
+          int n,ch;
+          BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+          System.out.print("\nEnter Input File Name = ");
+          file1=br.readLine();
+          System.out.print("Enter Output File Name = ");
+          file2=br.readLine();
+          FileInputStream fp1 = new FileInputStream(file1);
+          FileOutputStream fp2 = new FileOutputStream(file2);
+          n=0;
+          while((ch=fp1.read())!=-1)
+          {
+              fp2.write(ch);
+               n++;
+           }
+           fp1.close();
+           fp2.close();
+           System.out.println("Size of <"+file2+"> = "+n+" Bytes");
+    }
+}
+--------------------------------------------------------------
+Assignment Sheet 3 :
+1) Write a program to implement the COPY command of MSDOS so that it will allow user to copy the content of a file to another file. Use command line argument to implement the above problem.
+
+import java.io.*;
+classs q1as3
+{
+     public static void main(String args[])throws IOException
+     {
+         int argc,i,ch;
+         int fs[]=new int[50];
+         int n;
+         argc=args.length;
+         FileOutputStream fp2=new FileOutputStream(args[argc-1]);
+         n=0;
+         for(i=0;i<(argc-1);i++)
+         {
+              FileInputStream fp1=new FileInputStream(args[i]);
+               fs[i]=0;
+               while((ch=fp1.read())!=-1)
+               {
+                   fp2.write(ch);
+                   fs[i]=fs[i]+1;
+               }
+               n=n+fs[i];
+               fp1.close();
+          }
+          fp2.close();
+          System.out.println("\nFile Copy is Over...");
+           System.out.println("Size of <"+args[argc-1]+"> = "+n+" Bytes");
+          for(i=0;i<(argc-1);i++)
+               System.out.println("Size of <"+arg[i]+"> = "+fs[i]+ " Bytes");
+     }
+}
+-----------------------------------------------------------------
+Assignment Sheet 3 :
+2) Write a program that will split one file into multiple files. Use commandline arguments. Apply your program to split movie, images, etc.
+
+import java.io.*;
+class q2as3
+{
+    public static void main(String args[])throws IOException
+    {
+        int argc,i,j;
+        long n,n1,n2,k;
+        int ch;
+        RandomAccessFile fp1=new RandomAccessFile(args[0],"r");
+        n=fp1.length();   //To get size of input file
+        argc=args.length;  //argc=number of arguments in command line
+        n1=n/(argc-1);  //n1=average size of each output file
+        n2=n-n1*(argc-2);  //n2=size of last output file
+        for(i=0;i<argc;i++)
+        {
+            FileOutputStream fp2=new FileOutputStream(args[i]);
+            if(i!=(argc-1))
+              k=n1;
+            else
+               k=n2;
+            for(j=1;j<=k;j++)
+            {
+               ch=fp1.read();
+                fp2.write(ch);
+             }
+             fp2.close();
+        }
+        fp1.close();
+        System.out.println("Size of <"+args[0]+" > = "+n+" Bytes");
+         for(i=1;i<argc;i++)
+         {
+             if(i!=(argc-1))
+               k=n1;
+              else
+                 k=n2;
+              System.out.println("Size of <"+args[i]+" > = "+k+" Bytes");
+          }
+    }
+}
+------------------------------------------------------------------------------
+Assignment Sheet 3 :
+6) Write a program to reverse the content of any file and copy the bytes in another file.
+
+import java.io.*;
+class q6as3
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1,file2;
+        int ch;
+        long n,i;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("\nEnter Input File Name = ");
+        file1=br.readLine();
+        System.out.println("\nEnter Output File Name = ");
+        file2=br.readLine();
+        RandomAccessFile fp1=new RandomAccessFile(file1,"r");
+        FileOutputStream fp2=new FileOutputStream(file2);
+        n=fp1.length();  //n=size of input file
+        //To reverse the content of input file
+        for(i=(n-1);i>=0;i--)
+        {
+            fp1.seek(i);
+           ch=fp1.read();
+            fp2.write(ch);
+          }
+        fp1.close();
+         fp2.close();
+    }
+}
+--------------------------------------------------------------
+Assignment Sheet 3 :
+7)a) Write a program to convert all small letters to capital letters in any program/text file.
+
+
+import java.io.*;
+class q7as3
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1;
+        int ch;
+        long n,nc,i;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("\nEnter Input File Name = ");
+        file1=br.readLine();
+        RandomAccessFile fp1=new RandomAccessFile(file1,"rw");
+        n=fp1.length();  //n=size of input file
+        nc=0;  //Number of characters modified
+        for(i=0;i<n;i++)
+        {
+            fp1.seek(i);
+           ch=fp1.read();
+            if(ch>=97 && ch<=122)
+            {
+              ch=(ch-32);
+              fp1.seek(i);
+              fp1.write(ch);
+              nc=nc+1;
+            }
+         }
+        fp1.close();
+        System.out.println("Size of input file = "+n+ " Bytes");
+        System.out.println("Number of bytes modified = "+nc+" Bytes");
+    }
+}
+------------------------------------------------------------
+Assignment Sheet 3 :
+7)b) Write a program to convert all capital letters to small letters in any program/text file.
+
+
+import java.io.*;
+class q7as3
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1;
+        int ch;
+        long n,nc,i;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("\nEnter Input File Name = ");
+        file1=br.readLine();
+        RandomAccessFile fp1=new RandomAccessFile(file1,"rw");
+        n=fp1.length();  //n=size of input file
+        nc=0;  //Number of characters modified
+        for(i=0;i<n;i++)
+        {
+            fp1.seek(i);
+           ch=fp1.read();
+            if(ch>=65 && ch<=90)
+            {
+              ch=(ch+32);
+              fp1.seek(i);
+              fp1.write(ch);
+              nc=nc+1;
+            }
+         }
+        fp1.close();
+        System.out.println("Size of input file = "+n+ " Bytes");
+        System.out.println("Number of bytes modified = "+nc+" Bytes");
+    }
+}
+---------------------------------------------------------------
+Assignment Sheet 3 :
+8) Write a program to remove all comment lines from any java program. Java program may contain single line comment(//) or multiple comments(/* comment */).
+
+
+import java.io.*;
+class q8as3
+{
+    public static void main(String args[])throws IOException
+    {
+        int ch,ch1,ch2,ch3;
+        long nc,n,i;
+       String file1,file2;
+       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       System.out.print("\nEnter Input File Name = ");
+       file1=br.readLine();
+       System.out.print("Enter Output File Name = ");
+       file2=br.readLine();
+       RandomAccessFile fp1 = new RandomAccessFile(file1,"r");
+       FileOutputStream fp2 = new FileOutputStream(file2);
+       n=nc=0;  //n=size of input file
+       while((ch=fp1.read())!=-1)
+       {
+          n++;
+          if(ch==34)
+          {
+             do
+             {
+                 fp2.write(ch);
+                 ch=fp1.read();
+                 n++;
+              }while(ch !=34);
+             fp2.write(ch);
+           }
+          else if((char)ch=='/')
+          {
+              ch1=fp1.read();
+              n++;
+              if((char)ch1=='/')
+              {
+                  nc++;
+                  do
+                  {
+                      ch1=fp1.read();
+                      n++;
+                   }while(ch1!=10);
+               }
+               else if((char)ch1=='*')
+               {
+                   /*To skip all
+                   characters within
+                   comment */
+                   nc++;
+                   ch2=fp1.read();
+                   do
+                   {
+                       ch3=fp1.read();
+                       if((char)ch2=='*' && (char)ch3=='/')
+                          break;
+                        ch2=ch3;
+                    }while(1==1);
+                 }
+                 else
+                 {
+                      fp2.write(ch);
+                      fp2.write(ch1);
+                  }
+              }
+              else
+                  fp2.write(ch);
+          System.out.println((char)ch);
+          }
+          fp1.close();
+          fp2.close();
+          System.out.println("\nNumber of Comment lines removed = "+nc);
+          System.out.println("\n//This is not a comment line");
+     }
+}
+-------------------------------------------------------------------------
+Assignment Sheet 3 :
+9) Write a program to extract words from any text file and store in another file. Display all words,number of characters, special characters,words and lines.
+
+
+import java.io.*;
+class q9as3
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1,file2;
+        int ch,nw,flag;
+        int nol,nsp,noc;
+        nol=1;
+        nsp=noc=0;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Input File Name = ");
+        file1=br.readLine();
+        System.out.print("Enter Output File Name = ");
+        file2=br.readLine();
+        FileInputStream fp1 = new FileInputStream(file1);
+        FileOutputStream fp2=new FileOutputStream(file2);
+        flag=1;
+        nw=0;
+        while((ch=fp1.read())!=-1)
+        {
+            noc=noc+1;
+            if(ch==13)
+              nol=nol+1;
+            if(!((ch>=65 && ch<=90) || (ch>=97 && ch<=122)) && !(ch>=48 && ch<=57))
+               nsp=nsp+1;
+            if((ch>=65 && ch<=90) || (ch>=97 && ch<=122))
+            {
+                if(flag==1)
+                {
+                    nw++;
+                    flag=0;
+                 }
+                 fp2.write(ch);
+                 System.out.print((char)ch);
+            }
+           else if(flag==0)
+           {
+                System.out.println();
+                fp2.write(13);
+                fp2.write(10);
+                flag=1;
+                if((nw%20)==0)
+                {
+                   System.out.print("\nPress Enter Key--->");
+                   br.readLine();
+                 }
+            }
+         }
+         System.out.println("\nTotal number of words = "+nw);
+         System.out.println("Number of characters = "+noc);
+         System.out.println("Number of lines = "+nol);
+         System.out.println("Number of special characters = "+nsp);
+         fp1.close();
+         fp2.close();
+    }
+}
+------------------------------------------------------
+Assignment Sheet 3 :
+10) Create a file which will contain roll(int), p1(int), p2(int), p3(int), t(p1+p2+p3),avg(t/3 : float). Add any number of records. Read saved file and display roll, p1, p2, p3, t, avg of all students.
+
+import java.io.*;
+class q10as3
+{
+    public static void main(String args[])throws IOException
+    {
+        try
+        {
+        String file1;
+        int r,p1,p2,p3,t;
+        float avg;
+        int nr;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Data File Name = ");
+        file1=br.readLine();
+        FileOutputStream f1=new FileOutputStream(file1);
+        DataOutputStream fp1=new DataOutputStream(f1);
+        int choice;
+        do
+        {
+            System.out.print("Enter Roll Number = ");
+            r=Integer.parseInt(br.readLine());
+            System.out.print("Enter p1(0-100) = ");
+            p1=Integer.parseInt(br.readLine());
+            System.out.print("Enter p2(0-100) = ");
+            p2=Integer.parseInt(br.readLine());
+            System.out.print("Enter p3(0-100) = ");
+            p3=Integer.parseInt(br.readLine());
+            t=p1+p2+p3;
+            avg=(float)t/3.0F;
+            fp1.writeInt(r);
+            fp1.writeInt(p1);
+            fp1.writeInt(p2);
+            fp1.writeInt(p3);
+            fp1.writeInt(t);
+            fp1.writeFloat(avg);
+            System.out.print("\nEnter '1' to continue--->");
+            choice=Integer.parseInt(br.readLine());
+         }while(choice==1);
+         fp1.close();
+         f1.close();
+         FileInputStream f2=new FileInputStream(file1);
+         DataInputStream fp2=new DataInputStream(f2);
+         nr=0;
+         while((r=fp2.readInt())!=-1)
+         {
+              p1=fp2.readInt();
+              p2=fp2.readInt();
+             p3=fp2.readInt();
+             t=fp2.readInt();
+             avg=fp2.readFloat();
+             System.out.println("r="+r+" p1="+p1+" p2="+p2+" p3="+" t="+t+" Avg="+avg);
+             nr++;
+         }
+         fp2.close();
+          f2.close();
+         System.out.println("Number of records = "+nr);
+      }
+      catch(Exception e)
+      {}
+   }
+}
+-----------------------------------------------------------------
+Assignment Sheet 3 :
+10)a) Input any data file. 
+Step 1 : Convert each character to bits.
+Step 2 : Convert bit patterns to DNA Sequence
+         Choose A=00, T=01, C=10, G=11
+
+import java.io.*;
+class q10aas3
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1,file2,file3;
+        int mask,i,x,k,n1,n2;
+        int ch;
+        int bit[]=new int[8];
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Input File Name = ");  
+        file1=br.readLine();
+        System.out.print("Enter Output File Name = ");
+        file2=br.readLine();
+        System.out.print("Enter Output File Name = ");
+        file3=br.readLine();
+        RandomAccessFile fp1 = new RandomAccessFile(file1,"r");
+        FileOutputStream fp2=new FileOutputStream(file2);
+        FileOutputStream fp3=new FileOutputStream(file3);
+        while((ch=fp1.read())!=-1)
+        {
+             mask=128;
+              i=7;
+             x=(int)ch;
+             while(mask>0)
+             {
+                 k=x & mask;
+                 if(k!=0)
+                   bit[i]=1;
+                 else
+                    bit[i]=0;
+                  i--;
+                 mask=mask>>1;
+              }
+              for(int j=7;j>=0;j--)
+                   fp2.write(bit[j]+48);
+             fp2.write(' ');
+              for(int j=7;j>=0;j-=2)
+              {
+                   n1=bit[j];
+                   n2=bit[j-1];
+                   if(n1==0 && n2==0)
+                     fp3.write('A');
+                   if(n1==0 && n2==1)
+                     fp3.write('T');
+                   if(n1==1 && n2==0)
+                     fp3.write('C');
+                   if(n1==1 && n2==1)
+                     fp3.write('G');
+               }
+               fp3.write(' ');
+           }
+           fp1.close();
+           fp2.close();
+           fp3.close();
+    }
+}
+----------------------------------------------------------------

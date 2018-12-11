@@ -1,0 +1,111 @@
+14) xxstring1.java : Write a program to use (i)toUpperCase() (ii)toLowerCase() methods to modify a sentence.
+
+import java.io.*;
+class xxstring1
+{
+  public static void main(String args[])throws IOException
+  {
+     String s1,s2,s3;
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     System.out.print("\nEnter any sentence = ");
+     s1=br.readLine();
+     s2=s1.toLowerCase();
+     s3=s1.toUpperCase();
+     System.out.println("s1 = "+s1);
+     System.out.println("s2 = "+s2); 
+     System.out.println("s3 = "+s3);
+  }
+}
+----------------------------------------
+15) xxstring2.java : Write a program to replace a string by another string. Use a method replace().
+
+import java.io.*;
+class xxstring2
+{
+  public static void main(String args[])throws IOException
+  {
+     String s1,s2,s3,s4;
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     System.out.print("\nEnter any sentence = ");
+     s1=br.readLine();
+     System.out.print("\nEnter pattern to be searched = ");
+     s2=br.readLine();
+     System.out.print("Enter new pattern = ");
+     s3=br.readLine();
+     s4=s1.replace(s2,s3);
+     System.out.println("Modified sentence = "+s4);
+  }
+}
+
+-------------------------------------------------
+16) xxstring3.java : Write a program to compare two strings. Use a method compareTo().
+
+import java.io.*;
+class xxstring3
+{
+  public static void main(String args[])throws IOException
+  {
+     String s1,s2;
+     int n;
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     System.out.print("\nEnter 1st sentence = ");
+     s1=br.readLine();
+     System.out.print("\nEnter 2nd sentence = ");
+     s2=br.readLine();
+     n=s1.compareTo(s2);
+     if(n<0)
+       System.out.println(s1+" < "+s2);
+     else if(n==0)
+       System.out.println(s1+" = "+s2);
+     else
+       System.out.println(s1+" > "+s2);
+  }
+}
+
+----------------------------------------
+
+17)	xxstring4.java : Write a program to sort 'n' names in alphabetical order using a method compareTo(). Use Bubble sort algorithm.
+	import java.io.*;
+	class xxstring4
+	{
+		public static void main(String args[])throws IOException
+		{
+		String name[]={"Sumit","Sanjay","Dipankar","Sneha","Neha"};
+		int i,flag,pass,n,m;
+		n=name.length;
+		String temp;
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("\nUnsorted List");
+			for(i=0;i<n;i++)
+			System.out.println(name[i]);
+		//Bubble sort starts 
+		flag=pass=0;
+		m=n;
+			while(flag==0)
+			{
+			flag=1;
+			pass=pass+1;
+			m=m-1;
+				for(i=0;i<m;i++)
+				{
+					if(name[i].compareTo(name[i+1])>0)
+					{
+					temp=name[i];
+					name[i]=name[i+1];
+					name[i+1]=temp;
+					flag=0;
+					}
+				System.out.println("\nPass="+pass+" Step="+(i+1));
+					for(int k=0;k<n;k++)
+					System.out.println(name[k]);
+				System.out.print("\nPress enter key--->");
+				br.readLine();
+				}
+			}
+		System.out.println("\nSorted List");
+			for(int k=0;k<n;k++)
+			System.out.println(name[k]);
+		}
+	}
+
+----------------------------------------------------------

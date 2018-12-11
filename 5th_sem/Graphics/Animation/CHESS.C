@@ -1,0 +1,91 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+void line_draw();
+int main()
+{
+    line_draw();
+    getch();
+    closegraph();
+    return 0;
+}
+void line_draw()
+{
+    int i,j,k,c=0;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(15);
+    /* To plot all points */
+    for(i=0;i<400;i++)
+    {
+       putpixel(120+i,40,8);
+       delay(0);
+       putpixel(120+i,440,8);
+       delay(0);
+    }
+    for(i=0;i<400;i++)
+    {
+       putpixel(520,40+i,8);
+       delay(0);
+       putpixel(120,40+i,8);
+       delay(0);
+    }
+    for(i=0;i<410;i++)
+    {
+       putpixel(115+i,35,8);
+       delay(0);
+       putpixel(115+i,445,8);
+       delay(0);
+    }
+    for(i=0;i<=410;i++)
+    {
+       putpixel(525,35+i,8);
+       delay(0);
+       putpixel(115,35+i,8);
+       delay(0);
+    }
+    for(i=50;i<400;i+=50)
+    {
+       for(j=0;j<400;j++)
+       {
+	 putpixel(120+j,40+i,8);
+	 delay(0);
+       }
+    }
+    for(i=50;i<400;i+=50)
+    {
+       for(j=0;j<400;j++)
+       {
+	 putpixel(120+i,40+j,8);
+	 delay(0);
+       }
+    }
+    for(k=40;k<440;k+=100)
+    {
+      for(i=120;i<520;i++)
+      {
+	for(j=k;j<=k+50;j++)
+	  putpixel(i,j,8);
+	c++;
+	if(c==50)
+	{
+	  i=i+50;
+	  c=0;
+	}
+      }
+    }
+    for(k=90;k<440;k+=100)
+    {
+      for(i=170;i<520;i++)
+      {
+	for(j=k;j<=k+50;j++)
+	  putpixel(i,j,8);
+	c++;
+	if(c==50)
+	{
+	  i=i+50;
+	  c=0;
+	}
+      }
+    }
+}

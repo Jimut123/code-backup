@@ -1,0 +1,140 @@
+18) Write a program to remove all blank spaces from LHS and from RHS of any sentence. Use a method trim().
+	import java.io.*;
+	class xxstring5
+	{
+		public static void main(String args[])throws IOException
+		{
+		String s1,s2;
+                  BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("\nEnter any sentence=");
+		s1=br.readLine();
+		s2=s1.trim();
+		System.out.println("Original sentence : <"+s1+">. Modified sentence : <"+s2+">");
+		}
+	}
+
+-------------------------------------------------------------------------------------
+
+19) Write a program to remove extra spaces between words from a sentence.
+
+import java.io.*;
+class strtrim{
+	public static void main(String args[])throws IOException
+	{
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		String str,newstr="";
+		System.out.println("\nEnter a sentence : ");
+		str=br.readLine();
+		trimstr=str.trim();
+		int flag=0,l=str.length();
+		for(int i=0;i<l;i++){
+			char x=str.charAt(i);
+			if(x==' '){
+				 flag=1;
+				continue;
+			}
+			else{
+				if(flag==1)
+					newstr=newstr+" ";
+				flag=0;
+				newstr=newstr+x;
+			}
+			
+		}
+		newstr=newstr.trim();
+		System.out.println("after trim: "+newstr);
+	}
+}
+
+---------------------------------------------------------------
+
+20) Write a program to extract words from a sentence.
+
+import java.io.*;
+class word_extract{
+	public static void main(String args[])throws IOException
+	{
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		String str,newstr="";
+		System.out.println("\nEnter a sentence : ");
+		str=br.readLine();
+		trimstr=str.trim();
+		int count=0,flag=0,l=str.length();
+		for(int i=0;i<l;i++){
+			char x=str.charAt(i);
+			if(!(x>='A' && x<='Z') && !(x>='a' && x<='z')){
+				 flag=1;
+				continue;
+			}
+			else{
+				if(flag==1){
+					newstr=newstr+" ";
+					count++;				
+				}
+				flag=0;
+				newstr=newstr+x;
+			}
+			
+		}
+		newstr=newstr.trim();
+		System.out.println("after trim : "+newstr+"\t and no of words : "+count);
+	}
+}
+
+--------------------------------------------------------------------------
+
+21) Write a program to find index of a pattern s2 in s1. Use a method indexOf(s2).
+	import java.io.*;
+	class xxstring9
+	{
+		public static void main(String args[])throws IOException
+		{
+		String s1,s2;
+		int i,n;
+	        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("\nEnter any sentence = ");
+		s1=br.readLine();
+		System.out.print("Enter your pattern to be searched = ");
+		s2=br.readLine();
+		n=s1.indexOf(s2);
+		System.out.println("Position of  <  "+s2+" > = "+n);
+		}
+	}
+
+------------------------------------------------------------------------
+
+22) Write a program to find how many times a pattern s2 found in s1. Use a method indexOf(s2,n).
+	import java.io.*;
+	class xxstring10
+	{
+		public static void main(String args[])throws IOException
+		{
+		String s1,s2;
+		int i,n,m,count;
+	        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("\nEnter any sentence = ");
+		s1=br.readLine();
+		System.out.print("Enter your pattern to be searched = ");
+		s2=br.readLine();
+		n=s1.length();
+		count=0;
+			for(i=0;i<n;i++)
+			{
+			m=s1.indexOf(s2,i);
+				if(m !=-1)
+				{
+				System.out.println(s2+" found at position = "+m);
+				count++;
+				i=m;
+				}
+				else
+				break;
+			}
+			if(count !=0)
+			System.out.println("Number of times "+s2+" found = "+count);
+			else
+			System.out.println(s2+" not found");
+		}
+	}
+
+-----------------------------------------------------------------------------

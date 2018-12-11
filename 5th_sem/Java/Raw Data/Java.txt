@@ -1,0 +1,906 @@
+1. Write a program to input maximum 20 numbers in one dimensional array a[20] and their index in another array id[20]. Input number (say num) to be searched in the list. Use Binary search method to search that number in the list and print whether the number is found or number is not found.
+
+import java.io.*;
+class q1
+{
+  public static void main(String args[])throws IOException
+  {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int a[] = new int[20];
+    int id[] = new int[20];
+    int n,i,num,l,u,m,flag=0,d=0;
+    System.out.print("\nEnter number of elements : ");
+    n=Integer.parseInt(br.readLine());
+    l=0;
+    u=n-1;
+    for(i=0;i<n;i++)
+    {
+      System.out.print("\nEnter number "+(i+1)+ " : ");
+      a[i]=Integer.parseInt(br.readLine());
+      id[i]=i+1;
+    }
+    for(i=0;i<n;i++)
+      System.out.print(a[i]+"\t");
+    System.out.print("\nEnter number to be searched : ");
+    num=Integer.parseInt(br.readLine());
+    while(l<=u)
+    {
+      m=(l+u)/2;
+      if(a[m]==num)
+      {
+        flag=1;
+        d=id[m];
+      }
+      if(num>a[m])
+        l=m+1;
+      else
+        u=m-1;
+    }
+    if(flag==1)
+      System.out.println("\nNumber "+num+" found at position "+d);
+    else
+      System.out.println("\nNumber not found");
+  }
+}
+
+--------------------------------------------------------------------------
+
+3. Write a program to copy contents of one or more files to one output file. Use command line arguments. The program should display the size of each input file(s) and also the size of output file.
+
+import java.io.*;
+class q3
+{
+     public static void main(String args[])throws IOException
+     {
+         int argc,i,ch;
+         int fs[]=new int[50];
+         int n;
+         argc=args.length;
+         FileOutputStream fp2=new FileOutputStream(args[argc-1]);
+         n=0;
+         for(i=0;i<(argc-1);i++)
+         {
+              FileInputStream fp1=new FileInputStream(args[i]);
+               fs[i]=0;
+               while((ch=fp1.read())!=-1)
+               {
+                   fp2.write(ch);
+                   fs[i]=fs[i]+1;
+               }
+               n=n+fs[i];
+               fp1.close();
+          }
+          fp2.close();
+          System.out.println("\nFile Copy is Over...");
+           System.out.println("Size of <"+args[argc-1]+"> = "+n+" Bytes");
+          for(i=0;i<(argc-1);i++)
+               System.out.println("Size of <"+args[i]+"> = "+fs[i]+ " Bytes");
+     }
+}
+
+-----------------------------------------------------------------
+
+4. Write a program which will arrange the positive and negative numbers in a one-dimensional array in such a way that all positive numbers should come first and then all the negative numbers will come without changing original sequence of the numbers. 
+Example: 
+Original array contains :  10, -15, 1, 3, -2, 0, -2, -3, 2, -9.
+Modified array          :   10, 1, 3, 0, 2, -15, -2, -2, -3, -9.
+
+import java.io.*;
+class q4
+{
+  public static void main(String args[])throws IOException
+  {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int a[] = new int[20];
+    int t[] = new int[20];
+    int n,i,j=0;
+    System.out.print("\nEnter number of elements : ");
+    n=Integer.parseInt(br.readLine());
+    for(i=0;i<n;i++)
+    {
+      System.out.print("\nEnter number "+(i+1)+ " : ");
+      a[i]=Integer.parseInt(br.readLine());
+    }
+    System.out.println("\nOriginal Array");
+    for(i=0;i<n;i++)
+      System.out.print(a[i]+"\t");
+    System.out.println();
+    for(i=0;i<n;i++)
+      if(a[i]>=0)
+        t[j++]=a[i];
+    for(i=0;i<n;i++)
+      if(a[i]<0)
+        t[j++]=a[i];
+    for(i=0;i<n;i++)
+      a[i]=t[i];
+    System.out.println("\nModified Array");
+    for(i=0;i<n;i++)
+      System.out.print(a[i]+"\t");
+  }
+}
+
+-----------------------------------------------
+
+5. Write a program to remove all comment lines from any Java source program. A java program may contain single line comment (//) or multiline comment (/* my comment */). The program should also display number of comment lines removed from a program.
+
+import java.io.*;
+class q5
+{
+    public static void main(String args[])throws IOException
+    {
+        int ch,ch1,ch2,ch3;
+        long nc,n,i;
+       String file1,file2;
+       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       System.out.print("\nEnter Input File Name = ");
+       file1=br.readLine();
+       System.out.print("Enter Output File Name = ");
+       file2=br.readLine();
+       RandomAccessFile fp1 = new RandomAccessFile(file1,"r");
+       FileOutputStream fp2 = new FileOutputStream(file2);
+       n=nc=0;  //n=size of input file
+       while((ch=fp1.read())!=-1)
+       {
+          n++;
+          if(ch==34)
+          {
+             do
+             {
+                 fp2.write(ch);
+                 ch=fp1.read();
+                 n++;
+              }while(ch !=34);
+             fp2.write(ch);
+           }
+          else if((char)ch=='/')
+          {
+              ch1=fp1.read();
+              n++;
+              if((char)ch1=='/')
+              {
+                  nc++;
+                  do
+                  {
+                      ch1=fp1.read();
+                      n++;
+                   }while(ch1!=10);
+               }
+               else if((char)ch1=='*')
+               {
+                   /*To skip all
+                   characters within
+                   comment */
+                   nc++;
+                   ch2=fp1.read();
+                   do
+                   {
+                       ch3=fp1.read();
+                       if((char)ch2=='*' && (char)ch3=='/')
+                          break;
+                        ch2=ch3;
+                    }while(1==1);
+                 }
+                 else
+                 {
+                      fp2.write(ch);
+                      fp2.write(ch1);
+                  }
+              }
+              else
+                  fp2.write(ch);
+          System.out.println((char)ch);
+          }
+          fp1.close();
+          fp2.close();
+          System.out.println("\nNumber of Comment lines removed = "+nc);
+          System.out.println("\n//This is not a comment line");
+     }
+}
+
+---------------------------------------------------------------
+
+6. Write a program to calculate roots of linear simultaneous equations using either (i) Matrix Factorization method or (ii) Matrix inversion method.                                                               
+          5x1 + x2 + x3 =  10
+          x1 + 5x2 + x3=  14
+          x1 + x2 + 5x3 = 18
+
+import java.io.*;
+class q6
+{
+  public void display1(float aug[][],int n)
+  {
+    int i,j,n1;
+    n1=2*n;
+    for(i=0;i<n;i++)
+    {
+      for(j=0;j<n1;j++)
+         System.out.print(aug[i][j]+"\t");
+      System.out.println();
+    }
+   System.out.println("-------------\n");
+  }
+  public void mat_inv(float a[][],float b[],float x[],int n)
+  {
+    int i,j,k,n1;
+    float am,s;
+    float aug[][] = new float[20][20];
+    float inverse[][] = new float[20][20];
+    n1=2*n;
+    for(i=0;i<n;i++)
+      for(j=0;j<n1;j++)
+        aug[i][j]=0;
+    for(i=0;i<n;i++)
+      for(j=0;j<n;j++)
+        aug[i][j]=a[i][j];
+    for(i=0;i<n;i++)
+      aug[i][i+n]=1;
+    System.out.println("Elements in Initial augmented matrix -->\n");
+    display1(aug,n);
+    for(i=0;i<n;i++)
+    {
+      am=aug[i][i];
+      for(j=0;j<n1;j++)
+        aug[i][j]=aug[i][j]/am;
+      for(j=0;j<n;j++)
+        if(i!=j)
+        {
+           am=aug[j][i];
+           for(k=0;k<n1;k++)
+             aug[j][k]=aug[j][k]-aug[i][k]*am;
+        }
+        System.out.println("Elements in augmented matrix -->\n");
+        display1(aug,n);
+    }
+    for(i=0;i<n;i++)
+      for(j=0;j<n;j++)
+        inverse[i][j]=aug[i][j+n];
+    System.out.println("Elements in inverse matrix -->\n");
+    for(i=0;i<n;i++)
+    {
+      for(j=0;j<n;j++)
+        System.out.print(inverse[i][j]+"\t");
+      System.out.println();
+    }
+    for(i=0;i<n;i++)
+    {
+      s=0;
+      for(j=0;j<n;j++)
+        s=s+inverse[i][j]*b[j];
+      x[i]=s;
+    }
+  }
+  public void display(float a[][],int n)
+  {
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+      for(j=0;j<n;j++)
+         System.out.print(a[i][j]+"\t");
+      System.out.println();
+    }
+  }
+  public void mat_fact(float a[][],float b[],float x[],int n)
+  {
+    float l[][] = new float[10][10];
+    float u[][] = new float[10][10];
+    float s;
+    int i,j,k;
+    float y[] = new float[10];
+    for(i=0;i<n;i++)
+      for(j=0;j<n;j++)
+      {
+        l[i][j]=0;
+        u[i][j]=0;
+      }
+    for(i=0;i<n;i++)
+    {
+      l[i][i]=1;
+      for(j=0;j<n;j++)
+        if(i>j)
+        {
+          s=0;
+          for(k=0;k<j;k++)
+            s=s+l[i][k]*u[k][j];
+          l[i][j]=(a[i][j]-s)/u[j][j];
+        }
+        else
+        if(i<=j)
+        {
+          s=0;
+          for(k=0;k<i;k++)
+            s=s+l[i][k]*u[k][j];
+          u[i][j]=a[i][j]-s;
+        }
+     }
+     System.out.println("Elements in l[][] -->\n");
+     display(l,n);
+     System.out.println("Elements in u[][] -->\n");
+     display(u,n);
+     y[0]=b[0];
+    for(i=1;i<n;i++)
+    {
+      s=0;
+      for(j=0;j<i;j++)
+        s=s+l[i][j]*y[j];
+      y[i]=b[i]-s;
+    }
+    x[n-1]=y[n-1]/u[n-1][n-1];
+    for(i=(n-2);i>=0;i--)
+    {
+      s=0;
+      for(j=(i+1);j<n;j++)
+        s=s+u[i][j]*x[j];
+      x[i]=(y[i]-s)/u[i][i];
+    }
+  }
+  public static void main(String args[])throws IOException
+  {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    float a[][] = new float[10][10];
+    float b[] = new float[10];
+    float x[]= new float[10];
+    int i,j,n;
+    System.out.print("Enter number of equations(1-10) = ");
+    n=Integer.parseInt(br.readLine());
+    System.out.println("Enter coefficients of simultaneous equations -->\n");
+    for(i=0;i<n;i++)
+    {
+      for(j=0;j<n;j++)
+      {
+        System.out.print("a["+(i+1)+"]["+(j+1)+"] = ");
+        a[i][j]=Float.parseFloat(br.readLine());
+      }
+      System.out.print("b["+(i+1)+"] = ");
+      b[i]=Float.parseFloat(br.readLine());
+     }
+     q6 obj = new q6();
+     obj.mat_fact(a,b,x,n);
+     System.out.println("Solutions are -->\n");
+     for(i=0;i<n;i++)
+       System.out.println("x["+(i+1)+"] = "+x[i]);
+     obj.mat_inv(a,b,x,n);
+     System.out.println("Solutions are -->\n");
+     for(i=0;i<n;i++)
+       System.out.println("x["+(i+1)+"] = "+x[i]);
+   }
+}
+
+------------------------------------------------------
+
+7. Write a Java program to extract all words from any text file. Sort those words in alphabetical order.  Display all those  sorted  words on screen and write those words  in some output file. The program should also display how many words were extracted.
+
+import java.io.*;
+class q7
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1,file2,wo="",temp="";
+        String w[] = new String[10];
+        int ch,nw,flag,pass,m,l,i,x=0;
+        char ch1;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Input File Name = ");
+        file1=br.readLine();
+        System.out.print("Enter Output File Name = ");
+        file2=br.readLine();
+        FileInputStream fp1 = new FileInputStream(file1);
+        FileOutputStream fp2=new FileOutputStream(file2);
+        flag=1;
+        nw=0;
+        while((ch=fp1.read())!=-1)
+        {
+            if((ch>=65 && ch<=90) || (ch>=97 && ch<=122))
+            {
+                if(flag==1)
+                {
+                    nw++;
+                    flag=0;
+                 }
+                 wo=wo+(char)ch;
+                 System.out.print((char)ch);
+            }
+           else if(flag==0)
+           {
+                w[x++]=wo;
+                wo="";
+                System.out.println();
+                flag=1;
+                if((nw%20)==0)
+                {
+                   System.out.print("\nPress Enter Key--->");
+                   br.readLine();
+                 }
+            }
+         }
+         System.out.println("\nTotal number of words extracted = "+nw);
+         System.out.println("Unsorted List");
+         for(i=0;i<x;i++)
+            System.out.println(w[i]);
+         flag=pass=0;
+		m=x;
+			while(flag==0)
+			{
+			flag=1;
+			pass=pass+1;
+			m=m-1;
+				for(i=0;i<m;i++)
+				{
+					if(w[i].compareTo(w[i+1])>0)
+					{
+					temp=w[i];
+					w[i]=w[i+1];
+					w[i+1]=temp;
+					flag=0;
+					}
+				System.out.println("\nPass="+pass+" Step="+(i+1));
+					for(int k=0;k<x;k++)
+					System.out.println(w[k]);
+				System.out.print("\nPress enter key--->");
+				br.readLine();
+				}
+			}
+		System.out.println("\nSorted List");
+                for(i=0;i<x;i++)
+                  System.out.println(w[i]);
+         wo="";
+         for(i=0;i<x;i++)
+            wo=wo+w[i]+" ";
+         wo=wo.trim();
+         l=wo.length();
+         for(i=0;i<l;i++)
+         {
+           ch1=wo.charAt(i);
+           if((ch1>=65 && ch1<=90) || (ch1>=97 && ch1<=122))
+           fp2.write(ch1);
+           else
+           {
+             fp2.write(13);
+             fp2.write(10);
+           }
+         }
+         fp1.close();
+         fp2.close();
+    }
+}
+
+---------------------------------------
+
+8. Write a Java program to input any file name. Convert the content of the file into bits ( 0 and 1). Write the bits in one output file. Read two bits at a time and convert into DNA sequence as follows: A=00, C=01, T=10 and G=11. Write DNA sequence in another output file. Display size of bit file and also DNA file.
+
+import java.io.*;
+class q8
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1,file2,file3;
+        int mask,i,x,k,n1,n2,s1=0,s2=0;
+        int ch;
+        int bit[]=new int[8];
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Input File Name = ");  
+        file1=br.readLine();
+        System.out.print("Enter Output File Name = ");
+        file2=br.readLine();
+        System.out.print("Enter Output File Name = ");
+        file3=br.readLine();
+        RandomAccessFile fp1 = new RandomAccessFile(file1,"r");
+        FileOutputStream fp2=new FileOutputStream(file2);
+        FileOutputStream fp3=new FileOutputStream(file3);
+        while((ch=fp1.read())!=-1)
+        {
+             mask=128;
+              i=7;
+             x=(int)ch;
+             while(mask>0)
+             {
+                 k=x & mask;
+                 if(k!=0)
+                   bit[i]=1;
+                 else
+                    bit[i]=0;
+                  i--;
+                 mask=mask>>1;
+              }
+              for(int j=7;j>=0;j--)
+              {
+                   ++s1;
+                   fp2.write(bit[j]+48);
+              }
+             ++s1;
+             fp2.write(' ');
+              for(int j=7;j>=0;j-=2)
+              {
+                   n1=bit[j];
+                   n2=bit[j-1];
+                   ++s2;
+                   if(n1==0 && n2==0)
+                     fp3.write('A');
+                   if(n1==0 && n2==1)
+                     fp3.write('T');
+                   if(n1==1 && n2==0)
+                     fp3.write('C');
+                   if(n1==1 && n2==1)
+                     fp3.write('G');
+               }
+               ++s2;
+               fp3.write(' ');
+           }
+           System.out.println("Number of bytes of bit file : "+s1);
+           System.out.println("Number of bytes of DNA file : "+s2);
+           fp1.close();
+           fp2.close();
+           fp3.close();
+    }
+}
+
+-------------------------------------------------
+
+9. Write a Java program to input any text file name. Extract all words from that file and display all words on screen. Sort the words in alphabetical order. Write the sorted words one by one in some output file. The program should also display how words extracted from input file.
+
+import java.io.*;
+class q9
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1,file2,wo="",temp="";
+        String w[] = new String[10];
+        int ch,nw,flag,pass,m,l,i,x=0;
+        char ch1;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Input File Name = ");
+        file1=br.readLine();
+        System.out.print("Enter Output File Name = ");
+        file2=br.readLine();
+        FileInputStream fp1 = new FileInputStream(file1);
+        FileOutputStream fp2=new FileOutputStream(file2);
+        flag=1;
+        nw=0;
+        while((ch=fp1.read())!=-1)
+        {
+            if((ch>=65 && ch<=90) || (ch>=97 && ch<=122))
+            {
+                if(flag==1)
+                {
+                    nw++;
+                    flag=0;
+                 }
+                 wo=wo+(char)ch;
+                 System.out.print((char)ch);
+            }
+           else if(flag==0)
+           {
+                w[x++]=wo;
+                wo="";
+                System.out.println();
+                flag=1;
+                if((nw%20)==0)
+                {
+                   System.out.print("\nPress Enter Key--->");
+                   br.readLine();
+                 }
+            }
+         }
+         System.out.println("\nTotal number of words extracted = "+nw);
+         System.out.println("Unsorted List");
+         for(i=0;i<x;i++)
+            System.out.println(w[i]);
+         flag=pass=0;
+		m=x;
+			while(flag==0)
+			{
+			flag=1;
+			pass=pass+1;
+			m=m-1;
+				for(i=0;i<m;i++)
+				{
+					if(w[i].compareTo(w[i+1])>0)
+					{
+					temp=w[i];
+					w[i]=w[i+1];
+					w[i+1]=temp;
+					flag=0;
+					}
+				System.out.println("\nPass="+pass+" Step="+(i+1));
+					for(int k=0;k<x;k++)
+					System.out.println(w[k]);
+				System.out.print("\nPress enter key--->");
+				br.readLine();
+				}
+			}
+		System.out.println("\nSorted List");
+                for(i=0;i<x;i++)
+                  System.out.println(w[i]);
+         wo="";
+         for(i=0;i<x;i++)
+            wo=wo+w[i]+" ";
+         wo=wo.trim();
+         l=wo.length();
+         for(i=0;i<l;i++)
+         {
+           ch1=wo.charAt(i);
+           if((ch1>=65 && ch1<=90) || (ch1>=97 && ch1<=122))
+           fp2.write(ch1);
+           else
+           {
+             fp2.write(13);
+             fp2.write(10);
+           }
+         }
+         fp1.close();
+         fp2.close();
+    }
+}
+
+-----------------------------------------------
+
+10. Write a java program which will be able to copy one or more files to one output file. Use command line arguments. If some input file is missing then the program should display some error message. When  the copy of files are over then the program should display size of each input file(s) and also how many bytes copied to output file.
+
+import java.io.*;
+class q10
+{
+     public static void main(String args[])throws IOException
+     {
+         int argc,i,ch;
+         int fs[]=new int[50];
+         int n;
+         argc=args.length;
+         FileOutputStream fp2=new FileOutputStream(args[argc-1]);
+         n=0;
+         for(i=0;i<(argc-1);i++)
+         {
+              FileInputStream fp1=new FileInputStream(args[i]);
+               fs[i]=0;
+               while((ch=fp1.read())!=-1)
+               {
+                   fp2.write(ch);
+                   fs[i]=fs[i]+1;
+               }
+               n=n+fs[i];
+               fp1.close();
+          }
+          fp2.close();
+          System.out.println("\nFile Copy is Over...");
+           System.out.println("Size of <"+args[argc-1]+"> = "+n+" Bytes");
+          for(i=0;i<(argc-1);i++)
+               System.out.println("Size of <"+args[i]+"> = "+fs[i]+ " Bytes");
+     }
+}
+
+--------------------------------------------------------------
+
+11. Write a java program to solve 1st order Ordinary differential equation using 4-th order Runge Kutta method. Solve   dy/dx=y, y(at x=0)=1. Calculate y at x=.1,.2,.3..4,.5,.6,.7,.8,.9,1.0.
+
+import java.io.*;
+class q11
+{
+  public double runge4_function(double x,double y)
+  {
+    double y1;
+    y1=y+0*x;
+    return y1;
+  }
+  public double runge4(double x0,double y0,double h)
+  {
+    double k1,k2,k3,k4,y1;
+    k1=h*runge4_function(x0,y0);
+    k2=h*runge4_function(x0+0.5*h,y0+0.5*k1);
+    k3=h*runge4_function(x0+0.5*h,y0+0.5*k2);
+    k4=h*runge4_function(x0+h,y0+k3);
+    y1=y0+1.0/6.0*(k1+2*k2+2*k3+k4);
+    return y1;
+  }
+  public static void main(String args[])throws IOException
+  {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    double x0,y0,x1,y1,h,xn;
+    int i,n;
+    System.out.print("Enter x0 = ");
+    x0=Double.parseDouble(br.readLine());
+    System.out.print("Enter y0 = ");
+    y0=Double.parseDouble(br.readLine());
+    System.out.print("Enter xn = ");
+    xn=Double.parseDouble(br.readLine());
+    System.out.print("Enter h = ");
+    h=Double.parseDouble(br.readLine());
+    n=(int)((xn-x0)/h);
+    System.out.println("n = "+n);
+    q11 obj = new q11();
+    System.out.println("x = "+x0+" y = "+y0);
+    for(i=1;i<=n;i++)
+    {
+      x1=x0+i*h;
+      y1=obj.runge4(x0,y0,h);
+      System.out.println("x = "+x1+" y = "+y1);
+      y0=y1;
+    }
+  }
+}
+
+----------------------------------------------------
+
+12. (i)Write a Java program to reverse the content one input file. Write the reverse content in some output file.  
+     (ii) Write a program to split the content of one input file to multiple output files. Use command line arguments.
+
+import java.io.*;
+class q12a
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1,file2;
+        int ch;
+        long n,i;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Input File Name = ");
+        file1=br.readLine();
+        System.out.print("\nEnter Output File Name = ");
+        file2=br.readLine();
+        RandomAccessFile fp1=new RandomAccessFile(file1,"r");
+        FileOutputStream fp2=new FileOutputStream(file2);
+        n=fp1.length();  //n=size of input file
+        //To reverse the content of input file
+        for(i=(n-1);i>=0;i--)
+        {
+            fp1.seek(i);
+           ch=fp1.read();
+            fp2.write(ch);
+          }
+        fp1.close();
+         fp2.close();
+    }
+}
+
+import java.io.*;
+class q12b
+{
+    public static void main(String args[])throws IOException
+    {
+        int argc,i,j;
+        long n,n1,n2,k;
+        int ch;
+        RandomAccessFile fp1=new RandomAccessFile(args[0],"r");
+        n=fp1.length();   //To get size of input file
+        argc=args.length;  //argc=number of arguments in command line
+        n1=n/(argc-1);  //n1=average size of each output file
+        n2=n-n1*(argc-2);  //n2=size of last output file
+        for(i=1;i<argc;i++)
+        {
+            FileOutputStream fp2=new FileOutputStream(args[i]);
+            if(i!=(argc-1))
+              k=n1;
+            else
+               k=n2;
+            for(j=0;j<k;j++)
+            {
+               ch=fp1.read();
+               fp2.write(ch);
+             }
+             fp2.close();
+        }
+        fp1.close();
+        System.out.println("Size of <"+args[0]+" > = "+n+" Bytes");
+         for(i=1;i<argc;i++)
+         {
+             if(i!=(argc-1))
+               k=n1;
+              else
+                 k=n2;
+              System.out.println("Size of <"+args[i]+" > = "+k+" Bytes");
+          }
+    }
+}
+
+-------------------------------------------------------------
+
+13. Write a java program to calculate and print (i) number of vowels, (ii) number of consonants, (iii) Number of lines and (iv) number of spaces in any text file.
+
+import java.io.*;
+class q13
+{
+    public static void main(String args[])throws IOException
+    {
+        String file1;
+        int ch,nol,ns,v,c;
+        nol=1;
+        ns=v=c=0;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter Input File Name = ");
+        file1=br.readLine();
+        FileInputStream fp1 = new FileInputStream(file1);
+        while((ch=fp1.read())!=-1)
+        {
+            if(ch==10)
+              nol=nol+1;
+            else if(ch==32)
+               ns=ns+1;
+            else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U' || ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+              v=v+1;
+            else 
+              c=c+1;
+         }
+         System.out.println("Number of Vowels = "+v);
+         System.out.println("Number of Consonants = "+c);
+         System.out.println("Number of lines = "+nol);
+         System.out.println("Number of spaces = "+ns);
+         fp1.close();
+    }
+}
+
+---------------------------------------------------------
+
+15.  Write a program to remove all comment lines from any Java source program. A java program may contain single line comment (//) or multiline comment (/* my comment */). The program should display number of comment lines removed from a program.
+
+import java.io.*;
+class q15
+{
+    public static void main(String args[])throws IOException
+    {
+        int ch,ch1,ch2,ch3;
+        long nc,n,i;
+       String file1,file2;
+       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       System.out.print("\nEnter Input File Name = ");
+       file1=br.readLine();
+       System.out.print("Enter Output File Name = ");
+       file2=br.readLine();
+       RandomAccessFile fp1 = new RandomAccessFile(file1,"r");
+       FileOutputStream fp2 = new FileOutputStream(file2);
+       n=nc=0;  //n=size of input file
+       while((ch=fp1.read())!=-1)
+       {
+          n++;
+          if(ch==34)
+          {
+             do
+             {
+                 fp2.write(ch);
+                 ch=fp1.read();
+                 n++;
+              }while(ch !=34);
+             fp2.write(ch);
+           }
+          else if((char)ch=='/')
+          {
+              ch1=fp1.read();
+              n++;
+              if((char)ch1=='/')
+              {
+                  nc++;
+                  do
+                  {
+                      ch1=fp1.read();
+                      n++;
+                   }while(ch1!=10);
+               }
+               else if((char)ch1=='*')
+               {
+                   /*To skip all
+                   characters within
+                   comment */
+                   nc++;
+                   ch2=fp1.read();
+                   do
+                   {
+                       ch3=fp1.read();
+                       if((char)ch2=='*' && (char)ch3=='/')
+                          break;
+                        ch2=ch3;
+                    }while(1==1);
+                 }
+                 else
+                 {
+                      fp2.write(ch);
+                      fp2.write(ch1);
+                  }
+              }
+              else
+                  fp2.write(ch);
+          System.out.println((char)ch);
+          }
+          fp1.close();
+          fp2.close();
+          System.out.println("\nNumber of Comment lines removed = "+nc);
+          System.out.println("\n//This is not a comment line");
+     }
+}
+
+---------------------------------------------------------------------

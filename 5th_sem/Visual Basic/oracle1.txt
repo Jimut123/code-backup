@@ -1,0 +1,19 @@
+create table employee
+(
+emp_id number(4),
+e_name varchar(15),
+e_salary number(5),
+mgr_id number(4),
+constraint pk primary key(emp_id)
+);
+
+insert into employee values(0001,'ramu',5000,0005);
+insert into employee values(0002,'shamu',6000,0005);
+insert into employee values(0003,'cham',4000,0005);
+insert into employee values(0004,'lamu',10000,0005);
+insert into employee values(0005,'nimbu',15000,0);
+insert into employee values(0006,'kishore',5000,0010);
+insert into employee values(0007,'totla seth',7500,0010);
+insert into employee values(0008,'tezash',4500,0010);
+insert into employee values(0009,'inte sahab',1,0010);
+insert into employee values(0010,'malik',5500,0);

@@ -1,0 +1,1498 @@
+CIA 2017 SOLUTIONS FOR GRAPHICS LAB
+
+1) FACE 1
+
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+    int c_bgcolor,c_line;
+    void draw_xy();
+    void circle_draw(int xc,int yc,int r,int c);
+int main()
+{
+    int xc,yc,r,i;
+    clrscr();
+    printf("\nEnter x - coordinate of centre(xc) =  ");
+    scanf("%d",&xc);
+    printf("\nEnter y - coordinate of center(yc) =  ");
+    scanf("%d",&yc);
+    printf("\nEnter radius of your circle(r) =  ");
+    scanf("%d",&r);
+    printf("Enter Background color(2-14) = ");
+    scanf("%d",&c_bgcolor);
+    printf("Enter Line color(1 or 15) = ");
+    scanf("%d",&c_line);
+    draw_xy();
+    for(i=r;i<=r+3;i++)
+    circle_draw(xc,yc,i,c_line);
+    circle_draw(xc-25,yc+20,12,c_line);
+    circle_draw(xc+25,yc+20,12,c_line);
+    circle_draw(xc,yc-20,16,c_line);
+    getch();
+    closegraph();
+    return 0;
+}
+
+/* Function to draw x and y axes on screen */
+void draw_xy()
+{
+    int i;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(c_bgcolor);
+    /* To draw x-axis and y-axis */
+    for(i=0;i<640;i++)
+    {
+	putpixel(i,240,c_line);
+	delay(0);
+    }
+    for(i=0;i<480;i++)
+    {
+	putpixel(320,i,c_line);
+	delay(0);
+    }
+/* To display +x, -x, +y, -y, O(0,0) */
+    outtextxy(10,245,"-X");
+    outtextxy(620,245,"+X");
+    outtextxy(325,10,"+Y");
+    outtextxy(325,470,"-Y");
+    outtextxy(325,245,"O(0,0)");
+}
+/* Function to draw a circle */
+void circle_draw(int xc,int yc,int r,int c)
+	{
+	int xk,yk;
+	float d,pk;
+	int x[1000],y[1000];
+	int n1,n2,n3,i;
+	xk=0;
+	yk=r;
+	n3=0;
+	/* To generate points in 1st quadrant */
+
+		while(yk>=0)
+		{
+		x[n3]=xk;
+		y[n3]=yk;
+		d=(xk+1)*(xk+1)+(yk-1)*(yk-1)-r*r;
+			if(d<0)
+			{
+			pk=(xk+1)*(xk+1)+(yk-.5)*(yk-.5)-r*r;
+				if(pk<=0)
+				xk=xk+1;
+				else
+				{
+				xk=xk+1;
+				yk=yk-1;
+				}
+			}
+			else if(d>0)
+			{
+			pk=(xk+.5)*(xk+.5)+(yk-1)*(yk-1)-r*r;
+				if(pk<=0)
+				{
+				xk=xk+1;
+				yk=yk-1;
+				}
+				else
+				yk=yk-1;
+			}
+			else
+			{
+			xk=xk+1;
+			yk=yk-1;
+			}
+			if(yk>=0)
+			n3=n3+1;
+		}
+	/* To take reflection along x-axis */
+	n1=2*n3; /*n1=2*n3-1; */
+	n2=n3-1;
+		for(i=n3+1;i<=n1;i++)
+		{
+		x[i]=x[n2];
+		y[i]=-y[n2];
+		n2=n2-1;
+		}
+	/* To  take reflection along y-axis */
+	/*n1=4*n3-3;*/
+	n1=4*n3-1;
+	n2=2*n3-1;
+		/*for(i=2*n3;i<=n1;i++)*/
+		for(i=2*n3+1;i<=n1;i++)
+		{
+		x[i]=-x[n2];
+		y[i]=y[n2];
+		n2=n2-1;
+		}
+	 /* To display all points
+
+		for(i=0;i<=n1;i++)
+		printf("x[%d]=%d  y[%d]=%d\n",i,x[i],i,y[i]);
+	*/
+	/* To draw circle */
+
+		for(i=0;i<=n1;i++)
+		{
+		putpixel(320+xc+x[i],240-yc+y[i],c);
+		delay(2);
+		}
+	}
+
+----------------------------------------------------
+
+  FACE 2
+
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+    int c_bgcolor,c_line;
+    void draw_xy();
+    void circle_draw(int xc,int yc,int r,int c);
+int main()
+{
+    int xc,yc,r,i;
+    clrscr();
+    printf("\nEnter x - coordinate of centre(xc) =  ");
+    scanf("%d",&xc);
+    printf("\nEnter y - coordinate of center(yc) =  ");
+    scanf("%d",&yc);
+    printf("\nEnter radius of your circle(r) =  ");
+    scanf("%d",&r);
+    printf("Enter Background color(2-14) = ");
+    scanf("%d",&c_bgcolor);
+    printf("Enter Line color(1 or 15) = ");
+    scanf("%d",&c_line);
+    draw_xy();
+    for(i=r;i<=r+3;i++)
+    circle_draw(xc,yc,i,c_line);
+    for(i=12;i>=1;i--)
+    {
+      circle_draw(xc-25,yc+20,i,c_line);
+      circle_draw(xc+25,yc+20,i,c_line);
+    }
+    for(i=16;i>=1;i--)
+    circle_draw(xc,yc-20,i,c_line);
+    getch();
+    closegraph();
+    return 0;
+}
+
+/* Function to draw x and y axes on screen */
+void draw_xy()
+{
+    int i;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(c_bgcolor);
+    /* To draw x-axis and y-axis */
+    for(i=0;i<640;i++)
+    {
+	putpixel(i,240,c_line);
+	delay(0);
+    }
+    for(i=0;i<480;i++)
+    {
+	putpixel(320,i,c_line);
+	delay(0);
+    }
+/* To display +x, -x, +y, -y, O(0,0) */
+    outtextxy(10,245,"-X");
+    outtextxy(620,245,"+X");
+    outtextxy(325,10,"+Y");
+    outtextxy(325,470,"-Y");
+    outtextxy(325,245,"O(0,0)");
+}
+/* Function to draw a circle */
+void circle_draw(int xc,int yc,int r,int c)
+	{
+	int xk,yk;
+	float d,pk;
+	int x[1000],y[1000];
+	int n1,n2,n3,i;
+	xk=0;
+	yk=r;
+	n3=0;
+	/* To generate points in 1st quadrant */
+
+		while(yk>=0)
+		{
+		x[n3]=xk;
+		y[n3]=yk;
+		d=(xk+1)*(xk+1)+(yk-1)*(yk-1)-r*r;
+			if(d<0)
+			{
+			pk=(xk+1)*(xk+1)+(yk-.5)*(yk-.5)-r*r;
+				if(pk<=0)
+				xk=xk+1;
+				else
+				{
+				xk=xk+1;
+				yk=yk-1;
+				}
+			}
+			else if(d>0)
+			{
+			pk=(xk+.5)*(xk+.5)+(yk-1)*(yk-1)-r*r;
+				if(pk<=0)
+				{
+				xk=xk+1;
+				yk=yk-1;
+				}
+				else
+				yk=yk-1;
+			}
+			else
+			{
+			xk=xk+1;
+			yk=yk-1;
+			}
+			if(yk>=0)
+			n3=n3+1;
+		}
+	/* To take reflection along x-axis */
+	n1=2*n3; /*n1=2*n3-1; */
+	n2=n3-1;
+		for(i=n3+1;i<=n1;i++)
+		{
+		x[i]=x[n2];
+		y[i]=-y[n2];
+		n2=n2-1;
+		}
+	/* To  take reflection along y-axis */
+	/*n1=4*n3-3;*/
+	n1=4*n3-1;
+	n2=2*n3-1;
+		/*for(i=2*n3;i<=n1;i++)*/
+		for(i=2*n3+1;i<=n1;i++)
+		{
+		x[i]=-x[n2];
+		y[i]=y[n2];
+		n2=n2-1;
+		}
+	 /* To display all points
+
+		for(i=0;i<=n1;i++)
+		printf("x[%d]=%d  y[%d]=%d\n",i,x[i],i,y[i]);
+	*/
+	/* To draw circle */
+
+		for(i=0;i<=n1;i++)
+		{
+		putpixel(320+xc+x[i],240-yc+y[i],c);
+		delay(2);
+		}
+	}
+
+------------------------------------------
+
+  FACE 3
+
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+    int c_bgcolor,c_line;
+    void draw_xy();
+    int signx(int x);
+    int bresenham(int x1,int y1,int x2,int y2,int x[],int y[]);
+    void circle_draw(int xc,int yc,int r,int c);
+    void halfcircle_draw(int xc,int yc,int r,int c);
+int main()
+{
+    int xc,yc,r,i;
+    clrscr();
+    printf("\nEnter x - coordinate of centre(xc) =  ");
+    scanf("%d",&xc);
+    printf("\nEnter y - coordinate of center(yc) =  ");
+    scanf("%d",&yc);
+    printf("\nEnter radius of your circle(r) =  ");
+    scanf("%d",&r);
+    printf("Enter Background color(2-14) = ");
+    scanf("%d",&c_bgcolor);
+    printf("Enter Line color(1 or 15) = ");
+    scanf("%d",&c_line);
+    draw_xy();
+    for(i=r;i<=r+3;i++)
+    circle_draw(xc,yc,i,c_line);
+    circle_draw(xc-25,yc+20,12,c_line);
+    circle_draw(xc+25,yc+20,12,c_line);
+    for(i=20;i>=1;i--)
+    halfcircle_draw(xc,yc-20,i,c_line);
+    getch();
+    closegraph();
+    return 0;
+}
+
+/* Function to draw x and y axes on screen */
+void draw_xy()
+{
+    int i;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(c_bgcolor);
+    /* To draw x-axis and y-axis */
+    for(i=0;i<640;i++)
+    {
+	putpixel(i,240,c_line);
+	delay(0);
+    }
+    for(i=0;i<480;i++)
+    {
+	putpixel(320,i,c_line);
+	delay(0);
+    }
+/* To display +x, -x, +y, -y, O(0,0) */
+    outtextxy(10,245,"-X");
+    outtextxy(620,245,"+X");
+    outtextxy(325,10,"+Y");
+    outtextxy(325,470,"-Y");
+    outtextxy(325,245,"O(0,0)");
+}
+/* Function to generate pixel co-ordinates using Bresenham algorithm */
+int bresenham(int x1,int y1,int x2,int y2,int x[],int y[])
+{
+  int xx,yy,delx,dely,e,s1,s2,interchange,temp;
+  int i,dx,dy;
+  xx=x1;
+  yy=y1;
+  dx=x2-x1;
+  dy=y2-y1;
+  if(dx<0)
+    delx=-dx;
+  else
+    delx=dx;
+  if(dy<0)
+    dely=-dy;
+  else
+    dely=dy;
+  s1=signx(dx);
+  s2=signx(dy);
+  if(dely>delx)
+  {
+    temp=dely;
+    dely=delx;
+    delx=temp;
+    interchange=1;
+  }
+  else
+    interchange=0;
+  e=2*dely-delx;
+  for(i=0;i<=delx;i++)
+  {
+    x[i]=xx;
+    y[i]=yy;
+    while(e>=0)
+    {
+      if(interchange==1)
+        xx=xx+s1;
+      else
+        yy=yy+s2;
+      e=e-2*delx;
+    }
+    if(interchange==1)
+      yy=yy+s2;
+    else
+      xx=xx+s1;
+    e=e+2*dely;
+  }
+  return delx;
+}
+int signx(int x)
+{
+  if(x<0)
+    return -1;
+  else if(x==0)
+    return 0;
+  else
+    return 1;
+}
+/* Function to draw a half circle */
+void halfcircle_draw(int xc,int yc,int r,int c)
+{
+  int xk,yk,n;
+  float d,pk;
+  int x[1000],y[1000],xx[700],yy[700];
+  int n1,n2,n3,i;
+  xk=0;
+  yk=r;
+  n3=0;
+  //To generate points in first quadrant
+  while(yk>=0)
+  {
+    x[n3]=xk;
+    y[n3]=yk;
+    d=(xk+1)*(xk+1)+(yk-1)*(yk-1)-r*r;
+    if(d<0)
+    {
+      pk=(xk+1)*(xk+1)+(yk-.5)*(yk-.5)-r*r;
+      if(pk<=0)
+        xk=xk+1;
+      else
+      {
+        xk=xk+1;
+        yk=yk-1;
+      }
+    }
+    else
+    if(d>0)
+    {
+      pk=(xk+.5)*(xk+.5)+(yk-1)*(yk-1)-r*r;
+      if(pk<=0)
+      {
+        xk=xk+1;
+        yk=yk-1;
+      }
+      else
+        yk=yk-1;
+    }
+    else
+    {
+      xk=xk+1;
+      yk=yk-1;
+    }
+    if(yk>=0)
+      n3=n3+1;
+  }
+  //To take reflection along x-axis
+  n1=2*n3;
+  n2=n3-1;
+  for(i=n3+1;i<=n1;i++)
+  {
+    x[i]=x[n2];
+    y[i]=-y[n2];
+    n2=n2-1;
+  }
+  //To take reflection along y-axis
+  n1=4*n3-3;
+  n2=2*n3-1;
+  for(i=2*n3+1;i<=n1;i++)
+  {
+    x[i]=-x[n2];
+    y[i]=y[n2];
+    n2=n2-1;
+  }
+  for(i=n3+1;i<=3*n3;i++)
+  {
+    putpixel(320+xc+x[i],240-yc-y[i],c);
+  }
+  n=bresenham(x[n3],y[n3],x[3*n3],y[3*n3],xx,yy);
+  for(i=0;i<=n;i++)
+  {
+    putpixel(320+xc+xx[i],240-yc+yy[i],c);
+  }
+}
+/* Function to draw a circle */
+void circle_draw(int xc,int yc,int r,int c)
+	{
+	int xk,yk;
+	float d,pk;
+	int x[1000],y[1000];
+	int n1,n2,n3,i;
+	xk=0;
+	yk=r;
+	n3=0;
+	/* To generate points in 1st quadrant */
+
+		while(yk>=0)
+		{
+		x[n3]=xk;
+		y[n3]=yk;
+		d=(xk+1)*(xk+1)+(yk-1)*(yk-1)-r*r;
+			if(d<0)
+			{
+			pk=(xk+1)*(xk+1)+(yk-.5)*(yk-.5)-r*r;
+				if(pk<=0)
+				xk=xk+1;
+				else
+				{
+				xk=xk+1;
+				yk=yk-1;
+				}
+			}
+			else if(d>0)
+			{
+			pk=(xk+.5)*(xk+.5)+(yk-1)*(yk-1)-r*r;
+				if(pk<=0)
+				{
+				xk=xk+1;
+				yk=yk-1;
+				}
+				else
+				yk=yk-1;
+			}
+			else
+			{
+			xk=xk+1;
+			yk=yk-1;
+			}
+			if(yk>=0)
+			n3=n3+1;
+		}
+	/* To take reflection along x-axis */
+	n1=2*n3; /*n1=2*n3-1; */
+	n2=n3-1;
+		for(i=n3+1;i<=n1;i++)
+		{
+		x[i]=x[n2];
+		y[i]=-y[n2];
+		n2=n2-1;
+		}
+	/* To  take reflection along y-axis */
+	/*n1=4*n3-3;*/
+	n1=4*n3-1;
+	n2=2*n3-1;
+		/*for(i=2*n3;i<=n1;i++)*/
+		for(i=2*n3+1;i<=n1;i++)
+		{
+		x[i]=-x[n2];
+		y[i]=y[n2];
+		n2=n2-1;
+		}
+	 /* To display all points
+
+		for(i=0;i<=n1;i++)
+		printf("x[%d]=%d  y[%d]=%d\n",i,x[i],i,y[i]);
+	*/
+	/* To draw circle */
+
+		for(i=0;i<=n1;i++)
+		{
+		putpixel(320+xc+x[i],240-yc+y[i],c);
+		delay(2);
+		}
+	}
+
+-----------------------------------------------------
+
+2) Using Bresenham line draw, circle draw algorithm draw the following pattern :
+
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+    int c_bgcolor,c_line;
+    void draw_xy();
+    int signx(int x);
+    void line_draw(int x1,int y1,int x2,int y2,int c);
+    int bresenham(int x1,int y1,int x2,int y2,int x[],int y[]);
+    void circle_draw(int xc,int yc,int r,int c);
+int main()
+{
+    int xc1,yc1,r1,xc2,yc2,r2,i;
+    clrscr();
+    printf("\nEnter x - coordinate of centre(xc1) =  ");
+    scanf("%d",&xc1);
+    printf("\nEnter y - coordinate of center(yc1) =  ");
+    scanf("%d",&yc1);
+    printf("\nEnter radius of your circle(r1) =  ");
+    scanf("%d",&r1);
+    printf("\nEnter x - coordinate of centre(xc2) =  ");
+    scanf("%d",&xc2);
+    printf("\nEnter y - coordinate of center(yc2) =  ");
+    scanf("%d",&yc2);
+    printf("\nEnter radius of your circle(r2) =  ");
+    scanf("%d",&r2);
+    printf("Enter Background color(2-14) = ");
+    scanf("%d",&c_bgcolor);
+    printf("Enter Line color(1 or 15) = ");
+    scanf("%d",&c_line);
+    draw_xy();
+    for(i=r1;i<=r1+20;i+=20)
+    circle_draw(xc1,yc1,i,c_line);
+    for(i=r2;i<=r2+20;i+=20)
+    circle_draw(xc2,yc2,i,c_line);
+    line_draw(xc1,yc1,xc2,yc2,c_line);
+    getch();
+    closegraph();
+    return 0;
+}
+/* Function to draw x and y axes on screen */
+void draw_xy()
+{
+    int i;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(c_bgcolor);
+    /* To draw x-axis and y-axis */
+    for(i=0;i<640;i++)
+    {
+        putpixel(i,240,c_line);
+        delay(0);
+    }
+    for(i=0;i<480;i++)
+    {
+        putpixel(320,i,c_line);
+        delay(0);
+    }
+/* To display +x, -x, +y, -y, O(0,0) */
+    outtextxy(10,245,"-X");
+    outtextxy(620,245,"+X");
+    outtextxy(325,10,"+Y");
+    outtextxy(325,470,"-Y");
+    outtextxy(325,245,"O(0,0)");
+}
+void line_draw(int x1,int y1,int x2,int y2,int c)
+{
+    int x[700],y[700],i,n;
+    n=bresenham(x1,y1,x2,y2,x,y);  /* Calling bresenham function to generate 'n' pixel co-ordinates */
+    /* To plot all points */
+    for(i=0;i<n;i++)
+    {
+        putpixel(320+x[i],240-y[i],c);
+        delay(0);
+    }
+}
+/* Function to generate pixel co-ordinates using Bresenham algorithm */
+int bresenham(int x1,int y1,int x2,int y2,int x[],int y[])
+{
+  int xx,yy,delx,dely,e,s1,s2,interchange,temp;
+  int i,dx,dy;
+  xx=x1;
+  yy=y1;
+  dx=x2-x1;
+  dy=y2-y1;
+  if(dx<0)
+    delx=-dx;
+  else
+    delx=dx;
+  if(dy<0)
+    dely=-dy;
+  else
+    dely=dy;
+  s1=signx(dx);
+  s2=signx(dy);
+  if(dely>delx)
+  {
+    temp=dely;
+    dely=delx;
+    delx=temp;
+    interchange=1;
+  }
+  else
+    interchange=0;
+  e=2*dely-delx;
+  for(i=0;i<=delx;i++)
+  {
+    x[i]=xx;
+    y[i]=yy;
+    while(e>=0)
+    {
+      if(interchange==1)
+        xx=xx+s1;
+      else
+        yy=yy+s2;
+      e=e-2*delx;
+    }
+    if(interchange==1)
+      yy=yy+s2;
+    else
+      xx=xx+s1;
+    e=e+2*dely;
+  }
+  return delx;
+}
+int signx(int x)
+{
+  if(x<0)
+    return -1;
+  else if(x==0)
+    return 0;
+  else
+    return 1;
+}
+/* Function to draw a circle */
+void circle_draw(int xc,int yc,int r,int c)
+
+{
+
+  int xk,yk;
+  float d,pk;
+  int x[1000],y[1000];
+  int n1,n2,n3,i;
+  xk=0;
+  yk=r;
+  n3=0;
+  //To generate points in first quadrant
+  while(yk>=0)
+  {
+    x[n3]=xk;
+    y[n3]=yk;
+    d=(xk+1)*(xk+1)+(yk-1)*(yk-1)-r*r;
+    if(d<0)
+    {
+      pk=(xk+1)*(xk+1)+(yk-.5)*(yk-.5)-r*r;
+      if(pk<=0)
+        xk=xk+1;
+      else
+      {
+        xk=xk+1;
+        yk=yk-1;
+      }
+    }
+    else
+    if(d>0)
+    {
+      pk=(xk+.5)*(xk+.5)+(yk-1)*(yk-1)-r*r;
+      if(pk<=0)
+      {
+        xk=xk+1;
+        yk=yk-1;
+      }
+      else
+        yk=yk-1;
+    }
+    else
+    {
+      xk=xk+1;
+      yk=yk-1;
+    }
+    if(yk>=0)
+      n3=n3+1;
+  }
+  //To take reflection along x-axis
+  n1=2*n3;
+  n2=n3-1;
+  for(i=n3+1;i<=n1;i++)
+  {
+    x[i]=x[n2];
+    y[i]=-y[n2];
+    n2=n2-1;
+  }
+  //To take reflection along y-axis
+  n1=4*n3-3;
+  n2=2*n3-1;
+  for(i=2*n3+1;i<=n1;i++)
+  {
+    x[i]=-x[n2];
+    y[i]=y[n2];
+    n2=n2-1;
+  }
+  for(i=0;i<=n1;i++)
+  {
+    putpixel(320+xc+x[i],240-yc+y[i],c);
+  }
+}
+------------------------------------------
+
+3) Draw the following pattern. (Note : first draw top circle, then bottom, then left, then right)
+
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+    int c_bgcolor,c_line;
+    void draw_xy();
+    int signx(int x);
+    void line_draw(int x1,int y1,int x2,int y2,int c);
+    int bresenham(int x1,int y1,int x2,int y2,int x[],int y[]);
+    void circle_draw(int xc,int yc,int r,int c);
+int main()
+{
+    int xc1,yc1,r1,xc2,yc2,r2,xc3,yc3,r3,xc4,yc4,r4;
+    clrscr();
+    printf("\nEnter x - coordinate of centre(xc1) =  ");
+    scanf("%d",&xc1);
+    printf("\nEnter y - coordinate of center(yc1) =  ");
+    scanf("%d",&yc1);
+    printf("\nEnter radius of your circle(r1) =  ");
+    scanf("%d",&r1);
+    printf("\nEnter x - coordinate of centre(xc2) =  ");
+    scanf("%d",&xc2);
+    printf("\nEnter y - coordinate of center(yc2) =  ");
+    scanf("%d",&yc2);
+    printf("\nEnter radius of your circle(r2) =  ");
+    scanf("%d",&r2);
+    printf("\nEnter x - coordinate of centre(xc3) =  ");
+    scanf("%d",&xc3);
+    printf("\nEnter y - coordinate of center(yc3) =  ");
+    scanf("%d",&yc3);
+    printf("\nEnter radius of your circle(r3) =  ");
+    scanf("%d",&r3);
+    printf("\nEnter x - coordinate of centre(xc4) =  ");
+    scanf("%d",&xc4);
+    printf("\nEnter y - coordinate of center(yc4) =  ");
+    scanf("%d",&yc4);
+    printf("\nEnter radius of your circle(r4) =  ");
+    scanf("%d",&r4);
+    printf("Enter Background color(2-14) = ");
+    scanf("%d",&c_bgcolor);
+    printf("Enter Line color(1 or 15) = ");
+    scanf("%d",&c_line);
+    draw_xy();
+    circle_draw(xc1,yc1,r1,c_line);
+    circle_draw(xc2,yc2,r2,c_line);
+    circle_draw(xc3,yc3,r3,c_line);
+    circle_draw(xc4,yc4,r4,c_line);
+    line_draw(xc1-r1,yc1,xc2-r2,yc2,c_line);
+    line_draw(xc1+r1,yc1,xc2+r2,yc2,c_line);
+    line_draw(xc3,yc3+r3,xc4,yc4+r4,c_line);
+    line_draw(xc3,yc3-r3,xc4,yc4-r4,c_line);
+    getch();
+    closegraph();
+    return 0;
+}
+/* Function to draw x and y axes on screen */
+void draw_xy()
+{
+    int i;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(c_bgcolor);
+    /* To draw x-axis and y-axis */
+    for(i=0;i<640;i++)
+    {
+	putpixel(i,240,c_line);
+	delay(0);
+    }
+    for(i=0;i<480;i++)
+    {
+	putpixel(320,i,c_line);
+	delay(0);
+    }
+/* To display +x, -x, +y, -y, O(0,0) */
+    outtextxy(10,245,"-X");
+    outtextxy(620,245,"+X");
+    outtextxy(325,10,"+Y");
+    outtextxy(325,470,"-Y");
+    outtextxy(325,245,"O(0,0)");
+}
+void line_draw(int x1,int y1,int x2,int y2,int c)
+{
+    int x[700],y[700],i,n;
+    n=bresenham(x1,y1,x2,y2,x,y);  /* Calling bresenham function to generate 'n' pixel co-ordinates */
+    /* To plot all points */
+    for(i=0;i<n;i++)
+    {
+	putpixel(320+x[i],240-y[i],c);
+	delay(0);
+    }
+}
+/* Function to generate pixel co-ordinates using Bresenham algorithm */
+int bresenham(int x1,int y1,int x2,int y2,int x[],int y[])
+{
+  int xx,yy,delx,dely,e,s1,s2,interchange,temp;
+  int i,dx,dy;
+  xx=x1;
+  yy=y1;
+  dx=x2-x1;
+  dy=y2-y1;
+  if(dx<0)
+    delx=-dx;
+  else
+    delx=dx;
+  if(dy<0)
+    dely=-dy;
+  else
+    dely=dy;
+  s1=signx(dx);
+  s2=signx(dy);
+  if(dely>delx)
+  {
+    temp=dely;
+    dely=delx;
+    delx=temp;
+    interchange=1;
+  }
+  else
+    interchange=0;
+  e=2*dely-delx;
+  for(i=0;i<=delx;i++)
+  {
+    x[i]=xx;
+    y[i]=yy;
+    while(e>=0)
+    {
+      if(interchange==1)
+	xx=xx+s1;
+      else
+	yy=yy+s2;
+      e=e-2*delx;
+    }
+    if(interchange==1)
+      yy=yy+s2;
+    else
+      xx=xx+s1;
+    e=e+2*dely;
+  }
+  return delx;
+}
+int signx(int x)
+{
+  if(x<0)
+    return -1;
+  else if(x==0)
+    return 0;
+  else
+    return 1;
+}
+/* Function to draw a circle */
+void circle_draw(int xc,int yc,int r,int c)
+{
+  int xk,yk;
+  float d,pk;
+  int x[1000],y[1000];
+  int n1,n2,n3,i;
+  xk=0;
+  yk=r;
+  n3=0;
+  //To generate points in first quadrant
+  while(yk>=0)
+  {
+    x[n3]=xk;
+    y[n3]=yk;
+    d=(xk+1)*(xk+1)+(yk-1)*(yk-1)-r*r;
+    if(d<0)
+    {
+      pk=(xk+1)*(xk+1)+(yk-.5)*(yk-.5)-r*r;
+      if(pk<=0)
+	xk=xk+1;
+      else
+      {
+	xk=xk+1;
+	yk=yk-1;
+      }
+    }
+    else
+    if(d>0)
+    {
+      pk=(xk+.5)*(xk+.5)+(yk-1)*(yk-1)-r*r;
+      if(pk<=0)
+      {
+	xk=xk+1;
+	yk=yk-1;
+      }
+      else
+	yk=yk-1;
+    }
+    else
+    {
+      xk=xk+1;
+      yk=yk-1;
+    }
+    if(yk>=0)
+      n3=n3+1;
+  }
+  //To take reflection along x-axis
+  n1=2*n3;
+  n2=n3-1;
+  for(i=n3+1;i<=n1;i++)
+  {
+    x[i]=x[n2];
+    y[i]=-y[n2];
+    n2=n2-1;
+  }
+  //To take reflection along y-axis
+  n1=4*n3-3;
+  n2=2*n3-1;
+  for(i=2*n3+1;i<=n1;i++)
+  {
+    x[i]=-x[n2];
+    y[i]=y[n2];
+    n2=n2-1;
+  }
+  for(i=0;i<=n1;i++)
+  {
+    putpixel(320+xc+x[i],240-yc+y[i],c);
+  }
+}
+
+------------------------------------------
+
+4) Write a program to draw a y=sin(x),cos(x)and tan(x) curves.
+
+	#include<stdio.h>
+	#include<graphics.h>
+	int c;
+	int n;
+	void draw_xy();
+	float cosine(float x);
+	void cosine_draw(float theta1,float theta2);
+	float sine(float x);
+	void sine_draw(float theta1,float theta2);
+	float tangent(float x);
+	void tangent_draw(float theta1,float theta2);
+	void main()
+	{
+	int xc,yc,r,i;
+	float theta1,theta2;
+	char a[100];
+	clrscr();
+	printf("\nEnter starting theta in degree(theta1)=");
+	scanf("%f",&theta1);
+	printf("Enter Ending  theta in degree(theta2)=");
+	scanf("%f",&theta2);
+	printf("\nEnter color code of line(1,2,3,4,5,15)=");
+	scanf("%d",&c);
+	draw_xy();
+	sine_draw(theta1,theta2);
+	cosine_draw(theta1,theta2);
+	tangent_draw(theta1,theta2);
+	/*sprintf(a,"C(%d,%d)",xc,yc);
+	outtextxy(320+xc,240-yc,a); */
+	getch();
+	closegraph();
+	}
+	/* float sine(float x) : Function to generate value of sin(x) */
+	float sine(float x)
+	{
+	float csin,psin,eps,fact,xrad,xp;
+	int i,sf,n;
+	xrad=3.141593*x/180;
+	csin=xrad;
+	psin=1;
+	eps=csin-psin;
+		if(eps<0)
+		eps=-eps;
+	n=3;
+	sf=-1;
+		while(eps>1e-06)
+		{
+		psin=csin;
+		fact=1;
+		xp=1;
+			for(i=1;i<=n;i++)
+			{
+			fact=fact*i;
+			xp=xp*xrad;
+			}
+		csin=csin+sf*xp/fact;
+		eps=csin-psin;
+			if(eps<0)
+			eps=-eps;
+		n=n+2;
+		sf=-sf;
+		}
+	return csin;
+	}
+	/* float cosine(float x) : Function to generate value of cos(x) */
+	float cosine(float x)
+	{
+	float csin,psin,eps,fact,xrad,xp;
+	int i,sf,n;
+	xrad=3.141593*x/180;
+	csin=1;
+	psin=0;
+	eps=csin-psin;
+		if(eps<0)
+		eps=-eps;
+	n=2;
+	sf=-1;
+		while(eps>1e-06)
+		{
+		psin=csin;
+		fact=1;
+		xp=1;
+			for(i=1;i<=n;i++)
+			{
+			fact=fact*i;
+			xp=xp*xrad;
+			}
+		csin=csin+sf*xp/fact;
+		eps=csin-psin;
+			if(eps<0)
+			eps=-eps;
+		n=n+2;
+		sf=-sf;
+		}
+	return csin;
+	}
+	/* float tangent(float x) : Function to get tan(x) */
+	float tangent(float x)
+	{
+	float y;
+	y=sine(x)/cosine(x);
+	return y;
+	}
+	/* void sine_draw(float theta1,float theta2) : Function to
+	draw sine curve */
+	void sine_draw(float theta1,float theta2)
+	{
+	float x,y;
+	int x1,y1;
+		for(x=theta1;x<=theta2;x++)
+		{
+		y=sine(x);
+		y1=100*y;
+		x1=x/2;
+		putpixel(320+x1,240-y1,15);
+		}
+	}
+	/* void cosine_draw(float theta1,float theta2) : Function to
+	draw cosine curve */
+
+	void cosine_draw(float theta1,float theta2)
+	{
+	float x,y;
+	int x1,y1;
+		for(x=theta1;x<=theta2;x++)
+		{
+		y=cosine(x);
+		y1=100*y;
+		x1=x/2;
+		putpixel(320+x1,240-y1,c);
+		}
+	}
+	/* void tangent_draw(float theta1,float theta2) : Function to
+	draw tan curve */
+
+	void tangent_draw(float theta1,float theta2)
+	{
+	float x,y;
+	int x1,y1;
+		for(x=theta1;x<=theta2;x++)
+		{
+		y=tangent(x);
+		y1=10*y;
+		x1=x/2;
+		putpixel(320+x1,240-y1,c+2);
+		}
+	}
+	void draw_xy()
+	{
+	int gd=DETECT, gm;
+	int i;
+	initgraph(&gd,&gm,"c://TurboC3//bgi");
+	setbkcolor(6);
+	setcolor(1);
+	/* To draw x-axis */
+		for(i=0;i<640;i++)
+		{
+		putpixel(i,240,15);
+		}
+	/* To draw y-axis */
+		for(i=0;i<480;i++)
+		{
+		putpixel(320,i,15);
+		}
+	/* To display -X, +X, +Y , -Y and O(0,0) */
+	outtextxy(10,245,"-X");
+	outtextxy(620,245,"+X");
+	outtextxy(325,10,"+Y");
+	outtextxy(325,470,"-Y");
+	outtextxy(325,245,"O(0,0)");
+	}
+
+-------------------------------------------------
+
+5) Write a program to reflect a triangle along y=x.
+
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+    int c_bgcolor,c_line;
+    void draw_xy();
+    int round1(float x);
+    void line_draw(int x1,int y1,int x2,int y2,int c);
+    int dda(int x1,int y1,int x2,int y2,int x[],int y[]);
+    void triangle_draw(int x1,int y1,int x2,int y2,int x3,int y3);
+int main()
+{
+    int x1,y1,x2,y2,x3,y3;
+    clrscr();
+    printf("\nEnter x - coordinate of 1st point(x1) =  ");
+    scanf("%d",&x1);
+    printf("\nEnter y - coordinate of 1st point(y1) =  ");
+    scanf("%d",&y1);
+    printf("\nEnter x - coordinate of 2nd point(x2) =  ");
+    scanf("%d",&x2);
+    printf("\nEnter y - coordinate of 2nd point(y2) =  ");
+    scanf("%d",&y2);
+    printf("\nEnter x - coordinate of 3rd point(x3) =  ");
+    scanf("%d",&x3);
+    printf("\nEnter y - coordinate of 3rd point(y3) =  ");
+    scanf("%d",&y3);
+    printf("Enter Background color(2-14) = ");
+    scanf("%d",&c_bgcolor);
+    printf("Enter Line color(1 or 15) = ");
+    scanf("%d",&c_line);
+    draw_xy();
+    triangle_draw(x1,y1,x2,y2,x3,y3);
+    triangle_draw(y1,x1,y2,x2,y3,x3);  //reflect triangle along y=x
+    getch();
+    closegraph();
+    return 0;
+}
+/* Function to draw x and y axes on screen */
+void draw_xy()
+{
+    int i;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(c_bgcolor);
+    /* To draw x-axis and y-axis */
+    for(i=0;i<640;i++)
+    {
+        putpixel(i,240,c_line);
+        delay(0);
+    }
+    for(i=0;i<480;i++)
+    {
+        putpixel(320,i,c_line);
+        delay(0);
+    }
+/* To display +x, -x, +y, -y, O(0,0) */
+    outtextxy(10,245,"-X");
+    outtextxy(620,245,"+X");
+    outtextxy(325,10,"+Y");
+    outtextxy(325,470,"-Y");
+    outtextxy(325,245,"O(0,0)");
+}
+void line_draw(int x1,int y1,int x2,int y2,int c)
+{
+    int x[700],y[700],i,n;
+    n=dda(x1,y1,x2,y2,x,y);  /* Calling dda function to generate 'n' pixel co-ordinates */
+    /* To plot all points */
+    for(i=0;i<n;i++)
+    {
+        putpixel(320+x[i],240-y[i],c);
+        delay(0);
+    }
+}
+/* Function to generate pixel co-ordinates using DDA algorithm */
+int dda(int x1,int y1,int x2,int y2,int x[],int y[])
+{
+    int i,length,dx,dy,dx1,dy1,n;
+    float delx,dely;
+    float xx,yy;
+    dx=x2-x1;
+    dy=y2-y1;
+    if(dx<0)
+      dx1=-dx;
+    else
+      dx1=dx;
+    if(dy<0)
+      dy1=-dy;
+    else
+      dy1=dy;
+    if(dx1>dy1)
+      length=dx1;
+    else
+       length=dy1;
+    delx=(float)dx/length;
+    dely=(float)dy/length;
+    xx=x1;
+    yy=y1;
+    for(i=0;i<length;i++)
+    {
+        x[i]=round1(xx);
+        y[i]=round1(yy);
+        xx=xx+delx;
+        yy=yy+dely;
+    }
+   return length;
+}
+/* Function to get rounded value of a number */
+int round1(float x)
+{
+    int ix;
+    float x1,x2;
+    int s1;
+    ix=(int)x;  /* To get whole number part from x */
+    if(x<0)
+      s1=-1;
+    else
+      s1=1;
+    x1=x-(float)ix;   /* To get fractional part of x */     
+    if(x1<0)
+      x2=-x1;
+    else
+       x2=x1;
+     if(x2>=.5)
+     {
+         if(s1==1)
+           ix=ix+1;
+         else
+           ix=ix-1;
+      }
+    return ix;
+}
+void triangle_draw(int x1,int y1,int x2,int y2,int x3,int y3)
+{
+   char a[100];
+   line_draw(x1,y1,x2,y2,c_line);
+   line_draw(x2,y2,x3,y3,c_line);
+   line_draw(x3,y3,x1,y1,c_line);
+   setcolor(2);
+   sprintf(a,"A(%d, %d)",x1,y1);
+   outtextxy(320+x1,240-y1,a);
+   setcolor(1);
+   sprintf(a,"B(%d, %d)",x2,y2);
+   outtextxy(320+x2,240-y2,a);
+   setcolor(3);
+   sprintf(a,"C(%d, %d)",x3,y3);
+   outtextxy(320+x3,240-y3,a);
+}
+
+--------------------------------------------------
+
+6) Write a program to draw a rectangle ABCD. Rotate the rectangle around by 90 degrees.
+
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+#include<math.h>
+    int c_bgcolor,c_line;
+    void draw_xy();
+    int signx(int x);
+    void line_draw(int x1,int y1,int x2,int y2,int c);
+    int bresenham(int x1,int y1,int x2,int y2,int x[],int y[]);
+    void rectangle_draw(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4);
+int main()
+{
+    int x1,y1,x2,y2,x3,y3,x4,y4,xx1,yy1,xx2,yy2,xx3,yy3,xx4,yy4;
+    float rad,deg;
+    clrscr();
+    printf("\nEnter x - coordinate of 1st point(x1) =  ");
+    scanf("%d",&x1);
+    printf("\nEnter y - coordinate of 1st point(y1) =  ");
+    scanf("%d",&y1);
+    printf("\nEnter x - coordinate of 2nd point(x2) =  ");
+    scanf("%d",&x2);
+    printf("\nEnter y - coordinate of 2nd point(y2) =  ");
+    scanf("%d",&y2);
+    printf("\nEnter x - coordinate of 3rd point(x3) =  ");
+    scanf("%d",&x3);
+    printf("\nEnter y - coordinate of 3rd point(y3) =  ");
+    scanf("%d",&y3);
+    printf("\nEnter x - coordinate of 4th point(x4) =  ");
+    scanf("%d",&x4);
+    printf("\nEnter y - coordinate of 4th point(y4) =  ");
+    scanf("%d",&y4);
+    printf("Enter angle : ");
+    scanf("%f",&deg);
+    printf("Enter Background color(2-14) = ");
+    scanf("%d",&c_bgcolor);
+    printf("Enter Line color(1 or 15) = ");
+    scanf("%d",&c_line);
+    draw_xy();
+    rectangle_draw(x1,y1,x2,y2,x3,y3,x4,y4);
+    rad=deg*(3.14/180);
+    printf("%f %f\n",rad,deg);
+    xx1=x1*cos(rad)-y1*sin(rad);
+    yy1=x1*sin(rad)+y1*cos(rad);
+    xx2=x2*cos(rad)-y1*sin(rad);
+    yy2=x2*sin(rad)+y1*cos(rad);
+    xx3=x2*cos(rad)-y4*sin(rad);
+    yy3=x2*sin(rad)+y4*cos(rad);
+    xx4=x1*cos(rad)-y4*sin(rad);
+    yy4=x1*sin(rad)+y4*cos(rad);
+    printf("%d %d %d %d %d %d %d %d",xx1,yy1,xx2,yy2,xx3,yy3,xx4,yy4);
+    rectangle_draw(xx1,yy1,xx2,yy2,xx3,yy3,xx4,yy4);
+    getch();
+    closegraph();
+    return 0;
+}
+/* Function to draw x and y axes on screen */
+void draw_xy()
+{
+    int i;
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"c://TurboC3//bgi");
+    setbkcolor(c_bgcolor);
+    /* To draw x-axis and y-axis */
+    for(i=0;i<640;i++)
+    {
+        putpixel(i,240,c_line);
+        delay(0);
+    }
+    for(i=0;i<480;i++)
+    {
+        putpixel(320,i,c_line);
+        delay(0);
+    }
+/* To display +x, -x, +y, -y, O(0,0) */
+    outtextxy(10,245,"-X");
+    outtextxy(620,245,"+X");
+    outtextxy(325,10,"+Y");
+    outtextxy(325,470,"-Y");
+    outtextxy(325,245,"O(0,0)");
+}
+void line_draw(int x1,int y1,int x2,int y2,int c)
+{
+    int x[700],y[700],i,n;
+    n=bresenham(x1,y1,x2,y2,x,y);  /* Calling bresenham function to generate 'n' pixel co-ordinates */
+    /* To plot all points */
+    for(i=0;i<n;i++)
+    {
+        putpixel(320+x[i],240-y[i],c);
+        delay(0);
+    }
+}
+/* Function to generate pixel co-ordinates using Bresenham algorithm */
+int bresenham(int x1,int y1,int x2,int y2,int x[],int y[])
+{
+  int xx,yy,delx,dely,e,s1,s2,interchange,temp;
+  int i,dx,dy;
+  xx=x1;
+  yy=y1;
+  dx=x2-x1;
+  dy=y2-y1;
+  if(dx<0)
+    delx=-dx;
+  else
+    delx=dx;
+  if(dy<0)
+    dely=-dy;
+  else
+    dely=dy;
+  s1=signx(dx);
+  s2=signx(dy);
+  if(dely>delx)
+  {
+    temp=dely;
+    dely=delx;
+    delx=temp;
+    interchange=1;
+  }
+  else
+    interchange=0;
+  e=2*dely-delx;
+  for(i=0;i<=delx;i++)
+  {
+    x[i]=xx;
+    y[i]=yy;
+    while(e>=0)
+    {
+      if(interchange==1)
+        xx=xx+s1;
+      else
+        yy=yy+s2;
+      e=e-2*delx;
+    }
+    if(interchange==1)
+      yy=yy+s2;
+    else
+      xx=xx+s1;
+    e=e+2*dely;
+  }
+  return delx;
+}
+int signx(int x)
+{
+  if(x<0)
+    return -1;
+  else if(x==0)
+    return 0;
+  else
+    return 1;
+}
+void rectangle_draw(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4)
+{
+   char a[100];
+   line_draw(x1,y1,x2,y2,c_line);
+   line_draw(x2,y2,x3,y3,c_line);
+   line_draw(x3,y3,x4,y4,c_line);
+   line_draw(x4,y4,x1,y1,c_line); 
+   setcolor(2);
+   sprintf(a,"A(%d, %d)",x1,y1);
+   outtextxy(320+x1,240-y1,a);
+   setcolor(1);
+   sprintf(a,"B(%d, %d)",x2,y2);
+   outtextxy(320+x2,240-y2,a);
+   setcolor(3);
+   sprintf(a,"C(%d, %d)",x3,y3);
+   outtextxy(320+x3,240-y3,a);
+   setcolor(4);
+   sprintf(a,"D(%d, %d)",x4,y4);
+   outtextxy(320+x4,240-y4,a);
+}
+
+----------------------------------------------------------------
