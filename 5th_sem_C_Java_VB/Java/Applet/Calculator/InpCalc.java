@@ -25,7 +25,7 @@ public class InpCalc extends Applet implements ActionListener{
         b3 = new Button("*");
         b4 = new Button("/");
 
-        setBackground(new Color(100,100,100));
+        setBackground(new Color(200,100,100));
         
         setLayout(null);
         
