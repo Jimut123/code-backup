@@ -34,7 +34,7 @@ Contains programs of every semester!
 * [Visual Basic (Nightmares)](https://github.com/Jimut123/prog_backups/tree/master/visual_basic/JIM%20VB) :orange_book:
  
 
-2 Maintainer : 
+2 Maintainer & Owner (most contributions made!) : 
 ---
 [Jimut Bahan Pal](https://www.linkedin.com/in/jimut-bahan-pal-156862123/)
 
@@ -42,9 +42,14 @@ Contains programs of every semester!
 ---
 * [Kalyan Majumder](https://github.com/jaymazkm96)
 * [Bikash Pandey](https://github.com/BikashPandey17)
+* [Anubhav Kumar Roy]()
 * [Arion Mitra](https://github.com/arionmitra)
 * [Ankita Biswas](https://github.com/ankitab98)
 * [Souptik Majumder]()
+* [Deep Kumar Ganguly](https://www.linkedin.com/in/deep-ganguly-3240a8163/)
+* [Aniket Bhattacharyea ](https://www.linkedin.com/in/abhattacharyea/)
+* [Suchandra Dutta]()
+* [Barnali Majumder]()
 
 
 ****
