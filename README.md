@@ -34,7 +34,7 @@ Contains programs of every semester!
 * [Visual Basic (Nightmares)](https://github.com/Jimut123/prog_backups/tree/master/visual_basic/JIM%20VB) :orange_book:
  
 
-2 Maintainer : 
+2 Maintainer & Owner (most contributions made!) : 
 ---
 [Jimut Bahan Pal](https://www.linkedin.com/in/jimut-bahan-pal-156862123/)
 
