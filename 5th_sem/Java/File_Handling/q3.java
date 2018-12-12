@@ -1,7 +1,9 @@
 /*Write a program to copy contents of one or more files to one output file.
 Use command line arguments.
 The program should display the size of each input file(s)
-and also the size of output file.*/
+and also the size of output file.
+javac filename.java
+java filename input1.txt input2.txt output.txt*/
 import java.io.*;
 class q3
 {

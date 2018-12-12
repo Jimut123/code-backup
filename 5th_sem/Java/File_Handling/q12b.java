@@ -1,5 +1,7 @@
 /*Write a program to split the content of one input file to multiple output files.
-Use command line arguments.*/
+Use command line arguments.
+javac filename.java
+java filename input.txt output1.txt output2.txt*/
 import java.io.*;
 class q12b
 {

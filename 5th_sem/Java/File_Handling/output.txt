@@ -1,6 +1,0 @@
-{
-
-
-println("LOL!")
-Umm thats enough!
-}

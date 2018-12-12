@@ -1,5 +1,0 @@
-This file contains the number
-of words present in a file
-The file contents are to be sorted
-and stored in another file after 
-sorting the words!
