@@ -1,0 +1,7 @@
+//this is the first comment line
+{
+
+/* This is second comment line */
+println("LOL!")
+Umm thats enough!
+}
