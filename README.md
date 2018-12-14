@@ -23,9 +23,10 @@ Contains programs of every semester!
 * [C++ 3D](https://github.com/Jimut123/prog_backups/tree/master/C%2B%2B_3D)  :green_book:
 * [Audrino](https://github.com/Jimut123/prog_backups/tree/master/arduino_backup) :beginner:
 * [C++ Advanced](https://github.com/Jimut123/prog_backups/tree/master/c%2B%2B_backup) :orange_book:
-* [C coding & Graphics(including nightmares of Turbo C)](https://github.com/Jimut123/prog_backups/tree/master/c_backup) :orange_book:
+* [C coding (including nightmares of Turbo C)](https://github.com/Jimut123/prog_backups/tree/master/1st_and_2nd_Sem_c_backup) :orange_book:
+* [Graphics (including nightmares of Turbo C)](https://github.com/Jimut123/prog_backups/tree/master/5th_sem_C_Java_VB/GRAPHICS) :orange_book:
 * [HTML](https://github.com/Jimut123/prog_backups/tree/master/html_bckup) :beginner:
-* [JAVA - 4 years of coding](https://github.com/Jimut123/prog_backups/tree/master/java_backup) :orange_book:
+* [JAVA - 4 years of coding](https://github.com/Jimut123/prog_backups/tree/master/java_backup), [All sem 5 progs](https://github.com/Jimut123/prog_backups/tree/master/5th_sem_C_Java_VB/Java), and [java SXC](https://github.com/Jimut123/prog_backups/tree/master/5th_sem_C_Java_VB/JAVA-SXC) :orange_book:
 * [JS algorithms and image manipulations](https://github.com/Jimut123/prog_backups/tree/master/js_bckup_duke) :green_book:
 * [PHP](https://github.com/Jimut123/prog_backups/tree/master/php_backup)  :green_book:
 * [Python](https://github.com/Jimut123/prog_backups/tree/master/python) :orange_book:
