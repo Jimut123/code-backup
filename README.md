@@ -21,8 +21,8 @@ Contains programs of every semester!
 * [AWK](https://github.com/Jimut123/prog_backups/tree/master/3rd_sem_sxc/SEM%3D%3D3)    :beginner:
 * [8085](https://github.com/Jimut123/prog_backups/tree/master/8085_programming)  :green_book:
 * [C++ 3D](https://github.com/Jimut123/prog_backups/tree/master/4rth_Sem_c%2B%2B_backup)  :green_book:
-* [Audrino](https://github.com/Jimut123/prog_backups/tree/master/arduino_backup) :beginner:
-* [C++ Advanced](https://github.com/Jimut123/prog_backups/tree/master/c%2B%2B_backup) :orange_book:
+* [Arduino](https://github.com/Jimut123/prog_backups/tree/master/arduino_backup) :beginner:
+* [C++ Advanced](https://github.com/Jimut123/prog_backups/tree/master/4rth_Sem_c%2B%2B_backup/IMP) :orange_book:
 * [C coding (including nightmares of Turbo C)](https://github.com/Jimut123/prog_backups/tree/master/1st_and_2nd_Sem_c_backup) :orange_book:
 * [C Graphics (including nightmares of Turbo C)](https://github.com/Jimut123/prog_backups/tree/master/5th_sem_C_Java_VB/GRAPHICS) :orange_book:
 * [HTML](https://github.com/Jimut123/prog_backups/tree/master/html_bckup) :beginner:
