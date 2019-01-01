@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Learning JS</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="heading">Learning JS</h1>
+            <p> With Jimut Bahan Pal</p>
+        </div>
+        <div class="container">
+            
+            <button onmouseover="showDate()"  onmouseout="clearDate()">Show Date</button>
+            <h1 id="time"></h1>
+        </div>
+
+        <script>
+            function showDate(){
+                var time = document.getElementById('time');
+                time.innerHTML = Date();
+            }
+            function clearDate(){
+                var time = document.getElementById('time');
+                time.innerHTML = '';
+            }
+        </script>
+    </body>
+</html>
