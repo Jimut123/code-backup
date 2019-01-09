@@ -3,12 +3,10 @@
 <style>
    #profile-img {
     display: inline-block;
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    border-style: solid;
-    border-width: medium;
-    border-color: #0000ff;
+    
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -19,6 +17,30 @@
   #badge-IBM-all{
     align-items:center;
   }
+  #upper-section{
+    border-bottom: 6px solid #22eedd;
+  }
+  #about-section{
+    margin-bottom:20px; /* space from border to next element */
+    padding-bottom:10px; 
+    border-bottom: 6px solid #ffcccc;
+  }
+  #sucess-link{
+    color: aqua;
+  }
+  #cert-sepc{
+    color: red;
+  }
+  #jbp{
+    color:#000066; 
+    font-family: "My Custom Font", Verdana, Tahoma;
+  }
+
+  @font-face {
+      font-family: "My Custom Font";
+      src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+  }
+
 </style>
   <head>
 
@@ -75,9 +97,9 @@
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <img id = "profile-img" class="img-fluid mb-5 d-block mx-auto"  src="img/jimut.jpeg" alt="">
-        <h1 class="text-uppercase mb-0">JIMUT BAHAN PAL</h1>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Python Programmer - Web Developer - Hobbiest</h2>
+        <h1 class="text-uppercase mb-0" id="jbp">JIMUT BAHAN PAL</h1>
+        <hr id="upper-section">
+        <h2 class="font-weight-light mb-0">Python Programmer - Web Developer - Student - Hobbiest</h2>
       </div>
     </header>
     
@@ -249,8 +271,20 @@
                           <img class="img-fluid" src="img/portfolio/13_pager_rank.png" alt="">
                         </a>
                       </div>
+
                       <div class="col-md-6 col-lg-4">
-                          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-14">
+                        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-14">
+                          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                              <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                          </div>
+                          <img class="img-fluid" src="img/portfolio/14_xavo.png" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-md-6 col-lg-4">
+                          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-15">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                                 <i class="fas fa-search-plus fa-3x"></i>
@@ -266,25 +300,254 @@
 
     <!-- About Section -->
     <section class="bg-primary text-white mb-0" id="about">
+        
       <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
-        <hr class="star-light mb-5">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-          </div>
+        <h2 class="text-center text-uppercase text-white" id="about-section">About</h2>
+        
+        I have done various data scraping projects, worked with Unity3D, have knowledge about front end web development and have a specilization in Python from Coursera.
+        
+        <br><br>
+
+        <h4>Education :</h4>
+        
+        <b><i class="far fa-dot-circle"></i> B.Sc., St. Xavier's College, Kolkata, Park Street. </b><br>
+
+        <b><i class="far fa-dot-circle"></i> High School, I.S.C. (95.75%) from Central Modern School, Kolkata, India. </b><br>
+        
+        <b><i class="far fa-dot-circle"></i> St. Agnes Branch School, IIT Kharagpur Campus, West Bengal, India. </b>
+        <br>
+        <br>
+        <h4>Experience and other:</h4>
+
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="" target="_blank">Key-note Speaker </a>, Machine Learning Crash Course, St. Xavier's College, 2018. </b>
+        <br>
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/19V0XR_y_J2Kwwa0wUGLs7W0D9UNHKfNl/view" target="_blank">Head of Graphics design team </a>, Analytica, Maths dept. fest, 2018. </b>
+        <br>
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/1bEblSdzQbAKvSxkpFm3sMqGE8oqqWr5R/view" target="_blank">Developed Xavotsav Website - 2k18 </a>, St. Xavier's College, 2018. </b>
+        <br>
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRZjVvYWxkX05oREU/view" target="_blank">Volunteer </a>, Exabyte, Computer dept. fest, 2017. </b>
+        <br>
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRWnByQnlKZzU5QjA/view" target="_blank">Yellow Belt </a>, Karate-do. </b>
+        <br>
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRd3RyNm5hd2gyZW8/view" target="_blank">Global Cancer Concern India </a>, Social Work, Central Modern School, 2011. </b>
+        <br>
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRcS1uZEJRVGRlRjg/view" target="_blank">Blood Donor </a>, <a id = "sucess-link" href="https://drive.google.com/open?id=19BNAexs1koeJljNkwl8ko6JyKFiKK0NL" target="_blank">State Blood Transfusion Council</a>, NSS, St. Xavier's College, Kolkata, 2017. </b>
+        <br>
+        <b><i class="fas fa-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRUzdpLWtwQzJkYVE/view" target="_blank">Blind Person's Association </a>, Social Work, Central Modern School, Kolkata, 2010. </b>
+        <br>
+        <br>
+
+        <h4>Achievements:</h4>
+
+        <b><i class="fa fa-trophy" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRdmNmQmRyRE5HVUU/view" target="_blank">Rank : 3rd</a>. class - 11. Central Modern School. Kolkata. 2015  </b>
+        <br>
+        <b><i class="fa fa-trophy" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRSFZDM3lob2ZoVTQ/view" target="_blank">Above 90% in I.S.C</a>. class - 12. Central Modern School. Kolkata. 2016. (Note this is not best of 4 subjects, best of four subjects : 95.75% marks)  </b>
+        <br>
+        <b><i class="fa fa-trophy" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRdTl4TUpxMkpJZkE/view" target="_blank">Baranagar Municipality</a>. For securing above 80% in I.C.S.E. Central Modern School. Kolkata. 2014  </b>
+        <br>
+        <b><i class="fa fa-trophy" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZROWZUYTFWZUQxNVE/view" target="_blank">Baranagar Municipality</a>. For securing above 80% in I.S.C. Central Modern School. Kolkata. 2016  </b>
+        <br>
+        <br>
+
+        <h4>Published Papers :</h4>
+        <b><i class="fas fa-chevron-circle-right"></i> <a id = "sucess-link"href="http://ijarcsms.com/docs/paper/volume6/issue10/V6I10-0031.pdf" target="_blank">Botnets: A constant threat to cyberspace </a>. <a id = "sucess-link" onclick="window.open('https://drive.google.com/open?id=196CA1C81ZOd-BzCTQ67anwI_n3ZF1Mnp');
+          window.open('https://drive.google.com/open?id=1FWGG9MaOXC169E9g6qwvjTfb4_kRMNgn');" target="_blank">IJARCSMS</a>. Nov 12, 2018. </b>
+        <br>
+        <br>
+
+        <h4>Online Courses with Certificates:</h4>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/ZCN94V6GS6WJ" target="_blank">Applied Plotting, Charting & Data Representation in Python</a>. Coursera. License ZCN94V6GS6WJ. Nov 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/XQDBDTVPE825" target="_blank">Applied Machine Learning in Python</a>. Coursera. License XQDBDTVPE825. Oct 2018 – Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/FUB9M4K59M56" target="_blank">An Introduction to Interactive Programming in Python (Part 1)</a>. Coursera. License FUB9M4K59M56. Sep 2018 – Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/Q7AEQP4ZPLWS" target="_blank">Applied Data Science Capstone</a>. Coursera. License Q7AEQP4ZPLWS. Sep 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id="cert-sepc" id = "sucess-link"href="https://www.coursera.org/account/accomplishments/specialization/K36A43C6J3N7" target="_blank" >Applied Data Science Specialization</a>. Coursera. License K36A43C6J3N7. Sep 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/WKVJBG8M7DRM" target="_blank">Data Visualization with Python</a>. Coursera. License WKVJBG8M7DRM. Sep 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/U2G5XLW2HB4P" target="_blank">Introduction to Data Science in Python</a>. Coursera. License U2G5XLW2HB4P. Sep 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/FEJ6DL7FWSZB" target="_blank">Data Analysis with Python</a>. Coursera. License FEJ6DL7FWSZB. Aug 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/9NCG4SPT7NFE" target="_blank">Google Cloud Platform Big Data and Machine Learning Fundamentals</a>. Coursera. License 9NCG4SPT7NFE. Aug 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.datacamp.com/statement-of-accomplishment/course/9b2c926a88f28192d0d5912224625a10a77d4280" target="_blank">Intro to Python for Data Science Course</a>. DataCamp. License #4,579,026. Aug 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/CPGPT62W4LLM" target="_blank">Python for Data Science</a>. Coursera. License CPGPT62W4LLM. Aug 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/TP47WFEDMUUD" target="_blank">Ruby on Rails: An Introduction</a>. Coursera. License TP47WFEDMUUD. Aug 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/HYX4UA4Z7Y3U" target="_blank">Machine Learning</a>. Coursera. License HYX4UA4Z7Y3U. Jun 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-GGN3ZMVE.pdf" target="_blank">Brief Guide to Cryptocurrencies</a>. Udemy. License UC-GGN3ZMVE. Jun 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-K92DUMEI.pdf" target="_blank">CyberTraining 365</a>. Udemy. License UC-K92DUMEI. Jun 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/A6KC8L8565KX" target="_blank">Fibonacci Numbers and the Golden Ratio</a>. Coursera. License A6KC8L8565KX. May 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.sololearn.com/Certificate/1060-6159414/pdf/" target="_blank">SQL Fundamentals course</a>. SoloLearn. License Certificate #1060-6159414. Feb 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.sololearn.com/Certificate/1051-6159414/pdf/" target="_blank">C++</a>. SoloLearn. License #1051-6159414. Jan 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/46DSHT9YK9HQ" target="_blank">Capstone: Retrieving, Processing, and Visualizing Data with Python</a>. Coursera. License 46DSHT9YK9HQ. Jan 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/7YJNXQRMG8MH" target="_blank">Internet History, Technology, and Security</a>. Coursera. License 7YJNXQRMG8MH. Jan 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/JQT8SGAEYNUW" target="_blank">Java for Android</a>. Coursera. License JQT8SGAEYNUW. Jan 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.sololearn.com/Certificate/1073-6159414/pdf/" target="_blank">Python 3 Tutorial</a>. SoloLearn. License Certificate #1073-6159414. Jan 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/LNCVAV3FQ93Z" target="_blank">Python Programming Essentials</a>. Coursera. License LNCVAV3FQ93Z. Jan 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id="cert-sepc" id = "sucess-link"href="https://www.coursera.org/account/accomplishments/specialization/RQHE57YQZ2ZW" target="_blank">Python for Everybody Specialization</a>. Coursera. License RQHE57YQZ2ZW. Jan 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/2HBG3KH2YELZ" target="_blank">Using Python to Access Web Data</a>. Coursera. License 2HBG3KH2YELZ. Dec 2017  - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/EYKLZSRMZ24L" target="_blank">Learn to Program: The Fundamentals</a>. Coursera. License EYKLZSRMZ24L. Dec 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/RT6MGYZ3A7W9" target="_blank">Programming for Everybody (Getting Started with Python)</a>. Coursera. License RT6MGYZ3A7W9. Dec 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/9QKWK8U5P8NX" target="_blank">Python Data Structures</a>. Coursera. License 9QKWK8U5P8NX. Dec 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/YUMFLAQ7AXGJ" target="_blank">Python Programming: A Concise Introduction</a>. Coursera. License YUMFLAQ7AXGJ. Dec 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/QT92FA8EU478" target="_blank">Using Databases with Python</a>. Coursera. License QT92FA8EU478. Dec 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/UFYTPQF3HW7Y" target="_blank">Writing in the Sciences (with Honors)</a>. Coursera. License UFYTPQF3HW7Y. Dec 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/ARRTCQDNBG2P" target="_blank">Algorithmic Toolbox</a>. Coursera. License ARRTCQDNBG2P. Jan 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/QBZNXRZFFGDN" target="_blank">Introduction to Game Development</a>. Coursera. License QBZNXRZFFGDN. Jan 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/MEC4UXN5X54C" target="_blank">Responsive Website Basics: Code with HTML, CSS, and JavaScript </a>. Coursera. License MEC4UXN5X54C. Jul 2016 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/verify/LLXUWN66DEED" target="_blank">Programming and the Web for Beginners</a>. Coursera. License LLXUWN66DEED. Jun 2016 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://learn.open2study.com/mod/certificate/view.php?id=26491&action=get&_ga=2.184406382.919709480.1498575033-1283502750.1494245557" target="_blank">Basic Physics</a>. open2study. April 2014 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRWU5Vc3dhUzlsOVk/view" target="_blank">C</a>. Indian Statistical Institute, Kolkata. Mar 2012 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://learn.open2study.com/mod/certificate/view.php?id=26158&action=get&_ga=2.184406382.919709480.1498575033-1283502750.1494245557" target="_blank">Chemistry- Building blocks of the world</a>. open2study. April 2014 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://learn.open2study.com/mod/certificate/view.php?id=31779&action=get&_ga=2.184406382.919709480.1498575033-1283502750.1494245557" target="_blank">Financial Planning</a>. Coursera. License ZCN94V6GS6WJ. Nov 2018 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://learn.open2study.com/mod/certificate/view.php?id=27339&action=get&_ga=2.184406382.919709480.1498575033-1283502750.1494245557" target="_blank">Foundations of psycology</a>. open2study. April 2014 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://www.coursera.org/account/accomplishments/certificate/KX3WQADZGTYB" target="_blank">Game Development for modern platforms</a>. Coursera. License KX3WQADZGTYB. March 2017 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://learn.open2study.com/mod/certificate/view.php?id=26405&action=get&_ga=2.184406382.919709480.1498575033-1283502750.1494245557" target="_blank">Innovations for powerful outcomes</a>. open2study. April 2014 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZROVlGMHZfRlVmNWc/view" target="_blank">Java Programming</a>. Indian Statistical Institute, Kolkata. March 2015 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://learn.open2study.com/mod/certificate/view.php?id=29147&action=get&_ga=2.184406382.919709480.1498575033-1283502750.1494245557" target="_blank">Leadership Identity Influence and Power</a>. open2study. April 2014 - Present. </b>
+        <br>
+
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://learn.open2study.com/mod/certificate/view.php?id=7274&action=get&_ga=2.67501913.919709480.1498575033-1283502750.1494245557" target="_blank">Management For Competitive edge</a>. open2study. April 2014 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://courses.edx.org/certificates/f35625e9adcc4399b0593347fe3e4d02" target="_blank">edX Honor Code Certificate for Introduction to Programming with Java - Part 1: Starting to Code with Java</a>. edX. Valid Certificate ID f35625e9adcc4399b0593347fe3e4d02. July 2016 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://s3.amazonaws.com/verify.edx.org/downloads/9db18b14e1a64249a1dbdc44d66ae222/Certificate.pdf" target="_blank">edX Honor Code Certificate for Principles of Written English, Part 3</a>. edX. Verify the authenticity of this certificate at https://verify.edx.org/cert/473f83a74dca4339a3b55aebb6346cfc. May 2014 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://courses.edx.org/certificates/8af44321f0784559aab4631f32345a96" target="_blank">edX Verified Certificate for Introduction to People Management</a>. edX.  Valid Certificate ID 8af44321f0784559aab4631f32345a96 . Sept 2016 - Present. </b>
+        <br>
+
+        <b><i class="fas fa-plus-circle"></i> <a id = "sucess-link"href="https://courses.edx.org/certificates/3381a6a7f8b64838ab2442bdc6e5b51d" target="_blank">edX Verified Certificate for Programming Basics</a>. edX.  Valid Certificate ID 3381a6a7f8b64838ab2442bdc6e5b51d . October 2016 - Present. </b>
+        <br>
+        <br>
+
+
+        <h4>Certificate of participation:</h4>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=1NHwCWGR8ODWa9fsqSs0SYHDa5VEawoha" target="_blank">Innovation Labs</a>. Workshops . Datasutram. Xelpmoc. Aug 2017. </b>
+        <br>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=17W0xKhaX5NKNT8wa7GhyAT7XixjRGxQB" target="_blank">Audrino basics and EV3 mindstorms</a>. Workshops .Futurite. Aug 2017. </b>
+        <br>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=1dZjHywvrvgtDcsQE9CCzoemHX7KjlJKd" target="_blank">Digibit</a>. eXabyte. 2018. </b>
+        <br>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=1S_hJKRJF2YwCOHaZifSJKQaqlHqz3TEi" target="_blank">Codeplay</a>. eXabyte. 2018. </b>
+        <br>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=1ZJyXS8RFDWJRyFM9OKpOIEPtlXl8dAfy" target="_blank">Database Manager</a>. eXabyte. 2018. </b>
+        <br>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=1ZlfnpClgrVnY9zV_CwCI4WmVYcSOVZu7" target="_blank">Cyber Trek</a>. eXabyte. 2018. </b>
+        <br>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=1G6acFUb1nusVIOF5A7fKzERGwOSH5VL3" target="_blank">Eureka</a>. Sigma . St Xavier's College. Kolkata. Feb 2018. </b>
+        <br>
+        
+        <b><i class="fa fa-users" aria-hidden="true"></i><a id = "sucess-link"href="https://drive.google.com/open?id=1z5258qfGJzrXgfUbGzIXMIzpSC9aQPIj" target="_blank">Cipher Cafe</a>. Sigma . St Xavier's College. Kolkata. 2017. </b>
+        <br>
+        
+        <b><i class="fa fa-users" aria-hidden="true"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRU1JwZGg1cU5ia1k/view" target="_blank">IMO</a>. October 2011 - Present. </b>
+        <br>
+
+        <b><i class="fa fa-users" aria-hidden="true"></i> <a id = "sucess-link"href="https://drive.google.com/file/d/0B51qRUWxSiZRQm80Z1ljdnNJYlU/view" target="_blank">NIIT</a>. October 2010 - Present. </b>
+        <br>
+        <br>
+
+
         </div>
-        <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="#">
-            <i class="fas fa-download mr-2"></i>
-            Download Now!
-          </a>
-        </div>
+        
+
       </div>
     </section>
+
+    
 
     <!-- Contact Section -->
     <section id="contact">
@@ -341,8 +604,8 @@
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
+            <p class="lead mb-0">98 Desh Bandhu Road (E)
+              <br>Kolkata - 700035</p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Around the Web</h4>
@@ -394,9 +657,9 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-              <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+            <h4 class="text-uppercase mb-4"> Contact</h4>
+            <p class="lead mb-0"> jimutbahanpal@yahoo.com
+              </p>
           </div>
         </div>
       </div>
@@ -404,7 +667,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
+        <small>Copyright &copy; Jimut Bahan Pal</small>
       </div>
     </div>
 
@@ -751,8 +1014,33 @@
         </div>
       </div>
     </div>
+
       <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-14">
+      <div class="portfolio-modal mfp-hide" id="portfolio-modal-14">
+        <div class="portfolio-modal-dialog bg-white">
+          <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+            <i class="fa fa-3x fa-times"></i>
+          </a>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2 class="text-secondary text-uppercase mb-0">Xavotsav site 2018</h2>
+                <hr class="star-dark mb-5">
+                <img class="img-fluid mb-5" src="img/portfolio/14_xavo.png" alt="">
+                <p class="mb-5">We developed the <a href="http://web.archive.org/web/20180205192617/http://xavotsav.sxccal.net:80/" target="_blank">Xavotsav website</a> for 2018 as a group project. We have used PHP, HTML, CSS, bootstrap, particle.js and JavaScript for building this website. <br>
+                  <a href = "https://github.com/Jimut123/Xavo/tree/master/ver%204.2" target="_blank"><i class="fab fa-github"></i></i></a>
+                </p>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                  <i class="fa fa-close"></i>
+                  Close Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-15">
         <div class="portfolio-modal-dialog bg-white">
           <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
             <i class="fa fa-3x fa-times"></i>
