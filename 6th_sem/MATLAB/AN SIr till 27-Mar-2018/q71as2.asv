@@ -1,0 +1,31 @@
+%q71aas2.m : Write a program to copy the content of two files  to one output file
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input File-1 Name=','s');
+file2=input('Enter Input File-2 Name=','s');
+file3=input('Enter Output File name=','s');
+fp1=fopen(file1,'r');
+fp3=fopen(file3,'w');
+fseek(fp1,0,1); % to move file pointer to end of file
+n1=ftell(fp1); % n1=position of last byte in input file
+fseek(fp1,0,-1); % To move file pointer to the beginning of file
+% To transfer data from file1 to file3
+while ~feof(fp1)
+    ch=fread(fp1,1);
+    fwrite(fp3,ch);
+end
+fclose(fp1);
+%fp1=fopen(file2,'r');
+%fseek(fp1,0,1); % To move file pointer to the end of file
+%n2=ftell(fp1); % n2=number bytes in 2nd input file
+%fseek(fp1,0,-1); % To move file pointer to the beginning of file
+fp1=fopen(file2,'r
+while ~feof(fp1)
+    ch=fread(fp1,1);
+    fwrite(fp3,ch);
+end
+n=n1+n2;
+fprintf('\nTotal number of bytes copied=%d\n',n);
+fclose('all');
+%End of program

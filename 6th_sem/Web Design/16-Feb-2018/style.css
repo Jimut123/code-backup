@@ -1,0 +1,7 @@
+	body{font-size:10pt;font-family:arial;color:blue;background-color:olive}
+	h1{font-size:26pt;font-family:Sans Serif;color:red;width=75%;background:skyblue;text-align:center;}
+	p{text-indent:0.5 in;margin-left:50px;margin-right:50px;}
+	a:link{color:blue;}
+	a:visited{color:red;}
+	a:hover{color:yellow;text-decoration:underline;}
+	#p1{color:white; text-align:center;}

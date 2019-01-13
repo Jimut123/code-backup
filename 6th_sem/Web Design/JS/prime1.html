@@ -1,0 +1,45 @@
+<html>
+<title>JAVASCRIPT CALCULATOR FOR PRIME NUMBERS</title>
+<head>
+<script type="text/javascript">
+function pricalc()
+{
+  var a=frm.txt.value;
+  if(a=="")
+    alert("Enter the value");
+  else
+  {
+   var num=parseInt(a);   
+   var i;
+   for(i=2;i<num;i++)
+   {
+    var n;
+    n=num%i;
+    if(n==0) 
+    { 
+      alert("Not a Prime Number"); 
+      break;
+    }
+  }
+  if(i==num)
+  {
+    alert("Prime Number");
+  }
+}
+}
+
+</script></head>
+<body>
+<center>
+<form name="frm"> 
+<label>Enter Any Number to check whether it is PRIME:<br/>
+<input type=text name="txt" size=12 style="border-color:blue;">
+<input type="button" name=cal value="check" onclick="pricalc()">
+<INPUT TYPE="reset" value="reset">
+</form>
+</center>
+</body>
+</html>
+
+
+

@@ -1,0 +1,10 @@
+%prog_1.m : Write a program to enter your name,email,phone number
+clc;
+close all;
+clear all;
+name=input('\nEnter Your name=','s');
+email=input('Enter Your e-mail=','s');
+phone=input('Enter Your Phone number=','s');
+
+
+disp(name);

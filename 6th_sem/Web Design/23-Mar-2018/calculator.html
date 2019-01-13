@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Simple Calculator</title>
+<script type="text/javascript">
+function calc(cal)
+{
+	for(i = 0; i < cal.opt.length; i++)
+	{
+		var calc_opt = cat.opt[i].value;
+	}
+}
+var fno1 = parseFloat(cal.no1.value);
+var fno2 = parseFloat(cal.no2.value);
+cal.radio_sel.value = calc_opt;
+if(calc_opt=='a')
+{
+	cal.opt_sel.value="addition";
+	cal.result.value=fno1 + fno2;
+}
+else
+{
+	if(calc_opt=='s')
+	{
+		cal.opt_sel.value="subtractor";
+		cal.result.value=fno1 - fno2;
+	}
+	else
+		if(calc_opt=='m')
+		{
+			cal.opt_sel.value="multiplication";
+			cal.result.value=fno1 * fno2;
+		}
+		else
+		{
+			cal.result.value = 0;
+		}
+	}
+}
+</script>
+</head bgcolor="skyblue">
+<body>
+<br/><br/><br/>
+<font color="red" face="tahoma" size="5">SIMPLE CALCULATOR</font>
+<br/><br/>
+<form name="myform">
+<table border="2">
+<tr>
+<td>1st Number: <input name="no1" size=4></td>
+<td>2nd Number: <input name="no2" size=4></td>
+</tr>
+<tr><td colspan='2'>Result: <input name='result' size=6></td></tr>
+<tr><td colspan='2'>Option Selected: <input name='opt_sel' size=10></td></tr>
+<tr><td>
+<input type="radio" name="opt" value="a">Add<br/>
+<input type="radio" name="opt" value="s">Subtract<br/>
+<input type="radio" name="opt" value="m">Multiply<br/>
+</td></tr>
+<tr><td colspan='2'>Radio Button Option Selected: <input name='radio_sel' size=10></td></tr>
+<tr>
+<td><input type="button" onClick="calc(this.form);" value="calculator">SUBMIT</td>
+</tr>
+</form>
+</table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+%To use switch case
+clc;
+clear all;
+close all;
+m=input('\nEnter total(0-100)=');
+switch m
+    case {40,
+
+
+method = 'Bilinear';
+ 
+        switch lower(method)
+          case {'linear','bilinear'}
+            disp('Method is linear')
+          case 'cubic'
+            disp('Method is cubic')
+          case 'nearest'
+            disp('Method is nearest')
+          otherwise
+            disp('Unknown method.')
+        end

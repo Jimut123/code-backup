@@ -1,0 +1,52 @@
+%function [x,n]=matrix_inversion(a,b,n) : Function to solve linear
+%simultaneous equations using matrix inversion method
+function [x,n]=matrix_inversion(a,b,n)
+%To construct initial augmented matrix
+aug=a; % copying matrix a(,) to matrix aug(,)
+%To add identity matix on RHS of aug(,)
+for i=1:n
+    for j=1:n
+        if i==j
+            aug(i,j+n)=1;
+        else
+            aug(i,j+n)=0;
+        end
+    end
+end
+n1=2*n;
+%To display intial augmented matrix
+for i=1:n
+    for j=1:n1
+    fprintf('%7.4f\t',aug(i,j));
+    end
+    fprintf('\n');
+end
+% To tansform augmented matrix
+for i=1:n
+    for j=1:n1
+        aug(i,j)=aug(i,j)/aug(i,i);
+    end
+    for j=1:n
+        if i ~=j
+            am=aug(j,i);
+            for k=1:n1
+                aug(j,k)=aug(j,k)-aug(i,k)*am;
+            end
+        end
+    end
+    fprintf('\nElements in Augmented Matrix-->\n');
+    for i1=1:n
+        for j1=1:n1
+            fprintf('%7.4f\t',aug(i1,j1));
+        end
+        fprintf('\n');
+    end
+    choice=input('\n
+    
+    
+    
+
+
+
+
+end

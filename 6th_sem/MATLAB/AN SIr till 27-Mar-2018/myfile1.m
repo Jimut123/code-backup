@@ -1,0 +1,1 @@
+this is a test sentence. This is end. We want to extract all words.

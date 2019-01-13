@@ -1,4 +1,4 @@
-% To print the series of fibonacci numbers upto number N
+% To print the series of fibonacci numbers upto number N which are prime
 clc;
 close all;
 clear all;
@@ -8,7 +8,9 @@ a=0;
 b=1;
 c=a+b;
 while c<=n
-  fprintf("%d ",c);
+  if isPrime(c) == 1
+    fprintf("%d ",c);  
+  endif
   a=b;
   b=c;
   c=a+b;

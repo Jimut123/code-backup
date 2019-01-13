@@ -1,0 +1,11 @@
+clc;
+close all;
+clear all;
+file1=input('Enter input file name=');
+file2=input('Enter output file name=');
+fp1=fopen(file1,'r');
+fp2=fopen(file2,'w');
+ch=fread(fp1);
+fwrite(fp2,ch);
+n=length(ch);
+fprintf(

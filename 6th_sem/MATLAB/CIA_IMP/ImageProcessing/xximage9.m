@@ -1,0 +1,31 @@
+%xximage9.m : Write a program to copy image along x-axis and along y-axis
+%m-times, n-times respectively. Display modified image
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Imagwe File name=','s');
+file2=input('Enter output Imagwe File name=','s');
+m=input('Enter how many times you want to copy along x-axis (m) =');
+n=input('Enter how many times you want to copy along y-axis (n) =');
+x=imread(file1);
+[r,c,d]=size(x);
+y=x; %copying x-pixels to y
+% To copy pixels along x-axis
+j=c+1;
+k=2*c;
+for i=1:m-1
+y(1:r,j:k,1:d)=y(1:r,1:c,1:d);
+j=j+c;
+k=k+c;
+end
+% To copy along y-axis
+j=r+1;
+k1=2*r;
+for i=1:n-1
+    y(j:k1,1:(k-c),1:d)=y(1:r,1:(k-c),1:d);
+    j=j+r;
+    k1=k1+r;
+end
+imshow(y);
+imwrite(y,file2);
+%End of program

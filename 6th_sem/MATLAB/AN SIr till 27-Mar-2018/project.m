@@ -1,0 +1,12 @@
+a=imread('fracture3.jpg');
+i=rgb2gray(a);
+w=wiener2(i,[5,5]);
+figure,imshow(w);
+level=graythresh(w);
+th=im2bw(w,level);
+%imshow(th);
+se=strel('square' , 3);
+er = imerode(th , se);
+imshow(er);
+di = imdilate(er , se);
+imshow(di);
