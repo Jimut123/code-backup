@@ -1,0 +1,414 @@
+{
+    "stores": [
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.4084675050441",
+                    "22.58758841897607"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ CCSL HANGOUTHANGOUT FOOD COURT, CITY CENTER, SALT LAKE,KOLKATA - 700064."
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.35182280000004",
+                    "22.5602948"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ LINDSAY3A HUMAYUN PALACE ( CITY MART ) KOLKATA -700087"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.4084675050441",
+                    "22.58825902657579"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ CCSL MAINSHOP NO-B-005, CITY CENTER, SALT LAKE, KOLKATA - 700064"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.40092580033036",
+                    "22.49405356437818"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ MEDICA, MEDICA SUPERSPECIALTY HOSPITAL , 127 MUKUND PUR . E.M BYPASS, KOLKATA - 700099"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.36164404907379",
+                    "22.50158536413945"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ SOUTH CITYSPENCER HYPER,SOUTH CITY MALL,375 PRINCE ANWAR SAHA ROAD,KOLKATA -700068."
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.43290160453853",
+                    "22.56836546691676"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ RDB,RDB BULEVERD, SEC-V, BLOCK-EP & GP, PLOT NO-01, KOLKATA -700091"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.41427720000002",
+                    "22.6136803"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ DCN MALL, DIAMOND CITY NORTH MALL, 68 JESSORE ROAD , SHOP NO FR 5&6 , 4TH FLOOR, PREMISES NO \u2013 1, KOLKATA \u2013 700 055"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.35925539999994",
+                    "22.5473972"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ BNWCC, BNWCC HOSPITAL ,2 RAWDAN STREET,KOLKATA-700017"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.35450400000002",
+                    "22.551385"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ PARK PLAZA, PARK-PLAZA, 71.PARK ST, KOLKATA-700016. NEAR PARK ST. POST OFFICE"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.407786",
+                    "22.587663"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ CCNT MAIN, SHOP NO-04, PRIME AREA, PLOT NO-11/D/5, ACTION AREA-2, DTL NO-11, NEW TOWN, RAJAR HAT, KOLKATA-700157"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.490015",
+                    "22.586007"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ BAMBOO GARDEN, ECOSPACE BUSINESS PARK, PLOT NO \u2013 II/F/11, ACTION AREA II, OPP \u2013 1B BUILDING, RAJARHAT NEW TOWN, KOLKATA \u2013 700 156"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.35438299999998",
+                    "22.5179551"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ PRIYA CINEMA, 95 RASH BEHARI AVENUE , GROUND FLOOR, PRIYA CINEMA, KOLKATA \u2013 700 029"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.3469288",
+                    "22.4774352"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ NETAJI METRO, GANGA PURI, KOLKATA, MONDAL PARA, PURBA PUTIARY, KOLKATA 700093"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.375409",
+                    "22.563641"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ SEALDAH BIGBAZAR, 1 BELIAGHATA ROAD, WARD NO -36, SEALDAH, KOLKATA \u2013 700 014"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.47182750000002",
+                    "22.7031656"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ STAR MALL, STAR MALL , 74/MALL/1 - JESSORE RD, OPPOSITE SISHIR KUNJA SBI, WARD NO : 5, KOLKATA 700129"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.44632990000002",
+                    "22.6520429"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ AIRPORT DEPARTURE, DOMESTIC AIRPORT DEPARTURE LOUNGE, FOOD COURT AREA, NSCBIA, KOLKATA 700052"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.40296880000005",
+                    "22.6063834"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ JAYA CINEMA, 225, LAKE TOWN, BLOCK - A, KOLKATA \u2013 700089"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.3544048",
+                    "22.5458256"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ SATURDAY CLUB, 7 WOOD STREET, NEAR PARK STREET, KOLKATA 700016"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.39457500000003",
+                    "26.7248411"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ CCSG MAIN, CITY CENTER \u2013 SILIGURI, UTTRAYAN TOWNSHIP, SHOP NO \u2013 E , 302 MATIGARA , SILIGURI \u2013 734010"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.3935702",
+                    "26.7256795"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ NEOTIA HEALTH CARE, CITY CENTER ( SILIGURI ) NEOTIA GETWELL , UTTRAYAN TOWNSHIP,MATIGARA , SILIGURI \u2013 734010"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.400958",
+                    "22.577859"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ MANISQUARE SPENCER, SPENCER HYPER, MANI SQR.MALL, 164/1 MANIKTALA MAIN ROAD, KOLKATA - 700054."
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.44268",
+                    "22.623706"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ NEW TOWN SPENCERS, NEW TOWN SQAURE , BESIDE NEW TOWN CITY CENTER 2, CHINAR PARK , NEW TOWN , RAJARHAT , KOLKATA \u2013 700157"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.34515379999993",
+                    "22.4944519"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ TOLLY METRO, MAHANAYAK UTTAM KUMAR METRO, ENTRANCE GATE , D. S. ROAD, KOLKATA \u2013 700 033"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.36084419999997",
+                    "22.4735315"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ SURYA SEN METRO, BANSDORNI POST OFFICE ROAD, NAKTALA, BANSDORNI, KOLKATA -700 070"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.353658",
+                    "22.624197"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ RANGOLI, 4/1 RED CROSS PLACE, SECOND FLOOR ( FOOD COURT ) , KOLKATA \u2013 700 001"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.49150499999996",
+                    "22.561926"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ ROSEDALE, ROSEDALE PLAZA, ACTION AREA III, NEW TOWN, KOLKATA 700156"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.459814",
+                    "22.579522"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ AXIS MALL, SPENCER'S RETAIL LTD, AXIS MALL, CF BLOCK, STREET NO 106, SUB: CENTRAL BUSINESS DISTRICT, ACTION AREA 1, NEW TOWN, KOLKATA 700156"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.47512959999995",
+                    "22.7126064"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ CITY MALL BARASAT, CITY MALL BARASAT, GROUND FLOOR - 1/3, JESSORE ROAD, DAKBUNGLOW MORE, BARASAT, 24 PGS NORTH"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.35914",
+                    "22.518443"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ FORTIS KH, 111 - A, RASHBIHARI AVENUE, KOLKATA -700029"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.3935702",
+                    "26.7256795"
+                ],
+                "type": "Point"
+            },
+            "store": "CITY CENTER - SILIGURI, UTTRAYAN TOWNSHIP, 302 MATIGARA , SILIGURI \u2013 734010"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.43412169999999",
+                    "26.7387364"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ COSMOS MALL, TEA JUNCTION ( COSMOS MALL ), SEVOKE ROAD, 2ND MILE, OPP \u2013 POWER HOUSE, SILIGURI \u2013 734001"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.40778769999997",
+                    "22.5876571"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ CCNT HANGOUT, HANGOUT FOOD COURT, PRIME AREA,PLOT NO-11/D/5,ACTION AREA-2, DTL NO-11,NEW TOWN,RAJAR HAT,KOLKATA-700157."
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.371275",
+                    "22.596221"
+                ],
+                "type": "Point"
+            },
+            "store": "HATIBAGAN, 138/2 BIDHAN SARANI , KOLKATA-700004"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.35192200000006",
+                    "22.560763"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ ESPLANADE METRO, JAWAHARLAL NEHRU ROAD, NEW MARKET AREA, DHARMATALA, TALTALA, KOLKATA 700087"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.34883379999997",
+                    "22.5164827"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ LAKE MALL, LAKE MALL, RASH BEHARI AVENUE, LAKE MALL FOOD-COURT , 4TH FLOOR, KOLKATA \u2013 700 029"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.32354759999998",
+                    "22.5631671"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ AVANI MALL, AVANI RIVERSIDE MALL, 32 JAGAT BANERJEE GHAT RD, HOWRAH"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.44632990000002",
+                    "22.6520429"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ AIRPORT ARRIVAL , DOMESTIC AIRPORT ARRIVAL LOUNGE, NSCBIA, KOLKATA 700052, NEAR GATE NO 3C"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.35317269999996",
+                    "22.5338215"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ SAMILTON, SAMILTON HOTEL GROUND FLOOR, 35 A, SARAT BOSE ROAD, OPP: LAXMI NARAYAN TEMPLE, KOLKATA 700020"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.3544048",
+                    "22.5458256"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ SATURDAY CLUB, 7 WOOD STREET, NEAR PARK STREET, KOLKATA 700016"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.354154",
+                    "22.53972"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ FORTIS DC, 2/7, Sarat Bose Road, West Bengal 700020 , 1ST Floor"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    "88.39457500000003",
+                    "26.7248411"
+                ],
+                "type": "Point"
+            },
+            "store": "TJ PASTRY SHOP CCSG, CITY CENTER ( SILIGURI ), UTTRAYAN TOWNSHIP, MATIGARA , SILIGURI \u2013 734010"
+        }
+    ]
+}

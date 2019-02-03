@@ -1,0 +1,199 @@
+1549095539169	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OAF2fvI40q9K"
+1549095541946	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549095541946	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:6535): GLib-GIO-WARNING **: 13:49:03.600: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549095546305	Marionette	INFO	Listening on port 34615
+1549095546907	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549095555109	Marionette	INFO	Stopped listening on port 34615
+1549095572779	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JDRi97BqBymd"
+1549095573188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549095573188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:6898): GLib-GIO-WARNING **: 13:49:33.444: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549095574548	Marionette	INFO	Listening on port 41625
+1549095574587	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549095594173	Marionette	INFO	Stopped listening on port 41625
+1549095851573	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bkiaD9lGQRDB"
+1549095852065	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549095852066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:7325): GLib-GIO-WARNING **: 13:54:12.370: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549095855738	Marionette	INFO	Listening on port 38465
+1549095855844	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549095862204	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+1549095862212	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+1549095862215	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+1549095862218	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+1549095893530	Marionette	INFO	Stopped listening on port 38465
+1549096416755	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.loDD7FqGaETB"
+1549096421972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549096421972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:7812): GLib-GIO-WARNING **: 14:03:44.380: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549096434481	Marionette	INFO	Listening on port 43067
+1549096434591	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549096481533	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.h1fFH2qWUmql"
+1549096492285	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549096492286	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:8187): GLib-GIO-WARNING **: 14:04:53.605: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1549096496277	Marionette	INFO	Stopped listening on port 43067
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSource::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSource::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSource::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSource::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_Teardown Route error: message sent to unknown actor ID
+
+1549096499772	Marionette	INFO	Listening on port 33209
+1549096502090	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549096520122	Marionette	INFO	Stopped listening on port 33209
+1549097631818	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hqxGlDw1st8C"
+1549097634232	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549097634232	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:9408): GLib-GIO-WARNING **: 14:23:54.904: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549097636150	Marionette	INFO	Listening on port 34647
+1549097636234	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549097653264	Marionette	INFO	Stopped listening on port 34647
+[Parent 9408, Gecko_IOThread] WARNING: pipe error (131): Connection reset by peer: file /build/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+1549097674486	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oq4boGu2RqhB"
+1549097674854	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549097674855	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:9757): GLib-GIO-WARNING **: 14:24:35.143: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549097677078	Marionette	INFO	Listening on port 44987
+1549097677113	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549097688371	Marionette	INFO	Stopped listening on port 44987
+1549174793776	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Lz7YwfdBDRPx"
+1549174795858	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549174795859	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:3234): GLib-GIO-WARNING **: 11:49:57.440: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549174801509	Marionette	INFO	Listening on port 44463
+1549174801969	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1549176479938	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Bi8HCRaWXb49"
+1549176482320	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549176482320	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:4404): GLib-GIO-WARNING **: 12:18:04.444: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549176500991	Marionette	INFO	Listening on port 33407
+1549176502423	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549176504538	Marionette	INFO	Stopped listening on port 44463
+1549176544487	Marionette	INFO	Stopped listening on port 33407
+1549176619049	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eEWcnsoquKCH"
+1549176620390	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549176620390	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:4799): GLib-GIO-WARNING **: 12:20:21.437: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549176623256	Marionette	INFO	Listening on port 33737
+1549176623306	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549176640585	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AnqugLLPrUEe"
+1549176641091	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549176641091	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:5113): GLib-GIO-WARNING **: 12:20:41.385: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549176642979	Marionette	INFO	Listening on port 45797
+1549176642993	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 5113, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+1549176654959	Marionette	INFO	Stopped listening on port 45797
+1549176669221	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eltxkD36PNeG"
+1549176670693	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549176670694	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:5445): GLib-GIO-WARNING **: 12:21:11.168: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549176673255	Marionette	INFO	Listening on port 42639
+1549176673353	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549176691023	Marionette	INFO	Stopped listening on port 33737
+[Parent 5445, Gecko_IOThread] WARNING: pipe error (83): Connection reset by peer: file /build/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+1549176694863	Marionette	INFO	Stopped listening on port 42639
+1549176746453	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EgqjEmnb0CCs"
+1549176747283	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549176747283	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:5778): GLib-GIO-WARNING **: 12:22:28.296: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549176751281	Marionette	INFO	Listening on port 43811
+1549176751396	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 5778, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+1549176772223	Marionette	INFO	Stopped listening on port 43811
+1549176945208	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mm6kN2ZFjwit"
+1549176945742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549176945742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:6301): GLib-GIO-WARNING **: 12:25:46.037: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549176947421	Marionette	INFO	Listening on port 33985
+1549176947557	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549176961301	Marionette	INFO	Stopped listening on port 33985
+1549177017802	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jGAstW9FIcme"
+1549177018727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549177018727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:6646): GLib-GIO-WARNING **: 12:26:59.359: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549177022441	Marionette	INFO	Listening on port 36809
+1549177022546	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549177062947	Marionette	INFO	Stopped listening on port 36809
+1549177082126	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fj9YfWyMV34Y"
+1549177082752	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549177082752	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:6999): GLib-GIO-WARNING **: 12:28:03.272: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549177084798	Marionette	INFO	Listening on port 44259
+1549177084857	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:7160): dconf-WARNING **: 12:28:08.922: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+JavaScript warning: resource://devtools/client/shared/demangle.js, line 0: Successfully compiled asm.js code (total compilation time 286ms; unable to cache asm.js in synchronous scripts; try loading asm.js via <script async> or createElement('script'))
+1549177250999	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.rDTjZXPcAh9I"
+1549177253759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549177253760	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:7425): GLib-GIO-WARNING **: 12:30:55.266: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549177264259	Marionette	INFO	Stopped listening on port 44259
+1549177264394	Marionette	INFO	Listening on port 42973
+1549177264719	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:7589): dconf-WARNING **: 12:31:09.436: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1549177288868	Marionette	INFO	Stopped listening on port 42973
+1549177586948	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.70NBDczpJ3fK"
+1549177588845	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1549177588848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:8004): GLib-GIO-WARNING **: 12:36:30.176: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1549177592532	Marionette	INFO	Listening on port 40143
+1549177592601	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549177607746	Marionette	INFO	Stopped listening on port 40143

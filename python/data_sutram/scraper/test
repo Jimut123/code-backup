@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta charset="utf-8">
+		<title>Zoom Earth - Explore satellite and aerial images of the Earth</title>
+		<meta name="description" content="Zoom into new NASA satellite and aerial images of the Earth, updated every day.">
+		<meta name="author" content="Neave Interactive">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+		<meta name="referrer" content="origin">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Zoom Earth">
+		<meta name="application-name" content="Zoom Earth">
+		<meta name="msapplication-tooltip" content="Zoom Earth">
+		<meta name="msapplication-starturl" content="https://zoom.earth/">
+		<meta name="msapplication-TileImage" content="https://zoom.earth/assets/images/icon-400.jpg">
+		<meta name="msapplication-TileColor" content="#000">
+		<meta name="msapplication-navbutton-color" content="#000">
+		<meta name="theme-color" content="#000">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://zoom.earth/">
+		<meta property="og:site_name" content="Zoom Earth">
+		<meta property="og:title" content="Zoom Earth - Explore satellite and aerial images of the Earth">
+		<meta property="og:description" content="Zoom into new NASA satellite and aerial images of the Earth, updated every day.">
+		<meta property="og:image" content="https://zoom.earth/assets/images/icon-400.jpg">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@neave">
+		<meta name="twitter:title" content="Zoom Earth">
+		<meta name="twitter:description" content="Zoom into new NASA satellite and aerial images of the Earth, updated every day.">
+		<meta name="twitter:image" content="https://zoom.earth/assets/images/icon-400.jpg">
+		<link rel="shortcut icon" href="https://zoom.earth/assets/images/icon-16.png">
+		<link rel="icon" sizes="16x16" href="https://zoom.earth/assets/images/icon-16.png">
+		<link rel="icon" sizes="32x32" href="https://zoom.earth/assets/images/icon-32.png">
+		<link rel="icon" sizes="100x100" href="https://zoom.earth/assets/images/icon-100.jpg">
+		<link rel="icon" sizes="200x200" href="https://zoom.earth/assets/images/icon-200.jpg">
+		<link rel="icon" sizes="400x400" href="https://zoom.earth/assets/images/icon-400.jpg">
+		<link rel="image_src" href="https://zoom.earth/assets/images/icon-400.jpg">
+		<link rel="apple-touch-icon-precomposed" href="https://zoom.earth/assets/images/icon-400.jpg">
+		<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+		<link rel="dns-prefetch" href="https://tpc.googlesyndication.com">
+		<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+		<link rel="dns-prefetch" href="https://stats.g.doubleclick.net">
+		<link rel="dns-prefetch" href="https://www.google-analytics.com">
+		<link rel="dns-prefetch" href="https://map1a.vis.earthdata.nasa.gov">
+		<link rel="dns-prefetch" href="https://map1b.vis.earthdata.nasa.gov">
+		<link rel="dns-prefetch" href="https://map1c.vis.earthdata.nasa.gov">
+		<link rel="dns-prefetch" href="https://epic.gsfc.nasa.gov">
+		<link rel="dns-prefetch" href="https://ecn.t0.tiles.virtualearth.net">
+		<link rel="dns-prefetch" href="https://ecn.t1.tiles.virtualearth.net">
+		<link rel="dns-prefetch" href="https://ecn.t2.tiles.virtualearth.net">
+		<link rel="dns-prefetch" href="https://ecn.t3.tiles.virtualearth.net">
+		<style>@keyframes neave-anim{to{background-position:0 400%}}@keyframes fade-anim{0%{opacity:0}40%{opacity:0}50%{opacity:1}60%{opacity:0}100%{opacity:0}}@keyframes fade-mid-anim{0%{opacity:.5}40%{opacity:.5}50%{opacity:1}60%{opacity:.5}100%{opacity:.5}}.neave{position:absolute;display:block;left:15px;left:calc(15px + env(safe-area-inset-left));top:15px;top:calc(15px + env(safe-area-inset-top));width:44px;height:44px;margin:0;padding:0;z-index:100}.neave .title{display:none}.neave svg{position:absolute;left:0;top:0;z-index:100;border-radius:50%;border:2px solid #fff;margin:0;padding:0;box-sizing:content-box;pointer-events:none}.mobile .neave svg{animation:fade-mid-anim 5s infinite ease-in-out}.neave .disc{position:absolute;display:block;width:44px;height:44px;background-color:#9fc;background-image:linear-gradient(to bottom,#9fc 0%,#9cf 25%,#f9c 50%,#fc9 75%,#9fc 100%);background-size:100% 400%;border-radius:50%;pointer-events:none;animation:neave-anim 8s infinite linear;opacity:0;will-change:opacity;transition:opacity .2s ease-out}.mobile .neave .disc{animation:neave-anim 8s infinite linear,fade-anim 5s infinite ease-in-out}body:not(.mobile) .neave:hover .disc{opacity:1}.neave:active{margin-top:1px}</style>
+		<link rel="stylesheet" href="/assets/css/app.13.css">
+	</head>
+	<body>
+		<main>
+			<div class="loader"></div>
+			<div class="error-message">Unable to load globes. Please try again.</div>
+			<div id="map" tabindex="0" data-ver="6856"></div> <!-- data-date="2017-01-01" -->
+			<div id="globe">
+				<div class="image low"></div>
+				<div class="image high"></div>
+<svg xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<filter id="sharpen">
+			<feConvolveMatrix order="3 3" bias="0.01" divisor="4.2" kernelMatrix="0 -1 0 -1 7.9 -1 0 -1 0"></feConvolveMatrix>
+		</filter>
+		<filter id="gamma">
+			<feComponentTransfer>
+				<feFuncR type="gamma" amplitude="1.21" exponent="0.75" offset="0"></feFuncR>
+				<feFuncG type="gamma" amplitude="1.2" exponent="0.75" offset="0"></feFuncG>
+				<feFuncB type="gamma" amplitude="1.15" exponent="0.75" offset="0"></feFuncB>
+			</feComponentTransfer>
+		</filter>
+	</defs>
+</svg>
+			</div>
+			<div class="main-crosshairs"></div>
+			<div class="main-arrow left"></div>
+			<div class="main-arrow right"></div>
+			<div class="attribution"></div>
+			<div class="controls overlay">
+				<nav>
+					<div class="globe"><span class="icon"></span><span class="text-globe">Globe view</span><span class="text-map">Map view</span></div>
+					<div class="crosshairs"><span class="icon"></span>Crosshairs</div>
+					<div class="locate"><span class="icon"></span><span class="text1">Locate me</span><span class="text2">Locating&hellip;</span></div>
+					<div class="labels off"><span class="icon"></span>Map labels</div>
+				</nav>
+				<div class="location">
+					<div class="text">Latitude:</div>
+					<div class="lat"></div>
+					<div class="text">Longitude:</div>
+					<div class="lon"></div>
+				</div>
+				<form class="search">
+					<input name="q" type="text" placeholder="Search&hellip;" maxlength="150"><input type="submit" value="">
+				</form>
+			</div>
+			<div class="date overlay">
+				<nav>
+					<div class="year"><span class="up"></span><div>···</div><span class="down"></span></div>
+					<div class="month"><span class="up"></span><div>···</div><span class="down"></span></div>
+					<div class="day"><span class="up"></span><div>···</div><span class="down"></span></div>
+					<div class="time"><span class="up"></span><div>···</div><span class="down"></span></div>
+				</nav>
+			</div>
+			<div class="poi overlay">
+				<h3>Dates of Interest</h3>
+				<p><a data-id="recent" href="#0,0,globe">Most recent date</a></p>
+				<p><a data-id="eclipseAug2017" href="#8.670843,-100.120685,globe,2017-08-21">Solar eclipse Aug 2017</a></p>
+				<p><a data-id="eclipseFeb2017" href="#-14.67152,-46.228036,globe,2017-02-26">Solar eclipse Feb 2017</a></p>
+				<p><a data-id="transitJul2016" href="#17.879967,114.240867,globe,2016-07-05">Lunar transit Jul 2016</a></p>
+				<p><a data-id="eclipseMar2016" href="#-9.66632,149.008674,globe,2016-03-09">Solar eclipse Mar 2016</a></p>
+				<p><a data-id="transitJul2015" href="#15.1,-125.8,globe,2015-07-16">Lunar transit Jul 2015</a></p>
+			</div>
+		</main>
+		<header>
+		<a href="https://neave.com/" target="_top" class="neave">
+			<span class="disc"></span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+				<path fill="#fff" d="M361 360.95L191 290.5v57.1l-40 16.6V151.05l170 70.3v-57.2l1-.4.1-.05 38.9-15.9"></path>
+			</svg>
+			<span class="title">Neave Interactive</span>
+		</a>
+			<h1 class="notranslate"><a href="https://zoom.earth/" target="_top"><strong>Zoom</strong> Earth</a></h1>
+			<p><a href="https://zoom.earth/" target="_top">New satellite images every day</a></p>
+		</header>
+        <p class="about-icon">?</p>
+        <div class="about overlay">
+			<h2><strong>Zoom</strong> Earth &mdash; FAQs</h2>
+			<p class="hidden">Zoom Earth shows new NASA satellite images every day. Explore satellite and aerial imagery of the Earth in a simple, zoomable interface. Zoom into near-live satellite images from NASA and Bing Maps. Previously known as <em>Flash Earth</em>.</p>
+			<h3>Where does the imagery come from?</h3>
+			<p><a href="https://www.bing.com/maps" target="_blank">Bing Maps</a> provides the high resolution imagery. NASA satellites <a href="https://jointmission.gsfc.nasa.gov/viirs.html" target="_blank">VIIRS</a>, <a href="https://aqua.nasa.gov/" target="_blank">Aqua</a> and <a href="https://terra.nasa.gov/" target="_blank">Terra</a> provide the daily imagery. Globe images are captured hourly by <a href="http://www.nesdis.noaa.gov/DSCOVR/" target="_blank">DSCOVR</a>.</p>
+			<h3>When was the Bing Maps imagery taken?</h3>
+			<p>Dates for Bings Maps imagery can’t be determined. Only NASA imagery is updated daily.</p>
+			<h3>Why are some areas black/missing?</h3>
+			<p>This is usually due to a delay in processing. However some areas such as the north pole during December and the south pole during June will be appear black due to the tilt of the earth and the <a href="https://en.wikipedia.org/wiki/Arctic_Circle" target="_blank">Arctic Circle</a>. Aqua/Terra imagery has some missing “stripes” around the equator due to the way those satellites orbit the Earth.</p>
+			<h3>Can the imagery be licensed?</h3>
+			<p>Bing Maps has an <a href="https://www.bing.com/api/maps/sdkrelease/mapcontrol/isdk" rel="nofollow" target="_blank">SDK</a>. NASA imagery is <a href="https://earthobservatory.nasa.gov/image-use-policy" target="_blank">free to use</a>.</p>
+		</div>
+		<div class="ad">
+<ins class="adsbygoogle" data-ad-client="ca-pub-9316345695176880" data-ad-slot="2679725695" data-page-url="https://zoom.earth/"></ins>
+<script> (adsbygoogle=window.adsbygoogle||[]).push({}); </script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		</div>
+		<script src="/assets/js/app.14.js"></script>
+	</body>
+</html>
