@@ -33,7 +33,9 @@ Contains programs of every semester!
 * [Python GUI](https://github.com/Jimut123/prog_backups/tree/master/python_gui_tkinter) :orange_book:
 * [Q-Basic (Amlyan's Backup)](https://github.com/Jimut123/prog_backups/tree/master/q_basic_bckup/AMLYAN) :beginner:
 * [Visual Basic (Nightmares)](https://github.com/Jimut123/prog_backups/tree/master/visual_basic/JIM%20VB) :orange_book:
- 
+* [HTML-CSS-JS-WEB](https://github.com/Jimut123/prog_backups/tree/master/6th_sem/Web%20Design)
+* [MATLAB-COMPUTATIONS](https://github.com/Jimut123/prog_backups/tree/master/6th_sem/MATLAB)
+* [Enigma-Sigma-2k19{Coding-Event}](https://github.com/Jimut123/prog_backups/tree/master/enigma)
 
 2 Maintainer & Owner (most contributions made!) : 
 ---
