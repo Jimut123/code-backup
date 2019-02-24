@@ -1,0 +1,21 @@
+function []=findFrequency(a,n)
+count=0;
+store=0;
+i=1;
+while(i<=n)
+store=a(i);
+count=1;
+    for j=i+1:n
+        if(a(j)==store)
+            count=count+1;
+        else
+            break;
+        end
+    end
+fprintf('\nCount of %f is %f', store, count);
+i=j;
+
+end
+
+        
+        

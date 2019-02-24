@@ -1,0 +1,8 @@
+% xximage3.m : Copy an image along x-axis (nx-times), along y-axis(ny-times)
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Image File Name','s');
+file2=input('\nEnter Output Image File Name','s');
+nx=

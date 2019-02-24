@@ -1,0 +1,11 @@
+%sum=1+(1+2)+(1+2+3)+(1+2+3+..+n) using a function
+function s=sum1(n)
+s=0;
+reduce=0;
+    while n~=1 
+        
+    end
+      
+    
+    
+end  

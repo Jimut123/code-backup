@@ -1,0 +1,16 @@
+%Main function for array calculations
+clc;
+close all;
+clear all;
+n=input('Enter n: ');
+
+for i=1:n
+    a(i)=input('Enter the elements: ');
+end
+total=sumArray(a,n);
+fprintf('Total sum is: %f', total);
+largestValue=largestForArray(a,n);
+fprintf('Largest value is: %f', largestValue);
+fprintf('Average is: %f', total/n);
+fprintf('Standard deviation is: %f' , standardDev(a,n));
+

@@ -1,0 +1,36 @@
+%User-defined sine function
+function s=sine(x)
+
+s=0;
+xr=x*pi/180;
+count=1;
+prev=0;
+p=1;
+num=1; 
+den=1;
+error=0;
+
+while(1)
+    for i=1:p
+    num=num*xr;
+    den=den*i;
+    end
+    if mod(count,2) == 0 
+        s=s-num/den;
+    else
+        s=s+num/den;
+    end
+    error=s-prev;
+    if(error<0) 
+        error=-error;
+    end
+    if(error<1e-06) 
+        break;
+    end
+    num=1; den=1; p=p+2;
+    count=count+1; prev=s;
+    s=0; 
+end
+end
+
+

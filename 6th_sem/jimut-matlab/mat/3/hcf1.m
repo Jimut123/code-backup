@@ -1,0 +1,20 @@
+%Input 2 +ve integers and find HCF and LCM
+%Use function h=hcf1(a,b)
+%Use function lc=lcm1(a,b)
+
+function s=hcf1(a,b)
+num=a;
+nm=b;
+
+    while(1)
+        div = mod(num,nm);
+        if div==0
+            break
+        end
+        num=nm;
+        nm=div;
+    end
+    s=nm;
+    
+    
+end  
