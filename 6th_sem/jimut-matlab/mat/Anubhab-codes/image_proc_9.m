@@ -1,5 +1,4 @@
-%image_proc_9.m : Write a program to convert any RGB to gray scale image
-%Fix gray scale image on RHS of RGB image
+% to convert any image to its corresponding bw image
 clc;
 clear all;
 close all;
