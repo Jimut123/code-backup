@@ -1,0 +1,860 @@
+%xxprog1.m : Input 3 numbers and calculate and print largest value
+
+clc;
+close all;
+clear all;
+a=input('\nEnter 1st number = ');
+b=input('\nEnter 2nd number = ');
+c=input('\nEnter 3rd number = ');
+%To get largest value
+big=a;
+if b>big
+    big=b;
+end
+if c>big
+    big=c;
+end
+fprintf('a = %d b = %d c = %d largest value = %d\n',a,b,c,big);
+%end of program
+-------------------------------------
+%function s=sum1(n) : Function to calculate s=(1)+(1+2)+...+(1+2+...+n)
+function s=sum1(n)
+s=0;
+s1=0;
+  for i=1:n
+    s1=s1+i;
+    s=s+s1;
+  end
+end
+--------------------------------------
+%function s=sum2(n) : Function to calculate s=1*1+2*2+....+n*n
+function s=sum2(n)
+s=0;
+  for i=1:n
+    s=s+i*i;
+  end
+end
+-------------------------------------
+%function s=sum3(n) : Function to calculate s=n+(n - 2)+...upto 1 or 2
+%(depending on odd or even)
+
+function s=sum3(n)
+s=0;
+  while n>=0
+    s=s+n;
+    n=n-2;
+  end
+end
+-------------------------------------
+%function s=sum4(n) : Function to calculate s=1*2*3*4*...*n
+function s=sum4(n)
+s=1;
+  for i=1:n
+    s=s*i;
+  end
+end
+-------------------------------------
+%function s=sum5(n) : Function to calculate s=1-2+3-4... to n
+function s=sum5(n)
+s=0;
+f=1;
+  for i=1:n
+    s=s+f*i;
+    f=f*-1;
+  end
+end
+-------------------------------------
+%q11as1.m : Write main function to calculate s=(1)+(1+2)+...+(1+2+...+n)
+%s=1*1+2*2+....+n*n
+%s=n+(n - 2)+...upto 1 or 2 (denpending on odd or even)
+%s=1*2*3*4*...*n
+%s=1-2+3-4... to n
+
+clc;
+close all;
+clear all;
+n=input('\nEnter n(1-20) = ');
+s=sum1(n);
+fprintf('\nn = %d Sum = %d\n',n,s);
+s=sum2(n);
+fprintf('\nn = %d Sum = %d\n',n,s);
+s=sum3(n);
+fprintf('\nn = %d Sum = %d\n',n,s);
+s=sum4(n);
+fprintf('\nn = %d Sum = %d\n',n,s);
+s=sum5(n);
+fprintf('\nn = %d Sum = %d\n',n,s);
+%end
+-------------------------------------
+%function s=sum11(a,n):Function to calculate s=a(1)+a(2)+....a(n)
+function s=sum11(a,n)
+s=0;
+for i=1:n
+    s=s+a(i);
+end
+end
+--------------------------------------
+%function big=large(a,n):Function to calculate largest value
+function big=large(a,n)
+big=a(1);
+for i=2:n
+    if a(i)>big
+        big=a(i);
+    end
+end
+end
+------------------------------------
+%function avg=average(a,n):Function to calculate average of all elements
+%in 1-dim array a()
+function avg=average(a,n)
+avg=sum11(a,n)/n;
+end
+------------------------------------
+%function sd=standard_deviation(a,n):Function to calculate standard
+%deviation of 'n' elements in array a()
+function sd=standard_deviation(a,n)
+sd=0;
+avg=average(a,n);
+for i=1:n
+    sd=sd+(a(i)-avg)^2;
+end
+sd=sqrt(sd/n);
+end
+-----------------------------------
+%q6as1.m : Write a program to input size of 1-dim array say 'n'. Input
+%n-elements and store in 1-dim array a(). Calculate and print the
+%following:  (i) s=(1)+a(2)+....+a(n), (ii)avg=s/n,(iii) largest value and
+%(iv) standard deivation. Use your own functions.
+
+clc;
+close all;
+clear all;
+n=input('\nEnter size of your list(1-20) = ');
+fprintf('\nEnter %d elements one by one--->\n',n);
+for i=1:n
+    fprintf('a(%d) = ',i);
+    a(i)=input('');
+end
+s=sum11(a,n);
+big=large(a,n);
+avg=average(a,n);
+sd=standard_deviation(a,n);
+fprintf('Sum = %d Largest Value = %d Average = %5.2f Standard Dev = %10.6f\n',s,big,avg,sd);
+%end of program
+-----------------------------------
+%function h=hcf1(a,b) : Function to calculate hcf of 2 numbers
+function h=hcf1(a,b)
+r=mod(a,b);
+while r ~= 0
+    a=b;
+    b=r;
+    r=mod(a,b);
+end
+h=b;
+end
+----------------------------------
+%function lc=lcm1(a,b) : Function to calculate lcm of 2 numbers
+function lc=lcm1(a,b)
+h=hcf1(a,b);
+lc=a*b/h;
+end
+----------------------------------
+%q4as1.m : Write main program to calculate hcf,lcm of 2 numbers
+
+clc;
+close all;
+clear all;
+a=input('\nEnter 1st number = ');
+b=input('\nEnter 2nd number = ');
+h=hcf1(a,b);
+l=lcm1(a,b);
+fprintf('\na = %d b = %d hcf = %d lcm = %d\n',a,b,h,l);
+%end of program
+---------------------------------
+%function ce=expx(x):Function to calculate expx(x) using Taylor series
+%expansion
+function ce=expx(x)
+format long
+ce=1;
+pe=0;
+eps=abs(ce-pe);
+n=1;
+fact=1;
+px=1;
+while eps>1e-06
+    pe=ce;
+    fact=fact*n;
+    px=px*x;
+    ce=ce+px/fact;
+    eps=abs(ce-pe);
+    n=n+1;
+end
+end
+-------------------------------
+%q51as1.m:Write a program to obtain exp(x) from x=0 to 2 in step of .1.
+%Use your own function to calculate exp(x)
+
+clc;
+clear all;
+close all;
+for x=0:.1:2
+    y=expx(x);
+    fprintf('exp(%5.1f)=%16.12f\n',x,y);
+end
+%end of program
+------------------------------
+%function csin=sine(x) : Function to calculate sin(x)
+function csin=sine(x)
+xrad = x*pi/180;
+csin=xrad;
+psin=1;
+eps=abs(csin-psin);
+n=3;
+sf=-1;
+  while eps>1e-16
+    psin=csin;
+    fact=1;
+    for i=1:n
+        fact = fact*i;
+    end
+    csin = csin+sf*xrad^n/fact;
+    eps=abs(csin-psin);
+    n=n+2;
+    sf=-sf;
+  end
+end
+-----------------------------
+%function ccos=cosine(x) : Function to calculate cos(x)
+function ccos=cosine(x)
+xrad = x*pi/180;
+ccos=1;
+pcos=0;
+eps=abs(ccos-pcos);
+n=2;
+sf=-1;
+  while eps>1e-16
+    pcos=ccos;
+    fact=1;
+    for i=1:n
+        fact = fact*i;
+    end
+    ccos = ccos+sf*xrad^n/fact;
+    eps=abs(ccos-pcos);
+    n=n+2;
+    sf=-sf;
+  end
+end
+----------------------------
+%function function to calculate tan(x)
+function y=tangent(x)
+y=sine(x)/cosine(x);
+end
+---------------------------
+%Calculate sin(x), cos(x) and tan(x) where x=0 to 360 in step of 5.
+
+clc;
+clear all;
+close all;
+for i=0:5:360
+    y1=sine(i);
+    y2=cosine(i);
+    y3 = tangent(i);
+    fprintf('sin(%d)=%5.1f \t\t cos(%d)=%5.1f \t\t tan(%d)=%12.8f \n',i, y1, i, y2, i, y3);
+end
+---------------------------
+%function cp=pie():Function to calculate value of pi using Taylor series
+%expansion
+function cp=pie()
+cp=1;
+pp=0;
+eps=abs(cp-pp);
+n=3;
+sf=-1;
+p3=1;
+while eps>1e-06
+    pp=cp;
+    p3=p3*3;
+    cp=cp+sf/(p3*n);
+    eps=abs(cp-pp);
+    n=n+2;
+    sf=-sf;
+end
+cp=sqrt(3)*2*cp;
+end
+--------------------------
+%function [f]=fib(n):Function to calculate n-th member of a fibonacci
+%series. Use recursive call
+function [f]=fib(n)
+if n<=2
+    f=1;
+    return;
+else
+    f=fib(n-1)+fib(n-2);
+end
+end
+--------------------------
+%function s=sum_recursive(n):Function to calculate sum of 'n' elements
+%using recursive call
+function s=sum_recursive(n);
+if n==1
+    s=1;
+else
+    s=n+sum_recursive(n-1);
+end
+end
+--------------------------
+%function n=hanoi(nd,p1,p2,p3):Function to implement Towers of hanoi
+%problem
+function hanoi(nd,p1,p2,p3)
+global n;
+if nd == 1
+    n=n+1;
+    fprintf('Move Disk-%d from Peg-%d to Peg-%d\n',nd,p1,p2);
+    return;
+end
+hanoi(nd-1,p1,p3,p2);
+n=n+1;
+fprintf('Move Disk-%d from Peg-%d to Peg-%d\n',nd,p1,p2);
+hanoi(nd-1,p3,p2,p1);
+end
+-------------------------
+%q44as2.m : Write a program to implement towers of hanoi problem
+
+clc;
+close all;
+clear all;
+global n;
+nd=input('\nEnter number of disks to be moved=');
+n=0;
+hanoi(nd,1,2,3);
+fprintf('\nTotal number of operations perormed=%d\n',n);
+%end of Towers of Hanoi program
+-------------------------
+%function [x,ix,n]=function bubble_sort(a,id,n):Function to sort data using
+%bubble sort method
+function [x,ix,n]=bubble_sort(a,id,n)
+for i=1:n
+    x(i)=a(i);
+    ix(i)=id(i);
+end
+flag=0;
+pass=0;
+m=n;
+while flag==0
+    flag=1;
+    pass=pass+1;
+    m=m-1;
+    for i=1:m
+        if a(i)>a(i+1)
+            t=a(i);
+            a(i)=a(i+1);
+            a(i+1)=t;
+            t=id(i);
+            id(i)=id(i+1);
+            id(i+1)=t;
+            flag=0;
+        end
+        fprintf('\nPass=%d step=%d flag=%d\n',pass,i,flag);
+        display_output(a,id,n);
+    end
+end
+for i=1:n
+    x(i)=a(i);
+    ix(i)=id(i);
+end
+end
+----------------------------
+%function display_output(a,id,n):Function to display output
+function display_output(a,id,n)
+fprintf('\nNumber\tIndex\n');
+for i=1:n
+    fprintf('%d\t\t%d\n',a(i),id(i));
+end
+ch=input('\nPress Enter key to continue--->','s');
+clc;
+end
+----------------------------
+%q11as2.m : Write main program to implement bubble sort routine
+
+clc;
+close all;
+clear all;
+n=input('\nEnter size of your list(1-20)=');
+fprintf('\nEnter %d elements one by one--->\n',n);
+for i=1:n
+    fprintf('a(%d)=',i);
+    a(i)=input('');
+    id(i)=i;
+end
+fprintf('\nUnsorted List\n');
+display_output(a,id,n);
+[a,id,n]=bubble_sort(a,id,n);
+fprintf('\nSorted List\n');
+display_output(a,id,n);
+%end of main program
+-------------------------------
+%function flag = is_prime(n): Function to test whether n is prime or not a
+%prime. Th function will return 1 if n is a prime otherwise it will return
+%0
+function flag = is_prime(n)
+n1 = fix(n/2);
+flag = 1;
+for i = 2:n1
+    r = mod(n, i);
+    if r == 0
+        flag  = 0;
+    end
+end
+------------------------------
+%q21as1.m: Write a program to 'n'. Display all prime numbers <= n. Use your
+%own function is_prime(n)
+
+clc;
+close all;
+clear all;
+n = input('\nEnter any positive integer(2-1000): ');
+count  = 0;
+fprintf('\nPrime Numbers <= %d --->\n\n', n);
+for i = 2:n
+    flag=is_prime(i);
+    if flag == 1
+        count = count + 1;
+        fprintf('%d\t', i);
+    end
+end
+fprintf('Total Number of Primes <= %d: %d\n', n, count);
+%end of main module
+-----------------------------
+%q9as1.m: Write a progrma to input 2 2-dimensional matrices and then
+%calculate and print (i)Sum (ii) difference and (iii)product of 2 matrices
+
+clc;
+close all;
+clear all;
+n=input('\nEnter Size of your square matrix1(1-10): ');
+fprintf('\nEnter elements of Matrix1a a(,) --->\n');
+for i = 1:n
+    for j = 1:n
+        fprintf('a(%d,%d) = ',i,j);
+        a(i,j)=input('');
+    end
+end
+fprintf('\nEnter elements of Matrix1a b(,) --->\n');
+for i = 1:n
+    for j = 1:n
+        fprintf('b(%d,%d) = ',i,j);
+        b(i,j)=input('');
+    end
+end
+sum=a+b;
+diff=a-b;
+prod=a*b;
+fprintf('Elements of Sum of two matrices--->\n');
+for i = 1:n
+    for j = 1:n
+        fprintf('%d\t', sum(i,j));
+    end
+    fprintf('\n');
+end
+fprintf('Elements of Diff of two matrices--->\n');
+for i = 1:n
+    for j = 1:n
+        fprintf('%d\t', diff(i,j));
+    end
+    fprintf('\n');
+end
+fprintf('Elements of Product of two matrices--->\n');
+for i = 1:n
+    for j = 1:n
+        fprintf('%d\t', prod(i,j));
+    end
+    fprintf('\n');
+end
+----------------------------
+%function binary_search(a,id,n,num) : Function to search a number
+%using binary search method
+function binary_search(a,id,n,num)
+count=0;
+[a,id,n]=bubble(a,id,n);
+fprintf('Number\tIndex\n');
+for i=1:n
+    fprintf('%d\t\t%d\n',a(i),id(i));
+end
+low=1;
+high=n;
+count=0;
+while low<=high
+    mid=fix((low+high)/2);
+    if num<a(mid)
+        high=mid-1;
+    elseif num>a(mid)
+        low=mid+1;
+    else
+        fprintf('%d found at position=%d\n',num,id(mid));
+        count=1;
+        break;
+    end
+end
+
+if count ==0
+ fprintf('%d not found in your list\n',num);
+end
+end
+---------------------------
+%q32as2.m : Write a program to implement binary search method to search a
+%number in a list
+
+clc;
+close all;
+clear all;
+n=input('\nEnter size of your list(1-20)=');
+fprintf('\nEnter elements and it index of your list-->\n');
+for i=1:n
+    fprintf('a(%d)=',i);
+    a(i)=input('');
+    id(i)=i;
+end
+ch='y';
+while ch=='y' | ch=='Y'
+    fprintf('\nEnter number to be searched=');
+    num=input('');
+    binary_search(a,id,n,num);
+    ch=input('\nDo you want to search any more number(Y/N?) :','s');
+end
+%end of main program
+--------------------------
+%function linear_search(a,id,n,num) : Function to search a number
+%using linear search method
+function linear_search(a,id,n,num)
+count=0;
+for i=1:n
+    if num==a(i)
+        fprintf('%d found at position=%d\n',a(i),id(i));
+        count=count+1;
+    end
+end
+if count ~=0
+    fprintf('\nNumber of times %d found in your list=%d\n',num,count);
+else
+    fprintf('%d not found in your list\n',num);
+end
+end
+-------------------------
+%q31as2.m : Write a program to implement linear search method to search a
+%number in a list
+
+clc;
+close all;
+clear all;
+n=input('\nEnter size of your list(1-20)=');
+fprintf('\nEnter elements and it index of your list-->\n');
+for i=1:n
+    fprintf('a(%d)=',i);
+    a(i)=input('');
+    id(i)=i;
+end
+ch='y';
+while ch=='y' | ch=='Y'
+    fprintf('\nEnter number to be searched=');
+    num=input('');
+    linear_search(a,id,n,num);
+    ch=input('\nDo you want to search any more number(Y/N?) :','s');
+end
+%end of main program
+--------------------------
+%q71as2.m : Write a program in Matlab to copy content of 1 file to another
+%file
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input File Name=','s');
+file2=input('Enter Output File Name=','s');
+fp1=fopen(file1,'r');
+fp2=fopen(file2,'w');
+ch=fread(fp1);% Reading entire file in matrix ch
+fwrite(fp2,ch); % Writing entire file in output file
+[r,c]=size(ch); % n= size of input matrix
+fprintf('\nSize of input file=%d\n',r);
+%End of program
+-------------------------
+%q71aas2.m : Write a program in Matlab to copy content of 1 file to another
+%file. Copy 1 byte at a time
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input File Name=','s');
+file2=input('Enter Output File Name=','s');
+fp1=fopen(file1,'r');
+fp2=fopen(file2,'w');
+fseek(fp1,0,1); % Moving file identifier to the last byte
+n=ftell(fp1); % n=size of input file
+fseek(fp1,0,-1); % moving file identifier to beginning of file
+while ~feof(fp1)
+    ch=fread(fp1,1);
+    fwrite(fp2,ch);
+end
+fprintf('\nFile Copy is over\n');
+fprintf('\nSize of input file=%d Bytes\n',n);
+fclose('all'); % closing all files
+%End of program
+-------------------------
+%q72as2.m : Write a program to split 1 file to 2 output files.
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input File name=','s');
+file2=input('Enter Output  File-1 name=','s');
+file3=input('Enter Output  File-2 name=','s');
+fp1=fopen(file1,'r');
+fp2=fopen(file2,'w');
+fp3=fopen(file3,'w');
+fseek(fp1,0,1); % Moving file pointer to end of file
+n=ftell(fp1); % n= number of bytes in input file
+n1=fix(n/2);
+fseek(fp1,0,-1); % moving file pointer to beginning of input file
+% To split input file into 2 output files
+for i=1:n
+    ch=fread(fp1,1);
+    if i<=n1
+        fwrite(fp2,ch);
+    else
+        fwrite(fp3,ch);
+    end
+end
+fclose('all');
+fprintf('\nFile Split is over\n');
+fprintf('\nSize of <%s>=%d Bytes\n',file2,n1);
+fprintf('Size of <%s>=%d Bytes\n',file3,(n-n1));
+fprintf('Size of <%s>=%d Bytes\n',file1,n);
+%End of program
+-----------------------------------
+%q91as2.m : Write a program in MATLAB to convert all small letters to
+%capital letters in any file
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter File Name=','s');
+fp1=fopen(file1,'r+');
+fseek(fp1,0,1); % moving File pointer to end of file
+n=ftell(fp1); % n=size of of input file
+fseek(fp1,0,-1); % Moving file pointer to beginning of file
+nc=0; % nc=number of bytes modified
+for i=1:n
+    ch=fread(fp1,1);
+    if ch>=97 && ch<=122
+       nc=nc+1;
+       fseek(fp1,-1,0);
+       ch=ch-32;
+       fwrite(fp1,ch);
+    end
+end
+fclose('all');
+fprintf('\nSize of <%s>=%d Bytes and number of Bytes modified=%d Bytes\n',file1,n,nc);
+%end of program
+-------------------------------------
+%q92as2.m : Write a program to convert all capital letters to small letters
+%in any file
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter File Name = ','s');
+fp1=fopen(file1,'r+');
+fseek(fp1,0,1); %Moving file pointer to end of file
+n=ftell(fp1); %n=size of input file
+fseek(fp1,0,-1); %Moving file pointer to beginning of file
+nc=0; %nc=number of bytes modified
+for i=1:n
+    ch=fread(fp1,1);
+    if ch>=65 && ch<=97
+        nc=nc+1;
+        fseek(fp1,-1,0);
+        ch=ch+32;
+        fwrite(fp1,ch);
+    end
+end
+fclose('all');
+fprintf('\nSize of <%s> = %d Bytes and number of Bytes modified = %d Bytes\n',file1,n,nc);
+%End of program
+-------------------------------------
+%q93as2.m : Write a program to remove all comment lines from any MATLAB
+%program file
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input File Name=','s');
+file2=input('Enter Output File Name=','s');
+fp1=fopen(file1,'r');
+fp2=fopen(file2,'w');
+nc=0;
+fseek(fp1,0,1); % To go to end of file
+n=ftell(fp1);
+fprintf('\nn=%d\n',n);
+fseek(fp1,0,-1); % To go to beginning of the file
+for i=1:n
+    ch=fread(fp1,1);
+    fprintf('%c',char(ch));
+    if  ch==39
+        while 1==1
+            fprintf(fp2,'%c',char(ch));
+            ch=fscanf(fp1,'%d');
+            if ch==39
+                fprintf(fp2,'%c',char(ch));
+                break;
+            end
+        end
+    elseif char(ch)=='%'
+        nc=nc+1;
+        while 1==1
+            ch=fscanf(fp1,'%d');
+            if ch==10
+                break;
+            end
+        end
+    else
+        fprintf(fp2,'%c',char(ch));
+    end
+end
+fclose('all');
+fprintf('\nNumber of comment lines removed=%d\n',nc);
+%end of program
+------------------------------
+%image_proc_1.m : Write a program to display an image on screen
+
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Image File Name = ','s');
+file2=input('Enter Output Image File Name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+fprintf('r = %d c = %d d = %d\n',r,c,d);
+imshow(x); %To display image on screen
+imwrite(x,file2); %writing pixels in some output image file
+%End of program
+------------------------------
+%image_proc_2.m : Write a program to split 1 image to 2 images. Split along
+%y-axis
+
+clc;
+clear all;
+close all;
+file1=input('\nEnter Input Image file name = ','s');
+file2=input('Enter Output Image File-1 name = ','s');
+file3=input('Enter Output Image File-2 name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+c1=fix(c/2);
+y1(1:r,1:c1,1:d)=x(1:r,1:c1,1:d); %copying 50% pixels y-axis wise
+y2(1:r,1:c-c1,1:d)=x(1:r,c1+1:c,1:d); %copying rest 50% pixels y-axis wise
+imwrite(y1,file2);
+imwrite(y2,file3);
+imshow(y1);
+%end
+----------------------------
+%image_proc_3.m : Write a program to split 1 image to 2 images. Split along
+%x-axis
+
+clc;
+clear all;
+close all;
+file1=input('\nEnter Input Image file name = ','s');
+file2=input('Enter Output Image File-1 name = ','s');
+file3=input('Enter Output Image File-2 name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+r1=fix(r/2);
+y1(1:r1,1:c,1:d)=x(1:r1,1:c,1:d); %copying 50% pixels x-axis wise
+y2(1:r-r1,1:c,1:d)=x(r1+1:r,1:c,1:d); %copying rest 50% pixels x-axis wise
+imwrite(y1,file2);
+imwrite(y2,file3);
+imshow(y1);
+%end
+---------------------------
+%image_proc_4.m : Write a program to take reflection of an image along
+%x-axis
+
+clc;
+clear all;
+close all;
+file1=input('\nEnter Input Image File Name = ','s');
+file2=input('Enter Output Image File Name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+y=x;
+y(1:r,c+1:2*c,1:d)=x(1:r,c:-1:1,1:d); %x-axis
+imwrite(y,file2);
+imshow(y);
+%end
+--------------------------
+%image_proc_5.m : Write a program to take reflection of an image along
+%y-axis
+
+clc;
+clear all;
+close all;
+file1=input('\nEnter Input Image File Name = ','s');
+file2=input('Enter Output Image File Name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+y=x;
+y(r+1:2*r,1:c,1:d)=x(r:-1:1,1:c,1:d);
+imwrite(y,file2);
+imshow(y);
+%end
+------------------------
+%image_proc_6.m : Write a program to take reflection of an image along
+%x-axis and then along y-axis
+
+clc;
+clear all;
+close all;
+file1=input('\nEnter Input Image File Name = ','s');
+file2=input('Enter Output Image File Name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+y=x;
+y(r+1:2*r,1:c,1:d)=x(r:-1:1,1:c,1:d); %x-axis
+y(1:2*r,c+1:2*c,1:d)=y(2*r:-1:1,1:c,1:d);  %y-axis
+imwrite(y,file2);
+imshow(y);
+%end
+------------------------
+%image_proc_7.m : Write a program to convert any RGB to gray scale image
+
+clc;
+clear all;
+close all;
+file1=input('\nEnter Input Image File Name = ','s');
+file2=input('Enter Output Image File Name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+y(1:r,1:c,1)=.2989*x(1:r,1:c,1)+.587*x(1:r,1:c,2)+.114*x(1:r,1:c,3);
+imwrite(y,file2);
+imshow(y);
+%end
+--------------------------
+%image_proc_8.m : Write a program to convert any RGB to gray scale image
+%Fix gray scale image on RHS of RGB image
+
+clc;
+clear all;
+close all;
+file1=input('\nEnter Input Image File Name = ','s');
+file2=input('Enter Output Image File Name = ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+g(1:r,1:c,1)=.2989*x(1:r,1:c,1)+.587*x(1:r,1:c,2)+.114*x(1:r,1:c,3);
+y=x; %copying RGB to y
+y(1:r,c+1:2*c,1)=g(1:r,1:c,1);
+y(1:r,c+1:2*c,2)=g(1:r,1:c,1);
+y(1:r,c+1:2*c,3)=g(1:r,1:c,1);
+imwrite(y,file2);
+imshow(y);
+%end
+--------------------------    
