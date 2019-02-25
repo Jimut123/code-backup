@@ -1,4 +1,5 @@
 %image_proc_5.m : Write a program to take reflection of an image along
+% y-axis
 clc;
 clear all;
 close all;
