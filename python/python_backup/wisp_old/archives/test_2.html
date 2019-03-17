@@ -1,0 +1,31 @@
+<style> 
+        ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 1em; 
+  text-indent: -.7em;
+}
+
+li::before {
+  content: "• ";
+  color: red; /* or whatever color you prefer */
+}
+#border-ele{
+    border:3px;
+    border-style: solid;
+    border-color: #ffddff;
+    height: 1px;
+    width: 1px;
+    
+}
+</style>
+
+<ul>
+    <div id = "border-ele"><li></li></div>
+    <li>Bar</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+</ul>
