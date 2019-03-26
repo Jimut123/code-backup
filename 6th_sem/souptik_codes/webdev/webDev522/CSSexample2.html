@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THIS IS THE TITLE OF THE PAGE</title>
+	<link rel="stylesheet" type="text/css" href="styleCSSexample2.css">
+	<script type="text/javascript">
+		function vanish(identifier)
+		{
+			document.getElementById(identifier.toString()).value="";
+		}
+
+	</script>
+</head>
+<body>
+	<div id="box1">
+	<font face="Lucinda Console" color="black" size="5">
+        
+        <p align="center">
+        <form action="URLhere" method="POST" onsubmit="validation()">
+        	<br/><br/><br/>
+        	<b>FIRST NAME:</b><br/>
+        	<input type="text" size="20" maxlength="30" name="firstname" id="firstnameBox" value="Enter first name" style="color:rgb(31,19,19,0.4);" onclick="this.value=''"/>
+        	<br/>
+        	<br/>
+        	<b>LAST NAME:</b><br/>
+        	<input type="text" size="20" maxlength="30" name="firstname" id="lastnameBox" value="Enter last name" style="color:rgb(31,19,19,0.4);" onclick="this.value=''" />
+        	<br/><br/><br/>
+
+        	<input type="submit" name="SubmitButton" id="submitButton" />
+
+        </p>
+        </form>
+    </font>
+    </div>
+    <div id="box2">
+    	<font face="Arial" color="white">THIS IS BOX 2</font>
+    	<div id="box3">
+    		<font face="Arial" color="white"> THIS IS AN INNER BOX WHICH ISNT DISPLAYED</font>
+    	</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+body
+{
+	background-image: url("ava.jpg");
+	background-repeat: no-repeat;
+	background-position: stretch;
+	/*background-image: url("gamingKey.jpg");
+	background-repeat: repeat-x;
+	background-position: center;*/
+}
+.horizontal
+{
+	width: 100%;
+}
+.translucent1
+{
+	font-style: bold;
+	width: wrap;
+	height: wrap;
+	padding: 2px;
+	position: relative;
+	margin-left: 500px;
+	margin-top: 200px;
+	margin-right: 500px;
+	text-align: center;
+	color: black;
+	border: 5px solid black;
+	border-radius: 20px;
+	font-size: 20px;
+	background-color: rgba(3, 15, 26, 0.32);
+	text-shadow: 3px 2px #216288cc;
+}
+.box1
+{
+	width: 150px;
+	height: 120px;
+	background-color: pink;
+	
+}
+.box2
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 150px;
+	height: 120px;
+	background-color: black;
+	color: white;
+}
+.mybutton
+{
+	background-color: rgba(100, 148, 200,0.5);
+	color: hsl(160,80%,25%);
+	border:none;
+	display: inline-block;
+	border-radius: 5px;
+	width: 75px;
+}

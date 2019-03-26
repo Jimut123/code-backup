@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tokyo University Admissions</title>
+	<link rel="stylesheet" type="text/css" href="utility.css">
+</head>
+<body>
+	<div class="navbar">
+		<a href="F:\webdev\08030219\default.html">Home</a>
+		<a href="F:\webdev\08030219\About\default.html">About Us</a>
+		<a href="default.html">Apply Online</a>
+		<a href="F:\webdev\08030219\Courses\default.html">Courses</a>
+		<a href="F:\webdev\08030219\Events\default.html">Events</a>
+		<a href="F:\webdev\08030219\Research\default.html">Research</a>
+	</div>
+	<div class="box1">
+		<h3 style="background-color: transparent;">Under-Graduate Application Form:(2019)</h3>
+		<form name="myform" action="done.html" method="POST">
+			First Name & Middle Name<br/>
+			<input type="text" id="fn" name="fname" size="30" value="Enter your First Name"  style="font-style: italic;color: rgba(0, 0, 0, 0.7);" onclick="this.value=''"><br/>
+			Second Name<br/>
+			<input type="text" name="sname" size="30" value="Enter your Second Name" onclick="this.value=''" style="font-style: italic;color: rgba(0, 0, 0, 0.7)" ><br/>
+			Date of Birth<br/>
+			<input type="date" name="roll" size="30" value="Enter your DOB" onclick="this.value=''" style="font-style: italic;color: rgba(0, 0, 0, 0.7)"><br/>
+			Enter your Choice for Subjects :<br/>
+			Honours :<br/><br/>
+			<select name="dropdown1">
+			 <option value="Computer Science Core" selected="selected">Computer Science Core</option> 
+			 <option value="Artificial Intelelligence & ML" >Artificial Intelelligence & ML</option> 
+			 <option value="Physics">Physics</option> 
+			 <option value="Chemistry">Chemistry</option> 
+			 </select>
+			 <br/>
+			 <br/>
+			 <input type="submit" name="submit" class="mybutton">
+		</form>
+	</div>
+</body>
+</html>

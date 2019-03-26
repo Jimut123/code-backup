@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+file1=input('\n ENTER input audio file(.wav)=','s');
+file2=input('\n Enter output auduio file(.wav)','s');
+[x,fs,nbits]=wavread(file1);
+fprintf('fs=%d nbits=%d',fs,nbits);
+[r,c]=szie(x);
+fprintf('r=%d c=%d',r,c);
+wavplay(x,.9*fs);
+wavwrite(x,.9*fs,file2);

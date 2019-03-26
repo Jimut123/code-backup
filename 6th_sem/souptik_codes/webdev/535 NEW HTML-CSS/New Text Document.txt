@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY NEW FORM</title>
+</head>
+<body>
+	<div class="translucent1">
+		<form name="myform" action="done.html" method="POST">
+			First Name
+			<input type="text" name="fname">
+		</form>
+	</div>
+</body>
+</html>

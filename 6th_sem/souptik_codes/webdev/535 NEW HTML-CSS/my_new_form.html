@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY NEW FORM</title>
+	<link rel="stylesheet" type="text/css" href="mys.css">
+	<script type="text/javascript">
+		function vanish(id)
+		{
+			document.getElementById(id).value="";
+		}
+	</script>
+</head>
+	<div class="translucent1">
+		<form name="myform" action="done.html" method="POST">
+			<b>First Name</b><br/>
+			<input type="text" id="fn" name="fname" size="30" value="Enter your First Name"  style="font-style: italic;color: rgba(0, 0, 0, 0.7);" onclick="this.value=''"><br/>
+			<b>Second Name</b><br/>
+			<input type="text" name="sname" size="30" value="Enter your Second Name" onclick="this.value=''" style="font-style: italic;color: rgba(0, 0, 0, 0.7)" ><br/>
+			<b>Roll</b><br/>
+			<input type="text" name="roll" size="30" value="Enter your Roll" onclick="this.value=''" style="font-style: italic;color: rgba(0, 0, 0, 0.7)"><br/>
+			<b>Enter your Choice for Subjects :</b><br/>
+			<b>Specialization 1:</b><br/><br/>
+			<select name="dropdown1">
+			 <option value="Computer Architecture" selected="selected">Computer Architecture</option> 
+			 <option value="Artificial Intelelligence" >Artificial Intelelligence</option> 
+			 <option value="CyberSecurity">CyberSecurity</option> 
+			 <option value="Automata Theory & Practical">Automata Theory & Practical</option> 
+			 </select>
+			 <br/>
+			 <br/>
+			 <input type="submit" name="submit" class="mybutton">
+		</form>
+	</div>
+	<div class="box1">
+		THis is box 1
+		<div class="box2">
+		THis is box 2
+	</div>
+	</div>
+</body>
+</html>

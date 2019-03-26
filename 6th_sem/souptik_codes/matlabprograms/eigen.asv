@@ -1,0 +1,68 @@
+clc;
+clear all;
+close all;
+
+
+n=input('Enter Matrix Dimension');
+
+for i=1:n
+    for j=1:n
+        a(i,j)=input('Enter Element');
+    end
+end
+while 1
+flag=1
+a
+max=0;
+sti=0;
+stj=0;
+for i=1:n
+    for j=1:n
+        if i~=j
+            if abs(a(i,j))>max
+                max=a(i,j);
+                sti=i;
+                stj=j;
+            end
+        end
+    end
+end
+sti
+stj
+
+if a(sti,sti)>=a(stj,stj)
+    tanval=2*a(i,j);
+    tanval=tanval/(a(i,i)-a(j,j)+sqrt((a(sti,sti)-a(stj,stj))*(a(sti,sti)-a(stj,stj))+4*a(sti,stj)*a(sti,stj)));
+else
+    tanval=2*a(i,j);
+    tanval=tanval/(a(i,i)-a(j,j)-sqrt((a(sti,sti)-a(stj,stj))*(a(sti,sti)-a(stj,stj))+4*a(sti,stj)*a(sti,stj)));
+end
+
+cosval=1/sqrt(1+(tanval*tanval));
+sinval=tanval*cosval;
+
+tanval
+cosval
+sinval
+%creating s matrix
+for i=1:n
+    for j=1:n
+        if i==j
+            a(i,j)=1;
+        else
+            a(i,j)=0;
+        end
+    end
+end
+
+a(sti,sti)=cosval;
+a(stj,stj)=cosval;
+a(stj,sti)=sinval;
+a(sti,stj)=-sinval;
+
+
+
+end
+
+
+

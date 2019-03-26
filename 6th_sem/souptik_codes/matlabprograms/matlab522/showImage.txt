@@ -1,0 +1,10 @@
+clc;
+close all;
+clear all;
+file1=input('enter input filename: ','s');
+file2=input('enter output filename: ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+fprintf('r=%d c=%d d=%d\n',r,c,d);
+imshow(x);
+imwrite(x, file2);

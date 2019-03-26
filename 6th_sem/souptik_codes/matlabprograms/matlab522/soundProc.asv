@@ -1,0 +1,57 @@
+clc;
+close all;
+clear all;
+file1=input('Enter the input audio file: ','s');
+file2=input('Enter the output file: ','s');
+file3=input('Enter the second input file: ','s');
+[x,fs,nb]=wavread(file1);
+[x1, fs1, nb1]=wavread(file3);
+[r,c]=size(x);
+[r1,c1]=size(x1);
+fprintf('r=%d c=%d fs=%d nb=%d\n',r,c,fs,nb);
+fprintf('r1=%d c1=%d fs1=%d nb1=%d\n',r1,c1,fs1,nb1);
+%To mix the 2 files together
+if length(x) > length(x1)
+    fprintf('x is larger');
+    row=r;
+    col=c;
+else
+    fprintf('x1 is larger');
+    row=r1;
+    col=c1;
+end
+for i=1:row
+    for j=1:col
+        if(mod(i,2)==0)
+            y(i,j)=x(i,j);
+        else
+            y(i,j)=x1(i,j);
+        end
+    end
+end
+dummy=input('enter any key to proceed');
+wavplay(y,fs);
+for i=row+1:r
+    for j=col+1:c
+        y(i,j)=x(i,j);
+    end
+    fprintf('\nIn loop for x');
+end
+for i=row+1:r1
+    for j=col+1:c1
+        y(i,j)=x1(i,j);
+    end
+    fprintf('\nIn loop for x1');
+end
+%To change the frequency of sound
+%fs1=n*fs;
+%y=n*x;
+%y(1:r)=x(r:-1:1);
+%n1=input('Enter data position from where to cut: ');
+%n2=input('Enter data position from where to cut: ');
+%y(1:(n2-n1+1))=x(n1:n2);
+wavplay(y,fs);%To play modified audio file
+wavwrite(y,fs,file2);%To write modified audio data in output file
+
+
+

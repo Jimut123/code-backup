@@ -1,0 +1,73 @@
+body
+{
+	background-color: orange;
+}
+#div1
+{
+	position: relative;
+	margin-left: 0px;
+	width: 60%;
+}
+#div2
+{
+	position: relative;
+	margin-left: 0px;
+	width: 40%;
+}
+.mydiv1
+{
+	position: relative;
+	width : 600px;
+	border :  10px solid yellow;
+	margin-left: 320px;
+}
+#list
+{
+	position: relative;
+	margin-left: 240px;
+}
+#Myform1
+{
+	background-color: blue;
+
+}
+#button1
+{
+	background-color: red;
+}
+#my1
+		{
+			text-align: center;
+			text-decoration: underline;
+			color: red;
+		}
+#my2
+		{
+			margin-left: 10px;
+			text-align: left;
+			color: blue;
+		}
+p.center
+		{
+			color: yellow;
+			text-decoration: underline;
+			background-color: black;
+			text-align: justify;
+			margin-right: 400px;
+			/*margin-left: 400px;*/
+			/*border-style: ridge;
+			border-width: 20px;
+			border-color: blue;*/
+			border: 10px ridge blue;
+			border-radius: 20px;
+		}
+h1,h2.center
+		{
+			color: brown;
+			text-decoration: underline;
+			background-color: white;
+			text-align: center;
+			margin-right: 400px;
+			margin-left: 400px;
+			border-style: solid ;
+		}

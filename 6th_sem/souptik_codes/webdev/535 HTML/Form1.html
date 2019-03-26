@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Form</title>
+	<style >
+	#Myform1
+	{
+		background-color: blue;
+		margin-right: auto;
+	}
+	#button1
+	{
+	background-color: red;
+	}
+	</style>
+	<script type="text/javascript">
+		function showMessage()
+		{
+			window.alert("Message successfuly inserted!");
+		}
+	</script>
+</head>
+<body>
+<form id="Myform1" action="Welcome.html" method="post" onsubmit="showMessage()">
+	First Name : <input type="input" name="FirstName" size="30" maxlength="25"> <br>
+	Last Name : <input type="input" name="LastName"> <br>
+	Roll :<input type="input" name="Roll"> <br>
+	Choose Subject : <input type="input" name="FavoriteSubject"> <br>
+	Marks :<input type="input" name="Marks"><br>
+	Phone : <input type="input" name="PhoneNumber"><br>
+	Choose Password : <input type="Password" name="Password"><br>
+	Adult <input type="checkbox" name="checkbox1" value="Adult" checked="checked"><br>
+	<select name="dropdown" multiple="multiple" size="1">
+		<option value="maths">Maths</option>
+		<option value="physics">Physics</option>
+	</select>
+	<input type="file" name="uploadedfile" accept="image/*">
+	<!-- input type radio ...do it -->
+	<input type="" name="">
+	<input  id="button1" type="submit" name="Submit"><br>
+</form>
+</body>
+</html>

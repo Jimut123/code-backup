@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		HE IS A GOOD BOY
+	</title>
+	/*<link rel="stylesheet" type="text/css" href="cssname.css">*/
+	<style>
+		body
+		{
+			background-color:black;
+			background-image:url('bk1.jpg');
+			color:white;
+		}
+		a:link
+		{
+			color:dodgerblue;
+			font-style:italic;
+			text-decoration:underlined;
+		}
+		a:visited
+		{
+			color:green;
+			font-style:italic;
+			text-decoration:underlined;
+		}
+		a:active
+		{
+			color:cyan;
+			font-style:italic;
+			text-decoration:underlined;
+		}
+		div.first
+		{
+			background-color:black;
+			color:black;
+			margin:auto;
+			font-weight:bold;
+		}
+		.type1
+		{
+			background-color:rgba(51,49,49,0.48);
+			position:relative;
+			margin-left:400px;
+			margin-right:400px;
+			text-align:center;
+			border: 2px solid white;
+			border-radius:5px;
+			font-weight:bold;
+			font-size:120%;
+			text-shadow: 1px 2px black;
+			box-shadow: 5px 5px 5px black;
+			padding-bottom:20px;
+			padding-top:20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function formvalidate()
+		{
+			var x=document.forms["f1"]["FirstName"].value;
+			 if (x == "") 
+			{
+   				alert("Name must be filled out");
+    				return false;
+ 			}
+		}
+	</script>
+</head>
+<body>
+	<a href="Welcome.html" >Welcome Page</a>
+	<a href="storage.html" >Storage Page</a>
+	<hr size="2" width="100%" align="center" color="white"></hr>
+	<h1 align="center">This is the new storage page</h1>
+	<div class="first">
+		<table name="newtable" cellpadding="2" cellspacing="10" border="2" align="center" bgcolor="white">
+			<tr>
+				<th colspan="3">Name</th>
+				<th colspan="3">CIN</th>
+				<th>Attendance %</th>
+			</tr>
+			<tr>
+				<td colspan="3">Deyashini Bhattacharya</td>
+				<td colspan="3">16-300-4-02-0593</td>
+				<td bgcolor="purple"><font color="white">100%</font></td>
+			</tr>
+			<tr>
+				<td colspan="3">Souptik Kumar Majumdar</td>
+				<td colspan="3">16-300-4-02-0535</td>
+				<td bgcolor="purple"><font color="white">99%</font></td>
+			</tr>
+		</table>
+	</div>
+	<img src="Gun.jpeg" alt="gun" height="40px" width="40px" style="float:left;"
+	<p title="tooltip testing" align="center">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<form method="POST" action="submit.html" class="type1" name="f1" onsubmit="return formvalidate()">
+		<label for="FirstName">First Name</label><br>
+		<input type="text" id="FirstName" size="30" value="Enter First Name here" onclick="this.value=''"><br>
+		<label for="SecondName">Second Name</label><br>
+		<input type="text" id="SecondName" size="30"value="Enter Second Name here" onclick="this.value=''"><br>
+		<label for="Roll">Roll</label><br>
+		<input type="number" id="Roll" value="1" size="30" onclick="this.value=''" max="10"><br>
+		<label for="Emailid">Email</label><br>
+		<input type="email" id="Emailid" value="Enter Email here" size="30" onclick="this.value=''"><br>
+		<select name="dropdown" size="1">
+			<option name="1" value="1">JGD</option>
+			<option name="2" value="2" selected="selected">DD</option>
+			<option name="3" value="3">SA</option>
+			<option name="4" value="4">AN</option>
+		</select><br>
+		<label for="checkbox1">Agree to Terms & Conditons</label>
+		<input type="checkbox" value="Adult" id="checkbox1" checked="checked"><br>
+		<label for="checkbox2">Promotions</label>
+		<input type="checkbox" value="sd" id="checkbox2"><br>
+		<label for="p1">$200</label>
+		<input type="radio" name="package" id="p1" value="1" ><br>
+		<label for="p2">$400</label>
+		<input type="radio" name="package" id="p2" value="2" checked><br>
+		<label for="p3">$800</label>
+		<input type="radio" name="package" id="p3" value="3"><br>
+		<input type="file" name="fileup" accept="image/jpg">
+		<input type="submit" id="submitbutton">
+		<input type="reset">
+	</form>
+	<img src="ss.jpg" usemap="#map1">
+	<map name="map1">
+		<area shape="rect" coords="182,4,371,189" href="laptop.htm">
+	</map>
+</body>
+</frameset>
+</html>

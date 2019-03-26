@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GRADIENT FORM</title>
+	<style type="text/css">
+	@media screen
+	{
+		body
+		{
+			/*background-image:linear-gradient(to right,cyan,dodgerblue,midnightblue);*/
+			background:radial-gradient(circle,orange,blue,red);
+			font-size:2vw;
+		}
+		input:valid
+		{
+			background-color: limegreen;
+			border-radius: 10px;
+
+		}
+		input:invalid
+		{
+			background-color: red;
+			border-radius: 10px;
+		}
+		form
+		{
+			text-align: center;
+			font-weight: bold;
+			background-color: rgba(0,0,0,00);
+		}
+		option
+		{
+			background-color: limegreen;
+			border-radius: 10px;
+		}
+	}
+	@media print
+	{
+		body
+		{
+			/*background-image:linear-gradient(to right,cyan,dodgerblue,midnightblue);*/
+			font-size:1vw;
+		}
+		/*input:valid
+		{
+			background-color: limegreen;
+			border-radius: 10px;
+
+		}
+		input:invalid
+		{
+			background-color: red;
+			border-radius: 10px;
+		}*/
+		form
+		{
+			text-align: center;
+			font-size: 18pt;
+		}
+		/*option
+		{
+			background-color: limegreen;
+			border-radius: 10px;
+		}*/
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>USER DETAILS</legend>
+			<label for="user">Username</label><br>
+			<input type="text" name="user" id="user" minlength="5"><br>
+			<label for="pass">Password</label><br>
+			<input type="password" name="pass" id="pass"><br>
+		</fieldset>
+		<br>
+		<label for="dob">Date of Birth</label><br>
+		<input type="date" name="dob" id="dob" value=""><br>
+		<label for="age">Enter your Age</label><br>
+		<input type="number" name="age" id="age" min="16" max="60"><br>
+		<label for="edu">Select your Educational Qualification</label><br>
+		<select name="edu" id="edu" style="background-color:lime-green;">
+			<option value="Masters">PG</option>
+			<option value="Graduate">UG</option>
+			<option value="ClassXII">XII</option>
+		</select>
+		<br>
+		<label for="favsport">Favorite Sport</label><br>
+		<input list="sports">
+		<datalist id="sports">
+			<option value="Cricket">
+			<option value="Football">
+			<option value="Chess">
+			<option value="Hockey">
+			<option value="Basketball">	
+		</datalist>
+		<hr color="red">
+		<br>
+		Select your hobbies:
+		Singing<input type="checkbox" name="1">
+		Gaming<input type="checkbox" name="5">
+		Dacncing<input type="checkbox" name="4">
+		Trekking<input type="checkbox" name="3">
+		others<input type="checkbox" name="2">
+		<br>
+		<label for="Exp">Please Enter your Experience</label><br>
+		<textarea name="Exp" id="Exp" rows="7" cols="60" style="border-radius: 5px;color: white;background-color: black;" maxlength="250">
+		</textarea>
+		<br>
+		<input type="submit" name="submit"><br>
+		<input type="reset" name="reset" style="background-color: orange;
+			border-radius: 10px;">
+	</form>
+	<img src="13.jpg" width="300" height="180" style="box-shadow: 10px 5px 15px orange;float:left;transform: rotate(-30deg);">
+	<img src="15.jpg" width="300" height="180" style="box-shadow: 10px 5px 15px orange;float:left;transform: rotate(-30deg);">
+	<img src="7.jpg" width="300" height="180" style="box-shadow: 10px 5px 15px orange;float:left;transform: rotate(-30deg);">
+	<img src="7.jpg" width="300" height="180" style="box-shadow: 10px 5px 15px orange;float:left;transform: rotate(-30deg);">
+	<img src="15.jpg" width="300" height="180" style="box-shadow: 10px 5px 15px orange;float:left;transform: rotate(-30deg);">
+	<img src="13.jpg" width="300" height="180" style="box-shadow: 10px 5px 15px orange;float:left;transform: rotate(-30deg);">
+</body>
+</html>

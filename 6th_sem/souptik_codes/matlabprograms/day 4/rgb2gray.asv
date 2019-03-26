@@ -1,0 +1,16 @@
+%character extraction to extract all characters from any handwritten text
+clc;
+close all;
+clear all;
+file1=input('\n enter input image file name','s');
+out_file=['aa.jpg';'ab.jpg';'ac.jpg';'ad.jpg';'ae.jpg';'af.jpg';'ag.jpg';'ah.jpg';'ai.jpg';'aj.jpg';'ak.jpg';'al.jpg';'am.jpg';'an.jpg';'ao.jpg';'ap.jpg';'aq.jpg';'ar.jpg';'as.jpg';'at.jpg';'au.jpg';'av.jpg';'aw.jpg';'ax.jpg','ay.jpg';'az.jpg'];
+x=imread(file1);
+[r,c,d]=size(x);
+%rgb to gray
+g(1:r,1:c,1)=0.2989*x(1:r,1:c,1)+0.587*x(1:r,1:c,2)+0.1140*x(1:r,1:c,3);
+
+%to convert gray scale to binary image
+fo
+imwrite(g,file2);
+imshow(g);
+

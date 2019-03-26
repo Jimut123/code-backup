@@ -1,0 +1,52 @@
+body
+{
+	background-image: url('ava2.jpg');
+	/*background-image: url('gamingKey.jpg');
+	background-repeat: repeat-x ;
+
+    /*border-image: url('gamingKey,jpg') 30 round; */
+   
+	
+
+}
+#box1
+{
+	background-color: rgba(0,0,0,0.25);
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	border-radius: 10px;
+	height: 450px;
+	width: 450px;
+	position: relative;
+	margin-left: 350px;
+	margin-top: 100px;
+	text-align: center;
+	text-shadow: 2px 2px white
+}
+#box2
+{
+	background-color: black;
+	height: 150px;
+	width: 100px;
+}
+#box3
+{
+	background-color: pink;
+	position: relative;
+	margin-left: 50px;
+	height: 150px;
+	width: 100px;
+}
+#submitButton
+{
+	height: 70px;
+	width: 150px;
+	color: white;
+	background-color: transparent;
+	border-style: outset;
+	border-width: 7px;
+	border-color: white;
+	border-radius: 10px;
+
+}

@@ -1,0 +1,17 @@
+clc;
+close all;
+clear all;
+file1=input('Enter the name of the image file: ','s');
+file2=input('Enter the output filenmae: ','s');
+nx=input('Enter the number of times to copy along X-axis: ');
+
+x=imread(file1);
+[r,c,d]=size(x);
+%To copy image along X-axis\
+c1=1;
+for i=1:nx
+    y(1:r, c1:i*c, 1:d)=x(1:r, 1:c, 1:d);
+    c1=c1+c;
+end
+imshow(y);
+imwrite(y, file2)

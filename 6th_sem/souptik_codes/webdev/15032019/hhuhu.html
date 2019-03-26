@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ROTATE IMAGES</title>
+	<style type="text/css">
+		#img1
+		{
+			float:left;
+			box-shadow: yellow 5px 5px 2px;
+			animation-name: rotation11;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+			animation: rotation11 15s linear infinite;
+		}
+		#img2
+		{
+			float:left;
+			box-shadow: yellow 5px 5px 2px;
+			animation-name: rotation12;
+			animation-duration: 15s;
+			animation-iteration-count:  infinite;
+			animation: rotation11 15s linear infinite;
+		}
+		#img3
+		{
+			float:left;
+			box-shadow: yellow 5px 5px 2px;
+			animation-name: rotation12;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;;
+			border-radius: 50%;
+			animation: rotation11 15s linear infinite;
+		}
+		@keyframes background1 {
+  		0%   {background-color:red; left:0px; top:0px;}
+  		25%  {background-color:yellow; left:200px; top:0px;}
+  		50%  {background-color:blue; left:200px; top:200px;}
+  		75%  {background-color:green; left:0px; top:200px;}
+  		100% {background-color:red; left:0px; top:0px;}
+  		}
+  		@keyframes rotation11 {
+  		0%   {transform: rotate(0deg);}
+  		20%  {transform: rotate(-60deg);}
+  		40%  {transform: rotate(-120deg);}
+  		60%  {transform: rotate(-240deg);}
+  		80%  {transform: rotate(-360deg);}
+  		100% {transform: rotate(0deg);}
+  		}
+  		@keyframes rotation12 {
+  		0%   {transform: rotate(-0deg);}
+  		20%  {transform: rotate(60deg);}
+  		40%  {transform: rotate(120deg);}
+  		60%  {transform: rotate(240deg);}
+  		80%  {transform: rotate(360deg);}
+  		100% {transform: rotate(-0deg);}
+  		}
+
+/* The element to apply the animation to */
+	</style>
+</head>
+<body>
+	<h1>nmjsdakdsaidfnsia</h1>
+	<img id="img1" src="img3.jpg" height="200" width="200">
+	<img id="img2" src="img4.jpg" height="200" width="200">
+	<img id="img3" src="img2.jpg" height="200" width="200">
+</body>
+</html>

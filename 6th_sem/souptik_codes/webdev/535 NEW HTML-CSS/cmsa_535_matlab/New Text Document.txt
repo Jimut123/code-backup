@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gradient Page</title>
+	<style type="text/css">
+		body
+		{
+			background:linear-gradient(toright,black,white);
+		}
+	</style>
+</head>
+<body>
+
+</body>
+</html>

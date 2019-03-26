@@ -1,0 +1,22 @@
+clc;
+close all;
+clear all;
+file1=input('enter file name: ','s');
+x=imread(file1);
+[r,c,d]=size(x);
+g(1:r, 1:c,1)=0.2989*x(1:r,1:c,1)+0.587*x(1:r,1:c,2)+0.1140*x(1:r,1:c,3);
+%y=x;
+%y(1:r, c+1:2*c,1)=y(1:r,1:c,1);
+%y(1:r, c+1:2*c,2)=y(1:r,1:c,1);
+%y(1:r, c+1:2*c,3)=y(1:r,1:c,1);
+for i=1:r
+    for j=1:c
+        if(g(i,j,1)>=127)
+            y(i,j,1)=255;
+        else
+            y(i,j,1)=0;
+        end
+    end
+end
+imwrite(y, 'o1.jpg');
+imshow(y);

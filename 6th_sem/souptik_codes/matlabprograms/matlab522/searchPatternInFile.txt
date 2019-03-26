@@ -1,0 +1,47 @@
+clc;
+close all;
+clear all;
+
+file1=input('Enter the name of the file: ', 's');
+fp1=fopen(file1, 'r');
+file2=input('Enter the name of the file: ', 's');
+fp2=fopen(file2, 'r');
+pattern=input('Enter the pattern to search: ','s');
+rep=input('Enter the pattern to replace: ','s');
+leno=length(pattern);
+lenn=length(rep);
+nc=0;
+flag=0;
+while(~feof(fp1))
+    ch=fread(fp1,1,'uint8=>char');
+    ch1=upper(ch);
+    if ch1==upper(pattern(1))
+        flag=1;
+        for i=1:leno-1
+            j=i+1;
+            ch=fread(fp1,1,'uint8=>char');
+            if upper(ch)~=upper(pattern(j))
+                flag=0;
+                break;
+            end
+        end
+        if flag==1
+            for i1=1:lenn
+                fwrite(fp2, rep(i1));
+            end
+            nc=nc+1;
+        else
+            fseek(fp1,-j,0);
+            for i1=1:j
+                ch=fread(fp1,1,'uint8=>char');
+                fwrite(fp2,ch);
+            end
+        end
+    else
+        fwrite(fp2,ch);
+    end
+end
+
+fprintf('NC= %d', nc);
+fclose('all');
+        

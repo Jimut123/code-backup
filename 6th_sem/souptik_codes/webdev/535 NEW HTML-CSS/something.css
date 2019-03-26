@@ -1,0 +1,19 @@
+body
+{
+	background-image:url("bk1.jpg");
+}
+.box1
+{
+	text-align:justify;
+	background-color:rgba(38, 82, 29, 0.63);
+	border: 5px solid #0fd21f59;
+	box-shadow:3px 3px 10px #000000;
+	margin:200px;
+	margin-left:350px;
+	margin-right:350px;
+	padding:50px;
+	border-radius: 10px;
+	font-size: 20px;
+	text-shadow:1px 0px #222222;
+
+}
