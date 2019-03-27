@@ -1,0 +1,5142 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_526e095adafd477692edfaf0acad20c2 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+                <div style = "position: fixed; top: 5px; left: 900px; z-index:9999;">
+                    <h1 ><i style="color:#c6ae0d; font face=Verdana,Arial,Helvetica "> WISP </i></h1> 
+                </div>
+                <div style="position: fixed; 
+                bottom: 50px; left: 50px;  
+                border:2px solid grey; z-index:9999; font-size:14px;">&nbsp; 
+                    <b>Legend <b>
+                    <br>
+                &nbsp; Cafe &nbsp;
+                <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke="#a7bc83" stroke-width="3" fill="#954263" />
+                </svg><br/> 
+                &nbsp; Thai &nbsp;
+                <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke="#af924e" stroke-width="3" fill="#c0a76c" />
+                </svg><br/> 
+                &nbsp; Park &nbsp;
+                <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke="#8c5f2a" stroke-width="3" fill="#c1b352" />
+                </svg><br/> 
+                &nbsp; Chinese &nbsp;
+                <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke="#8e435c" stroke-width="3" fill="#8a5150" />
+                </svg><br/> 
+                </div>
+                <div style="position: fixed; 
+                bottom: 50px; right: 50px;  
+                z-index:9999; font-size:10px;
+                "> 
+                    <b style="color:#f90404" style="align: justified">
+                        WISP <br/> 
+                        version: 0.0.5-beta <br/>
+                        &copyJimut Bahan Pal <br/> 
+                        Author : jimutbahanpal@yahoo.com 
+                    </b>
+                </div>
+                
+    
+    <div class="folium-map" id="map_526e095adafd477692edfaf0acad20c2" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_526e095adafd477692edfaf0acad20c2 = L.map(
+        'map_526e095adafd477692edfaf0acad20c2', {
+        center: [18.5203062, 73.8543185],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_2c0f633407514ac78f4fe86b6b858e91 = L.tileLayer(
+        'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_526e095adafd477692edfaf0acad20c2);
+    
+            var marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f = L.markerClusterGroup({});
+            map_526e095adafd477692edfaf0acad20c2.addLayer(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var circle_marker_972a0d8139d1422ba8ad915ee1a17003 = L.circleMarker(
+                [18.5173883002662, 73.8414854187446],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0ef8fbfdb57741f4abaca0e27d5e5d96 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1b7dcaf8b542448f9a43d82f76c3ce9c = $(`<div id="html_1b7dcaf8b542448f9a43d82f76c3ce9c" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_0ef8fbfdb57741f4abaca0e27d5e5d96.setContent(html_1b7dcaf8b542448f9a43d82f76c3ce9c);
+            
+
+            circle_marker_972a0d8139d1422ba8ad915ee1a17003.bindPopup(popup_0ef8fbfdb57741f4abaca0e27d5e5d96)
+            ;
+
+            
+        
+    
+            var circle_marker_ecca15119c304f88b266116b822a8a34 = L.circleMarker(
+                [18.5231306426117, 73.84834705709581],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_3f9b7c2dabe24f229a9ded2158aad387 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ba5fb84ef4b6410bbbbcc8a27dfa7d6b = $(`<div id="html_ba5fb84ef4b6410bbbbcc8a27dfa7d6b" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_3f9b7c2dabe24f229a9ded2158aad387.setContent(html_ba5fb84ef4b6410bbbbcc8a27dfa7d6b);
+            
+
+            circle_marker_ecca15119c304f88b266116b822a8a34.bindPopup(popup_3f9b7c2dabe24f229a9ded2158aad387)
+            ;
+
+            
+        
+    
+            var circle_marker_64dcaf75a54442b99e6712f1d6679da3 = L.circleMarker(
+                [18.525053674327946, 73.84151370702703],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_76e7a6f7ca5b44018b02e332685055e5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5320c072c1a8445fb04fcf5201b5f6bb = $(`<div id="html_5320c072c1a8445fb04fcf5201b5f6bb" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_76e7a6f7ca5b44018b02e332685055e5.setContent(html_5320c072c1a8445fb04fcf5201b5f6bb);
+            
+
+            circle_marker_64dcaf75a54442b99e6712f1d6679da3.bindPopup(popup_76e7a6f7ca5b44018b02e332685055e5)
+            ;
+
+            
+        
+    
+            var circle_marker_2b02caff0c4e49a790f1eece8c4bce4b = L.circleMarker(
+                [18.52447334848052, 73.84142359315081],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_d3b85c02e7a44f6e87c104ad52268eca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d285fa5286d545f3a438044c585e311f = $(`<div id="html_d285fa5286d545f3a438044c585e311f" style="width: 100.0%; height: 100.0%;">POSTCODE : 411004, CATEGORY : Café</div>`)[0];
+                popup_d3b85c02e7a44f6e87c104ad52268eca.setContent(html_d285fa5286d545f3a438044c585e311f);
+            
+
+            circle_marker_2b02caff0c4e49a790f1eece8c4bce4b.bindPopup(popup_d3b85c02e7a44f6e87c104ad52268eca)
+            ;
+
+            
+        
+    
+            var circle_marker_5daaec29dbf44f58a49a823d27b09e56 = L.circleMarker(
+                [18.530477379123923, 73.84662441087443],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_d9abceee5dd3400d8744b1e6d24a8afa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f412f655319647b490db0a4920344511 = $(`<div id="html_f412f655319647b490db0a4920344511" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Food Truck</div>`)[0];
+                popup_d9abceee5dd3400d8744b1e6d24a8afa.setContent(html_f412f655319647b490db0a4920344511);
+            
+
+            circle_marker_5daaec29dbf44f58a49a823d27b09e56.bindPopup(popup_d9abceee5dd3400d8744b1e6d24a8afa)
+            ;
+
+            
+        
+    
+            var circle_marker_38ddc31f151d46a99979e10fbfec822f = L.circleMarker(
+                [18.509369, 73.84863],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_4370dbb2921a442ea4eb99197efdf987 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4219e0721f1e4f28b721fa215befb6ed = $(`<div id="html_4219e0721f1e4f28b721fa215befb6ed" style="width: 100.0%; height: 100.0%;">POSTCODE : 411030, CATEGORY : Café</div>`)[0];
+                popup_4370dbb2921a442ea4eb99197efdf987.setContent(html_4219e0721f1e4f28b721fa215befb6ed);
+            
+
+            circle_marker_38ddc31f151d46a99979e10fbfec822f.bindPopup(popup_4370dbb2921a442ea4eb99197efdf987)
+            ;
+
+            
+        
+    
+            var circle_marker_3dfd48be3ad444c1893d4a782c168cea = L.circleMarker(
+                [18.50659737929839, 73.85053581499434],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_adb0931dfd2a4d1d86202fc4bbce16f4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d55857a6f4fc4b3b9181ffdc0f1c7d90 = $(`<div id="html_d55857a6f4fc4b3b9181ffdc0f1c7d90" style="width: 100.0%; height: 100.0%;">POSTCODE : 411030, CATEGORY : Coffee Shop</div>`)[0];
+                popup_adb0931dfd2a4d1d86202fc4bbce16f4.setContent(html_d55857a6f4fc4b3b9181ffdc0f1c7d90);
+            
+
+            circle_marker_3dfd48be3ad444c1893d4a782c168cea.bindPopup(popup_adb0931dfd2a4d1d86202fc4bbce16f4)
+            ;
+
+            
+        
+    
+            var circle_marker_01f057c3d21a44f2a142347c74cd4b1f = L.circleMarker(
+                [18.514874381968607, 73.87674761275099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_f42f936916c8457f89116af9d782e564 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e595af79ba0d404190c2fd5e1f0ce5a1 = $(`<div id="html_e595af79ba0d404190c2fd5e1f0ce5a1" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Breakfast Spot</div>`)[0];
+                popup_f42f936916c8457f89116af9d782e564.setContent(html_e595af79ba0d404190c2fd5e1f0ce5a1);
+            
+
+            circle_marker_01f057c3d21a44f2a142347c74cd4b1f.bindPopup(popup_f42f936916c8457f89116af9d782e564)
+            ;
+
+            
+        
+    
+            var circle_marker_f1895848710543c89b3f8fc1cbca4660 = L.circleMarker(
+                [18.518696, 73.8544],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_54e4bfcfc2674a2393e6cc314c815ae7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4a04f206d3df4b0ea1ead0f62731bec9 = $(`<div id="html_4a04f206d3df4b0ea1ead0f62731bec9" style="width: 100.0%; height: 100.0%;">POSTCODE : 411030, CATEGORY : Café</div>`)[0];
+                popup_54e4bfcfc2674a2393e6cc314c815ae7.setContent(html_4a04f206d3df4b0ea1ead0f62731bec9);
+            
+
+            circle_marker_f1895848710543c89b3f8fc1cbca4660.bindPopup(popup_54e4bfcfc2674a2393e6cc314c815ae7)
+            ;
+
+            
+        
+    
+            var circle_marker_52f4484b46d448acb2175b17e8d3b489 = L.circleMarker(
+                [18.51627179552993, 73.87887552615932],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_b4415d8eab064c7999265e813c09bcdc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b4f409ca99154405b31094ec86e64233 = $(`<div id="html_b4f409ca99154405b31094ec86e64233" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Sports Bar</div>`)[0];
+                popup_b4415d8eab064c7999265e813c09bcdc.setContent(html_b4f409ca99154405b31094ec86e64233);
+            
+
+            circle_marker_52f4484b46d448acb2175b17e8d3b489.bindPopup(popup_b4415d8eab064c7999265e813c09bcdc)
+            ;
+
+            
+        
+    
+            var circle_marker_16ad38c642fe4feebcca12cd5b7294ab = L.circleMarker(
+                [18.53255479726013, 73.87683391571045],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_8eaf49123db14dd8b1f7edc30d14c194 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e9e42b4314cb4257a67243957a933faf = $(`<div id="html_e9e42b4314cb4257a67243957a933faf" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Breakfast Spot</div>`)[0];
+                popup_8eaf49123db14dd8b1f7edc30d14c194.setContent(html_e9e42b4314cb4257a67243957a933faf);
+            
+
+            circle_marker_16ad38c642fe4feebcca12cd5b7294ab.bindPopup(popup_8eaf49123db14dd8b1f7edc30d14c194)
+            ;
+
+            
+        
+    
+            var circle_marker_fcb4301d277d4fe4a2d0f5b10a66d585 = L.circleMarker(
+                [18.514394417226708, 73.83349664687168],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0ca85cc749414910b42b547da9c1a0b7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_24f67b42d9e54e0baf713ffe41eaf9dc = $(`<div id="html_24f67b42d9e54e0baf713ffe41eaf9dc" style="width: 100.0%; height: 100.0%;">POSTCODE : 411004, CATEGORY : Bagel Shop</div>`)[0];
+                popup_0ca85cc749414910b42b547da9c1a0b7.setContent(html_24f67b42d9e54e0baf713ffe41eaf9dc);
+            
+
+            circle_marker_fcb4301d277d4fe4a2d0f5b10a66d585.bindPopup(popup_0ca85cc749414910b42b547da9c1a0b7)
+            ;
+
+            
+        
+    
+            var circle_marker_d53da30899c741898280a9d341e3a4eb = L.circleMarker(
+                [18.521649558279073, 73.85692119598389],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0411e540598748c987de9a4947a13fd9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5f10727b842e4ac1b1487e92224e8962 = $(`<div id="html_5f10727b842e4ac1b1487e92224e8962" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_0411e540598748c987de9a4947a13fd9.setContent(html_5f10727b842e4ac1b1487e92224e8962);
+            
+
+            circle_marker_d53da30899c741898280a9d341e3a4eb.bindPopup(popup_0411e540598748c987de9a4947a13fd9)
+            ;
+
+            
+        
+    
+            var circle_marker_b814fbb19edb4cf7bb9028efb99521bc = L.circleMarker(
+                [18.51433503193496, 73.83362719044653],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_04a68cb4bba94eb9bb41fbe63d18dbb7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_709bf1cf9e6e4565bf9610fe67a1d7c3 = $(`<div id="html_709bf1cf9e6e4565bf9610fe67a1d7c3" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_04a68cb4bba94eb9bb41fbe63d18dbb7.setContent(html_709bf1cf9e6e4565bf9610fe67a1d7c3);
+            
+
+            circle_marker_b814fbb19edb4cf7bb9028efb99521bc.bindPopup(popup_04a68cb4bba94eb9bb41fbe63d18dbb7)
+            ;
+
+            
+        
+    
+            var circle_marker_ca549c1f7def4d33853108ca10158be5 = L.circleMarker(
+                [18.514896093356153, 73.8767392864501],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_c4822ca49de74ca39136957b7ace7fda = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d537af4bf9714829a8d6e163332716af = $(`<div id="html_d537af4bf9714829a8d6e163332716af" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Breakfast Spot</div>`)[0];
+                popup_c4822ca49de74ca39136957b7ace7fda.setContent(html_d537af4bf9714829a8d6e163332716af);
+            
+
+            circle_marker_ca549c1f7def4d33853108ca10158be5.bindPopup(popup_c4822ca49de74ca39136957b7ace7fda)
+            ;
+
+            
+        
+    
+            var circle_marker_ebc98ca538014ffeac1af33ee637d69d = L.circleMarker(
+                [18.518718, 73.857788],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_a149450a38894a25a119fd7d2c306602 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2917e07fff2847778ccee69f06dbcbc5 = $(`<div id="html_2917e07fff2847778ccee69f06dbcbc5" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_a149450a38894a25a119fd7d2c306602.setContent(html_2917e07fff2847778ccee69f06dbcbc5);
+            
+
+            circle_marker_ebc98ca538014ffeac1af33ee637d69d.bindPopup(popup_a149450a38894a25a119fd7d2c306602)
+            ;
+
+            
+        
+    
+            var circle_marker_c2954e211a3d4743b53f15e2bd19219f = L.circleMarker(
+                [18.518261875115932, 73.87954831123352],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_5060ea043a8b4938858794ef58348a7f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bcd6d795f61045c895cfa63347b1eade = $(`<div id="html_bcd6d795f61045c895cfa63347b1eade" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Snack Place</div>`)[0];
+                popup_5060ea043a8b4938858794ef58348a7f.setContent(html_bcd6d795f61045c895cfa63347b1eade);
+            
+
+            circle_marker_c2954e211a3d4743b53f15e2bd19219f.bindPopup(popup_5060ea043a8b4938858794ef58348a7f)
+            ;
+
+            
+        
+    
+            var circle_marker_d5778bcb0c3a4cf2904c97a56ee0be69 = L.circleMarker(
+                [18.508026286758323, 73.83163630795073],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_7f3220d4edcd4eda898df4fc1da7c94f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8ed94f493e0944169c20d59603b8d76e = $(`<div id="html_8ed94f493e0944169c20d59603b8d76e" style="width: 100.0%; height: 100.0%;">POSTCODE : 411004, CATEGORY : Café</div>`)[0];
+                popup_7f3220d4edcd4eda898df4fc1da7c94f.setContent(html_8ed94f493e0944169c20d59603b8d76e);
+            
+
+            circle_marker_d5778bcb0c3a4cf2904c97a56ee0be69.bindPopup(popup_7f3220d4edcd4eda898df4fc1da7c94f)
+            ;
+
+            
+        
+    
+            var circle_marker_435c8675d6b94ddea06d9557bc2db8d1 = L.circleMarker(
+                [18.530578864852384, 73.82944584358319],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_74ca66e5b3b144f7833bc5f31b65f420 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5b22d878f2b14f92a50ade64e891d5f3 = $(`<div id="html_5b22d878f2b14f92a50ade64e891d5f3" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_74ca66e5b3b144f7833bc5f31b65f420.setContent(html_5b22d878f2b14f92a50ade64e891d5f3);
+            
+
+            circle_marker_435c8675d6b94ddea06d9557bc2db8d1.bindPopup(popup_74ca66e5b3b144f7833bc5f31b65f420)
+            ;
+
+            
+        
+    
+            var circle_marker_13dd6fb5a026428e81eef28db06f6136 = L.circleMarker(
+                [18.517084, 73.854724],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_5391b210482f46d1b2eb220e44eeb94a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8290ef03954e4143b5faca864f8f46df = $(`<div id="html_8290ef03954e4143b5faca864f8f46df" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_5391b210482f46d1b2eb220e44eeb94a.setContent(html_8290ef03954e4143b5faca864f8f46df);
+            
+
+            circle_marker_13dd6fb5a026428e81eef28db06f6136.bindPopup(popup_5391b210482f46d1b2eb220e44eeb94a)
+            ;
+
+            
+        
+    
+            var circle_marker_c085e4fc240e4c30a49806ce4e89c30a = L.circleMarker(
+                [18.525757785180815, 73.85365392482477],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_7cba2ecb7088459ca73456bd8bd73475 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_45a042a94a4a40ff8a403ffa14565723 = $(`<div id="html_45a042a94a4a40ff8a403ffa14565723" style="width: 100.0%; height: 100.0%;">POSTCODE : 411005, CATEGORY : Breakfast Spot</div>`)[0];
+                popup_7cba2ecb7088459ca73456bd8bd73475.setContent(html_45a042a94a4a40ff8a403ffa14565723);
+            
+
+            circle_marker_c085e4fc240e4c30a49806ce4e89c30a.bindPopup(popup_7cba2ecb7088459ca73456bd8bd73475)
+            ;
+
+            
+        
+    
+            var circle_marker_4551e699399141209fbedcda27ebf0cb = L.circleMarker(
+                [18.518192340197594, 73.85986197149582],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_9622c24dddd945ada4b9e583c11131fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fefe3eee90ca47dba57668f7bd6ea520 = $(`<div id="html_fefe3eee90ca47dba57668f7bd6ea520" style="width: 100.0%; height: 100.0%;">POSTCODE : 411002, CATEGORY : Café</div>`)[0];
+                popup_9622c24dddd945ada4b9e583c11131fe.setContent(html_fefe3eee90ca47dba57668f7bd6ea520);
+            
+
+            circle_marker_4551e699399141209fbedcda27ebf0cb.bindPopup(popup_9622c24dddd945ada4b9e583c11131fe)
+            ;
+
+            
+        
+    
+            var circle_marker_cddbf222f8f44a4681193e17a2d88ec9 = L.circleMarker(
+                [18.520554, 73.8439],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_fd237e73357c427d9b0a5acb9358c18e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_40a8ac83e818414ca8a74d0eba423288 = $(`<div id="html_40a8ac83e818414ca8a74d0eba423288" style="width: 100.0%; height: 100.0%;">POSTCODE : 411004, CATEGORY : Café</div>`)[0];
+                popup_fd237e73357c427d9b0a5acb9358c18e.setContent(html_40a8ac83e818414ca8a74d0eba423288);
+            
+
+            circle_marker_cddbf222f8f44a4681193e17a2d88ec9.bindPopup(popup_fd237e73357c427d9b0a5acb9358c18e)
+            ;
+
+            
+        
+    
+            var circle_marker_7d823d0cbdcb420b9575405ad5ef57b6 = L.circleMarker(
+                [18.51641082763672, 73.85405731201172],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ddf066478cde4907a49b763c05e5ad01 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d74fd96e52dd4d2fb23ec8b57b4dcfa5 = $(`<div id="html_d74fd96e52dd4d2fb23ec8b57b4dcfa5" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_ddf066478cde4907a49b763c05e5ad01.setContent(html_d74fd96e52dd4d2fb23ec8b57b4dcfa5);
+            
+
+            circle_marker_7d823d0cbdcb420b9575405ad5ef57b6.bindPopup(popup_ddf066478cde4907a49b763c05e5ad01)
+            ;
+
+            
+        
+    
+            var circle_marker_c1e4e15c3b69462ba496264fcd9c9b44 = L.circleMarker(
+                [18.532978, 73.834655],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_b91852becca64f34b4d4c50691963099 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9a79449006da4179b87e77b9361830d8 = $(`<div id="html_9a79449006da4179b87e77b9361830d8" style="width: 100.0%; height: 100.0%;">POSTCODE : 411016, CATEGORY : Café</div>`)[0];
+                popup_b91852becca64f34b4d4c50691963099.setContent(html_9a79449006da4179b87e77b9361830d8);
+            
+
+            circle_marker_c1e4e15c3b69462ba496264fcd9c9b44.bindPopup(popup_b91852becca64f34b4d4c50691963099)
+            ;
+
+            
+        
+    
+            var circle_marker_ef69a737ef3340a38be9ad3d4a2da174 = L.circleMarker(
+                [18.52630878466589, 73.85069847106934],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_c64f5038295c4322a2ebb13828907bc5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5c75e27d77604e11bc978789880ba5db = $(`<div id="html_5c75e27d77604e11bc978789880ba5db" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_c64f5038295c4322a2ebb13828907bc5.setContent(html_5c75e27d77604e11bc978789880ba5db);
+            
+
+            circle_marker_ef69a737ef3340a38be9ad3d4a2da174.bindPopup(popup_c64f5038295c4322a2ebb13828907bc5)
+            ;
+
+            
+        
+    
+            var circle_marker_480fa80930ab49dbb0a08407da22ed79 = L.circleMarker(
+                [18.525604040353056, 73.84984055949457],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_c925ea91bcbd44b2bd284fc9367cae8d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a1032a83f60a41c892e323cc206cd0d6 = $(`<div id="html_a1032a83f60a41c892e323cc206cd0d6" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_c925ea91bcbd44b2bd284fc9367cae8d.setContent(html_a1032a83f60a41c892e323cc206cd0d6);
+            
+
+            circle_marker_480fa80930ab49dbb0a08407da22ed79.bindPopup(popup_c925ea91bcbd44b2bd284fc9367cae8d)
+            ;
+
+            
+        
+    
+            var circle_marker_3d17d9ee2fe84e03a6875ebefaa463a0 = L.circleMarker(
+                [18.521374460491288, 73.85909243703199],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_a01de5f33a0b47668eed3821cf082930 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_58385441d5d742a19b7755ff1ad0dbe9 = $(`<div id="html_58385441d5d742a19b7755ff1ad0dbe9" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_a01de5f33a0b47668eed3821cf082930.setContent(html_58385441d5d742a19b7755ff1ad0dbe9);
+            
+
+            circle_marker_3d17d9ee2fe84e03a6875ebefaa463a0.bindPopup(popup_a01de5f33a0b47668eed3821cf082930)
+            ;
+
+            
+        
+    
+            var circle_marker_8e1ccb2eaf5d4ad3821b0530599ecd18 = L.circleMarker(
+                [18.49176633159611, 73.86492129844942],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e9b61010d14b4a21a1ddbce7d8daffca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_75370e2987f2452686acb78dc42a3c2d = $(`<div id="html_75370e2987f2452686acb78dc42a3c2d" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Lounge</div>`)[0];
+                popup_e9b61010d14b4a21a1ddbce7d8daffca.setContent(html_75370e2987f2452686acb78dc42a3c2d);
+            
+
+            circle_marker_8e1ccb2eaf5d4ad3821b0530599ecd18.bindPopup(popup_e9b61010d14b4a21a1ddbce7d8daffca)
+            ;
+
+            
+        
+    
+            var circle_marker_9ab44d26e81a45c794e10978a62570bc = L.circleMarker(
+                [18.50301381516964, 73.8267463007063],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_fb3c9367f6f4486fb622ab85d0c23019 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_25bacf9222c44ec2ac88fd436cc677cf = $(`<div id="html_25bacf9222c44ec2ac88fd436cc677cf" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_fb3c9367f6f4486fb622ab85d0c23019.setContent(html_25bacf9222c44ec2ac88fd436cc677cf);
+            
+
+            circle_marker_9ab44d26e81a45c794e10978a62570bc.bindPopup(popup_fb3c9367f6f4486fb622ab85d0c23019)
+            ;
+
+            
+        
+    
+            var circle_marker_de1d44406a6d451e9aeab59f30a2afea = L.circleMarker(
+                [18.523792813747168, 73.8437081355012],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_3d0be919f7604178bd4f6347df74bfd4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b8c31ab3c6454b2ea556959c53ad3c71 = $(`<div id="html_b8c31ab3c6454b2ea556959c53ad3c71" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_3d0be919f7604178bd4f6347df74bfd4.setContent(html_b8c31ab3c6454b2ea556959c53ad3c71);
+            
+
+            circle_marker_de1d44406a6d451e9aeab59f30a2afea.bindPopup(popup_3d0be919f7604178bd4f6347df74bfd4)
+            ;
+
+            
+        
+    
+            var circle_marker_8f8c208e52ba449c91f66c079a75639c = L.circleMarker(
+                [18.526104129312202, 73.86104498129052],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_eedd1ec05ea34478971f452cd9151443 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_56ed95b2025a476090c7567b1f6a048d = $(`<div id="html_56ed95b2025a476090c7567b1f6a048d" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_eedd1ec05ea34478971f452cd9151443.setContent(html_56ed95b2025a476090c7567b1f6a048d);
+            
+
+            circle_marker_8f8c208e52ba449c91f66c079a75639c.bindPopup(popup_eedd1ec05ea34478971f452cd9151443)
+            ;
+
+            
+        
+    
+            var circle_marker_5d97fd0a4e034a70a42a1d43cca815da = L.circleMarker(
+                [18.52502700141888, 73.85014057159424],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0f6a287303d944a6898849518221c2fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_24e513244ee24111b36bebcccbc406af = $(`<div id="html_24e513244ee24111b36bebcccbc406af" style="width: 100.0%; height: 100.0%;">POSTCODE : 411005, CATEGORY : Building</div>`)[0];
+                popup_0f6a287303d944a6898849518221c2fe.setContent(html_24e513244ee24111b36bebcccbc406af);
+            
+
+            circle_marker_5d97fd0a4e034a70a42a1d43cca815da.bindPopup(popup_0f6a287303d944a6898849518221c2fe)
+            ;
+
+            
+        
+    
+            var circle_marker_9874de49c1314ac0b5996525bc54c5b4 = L.circleMarker(
+                [18.527055894043603, 73.85143946115741],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e2c45ab9761b4780bf39ba01e39db2ed = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d46457009dde4673b5ecd4c5b3e0a10a = $(`<div id="html_d46457009dde4673b5ecd4c5b3e0a10a" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Indian Restaurant</div>`)[0];
+                popup_e2c45ab9761b4780bf39ba01e39db2ed.setContent(html_d46457009dde4673b5ecd4c5b3e0a10a);
+            
+
+            circle_marker_9874de49c1314ac0b5996525bc54c5b4.bindPopup(popup_e2c45ab9761b4780bf39ba01e39db2ed)
+            ;
+
+            
+        
+    
+            var circle_marker_4f28217b88d64714b3bc49481c9617fb = L.circleMarker(
+                [18.52999863120808, 73.85577306730698],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_01e7e2a9eeb9490497aa91247d6fdc29 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6ff1022b4f35487cb1bfb06bfe33a8d3 = $(`<div id="html_6ff1022b4f35487cb1bfb06bfe33a8d3" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_01e7e2a9eeb9490497aa91247d6fdc29.setContent(html_6ff1022b4f35487cb1bfb06bfe33a8d3);
+            
+
+            circle_marker_4f28217b88d64714b3bc49481c9617fb.bindPopup(popup_01e7e2a9eeb9490497aa91247d6fdc29)
+            ;
+
+            
+        
+    
+            var circle_marker_2d14d813ea4540739b8a9839d46e3494 = L.circleMarker(
+                [18.516197375753087, 73.87111750433814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_aaec087c485045c4ab08d7ed00d245f4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_eb446615ee3d40a68a9d175fd36e8050 = $(`<div id="html_eb446615ee3d40a68a9d175fd36e8050" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_aaec087c485045c4ab08d7ed00d245f4.setContent(html_eb446615ee3d40a68a9d175fd36e8050);
+            
+
+            circle_marker_2d14d813ea4540739b8a9839d46e3494.bindPopup(popup_aaec087c485045c4ab08d7ed00d245f4)
+            ;
+
+            
+        
+    
+            var circle_marker_06fcbf457c924b1dad6e581895afed22 = L.circleMarker(
+                [18.510354442490744, 73.85318874415321],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ab0785ca8f22428d8ed1998fc5c397d7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_30d48c2229ff46228d464467fb4db6ac = $(`<div id="html_30d48c2229ff46228d464467fb4db6ac" style="width: 100.0%; height: 100.0%;">POSTCODE : 411030, CATEGORY : Café</div>`)[0];
+                popup_ab0785ca8f22428d8ed1998fc5c397d7.setContent(html_30d48c2229ff46228d464467fb4db6ac);
+            
+
+            circle_marker_06fcbf457c924b1dad6e581895afed22.bindPopup(popup_ab0785ca8f22428d8ed1998fc5c397d7)
+            ;
+
+            
+        
+    
+            var circle_marker_77345498cb9a4bb08512c1e19844e234 = L.circleMarker(
+                [18.5303, 73.8519],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_fc8a954fea6540d3ae474b982ce0985f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_810bc655990d417bbba4f4d9071dbb98 = $(`<div id="html_810bc655990d417bbba4f4d9071dbb98" style="width: 100.0%; height: 100.0%;">POSTCODE : 411005, CATEGORY : Snack Place</div>`)[0];
+                popup_fc8a954fea6540d3ae474b982ce0985f.setContent(html_810bc655990d417bbba4f4d9071dbb98);
+            
+
+            circle_marker_77345498cb9a4bb08512c1e19844e234.bindPopup(popup_fc8a954fea6540d3ae474b982ce0985f)
+            ;
+
+            
+        
+    
+            var circle_marker_eeef40436ab3413cb7ae90d1310194ae = L.circleMarker(
+                [18.51990707121244, 73.84339672325763],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ef75509b649549ae9dbf7ee12da08729 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3e1bfca2910e4a00b5428b0e704a8b59 = $(`<div id="html_3e1bfca2910e4a00b5428b0e704a8b59" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Fast Food Restaurant</div>`)[0];
+                popup_ef75509b649549ae9dbf7ee12da08729.setContent(html_3e1bfca2910e4a00b5428b0e704a8b59);
+            
+
+            circle_marker_eeef40436ab3413cb7ae90d1310194ae.bindPopup(popup_ef75509b649549ae9dbf7ee12da08729)
+            ;
+
+            
+        
+    
+            var circle_marker_17637346b9df4b63bf558daeb534878e = L.circleMarker(
+                [18.523175519765573, 73.84778022766113],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_cd238122caec4fe09c3e9f6d2e89fa74 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6a3f4fbe3c334d9fa4a686fc0bdc786c = $(`<div id="html_6a3f4fbe3c334d9fa4a686fc0bdc786c" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_cd238122caec4fe09c3e9f6d2e89fa74.setContent(html_6a3f4fbe3c334d9fa4a686fc0bdc786c);
+            
+
+            circle_marker_17637346b9df4b63bf558daeb534878e.bindPopup(popup_cd238122caec4fe09c3e9f6d2e89fa74)
+            ;
+
+            
+        
+    
+            var circle_marker_19006c336c3447fda995bd753c7053ed = L.circleMarker(
+                [18.530526808425158, 73.85162090490705],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_730ccc0a511447d69c9f96c77a75292d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ba0c9d2f7d4e4e048d97023bd9a523c8 = $(`<div id="html_ba0c9d2f7d4e4e048d97023bd9a523c8" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Cafeteria</div>`)[0];
+                popup_730ccc0a511447d69c9f96c77a75292d.setContent(html_ba0c9d2f7d4e4e048d97023bd9a523c8);
+            
+
+            circle_marker_19006c336c3447fda995bd753c7053ed.bindPopup(popup_730ccc0a511447d69c9f96c77a75292d)
+            ;
+
+            
+        
+    
+            var circle_marker_543df0e9c46f4703987be826f6da95b5 = L.circleMarker(
+                [18.51326386519523, 73.84641191349235],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e6fc861fd9aa4c16809d0f8482c1e7b4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3093818b7dec417b9823365d15190d32 = $(`<div id="html_3093818b7dec417b9823365d15190d32" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_e6fc861fd9aa4c16809d0f8482c1e7b4.setContent(html_3093818b7dec417b9823365d15190d32);
+            
+
+            circle_marker_543df0e9c46f4703987be826f6da95b5.bindPopup(popup_e6fc861fd9aa4c16809d0f8482c1e7b4)
+            ;
+
+            
+        
+    
+            var circle_marker_31cdceb672e44e98988e19e21ffe9ee7 = L.circleMarker(
+                [18.524784, 73.84187],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0095b64f61c14aebb5c9db7ef71ecc07 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8f31991d1a0344b390e5cb27dd0fabe8 = $(`<div id="html_8f31991d1a0344b390e5cb27dd0fabe8" style="width: 100.0%; height: 100.0%;">POSTCODE : 411005, CATEGORY : Bistro</div>`)[0];
+                popup_0095b64f61c14aebb5c9db7ef71ecc07.setContent(html_8f31991d1a0344b390e5cb27dd0fabe8);
+            
+
+            circle_marker_31cdceb672e44e98988e19e21ffe9ee7.bindPopup(popup_0095b64f61c14aebb5c9db7ef71ecc07)
+            ;
+
+            
+        
+    
+            var circle_marker_71245d3f4f77445594c822be771cf33b = L.circleMarker(
+                [18.539531485552306, 73.88738780388621],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_2170c3e871934065a0cb7f032213a39a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d403aeeaaf0f4e7a8b7e18f4ca432c8d = $(`<div id="html_d403aeeaaf0f4e7a8b7e18f4ca432c8d" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Café</div>`)[0];
+                popup_2170c3e871934065a0cb7f032213a39a.setContent(html_d403aeeaaf0f4e7a8b7e18f4ca432c8d);
+            
+
+            circle_marker_71245d3f4f77445594c822be771cf33b.bindPopup(popup_2170c3e871934065a0cb7f032213a39a)
+            ;
+
+            
+        
+    
+            var circle_marker_7522e6b6a9354a2abb4d8d4a975f6c3d = L.circleMarker(
+                [18.50992928603389, 73.81607188270779],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_13a3b3688f314b0cb936300fa7675d1b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_be6d1f836894412e8c33b1d11fdc09af = $(`<div id="html_be6d1f836894412e8c33b1d11fdc09af" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_13a3b3688f314b0cb936300fa7675d1b.setContent(html_be6d1f836894412e8c33b1d11fdc09af);
+            
+
+            circle_marker_7522e6b6a9354a2abb4d8d4a975f6c3d.bindPopup(popup_13a3b3688f314b0cb936300fa7675d1b)
+            ;
+
+            
+        
+    
+            var circle_marker_7a617807b594468dac0aee010e593a55 = L.circleMarker(
+                [18.51251900323572, 73.84607880902706],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0a6abe2e23a042e1998a2635427100e0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_17188d1b559042acbd2fceac3f8e0e35 = $(`<div id="html_17188d1b559042acbd2fceac3f8e0e35" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_0a6abe2e23a042e1998a2635427100e0.setContent(html_17188d1b559042acbd2fceac3f8e0e35);
+            
+
+            circle_marker_7a617807b594468dac0aee010e593a55.bindPopup(popup_0a6abe2e23a042e1998a2635427100e0)
+            ;
+
+            
+        
+    
+            var circle_marker_24e6cd0e4e554b0da3ecb07e2b2b6b22 = L.circleMarker(
+                [18.516501717199986, 73.84853687700463],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_49a0ffa6b55740d68c92dee6b5c03fac = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3b86aebd4acd403989669df3c0e193f0 = $(`<div id="html_3b86aebd4acd403989669df3c0e193f0" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Internet Cafe</div>`)[0];
+                popup_49a0ffa6b55740d68c92dee6b5c03fac.setContent(html_3b86aebd4acd403989669df3c0e193f0);
+            
+
+            circle_marker_24e6cd0e4e554b0da3ecb07e2b2b6b22.bindPopup(popup_49a0ffa6b55740d68c92dee6b5c03fac)
+            ;
+
+            
+        
+    
+            var circle_marker_5ec89f075f264843b428747bb122fc94 = L.circleMarker(
+                [18.49314246747109, 73.82574114235284],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_6099676a711c421783066aa1fd6a9f98 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b0343f233fa54e9da9d651daadee11dd = $(`<div id="html_b0343f233fa54e9da9d651daadee11dd" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_6099676a711c421783066aa1fd6a9f98.setContent(html_b0343f233fa54e9da9d651daadee11dd);
+            
+
+            circle_marker_5ec89f075f264843b428747bb122fc94.bindPopup(popup_6099676a711c421783066aa1fd6a9f98)
+            ;
+
+            
+        
+    
+            var circle_marker_e7fef71f98b54a87a751950dd8e97c56 = L.circleMarker(
+                [18.519429255202628, 73.86620764457722],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_b1fe4672ff3c48838cccbc094a27230a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0d47b30a68154bb0a8ed0daf2de0590d = $(`<div id="html_0d47b30a68154bb0a8ed0daf2de0590d" style="width: 100.0%; height: 100.0%;">POSTCODE : 411011, CATEGORY : Café</div>`)[0];
+                popup_b1fe4672ff3c48838cccbc094a27230a.setContent(html_0d47b30a68154bb0a8ed0daf2de0590d);
+            
+
+            circle_marker_e7fef71f98b54a87a751950dd8e97c56.bindPopup(popup_b1fe4672ff3c48838cccbc094a27230a)
+            ;
+
+            
+        
+    
+            var circle_marker_a6c6ddf4f79746e29695c02ce23f3775 = L.circleMarker(
+                [18.512371556119685, 73.84638894078867],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#a7bc83",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#954263",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e1d1ec39e4f9429e92e0cb1a59016e92 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7ec492e52be645f0bea9ad0b314b1001 = $(`<div id="html_7ec492e52be645f0bea9ad0b314b1001" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Coffee Shop</div>`)[0];
+                popup_e1d1ec39e4f9429e92e0cb1a59016e92.setContent(html_7ec492e52be645f0bea9ad0b314b1001);
+            
+
+            circle_marker_a6c6ddf4f79746e29695c02ce23f3775.bindPopup(popup_e1d1ec39e4f9429e92e0cb1a59016e92)
+            ;
+
+            
+        
+    
+            var circle_marker_50c1c1a17eb54887bd9f54ee55c05040 = L.circleMarker(
+                [18.53768164679926, 73.82906913757323],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#af924e",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c0a76c",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_618bc69f46c5459f98f4f400a2fd032f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_86ec8e3078284a96837398f73f63b28e = $(`<div id="html_86ec8e3078284a96837398f73f63b28e" style="width: 100.0%; height: 100.0%;">POSTCODE : 411016, CATEGORY : Spa</div>`)[0];
+                popup_618bc69f46c5459f98f4f400a2fd032f.setContent(html_86ec8e3078284a96837398f73f63b28e);
+            
+
+            circle_marker_50c1c1a17eb54887bd9f54ee55c05040.bindPopup(popup_618bc69f46c5459f98f4f400a2fd032f)
+            ;
+
+            
+        
+    
+            var circle_marker_d592c58d3c1e4d1fb5b4183c05a17146 = L.circleMarker(
+                [18.537786, 73.829099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#af924e",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c0a76c",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_1444c00a7af34eb1a3c0a1dcb505a13e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1b78f1ab31cf462fb68cc7961e9c11c7 = $(`<div id="html_1b78f1ab31cf462fb68cc7961e9c11c7" style="width: 100.0%; height: 100.0%;">POSTCODE : 411053, CATEGORY : Massage Studio</div>`)[0];
+                popup_1444c00a7af34eb1a3c0a1dcb505a13e.setContent(html_1b78f1ab31cf462fb68cc7961e9c11c7);
+            
+
+            circle_marker_d592c58d3c1e4d1fb5b4183c05a17146.bindPopup(popup_1444c00a7af34eb1a3c0a1dcb505a13e)
+            ;
+
+            
+        
+    
+            var circle_marker_354faf6b1a9042b688d8983f1d748f59 = L.circleMarker(
+                [18.540265673637087, 73.88681674547807],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#af924e",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c0a76c",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ba3ef0849055441caace2a94763c9c64 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_73cdc14725a94801a18c280700fe8893 = $(`<div id="html_73cdc14725a94801a18c280700fe8893" style="width: 100.0%; height: 100.0%;">POSTCODE : 411040, CATEGORY : Food Truck</div>`)[0];
+                popup_ba3ef0849055441caace2a94763c9c64.setContent(html_73cdc14725a94801a18c280700fe8893);
+            
+
+            circle_marker_354faf6b1a9042b688d8983f1d748f59.bindPopup(popup_ba3ef0849055441caace2a94763c9c64)
+            ;
+
+            
+        
+    
+            var circle_marker_2a0474fcd7c842d1b994deaacaa6104e = L.circleMarker(
+                [18.517049693685657, 73.83409915282775],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_6fdc0e8b9ac3408d9187206402383382 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d98e1a6e047840b1b588fcd9e627aad6 = $(`<div id="html_d98e1a6e047840b1b588fcd9e627aad6" style="width: 100.0%; height: 100.0%;">POSTCODE : 411016, CATEGORY : Garden</div>`)[0];
+                popup_6fdc0e8b9ac3408d9187206402383382.setContent(html_d98e1a6e047840b1b588fcd9e627aad6);
+            
+
+            circle_marker_2a0474fcd7c842d1b994deaacaa6104e.bindPopup(popup_6fdc0e8b9ac3408d9187206402383382)
+            ;
+
+            
+        
+    
+            var circle_marker_bc7ac12e6a5445e8970d454e4855b3db = L.circleMarker(
+                [18.519696971062018, 73.84421226497409],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_08ffd81bce7f47e9a62299c43e5cfdad = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bebb152639ca4e818f1c44fb77d036b1 = $(`<div id="html_bebb152639ca4e818f1c44fb77d036b1" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Event Space</div>`)[0];
+                popup_08ffd81bce7f47e9a62299c43e5cfdad.setContent(html_bebb152639ca4e818f1c44fb77d036b1);
+            
+
+            circle_marker_bc7ac12e6a5445e8970d454e4855b3db.bindPopup(popup_08ffd81bce7f47e9a62299c43e5cfdad)
+            ;
+
+            
+        
+    
+            var circle_marker_4d2cae0227344ffb90b1a578490c34d9 = L.circleMarker(
+                [18.531511, 73.846855],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_766bb4fe7dc4407e9fc79fc7d5ea0e4b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bd3c30ab444346b5915bb21c82f0dd2d = $(`<div id="html_bd3c30ab444346b5915bb21c82f0dd2d" style="width: 100.0%; height: 100.0%;">POSTCODE : 411005, CATEGORY : Office</div>`)[0];
+                popup_766bb4fe7dc4407e9fc79fc7d5ea0e4b.setContent(html_bd3c30ab444346b5915bb21c82f0dd2d);
+            
+
+            circle_marker_4d2cae0227344ffb90b1a578490c34d9.bindPopup(popup_766bb4fe7dc4407e9fc79fc7d5ea0e4b)
+            ;
+
+            
+        
+    
+            var circle_marker_ac50023d8f044a109d740085cbc1410a = L.circleMarker(
+                [18.50289407049358, 73.84446496735681],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_d69c88ee6aed4a939aa8868861b2027c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_53968de9d78c464eb6abee8dc8feba9f = $(`<div id="html_53968de9d78c464eb6abee8dc8feba9f" style="width: 100.0%; height: 100.0%;">POSTCODE : 411030, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_d69c88ee6aed4a939aa8868861b2027c.setContent(html_53968de9d78c464eb6abee8dc8feba9f);
+            
+
+            circle_marker_ac50023d8f044a109d740085cbc1410a.bindPopup(popup_d69c88ee6aed4a939aa8868861b2027c)
+            ;
+
+            
+        
+    
+            var circle_marker_22d5db41cb2d4831a79c512184879169 = L.circleMarker(
+                [18.520481, 73.85119],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e7e7a8717c7b4696b3f17c02664b0b38 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_586699877e7e4e5f981742ef49ec2df0 = $(`<div id="html_586699877e7e4e5f981742ef49ec2df0" style="width: 100.0%; height: 100.0%;">POSTCODE : 411030, CATEGORY : Park</div>`)[0];
+                popup_e7e7a8717c7b4696b3f17c02664b0b38.setContent(html_586699877e7e4e5f981742ef49ec2df0);
+            
+
+            circle_marker_22d5db41cb2d4831a79c512184879169.bindPopup(popup_e7e7a8717c7b4696b3f17c02664b0b38)
+            ;
+
+            
+        
+    
+            var circle_marker_8766e86b02d249c0a56be373e7f9becb = L.circleMarker(
+                [18.5170337063278, 73.85480825729866],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_9a3eb07519c74549aa8ab36488265eee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_99adb1431901493eac15d8863b5087f5 = $(`<div id="html_99adb1431901493eac15d8863b5087f5" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : None</div>`)[0];
+                popup_9a3eb07519c74549aa8ab36488265eee.setContent(html_99adb1431901493eac15d8863b5087f5);
+            
+
+            circle_marker_8766e86b02d249c0a56be373e7f9becb.bindPopup(popup_9a3eb07519c74549aa8ab36488265eee)
+            ;
+
+            
+        
+    
+            var circle_marker_14720da585914f52b82cff400894af1e = L.circleMarker(
+                [18.520733974851666, 73.84739398956299],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_1773289805d54db5bcc92ec26baa8bda = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fd76301693f24805b93beac484c1829f = $(`<div id="html_fd76301693f24805b93beac484c1829f" style="width: 100.0%; height: 100.0%;">POSTCODE : 411004, CATEGORY : Garden</div>`)[0];
+                popup_1773289805d54db5bcc92ec26baa8bda.setContent(html_fd76301693f24805b93beac484c1829f);
+            
+
+            circle_marker_14720da585914f52b82cff400894af1e.bindPopup(popup_1773289805d54db5bcc92ec26baa8bda)
+            ;
+
+            
+        
+    
+            var circle_marker_f9f307cf19a5450b9dcfdaabe240d4e2 = L.circleMarker(
+                [18.520244598388672, 73.858154296875],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e8729cf6ebfe42d48cd91d13a5bbb63b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3083a3bcee694ca8b79146b828316b10 = $(`<div id="html_3083a3bcee694ca8b79146b828316b10" style="width: 100.0%; height: 100.0%;">POSTCODE : 411011, CATEGORY : Playground</div>`)[0];
+                popup_e8729cf6ebfe42d48cd91d13a5bbb63b.setContent(html_3083a3bcee694ca8b79146b828316b10);
+            
+
+            circle_marker_f9f307cf19a5450b9dcfdaabe240d4e2.bindPopup(popup_e8729cf6ebfe42d48cd91d13a5bbb63b)
+            ;
+
+            
+        
+    
+            var circle_marker_d2d65e37240d4795a8dfde9ff832e5dd = L.circleMarker(
+                [18.49292458619499, 73.85382621368346],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_4e2421beebc146dbb8fa7d6f11d4fb6c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5a4d6b3bfaad4468a305ea4f4e14f823 = $(`<div id="html_5a4d6b3bfaad4468a305ea4f4e14f823" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Park</div>`)[0];
+                popup_4e2421beebc146dbb8fa7d6f11d4fb6c.setContent(html_5a4d6b3bfaad4468a305ea4f4e14f823);
+            
+
+            circle_marker_d2d65e37240d4795a8dfde9ff832e5dd.bindPopup(popup_4e2421beebc146dbb8fa7d6f11d4fb6c)
+            ;
+
+            
+        
+    
+            var circle_marker_e058c760bd91472ab0edc28604c9a451 = L.circleMarker(
+                [18.5014, 73.8514],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_317b127dc7454536bae563f52e04fcd0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f909d5d9fcd946e997a28dc04d8d136c = $(`<div id="html_f909d5d9fcd946e997a28dc04d8d136c" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : None</div>`)[0];
+                popup_317b127dc7454536bae563f52e04fcd0.setContent(html_f909d5d9fcd946e997a28dc04d8d136c);
+            
+
+            circle_marker_e058c760bd91472ab0edc28604c9a451.bindPopup(popup_317b127dc7454536bae563f52e04fcd0)
+            ;
+
+            
+        
+    
+            var circle_marker_f9a7f2b5c4264d5aaf8e7856210c1a91 = L.circleMarker(
+                [18.514842987060547, 73.85902404785156],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ebb623c1940644f4b71ea3da39e32581 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3ae357b228044e41b97ee4da9c5f50fd = $(`<div id="html_3ae357b228044e41b97ee4da9c5f50fd" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_ebb623c1940644f4b71ea3da39e32581.setContent(html_3ae357b228044e41b97ee4da9c5f50fd);
+            
+
+            circle_marker_f9a7f2b5c4264d5aaf8e7856210c1a91.bindPopup(popup_ebb623c1940644f4b71ea3da39e32581)
+            ;
+
+            
+        
+    
+            var circle_marker_e1386452f52143aba91e98e2145ff2df = L.circleMarker(
+                [18.518289551654778, 73.84284536920096],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_a19761a35f46497aa61abaf70434e85f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6d46be8659b84ee0b1680c25ff48c95e = $(`<div id="html_6d46be8659b84ee0b1680c25ff48c95e" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Men&#39;s Store</div>`)[0];
+                popup_a19761a35f46497aa61abaf70434e85f.setContent(html_6d46be8659b84ee0b1680c25ff48c95e);
+            
+
+            circle_marker_e1386452f52143aba91e98e2145ff2df.bindPopup(popup_a19761a35f46497aa61abaf70434e85f)
+            ;
+
+            
+        
+    
+            var circle_marker_8671f1442bf049a685d1f9b084ca390f = L.circleMarker(
+                [18.520855, 73.841381],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_92051f9e85e248a1b769cfd8ca38d432 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cd4a1a6ff1a64fcc9b12f0c8dd2f63ad = $(`<div id="html_cd4a1a6ff1a64fcc9b12f0c8dd2f63ad" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Clothing Store</div>`)[0];
+                popup_92051f9e85e248a1b769cfd8ca38d432.setContent(html_cd4a1a6ff1a64fcc9b12f0c8dd2f63ad);
+            
+
+            circle_marker_8671f1442bf049a685d1f9b084ca390f.bindPopup(popup_92051f9e85e248a1b769cfd8ca38d432)
+            ;
+
+            
+        
+    
+            var circle_marker_28d34a7ddf98430aa97c4509c9c06892 = L.circleMarker(
+                [18.531393181157924, 73.82992831119559],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_f83db9f6421847968ef43ef7ac238810 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ef963b89f43e4ae988faa28b50b254e5 = $(`<div id="html_ef963b89f43e4ae988faa28b50b254e5" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Park</div>`)[0];
+                popup_f83db9f6421847968ef43ef7ac238810.setContent(html_ef963b89f43e4ae988faa28b50b254e5);
+            
+
+            circle_marker_28d34a7ddf98430aa97c4509c9c06892.bindPopup(popup_f83db9f6421847968ef43ef7ac238810)
+            ;
+
+            
+        
+    
+            var circle_marker_65b723afa8e74c4081b3b01f868a8931 = L.circleMarker(
+                [18.530698951151674, 73.85179893856323],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0ca792057f234376bfd92553295373c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_19de8b529d3142a5a195d6f6af2f88c7 = $(`<div id="html_19de8b529d3142a5a195d6f6af2f88c7" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : None</div>`)[0];
+                popup_0ca792057f234376bfd92553295373c8.setContent(html_19de8b529d3142a5a195d6f6af2f88c7);
+            
+
+            circle_marker_65b723afa8e74c4081b3b01f868a8931.bindPopup(popup_0ca792057f234376bfd92553295373c8)
+            ;
+
+            
+        
+    
+            var circle_marker_89024dc91ce34f0c816f11db60b18033 = L.circleMarker(
+                [18.531726528191133, 73.84991521946412],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_109bcfb0114e41a6ace4abc869301724 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e04b2b9032dd4c4b99130a845b813961 = $(`<div id="html_e04b2b9032dd4c4b99130a845b813961" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_109bcfb0114e41a6ace4abc869301724.setContent(html_e04b2b9032dd4c4b99130a845b813961);
+            
+
+            circle_marker_89024dc91ce34f0c816f11db60b18033.bindPopup(popup_109bcfb0114e41a6ace4abc869301724)
+            ;
+
+            
+        
+    
+            var circle_marker_41788e014ec6400cbcb3c5cdee29d14e = L.circleMarker(
+                [18.532728898145404, 73.8513452395735],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_d30ca67729e34818950878bc80597565 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bce1e34b888142f29ac56d84c6f30d26 = $(`<div id="html_bce1e34b888142f29ac56d84c6f30d26" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Café</div>`)[0];
+                popup_d30ca67729e34818950878bc80597565.setContent(html_bce1e34b888142f29ac56d84c6f30d26);
+            
+
+            circle_marker_41788e014ec6400cbcb3c5cdee29d14e.bindPopup(popup_d30ca67729e34818950878bc80597565)
+            ;
+
+            
+        
+    
+            var circle_marker_3b344727af854354b5a2ee011f329daf = L.circleMarker(
+                [18.520417318290157, 73.84090987453312],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_60caaa233af3488f9d430c400ec14b87 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c966c0d7f14f422998609b5f5f12fd57 = $(`<div id="html_c966c0d7f14f422998609b5f5f12fd57" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Restaurant</div>`)[0];
+                popup_60caaa233af3488f9d430c400ec14b87.setContent(html_c966c0d7f14f422998609b5f5f12fd57);
+            
+
+            circle_marker_3b344727af854354b5a2ee011f329daf.bindPopup(popup_60caaa233af3488f9d430c400ec14b87)
+            ;
+
+            
+        
+    
+            var circle_marker_605e0b14b5a747f8af0bb00daeef4bcc = L.circleMarker(
+                [18.52992345782066, 73.82855671050687],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e86e913634634395829ea85ede289929 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2a4fe0d1f3684baeb7d60c9adcb7dbed = $(`<div id="html_2a4fe0d1f3684baeb7d60c9adcb7dbed" style="width: 100.0%; height: 100.0%;">POSTCODE : 411016, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_e86e913634634395829ea85ede289929.setContent(html_2a4fe0d1f3684baeb7d60c9adcb7dbed);
+            
+
+            circle_marker_605e0b14b5a747f8af0bb00daeef4bcc.bindPopup(popup_e86e913634634395829ea85ede289929)
+            ;
+
+            
+        
+    
+            var circle_marker_e7202e8d2bd84de1ade539fd5337f06a = L.circleMarker(
+                [18.514261589229275, 73.8777671535939],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_1a98cc6233fa46c3bc561bd3148c15f2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a9ddc919e6054193b3b27c2149ad8623 = $(`<div id="html_a9ddc919e6054193b3b27c2149ad8623" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Men&#39;s Store</div>`)[0];
+                popup_1a98cc6233fa46c3bc561bd3148c15f2.setContent(html_a9ddc919e6054193b3b27c2149ad8623);
+            
+
+            circle_marker_e7202e8d2bd84de1ade539fd5337f06a.bindPopup(popup_1a98cc6233fa46c3bc561bd3148c15f2)
+            ;
+
+            
+        
+    
+            var circle_marker_0be93a839a1348bb83a20bda0dd922ca = L.circleMarker(
+                [18.524768829345703, 73.83865356445312],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_75a7a296319348cb946f798ee24588ac = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a1074a1e08c14ff4ac49f636e4dfe79a = $(`<div id="html_a1074a1e08c14ff4ac49f636e4dfe79a" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Soccer Field</div>`)[0];
+                popup_75a7a296319348cb946f798ee24588ac.setContent(html_a1074a1e08c14ff4ac49f636e4dfe79a);
+            
+
+            circle_marker_0be93a839a1348bb83a20bda0dd922ca.bindPopup(popup_75a7a296319348cb946f798ee24588ac)
+            ;
+
+            
+        
+    
+            var circle_marker_ff862420ffa44b2990bb1f5b087a03f0 = L.circleMarker(
+                [18.514898378987304, 73.87874907750626],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_01225aaf6f804fc2b47715acfd1276c1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2ecef1f8e75b4b98b29315754d4b3ef6 = $(`<div id="html_2ecef1f8e75b4b98b29315754d4b3ef6" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Accessories Store</div>`)[0];
+                popup_01225aaf6f804fc2b47715acfd1276c1.setContent(html_2ecef1f8e75b4b98b29315754d4b3ef6);
+            
+
+            circle_marker_ff862420ffa44b2990bb1f5b087a03f0.bindPopup(popup_01225aaf6f804fc2b47715acfd1276c1)
+            ;
+
+            
+        
+    
+            var circle_marker_c0fa83d38d904b2c9df3c358d2b6afa0 = L.circleMarker(
+                [18.502828247414694, 73.85129928588867],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_5fc57cf3f85e4e56a458917ce33f3ca2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9cbc1e7b5ad84aa885e6cc72d7eac333 = $(`<div id="html_9cbc1e7b5ad84aa885e6cc72d7eac333" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Zoo Exhibit</div>`)[0];
+                popup_5fc57cf3f85e4e56a458917ce33f3ca2.setContent(html_9cbc1e7b5ad84aa885e6cc72d7eac333);
+            
+
+            circle_marker_c0fa83d38d904b2c9df3c358d2b6afa0.bindPopup(popup_5fc57cf3f85e4e56a458917ce33f3ca2)
+            ;
+
+            
+        
+    
+            var circle_marker_ca72f5447a9341d1886e84f01ba0a575 = L.circleMarker(
+                [18.536142501521315, 73.83011785172128],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_8504415e1d8f49f895417f2acf3258fa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5853779305194770b63606517f6a763b = $(`<div id="html_5853779305194770b63606517f6a763b" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Clothing Store</div>`)[0];
+                popup_8504415e1d8f49f895417f2acf3258fa.setContent(html_5853779305194770b63606517f6a763b);
+            
+
+            circle_marker_ca72f5447a9341d1886e84f01ba0a575.bindPopup(popup_8504415e1d8f49f895417f2acf3258fa)
+            ;
+
+            
+        
+    
+            var circle_marker_9dd14423e75c466bb92807d76314e138 = L.circleMarker(
+                [18.503528913869236, 73.87284597544257],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_aa94478467534bc2b26f4c789398ae59 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_59413ec5fd374694b9e2d5348a99381c = $(`<div id="html_59413ec5fd374694b9e2d5348a99381c" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Park</div>`)[0];
+                popup_aa94478467534bc2b26f4c789398ae59.setContent(html_59413ec5fd374694b9e2d5348a99381c);
+            
+
+            circle_marker_9dd14423e75c466bb92807d76314e138.bindPopup(popup_aa94478467534bc2b26f4c789398ae59)
+            ;
+
+            
+        
+    
+            var circle_marker_dcde290c95eb4fb2b94953ecbdb3f01e = L.circleMarker(
+                [18.50495579249733, 73.8463333159441],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_1eb38c65ffcc4f04be44cf9e100112ec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_61eee921c68248d194f31cf65a27f14b = $(`<div id="html_61eee921c68248d194f31cf65a27f14b" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Park</div>`)[0];
+                popup_1eb38c65ffcc4f04be44cf9e100112ec.setContent(html_61eee921c68248d194f31cf65a27f14b);
+            
+
+            circle_marker_dcde290c95eb4fb2b94953ecbdb3f01e.bindPopup(popup_1eb38c65ffcc4f04be44cf9e100112ec)
+            ;
+
+            
+        
+    
+            var circle_marker_03908f77d0a24e1daeeaebccb80bfabe = L.circleMarker(
+                [18.5013, 73.8535],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_75b7d27657284df2b33588daabf1f15a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e5ea2adefaa242a7bf70a449c66eae95 = $(`<div id="html_e5ea2adefaa242a7bf70a449c66eae95" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : None</div>`)[0];
+                popup_75b7d27657284df2b33588daabf1f15a.setContent(html_e5ea2adefaa242a7bf70a449c66eae95);
+            
+
+            circle_marker_03908f77d0a24e1daeeaebccb80bfabe.bindPopup(popup_75b7d27657284df2b33588daabf1f15a)
+            ;
+
+            
+        
+    
+            var circle_marker_4140f8625cc94fd2b417d38423a4ac08 = L.circleMarker(
+                [18.5013, 73.8535],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_44782e25efad41c2ba63e0b3967f2d6f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_170e1442df5c438e80bea7361ec638d4 = $(`<div id="html_170e1442df5c438e80bea7361ec638d4" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : None</div>`)[0];
+                popup_44782e25efad41c2ba63e0b3967f2d6f.setContent(html_170e1442df5c438e80bea7361ec638d4);
+            
+
+            circle_marker_4140f8625cc94fd2b417d38423a4ac08.bindPopup(popup_44782e25efad41c2ba63e0b3967f2d6f)
+            ;
+
+            
+        
+    
+            var circle_marker_84fc7a6bba4b4ee197a66a046b57360b = L.circleMarker(
+                [18.5014, 73.8514],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_4a994e15551945b8b467ae57da123dce = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3657f1f6fd6a413ca406d65f03e09f88 = $(`<div id="html_3657f1f6fd6a413ca406d65f03e09f88" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : None</div>`)[0];
+                popup_4a994e15551945b8b467ae57da123dce.setContent(html_3657f1f6fd6a413ca406d65f03e09f88);
+            
+
+            circle_marker_84fc7a6bba4b4ee197a66a046b57360b.bindPopup(popup_4a994e15551945b8b467ae57da123dce)
+            ;
+
+            
+        
+    
+            var circle_marker_93de4ad8c6ce4a45bb13b2e5fec9d4ba = L.circleMarker(
+                [18.517125658193777, 73.83414985258554],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_7c9ef2e974c74ae885e482b2f297f622 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4ea0612dd06247088e6700ad6daf42b8 = $(`<div id="html_4ea0612dd06247088e6700ad6daf42b8" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Theme Park</div>`)[0];
+                popup_7c9ef2e974c74ae885e482b2f297f622.setContent(html_4ea0612dd06247088e6700ad6daf42b8);
+            
+
+            circle_marker_93de4ad8c6ce4a45bb13b2e5fec9d4ba.bindPopup(popup_7c9ef2e974c74ae885e482b2f297f622)
+            ;
+
+            
+        
+    
+            var circle_marker_17881540f95b48ffb5d3f743ee733392 = L.circleMarker(
+                [18.517811949867518, 73.83439044848276],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_1f9b5ce451c1444284143ad48601313e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4f701ff26a214d05852e331b4aeb543e = $(`<div id="html_4f701ff26a214d05852e331b4aeb543e" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Building</div>`)[0];
+                popup_1f9b5ce451c1444284143ad48601313e.setContent(html_4f701ff26a214d05852e331b4aeb543e);
+            
+
+            circle_marker_17881540f95b48ffb5d3f743ee733392.bindPopup(popup_1f9b5ce451c1444284143ad48601313e)
+            ;
+
+            
+        
+    
+            var circle_marker_d66de716668b41b4bbd2ca756ef86d56 = L.circleMarker(
+                [18.5503432, 73.850254],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_4e2fd66bc1514e869bcb6d6fdc7ccd0c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_831a1cc6c9274fcbbf0d1ee0288bb307 = $(`<div id="html_831a1cc6c9274fcbbf0d1ee0288bb307" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Garden</div>`)[0];
+                popup_4e2fd66bc1514e869bcb6d6fdc7ccd0c.setContent(html_831a1cc6c9274fcbbf0d1ee0288bb307);
+            
+
+            circle_marker_d66de716668b41b4bbd2ca756ef86d56.bindPopup(popup_4e2fd66bc1514e869bcb6d6fdc7ccd0c)
+            ;
+
+            
+        
+    
+            var circle_marker_8961982fef654908a4d7bbe62afbb62d = L.circleMarker(
+                [18.5316835088227, 73.83093344827427],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_f7da3637f6904470929131c4029bfdef = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_356ca0b5dc264aadbabd7bcbff0a9b3b = $(`<div id="html_356ca0b5dc264aadbabd7bcbff0a9b3b" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Basketball Court</div>`)[0];
+                popup_f7da3637f6904470929131c4029bfdef.setContent(html_356ca0b5dc264aadbabd7bcbff0a9b3b);
+            
+
+            circle_marker_8961982fef654908a4d7bbe62afbb62d.bindPopup(popup_f7da3637f6904470929131c4029bfdef)
+            ;
+
+            
+        
+    
+            var circle_marker_7df531c4d4e1450fbba216ab04a432b1 = L.circleMarker(
+                [18.53258005336038, 73.87441364536598],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ac76bfec63fe4aac8f6cb510f74c56c0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f5ba8709fd0a41938cb79793b6d9b3b1 = $(`<div id="html_f5ba8709fd0a41938cb79793b6d9b3b1" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Office</div>`)[0];
+                popup_ac76bfec63fe4aac8f6cb510f74c56c0.setContent(html_f5ba8709fd0a41938cb79793b6d9b3b1);
+            
+
+            circle_marker_7df531c4d4e1450fbba216ab04a432b1.bindPopup(popup_ac76bfec63fe4aac8f6cb510f74c56c0)
+            ;
+
+            
+        
+    
+            var circle_marker_2e58471055ee444ca714e0ad20d83ac7 = L.circleMarker(
+                [18.531367565156845, 73.82995702946874],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_38370c6a6b074a0bb91852ecfddb74e7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4f9ffdfae9594e14a347c1e6ed38bcec = $(`<div id="html_4f9ffdfae9594e14a347c1e6ed38bcec" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Baseball Field</div>`)[0];
+                popup_38370c6a6b074a0bb91852ecfddb74e7.setContent(html_4f9ffdfae9594e14a347c1e6ed38bcec);
+            
+
+            circle_marker_2e58471055ee444ca714e0ad20d83ac7.bindPopup(popup_38370c6a6b074a0bb91852ecfddb74e7)
+            ;
+
+            
+        
+    
+            var circle_marker_48d957e5c6c74424b2a67c6772bc8f4b = L.circleMarker(
+                [18.506437301635742, 73.83411407470703],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_994e3fd56e394467a564e5aedac74ffd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9d0a210d08ce4174a11e29b627287978 = $(`<div id="html_9d0a210d08ce4174a11e29b627287978" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_994e3fd56e394467a564e5aedac74ffd.setContent(html_9d0a210d08ce4174a11e29b627287978);
+            
+
+            circle_marker_48d957e5c6c74424b2a67c6772bc8f4b.bindPopup(popup_994e3fd56e394467a564e5aedac74ffd)
+            ;
+
+            
+        
+    
+            var circle_marker_01d0bfc062e64a1ba131ba78545b32ad = L.circleMarker(
+                [18.513708928807645, 73.87874333527544],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0e68dde2042d4cd3a92f849d08b06c66 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5f3ead6d662b4c3ca1e62691ebf087a2 = $(`<div id="html_5f3ead6d662b4c3ca1e62691ebf087a2" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Shoe Store</div>`)[0];
+                popup_0e68dde2042d4cd3a92f849d08b06c66.setContent(html_5f3ead6d662b4c3ca1e62691ebf087a2);
+            
+
+            circle_marker_01d0bfc062e64a1ba131ba78545b32ad.bindPopup(popup_0e68dde2042d4cd3a92f849d08b06c66)
+            ;
+
+            
+        
+    
+            var circle_marker_fab502b9fa4e480d956d5074ae6aa890 = L.circleMarker(
+                [18.541228417832546, 73.88701771516835],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_bba3b2d4e03f44ab8bb77c3fec554718 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_003ae7b996f644e39033918baf8a030f = $(`<div id="html_003ae7b996f644e39033918baf8a030f" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Hotel</div>`)[0];
+                popup_bba3b2d4e03f44ab8bb77c3fec554718.setContent(html_003ae7b996f644e39033918baf8a030f);
+            
+
+            circle_marker_fab502b9fa4e480d956d5074ae6aa890.bindPopup(popup_bba3b2d4e03f44ab8bb77c3fec554718)
+            ;
+
+            
+        
+    
+            var circle_marker_c51be371d16a4d1185b31db5b8cd3fc7 = L.circleMarker(
+                [18.532188415527344, 73.87667846679688],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_1b30a2f0d33c467aa580a524fa3c1e99 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5f7f1c1b04ae4fe4a815938fb7c36749 = $(`<div id="html_5f7f1c1b04ae4fe4a815938fb7c36749" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_1b30a2f0d33c467aa580a524fa3c1e99.setContent(html_5f7f1c1b04ae4fe4a815938fb7c36749);
+            
+
+            circle_marker_c51be371d16a4d1185b31db5b8cd3fc7.bindPopup(popup_1b30a2f0d33c467aa580a524fa3c1e99)
+            ;
+
+            
+        
+    
+            var circle_marker_e4137893b40b4d0a900e36b18be137d6 = L.circleMarker(
+                [18.537323213389204, 73.83573506116718],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_b362b21c77824c718104e5aed73d64a5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cb8eff4c9ec44950a86b84888ebd6dac = $(`<div id="html_cb8eff4c9ec44950a86b84888ebd6dac" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Comfort Food Restaurant</div>`)[0];
+                popup_b362b21c77824c718104e5aed73d64a5.setContent(html_cb8eff4c9ec44950a86b84888ebd6dac);
+            
+
+            circle_marker_e4137893b40b4d0a900e36b18be137d6.bindPopup(popup_b362b21c77824c718104e5aed73d64a5)
+            ;
+
+            
+        
+    
+            var circle_marker_2e38530ae4dc4eeb88d72dd2e2017cf2 = L.circleMarker(
+                [18.496653648346612, 73.85773138736195],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_d93c5eacb61f4a2d8a2e51018c3b3d79 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0bf336b8ed0c4b23a2a3649db8c1fd59 = $(`<div id="html_0bf336b8ed0c4b23a2a3649db8c1fd59" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_d93c5eacb61f4a2d8a2e51018c3b3d79.setContent(html_0bf336b8ed0c4b23a2a3649db8c1fd59);
+            
+
+            circle_marker_2e38530ae4dc4eeb88d72dd2e2017cf2.bindPopup(popup_d93c5eacb61f4a2d8a2e51018c3b3d79)
+            ;
+
+            
+        
+    
+            var circle_marker_4d0916f5401c44e398d1c1a50e39bd2a = L.circleMarker(
+                [18.49647331237793, 73.8698959350586],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_252f2eb9f41441f1bef7da9063774481 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7f4c6b2e221e4c85bb78cf9056f7fe8b = $(`<div id="html_7f4c6b2e221e4c85bb78cf9056f7fe8b" style="width: 100.0%; height: 100.0%;">POSTCODE : 411037, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_252f2eb9f41441f1bef7da9063774481.setContent(html_7f4c6b2e221e4c85bb78cf9056f7fe8b);
+            
+
+            circle_marker_4d0916f5401c44e398d1c1a50e39bd2a.bindPopup(popup_252f2eb9f41441f1bef7da9063774481)
+            ;
+
+            
+        
+    
+            var circle_marker_84544cd9c0344ab79c812d98af9b6f19 = L.circleMarker(
+                [18.50732520286083, 73.83251309394836],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ab6aac4cfa3944c0b344924eb94d0a0c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_392a5cef91344a0b8d5629c848dd6459 = $(`<div id="html_392a5cef91344a0b8d5629c848dd6459" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Park</div>`)[0];
+                popup_ab6aac4cfa3944c0b344924eb94d0a0c.setContent(html_392a5cef91344a0b8d5629c848dd6459);
+            
+
+            circle_marker_84544cd9c0344ab79c812d98af9b6f19.bindPopup(popup_ab6aac4cfa3944c0b344924eb94d0a0c)
+            ;
+
+            
+        
+    
+            var circle_marker_6ea68b8f3b944917873b2615b14dbaca = L.circleMarker(
+                [18.493213449315917, 73.85433159346574],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_72c7f1dd242948f384a29e42edb695a9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0a7bdd509f384d92869bdb894b532237 = $(`<div id="html_0a7bdd509f384d92869bdb894b532237" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Theme Park Ride / Attraction</div>`)[0];
+                popup_72c7f1dd242948f384a29e42edb695a9.setContent(html_0a7bdd509f384d92869bdb894b532237);
+            
+
+            circle_marker_6ea68b8f3b944917873b2615b14dbaca.bindPopup(popup_72c7f1dd242948f384a29e42edb695a9)
+            ;
+
+            
+        
+    
+            var circle_marker_a92e6d25050e461ea9bcca2ccf63d94e = L.circleMarker(
+                [18.529893, 73.828427],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_86edae898e3a42c48105dcf5e7ae2d64 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a2aadd3ae5dd4a3d8bee24cf02a24acd = $(`<div id="html_a2aadd3ae5dd4a3d8bee24cf02a24acd" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Pool</div>`)[0];
+                popup_86edae898e3a42c48105dcf5e7ae2d64.setContent(html_a2aadd3ae5dd4a3d8bee24cf02a24acd);
+            
+
+            circle_marker_a92e6d25050e461ea9bcca2ccf63d94e.bindPopup(popup_86edae898e3a42c48105dcf5e7ae2d64)
+            ;
+
+            
+        
+    
+            var circle_marker_4aa45de59c5d4c1ab9f860ed8107a40e = L.circleMarker(
+                [18.534286396909874, 73.87906489994097],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_85e51dcd69174668a7f0536f838d5705 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4dc6102b5dc34ab190141134815161f4 = $(`<div id="html_4dc6102b5dc34ab190141134815161f4" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_85e51dcd69174668a7f0536f838d5705.setContent(html_4dc6102b5dc34ab190141134815161f4);
+            
+
+            circle_marker_4aa45de59c5d4c1ab9f860ed8107a40e.bindPopup(popup_85e51dcd69174668a7f0536f838d5705)
+            ;
+
+            
+        
+    
+            var circle_marker_a81294f7ced3451d85f9f498f622387c = L.circleMarker(
+                [18.49337286343009, 73.86075210088782],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_035acf4fd3014c31be811d41d61003f9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f6711289c06740a78ed59a4b17fa8ea9 = $(`<div id="html_f6711289c06740a78ed59a4b17fa8ea9" style="width: 100.0%; height: 100.0%;">POSTCODE : 411037, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_035acf4fd3014c31be811d41d61003f9.setContent(html_f6711289c06740a78ed59a4b17fa8ea9);
+            
+
+            circle_marker_a81294f7ced3451d85f9f498f622387c.bindPopup(popup_035acf4fd3014c31be811d41d61003f9)
+            ;
+
+            
+        
+    
+            var circle_marker_ed7177b74ce446d5b177e71b72819db6 = L.circleMarker(
+                [18.527420590759935, 73.87869346850579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_df8e4df3bf6b4c7f819cb7d63b06284c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ed2e5ee25f344d1f8cae5b14feac8ead = $(`<div id="html_ed2e5ee25f344d1f8cae5b14feac8ead" style="width: 100.0%; height: 100.0%;">POSTCODE : 411038, CATEGORY : Hotel</div>`)[0];
+                popup_df8e4df3bf6b4c7f819cb7d63b06284c.setContent(html_ed2e5ee25f344d1f8cae5b14feac8ead);
+            
+
+            circle_marker_ed7177b74ce446d5b177e71b72819db6.bindPopup(popup_df8e4df3bf6b4c7f819cb7d63b06284c)
+            ;
+
+            
+        
+    
+            var circle_marker_a86e4924e06347cab551f0edb89e8d30 = L.circleMarker(
+                [18.529147, 73.824761],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_44469be3da8b4bf8b4eead8e0c64b229 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_493ef7ebe36e4ea1a686fa3615d0ef67 = $(`<div id="html_493ef7ebe36e4ea1a686fa3615d0ef67" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_44469be3da8b4bf8b4eead8e0c64b229.setContent(html_493ef7ebe36e4ea1a686fa3615d0ef67);
+            
+
+            circle_marker_a86e4924e06347cab551f0edb89e8d30.bindPopup(popup_44469be3da8b4bf8b4eead8e0c64b229)
+            ;
+
+            
+        
+    
+            var circle_marker_c12da30eeecd410db0a78de06391d24e = L.circleMarker(
+                [18.52183, 73.88484],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8c5f2a",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#c1b352",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_c4dff0304be3438a84357d123a860c37 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5dba3c4ae60b4f63b961a21ec2ed35eb = $(`<div id="html_5dba3c4ae60b4f63b961a21ec2ed35eb" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Athletics &amp; Sports</div>`)[0];
+                popup_c4dff0304be3438a84357d123a860c37.setContent(html_5dba3c4ae60b4f63b961a21ec2ed35eb);
+            
+
+            circle_marker_c12da30eeecd410db0a78de06391d24e.bindPopup(popup_c4dff0304be3438a84357d123a860c37)
+            ;
+
+            
+        
+    
+            var circle_marker_70ef5d9b0f30490a9dfe0313152dcfb4 = L.circleMarker(
+                [18.5104821947705, 73.83478848816188],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_55a159585ce147d39ce3a75d81cc1569 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_666cace0c8854044bd358fa13198486c = $(`<div id="html_666cace0c8854044bd358fa13198486c" style="width: 100.0%; height: 100.0%;">POSTCODE : 411029, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_55a159585ce147d39ce3a75d81cc1569.setContent(html_666cace0c8854044bd358fa13198486c);
+            
+
+            circle_marker_70ef5d9b0f30490a9dfe0313152dcfb4.bindPopup(popup_55a159585ce147d39ce3a75d81cc1569)
+            ;
+
+            
+        
+    
+            var circle_marker_12a2bddc9bbe4cda94254080d2c7c4f9 = L.circleMarker(
+                [18.513010690299144, 73.85010474079823],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_d27aa403ebcd47a4a2543eb58e0b1438 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e4409e4ec1254ad8a6cf2d82ed9d511d = $(`<div id="html_e4409e4ec1254ad8a6cf2d82ed9d511d" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_d27aa403ebcd47a4a2543eb58e0b1438.setContent(html_e4409e4ec1254ad8a6cf2d82ed9d511d);
+            
+
+            circle_marker_12a2bddc9bbe4cda94254080d2c7c4f9.bindPopup(popup_d27aa403ebcd47a4a2543eb58e0b1438)
+            ;
+
+            
+        
+    
+            var circle_marker_718bee2b182a4222949d6634ba5fc041 = L.circleMarker(
+                [18.530193976172185, 73.8437642917726],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_bb6617a92edd41b9bee79bde71b105b0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cf7b1609c67041b09d3411b14c251909 = $(`<div id="html_cf7b1609c67041b09d3411b14c251909" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_bb6617a92edd41b9bee79bde71b105b0.setContent(html_cf7b1609c67041b09d3411b14c251909);
+            
+
+            circle_marker_718bee2b182a4222949d6634ba5fc041.bindPopup(popup_bb6617a92edd41b9bee79bde71b105b0)
+            ;
+
+            
+        
+    
+            var circle_marker_62f647f9cb5a40938fb3cc624715aab7 = L.circleMarker(
+                [18.515409469604492, 73.87120819091797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_fc3d3e979605486887c74b7c1f3b089a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8177303d0ed44d3e8173327b5b048fc0 = $(`<div id="html_8177303d0ed44d3e8173327b5b048fc0" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_fc3d3e979605486887c74b7c1f3b089a.setContent(html_8177303d0ed44d3e8173327b5b048fc0);
+            
+
+            circle_marker_62f647f9cb5a40938fb3cc624715aab7.bindPopup(popup_fc3d3e979605486887c74b7c1f3b089a)
+            ;
+
+            
+        
+    
+            var circle_marker_1b460d80acf14320b64463e9041c579f = L.circleMarker(
+                [18.518558712074157, 73.84502780331826],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_b4e9ddc6883741ef8feba50b70f4923b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f83457a0355c49919ad3b7d2a849c7b1 = $(`<div id="html_f83457a0355c49919ad3b7d2a849c7b1" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Food Truck</div>`)[0];
+                popup_b4e9ddc6883741ef8feba50b70f4923b.setContent(html_f83457a0355c49919ad3b7d2a849c7b1);
+            
+
+            circle_marker_1b460d80acf14320b64463e9041c579f.bindPopup(popup_b4e9ddc6883741ef8feba50b70f4923b)
+            ;
+
+            
+        
+    
+            var circle_marker_84e5c44d8a4644d28a37ef6d7a0f0112 = L.circleMarker(
+                [18.52650048493625, 73.84290280198711],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_8311e9a236d14ebb9049db9a8951b47f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_64261343e6d64d33bf6a4460985868f2 = $(`<div id="html_64261343e6d64d33bf6a4460985868f2" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : None</div>`)[0];
+                popup_8311e9a236d14ebb9049db9a8951b47f.setContent(html_64261343e6d64d33bf6a4460985868f2);
+            
+
+            circle_marker_84e5c44d8a4644d28a37ef6d7a0f0112.bindPopup(popup_8311e9a236d14ebb9049db9a8951b47f)
+            ;
+
+            
+        
+    
+            var circle_marker_af6b4aa96bd249dc8a140ba12e35eb9d = L.circleMarker(
+                [18.50817436980094, 73.85073073421218],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_a422603c605845e280f91b669eb7b4e0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_67a148ca79944c5ebe93d31f0cde8e5a = $(`<div id="html_67a148ca79944c5ebe93d31f0cde8e5a" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_a422603c605845e280f91b669eb7b4e0.setContent(html_67a148ca79944c5ebe93d31f0cde8e5a);
+            
+
+            circle_marker_af6b4aa96bd249dc8a140ba12e35eb9d.bindPopup(popup_a422603c605845e280f91b669eb7b4e0)
+            ;
+
+            
+        
+    
+            var circle_marker_93044231852e408391794c531e22c00c = L.circleMarker(
+                [18.51679351112661, 73.87956939445199],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_5eb9511b7ab446bf9aa68d003666322d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_039bf32f27a7457cbeb56b211590b3da = $(`<div id="html_039bf32f27a7457cbeb56b211590b3da" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_5eb9511b7ab446bf9aa68d003666322d.setContent(html_039bf32f27a7457cbeb56b211590b3da);
+            
+
+            circle_marker_93044231852e408391794c531e22c00c.bindPopup(popup_5eb9511b7ab446bf9aa68d003666322d)
+            ;
+
+            
+        
+    
+            var circle_marker_9360c5a1003249b894c291de189b1bc8 = L.circleMarker(
+                [18.511897611367345, 73.84359773737413],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_2ebaa7c72a654815a272c5f749886cc4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33d6f33d1ca34d6086c73abc05253180 = $(`<div id="html_33d6f33d1ca34d6086c73abc05253180" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_2ebaa7c72a654815a272c5f749886cc4.setContent(html_33d6f33d1ca34d6086c73abc05253180);
+            
+
+            circle_marker_9360c5a1003249b894c291de189b1bc8.bindPopup(popup_2ebaa7c72a654815a272c5f749886cc4)
+            ;
+
+            
+        
+    
+            var circle_marker_5992b09b35bd4269b8d85c9dc755f099 = L.circleMarker(
+                [18.51481819152832, 73.8699722290039],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_97609f464c0a43d79df44dcd146eb093 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dbcaaf85b8784eaa959207cd1d65656b = $(`<div id="html_dbcaaf85b8784eaa959207cd1d65656b" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_97609f464c0a43d79df44dcd146eb093.setContent(html_dbcaaf85b8784eaa959207cd1d65656b);
+            
+
+            circle_marker_5992b09b35bd4269b8d85c9dc755f099.bindPopup(popup_97609f464c0a43d79df44dcd146eb093)
+            ;
+
+            
+        
+    
+            var circle_marker_59d2e706c5974d45982db99c0f353cd6 = L.circleMarker(
+                [18.497828, 73.83186],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_6f2dc08744084415866c945d5997cc22 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ccc2343a6c58493696cd4b9526b9a824 = $(`<div id="html_ccc2343a6c58493696cd4b9526b9a824" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Garden</div>`)[0];
+                popup_6f2dc08744084415866c945d5997cc22.setContent(html_ccc2343a6c58493696cd4b9526b9a824);
+            
+
+            circle_marker_59d2e706c5974d45982db99c0f353cd6.bindPopup(popup_6f2dc08744084415866c945d5997cc22)
+            ;
+
+            
+        
+    
+            var circle_marker_e71098024b974f539bc05d47e2e5c58f = L.circleMarker(
+                [18.50520169729333, 73.84479807454844],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_c11dad84d0744c408cec1895978e5007 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_066b01127113453d9032826648324b38 = $(`<div id="html_066b01127113453d9032826648324b38" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_c11dad84d0744c408cec1895978e5007.setContent(html_066b01127113453d9032826648324b38);
+            
+
+            circle_marker_e71098024b974f539bc05d47e2e5c58f.bindPopup(popup_c11dad84d0744c408cec1895978e5007)
+            ;
+
+            
+        
+    
+            var circle_marker_80f18e7ef66949bf9dbdb7c40119051c = L.circleMarker(
+                [18.531656, 73.821521],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_57046a1e781b4dc385faf7edcd1638d5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c191560cdb594dd0aaa2ddbcb7e016c2 = $(`<div id="html_c191560cdb594dd0aaa2ddbcb7e016c2" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Bakery</div>`)[0];
+                popup_57046a1e781b4dc385faf7edcd1638d5.setContent(html_c191560cdb594dd0aaa2ddbcb7e016c2);
+            
+
+            circle_marker_80f18e7ef66949bf9dbdb7c40119051c.bindPopup(popup_57046a1e781b4dc385faf7edcd1638d5)
+            ;
+
+            
+        
+    
+            var circle_marker_69edb6aac67549409d8c9b26d09a8155 = L.circleMarker(
+                [18.487576381083276, 73.85001182556152],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_dda57e2afa97452da44c7a8fc5ebdd44 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7402600750df40258b95a085013181bf = $(`<div id="html_7402600750df40258b95a085013181bf" style="width: 100.0%; height: 100.0%;">POSTCODE : 411009, CATEGORY : Szechuan Restaurant</div>`)[0];
+                popup_dda57e2afa97452da44c7a8fc5ebdd44.setContent(html_7402600750df40258b95a085013181bf);
+            
+
+            circle_marker_69edb6aac67549409d8c9b26d09a8155.bindPopup(popup_dda57e2afa97452da44c7a8fc5ebdd44)
+            ;
+
+            
+        
+    
+            var circle_marker_f81722d1010a43118168e5af5fb871a4 = L.circleMarker(
+                [18.498343876050086, 73.82124945809545],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_ec8e5c0a521b4e5394be2596e1931d47 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_51f17d6c2dcc4fc0baa64a3b39ba6158 = $(`<div id="html_51f17d6c2dcc4fc0baa64a3b39ba6158" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Diner</div>`)[0];
+                popup_ec8e5c0a521b4e5394be2596e1931d47.setContent(html_51f17d6c2dcc4fc0baa64a3b39ba6158);
+            
+
+            circle_marker_f81722d1010a43118168e5af5fb871a4.bindPopup(popup_ec8e5c0a521b4e5394be2596e1931d47)
+            ;
+
+            
+        
+    
+            var circle_marker_d486b46ea62c4e9ea3ddf6c5b6c858fe = L.circleMarker(
+                [18.50943102561232, 73.87429879817795],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_01c3dd38819f48cf91b6b8e0f2cc672d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9c8f2b29cb8f4e72be38551f8d50e249 = $(`<div id="html_9c8f2b29cb8f4e72be38551f8d50e249" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Molecular Gastronomy Restaurant</div>`)[0];
+                popup_01c3dd38819f48cf91b6b8e0f2cc672d.setContent(html_9c8f2b29cb8f4e72be38551f8d50e249);
+            
+
+            circle_marker_d486b46ea62c4e9ea3ddf6c5b6c858fe.bindPopup(popup_01c3dd38819f48cf91b6b8e0f2cc672d)
+            ;
+
+            
+        
+    
+            var circle_marker_cf27afce7f3544ff816fc78423efec77 = L.circleMarker(
+                [18.49702915042772, 73.85789218696968],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_3e380b0f4df14c4f9d51f0c3c98156f1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6e1b32a57e4e4d2c99e5962fa59db7a8 = $(`<div id="html_6e1b32a57e4e4d2c99e5962fa59db7a8" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_3e380b0f4df14c4f9d51f0c3c98156f1.setContent(html_6e1b32a57e4e4d2c99e5962fa59db7a8);
+            
+
+            circle_marker_cf27afce7f3544ff816fc78423efec77.bindPopup(popup_3e380b0f4df14c4f9d51f0c3c98156f1)
+            ;
+
+            
+        
+    
+            var circle_marker_01dd5143df6845d3a5712fe7f00da929 = L.circleMarker(
+                [18.51710466234014, 73.87949894383213],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_4656f5c51bf942bc9c5d61399e4640a1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bfb82e8f66344727a2f52fd1479072ba = $(`<div id="html_bfb82e8f66344727a2f52fd1479072ba" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_4656f5c51bf942bc9c5d61399e4640a1.setContent(html_bfb82e8f66344727a2f52fd1479072ba);
+            
+
+            circle_marker_01dd5143df6845d3a5712fe7f00da929.bindPopup(popup_4656f5c51bf942bc9c5d61399e4640a1)
+            ;
+
+            
+        
+    
+            var circle_marker_36b025d4efbe4ecb8e5a5a7f434e3ccf = L.circleMarker(
+                [18.538434982299805, 73.83446502685547],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_54568b63bbb342118ecfa44bd65aa441 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9ca8a7bea662406c9582bbd76783f9fa = $(`<div id="html_9ca8a7bea662406c9582bbd76783f9fa" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Fast Food Restaurant</div>`)[0];
+                popup_54568b63bbb342118ecfa44bd65aa441.setContent(html_9ca8a7bea662406c9582bbd76783f9fa);
+            
+
+            circle_marker_36b025d4efbe4ecb8e5a5a7f434e3ccf.bindPopup(popup_54568b63bbb342118ecfa44bd65aa441)
+            ;
+
+            
+        
+    
+            var circle_marker_45e49d934cfb44baa00cc6ce061638aa = L.circleMarker(
+                [18.537519061853448, 73.87984084727901],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_3836f2708faa4c578456db13b0d5c752 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9291580d667942f08dfb0ee96bf15e36 = $(`<div id="html_9291580d667942f08dfb0ee96bf15e36" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_3836f2708faa4c578456db13b0d5c752.setContent(html_9291580d667942f08dfb0ee96bf15e36);
+            
+
+            circle_marker_45e49d934cfb44baa00cc6ce061638aa.bindPopup(popup_3836f2708faa4c578456db13b0d5c752)
+            ;
+
+            
+        
+    
+            var circle_marker_2fdcb58d46d24944a56b164f19c73a09 = L.circleMarker(
+                [18.532165091735802, 73.87676620340925],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_140da7904a6b407ea3ecb6a063dab0ab = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4c2e0d0f6532408da9dbaf7cbdba9bbe = $(`<div id="html_4c2e0d0f6532408da9dbaf7cbdba9bbe" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_140da7904a6b407ea3ecb6a063dab0ab.setContent(html_4c2e0d0f6532408da9dbaf7cbdba9bbe);
+            
+
+            circle_marker_2fdcb58d46d24944a56b164f19c73a09.bindPopup(popup_140da7904a6b407ea3ecb6a063dab0ab)
+            ;
+
+            
+        
+    
+            var circle_marker_f2bdfb16d7f84e90aede8c518255d4b9 = L.circleMarker(
+                [18.50688621407581, 73.87873185081334],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_aa4bde8c02bf40d2880cae2e84fea3c4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_111679a3a98948caa59082a3b678df58 = $(`<div id="html_111679a3a98948caa59082a3b678df58" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_aa4bde8c02bf40d2880cae2e84fea3c4.setContent(html_111679a3a98948caa59082a3b678df58);
+            
+
+            circle_marker_f2bdfb16d7f84e90aede8c518255d4b9.bindPopup(popup_aa4bde8c02bf40d2880cae2e84fea3c4)
+            ;
+
+            
+        
+    
+            var circle_marker_15661dd808be4a8985326cad02d2e99c = L.circleMarker(
+                [18.492714, 73.850153],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_255de91baaba432dbb478dc81910e707 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6b2c94c7ff374e93aadbd29c15119174 = $(`<div id="html_6b2c94c7ff374e93aadbd29c15119174" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_255de91baaba432dbb478dc81910e707.setContent(html_6b2c94c7ff374e93aadbd29c15119174);
+            
+
+            circle_marker_15661dd808be4a8985326cad02d2e99c.bindPopup(popup_255de91baaba432dbb478dc81910e707)
+            ;
+
+            
+        
+    
+            var circle_marker_82c8c2be357d48a89be99e76c38efc66 = L.circleMarker(
+                [18.541059365041328, 73.88354378146869],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_dd9bedc7b3fa41a985980ef7148a2265 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_34ec9633e57e476ca8f5e5abf4e68f69 = $(`<div id="html_34ec9633e57e476ca8f5e5abf4e68f69" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_dd9bedc7b3fa41a985980ef7148a2265.setContent(html_34ec9633e57e476ca8f5e5abf4e68f69);
+            
+
+            circle_marker_82c8c2be357d48a89be99e76c38efc66.bindPopup(popup_dd9bedc7b3fa41a985980ef7148a2265)
+            ;
+
+            
+        
+    
+            var circle_marker_ae0a44ed4415497b954b55c4a537d9f4 = L.circleMarker(
+                [18.509248733520508, 73.82238006591797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_abef7f51b25a403994122d06f4dafb30 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8ce4dfa61be6480797266be6bb70b0f4 = $(`<div id="html_8ce4dfa61be6480797266be6bb70b0f4" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_abef7f51b25a403994122d06f4dafb30.setContent(html_8ce4dfa61be6480797266be6bb70b0f4);
+            
+
+            circle_marker_ae0a44ed4415497b954b55c4a537d9f4.bindPopup(popup_abef7f51b25a403994122d06f4dafb30)
+            ;
+
+            
+        
+    
+            var circle_marker_80917a2849a94709ae3bc8ee8745d779 = L.circleMarker(
+                [18.50426746921154, 73.82509209453227],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_7d7ce57a10c14b019c6ec4f24ae3846a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_25e59f2d39644906929f3f94f8612533 = $(`<div id="html_25e59f2d39644906929f3f94f8612533" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_7d7ce57a10c14b019c6ec4f24ae3846a.setContent(html_25e59f2d39644906929f3f94f8612533);
+            
+
+            circle_marker_80917a2849a94709ae3bc8ee8745d779.bindPopup(popup_7d7ce57a10c14b019c6ec4f24ae3846a)
+            ;
+
+            
+        
+    
+            var circle_marker_a54df83391c44c5fad56cbddafec05c0 = L.circleMarker(
+                [18.540243, 73.883865],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_c90406891efc4eb6a9400eac99d66165 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6dd458b4c3ce4a5baa52365885cda123 = $(`<div id="html_6dd458b4c3ce4a5baa52365885cda123" style="width: 100.0%; height: 100.0%;">POSTCODE : 411001, CATEGORY : Restaurant</div>`)[0];
+                popup_c90406891efc4eb6a9400eac99d66165.setContent(html_6dd458b4c3ce4a5baa52365885cda123);
+            
+
+            circle_marker_a54df83391c44c5fad56cbddafec05c0.bindPopup(popup_c90406891efc4eb6a9400eac99d66165)
+            ;
+
+            
+        
+    
+            var circle_marker_86173be213634d949d698214f6b738dc = L.circleMarker(
+                [18.48592, 73.858495],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_45a9b2e3c08b4346a98630e85d84b5e9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ee24a6b2e0924381bec0d87903635340 = $(`<div id="html_ee24a6b2e0924381bec0d87903635340" style="width: 100.0%; height: 100.0%;">POSTCODE : 411037, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_45a9b2e3c08b4346a98630e85d84b5e9.setContent(html_ee24a6b2e0924381bec0d87903635340);
+            
+
+            circle_marker_86173be213634d949d698214f6b738dc.bindPopup(popup_45a9b2e3c08b4346a98630e85d84b5e9)
+            ;
+
+            
+        
+    
+            var circle_marker_91086572e99f4c7bbf1f55c210b172ac = L.circleMarker(
+                [18.540265673637087, 73.88681674547807],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_56c0bf6a331743b9b45d19b9f153658e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c535ead847344bf8aa3e323a4a256b97 = $(`<div id="html_c535ead847344bf8aa3e323a4a256b97" style="width: 100.0%; height: 100.0%;">POSTCODE : 411040, CATEGORY : Food Truck</div>`)[0];
+                popup_56c0bf6a331743b9b45d19b9f153658e.setContent(html_c535ead847344bf8aa3e323a4a256b97);
+            
+
+            circle_marker_91086572e99f4c7bbf1f55c210b172ac.bindPopup(popup_56c0bf6a331743b9b45d19b9f153658e)
+            ;
+
+            
+        
+    
+            var circle_marker_13c7ec2154cd405fa809e9105c3ed111 = L.circleMarker(
+                [18.552367687224802, 73.87393712997222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_0e83da2475324da9ae12228751145ad0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f594a2cf483f43d58a83bcc55f7e25c0 = $(`<div id="html_f594a2cf483f43d58a83bcc55f7e25c0" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_0e83da2475324da9ae12228751145ad0.setContent(html_f594a2cf483f43d58a83bcc55f7e25c0);
+            
+
+            circle_marker_13c7ec2154cd405fa809e9105c3ed111.bindPopup(popup_0e83da2475324da9ae12228751145ad0)
+            ;
+
+            
+        
+    
+            var circle_marker_9db4c87015e34ad08c3a17a42fdd17a0 = L.circleMarker(
+                [18.504075602418958, 73.82108816289505],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_9c72dfb37781427284fd912f7edf0a70 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2dc655a81a5640b5a78294abc0be5360 = $(`<div id="html_2dc655a81a5640b5a78294abc0be5360" style="width: 100.0%; height: 100.0%;">POSTCODE : 411029, CATEGORY : Chinese Restaurant</div>`)[0];
+                popup_9c72dfb37781427284fd912f7edf0a70.setContent(html_2dc655a81a5640b5a78294abc0be5360);
+            
+
+            circle_marker_9db4c87015e34ad08c3a17a42fdd17a0.bindPopup(popup_9c72dfb37781427284fd912f7edf0a70)
+            ;
+
+            
+        
+    
+            var circle_marker_93ffb75d8d024d43a5e5d5c2ac5ba64e = L.circleMarker(
+                [18.5074, 73.80713],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_77231d05feeb4294af1f7f6f1e9f41f2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9249522e361a41bfb70ea9b417694aee = $(`<div id="html_9249522e361a41bfb70ea9b417694aee" style="width: 100.0%; height: 100.0%;">POSTCODE : nan, CATEGORY : Fast Food Restaurant</div>`)[0];
+                popup_77231d05feeb4294af1f7f6f1e9f41f2.setContent(html_9249522e361a41bfb70ea9b417694aee);
+            
+
+            circle_marker_93ffb75d8d024d43a5e5d5c2ac5ba64e.bindPopup(popup_77231d05feeb4294af1f7f6f1e9f41f2)
+            ;
+
+            
+        
+    
+            var circle_marker_99b6e6de4c474c87a28f43fba0cde7bf = L.circleMarker(
+                [18.56230757686776, 73.8333802177461],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8e435c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8a5150",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_8fec3aaca30a4140803e2372b5c3bf3f);
+            
+    
+            var popup_e5d0e3eb62ea480d8bca4f6c77ebe6b4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2da6149ba074485daa9efc9861be8d0f = $(`<div id="html_2da6149ba074485daa9efc9861be8d0f" style="width: 100.0%; height: 100.0%;">POSTCODE : 411020, CATEGORY : None</div>`)[0];
+                popup_e5d0e3eb62ea480d8bca4f6c77ebe6b4.setContent(html_2da6149ba074485daa9efc9861be8d0f);
+            
+
+            circle_marker_99b6e6de4c474c87a28f43fba0cde7bf.bindPopup(popup_e5d0e3eb62ea480d8bca4f6c77ebe6b4)
+            ;
+
+            
+        
+</script>
