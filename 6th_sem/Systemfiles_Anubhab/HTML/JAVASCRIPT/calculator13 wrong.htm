@@ -1,0 +1,69 @@
+<html><head><title></title></head>
+
+<body>
+<br><br><br>
+
+CALCULATOR
+
+<BR><BR>
+
+<FORM>
+
+<TABLE BORDER='2'>
+
+<TR>
+<TD>1st Number : <input name="no1" size=4></td>
+<TD>2nd Number : <input name="no2" size=4></td>
+</tr>
+<tr><td colspan='2'>Result: <input name='result' size='6'></td></tr>
+
+<tr><td colspan='2'>Option selected: <input name='opt_sel' size='10'></td></tr>
+
+
+<tr><td> 
+<input type="radio" name="opt" value='1'> add<br>
+<input type="radio" name="opt" value='2'> subtract<br>
+<input type="radio" name="opt" value='3'> multiply
+</td></tr>
+
+<tr>
+<td> <input type="button" onClick="calc(this.form);" value="calculate"></td>
+<td> <input type="reset" value="Reset values"></td>
+</tr>
+
+</table>
+
+</form>
+</body>
+</html>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function calc(calc)
+{
+
+var fno1=parseFloat(calc.no1.value);
+var fno2=parseFloat(calc.no2.value);
+
+calc_opt=calc.opt.value;
+
+	switch(calc_opt)
+	{
+	case '1':
+	calc.opt_sel.value="addition";
+	calc.result.value=fno1+fno2;
+
+	
+	case '2':
+	calc.opt_sel.value="subtraction";
+	calc.result.value=fno1-fno2;
+
+	case '3':
+	calc.opt_sel.value="multiplication";
+	calc.result.value=fno1*fno2;
+
+	}
+}
+//-->
+</SCRIPT>
+

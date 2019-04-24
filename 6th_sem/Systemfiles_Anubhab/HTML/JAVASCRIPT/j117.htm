@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Example</TITLE>
+<SCRIPT LANGUAGE="Javascript">
+
+
+  var popup_window = null;
+
+  function popup(status,url) {
+
+     if(status != 0) {
+
+        if(popup != null) popup.focus(); 
+
+        else { 
+
+           var popup = open(url, "Popup", "width=350,height=175");
+
+           popup_window = popup;
+
+        }
+
+     } else {
+
+        if(popup_window != null) popup_window.close();
+
+     }
+
+  }
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<CENTER>
+<A HREF="" onMouseover="popup(1,'j117.htm')" onMouseout="popup(0)"><IMG SRC="3dhmrani.gif"  BORDER=0></A>
+
+
+</BODY>
+</HTML>

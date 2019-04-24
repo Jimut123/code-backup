@@ -1,0 +1,30 @@
+<html>
+<body>
+<table border="1" bgcolor="cyan" width="25%" >
+<tr id="myRow"><td>Amitabh</td><td>Sachin</td></tr>
+</table>
+
+<textarea rows="4" cols="60" id="results" >
+</textarea>
+<br/>
+<button id="inner">Inner HTML</button>
+<button id="outer">Outer HTML</button>
+
+<script>
+var results = document.getElementById("results");
+var row = document.getElementById("myRow");
+
+document.getElementById("inner").onclick = function() 
+{
+results.innerHTML = row.innerHTML;
+}
+
+document.getElementById("outer").onclick = function() 
+{
+results.innerHTML = row.outerHTML;
+}
+
+</script>
+
+</body>
+</html>

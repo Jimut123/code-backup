@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Example</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- the contents of this script need to be hidden from other browsers
+function picklink() {
+var linknumber = 9 ;
+var linktext = "nolink.html" ;
+var randomnumber = Math.random() ;
+var linkselect = Math.round( (linknumber-1) * randomnumber) + 1 ;
+if ( linkselect == 1)
+   {linktext="http://www.haha.com/" }
+if ( linkselect == 2)
+   {linktext="http://www.cool.com/" }
+if ( linkselect == 3)
+   {linktext="http://www.mcdonalds.com/" }
+if ( linkselect == 4)
+   {linktext="http://www.sun.com/" }
+if ( linkselect == 5)
+   {linktext="http://www.avault.com/" }
+if ( linkselect == 6)
+   {linktext="http://www.3drealms.com/" }
+if ( linkselect == 7)
+   {linktext="http://www.cocacola.com/" }
+if ( linkselect == 8)
+   {linktext="http://www.altavista.com/" }
+if ( linkselect == 9)
+   {linktext="http://www.webcrawler.com/" }
+return linktext;
+}
+// End of script -->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#FFFFFF" VLINK="#808080" ALINK="#C0C0C0">
+
+<FONT FACE=Arial SIZE=7>
+<CENTER>
+Random Link Generator
+<FONT SIZE=7>
+<BR><BR>
+<A HREF="" onClick="this.href=picklink()"><B><STRONG>CLICK HERE</STRONG></B></A>
+</BODY>
+</HTML>

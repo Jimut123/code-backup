@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Example</TITLE>
+
+
+<script>
+<!-- language="Javascript"
+
+
+
+var alerted_already;
+
+var remark;
+
+
+
+function theytyped(form) 
+{
+
+        for (   j = 1;
+
+                j<=remark.length && remark[j]!=form.myoutxt.value;
+
+                j++){}
+
+        if (j>remark.length)
+
+                form.myoutxt.value = "Do not type here!";
+
+        return false;
+
+}
+
+
+
+
+function touched_frog() 
+{
+
+        if (!alerted_already) {
+
+                alert(""+
+                      ""+
+                      ""+
+                      ""+
+                      ""+
+                      "");
+
+                alerted_already = true;
+        }
+
+        return alerted_already;
+   }
+
+
+
+function compute(form) {
+        for (var i = 1; 
+             i<=remark.length && remark[i]!=form.myoutxt.value ;
+             i++){}
+        if (i==remark.length)
+                history.back();
+        if (i==remark.length-1)
+                alert("Dear Sir or Madam:"+
+"\n\n   It has come to our attention that you have been harassing"+
+"\none of the buttons on the web.  Although most buttons are"+
+"\nunderstanding about this type of thing (being repeatedly pressed),"+
+"\nsome rogue buttons have decided to form a support group and have"+
+"\npetitioned the webmaster for funds to provide a secure place for"+
+"\nrest and relaxation.  Due to the large number of requests, this"+
+"\nwarning has been installed:"+
+"\n  IF YOU PERSIST PRESSING THIS BUTTON,"+
+"\nYOU WILL BE EJECTED FROM THIS SCREEN."+
+"\n\n   Thank you for your cooperation,"+
+"\n\n      The Federation for Oppressed and Abused Buttons"+
+"\n\nenclosure: Message from oppressed complaintant"+
+"\n\n\n\nDear Federation for Oppressed and Abused Buttons"+
+"\n\n   As I have been able to secure your assistance before,"+
+"\nI beg your help in stopping the on going abuse I am once again"+
+"\nforced to endure.  THIS GUY WILL NOT STOP!"+
+"\n\n   Sincerely"+
+"\n\n      Push Me"+
+"\n\np.s.  I will definitely attend the annual meeting next July");
+
+
+        if (i<remark.length)
+                form.myoutxt.value = remark[i+1];
+        else 
+                form.myoutxt.value = remark[1];
+   }
+
+function initArray() {
+      this.length = initArray.arguments.length;
+      for (var i = 0; i < this.length; i++)
+        this[i+1] = initArray.arguments[i];
+   }
+
+remark = new initArray( "Thanks!",
+                        "Once is enough!",
+                        "Are you deaf?", 
+                        "Go!!..Go back to The Java House", 
+                        "SOMEBODY STOP THIS GUY!", 
+                        "I give up. Please stop.", 
+                        "I SAID PLEASE, WHAT'S WRONG WITH YOU!", 
+                        "O.K. I HEARD YOU!", 
+                        "This is NOT funny!", 
+                        "I give up.", 
+                        "LAST WARNING! This is now a BACK BUTTON!");
+
+alerted_already = false;
+
+// end hiding contents -->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<form name="buttons" method="post" onSubmit="return false">
+<input type="button" name="pushme" value="Push Me" onClick="compute(this.form)"
+   onMouseOver="window.status='LEAVE ME ALONE!';
+                return touched_frog()">
+<input type="text" value=" " 
+        name="myoutxt" 
+        onBlur="theytyped(this.form)" 
+        onFocus="theytyped(this.form)" 
+        onChange="theytyped(this.form)" 
+        size=40>
+</form>
+<P><BR><P>
+Do NOT push me more than once..........or else!
+</BODY>
+</HTML>

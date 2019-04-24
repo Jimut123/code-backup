@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Example</TITLE>
+<SCRIPT>
+<!--  
+
+function getBrowserName()   {   
+	document.forms[0].elements[0].value =navigator.appName;     
+}
+
+function getBrowserVersion()   {   
+	document.forms[0].elements[0].value =  navigator.appVersion;     
+}
+
+function getBrowserCodeName()   {   
+	document.forms[0].elements[0].value = navigator.appCodeName;     
+}
+
+function getBrowserUserAgent()   {   
+	document.forms[0].elements[0].value =  navigator.userAgent;     
+}
+
+function getBrowserNameVersion()   {   
+	document.forms[0].elements[0].value = navigator.appName + " " + navigator.appVersion;     
+}
+
+// -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<CENTER>
+<FORM NAME="detect">
+<INPUT TYPE="text" NAME="browser" SIZE=26 MAXLENGTH=40 VALUE="   Browser Detection"><BR>
+<BR><BR>
+<INPUT TYPE="button" VALUE="appName" onClick="getBrowserName()">
+<INPUT TYPE="button" VALUE="appVersion" onClick="getBrowserVersion()">
+<INPUT TYPE="button" VALUE="appCodeName" onClick="getBrowserCodeName()">
+<INPUT TYPE="button" VALUE="userAgent" onClick="getBrowserUserAgent()"><BR><BR><BR>
+<INPUT TYPE="button" VALUE="appName / appVersion" onClick="getBrowserNameVersion()"><BR><BR><BR>
+</FORM>
+</BODY>
+</HTML>

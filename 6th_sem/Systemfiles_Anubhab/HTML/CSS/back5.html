@@ -1,0 +1,61 @@
+<html>
+<head><title>FORMS USING CSS</title>
+<style>
+input:invalid
+{
+  background-color:lightgreen;
+}
+</style>
+</head>
+<body style="background:linear-gradient(skyblue,pink,yellow)">
+<form>
+<font color="red" face="tahoma" size="5">
+<fieldset>
+<legend>USER DETAILS</legend>
+<label>User Name:</label>
+<input type = "text" name="uname" size="30" maxlength="50" autocomplete="on" value=" " style="font-size:10pt; color:#0000ff; border-radius:10px"/>
+<br/><br/>
+<label>Password</label>&nbsp; &nbsp;
+<input type="password" name="Uid" size="8" maxlength="8" style="font-size:10pt;  color:#0000ff; border-radius:10px"/>
+</fieldset>
+<br/><br/>
+<b>Select your Educational Qualification:</b><br/><br/>
+<strong>DEGREE</strong>
+<select name = "Qualification">
+<option value "PG">Masters</option>
+<option selected = "selected" value="grad">Graduate</option>
+<option value="Undergraduate">UG</options>
+<option Value="<Matic">Class X</option>
+</select>
+<br/>
+<b>Select your Favourite Sport:</b><br/><br/>
+<input list="sports">
+<datalist id="sports">
+<option value="Cricket">
+<option value="Football">
+<option value="Chess">
+<option value="Hockey">
+<option value="Basketball">
+</datalist>
+<hr color="red">
+
+Enter Your DOB:<input type="date"><br/>
+Enter your Age(in Years):<input type="number" name="age" min="18"><br/>
+Enter Your favourite color<input type="color" value="#aabbcc"><br/><br/>
+
+Select Your Hobbies:
+singing<input type="checkbox"/>
+gaming<input type="checkbox"/>
+trekking<input type="checkbox"/>
+reading<input type="checkbox"/>
+others<input type="checkbox"/><br/><br/>
+
+Select Your Gender:Male<input type="radio" name="Gender" value="M">
+Female<input type="radio" name="Gender" value="F"><br/><br/>
+
+Please enter your experience(max 300 chars):
+<textarea rows="7" cols="50" maxlength="300" style="font-size:10pt;color:#0000ff;border-radius:20px;border-style:dashed;border-image:Koala.jpg">
+</textarea>
+<br/><br/><br/>
+<input type="Submit" value="SEND"/>
+<input type="Reset" value="RESET"/>

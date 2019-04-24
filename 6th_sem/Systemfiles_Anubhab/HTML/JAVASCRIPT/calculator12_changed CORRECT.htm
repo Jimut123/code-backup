@@ -1,0 +1,107 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+
+<head>
+
+<title> CALCULATOR </title>
+
+
+<SCRIPT TYPE="text/javascript">
+<!--
+
+
+function calc(cal)
+{
+
+for (i=0;i<cal.opt.length;i++) 
+{
+	if (cal.opt[i].checked) 
+	{
+		var calc_opt = cal.opt[i].value;
+	}
+}
+
+
+var fno1=parseFloat(cal.no1.value);
+var fno2=parseFloat(cal.no2.value);
+
+
+cal.radio_sel.value=calc_opt;
+
+	if (calc_opt=='a')
+	{
+	cal.opt_sel.value="addition";
+	cal.result.value=fno1+fno2;
+	}
+	else
+	{
+		if (calc_opt=='s')
+		{
+		cal.opt_sel.value="subtraction";
+		cal.result.value=fno1-fno2;
+		}
+		else
+		{
+			if (calc_opt=='m')
+			{
+			cal.opt_sel.value="multiplication";
+			cal.result.value=fno1*fno2;
+			}
+			else
+			{
+			cal.result.value=0
+			}
+		}
+	}
+
+}
+//-->
+</SCRIPT>
+
+
+
+
+</head>
+
+<body>
+<br><br><br>
+
+CALCULATOR
+
+<BR><BR>
+
+<FORM name="myform">
+
+<TABLE BORDER='2'>
+
+<TR>
+<TD>1st Number : <input name="no1" size=4></td>
+<TD>2nd Number : <input name="no2" size=4></td>
+</tr>
+<tr><td colspan='2'>Result: <input name='result' size='6'></td></tr>
+
+<tr><td colspan='2'>Option selected: <input name='opt_sel' size='10'></td></tr>
+
+
+<tr><td> 
+
+<input type="radio" name="opt" value="a">add<br>
+<input type="radio" name="opt" value="s">subtract<br>
+<input type="radio" name="opt" value="m">multiply
+
+</td></tr>
+<tr><td colspan='2'>Radio button Option selected: <input name='radio_sel' size='10'></td></tr>
+
+<tr>
+<td> <input type="button" onClick="calc(this.form);" value="calculate"></td>
+<td> <input type="reset" value="Reset values"></td>
+</tr>
+
+</table>
+
+</form>
+</body>
+</html>
+
+
+

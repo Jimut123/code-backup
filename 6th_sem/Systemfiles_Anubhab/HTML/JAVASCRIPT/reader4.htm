@@ -1,0 +1,38 @@
+<CENTER>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- begin
+// global variables
+var id,pause=0,position=0;
+function banner() {
+        // variables declaration
+        var i,k,msg=document.form.message.value;
+
+        // increase msg
+        k=(66/msg.length)+1;
+        for(i=0;i<=k;i++) msg+=" "+msg;
+
+        // show it to the window
+        document.form.banner.value=msg.substring(position,position+50);
+
+        // show it to the status bar
+        // window.status=msg.substring(position,position+110);
+
+        // set new position
+        if(position++==document.form.message.value.length) position=0;
+
+        // repeat at entered speed 
+        id=setTimeout("banner()",1000/document.form.speed.value); }
+// End -->
+
+</SCRIPT>
+</HEAD>
+<BODY onload="banner()">
+<CENTER>
+<P>
+<FORM NAME="form">
+<TD>
+<INPUT TYPE=hidden NAME=message value="Here is a JavaScript reader board...">
+<INPUT TYPE=hidden NAME=speed value=80>
+<INPUT TYPE=text NAME=banner size=40></TD>
+</TABLE>

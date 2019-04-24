@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Example</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+
+
+
+
+<!-- Beginning of Java Script  ------------------
+
+
+
+function scrollit_r21(seed)
+
+
+
+ {
+
+          var msg="                                     Yes...you can say whatever you want here...Just go on and on forever!"
+
+          var out = " ";
+
+          var c    = 1;
+
+          if (seed > 100)  {
+
+                    seed--;
+
+                    var cmd="scrollit_r21(" + seed + ") ";
+
+                    timerTwo=window.setTimeout(cmd, 100) ;
+
+          }
+
+          else if (seed <= 100 && seed > 0)  {
+
+                    for (c=0 ; c < seed ; c++) {
+
+                              out+=" ";
+
+                    }
+
+                    out+=msg;
+
+                    seed--;
+
+                    var cmd="scrollit_r21(" + seed + ") ";
+
+                              window.status=out;
+
+                    timerTwo=window.setTimeout(cmd, 100);
+
+
+
+          }
+
+          else if (seed <= 0) {
+
+                    if (-seed < msg.length) {
+
+                              out+=msg.substring(-seed,msg.length);
+
+                              seed--;
+
+                              var cmd="scrollit_r21(" + seed + ")";
+
+                              window.status=out;
+
+                              timerTwo=window.setTimeout(cmd, 100) ;
+
+                    }
+
+                    else  {
+
+                              window.status=" ";
+
+                              timerTwo=window.setTimeout("scrollit_r21(100)",75);
+
+                    }
+
+          }
+
+}
+
+
+
+// -- End of JavaScript code ---------------------- -->
+
+
+
+</SCRIPT>
+
+
+
+
+</HEAD>
+<BODY onLoad="timerONE=window.setTimeout ('scrollit_r21(100) ' ,500) ;">
+</BODY>
+</HTML>

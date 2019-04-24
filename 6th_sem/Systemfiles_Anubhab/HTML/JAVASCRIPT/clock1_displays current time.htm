@@ -1,0 +1,54 @@
+<CENTER>
+<script language="javascript">
+<!-- Clock in Java Script .. Cameron Gregory cameron@corona.att.com
+var dateform
+speed=1000
+len=28
+tid = 0;
+
+function dodate()
+{
+  f.date.value=new Date();
+  tid=window.setTimeout("dodate()",speed);
+}
+ 
+function start(x) {
+  f=x
+  tid=window.setTimeout("dodate()",speed);
+}
+ 
+function cleartid() {
+  window.clearTimeout(tid);
+}
+ 
+// for some reason on some pages this crashes netscape
+function Clock()
+{
+document.write('<FORM name=dateform><input name=date size=')
+document.write(len)
+document.write(' value="Clock: Requires Javascript"></FORM>')
+start(document.dateform);
+}
+// end-->
+</script>
+
+<SCRIPT LANGUAGE="LiveScript">
+
+
+<!-- hide this script tag's contents from old browsers
+function goHist(a) 
+{
+
+   history.go(a);      // Go back one.
+
+}
+
+//<!-- done hiding from old browsers -->
+
+
+</script>
+<script language="javascript">
+// You need a javascript compatible browser to view the following <br>
+Clock();
+// end javascipt section <br>
+</script>

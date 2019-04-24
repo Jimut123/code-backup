@@ -1,0 +1,90 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html><head><title></title></head>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function calculate(calc)
+{
+
+var fno1=parseFloat(calc.no1.value);
+var fno2=parseFloat(calc.no2.value);
+
+calc_sel = calc.opt.selectedIndex;
+
+calc_opt = calc.opt[calc_sel].value;
+
+
+
+
+
+	if (calc_opt=='a')
+	{
+
+	calc.opt_sel.value="addition";
+	calc.result.value=fno1+fno2;
+	}	
+	
+	else if (calc_opt=='s')
+		{
+	
+		calc.opt_sel.value="subtraction";
+		calc.result.value=fno1-fno2;
+		}
+		else if (calc_opt=='m')
+			{	
+		
+			calc.opt_sel.value="multiplication";
+			calc.result.value=fno1*fno2;
+			}
+			else
+			{
+			calc.result.value=0;
+			}
+		
+
+	
+
+}	
+//-->
+</SCRIPT>
+
+<body>
+<br><br><br>
+
+CALCULATOR
+
+<BR><BR>
+
+<FORM>
+
+<TABLE BORDER='2'>
+
+<TR>
+<TD>1st Number : <input name="no1" size=4></td>
+<TD>2nd Number : <input name="no2" size=4></td>
+</tr>
+<tr><td colspan='2'>Result: <input name='result' size='6'></td></tr>
+
+<tr><td colspan='2'>Option selected: <input name='opt_sel' size='10'></td></tr>
+
+
+<tr><td> 
+<SELECT NAME="opt" SIZE="1">
+<OPTION VALUE="a">Add</option>
+<OPTION VALUE="s">Subtract</option>
+<OPTION VALUE="m">Multiply</option>
+</SELECT>
+</td></tr>
+
+<tr>
+<td> <input type="button" onClick="calculate(this.form);" value="calculate"></td>
+<td> <input type="reset" value="Reset values"></td>
+</tr>
+
+</table>
+
+</form>
+</body>
+</html>
+
+

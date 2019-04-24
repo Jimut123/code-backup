@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Example</TITLE>
+<SCRIPT>
+    function image(name, value) {
+        this.name = name;
+        this.value = value;
+        
+
+    }
+
+    function get_image(find_image) {
+        GIF = new image();
+
+        for(var i=0;i<find_image.options.length;i++)
+
+
+            if(find_image.options[i].selected == true) {
+                GIF.name = find_image.options[i].text;
+
+
+                GIF.value = find_image.options[i].value;
+
+                
+
+
+
+          if(i==0) {x=330; y=410}
+
+          if(i==1) {x=310; y=370}
+
+          if(i==2) {x=200; y=290}
+
+          if(i==3) {x=240; y=340}
+
+          if(i==4) {x=200; y=250}
+
+          if(i>=5) {x=200; y=270}
+
+ 
+
+
+            }
+
+        return GIF;
+    }
+
+    function display_image(formfield) {
+
+        retrieve = get_image(formfield.imagename);
+
+        
+        
+
+        newWin = window.open(retrieve.value, "Applets", "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=yes,resizable=yes,copyhistory=0,width=" + 520 + ",height=" + 300 + '"')
+
+  
+        
+    }
+
+
+
+  
+</SCRIPT>
+</HEAD>
+<BODY>
+<CENTER>
+<FORM NAME="JAVA APPLET LAND">
+
+<select NAME="imagename">
+<option value="smartguy.htm">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CHOOSE A DESTINATION
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<option value="smartguy.htm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~~~~~~~~~~~~~~~~~~
+<option value="smartguy.htm">BODO'S LAIR
+<option value="smartguy.htm">~~~~~~~~~
+<option value="java.htm">The Java House
+<option value="jvacount.htm">Games Download
+<option value="simpsons.htm">The Simpsons.....WOOHOO!!!!!
+<option value="http://www.aentv.com/home/comedy/jokes2go.htm">Jokes To Go
+<option value="hotlinks.htm">Hotlinks
+<option value="smartguy.htm">
+<option value="smartguy.htm">SEARCH ENGINES
+<option value="smartguy.htm">~~~~~~~~~~~~~
+<option value="http://www.webcrawler.com/">WebCrawler
+<option value="http://www.altavista.com/">AltaVista
+<option value="http://www.exite.com/">Excite
+<option value="smartguy.htm">
+</select>
+<BR>
+<input type=button value="                                   OPEN                                   " onClick="display_image(this.form)">
+</FORM>
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,91 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function calculate()
+		{
+			var number1 = parseInt(document.getElementById("num1").value);
+			var number2 = parseInt(document.getElementById("num2").value);
+
+			var res = 0;
+			if(document.getElementById("add").checked)
+			{
+				res = number1 + number2;
+				document.getElementById("optsel").value = "add";
+			}
+			else if(document.getElementById("subtract").checked)
+			{
+				res = number1 - number2;
+				document.getElementById("optsel").value = "subtract";
+			}
+			else if(document.getElementById("multiply").checked)
+			{
+				res = number1 * number2;
+				document.getElementById("optsel").value = "multiply";
+			}
+			document.getElementById("result").value = res;
+        }
+        function reset()
+        {
+        	document.getElementById("num1").value = "";
+        	document.getElementById("num2").value = "";
+        	if(document.getElementById("add").checked)
+				document.getElementById("add").checked = false;
+			else if(document.getElementById("subtract").checked)
+				document.getElementById("subtract").checked = false;
+			else if(document.getElementById("multiply").checked)
+				document.getElementById("multiply").checked = false;
+        	document.getElementById("result").value = "";
+        	document.getElementById("optsel").value = "";
+        	document.getElementById("radopt").value = "";
+        }
+	</script>
+</head>
+	<body>
+		<div style="margin-left: 568px">CALCULATOR</div>
+		<br>
+		<center>
+			<table border="1">
+				<tr>
+					<td>
+						1st Number:&nbsp;<input type="text" id="num1" size="10">
+					</td>
+					<td>
+						2nd Number:&nbsp;<input type="text" id="num2" size="10">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Result:&nbsp;<input type="text" id="result" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Option selected:&nbsp;<input type="text" id="optsel" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="radio" name="operation" id="add" value="add" onclick="document.getElementById('radopt').value='1'">&nbsp;add
+						<br>
+						<input type="radio" name="operation" id="subtract" value="subtract" onclick="document.getElementById('radopt').value='2'">&nbsp;subtract
+						<br>
+						<input type="radio" name="operation" id="multiply" value="multiply" onclick="document.getElementById('radopt').value='3'">&nbsp;multiply
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Radio button Option selected:&nbsp;<input type="text" id="radopt" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="button1" value="calculate" onclick="calculate()">
+					</td>
+					<td>
+						<input type="button" id="button2" value="Reset values" onclick="reset()">
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>

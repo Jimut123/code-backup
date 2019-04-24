@@ -1,0 +1,1145 @@
+%pattern_replace.m : Write a program to replace old pattern by a new
+%pattern
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input File Name = ','s');
+file2=input('\nEnter Output File Name = ','s');
+opat=input('Enter old pattern to be searched = ','s');
+npat=input('Enter new pattern to be replaced = ','s');
+fp1=fopen(file1,'r');
+fp2=fopen(file2,'w');
+leno=length(opat);
+lenn=length(npat);
+nc=0; %nc=number of times pattern replaced
+while ~feof(fp1)
+    ch=fread(fp1,1,'uint8=>char');
+    ch1=upper(ch);
+    if ch1==upper(opat(1))
+        flag=1;
+        for i=1:leno-1
+            j=i+1;
+            ch=fread(fp1,1,'uint8=>char');
+            if upper(ch) ~= upper(opat(j))
+                flag=0;
+                break;
+            end
+        end
+        if flag==1
+            for i1=1:lenn
+                fwrite(fp2,npat(i1));
+            end
+            nc=nc+1;
+        else
+            fseek(fp1,-j,0);
+            for i1=1:j
+                ch=fread(fp1,1,'uint8=>char');
+                fwrite(fp2,ch);
+            end
+        end
+    else
+        fwrite(fp2,ch);
+    end
+end
+fclose('all');
+fprintf('\nNumber of times <%s> replaced by <%s> = %d\n',opat,npat,nc);
+%End of program
+
+-------------------------------------------------
+
+%xximage10.m : Write a program to flip an image along x-axis
+clc;
+close all;
+clear all;
+file1=input('\nEnter any Input Image File Neme=','s');
+file2=input('Enter output Image File Name=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+y(1:r,1:c,1:d)=x(1:r,c:-1:1,1:d);
+imshow(y);
+imwrite(y,file2);
+%End of program
+
+------------------------------------------------
+
+%xximage11.m : Write a program to flip an image along y-axis
+clc;
+close all;
+clear all;
+file1=input('\nEnter any Input Image File Name=','s');
+file2=input('Enter output Image File Name=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+y(1:r,1:c,1:d)=x(r:-1:1,1:c,1:d);
+imshow(y);
+imwrite(y,file2);
+%End of program
+
+------------------------------------------------
+
+%animage11.m: Write a program to change the color of image to greenish
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Image File Name=','s');
+file2=input('Enter Output Image File Name=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+x(1:r,1:c,1)=0;
+x(1:r,1:c,3)=0;
+imshow(x);
+imwrite(x,file2);
+%End of program
+
+----------------------------------------------
+
+%animage12.m: Write a program to change contrast of the an image
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Image File Name=','s');
+file2=input('Enter Output Image File Name=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+x=fix(1.5*x);
+imshow(x);
+imwrite(x,file2);
+%End of program
+
+---------------------------------------------
+
+%animage13.m: Write a program to change the image to negative image
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Image File Name=','s');
+file2=input('Enter Output Image File Name=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+y(1:r,1:c,1)=.2987*x(1:r,1:c,1)+.587*x(1:r,1:c,2)+.114*x(1:r,1:c,3);
+for i=1:r
+    for j=1:c
+        if y(i,j,1) >=127
+            z(i,j,1)=0;
+        else
+            z(i,j,1)=255;
+        end
+    end
+end
+imshow(z);
+imwrite(z,file2);
+%End of program
+
+-------------------------------------------
+
+%character_extraction.m : Write a program to convert RGB image to (i) Gray image, (ii)
+%B/W image. Extract all alphabets/numerals from B/W image
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Image File name=','s');
+file2=input('Enter Output Gray  Image File name=','s');
+file3=input('Enter Output B/W image file name=','s');
+file4=[ 'a1.jpg';'a2.jpg';'a3.jpg';'a4.jpg';'a5.jpg';'a6.jpg';'a7.jpg';'a8.jpg';'a9.jpg';'b1.jpg'; 'b2.jpg';'b3.jpg';'b4.jpg';'b5.jpg';'b6.jpg';'b7.jpg';'b8.jpg';'b9.jpg' ];
+x=imread(file1);
+[r,c,d]=size(x);
+fprintf('r=%d c=%d d=%d\n',r,c,d);
+g(1:r,1:c,1)=.2989*x(1:r,1:c,1)+.587*x(1:r,1:c,2)+.114*x(1:r,1:c,3); % converting RGB to Gray scale
+imwrite(g,file2);
+%To convert GRAY color image to B/W image
+for i=1:r
+   for j=1:c
+       if g(i,j,1)>=127
+           b(i,j,1)=255;
+       else
+           b(i,j,1)=0;
+       end
+   end
+end
+imshow(b);
+imwrite(b,file3);
+% To alphabets
+cs1=1;
+cs2=0;
+n1=0;
+
+while 1==1
+    for j=cs1:c
+        flag=1;
+        for i=1:r
+            if b(i,j,1)==0
+                cs1=j;
+                flag=0;
+                break;
+            end
+        end
+        if flag==0
+            break;
+        end
+    end
+    if flag==1
+        break;
+    end
+    if flag==0
+        for j=cs1+1:c
+            flag=1;
+            for i=1:r
+                if b(i,j,1)==0
+                    cs2=j;
+                flag=0;
+                end
+            end
+            if flag==1
+                break;
+            end
+        end
+        n1=n1+1;
+        z1(1:r,1:cs2-cs1+1,1)=b(1:r,cs1:cs2,1);
+        imwrite(z1,file4(n1,:));
+        z1(1:r,1:cs2-cs1+1,1)=255;
+        fprintf('cs1=%d cs2=%d n1=%d r=%d c=%d d=%d\n',cs1,cs2,n1,r,c,d);
+        cs1=cs2+1;
+    end
+end
+
+--------------------------------------------
+
+%function [x,n]=gauss_elimination(a,b,n) : Function to solve linear
+%simultaneous equations using gauss elimination method
+function [x,n]=gauss_elimination(a,b,n)
+%To form triangular equations
+for i=1:n
+    for j=1:n
+        if i ~=j
+            am=a(j,i)/a(i,i);
+            for k=1:n
+                a(j,k)=a(j,k)-a(i,k)*am;
+            end
+            b(j)=b(j)-b(i)*am;
+        end
+    end
+end
+ % To get solution now we apply back substitution method
+ x(n)=b(n)/a(n,n);
+ for i=n-1:-1:1
+     s=0;
+     for j=i+1:n
+         s=s+a(i,j)*x(j);
+     end
+     x(i)=(b(i)-s)/a(i,i);
+ end
+ %To display roots
+ fprintf('\nRoots are -->\n');
+ for i=1:n
+     fprintf('Root-%d : %7.3f\n',i,x(i));
+ end
+end
+
+---------------------------------------------
+
+%q1as3.m : Write a program to solve linear simultaneous equations using
+%gauss elimination method
+clc;
+close all;
+clear all;
+n=input('\nEnter number of simultaneous equations (n)=');
+fprintf('\nEnter coefficients of equations--->\n');
+for i=1:n
+    for j=1:n
+        fprintf('a(%d,%d)=',i,j);
+        a(i,j)=input('');
+    end
+ fprintf('b(%d)=',i);
+ b(i)=input('');
+end
+[x,n]=gauss_elimination(a,b,n);
+fprintf('\nSolutions are --->\n');
+for i=1:n
+    fprintf('x(%d)=%7.4f\n',i,x(i));
+end
+%end of main program
+
+--------------------------------------------
+
+%function [x,n]=matrix_inversion(a,b,n) : Function to solve linear
+%simultaneous equations using matrix inversion method
+function [x,n]=matrix_inversion(a,b,n)
+%To construct initial augmented matrix
+aug=a; % copying matrix a(,) to matrix aug(,)
+%To add identity matix on RHS of aug(,)
+for i=1:n
+    for j=1:n
+        if i==j
+            aug(i,j+n)=1;
+        else
+            aug(i,j+n)=0;
+        end
+    end
+end
+n1=2*n;
+%To display intial augmented matrix
+for i=1:n
+    for j=1:n1
+    fprintf('%8.4f\t',aug(i,j));
+    end
+    fprintf('\n');
+end
+% To tansform augmented matrix
+for i=1:n
+    am=aug(i,i);
+    for j=1:n1
+        aug(i,j)=aug(i,j)/am;
+    end
+    for j=1:n
+        if i ~=j
+            am=aug(j,i);
+            for k=1:n1
+                aug(j,k)=aug(j,k)-aug(i,k)*am;
+            end
+        end
+    end
+    fprintf('\nElements in Augmented Matrix-->\n');
+    for i1=1:n
+        for j1=1:n1
+            fprintf('%8.4f\t',aug(i1,j1));
+        end
+        fprintf('\n');
+    end
+    choice=input('\nPress enter key to continue--->','s');
+end
+%To extract inverse matrix from aug(,)
+for i=1:n
+    for j=1:n
+        inverse(i,j)=aug(i,j+n);
+    end
+end
+% To calculate Roots of equations
+for i=1:n
+    s=0;
+    for j=1:n
+        s=s+inverse(i,j)*b(j);
+    end
+    x(i)=s;
+end
+fprintf('\nElements in Inverse Matrix--->\n');
+for i=1:n
+    for j=1:n
+        fprintf('%8.4f\t',inverse(i,j));
+    end
+    fprintf('\n');
+end
+end
+
+---------------------------------------------
+
+%q2as3.m : Write a program to solve linear simultaneous equations using
+%matrix inversion method
+clc;
+close all;
+clear all;
+n=input('\nEnter number of simultaneous equations (n)=');
+fprintf('\nEnter coefficients of equations--->\n');
+for i=1:n
+    for j=1:n
+        fprintf('a(%d,%d)=',i,j);
+        a(i,j)=input('');
+    end
+ fprintf('b(%d)=',i);
+ b(i)=input('');
+end
+[x,n]=matrix_inversion(a,b,n);
+fprintf('\nSolutions are --->\n');
+for i=1:n
+    fprintf('x(%d)=%7.4f\n',i,x(i));
+end
+%end of main program
+
+------------------------------------------
+
+%function [y]=runge4(x0,y0,h) : Function to solve differential equation 
+%using 4-th order runge kutta method
+function [y]=runge4(x0,y0,h)
+k1=h*y0;
+k2=h*(y0+k1/2);
+k3=h*(y0+k2/2);
+k4=h*(y0+k3);
+y=y0+1/6*(k1+2*k2+2*k3+k4);
+end
+
+---------------------------------------
+
+%q9as3.m : Write a program to solve differential equation using 4-th order
+%Runge Kutta method
+clc;
+close all;
+clear all;
+x0=input('\nEnter x0=');
+y0=input('Enter y0=');
+xn=input('Enter xn=');
+n=input('Enter number of Intervals=');
+x(1)=x0;
+y(1)=y0;
+fprintf('x=%7.2f y=%8.5f\n',x(1),y(1));
+x1=x0;
+y1=y0;
+j=1;
+h=(xn-x0)/n;
+for i=1:n
+    y1=runge4(x1,y1,h);
+    x1=x0+i*h;
+    j=j+1;
+    x(j)=x1;
+    y(j)=y1;
+end
+for i=1:n+1
+    fprintf('x=%7.2f y=%8.5f\n',x(i),y(i));
+end
+plot(x,y);
+%end of program
+
+----------------------------------------
+
+%function [i,j]=maximum_value(a,n) : Function to get index of maximum value
+%from off diagonal terms of a(,).
+function [i,j]=maximum_value(a,n)
+amax=abs(a(1,2));
+i=1;
+j=2;
+    for i1=1:n
+        for j1=i1+1:n
+        amax1=abs(a(i1,j1));
+            if amax1>amax
+                amax=amax1;
+                i=i1;
+                j=j1;
+            end
+        end
+    end
+end
+
+--------------------------------------------
+
+%function [eval,evec,n]=jacobi_method(a,n) : function to solve eigen value
+%equation using Jacobi method
+function [eval,evec,n]=jacobi_method(a,n)
+% To define sn(,) matrix as identity matrix
+    for i=1:n
+        for j=1:n
+            if i==j
+                sn(i,j)=1;
+            else
+                sn(i,j)=0;
+            end
+        end
+    end
+    [ii,jj]=maximum_value(a,n);
+    while abs(a(ii,jj)) > 1e-06
+    % To contruct s1(,) matrix
+        for i=1:n
+            for j=1:n
+                if i==j
+                    s1(i,j)=1;
+                else
+                    s1(i,j)=0;
+                end
+            end
+        end
+        aiiii=a(ii,ii);
+        ajjjj=a(jj,jj);
+        aiijj=a(ii,jj);
+        % To calculate tan(theta), cos(theta), sin(theta)
+        if aiiii>=ajjjj
+            num=2*aiijj;
+            den=(aiiii-ajjjj)+sqrt((aiiii-ajjjj)^2+4*aiijj^2);
+            tant=num/den;
+        else
+            num=-2*aiijj;
+            den=(ajjjj-aiiii)+sqrt((aiiii-ajjjj)^2+4*aiijj^2);
+            tant=num/den;
+        end
+        cost=1/sqrt(1+tant^2);
+        sint=cost*tant;
+        s1(ii,ii)=cost;
+        s1(jj,jj)=cost;
+        s1(ii,jj)=-sint;
+        s1(jj,ii)=sint;
+        s1t=s1'; % to calculate tanspose of s1
+        a1=s1t*a;
+        a2=a1*s1; 
+        a=a2;
+        sn=s1*sn; % To calculate eigen vector
+        [ii,jj]=maximum_value(a,n);
+    end
+    % to extract eigen values
+    for i=1:n
+        eval(i)=a(i,i);
+    end
+    % To store eigen vectors
+    for i=1:n
+        for j=1:n
+            evec(i,j)=sn(i,j);
+        end
+    end
+    fprintf('\nEigen Values are--->\n');
+        for i=1:n
+            fprintf('Eigen_value(%d)=%7.5f\n',i,eval(i));
+        end
+        fprintf('\nEigen Vectors are--->\n');
+        
+        for i=1:n
+            for j=1:n
+                fprintf('%7.4f\t',evec(i,j));
+            end
+            fprintf('\n');
+        end
+ end
+
+----------------------------------------------
+
+%function [b]=byte_to_bit(c) : Function to convert a character 'c' to bits
+function [b]=byte_to_bit(c)
+n=uint8(c);
+k=0;
+for i=8:-1:1
+    k=k+1;
+    b(k)=bitget(n,i);
+end
+fprintf('\nc=%c n=%d : ',c,n);
+for i=1:8
+    fprintf('%d',b(i));
+end
+fprintf('\n');
+end
+
+-------------------------------------------
+
+%xxaudio1.m : Write a program in MATLAB to read and play any audio
+%file(.wav)
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Audio File Name = ','s');
+file2=input('\nEnter Output Audio File Name = ','s');
+[x,fs,nb]=wavread(file1);
+[r,c]=size(x);
+fprintf('r = %d c = %d fs = %d nb = %d\n',r,c,fs,nb);
+wavplay(x,fs); %To play audio file
+wavwrite(x,fs,file2); %To write audio data in output file.
+%End of program
+---------------------------------------------
+
+%xxaudio2.m : Write a program in MATLAB to play a reverse audio file(.wav)
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Audio File Name = ','s');
+file2=input('\nEnter Output Audio File Name = ','s');
+[x,fs,nb]=wavread(file1);
+[r,c]=size(x);
+fprintf('r = %d c = %d fs = %d nb = %d\n',r,c,fs,nb);
+y(1:r)=x(r:-1:1);
+wavplay(y,fs); %To play reverse audio file
+wavwrite(y,fs,file2); %To write reverse audio data in output file.
+%End of program
+
+--------------------------------------------
+
+%xxaudio3.m: Copy a sound file multiple times. Play the modified sound file.
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Audio File Name = ','s');
+file2=input('\nEnter Output Audio File Name = ','s');
+n=input('Enter how many times you want to copy the same audio file = ');
+[x,fs,nb]=wavread(file1);
+[r,c]=size(x);
+fprintf('r = %d c = %d fs = %d nb = %d\n',r,c,fs,nb);
+r1=1;
+r2=r;
+for i=1:n
+    y(r1:r2)=x(1:r);
+    r1=r1+r;
+    r2=r2+r;
+end
+wavplay(y,fs); %To play audio file
+wavwrite(y,fs,file2); %To write audio data in output file.
+%End of program
+
+------------------------------------------
+
+%xxaudio4.m : Write a program in MATLAB to change the frequency of audio
+%file. Play modified audio file and save it in some output file.
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Audio File Name = ','s');
+file2=input('\nEnter Output Audio File Name = ','s');
+n=input('Enter multiplication factor = ');
+[x,fs,nb]=wavread(file1);
+[r,c]=size(x);
+fprintf('r = %d c = %d fs = %d nb = %d\n',r,c,fs,nb);
+fs1=n*fs;
+wavplay(x,fs1); %To play audio file
+wavwrite(x,fs1,file2); %To write audio data in output file.
+%End of program
+
+----------------------------------------
+
+%xxaudio5.m : Write a program in MATLAB to changte intensity of audio
+%file. Play modified audio file and save it in some output file.
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Audio File Name = ','s');
+file2=input('\nEnter Output Audio File Name = ','s');
+n=input('Enter intensity factor = ');
+[x,fs,nb]=wavread(file1);
+[r,c]=size(x);
+fprintf('r = %d c = %d fs = %d nb = %d\n',r,c,fs,nb);
+y=n*x; %Changing intensity of audio file
+wavplay(y,fs); %To play audio file
+wavwrite(y,fs,file2); %To write audio data in output file.
+%End of program
+
+---------------------------------------
+
+%xxaudio6.m : Write a program in MATLAB to cut a portion of audio
+%file. Play cut portion and save it in some output file.
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Audio File Name = ','s');
+file2=input('\nEnter Output Audio File Name = ','s');
+[x,fs,nb]=wavread(file1);
+[r,c]=size(x);
+fprintf('r = %d c = %d fs = %d nb = %d\n',r,c,fs,nb);
+choice=input('\nPress Enter Key--->','s');
+n1=input('Enter data position from where you want to cut your data bits = ');
+n2=input('Enter data position from where you want to cut your data bits = ');
+y(1:(n2-n1+1))=x(n1:n2);
+wavplay(y,fs); %To play audio file
+wavwrite(y,fs,file2); %To write audio data in output file.
+%End of program
+
+---------------------------------------
+
+%anaudio4.m : Write a program to input any audio file.
+%Decrease the speed of the audio file. Play the modified audio
+clc;
+close all;
+clear all;
+file1=input('\nEnter input audio file name=','s');
+file2=input('Enter output audio file name=','s');
+[y,fs,nbits]=wavread(file1);
+fprintf('fs=%d nbits=%d\n',fs,nbits);
+ns1=input('\nEnter new fs value=');
+sound(3*y,ns1*fs);
+plot(3*y);
+wavwrite(y,ns1*fs,file2);
+%End of program
+
+--------------------------------------
+
+%audio_mixing_2.m : Write a program in Matlab to mix
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input audio file name = ','s');
+file2=input('\nEnter Input audio file name = ','s');
+file3=input('\nEnter Output audio file name = ','s');
+[x1,fs1,nb1]=wavread(file1);
+[x2,fs2,nb2]=wavread(file2);
+[r1,c1]=size(x1);
+[r2,c2]=size(x2);
+fprintf('fs1 = %d nb1 = %d r1 = %d c1 = %d\n',fs1,nb1,r1,c1);
+fprintf('fs2 = %d nb2 = %d r1 = %d c2 = %d\n',fs2,nb2,r2,c2);
+choice=input('\nPress Enter key to continue--->','s');
+if r1<r2
+    r=r1;
+else
+    r=r2;
+end
+if c1<c2
+    c=c1;
+else
+    c=c2;
+end
+if fs1<fs2
+    fs=fs1;
+else
+    fs=fs2;
+end
+%to mix two audio files
+x(1:r,1:c)=.5*(3*x1(1:r,1:c)+x2(1:r,1:c));
+wavplay(x,fs);
+wavwrite(x,fs,file3);
+%End of program
+
+-------------------------------------------
+
+%image_mixing_2.m : Write a program in Matlab to mix two image files
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input Image File-1 Name = ','s');
+file2=input('\nEnter Input Image File-2 Name = ','s');
+file3=input('\nEnter Output Image File Name = ','s');
+x1=imread(file1);
+[r1,c1,d1]=size(x1);
+x2=imread(file2);
+[r2,c2,d2]=size(x2);
+fprintf('r1 = %d c1 = %d d1 = %d r2 = %d c2 = %d d2 = %d\n',r1,c1,d1,r2,c2,d2);
+choice=input('Press enter key--->','s');
+if r1<r2
+    r=r1;
+else
+    r=r2;
+end
+if c1<c2
+    c=c1;
+else
+    c=c2;
+end
+x(1:r,1:c,1:3)=.5*(1.5*x1(1:r,1:c,1:3)+x2(1:r,1:c,1:3));
+imshow(x);
+imwrite(x,file3);
+
+---------------------------------------------
+
+%function  number_to_word(n) : Function to to convert number
+%to words
+function  number_to_word(n)
+a=['One      ';'Two      ';'Three    ';'Four     ';'Five     ';'Six      ';'Seven    ';'Eight    ';'Nine     ';  
+    'Ten      ';'Eleven   ';'Twelve   ';'Thirteen ';'Fourteen ';'Fifteen  ';'Sixteen  ';'Seventeen';'Eighteen '; 
+    'Nineteen '];
+ b=['Zero   ';'Twenty ';'Thirty ';'Forty  ';'Fifty  ';'Sixty  ';'Seventy';'Eighty ';'Ninety '];
+ % To extract digits from n
+ fprintf('%d :',n);
+ nlkh=fix(n/100000);
+ if nlkh<=19
+     nlkh1=0;
+     nlkh2=nlkh;
+ else
+     nlkh1=fix(nlkh/10);
+     nlkh2=mod(nlkh,10);
+ end
+ n=mod(n,100000);
+ nth=fix(n/1000);
+ if nth<=19
+     nth1=0;
+     nth2=nth;
+ else
+     nth1=fix(nth/10);
+     nth2=mod(nth,10);
+ end
+ n=mod(n,1000);
+ nh=fix(n/100);
+ n=mod(n,100);
+ if n<=19
+     nt1=0;
+     nt2=n;
+ else
+     nt1=fix(n/10);
+     nt2=mod(n,10);
+ end
+% To decode number to words
+if nlkh1 ~=0 && nlkh2 ~=0
+    fprintf('%s %s Lakh ',b(nlkh1,:),a(nlkh2,:));
+elseif nlkh1 ~=0 && nlkh2==0
+        fprintf('%s Lakh ',b(nlkh1,:));
+elseif nlkh1==0 && nlkh2 ~=0
+            fprintf('%s Lakh ',a(nlkh2,:));
+end
+        
+if nth1 ~=0 && nth2 ~=0
+    fprintf('%s %s Thousand ',b(nth1,:),a(nth2,:));
+elseif nth1 ~=0 && nth2==0
+        fprintf('%s Thousand ',b(nth1,:));
+elseif nth1==0 && nth2 ~=0
+            fprintf('%s Thousand ',a(nth2,:));
+end
+
+if nh ~=0
+    fprintf('%s Hundred ',a(nh,:));
+end
+
+if nt1 ~=0 && nt2 ~=0
+    fprintf('%s %s',b(nt1,:),a(nt2,:));
+elseif nt1 ~=0 && nt2==0
+        fprintf('%s',b(nt1,:));
+elseif nt1==0 && nt2 ~=0
+            fprintf('%s',a(nt2,:));
+end
+
+ fprintf('\n');
+end
+
+--------------------------------------------
+
+%number_to_word_main.m : Write main program to convert number to words
+clc;
+close all;
+clear all;
+n1=input('\nEnter lower limit=');
+n2=input('Enter upper limit=');
+count=0;
+for i=n1:n2
+number_to_word(i);
+count=count+1;
+if mod(count,15)==0
+    ch=input('\nPress enter key to continue--->\n','s');
+    clc;
+end
+end
+%end of program
+
+-------------------------------------------
+
+%decimal.m : Input any (+ve) integer(0-1000). Convert the number into (i) Binary, 
+%(ii) Hex, (iii) Octal number system.
+clc;
+clear all;
+close all;
+n=input('\nEnter decimal number: ');
+b=input('\nEnter base : ');
+str = dec2base(n,b);
+fprintf('%d in base %d is %s\n',n,b,str);
+
+---------------------------------------------
+
+%animage21.m : Write a program  to input any image file and then multiply
+%row my nx and column by ny. Display modified image on screen
+clc;
+close all;
+clear all;
+file1=input('\nEnter input image file=','s');
+file2=input('Enter Output image file=','s');
+nx=input('Enter multiplication along x-axis=');
+ny=input('Enter multiplication along y-axis=');
+[x]=imread(file1);
+[r,c,d]=size(x);
+i1=1;
+j1=1;
+i1u=i1+nx;
+j1u=j1+ny;
+    for i=1:r
+        for j=1:c
+            px=x(i,j,1:d);
+            for ki=1:nx
+                for kj=1:ny
+                    y(i1:i1u,j1:j1u,1)=x(i,j,1);
+                    y(i1:i1u,j1:j1u,2)=x(i,j,2);
+                    y(i1:i1u,j1:j1u,3)=x(i,j,3);
+                    j1=j1+ny;
+                    j1u=j1u+ny;
+                end
+            i1=i1+nx;
+            i1u=i1u+nx;
+            end
+       end
+    fprintf('i1=%d j1=%d i1u=%d j1u=%d\n',i1,j1,i1u,j1u);
+    end
+    fprintf('i1=%d j1=%d i1u=%d j1u=%d\n',i1,j1,i1u,j1u);
+    imshow(y);
+    imwrite(y,file2);
+%End of program
+
+-------------------------------------
+
+%function frequency_of_number(a,n) : Function to calculate frequency of 'n'
+%numbers in 1-dimensional array.
+function frequency_of_number(a,n)
+% To calculate frequency of each element
+    for i=1:n
+        f(i)=0;
+        for j=1:n
+            if a(i)==a(j)
+                f(i)=f(i)+1;
+            end
+        end
+    end
+    % To dispplay frequency of disnctict numbers
+    fprintf('Number\tFrequency\n');
+    fprintf('%d\t\t%d\n',a(1),f(1));
+        for i=2:n
+            flag=1;
+            for j=1:i-1
+                if a(i)==a(j)
+                    flag=0;
+                    break;
+                end
+            end
+            if flag==1
+                fprintf('%d\t\t%d\n',a(i),f(i));
+            end
+        end
+end
+
+--------------------------------------------------------
+
+%image9.m: Write a program to input an image and then change the color
+% of the image red or green or blue depending on user's choice
+clc;
+close all;
+clear all;
+file1=input('\nEnter your input image file name=','s');
+file2=input('Enter your Output image file name=','s');
+n=input('Enter 1 for red 2 for green and 3 for blue color=');
+x=imread(file1);
+[r,c,d]=size(x);
+if n==1
+    y(1:r,1:c,1)=x(1:r,1:c,1);
+    y(1:r,1:c,2:d)=0;
+elseif n==2
+        y(1:r,1:c,2)=x(1:r,1:c,2);
+        y(1:r,1:c,1:2:3)=0;
+else
+    y(1:r,1:c,3)=x(1:r,1:c,3);
+    y(1:r,1:c,1:2)=0;
+end
+imshow(y);
+imwrite(y,file2);
+%end of program
+
+---------------------------------------------------
+
+%q1as4.m : Write a program in MATLAB to split a RGB image to 3 equal parts.
+%Chanege the color of middle portion to Gray scale and the bottom portion
+%to B/W. Club 3 portions and then add Black border in the clubbed image.
+%Display modified image and save the modified image to some output file.
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input RGB image File name=','s');
+file2=input('Enter out  image File name=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+r1=fix(r/3);
+r2=r-2*r1;
+% To extract 3 portions of input image
+y1(1:r1,1:c,1:d)=x(1:r1,1:c,1:d); % 1/3rd portion of image
+y2(1:r1,1:c,1:d)=x(r1+1:2*r1,1:c,1:d); % 2nd 1/3rd portion of image
+y3(1:r2,1:c,1:d)=x(2*r1+1:r,1:c,1:d); % last 1/3rd portion of image
+
+% To convert 2nd and 3rd portion of the image to gray scale
+y2g(1:r1,1:c,1)=.2987*y2(1:r1,1:c,1)+.587*y2(1:r1,1:c,2)+.114*y2(1:r1,1:c,3);
+y3g(1:r2,1:c,1)=.2987*y3(1:r2,1:c,1)+.587*y3(1:r2,1:c,2)+.114*y3(1:r2,1:c,3);
+
+%To convert 3rd portion of the image to B/W
+    for i=1:r2
+        for j=1:c
+            if y3g(i,j,1) >=127
+                y3b(i,j,1)=255;
+            else
+                y3b(i,j,1)=0;
+            end
+        end
+    end
+    
+    %To club 3 portions of the image
+    yfinal=y1; % To copy y1 to yfinal
+    % To copy y2g to yfinal
+    yfinal(r1+1:2*r1,1:c,1)=y2g(1:r1,1:c,1);
+    yfinal(r1+1:2*r1,1:c,2)=y2g(1:r1,1:c,1);
+    yfinal(r1+1:2*r1,1:c,3)=y2g(1:r1,1:c,1);
+    %To copy y3b to yfinal
+    yfinal(2*r1+1:r,1:c,1)=y3b(1:r2,1:c,1);
+    yfinal(2*r1+1:r,1:c,2)=y3b(1:r2,1:c,1);
+    yfinal(2*r1+1:r,1:c,3)=y3b(1:r2,1:c,1);
+    
+    
+    % To copy modified image to yf without border
+    yf(11:r+10,11:c+10,1:d)=yfinal(1:r,1:c,1:d);
+    
+    % To add border on top position
+    for i=1:3
+    yf(1:10,1:c+20,1:i)=0;
+    end
+    % To add boder on bottom position
+    for i=1:3
+        yf(r+11:r+20,1:c+20,i)=0;
+    end
+    %To add border on LHS
+    for i=1:3
+        yf(11:r+10,1:10,i)=0;
+    end
+    %To add border on RHS
+    for i=1:3
+        yf(11:r+10,c+11:c+20,i)=0;
+    end
+    imshow(yf); % To display modified image with border
+    imwrite(yf,file2); % To save modified image with border.
+%End of program
+
+--------------------------------------------------------
+
+%function roman(n) : number to roman numerals
+function roman(n)
+
+sd=['I   ';'II  ';'III ';'IV  ';'V   ';'VI  ';'VII ';'VIII','IX  '];
+dd=['X   ';'XX  ';'XXX ';'XL  ';'L   ';'LX  ';'LXX ';'LXXX';'XC  '];
+td=['C   ';'CC  ';'CCC ';'CD  ';'D   ';'DC  ';'DCC ';'DCCC';'CM  '];
+fd=['M  ';'MM ';'MMM'];
+nth=fix(n/1000);
+n=mod(n,1000);
+nh=n/100;
+n=mod(n,100);
+nt=n/10;
+nu=mod(n,10);
+if nth ~=0
+    fprintf('%s',fd(nth,:));
+end
+if nh~=0
+    fprintf('%s',td(nh,:));
+end
+if nt~=0
+    fprintf('%s',dd(nt,:));
+end
+if nu~=0
+    fprintf('%s',sd(nu,:));
+end
+end
+%end of function
+
+-----------------------------------------------
+
+%stego1.m : Write a program to embed the secret file inside an image file
+clc;
+close all;
+clear all;
+file1=input('\nEnter Input RGB image File name=','s');
+file2=input('\nEnter Output image File name=','s');
+file3=input('\nEnter secret file=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+fp1=fopen(file3,'r');
+r1=1;
+c1=1;
+y=x;
+fseek(fp1,0,1);
+n=ftell(fp1);
+for j=1:n
+    fseek(fp1,j,-1);
+       ch=fscanf(fp1,'%c',1);
+       ch1=cast(ch,'uint8');%to convert character into integer
+       %to convert number to bits
+       for i=8:-1:1
+           b=bitget(ch1,i);
+           fprintf('\n%d',b);
+           y(r1,c1,1)= b;
+           fprintf('OK');
+           ch=y(r1,c1,1);
+           fprintf('%d',ch);
+           c1=c1+1;
+           if c1>c
+               c1=1;
+               r1=r1+1;
+           end
+       end
+end
+imwrite(y,file2);
+imshow(y);
+%End of program
+    
+-------------------------------------------------
+
+%xximage13.m: Write a program to convert B/W image to inverse image
+clc;
+close all;
+clear all;
+file1=input('\nEnter input B/W image file name=','s');
+file2=input('Enter inverse color image file name=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+for i=1:r
+    for j=1:c
+        if x(i,j,1)==255
+            y(i,j,1)=0;
+        else
+            y(i,j,1)=255;
+        end
+    end
+end
+imwrite(y,file2);
+imshow(y);
+%End of program
+
+----------------------------------------------
+
+%xximage14.m: Write a program to change color of an image file
+clc;
+close all;
+clear all;
+file1=input('\nEnter input image file name=','s');
+redf=input('Enter red color image file=','s');
+greenf=input('Enter green color image file=','s');
+bluef=input('Enter blue color image file=','s');
+x=imread(file1);
+[r,c,d]=size(x);
+r1(1:r,1:c,1)=x(1:r,1:c,1);
+r1(1:r,1:c,2:3)=0;
+imshow(r1);
+imwrite(r1,redf);
+choice=input('\nPress enter key--->','s');
+g1(1:r,1:c,2)=x(1:r,1:c,2);
+g1(1:r,1:c,1:2:3)=0;
+imshow(g1);
+imwrite(g1,greenf);
+choice=input('\nPress enter key--->','s');
+
+b1(1:r,1:c,3)=x(1:r,1:c,3);
+b1(1:r,1:c,1:2)=0;
+imshow(b1);
+imwrite(b1,bluef);
+%End of program
+
+------------------------------------------
+
+%xximage15.m: Write a program to zoom an image along x-axis and y-axis
+clc;
+clear all;
+close all;
+file1=input('\nEnter the input file=','s');
+file2=input('\nEnter the output file=','s');
+m=('\nEnter  the  zoom factor along x-axis:(sx)');
+n=('\Enter the zoom factor along y-axis:(sy)');
+x=imread(file1);
+[r,c,d]=size(x);
+y(1:r,1:c,1:d)=x(1:r,1:c,1:d);
+%to convert  the color into B/W
+for i=1:r
+    for j=1:c
+         if y(i,j,1)>=127
+            y(i,j,1)=255;
+        else
+            y(i,j,1)=0;
+        end
+    end
+end
+%x=imread(file1);
+%[r,c,d]=size(x);
+y=x;%copying x-pixels to y
+%To copy pixels along x-axis
+j=c+1;
+k=2*c;
+for i=1:m-1
+    y(1:r,j+5:k+5,1:d)=y(1:r,1:c,1:d);
+    for i=0:4
+    y(1:r,j+i,d)=255;
+    end
+    j=j+c;
+    k=k+c;
+end
+%to copy along y-axis
+j=r+1;
+k1=2*r;
+for i=1:n-1
+    y(j:k1,1:(k-c),1:d)=y(1:r,1:(k-c),1:d);
+    j=j+r;
+    k1=k1+r;
+end
+imshow(y);
+imwrite(y,file2);
+%End of program
+
+------------------------------------------

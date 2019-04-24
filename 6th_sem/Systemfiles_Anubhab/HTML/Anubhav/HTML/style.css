@@ -1,0 +1,17 @@
+h1{
+	
+	color:black;
+	text-decoration:underline;
+	font-weight:bold;
+}
+h2,h3{
+	
+	color:green;
+	font-style:italic;
+}
+
+h4,h5,h6{
+	
+	color:royalblue;
+	font-style:italic;
+}

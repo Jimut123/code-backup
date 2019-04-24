@@ -1,0 +1,99 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function calculate()
+		{
+			var marks1 = parseInt(document.getElementById("marks-1").value);
+			var marks2 = parseInt(document.getElementById("marks-2").value);
+			var marks3 = parseInt(document.getElementById("marks-3").value);
+			var full1 = parseInt(document.getElementById("out-1").value);
+			var full2 = parseInt(document.getElementById("out-2").value);
+			var full3 = parseInt(document.getElementById("out-3").value);
+			var totMarks = marks1+marks2+marks3;
+			var totFull = full1+full2+full3;
+			var finPer = (totMarks/totFull)*100;
+
+
+			document.getElementById("per-1").value = marks1/full1*100;
+			document.getElementById("per-2").value = marks2/full2*100;
+			document.getElementById("per-3").value = marks3/full3*100;
+
+			document.getElementById("fin-per").value = finPer;
+
+			if(finPer<50)
+				document.getElementById("grade").value = "FAIL";
+    		else if(finPer>=50 && finPer<60)
+        		document.getElementById("grade").value = "D";
+    		else if(finPer>=60 && finPer<70)
+        		document.getElementById("grade").value = "C"; 
+    		else if(finPer>=70 && finPer<80)
+        		document.getElementById("grade").value = "B";     		
+        	else if(finPer>=80 && finPer<90)
+        		document.getElementById("grade").value = "A"; 
+    		else if(finPer>=90 && finPer<100)
+        		document.getElementById("grade").value = "A+";  
+    		else
+        		document.getElementById("grade").value = "INVALID";
+        }
+	</script>
+</head>
+	<body>
+		<center>
+			<table border="1" style="text-align: center">
+				<tr bgcolor="pink">
+					<td colspan="3">
+						MARK SHEET
+					</td>
+				</tr>
+				<tr>
+					<td>
+						marks-1:&nbsp;<input type="text" id="marks-1" size="10">
+					</td>
+					<td>
+						out of:&nbsp;<input type="text" id="out-1" size="10">
+					</td>
+					<td>
+						Percentage:&nbsp;<input type="text" id="per-1" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						marks-2:&nbsp;<input type="text" id="marks-2" size="10">
+					</td>
+					<td>
+						out of:&nbsp;<input type="text" id="out-2" size="10">
+					</td>
+					<td>
+						Percentage:&nbsp;<input type="text" id="per-2" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						marks-3:&nbsp;<input type="text" id="marks-3" size="10">
+					</td>
+					<td>
+						out of:&nbsp;<input type="text" id="out-3" size="10">
+					</td>
+					<td>
+						Percentage:&nbsp;<input type="text" id="per-3" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						FINAL PERCENTAGE:&nbsp;<input type="text" id="fin-per" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						GRADE:&nbsp;<input type="text" id="grade" size="10" disabled="disabled">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<input type="button" id="button" value="CLICK FOR RESULT" onclick="calculate()">
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>
