@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_5ec5937c1752489ca39ad5346ce9a572 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+                    <div style = "position: fixed; top: 5px; left: 900px; z-index:9999;">
+                        <h1 ><i style="color:#c6ae0d; font face=Verdana,Arial,Helvetica "> WISP </i></h1> 
+                    </div>
+                    <div style="position: fixed; 
+                    bottom: 50px; left: 50px;  
+                    border:2px solid grey; z-index:9999; font-size:14px;">&nbsp; 
+                        <b>Legend <b>
+                        <br>
+                    &nbsp; Cafe &nbsp;
+                    <svg height="10" width="10">
+                    <circle cx="5" cy="5" r="4" stroke="#5125aa" stroke-width="3" fill="#44533e" />
+                    </svg><br/> 
+                    </div>
+                    <div style="position: fixed; 
+                    bottom: 50px; right: 50px;  
+                    z-index:9999; font-size:10px;
+                    "> 
+                        <b style="color:#f90404" style="align: justified">
+                            WISP <br/> 
+                            version: 0.0.8-beta <br/>
+                            &copyJimut Bahan Pal <br/> 
+                            Author : jimutbahanpal@yahoo.com 
+                        </b>
+                    </div>
+                    
+    
+    <div class="folium-map" id="map_5ec5937c1752489ca39ad5346ce9a572" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_5ec5937c1752489ca39ad5346ce9a572 = L.map(
+        'map_5ec5937c1752489ca39ad5346ce9a572', {
+        center: [22.34309, 87.3012875],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_7cbb6922b7944a44afcd4e10b85bf67c = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_5ec5937c1752489ca39ad5346ce9a572);
+    
+            var marker_cluster_976afc7b190740db806c68480c8cce52 = L.markerClusterGroup({});
+            map_5ec5937c1752489ca39ad5346ce9a572.addLayer(marker_cluster_976afc7b190740db806c68480c8cce52);
+            
+    
+            var circle_marker_6ea4c776c6c54ae7bdb89a78852c9be6 = L.circleMarker(
+                [22.334723460086973, 87.31429242162203],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#5125aa",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#44533e",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_976afc7b190740db806c68480c8cce52);
+            
+    
+            var popup_5b5a81e85d794d6aa11f2f3b789dd83f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c893e8cb0be54220bc042ea651869b8d = $(`<div id="html_c893e8cb0be54220bc042ea651869b8d" style="width: 100.0%; height: 100.0%;">POSTCODE : 721301, CATEGORY : Café</div>`)[0];
+                popup_5b5a81e85d794d6aa11f2f3b789dd83f.setContent(html_c893e8cb0be54220bc042ea651869b8d);
+            
+
+            circle_marker_6ea4c776c6c54ae7bdb89a78852c9be6.bindPopup(popup_5b5a81e85d794d6aa11f2f3b789dd83f)
+            ;
+
+            
+        
+    
+            var circle_marker_e70f3cf75645411cb2c96b1281db14b4 = L.circleMarker(
+                [22.319490868972125, 87.30544821027785],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#5125aa",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#44533e",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_976afc7b190740db806c68480c8cce52);
+            
+    
+            var popup_4b97ed05b8664cadaf826727d51913ff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_55619af3fc204f78bd935a14861d6633 = $(`<div id="html_55619af3fc204f78bd935a14861d6633" style="width: 100.0%; height: 100.0%;">POSTCODE : 721302, CATEGORY : Café</div>`)[0];
+                popup_4b97ed05b8664cadaf826727d51913ff.setContent(html_55619af3fc204f78bd935a14861d6633);
+            
+
+            circle_marker_e70f3cf75645411cb2c96b1281db14b4.bindPopup(popup_4b97ed05b8664cadaf826727d51913ff)
+            ;
+
+            
+        
+</script>

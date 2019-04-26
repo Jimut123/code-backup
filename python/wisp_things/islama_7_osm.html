@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_64a284a9410646e1b4c696a4acb0aee6 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+                    <center>
+                        <h1 ><i style="color:#c6ae0d; font face=Verdana,Arial,Helvetica "> WISP </i></h1> 
+                    </center>
+                    <div style="position: fixed; 
+                    bottom: 50px; left: 50px;  
+                    border:2px solid grey; z-index:9999; font-size:14px;">&nbsp; 
+                        <b>Legend <b>
+                        <br>
+                    &nbsp; Cafe &nbsp;
+                    <svg height="10" width="10">
+                    <circle cx="5" cy="5" r="4" stroke="#1eec9d" stroke-width="3" fill="#79985b" />
+                    </svg><br/> 
+                    &nbsp; gun &nbsp;
+                    <svg height="10" width="10">
+                    <circle cx="5" cy="5" r="4" stroke="#0eafb2" stroke-width="3" fill="#b92b36" />
+                    </svg><br/> 
+                    &nbsp; Biriyani &nbsp;
+                    <svg height="10" width="10">
+                    <circle cx="5" cy="5" r="4" stroke="#cf680e" stroke-width="3" fill="#447ada" />
+                    </svg><br/> 
+                    </div>
+                    <div style="position: fixed; 
+                    bottom: 50px; right: 50px;  
+                    z-index:9999; font-size:10px;
+                    "> 
+                        <b style="color:#f90404" style="align: justified">
+                            WISP <br/> 
+                            version: 0.0.8-beta <br/>
+                            &copyJimut Bahan Pal <br/> 
+                            Author : jimutbahanpal@yahoo.com 
+                        </b>
+                    </div>
+                    
+    
+    <div class="folium-map" id="map_64a284a9410646e1b4c696a4acb0aee6" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_64a284a9410646e1b4c696a4acb0aee6 = L.map(
+        'map_64a284a9410646e1b4c696a4acb0aee6', {
+        center: [33.63573935, 72.9230467027632],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_105f51008f4c4f249b83cd7305287ac8 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_64a284a9410646e1b4c696a4acb0aee6);
+    
+            var marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0 = L.markerClusterGroup({});
+            map_64a284a9410646e1b4c696a4acb0aee6.addLayer(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var circle_marker_5ece8fa360bf421ea67e4313ad3a0dfb = L.circleMarker(
+                [33.631976, 72.922256],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#1eec9d",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#79985b",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var popup_e0aea7f3e3104d6383418f7214b39997 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_09d34c6ff0ec42c5bbb861c4120e8271 = $(`<div id="html_09d34c6ff0ec42c5bbb861c4120e8271" style="width: 100.0%; height: 100.0%;">POSTCODE : None, CATEGORY : BBQ Joint</div>`)[0];
+                popup_e0aea7f3e3104d6383418f7214b39997.setContent(html_09d34c6ff0ec42c5bbb861c4120e8271);
+            
+
+            circle_marker_5ece8fa360bf421ea67e4313ad3a0dfb.bindPopup(popup_e0aea7f3e3104d6383418f7214b39997)
+            ;
+
+            
+        
+    
+            var circle_marker_16615ea1c4264d0ba802edd62d9e37c3 = L.circleMarker(
+                [33.62300792862162, 72.95787622701475],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#1eec9d",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#79985b",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var popup_4a08698f508e4641819d527174909153 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0367785b2ef248a88758ab0fa2b038c4 = $(`<div id="html_0367785b2ef248a88758ab0fa2b038c4" style="width: 100.0%; height: 100.0%;">POSTCODE : None, CATEGORY : College Cafeteria</div>`)[0];
+                popup_4a08698f508e4641819d527174909153.setContent(html_0367785b2ef248a88758ab0fa2b038c4);
+            
+
+            circle_marker_16615ea1c4264d0ba802edd62d9e37c3.bindPopup(popup_4a08698f508e4641819d527174909153)
+            ;
+
+            
+        
+    
+            var circle_marker_735cd2390a80459e86d9def5bf4975e9 = L.circleMarker(
+                [33.667187125652866, 72.99109716065087],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#0eafb2",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#b92b36",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var popup_b43e37ea0395463aaab8d29763ab8799 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8c42fe7fa9f3436d9b0a9cb5b2ffe579 = $(`<div id="html_8c42fe7fa9f3436d9b0a9cb5b2ffe579" style="width: 100.0%; height: 100.0%;">POSTCODE : None, CATEGORY : Miscellaneous Shop</div>`)[0];
+                popup_b43e37ea0395463aaab8d29763ab8799.setContent(html_8c42fe7fa9f3436d9b0a9cb5b2ffe579);
+            
+
+            circle_marker_735cd2390a80459e86d9def5bf4975e9.bindPopup(popup_b43e37ea0395463aaab8d29763ab8799)
+            ;
+
+            
+        
+    
+            var circle_marker_16076b6119224e408a07ccdf99f5cfb4 = L.circleMarker(
+                [33.65296936035156, 72.90896606445312],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#cf680e",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#447ada",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var popup_a2dbe934892d4e93b278e71b2958d833 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_194cd234c2384802b98e512eeef6b522 = $(`<div id="html_194cd234c2384802b98e512eeef6b522" style="width: 100.0%; height: 100.0%;">POSTCODE : None, CATEGORY : Pakistani Restaurant</div>`)[0];
+                popup_a2dbe934892d4e93b278e71b2958d833.setContent(html_194cd234c2384802b98e512eeef6b522);
+            
+
+            circle_marker_16076b6119224e408a07ccdf99f5cfb4.bindPopup(popup_a2dbe934892d4e93b278e71b2958d833)
+            ;
+
+            
+        
+    
+            var circle_marker_ccfbcd08545046508b2306c2aad039c6 = L.circleMarker(
+                [33.628131, 72.970184],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#cf680e",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#447ada",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var popup_7a5a682266154593960b4c05a3e3335b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7168fe74b95144de8b6a9d5b1192c256 = $(`<div id="html_7168fe74b95144de8b6a9d5b1192c256" style="width: 100.0%; height: 100.0%;">POSTCODE : None, CATEGORY : Hotel</div>`)[0];
+                popup_7a5a682266154593960b4c05a3e3335b.setContent(html_7168fe74b95144de8b6a9d5b1192c256);
+            
+
+            circle_marker_ccfbcd08545046508b2306c2aad039c6.bindPopup(popup_7a5a682266154593960b4c05a3e3335b)
+            ;
+
+            
+        
+    
+            var circle_marker_ed272824445644c4b764a4539aea4317 = L.circleMarker(
+                [33.62488912430755, 72.97281786401518],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#cf680e",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#447ada",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var popup_43fcc60c8a664354992a506200017dd8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4f998d4c89164ce8a72acdb5f1407fa3 = $(`<div id="html_4f998d4c89164ce8a72acdb5f1407fa3" style="width: 100.0%; height: 100.0%;">POSTCODE : None, CATEGORY : Residential Building (Apartment / Condo)</div>`)[0];
+                popup_43fcc60c8a664354992a506200017dd8.setContent(html_4f998d4c89164ce8a72acdb5f1407fa3);
+            
+
+            circle_marker_ed272824445644c4b764a4539aea4317.bindPopup(popup_43fcc60c8a664354992a506200017dd8)
+            ;
+
+            
+        
+    
+            var circle_marker_62a534d55ea54ad098c16322d4cf5eeb = L.circleMarker(
+                [33.62459182739258, 72.97274017333984],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#cf680e",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#447ada",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_e7b69a3ac02547dd8478663bf57cb9f0);
+            
+    
+            var popup_52b443346afe4926a59a5597af7dc3b2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b879e66005a145618679dc6ed947b12a = $(`<div id="html_b879e66005a145618679dc6ed947b12a" style="width: 100.0%; height: 100.0%;">POSTCODE : None, CATEGORY : Hotel</div>`)[0];
+                popup_52b443346afe4926a59a5597af7dc3b2.setContent(html_b879e66005a145618679dc6ed947b12a);
+            
+
+            circle_marker_62a534d55ea54ad098c16322d4cf5eeb.bindPopup(popup_52b443346afe4926a59a5597af7dc3b2)
+            ;
+
+            
+        
+</script>
