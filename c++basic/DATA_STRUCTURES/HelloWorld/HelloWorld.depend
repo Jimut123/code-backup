@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1557134833 source:/home/jimutbp/Desktop/DATA_STRUCTURES/HelloWorld/HelloWorld.cpp
+	<iostream>
+
+1557134905 source:/home/jimutbp/Desktop/DATA_STRUCTURES/HelloWorld/main.cpp
+	"hello.h"
+
+1557134882 /home/jimutbp/Desktop/DATA_STRUCTURES/HelloWorld/hello.h
+

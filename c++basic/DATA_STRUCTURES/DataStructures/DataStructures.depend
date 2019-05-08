@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1557153367 source:/home/jimutbp/Desktop/DATA_STRUCTURES/DataStructures/main.c
+	<stdio.h>
+	<stdlib.h>
+	"linkedList.h"
+
+1557137104 source:/home/jimutbp/Desktop/DATA_STRUCTURES/DataStructures/e4c.c
+	<stdio.h>
+	<signal.h>
+	<errno.h>
+	<stdarg.h>
+	"e4c.h"
+	<pthread.h>
+
+1557137118 /home/jimutbp/Desktop/DATA_STRUCTURES/DataStructures/e4c.h
+	<stdlib.h>
+	<setjmp.h>
+	<stdbool.h>
+
+1557137252 source:/home/jimutbp/Desktop/DATA_STRUCTURES/DataStructures/test_err.c
+	"e4c.h"
+
+1557153209 source:/home/jimutbp/Desktop/DATA_STRUCTURES/DataStructures/queue.c
+	<stdbool.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+
+1557153172 source:/home/jimutbp/Desktop/DATA_STRUCTURES/DataStructures/linkedList.c
+	<stdbool.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+
+1557154980 /home/jimutbp/Desktop/DATA_STRUCTURES/DataStructures/linkedList.h
+
+1557137104 source:/home/jimutbp/Desktop/GIT/prog_backups/c++basic/DATA_STRUCTURES/DataStructures/e4c.c
+	<stdio.h>
+	<signal.h>
+	<errno.h>
+	<stdarg.h>
+	"e4c.h"
+	<pthread.h>
+
+1557137118 /home/jimutbp/Desktop/GIT/prog_backups/c++basic/DATA_STRUCTURES/DataStructures/e4c.h
+	<stdlib.h>
+	<setjmp.h>
+	<stdbool.h>
+
+1557154972 source:/home/jimutbp/Desktop/GIT/prog_backups/c++basic/DATA_STRUCTURES/DataStructures/linkedList.c
+	<stdbool.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+
+1557153367 source:/home/jimutbp/Desktop/GIT/prog_backups/c++basic/DATA_STRUCTURES/DataStructures/main.c
+	<stdio.h>
+	<stdlib.h>
+	"linkedList.h"
+
+1557154980 /home/jimutbp/Desktop/GIT/prog_backups/c++basic/DATA_STRUCTURES/DataStructures/linkedList.h
+
+1557153209 source:/home/jimutbp/Desktop/GIT/prog_backups/c++basic/DATA_STRUCTURES/DataStructures/queue.c
+	<stdbool.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+
+1557137252 source:/home/jimutbp/Desktop/GIT/prog_backups/c++basic/DATA_STRUCTURES/DataStructures/test_err.c
+	"e4c.h"
+
