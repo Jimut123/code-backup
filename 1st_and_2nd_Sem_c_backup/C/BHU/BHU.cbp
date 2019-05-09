@@ -31,6 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="2015/questions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="2017/q1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="2018/q1.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
