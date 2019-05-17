@@ -28,6 +28,7 @@ def plotfunc():
         glBegin(GL_POINTS)
         glVertex2f(x,y)
         glEnd()
+    
     # adding coordinates
     glBegin(GL_LINES)
     glVertex2f(-5.0,0.0)

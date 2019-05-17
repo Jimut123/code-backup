@@ -16,7 +16,7 @@ def plotfunc():
     glClear(GL_COLOR_BUFFER_BIT)
     glColor3f(0.0,0.0,0.0)          # color
     glPointSize(3.0)
-    for x in np.arange(-5.0,5.0,0.0001):
+    for x in np.arange(-5.0,5.0,0.01):
         #y=x*x-2
         #y=x**3-3*x-1
         #y=x**4-5*x**3+x**2-3*x-1

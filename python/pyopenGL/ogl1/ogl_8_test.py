@@ -17,13 +17,13 @@ def plotfunc():
     glColor3f(0.0,0.0,0.0)          # color
     glPointSize(1.0)
     for x in np.arange(-5.0,5.0,0.01):
-        y=x**2
+        y=x**3
         glBegin(GL_POINTS)
         glColor3f(0.9,0.0,0.9)          # color
         glVertex2f(x,y)
         glEnd()
         for a in np.arange(-5.0,5.0,0.01):
-            if a<x*x:
+            if a<x**3:
                 glColor3f(0.5,0.5,0.5)
                 glBegin(GL_POINTS)
                 glVertex2f(x,a)
