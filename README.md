@@ -1,4 +1,10 @@
-# PROGRAM BACKUPS [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama) [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+# PROGRAM BACKUPS
+[![DOI](https://zenodo.org/badge/156666404.svg)](https://zenodo.org/badge/latestdoi/156666404)
+![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
+![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
+![Contribute](https://img.shields.io/badge/-contribute-0a0a0a.svg?style=flat&colorA=0a0a0a)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 All program (backups) done by me till date. There are many other contributors too. 
 
