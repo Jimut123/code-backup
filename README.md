@@ -6,9 +6,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-All program (backups) done by me till date. There are many other contributors too. 
-
+All program (backups) done by me till date. There are many other contributors too in AUTHORS section. 
 Contains all the program done in Java in ISC board and [St. Xavier's College, Kolkata](http://sxccal.edu).
+Which means, that this is a stash of naive programs and codes. Probably contains COURSERA solutions in the python
+section for some of the courses.
 
 Contains programs of every semester!
 
